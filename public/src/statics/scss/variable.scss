@@ -1,0 +1,50 @@
+
+// 开关设置
+$lte7:                  true !default; //是否兼容ie6-7
+$filter:                false !default; //是否为ie6-8开启css3滤镜兼容，常用于渐变背景 
+$printStyleSwitch:      false !default; //是否开启打印样式
+
+
+// font size
+$font-size-12: 12px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-small: $font-size-12;
+$font-size-default: $font-size-14;
+$font-size-large: $font-size-16;
+
+
+// color
+$gray: #555;
+$gray-soft: #666;
+$gray-dark: #333;
+$gray-softer: #999;
+
+$brand-default: #a8a8a8;
+$brand-primary: #3a89c9;
+$brand-success: #61c155;
+$brand-warning: #f8a13f;
+$brand-danger:  #e8415f; // brand-error
+
+$input-placeholder-color: $gray-soft;
+
+
+// icon size
+$icon-size-small:   16px;
+$icon-size-default: 24px;
+$icon-size-large:   32px;
+
+
+// other
+$img-url-root: '/src/statics/img';
+$icon-img-url-default: '/src/statics/img/icons.png';
+
+$font-family-default: "Microsoft Yahei", "SimHei", "Arial";
+$line-height-default: 1.42857143;
+
+// media width
+$phone-media-width: 767px;
+$tablet-media-width: 991px;
+$computer-media-width: 1200px;
+

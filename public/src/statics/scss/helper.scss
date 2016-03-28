@@ -1,0 +1,80 @@
+.color-danger {
+    color: $brand-danger;
+}
+
+.color-primary {
+    color: $brand-primary;
+}
+
+.color-dim {
+    color: $gray-softer;
+}
+
+.color-warning {
+    color: $brand-warning;
+}
+
+.color-success {
+    color: $brand-success;
+}
+
+.pull-right {
+    float: right!important;
+}
+
+.pull-left {
+    float: left!important;
+}
+
+.hide {
+    display: none!important;
+}
+
+.disabled {
+    color: #666 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+
+ul.inline {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    & > .item {
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+}
+
+.btn {
+    padding: 8px 10px;
+    background: #fff;
+    border: 1px solid #DEDEDE;
+    letter-spacing: 4px;
+    border-radius: 2px;
+    outline: none;
+
+    &.btn-block {
+        width: 100%;
+    }
+
+    &.btn-primary {
+        background-color: #47B7F9;
+        color: #fff;
+        border-color: #3192CC;
+    }
+}
+
+.fade-transition {
+    transition: opacity .4s ease;
+}
+
+/* .expand-enter 定义进入的开始状态 */
+/* .expand-leave 定义离开的结束状态 */
+.fade-enter,
+.fade-leave {
+    opacity: 0;
+}
+

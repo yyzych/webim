@@ -1,0 +1,44 @@
+users = [{
+    _id: '',
+    username: 'yechenhui',
+    password: '123456',
+    avatar: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4191251409,1553975815&fm=116&gp=0.jpg'
+}];
+
+friends = [{
+    _id: '',
+    author: '',
+    relate: '',
+    tag: '',
+    remark: ''
+}];
+
+// 所有的聊天记录表，存本地但支持上传
+records = [{
+    _id: '',
+    author: '',
+    contacter: ''
+}];
+
+// 所有的消息表，存本地支持上传
+messages = [{
+    _id: '',
+    recordId: '',
+    sender: '',
+    receiver: '',
+    date: '',
+    content: ''
+}];
+
+
+[{
+    author: '56f39cdf6507d86e04fc2104',
+    relate: '56f399946507d86e04fc2102',
+    tag: '',
+    remark: '凡若云'
+}, {
+    author: '56f399946507d86e04fc2102',
+    realte: '56f39cdf6507d86e04fc2104',
+    tag: '',
+    remark: '叶陈辉'
+}]

@@ -1,0 +1,40 @@
+.form {
+    padding: 50px 20px;
+
+    .btm {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+
+        @include translateX(-50%);
+
+        a {
+            color: #D6AF7D;
+            padding: 0 5px;
+        }
+    }
+}
+
+.field-row {
+    margin: 25px 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    .field-title {
+        margin-bottom: 6px;
+        color: #666;
+    }
+
+    .field-value input {
+        width: 100%;
+        padding: 4px 6px;
+        box-sizing: border-box;
+        outline: none;
+        border: 1px solid #eee;
+        height: 28px;
+        border-radius: 2px;
+        -webkit-appearance: none;
+    }
+}

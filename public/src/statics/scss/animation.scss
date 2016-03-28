@@ -1,0 +1,30 @@
+// 动画
+
+@keyframes fadein {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeout {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.anim-fadein {
+    -webkit-animation: fadeIn .4s linear;
+    -o-animation: fadeIn .4s linear;
+    animation: fadeIn .4s linear;
+}
+
+.anim-fadeout {
+    -webkit-animation: fadeOut .4s linear;
+    -o-animation: fadeOut .4s linear;
+    animation: fadeOut .4s linear;
+}
