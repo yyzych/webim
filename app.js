@@ -5,7 +5,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
-var busboy = require('connect-busboy');
 
 var app = express();
 
@@ -13,6 +12,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 var routes = require('./routes/index');
+
 
 app.use(session({
   secret: 'secret',
@@ -23,7 +23,6 @@ app.use(session({
       }
 }));
 
-app.use(busboy());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

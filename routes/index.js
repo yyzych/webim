@@ -1,145 +1,10 @@
 var fs = require('fs');
 var path = require('path');
 var express = require('express');
-
-var mongodb = require('mongodb');
-var MongoClient = mongodb.MongoClient;
-var ObjectId = mongodb.ObjectId;
+var User = require('../models/user');
+var Busboy = require('busboy');
 
 var router = express.Router();
-
-var mongoHelper = {
-    db: null,
-    db_url: 'mongodb://localhost:27017/webim',
-    connect: function() {
-        var self = this;
-        MongoClient.connect(this.db_url, function(err, db) {
-            if(err) {
-                console.log('db can not connect!');
-                process.exit(1);
-            }else {
-                console.log('db connect success!');
-                self.db = db;
-            }
-        });
-    },
-    close: function() {
-        this.db && this.db.close();
-    }
-};
-
-mongoHelper.connect();
-
-function User(userId) {
-    this.userId = userId;
-}
-
-// 根据ID获取个人信息
-User.prototype.fetch = function() {
-    var db = mongoHelper.db;
-    var userId = this.userId;
-
-    var promise = new Promise(function(resolve, reject) {
-        var collection = db.collection('users');
-        collection.find({_id: ObjectId(userId)}).toArray(function(err, docs) {
-            if(err) {
-                reject(err);
-            }else {
-                resolve(docs[0]);
-            }
-        });
-    });
-
-    return promise;
-};
-
-// 获取朋友列表
-User.prototype.getFriends = function() {
-    var db = mongoHelper.db;
-    var author = this.userId;
-    var friends;
-
-    var promise = new Promise(function(resolve, reject) {
-        var collection = db.collection('friends');
-        collection.find({author: author}).toArray(function(err, docs) {
-            if(err) {
-                reject(err);
-            }else {
-                friends = docs;
-                resolve(docs);
-            }
-        });
-    });
-
-    promise = promise
-        .then(function(docs) {
-            // 立即执行，返回的是不是就是p呢??
-            var p = Promise.all(docs.map(function(item) {
-                return new User(item.relate).fetch();
-            }));
-            return p;
-        })
-        .then(function(profiles) {
-            var res = [];
-            if(!friends || friends.length<1) 
-                return res;
-
-            for(var i=0; i<friends.length; i++) {
-                for(var j=0; j<profiles.length; j++) {
-                    if(!profiles[j])
-                        continue;
-                    if(friends[i].relate === profiles[j]._id + '') {
-                        var item = {
-                            author: author,
-                            relate: friends[i].relate,
-                            remark: friends[i].remark,
-                            avatar: profiles[j].avatar
-                        };
-                        res.push(item);
-                    }
-                }
-            }
-
-            return res;
-        });
-
-    return promise;
-}
-
-User.prototype.login = function(u, p) {
-    var db = mongoHelper.db;
-    var promise = new Promise(function(resolve, reject) {
-        var collection = db.collection('users');
-        collection.find({username:u, password: p}).toArray(function(err, docs) {
-            if(err) {
-                reject(err);
-            }else {
-                resolve(docs);
-            }
-        });
-    });
-    return promise;
-}
-
-User.prototype.sign = function(u, p, a) {
-    var db = mongoHelper.db;
-    var promise = new Promise(function(resolve, reject) {
-        var collection = db.collection('users');
-        collection.insertMany([{
-            username: u,
-            password: p,
-            avatar: a
-        }], function(err, result) {
-            if(err) {
-                reject(err);
-            }else {
-                resolve(result);
-            }
-        });
-    });
-    return promise;
-}
-
 
 function authorize(req, res, next) {
     var sess = req.session;
@@ -164,6 +29,29 @@ router.get('/chat', function(req, res, next) {
     res.render('chat', {
         title: '聊天界面'
     });
+});
+
+router.get('/records', function(req, res) {
+    var userId = req.query.userId;
+
+    if(!userId) {
+        res.json({
+            code: -1
+        });
+        return;
+    }
+
+    var promise = new User(userId).getRecords();
+
+    promise.then(function(records) {
+        res.json({
+            code: 0,
+            data: {
+                records: records
+            }
+        });
+    });
+
 });
 
 router.get('/users', function(req, res) {
@@ -195,6 +83,41 @@ router.get('/users', function(req, res) {
     });
 });
 
+router.post('/friend',function(req, res) {
+    var friendName = req.body.friendName,
+        author = req.body.author;
+
+    if(!friendName || !author) {
+        res.json({
+            code: -1
+        });
+        return;
+    }
+
+    var promise = new User(author).createFriend(friendName);
+
+    promise.then(function(friend) {
+        if(friend) {
+            res.json({
+                code: 0,
+                data: {
+                    friend: friend
+                }
+            });
+        }else {
+            res.json({
+                code: -1,
+                message: '系统出现问题请稍候重试'
+            });
+        }
+    }).catch(function(error) {
+        res.json({
+            code: -1,
+            message: error.message
+        });
+    });
+});
+
 router.get('/friends', function(req,res) {
     var userId = req.query.userId;
 
@@ -214,7 +137,7 @@ router.get('/friends', function(req,res) {
                 data: {
                     friends: docs
                 }
-            })
+            });
         })
         .catch(function(err) {
             console.log(err);
@@ -237,7 +160,7 @@ router.post('/login', function(req, res, next) {
         return;
     }
 
-    var promise = new User().login(username, password);
+    var promise = User.login(username, password);
 
     promise
         .then(function(docs) {
@@ -266,44 +189,65 @@ router.post('/login', function(req, res, next) {
         });
 });
 
-router.post('/sign', function(req, res, next) {
-    var attr = {};
+function writeFile(file, oriFileName, saveFileName) {
+    var ext = ('.' + oriFileName.split('.')[1]) || '';
+    var savename = saveFileName + ext;
+    var filePath = path.join(__dirname, '../public/uploads/', savename);
+    file.pipe(fs.createWriteStream(filePath));
+    return path.join('/uploads', savename);
+}
 
-    // 读取其他字段
-    req.busboy.on('field', function(key, value) {
-        if((key == 'username' || key == 'password') && !value) {
+router.post('/sign', function(req, res) {
+    var body = {};
+
+    var busboy = new Busboy({
+        headers: req.headers
+    });
+
+    busboy.on('field', function(fieldname, val) {
+        body[fieldname] = val;
+    });
+
+    busboy.on('file', function(filedname, file, filename) {
+        body[filedname] = {
+            filename: filename,
+            file: file
+        };
+        // file.resume();
+
+        if(!body.username || !body.password) {
             res.json({
                 code: 2,
                 message: '用户名或密码不能为空'
             });
             return;
         }
-        attr[key] = value;
-    });
 
-    // 读取文件
-    req.busboy.on('file', function(filedname, file, filename) {
-        var ext = ('.' + filename.split('.')[1]) || '';
-        var savename = Date.now() + ext;
-        var upload_path = path.join(__dirname, '../public/uploads/');
-        var filePath    = path.join(upload_path, savename);
-        file.pipe(fs.createWriteStream(filePath));
-        attr.avatar = path.join('/uploads', savename);
-    });
-
-    req.busboy.on('finish', function() {
-        var promise = new User().sign(attr.username, attr.password, attr.avatar);
+        var promise = User.exist(body.username);
 
         promise
-            .then(function(result) {
-                var user = result.ops[0];
-                req.session.userId = user._id;
-                res.json({
-                    code: 0,
-                    data: {
-                        userId: user._id
-                    }
-                });
+            .then(function(notExist) {
+                if(notExist) {
+                    body.avatar = writeFile(body.avatar.file, body.avatar.filename, body.username);
+                    var p = User.createUser(body.username, body.password, body.avatar);
+                    return p;
+                }else {
+                    res.json({
+                        code: 1,
+                        message: '用户名已存在'
+                    });
+                }
+            })
+            .then(function(user) {
+                if(user) {
+                    req.session.userId = user._id;
+                    res.json({
+                        code: 0,
+                        data: {
+                            userId: user._id
+                        }
+                    });
+                }
             })
             .catch(function(err) {
                 console.log(err);
@@ -314,7 +258,51 @@ router.post('/sign', function(req, res, next) {
             });
     });
 
-    req.pipe(req.busboy);
+    // busboy.on('finish', function() {
+    //     if(!body.username || !body.password) {
+    //         res.json({
+    //             code: 2,
+    //             message: '用户名或密码不能为空'
+    //         });
+    //         return;
+    //     }
+
+    //     var promise = User.exist(body.username);
+
+    //     promise
+    //         .then(function(notExist) {
+    //             if(notExist) {
+    //                 body.avatar = writeFile(body.avatar.file, body.avatar.filename, body.username);
+    //                 var p = User.createUser(body.username, body.password, body.avatar);
+    //                 return p;
+    //             }else {
+    //                 res.json({
+    //                     code: 1,
+    //                     message: '用户名已存在'
+    //                 });
+    //             }
+    //         })
+    //         .then(function(user) {
+    //             if(user) {
+    //                 req.session.userId = user._id;
+    //                 res.json({
+    //                     code: 0,
+    //                     data: {
+    //                         userId: user._id
+    //                     }
+    //                 });
+    //             }
+    //         })
+    //         .catch(function(err) {
+    //             console.log(err);
+    //             res.json({
+    //                 code: -1,
+    //                 message: '系统出现问题请稍候重试'
+    //             });
+    //         });
+    // });
+
+    req.pipe(busboy);
 });
 
 module.exports = router;

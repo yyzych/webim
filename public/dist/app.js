@@ -12592,7 +12592,7 @@
 	
 	
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n/*! normalize.css v3.0.2 | MIT License | git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n@-webkit-keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.anim-fadein {\n  -webkit-animation: fadeIn .4s linear;\n  animation: fadeIn .4s linear; }\n\n.anim-fadeout {\n  -webkit-animation: fadeOut .4s linear;\n  animation: fadeOut .4s linear; }\n\n* {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-size: 14px;\n  font-family: \"Microsoft Yahei\", \"SimHei\", \"Arial\";\n  background-color: #fff; }\n\na {\n  color: inherit;\n  text-decoration: none; }\n\nul {\n  list-style: none; }\n\nimg {\n  vertical-align: middle;\n  border: none; }\n\n.color-danger {\n  color: #e8415f; }\n\n.color-primary {\n  color: #3a89c9; }\n\n.color-dim {\n  color: #999; }\n\n.color-warning {\n  color: #f8a13f; }\n\n.color-success {\n  color: #61c155; }\n\n.pull-right {\n  float: right !important; }\n\n.pull-left {\n  float: left !important; }\n\n.hide {\n  display: none !important; }\n\n.disabled {\n  color: #666 !important;\n  text-decoration: none !important;\n  cursor: default !important; }\n\nul.inline {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ul.inline > .item {\n    float: left;\n    margin: 0 10px 10px 0; }\n\n.btn {\n  padding: 8px 10px;\n  background: #fff;\n  border: 1px solid #DEDEDE;\n  letter-spacing: 4px;\n  border-radius: 2px;\n  outline: none; }\n  .btn.btn-block {\n    width: 100%; }\n  .btn.btn-primary {\n    background-color: #47B7F9;\n    color: #fff;\n    border-color: #3192CC; }\n\n.fade-transition {\n  -webkit-transition: opacity .4s ease;\n  transition: opacity .4s ease; }\n\n/* .expand-enter 定义进入的开始状态 */\n/* .expand-leave 定义离开的结束状态 */\n.fade-enter,\n.fade-leave {\n  opacity: 0; }\n\n.icon {\n  display: inline-block;\n  *display: inline;\n  *zoom: 1;\n  height: 24px;\n  width: 24px;\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.icon-back {\n  border: 2px solid #fff;\n  border-right: none;\n  border-bottom: none;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg); }\n\n.icon-plus {\n  position: relative; }\n  .icon-plus:before, .icon-plus:after {\n    content: '';\n    display: block;\n    position: absolute;\n    background-color: #fff; }\n  .icon-plus:before {\n    height: 100%;\n    width: 2px;\n    left: 50%;\n    margin-left: -1px; }\n  .icon-plus:after {\n    width: 100%;\n    height: 2px;\n    top: 50%;\n    margin-top: -1px; }\n", "", {"version":3,"sources":["/./src/views/app.vue"],"names":[],"mappings":"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","file":"app.vue","sourcesContent":["@charset \"UTF-8\";\n/*! normalize.css v3.0.2 | MIT License | git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.anim-fadein {\n  -webkit-animation: fadeIn .4s linear;\n  -o-animation: fadeIn .4s linear;\n  animation: fadeIn .4s linear; }\n\n.anim-fadeout {\n  -webkit-animation: fadeOut .4s linear;\n  -o-animation: fadeOut .4s linear;\n  animation: fadeOut .4s linear; }\n\n* {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-size: 14px;\n  font-family: \"Microsoft Yahei\", \"SimHei\", \"Arial\";\n  background-color: #fff; }\n\na {\n  color: inherit;\n  text-decoration: none; }\n\nul {\n  list-style: none; }\n\nimg {\n  vertical-align: middle;\n  border: none; }\n\n.color-danger {\n  color: #e8415f; }\n\n.color-primary {\n  color: #3a89c9; }\n\n.color-dim {\n  color: #999; }\n\n.color-warning {\n  color: #f8a13f; }\n\n.color-success {\n  color: #61c155; }\n\n.pull-right {\n  float: right !important; }\n\n.pull-left {\n  float: left !important; }\n\n.hide {\n  display: none !important; }\n\n.disabled {\n  color: #666 !important;\n  text-decoration: none !important;\n  cursor: default !important; }\n\nul.inline {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ul.inline > .item {\n    float: left;\n    margin: 0 10px 10px 0; }\n\n.btn {\n  padding: 8px 10px;\n  background: #fff;\n  border: 1px solid #DEDEDE;\n  letter-spacing: 4px;\n  border-radius: 2px;\n  outline: none; }\n  .btn.btn-block {\n    width: 100%; }\n  .btn.btn-primary {\n    background-color: #47B7F9;\n    color: #fff;\n    border-color: #3192CC; }\n\n.fade-transition {\n  transition: opacity .4s ease; }\n\n/* .expand-enter 定义进入的开始状态 */\n/* .expand-leave 定义离开的结束状态 */\n.fade-enter,\n.fade-leave {\n  opacity: 0; }\n\n.icon {\n  display: inline-block;\n  *display: inline;\n  *zoom: 1;\n  height: 24px;\n  width: 24px;\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.icon-back {\n  border: 2px solid #fff;\n  border-right: none;\n  border-bottom: none;\n  -webkit-transform: rotate(-45deg);\n  -moz-transform: rotate(-45deg);\n  -ms-transform: rotate(-45deg);\n  -o-transform: rotate(-45deg);\n  transform: rotate(-45deg); }\n\n.icon-plus {\n  position: relative; }\n  .icon-plus:before, .icon-plus:after {\n    content: '';\n    display: block;\n    position: absolute;\n    background-color: #fff; }\n  .icon-plus:before {\n    height: 100%;\n    width: 2px;\n    left: 50%;\n    margin-left: -1px; }\n  .icon-plus:after {\n    width: 100%;\n    height: 2px;\n    top: 50%;\n    margin-top: -1px; }\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "@charset \"UTF-8\";\n/*! normalize.css v3.0.2 | MIT License | git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n@-webkit-keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.anim-fadein {\n  -webkit-animation: fadeIn .4s linear;\n  animation: fadeIn .4s linear; }\n\n.anim-fadeout {\n  -webkit-animation: fadeOut .4s linear;\n  animation: fadeOut .4s linear; }\n\n* {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-size: 14px;\n  font-family: \"Microsoft Yahei\", \"SimHei\", \"Arial\";\n  background-color: #fff; }\n\na {\n  color: inherit;\n  text-decoration: none; }\n\nul {\n  list-style: none; }\n\nimg {\n  vertical-align: middle;\n  border: none; }\n\n.color-danger {\n  color: #e8415f; }\n\n.color-primary {\n  color: #3a89c9; }\n\n.color-dim {\n  color: #999; }\n\n.color-warning {\n  color: #f8a13f; }\n\n.color-success {\n  color: #61c155; }\n\n.pull-right {\n  float: right !important; }\n\n.pull-left {\n  float: left !important; }\n\n.hide {\n  display: none !important; }\n\n.disabled {\n  color: #666 !important;\n  text-decoration: none !important;\n  cursor: default !important; }\n\nul.inline {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ul.inline > .item {\n    float: left;\n    margin: 0 10px 10px 0; }\n\n.btn {\n  padding: 8px 10px;\n  background: #fff;\n  border: 1px solid #DEDEDE;\n  border-radius: 2px;\n  outline: none;\n  min-width: 70px; }\n  .btn.btn-block {\n    width: 100%; }\n  .btn.btn-primary {\n    background-color: #47B7F9;\n    color: #fff;\n    border-color: #3192CC; }\n\n.fade-transition {\n  -webkit-transition: opacity .4s ease;\n  transition: opacity .4s ease; }\n\n/* .expand-enter 定义进入的开始状态 */\n/* .expand-leave 定义离开的结束状态 */\n.fade-enter,\n.fade-leave {\n  opacity: 0; }\n\n.icon {\n  display: inline-block;\n  *display: inline;\n  *zoom: 1;\n  height: 24px;\n  width: 24px;\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.icon-back {\n  border: 2px solid #fff;\n  border-right: none;\n  border-bottom: none;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg); }\n\n.icon-plus {\n  position: relative; }\n  .icon-plus:before, .icon-plus:after {\n    content: '';\n    display: block;\n    position: absolute;\n    background-color: #fff; }\n  .icon-plus:before {\n    height: 100%;\n    width: 2px;\n    left: 50%;\n    margin-left: -1px; }\n  .icon-plus:after {\n    width: 100%;\n    height: 2px;\n    top: 50%;\n    margin-top: -1px; }\n", "", {"version":3,"sources":["/./src/views/app.vue"],"names":[],"mappings":"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","file":"app.vue","sourcesContent":["@charset \"UTF-8\";\n/*! normalize.css v3.0.2 | MIT License | git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.anim-fadein {\n  -webkit-animation: fadeIn .4s linear;\n  -o-animation: fadeIn .4s linear;\n  animation: fadeIn .4s linear; }\n\n.anim-fadeout {\n  -webkit-animation: fadeOut .4s linear;\n  -o-animation: fadeOut .4s linear;\n  animation: fadeOut .4s linear; }\n\n* {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-size: 14px;\n  font-family: \"Microsoft Yahei\", \"SimHei\", \"Arial\";\n  background-color: #fff; }\n\na {\n  color: inherit;\n  text-decoration: none; }\n\nul {\n  list-style: none; }\n\nimg {\n  vertical-align: middle;\n  border: none; }\n\n.color-danger {\n  color: #e8415f; }\n\n.color-primary {\n  color: #3a89c9; }\n\n.color-dim {\n  color: #999; }\n\n.color-warning {\n  color: #f8a13f; }\n\n.color-success {\n  color: #61c155; }\n\n.pull-right {\n  float: right !important; }\n\n.pull-left {\n  float: left !important; }\n\n.hide {\n  display: none !important; }\n\n.disabled {\n  color: #666 !important;\n  text-decoration: none !important;\n  cursor: default !important; }\n\nul.inline {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ul.inline > .item {\n    float: left;\n    margin: 0 10px 10px 0; }\n\n.btn {\n  padding: 8px 10px;\n  background: #fff;\n  border: 1px solid #DEDEDE;\n  border-radius: 2px;\n  outline: none;\n  min-width: 70px; }\n  .btn.btn-block {\n    width: 100%; }\n  .btn.btn-primary {\n    background-color: #47B7F9;\n    color: #fff;\n    border-color: #3192CC; }\n\n.fade-transition {\n  transition: opacity .4s ease; }\n\n/* .expand-enter 定义进入的开始状态 */\n/* .expand-leave 定义离开的结束状态 */\n.fade-enter,\n.fade-leave {\n  opacity: 0; }\n\n.icon {\n  display: inline-block;\n  *display: inline;\n  *zoom: 1;\n  height: 24px;\n  width: 24px;\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.icon-back {\n  border: 2px solid #fff;\n  border-right: none;\n  border-bottom: none;\n  -webkit-transform: rotate(-45deg);\n  -moz-transform: rotate(-45deg);\n  -ms-transform: rotate(-45deg);\n  -o-transform: rotate(-45deg);\n  transform: rotate(-45deg); }\n\n.icon-plus {\n  position: relative; }\n  .icon-plus:before, .icon-plus:after {\n    content: '';\n    display: block;\n    position: absolute;\n    background-color: #fff; }\n  .icon-plus:before {\n    height: 100%;\n    width: 2px;\n    left: 50%;\n    margin-left: -1px; }\n  .icon-plus:after {\n    width: 100%;\n    height: 2px;\n    top: 50%;\n    margin-top: -1px; }\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -14690,8 +14690,8 @@
 	var LoginView = __webpack_require__(73);
 	var SignView = __webpack_require__(83);
 	var RecordView = __webpack_require__(88);
-	var ChatView = __webpack_require__(111);
-	var FriendView = __webpack_require__(176);
+	var ChatView = __webpack_require__(116);
+	var FriendView = __webpack_require__(181);
 	
 	module.exports = function (router) {
 	    router.map({
@@ -15114,7 +15114,7 @@
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/views/record.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(110)
+	__vue_template__ = __webpack_require__(115)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -15141,7 +15141,7 @@
 	var auth = __webpack_require__(10);
 	var recordStore = __webpack_require__(90);
 	var HeaderView = __webpack_require__(100);
-	var RecordItemView = __webpack_require__(105);
+	var RecordItemView = __webpack_require__(110);
 	
 	module.exports = {
 	    name: 'RecordView',
@@ -15189,8 +15189,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var $ = __webpack_require__(66);
-	var _ = __webpack_require__(94);
-	var userStore = __webpack_require__(95);
+	var _ = __webpack_require__(93);
+	var userStore = __webpack_require__(94);
 	
 	var ls_key_records = 'records';
 	var ls_key_messages = 'messages';
@@ -15252,35 +15252,19 @@
 	    return _.where(messages, { recordId: record._id });
 	};
 	
-	// recordStore.fetch = function(author) {
-	//     var promise = new Promise(function(resolve, reject) {
-	//         $.get('/records', {userId: author}, function(resp) {
-	//             resolve(resp.data.records);
-	//         });
-	//     });
-	//     return promise;
-	// }
-	
-	recordStore.fetch = function (author) {
-	    var records = this.getRecordList(author);
-	    // 这么写的话每一个item都得会有有个请求
-	    var promise = _promise2.default.all(records.map(function (item) {
-	        return userStore.fetch(item.author);
-	    }));
-	    promise = promise.then(function (contacters) {
-	        var res = [];
-	        var len = records.length;
-	        for (var i = 0; i < len; i++) {
-	            var record = records[i];
-	            for (var j = 0; j < len; j++) {
-	                var contacter = contacters[j];
-	                if (record.contacter === contacters._id) {
-	                    res.push(_.extend({}, record, contacter));
-	                    break;
-	                }
-	            }
-	        }
-	        return res;
+	/**
+	 * 获取用户的所有聊天记录列表／获取用户与特定联系人的聊天记录信息
+	 * @param  {string} author 用户id
+	 * @param  {string} relate 联系人id
+	 * @return {Promise}
+	 */
+	recordStore.fetch = function (author, relate) {
+	    var query = { userId: author };
+	    relate && (query.relate = relate);
+	    var promise = new _promise2.default(function (resolve, reject) {
+	        $.get('/records', query, function (resp) {
+	            resolve(resp.data.records);
+	        });
 	    });
 	    return promise;
 	};
@@ -15304,310 +15288,6 @@
 
 /***/ },
 /* 93 */
-/***/ function(module, exports) {
-
-	// Copyright Joyent, Inc. and other Node contributors.
-	//
-	// Permission is hereby granted, free of charge, to any person obtaining a
-	// copy of this software and associated documentation files (the
-	// "Software"), to deal in the Software without restriction, including
-	// without limitation the rights to use, copy, modify, merge, publish,
-	// distribute, sublicense, and/or sell copies of the Software, and to permit
-	// persons to whom the Software is furnished to do so, subject to the
-	// following conditions:
-	//
-	// The above copyright notice and this permission notice shall be included
-	// in all copies or substantial portions of the Software.
-	//
-	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-	// USE OR OTHER DEALINGS IN THE SOFTWARE.
-	
-	function EventEmitter() {
-	  this._events = this._events || {};
-	  this._maxListeners = this._maxListeners || undefined;
-	}
-	module.exports = EventEmitter;
-	
-	// Backwards-compat with node 0.10.x
-	EventEmitter.EventEmitter = EventEmitter;
-	
-	EventEmitter.prototype._events = undefined;
-	EventEmitter.prototype._maxListeners = undefined;
-	
-	// By default EventEmitters will print a warning if more than 10 listeners are
-	// added to it. This is a useful default which helps finding memory leaks.
-	EventEmitter.defaultMaxListeners = 10;
-	
-	// Obviously not all Emitters should be limited to 10. This function allows
-	// that to be increased. Set to zero for unlimited.
-	EventEmitter.prototype.setMaxListeners = function(n) {
-	  if (!isNumber(n) || n < 0 || isNaN(n))
-	    throw TypeError('n must be a positive number');
-	  this._maxListeners = n;
-	  return this;
-	};
-	
-	EventEmitter.prototype.emit = function(type) {
-	  var er, handler, len, args, i, listeners;
-	
-	  if (!this._events)
-	    this._events = {};
-	
-	  // If there is no 'error' event listener then throw.
-	  if (type === 'error') {
-	    if (!this._events.error ||
-	        (isObject(this._events.error) && !this._events.error.length)) {
-	      er = arguments[1];
-	      if (er instanceof Error) {
-	        throw er; // Unhandled 'error' event
-	      }
-	      throw TypeError('Uncaught, unspecified "error" event.');
-	    }
-	  }
-	
-	  handler = this._events[type];
-	
-	  if (isUndefined(handler))
-	    return false;
-	
-	  if (isFunction(handler)) {
-	    switch (arguments.length) {
-	      // fast cases
-	      case 1:
-	        handler.call(this);
-	        break;
-	      case 2:
-	        handler.call(this, arguments[1]);
-	        break;
-	      case 3:
-	        handler.call(this, arguments[1], arguments[2]);
-	        break;
-	      // slower
-	      default:
-	        args = Array.prototype.slice.call(arguments, 1);
-	        handler.apply(this, args);
-	    }
-	  } else if (isObject(handler)) {
-	    args = Array.prototype.slice.call(arguments, 1);
-	    listeners = handler.slice();
-	    len = listeners.length;
-	    for (i = 0; i < len; i++)
-	      listeners[i].apply(this, args);
-	  }
-	
-	  return true;
-	};
-	
-	EventEmitter.prototype.addListener = function(type, listener) {
-	  var m;
-	
-	  if (!isFunction(listener))
-	    throw TypeError('listener must be a function');
-	
-	  if (!this._events)
-	    this._events = {};
-	
-	  // To avoid recursion in the case that type === "newListener"! Before
-	  // adding it to the listeners, first emit "newListener".
-	  if (this._events.newListener)
-	    this.emit('newListener', type,
-	              isFunction(listener.listener) ?
-	              listener.listener : listener);
-	
-	  if (!this._events[type])
-	    // Optimize the case of one listener. Don't need the extra array object.
-	    this._events[type] = listener;
-	  else if (isObject(this._events[type]))
-	    // If we've already got an array, just append.
-	    this._events[type].push(listener);
-	  else
-	    // Adding the second element, need to change to array.
-	    this._events[type] = [this._events[type], listener];
-	
-	  // Check for listener leak
-	  if (isObject(this._events[type]) && !this._events[type].warned) {
-	    if (!isUndefined(this._maxListeners)) {
-	      m = this._maxListeners;
-	    } else {
-	      m = EventEmitter.defaultMaxListeners;
-	    }
-	
-	    if (m && m > 0 && this._events[type].length > m) {
-	      this._events[type].warned = true;
-	      console.error('(node) warning: possible EventEmitter memory ' +
-	                    'leak detected. %d listeners added. ' +
-	                    'Use emitter.setMaxListeners() to increase limit.',
-	                    this._events[type].length);
-	      if (typeof console.trace === 'function') {
-	        // not supported in IE 10
-	        console.trace();
-	      }
-	    }
-	  }
-	
-	  return this;
-	};
-	
-	EventEmitter.prototype.on = EventEmitter.prototype.addListener;
-	
-	EventEmitter.prototype.once = function(type, listener) {
-	  if (!isFunction(listener))
-	    throw TypeError('listener must be a function');
-	
-	  var fired = false;
-	
-	  function g() {
-	    this.removeListener(type, g);
-	
-	    if (!fired) {
-	      fired = true;
-	      listener.apply(this, arguments);
-	    }
-	  }
-	
-	  g.listener = listener;
-	  this.on(type, g);
-	
-	  return this;
-	};
-	
-	// emits a 'removeListener' event iff the listener was removed
-	EventEmitter.prototype.removeListener = function(type, listener) {
-	  var list, position, length, i;
-	
-	  if (!isFunction(listener))
-	    throw TypeError('listener must be a function');
-	
-	  if (!this._events || !this._events[type])
-	    return this;
-	
-	  list = this._events[type];
-	  length = list.length;
-	  position = -1;
-	
-	  if (list === listener ||
-	      (isFunction(list.listener) && list.listener === listener)) {
-	    delete this._events[type];
-	    if (this._events.removeListener)
-	      this.emit('removeListener', type, listener);
-	
-	  } else if (isObject(list)) {
-	    for (i = length; i-- > 0;) {
-	      if (list[i] === listener ||
-	          (list[i].listener && list[i].listener === listener)) {
-	        position = i;
-	        break;
-	      }
-	    }
-	
-	    if (position < 0)
-	      return this;
-	
-	    if (list.length === 1) {
-	      list.length = 0;
-	      delete this._events[type];
-	    } else {
-	      list.splice(position, 1);
-	    }
-	
-	    if (this._events.removeListener)
-	      this.emit('removeListener', type, listener);
-	  }
-	
-	  return this;
-	};
-	
-	EventEmitter.prototype.removeAllListeners = function(type) {
-	  var key, listeners;
-	
-	  if (!this._events)
-	    return this;
-	
-	  // not listening for removeListener, no need to emit
-	  if (!this._events.removeListener) {
-	    if (arguments.length === 0)
-	      this._events = {};
-	    else if (this._events[type])
-	      delete this._events[type];
-	    return this;
-	  }
-	
-	  // emit removeListener for all listeners on all events
-	  if (arguments.length === 0) {
-	    for (key in this._events) {
-	      if (key === 'removeListener') continue;
-	      this.removeAllListeners(key);
-	    }
-	    this.removeAllListeners('removeListener');
-	    this._events = {};
-	    return this;
-	  }
-	
-	  listeners = this._events[type];
-	
-	  if (isFunction(listeners)) {
-	    this.removeListener(type, listeners);
-	  } else if (listeners) {
-	    // LIFO order
-	    while (listeners.length)
-	      this.removeListener(type, listeners[listeners.length - 1]);
-	  }
-	  delete this._events[type];
-	
-	  return this;
-	};
-	
-	EventEmitter.prototype.listeners = function(type) {
-	  var ret;
-	  if (!this._events || !this._events[type])
-	    ret = [];
-	  else if (isFunction(this._events[type]))
-	    ret = [this._events[type]];
-	  else
-	    ret = this._events[type].slice();
-	  return ret;
-	};
-	
-	EventEmitter.prototype.listenerCount = function(type) {
-	  if (this._events) {
-	    var evlistener = this._events[type];
-	
-	    if (isFunction(evlistener))
-	      return 1;
-	    else if (evlistener)
-	      return evlistener.length;
-	  }
-	  return 0;
-	};
-	
-	EventEmitter.listenerCount = function(emitter, type) {
-	  return emitter.listenerCount(type);
-	};
-	
-	function isFunction(arg) {
-	  return typeof arg === 'function';
-	}
-	
-	function isNumber(arg) {
-	  return typeof arg === 'number';
-	}
-	
-	function isObject(arg) {
-	  return typeof arg === 'object' && arg !== null;
-	}
-	
-	function isUndefined(arg) {
-	  return arg === void 0;
-	}
-
-
-/***/ },
-/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Underscore.js 1.8.3
@@ -17161,7 +16841,7 @@
 
 
 /***/ },
-/* 95 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -17170,13 +16850,13 @@
 	
 	var _promise2 = _interopRequireDefault(_promise);
 	
-	var _assign = __webpack_require__(96);
+	var _assign = __webpack_require__(95);
 	
 	var _assign2 = _interopRequireDefault(_assign);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var EventEmitter = __webpack_require__(93);
+	var EventEmitter = __webpack_require__(99);
 	var $ = __webpack_require__(66);
 	
 	// 数据的维护都是Vue帮你做的，自己只要操作后台就行
@@ -17196,29 +16876,29 @@
 	module.exports = userStore;
 
 /***/ },
+/* 95 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(96), __esModule: true };
+
+/***/ },
 /* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = { "default": __webpack_require__(97), __esModule: true };
+	__webpack_require__(97);
+	module.exports = __webpack_require__(22).Object.assign;
 
 /***/ },
 /* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(98);
-	module.exports = __webpack_require__(22).Object.assign;
-
-/***/ },
-/* 98 */
-/***/ function(module, exports, __webpack_require__) {
-
 	// 19.1.3.1 Object.assign(target, source)
 	var $export = __webpack_require__(20);
 	
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(99)});
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(98)});
 
 /***/ },
-/* 99 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// 19.1.2.1 Object.assign(target, source, ...)
@@ -17256,6 +16936,310 @@
 	} : Object.assign;
 
 /***/ },
+/* 99 */
+/***/ function(module, exports) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	function EventEmitter() {
+	  this._events = this._events || {};
+	  this._maxListeners = this._maxListeners || undefined;
+	}
+	module.exports = EventEmitter;
+	
+	// Backwards-compat with node 0.10.x
+	EventEmitter.EventEmitter = EventEmitter;
+	
+	EventEmitter.prototype._events = undefined;
+	EventEmitter.prototype._maxListeners = undefined;
+	
+	// By default EventEmitters will print a warning if more than 10 listeners are
+	// added to it. This is a useful default which helps finding memory leaks.
+	EventEmitter.defaultMaxListeners = 10;
+	
+	// Obviously not all Emitters should be limited to 10. This function allows
+	// that to be increased. Set to zero for unlimited.
+	EventEmitter.prototype.setMaxListeners = function(n) {
+	  if (!isNumber(n) || n < 0 || isNaN(n))
+	    throw TypeError('n must be a positive number');
+	  this._maxListeners = n;
+	  return this;
+	};
+	
+	EventEmitter.prototype.emit = function(type) {
+	  var er, handler, len, args, i, listeners;
+	
+	  if (!this._events)
+	    this._events = {};
+	
+	  // If there is no 'error' event listener then throw.
+	  if (type === 'error') {
+	    if (!this._events.error ||
+	        (isObject(this._events.error) && !this._events.error.length)) {
+	      er = arguments[1];
+	      if (er instanceof Error) {
+	        throw er; // Unhandled 'error' event
+	      }
+	      throw TypeError('Uncaught, unspecified "error" event.');
+	    }
+	  }
+	
+	  handler = this._events[type];
+	
+	  if (isUndefined(handler))
+	    return false;
+	
+	  if (isFunction(handler)) {
+	    switch (arguments.length) {
+	      // fast cases
+	      case 1:
+	        handler.call(this);
+	        break;
+	      case 2:
+	        handler.call(this, arguments[1]);
+	        break;
+	      case 3:
+	        handler.call(this, arguments[1], arguments[2]);
+	        break;
+	      // slower
+	      default:
+	        args = Array.prototype.slice.call(arguments, 1);
+	        handler.apply(this, args);
+	    }
+	  } else if (isObject(handler)) {
+	    args = Array.prototype.slice.call(arguments, 1);
+	    listeners = handler.slice();
+	    len = listeners.length;
+	    for (i = 0; i < len; i++)
+	      listeners[i].apply(this, args);
+	  }
+	
+	  return true;
+	};
+	
+	EventEmitter.prototype.addListener = function(type, listener) {
+	  var m;
+	
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  if (!this._events)
+	    this._events = {};
+	
+	  // To avoid recursion in the case that type === "newListener"! Before
+	  // adding it to the listeners, first emit "newListener".
+	  if (this._events.newListener)
+	    this.emit('newListener', type,
+	              isFunction(listener.listener) ?
+	              listener.listener : listener);
+	
+	  if (!this._events[type])
+	    // Optimize the case of one listener. Don't need the extra array object.
+	    this._events[type] = listener;
+	  else if (isObject(this._events[type]))
+	    // If we've already got an array, just append.
+	    this._events[type].push(listener);
+	  else
+	    // Adding the second element, need to change to array.
+	    this._events[type] = [this._events[type], listener];
+	
+	  // Check for listener leak
+	  if (isObject(this._events[type]) && !this._events[type].warned) {
+	    if (!isUndefined(this._maxListeners)) {
+	      m = this._maxListeners;
+	    } else {
+	      m = EventEmitter.defaultMaxListeners;
+	    }
+	
+	    if (m && m > 0 && this._events[type].length > m) {
+	      this._events[type].warned = true;
+	      console.error('(node) warning: possible EventEmitter memory ' +
+	                    'leak detected. %d listeners added. ' +
+	                    'Use emitter.setMaxListeners() to increase limit.',
+	                    this._events[type].length);
+	      if (typeof console.trace === 'function') {
+	        // not supported in IE 10
+	        console.trace();
+	      }
+	    }
+	  }
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.on = EventEmitter.prototype.addListener;
+	
+	EventEmitter.prototype.once = function(type, listener) {
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  var fired = false;
+	
+	  function g() {
+	    this.removeListener(type, g);
+	
+	    if (!fired) {
+	      fired = true;
+	      listener.apply(this, arguments);
+	    }
+	  }
+	
+	  g.listener = listener;
+	  this.on(type, g);
+	
+	  return this;
+	};
+	
+	// emits a 'removeListener' event iff the listener was removed
+	EventEmitter.prototype.removeListener = function(type, listener) {
+	  var list, position, length, i;
+	
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  if (!this._events || !this._events[type])
+	    return this;
+	
+	  list = this._events[type];
+	  length = list.length;
+	  position = -1;
+	
+	  if (list === listener ||
+	      (isFunction(list.listener) && list.listener === listener)) {
+	    delete this._events[type];
+	    if (this._events.removeListener)
+	      this.emit('removeListener', type, listener);
+	
+	  } else if (isObject(list)) {
+	    for (i = length; i-- > 0;) {
+	      if (list[i] === listener ||
+	          (list[i].listener && list[i].listener === listener)) {
+	        position = i;
+	        break;
+	      }
+	    }
+	
+	    if (position < 0)
+	      return this;
+	
+	    if (list.length === 1) {
+	      list.length = 0;
+	      delete this._events[type];
+	    } else {
+	      list.splice(position, 1);
+	    }
+	
+	    if (this._events.removeListener)
+	      this.emit('removeListener', type, listener);
+	  }
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.removeAllListeners = function(type) {
+	  var key, listeners;
+	
+	  if (!this._events)
+	    return this;
+	
+	  // not listening for removeListener, no need to emit
+	  if (!this._events.removeListener) {
+	    if (arguments.length === 0)
+	      this._events = {};
+	    else if (this._events[type])
+	      delete this._events[type];
+	    return this;
+	  }
+	
+	  // emit removeListener for all listeners on all events
+	  if (arguments.length === 0) {
+	    for (key in this._events) {
+	      if (key === 'removeListener') continue;
+	      this.removeAllListeners(key);
+	    }
+	    this.removeAllListeners('removeListener');
+	    this._events = {};
+	    return this;
+	  }
+	
+	  listeners = this._events[type];
+	
+	  if (isFunction(listeners)) {
+	    this.removeListener(type, listeners);
+	  } else if (listeners) {
+	    // LIFO order
+	    while (listeners.length)
+	      this.removeListener(type, listeners[listeners.length - 1]);
+	  }
+	  delete this._events[type];
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.listeners = function(type) {
+	  var ret;
+	  if (!this._events || !this._events[type])
+	    ret = [];
+	  else if (isFunction(this._events[type]))
+	    ret = [this._events[type]];
+	  else
+	    ret = this._events[type].slice();
+	  return ret;
+	};
+	
+	EventEmitter.prototype.listenerCount = function(type) {
+	  if (this._events) {
+	    var evlistener = this._events[type];
+	
+	    if (isFunction(evlistener))
+	      return 1;
+	    else if (evlistener)
+	      return evlistener.length;
+	  }
+	  return 0;
+	};
+	
+	EventEmitter.listenerCount = function(emitter, type) {
+	  return emitter.listenerCount(type);
+	};
+	
+	function isFunction(arg) {
+	  return typeof arg === 'function';
+	}
+	
+	function isNumber(arg) {
+	  return typeof arg === 'number';
+	}
+	
+	function isObject(arg) {
+	  return typeof arg === 'object' && arg !== null;
+	}
+	
+	function isUndefined(arg) {
+	  return arg === void 0;
+	}
+
+
+/***/ },
 /* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -17266,7 +17250,7 @@
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/header.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(104)
+	__vue_template__ = __webpack_require__(109)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -17330,7 +17314,9 @@
 
 	'use strict';
 	
+	var Vue = __webpack_require__(1);
 	var auth = __webpack_require__(10);
+	var friendStore = __webpack_require__(185);
 	
 	module.exports = {
 	    name: 'Header',
@@ -17339,9 +17325,18 @@
 	        pageType: String,
 	        refer: String
 	    },
+	    components: {
+	        'm-modal': __webpack_require__(104)
+	    },
 	    data: function data() {
 	        return {
-	            open: false
+	            open: false,
+	
+	            modal: {
+	                show: false,
+	                friendName: '',
+	                popupTip: ''
+	            }
 	        };
 	    },
 	    methods: {
@@ -17357,31 +17352,163 @@
 	        },
 	        onClickCancel: function onClickCancel() {
 	            this.$route.router.go(this.refer);
+	        },
+	        onClickAddFri: function onClickAddFri() {
+	            this.open = false;
+	            this.modal.show = true;
+	        },
+	        onModalSure: function onModalSure() {
+	            var _this = this;
+	
+	            if (!this.modal.friendName) return;
+	            var p = friendStore.createFriend(auth.user.userId, this.modal.friendName);
+	            p.then(function (resp) {
+	                return _this.$route.router.go('./friend');
+	            }).catch(function (resp) {
+	                _this.modal.popupTip = resp.message;
+	            });
 	        }
 	    },
 	    detached: function detached() {
 	        this.open = false;
+	        this.modal.show = false;
+	    },
+	    directives: {
+	        focus: function focus(value) {
+	            var _this2 = this;
+	
+	            if (value) {
+	                Vue.nextTick(function () {
+	                    _this2.el.focus();
+	                });
+	            }
+	        }
 	    }
 	};
 
 /***/ },
 /* 104 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "\n<template v-if=\"pageType === 'record'\">\n    <header class=\"header\">\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n        <a class=\"opt right plus\" href=\"./chat\" @click.prevent=\"onClickPlus\">\n            <i class=\"icon icon-plus\"></i>\n        </a>\n    </header>\n    <div class=\"dropmenu\" v-show=\"open\">\n        <ul class=\"menus\">\n            <li class=\"menu-item\" v-link=\"'friend'\">\n                <a>新建聊天</a>\n            </li>\n            <li class=\"menu-item\">\n                <a>添加朋友</a>\n            </li>\n            <li class=\"menu-item\" @click='onClickLogout'>\n                <a>退出</a>\n            </li>\n        </ul>\n    </div>\n    <div class=\"mask\" @click=\"onClickMask\" v-show=\"open\"></div>\n</template>\n\n<template v-if=\"pageType === 'friend'\">\n    <header class=\"header\">\n        <a class=\"opt left cancel\" @click='onClickCancel'>\n            取消\n        </a>\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n    </header>\n</template>\n\n<template v-if=\"pageType === 'chat'\">\n    <header class=\"header\">\n        <a class=\"opt left back\" v-link=\"refer\">\n            <i class=\"icon icon-back\"></i>返回\n        </a>\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n    </header>\n</template>\n";
+	var __vue_script__, __vue_template__
+	__webpack_require__(105)
+	__vue_script__ = __webpack_require__(107)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/components/modal.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(108)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/components/modal.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
 
 /***/ },
 /* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(106);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".collapse-transition {\n  -webkit-transition: all .4s ease;\n  transition: all .4s ease;\n  overflow: hidden;\n  height: 14px;\n  margin: 10px 0 5px; }\n\n.collapse-enter,\n.collapse-leave {\n  height: 0;\n  margin: 0;\n  opacity: 0; }\n\n.modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: rgba(0, 0, 0, 0.5);\n  text-align: center; }\n  .modal .inner {\n    width: 65%;\n    text-align: center;\n    background-color: white;\n    color: #666;\n    border-radius: 4px;\n    font-size: 14px;\n    padding: 15px;\n    position: absolute;\n    left: 50%;\n    top: 35%;\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%); }\n  .modal .form {\n    padding: 0; }\n    .modal .form .hd {\n      font-size: 16px; }\n    .modal .form .bd {\n      margin: 15px 0; }\n    .modal .form .field-row {\n      margin: 10px 0; }\n    .modal .form .form-control {\n      padding: 6px;\n      border: 1px solid #eee;\n      border-radius: 3px;\n      outline: none;\n      width: 100%;\n      box-sizing: border-box; }\n    .modal .form .popup-tip {\n      font-size: 12px;\n      color: #E6A00F; }\n", "", {"version":3,"sources":["/./src/components/modal.vue"],"names":[],"mappings":"AAAA;EACE,iCAAyB;EAAzB,yBAAyB;EACzB,iBAAiB;EACjB,aAAa;EACb,mBAAmB,EAAE;;AAEvB;;EAEE,UAAU;EACV,UAAU;EACV,WAAW,EAAE;;AAEf;EACE,gBAAgB;EAChB,OAAO;EACP,QAAQ;EACR,UAAU;EACV,SAAS;EACT,YAAY;EACZ,qCAAqC;EACrC,mBAAmB,EAAE;EACrB;IACE,WAAW;IACX,mBAAmB;IACnB,wBAAwB;IACxB,YAAY;IACZ,mBAAmB;IACnB,gBAAgB;IAChB,cAAc;IACd,mBAAmB;IACnB,UAAU;IACV,SAAS;IACT,yCAAyC;IAIzC,iCAAiC,EAAE;EACrC;IACE,WAAW,EAAE;IACb;MACE,gBAAgB,EAAE;IACpB;MACE,eAAe,EAAE;IACnB;MACE,eAAe,EAAE;IACnB;MACE,aAAa;MACb,uBAAuB;MACvB,mBAAmB;MACnB,cAAc;MACd,YAAY;MACZ,uBAAuB,EAAE;IAC3B;MACE,gBAAgB;MAChB,eAAe,EAAE","file":"modal.vue","sourcesContent":[".collapse-transition {\n  transition: all .4s ease;\n  overflow: hidden;\n  height: 14px;\n  margin: 10px 0 5px; }\n\n.collapse-enter,\n.collapse-leave {\n  height: 0;\n  margin: 0;\n  opacity: 0; }\n\n.modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: rgba(0, 0, 0, 0.5);\n  text-align: center; }\n  .modal .inner {\n    width: 65%;\n    text-align: center;\n    background-color: white;\n    color: #666;\n    border-radius: 4px;\n    font-size: 14px;\n    padding: 15px;\n    position: absolute;\n    left: 50%;\n    top: 35%;\n    -webkit-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%); }\n  .modal .form {\n    padding: 0; }\n    .modal .form .hd {\n      font-size: 16px; }\n    .modal .form .bd {\n      margin: 15px 0; }\n    .modal .form .field-row {\n      margin: 10px 0; }\n    .modal .form .form-control {\n      padding: 6px;\n      border: 1px solid #eee;\n      border-radius: 3px;\n      outline: none;\n      width: 100%;\n      box-sizing: border-box; }\n    .modal .form .popup-tip {\n      font-size: 12px;\n      color: #E6A00F; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 107 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	    props: ['show', 'title', 'popupTip'],
+	    methods: {
+	        onClickBg: function onClickBg() {
+	            this.show = false;
+	        },
+	        onClickSure: function onClickSure() {
+	            this.$dispatch('modal-sure');
+	        }
+	    },
+	    watch: {
+	        popupTip: function popupTip(value) {
+	            var _this = this;
+	
+	            if (this.popupTipTimer) {
+	                clearTimeout(this.popupTipTimer);
+	            }
+	            this.popupTipTimer = setTimeout(function () {
+	                _this.popupTip = '';
+	            }, 3500);
+	        }
+	    }
+	};
+
+/***/ },
+/* 108 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"modal\" transition=\"fade\" v-show=\"show\" @click.self=\"onClickBg\">\n    <div class=\"inner\">\n        <div class=\"form\">\n            <div class=\"hd\">\n                {{ title }}\n            </div>\n            <div class=\"popup-tip\" transition=\"collapse\" v-show=\"!!popupTip\">{{popupTip}}</div>\n            <div class=\"bd\">\n                <slot></slot>\n            </div>\n            <div class=\"fot\">\n                <button class=\"btn btn-primary sure\" @click=\"onClickSure\">确定</button>\n            </div>\n        </div>\n    </div>\n</div>\n";
+
+/***/ },
+/* 109 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<template v-if=\"pageType === 'record'\">\n    <header class=\"header\">\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n        <a class=\"opt right plus\" href=\"./chat\" @click.prevent=\"onClickPlus\">\n            <i class=\"icon icon-plus\"></i>\n        </a>\n    </header>\n    <div class=\"dropmenu\" v-show=\"open\">\n        <ul class=\"menus\">\n            <li class=\"menu-item\" v-link=\"'friend'\">\n                <a>新建聊天</a>\n            </li>\n            <li class=\"menu-item\" @click='onClickAddFri'>\n                <a>添加朋友</a>\n            </li>\n            <li class=\"menu-item\" @click='onClickLogout'>\n                <a>退出</a>\n            </li>\n        </ul>\n    </div>\n    <div class=\"mask\" @click=\"onClickMask\" v-show=\"open\"></div>\n    <m-modal :show.sync=\"modal.show\" title=\"添加朋友\" @modal-sure=\"onModalSure\" :popup-tip.sync=\"modal.popupTip\">\n        <div class=\"field-row\">\n            <input class=\"form-control\" v-model=\"modal.friendName\" v-focus=\"modal.show\" type=\"text\" placeholder=\"输入用户名称\">\n        </div>\n    </m-modal>\n</template>\n\n<template v-if=\"pageType === 'friend'\">\n    <header class=\"header\">\n        <a class=\"opt left cancel\" @click='onClickCancel'>\n            取消\n        </a>\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n    </header>\n</template>\n\n<template v-if=\"pageType === 'chat'\">\n    <header class=\"header\">\n        <a class=\"opt left back\" v-link=\"refer\">\n            <i class=\"icon icon-back\"></i>返回\n        </a>\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n    </header>\n</template>\n";
+
+/***/ },
+/* 110 */
+/***/ function(module, exports, __webpack_require__) {
+
 	var __vue_script__, __vue_template__
-	__webpack_require__(106)
-	__vue_script__ = __webpack_require__(108)
+	__webpack_require__(111)
+	__vue_script__ = __webpack_require__(113)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/record-item.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(109)
+	__vue_template__ = __webpack_require__(114)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -17400,13 +17527,13 @@
 	})()}
 
 /***/ },
-/* 106 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(107);
+	var content = __webpack_require__(112);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -17426,7 +17553,7 @@
 	}
 
 /***/ },
-/* 107 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -17440,7 +17567,7 @@
 
 
 /***/ },
-/* 108 */
+/* 113 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -17458,29 +17585,29 @@
 	};
 
 /***/ },
-/* 109 */
+/* 114 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<li class=\"item\" \n    data-href=\"{{ one._id }}\" \n    v-bind:class=\"{'unread': one.unread}\" \n    v-on:click=\"onClickContacter\">\n    <div class=\"profile\">\n        <img class=\"avatar\" v-bind:src=\"one.avatar\">\n        <div class=\"top\">\n            <span class=\"name ellipsis\">{{ one.name }}</span>\n            <span class=\"time\">{{ one.time }}</span>\n        </div>\n        <div class=\"btm\">\n            <span class=\"recent ellipsis\">{{ one.recent }}</span>\n        </div>\n    </div>\n    <div class=\"operate\">\n        <a class=\"delete\" href=\"\">删除</a>\n    </div>\n</li>\n";
 
 /***/ },
-/* 110 */
+/* 115 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div id=\"record\">\n    <m-header :page-type=\"'record'\"></m-header>\n    <main class=\"main\">\n        <div class=\"contacter-list\">\n            <ul class=\"contacters\">\n                <m-item v-for=\"one in contacters\" :one=\"item\" :index=\"$index\"></m-item>\n            </ul>\n        </div>\n    </main>        \n</div>\n";
 
 /***/ },
-/* 111 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(112)
-	__vue_script__ = __webpack_require__(114)
+	__webpack_require__(117)
+	__vue_script__ = __webpack_require__(119)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/views/chat.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(175)
+	__vue_template__ = __webpack_require__(180)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -17499,13 +17626,13 @@
 	})()}
 
 /***/ },
-/* 112 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(113);
+	var content = __webpack_require__(118);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -17525,7 +17652,7 @@
 	}
 
 /***/ },
-/* 113 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -17539,22 +17666,22 @@
 
 
 /***/ },
-/* 114 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	var auth = __webpack_require__(10);
-	var userStore = __webpack_require__(95);
+	var userStore = __webpack_require__(94);
 	var recordStore = __webpack_require__(90);
-	var io = __webpack_require__(115);
+	var io = __webpack_require__(120);
 	
 	module.exports = {
 	    name: 'ChatView',
 	    components: {
 	        'm-header': __webpack_require__(100),
-	        'm-item': __webpack_require__(165),
-	        'm-sendbox': __webpack_require__(170)
+	        'm-item': __webpack_require__(170),
+	        'm-sendbox': __webpack_require__(175)
 	    },
 	    data: function data() {
 	        return {
@@ -17624,7 +17751,7 @@
 	};
 
 /***/ },
-/* 115 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -17632,10 +17759,10 @@
 	 * Module dependencies.
 	 */
 	
-	var url = __webpack_require__(116);
-	var parser = __webpack_require__(121);
-	var Manager = __webpack_require__(129);
-	var debug = __webpack_require__(118)('socket.io-client');
+	var url = __webpack_require__(121);
+	var parser = __webpack_require__(126);
+	var Manager = __webpack_require__(134);
+	var debug = __webpack_require__(123)('socket.io-client');
 	
 	/**
 	 * Module exports.
@@ -17717,12 +17844,12 @@
 	 * @api public
 	 */
 	
-	exports.Manager = __webpack_require__(129);
-	exports.Socket = __webpack_require__(157);
+	exports.Manager = __webpack_require__(134);
+	exports.Socket = __webpack_require__(162);
 
 
 /***/ },
-/* 116 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {
@@ -17730,8 +17857,8 @@
 	 * Module dependencies.
 	 */
 	
-	var parseuri = __webpack_require__(117);
-	var debug = __webpack_require__(118)('socket.io-client:url');
+	var parseuri = __webpack_require__(122);
+	var debug = __webpack_require__(123)('socket.io-client:url');
 	
 	/**
 	 * Module exports.
@@ -17805,7 +17932,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 117 */
+/* 122 */
 /***/ function(module, exports) {
 
 	/**
@@ -17850,7 +17977,7 @@
 
 
 /***/ },
-/* 118 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -17860,7 +17987,7 @@
 	 * Expose `debug()` as the module.
 	 */
 	
-	exports = module.exports = __webpack_require__(119);
+	exports = module.exports = __webpack_require__(124);
 	exports.log = log;
 	exports.formatArgs = formatArgs;
 	exports.save = save;
@@ -18024,7 +18151,7 @@
 
 
 /***/ },
-/* 119 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -18040,7 +18167,7 @@
 	exports.disable = disable;
 	exports.enable = enable;
 	exports.enabled = enabled;
-	exports.humanize = __webpack_require__(120);
+	exports.humanize = __webpack_require__(125);
 	
 	/**
 	 * The currently active debug mode names, and names to skip.
@@ -18227,7 +18354,7 @@
 
 
 /***/ },
-/* 120 */
+/* 125 */
 /***/ function(module, exports) {
 
 	/**
@@ -18358,7 +18485,7 @@
 
 
 /***/ },
-/* 121 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -18366,12 +18493,12 @@
 	 * Module dependencies.
 	 */
 	
-	var debug = __webpack_require__(118)('socket.io-parser');
-	var json = __webpack_require__(122);
-	var isArray = __webpack_require__(125);
-	var Emitter = __webpack_require__(126);
-	var binary = __webpack_require__(127);
-	var isBuf = __webpack_require__(128);
+	var debug = __webpack_require__(123)('socket.io-parser');
+	var json = __webpack_require__(127);
+	var isArray = __webpack_require__(130);
+	var Emitter = __webpack_require__(131);
+	var binary = __webpack_require__(132);
+	var isBuf = __webpack_require__(133);
 	
 	/**
 	 * Protocol version.
@@ -18764,14 +18891,14 @@
 
 
 /***/ },
-/* 122 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*! JSON v3.3.2 | http://bestiejs.github.io/json3 | Copyright 2012-2014, Kit Cambridge | http://kit.mit-license.org */
 	;(function () {
 	  // Detect the `define` function exposed by asynchronous module loaders. The
 	  // strict `define` check is necessary for compatibility with `r.js`.
-	  var isLoader = "function" === "function" && __webpack_require__(124);
+	  var isLoader = "function" === "function" && __webpack_require__(129);
 	
 	  // A set of types used to distinguish objects from primitives.
 	  var objectTypes = {
@@ -19670,10 +19797,10 @@
 	  }
 	}).call(this);
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(123)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(128)(module), (function() { return this; }())))
 
 /***/ },
-/* 123 */
+/* 128 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -19689,7 +19816,7 @@
 
 
 /***/ },
-/* 124 */
+/* 129 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
@@ -19697,7 +19824,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 125 */
+/* 130 */
 /***/ function(module, exports) {
 
 	module.exports = Array.isArray || function (arr) {
@@ -19706,7 +19833,7 @@
 
 
 /***/ },
-/* 126 */
+/* 131 */
 /***/ function(module, exports) {
 
 	
@@ -19876,7 +20003,7 @@
 
 
 /***/ },
-/* 127 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/*global Blob,File*/
@@ -19885,8 +20012,8 @@
 	 * Module requirements
 	 */
 	
-	var isArray = __webpack_require__(125);
-	var isBuf = __webpack_require__(128);
+	var isArray = __webpack_require__(130);
+	var isBuf = __webpack_require__(133);
 	
 	/**
 	 * Replaces every Buffer | ArrayBuffer in packet with a numbered placeholder.
@@ -20024,7 +20151,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 128 */
+/* 133 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {
@@ -20044,7 +20171,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 129 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -20052,15 +20179,15 @@
 	 * Module dependencies.
 	 */
 	
-	var eio = __webpack_require__(130);
-	var Socket = __webpack_require__(157);
-	var Emitter = __webpack_require__(158);
-	var parser = __webpack_require__(121);
-	var on = __webpack_require__(160);
-	var bind = __webpack_require__(161);
-	var debug = __webpack_require__(118)('socket.io-client:manager');
-	var indexOf = __webpack_require__(155);
-	var Backoff = __webpack_require__(164);
+	var eio = __webpack_require__(135);
+	var Socket = __webpack_require__(162);
+	var Emitter = __webpack_require__(163);
+	var parser = __webpack_require__(126);
+	var on = __webpack_require__(165);
+	var bind = __webpack_require__(166);
+	var debug = __webpack_require__(123)('socket.io-client:manager');
+	var indexOf = __webpack_require__(160);
+	var Backoff = __webpack_require__(169);
 	
 	/**
 	 * IE6+ hasOwnProperty
@@ -20607,19 +20734,19 @@
 
 
 /***/ },
-/* 130 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	module.exports =  __webpack_require__(131);
+	module.exports =  __webpack_require__(136);
 
 
 /***/ },
-/* 131 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
-	module.exports = __webpack_require__(132);
+	module.exports = __webpack_require__(137);
 	
 	/**
 	 * Exports parser
@@ -20627,25 +20754,25 @@
 	 * @api public
 	 *
 	 */
-	module.exports.parser = __webpack_require__(139);
+	module.exports.parser = __webpack_require__(144);
 
 
 /***/ },
-/* 132 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
 	 * Module dependencies.
 	 */
 	
-	var transports = __webpack_require__(133);
-	var Emitter = __webpack_require__(148);
-	var debug = __webpack_require__(118)('engine.io-client:socket');
-	var index = __webpack_require__(155);
-	var parser = __webpack_require__(139);
-	var parseuri = __webpack_require__(117);
-	var parsejson = __webpack_require__(156);
-	var parseqs = __webpack_require__(149);
+	var transports = __webpack_require__(138);
+	var Emitter = __webpack_require__(153);
+	var debug = __webpack_require__(123)('engine.io-client:socket');
+	var index = __webpack_require__(160);
+	var parser = __webpack_require__(144);
+	var parseuri = __webpack_require__(122);
+	var parsejson = __webpack_require__(161);
+	var parseqs = __webpack_require__(154);
 	
 	/**
 	 * Module exports.
@@ -20769,9 +20896,9 @@
 	 */
 	
 	Socket.Socket = Socket;
-	Socket.Transport = __webpack_require__(138);
-	Socket.transports = __webpack_require__(133);
-	Socket.parser = __webpack_require__(139);
+	Socket.Transport = __webpack_require__(143);
+	Socket.transports = __webpack_require__(138);
+	Socket.parser = __webpack_require__(144);
 	
 	/**
 	 * Creates transport of the given type.
@@ -21366,17 +21493,17 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 133 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
 	 * Module dependencies
 	 */
 	
-	var XMLHttpRequest = __webpack_require__(134);
-	var XHR = __webpack_require__(136);
-	var JSONP = __webpack_require__(152);
-	var websocket = __webpack_require__(153);
+	var XMLHttpRequest = __webpack_require__(139);
+	var XHR = __webpack_require__(141);
+	var JSONP = __webpack_require__(157);
+	var websocket = __webpack_require__(158);
 	
 	/**
 	 * Export transports.
@@ -21426,11 +21553,11 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 134 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// browser shim for xmlhttprequest module
-	var hasCORS = __webpack_require__(135);
+	var hasCORS = __webpack_require__(140);
 	
 	module.exports = function(opts) {
 	  var xdomain = opts.xdomain;
@@ -21468,7 +21595,7 @@
 
 
 /***/ },
-/* 135 */
+/* 140 */
 /***/ function(module, exports) {
 
 	
@@ -21491,18 +21618,18 @@
 
 
 /***/ },
-/* 136 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
 	 * Module requirements.
 	 */
 	
-	var XMLHttpRequest = __webpack_require__(134);
-	var Polling = __webpack_require__(137);
-	var Emitter = __webpack_require__(148);
-	var inherit = __webpack_require__(150);
-	var debug = __webpack_require__(118)('engine.io-client:polling-xhr');
+	var XMLHttpRequest = __webpack_require__(139);
+	var Polling = __webpack_require__(142);
+	var Emitter = __webpack_require__(153);
+	var inherit = __webpack_require__(155);
+	var debug = __webpack_require__(123)('engine.io-client:polling-xhr');
 	
 	/**
 	 * Module exports.
@@ -21910,19 +22037,19 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 137 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Module dependencies.
 	 */
 	
-	var Transport = __webpack_require__(138);
-	var parseqs = __webpack_require__(149);
-	var parser = __webpack_require__(139);
-	var inherit = __webpack_require__(150);
-	var yeast = __webpack_require__(151);
-	var debug = __webpack_require__(118)('engine.io-client:polling');
+	var Transport = __webpack_require__(143);
+	var parseqs = __webpack_require__(154);
+	var parser = __webpack_require__(144);
+	var inherit = __webpack_require__(155);
+	var yeast = __webpack_require__(156);
+	var debug = __webpack_require__(123)('engine.io-client:polling');
 	
 	/**
 	 * Module exports.
@@ -21935,7 +22062,7 @@
 	 */
 	
 	var hasXHR2 = (function() {
-	  var XMLHttpRequest = __webpack_require__(134);
+	  var XMLHttpRequest = __webpack_require__(139);
 	  var xhr = new XMLHttpRequest({ xdomain: false });
 	  return null != xhr.responseType;
 	})();
@@ -22163,15 +22290,15 @@
 
 
 /***/ },
-/* 138 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
 	 * Module dependencies.
 	 */
 	
-	var parser = __webpack_require__(139);
-	var Emitter = __webpack_require__(148);
+	var parser = __webpack_require__(144);
+	var Emitter = __webpack_require__(153);
 	
 	/**
 	 * Module exports.
@@ -22324,19 +22451,19 @@
 
 
 /***/ },
-/* 139 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
 	 * Module dependencies.
 	 */
 	
-	var keys = __webpack_require__(140);
-	var hasBinary = __webpack_require__(141);
-	var sliceBuffer = __webpack_require__(143);
-	var base64encoder = __webpack_require__(144);
-	var after = __webpack_require__(145);
-	var utf8 = __webpack_require__(146);
+	var keys = __webpack_require__(145);
+	var hasBinary = __webpack_require__(146);
+	var sliceBuffer = __webpack_require__(148);
+	var base64encoder = __webpack_require__(149);
+	var after = __webpack_require__(150);
+	var utf8 = __webpack_require__(151);
 	
 	/**
 	 * Check if we are running an android browser. That requires us to use
@@ -22393,7 +22520,7 @@
 	 * Create a blob api even for blob builder when vendor prefixes exist
 	 */
 	
-	var Blob = __webpack_require__(147);
+	var Blob = __webpack_require__(152);
 	
 	/**
 	 * Encodes a packet.
@@ -22925,7 +23052,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 140 */
+/* 145 */
 /***/ function(module, exports) {
 
 	
@@ -22950,7 +23077,7 @@
 
 
 /***/ },
-/* 141 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {
@@ -22958,7 +23085,7 @@
 	 * Module requirements.
 	 */
 	
-	var isArray = __webpack_require__(142);
+	var isArray = __webpack_require__(147);
 	
 	/**
 	 * Module exports.
@@ -23015,7 +23142,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 142 */
+/* 147 */
 /***/ function(module, exports) {
 
 	module.exports = Array.isArray || function (arr) {
@@ -23024,7 +23151,7 @@
 
 
 /***/ },
-/* 143 */
+/* 148 */
 /***/ function(module, exports) {
 
 	/**
@@ -23059,7 +23186,7 @@
 
 
 /***/ },
-/* 144 */
+/* 149 */
 /***/ function(module, exports) {
 
 	/*
@@ -23124,7 +23251,7 @@
 
 
 /***/ },
-/* 145 */
+/* 150 */
 /***/ function(module, exports) {
 
 	module.exports = after
@@ -23158,7 +23285,7 @@
 
 
 /***/ },
-/* 146 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*! https://mths.be/utf8js v2.0.0 by @mathias */
@@ -23404,10 +23531,10 @@
 	
 	}(this));
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(123)(module), (function() { return this; }())))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(128)(module), (function() { return this; }())))
 
 /***/ },
-/* 147 */
+/* 152 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -23510,7 +23637,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 148 */
+/* 153 */
 /***/ function(module, exports) {
 
 	
@@ -23680,7 +23807,7 @@
 
 
 /***/ },
-/* 149 */
+/* 154 */
 /***/ function(module, exports) {
 
 	/**
@@ -23723,7 +23850,7 @@
 
 
 /***/ },
-/* 150 */
+/* 155 */
 /***/ function(module, exports) {
 
 	
@@ -23735,7 +23862,7 @@
 	};
 
 /***/ },
-/* 151 */
+/* 156 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -23809,7 +23936,7 @@
 
 
 /***/ },
-/* 152 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {
@@ -23817,8 +23944,8 @@
 	 * Module requirements.
 	 */
 	
-	var Polling = __webpack_require__(137);
-	var inherit = __webpack_require__(150);
+	var Polling = __webpack_require__(142);
+	var inherit = __webpack_require__(155);
 	
 	/**
 	 * Module exports.
@@ -24054,19 +24181,19 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 153 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
 	 * Module dependencies.
 	 */
 	
-	var Transport = __webpack_require__(138);
-	var parser = __webpack_require__(139);
-	var parseqs = __webpack_require__(149);
-	var inherit = __webpack_require__(150);
-	var yeast = __webpack_require__(151);
-	var debug = __webpack_require__(118)('engine.io-client:websocket');
+	var Transport = __webpack_require__(143);
+	var parser = __webpack_require__(144);
+	var parseqs = __webpack_require__(154);
+	var inherit = __webpack_require__(155);
+	var yeast = __webpack_require__(156);
+	var debug = __webpack_require__(123)('engine.io-client:websocket');
 	var BrowserWebSocket = global.WebSocket || global.MozWebSocket;
 	
 	/**
@@ -24078,7 +24205,7 @@
 	var WebSocket = BrowserWebSocket;
 	if (!WebSocket && typeof window === 'undefined') {
 	  try {
-	    WebSocket = __webpack_require__(154);
+	    WebSocket = __webpack_require__(159);
 	  } catch (e) { }
 	}
 	
@@ -24349,13 +24476,13 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 154 */
+/* 159 */
 /***/ function(module, exports) {
 
 	/* (ignored) */
 
 /***/ },
-/* 155 */
+/* 160 */
 /***/ function(module, exports) {
 
 	
@@ -24370,7 +24497,7 @@
 	};
 
 /***/ },
-/* 156 */
+/* 161 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
@@ -24408,7 +24535,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 157 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	
@@ -24416,13 +24543,13 @@
 	 * Module dependencies.
 	 */
 	
-	var parser = __webpack_require__(121);
-	var Emitter = __webpack_require__(158);
-	var toArray = __webpack_require__(159);
-	var on = __webpack_require__(160);
-	var bind = __webpack_require__(161);
-	var debug = __webpack_require__(118)('socket.io-client:socket');
-	var hasBin = __webpack_require__(162);
+	var parser = __webpack_require__(126);
+	var Emitter = __webpack_require__(163);
+	var toArray = __webpack_require__(164);
+	var on = __webpack_require__(165);
+	var bind = __webpack_require__(166);
+	var debug = __webpack_require__(123)('socket.io-client:socket');
+	var hasBin = __webpack_require__(167);
 	
 	/**
 	 * Module exports.
@@ -24826,7 +24953,7 @@
 
 
 /***/ },
-/* 158 */
+/* 163 */
 /***/ function(module, exports) {
 
 	
@@ -24993,7 +25120,7 @@
 
 
 /***/ },
-/* 159 */
+/* 164 */
 /***/ function(module, exports) {
 
 	module.exports = toArray
@@ -25012,7 +25139,7 @@
 
 
 /***/ },
-/* 160 */
+/* 165 */
 /***/ function(module, exports) {
 
 	
@@ -25042,7 +25169,7 @@
 
 
 /***/ },
-/* 161 */
+/* 166 */
 /***/ function(module, exports) {
 
 	/**
@@ -25071,7 +25198,7 @@
 
 
 /***/ },
-/* 162 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {
@@ -25079,7 +25206,7 @@
 	 * Module requirements.
 	 */
 	
-	var isArray = __webpack_require__(163);
+	var isArray = __webpack_require__(168);
 	
 	/**
 	 * Module exports.
@@ -25137,7 +25264,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 163 */
+/* 168 */
 /***/ function(module, exports) {
 
 	module.exports = Array.isArray || function (arr) {
@@ -25146,7 +25273,7 @@
 
 
 /***/ },
-/* 164 */
+/* 169 */
 /***/ function(module, exports) {
 
 	
@@ -25237,91 +25364,6 @@
 
 
 /***/ },
-/* 165 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(166)
-	__vue_script__ = __webpack_require__(168)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/chat-item.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(169)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/components/chat-item.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(167);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat-item.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat-item.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".gallery .item {\n  *zoom: 1; }\n  .gallery .item:before, .gallery .item:after {\n    content: \"\";\n    display: table; }\n  .gallery .item:after {\n    clear: both; }\n\n.gallery .item {\n  padding: 10px 0; }\n  .gallery .item .avatar {\n    height: 40px;\n    width: 40px;\n    float: left;\n    margin-right: 10px; }\n  .gallery .item .content {\n    overflow: hidden;\n    padding-right: 40px; }\n    .gallery .item .content .inner {\n      float: left;\n      background-color: #fff;\n      border: 1px solid #d1d1d1;\n      padding: 12px;\n      border-radius: 4px; }\n\n.gallery .item.mine .avatar {\n  float: right;\n  margin-left: 10px;\n  margin-right: 0; }\n\n.gallery .item.mine .content {\n  padding-left: 40px;\n  padding-right: 0; }\n  .gallery .item.mine .content .inner {\n    float: right;\n    background-color: #a0e75a; }\n", "", {"version":3,"sources":["/./src/components/chat-item.vue"],"names":[],"mappings":"AAAA;GACE,QAAS,EAAE;EACX;IACE,YAAY;IACZ,eAAe,EAAE;EACnB;IACE,YAAY,EAAE;;AAElB;EACE,gBAAgB,EAAE;EAClB;IACE,aAAa;IACb,YAAY;IACZ,YAAY;IACZ,mBAAmB,EAAE;EACvB;IACE,iBAAiB;IACjB,oBAAoB,EAAE;IACtB;MACE,YAAY;MACZ,uBAAuB;MACvB,0BAA0B;MAC1B,cAAc;MACd,mBAAmB,EAAE;;AAE3B;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB,EAAE;;AAEpB;EACE,mBAAmB;EACnB,iBAAiB,EAAE;EACnB;IACE,aAAa;IACb,0BAA0B,EAAE","file":"chat-item.vue","sourcesContent":[".gallery .item {\n  *zoom: 1; }\n  .gallery .item:before, .gallery .item:after {\n    content: \"\";\n    display: table; }\n  .gallery .item:after {\n    clear: both; }\n\n.gallery .item {\n  padding: 10px 0; }\n  .gallery .item .avatar {\n    height: 40px;\n    width: 40px;\n    float: left;\n    margin-right: 10px; }\n  .gallery .item .content {\n    overflow: hidden;\n    padding-right: 40px; }\n    .gallery .item .content .inner {\n      float: left;\n      background-color: #fff;\n      border: 1px solid #d1d1d1;\n      padding: 12px;\n      border-radius: 4px; }\n\n.gallery .item.mine .avatar {\n  float: right;\n  margin-left: 10px;\n  margin-right: 0; }\n\n.gallery .item.mine .content {\n  padding-left: 40px;\n  padding-right: 0; }\n  .gallery .item.mine .content .inner {\n    float: right;\n    background-color: #a0e75a; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 168 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	    props: ['one', 'author', 'relate']
-	};
-
-/***/ },
-/* 169 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div class=\"item\" :class=\"{'mine': one.sender === author._id}\" :messageid=\"one._id\">\n    <a>\n        <img :src=\"one.sender === author._id ? author.avatar : relate.avatar\" class=\"avatar\">\n    </a>\n    <div class=\"content\">\n        <div class=\"inner\">\n            <p>{{ one.content }}</p>\n        </div>\n    </div>\n</div>\n";
-
-/***/ },
 /* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -25331,7 +25373,7 @@
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/sendbox.vue: named exports in *.vue files are ignored.")}
+	  console.warn("[vue-loader] src/components/chat-item.vue: named exports in *.vue files are ignored.")}
 	__vue_template__ = __webpack_require__(174)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
@@ -25342,7 +25384,7 @@
 	  var hotAPI = require("vue-hot-reload-api")
 	  hotAPI.install(require("vue"), true)
 	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/components/sendbox.vue"
+	  var id = "/Users/yll/Desktop/webim/public/src/components/chat-item.vue"
 	  if (!module.hot.data) {
 	    hotAPI.createRecord(id, module.exports)
 	  } else {
@@ -25366,8 +25408,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sendbox.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sendbox.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat-item.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat-item.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -25385,13 +25427,98 @@
 	
 	
 	// module
-	exports.push([module.id, "#chat .input {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  border-top: 1px solid #d9d9d9;\n  border-bottom: 1px solid #d9d9d9;\n  background-color: #f5f5f7; }\n  #chat .input table {\n    width: 100%; }\n    #chat .input table td {\n      padding: 8px 5px; }\n    #chat .input table .btn {\n      display: inline-block;\n      border: 1px solid #d9d9d9;\n      border-radius: 50%;\n      padding: 4px; }\n    #chat .input table .icon {\n      background-size: contain; }\n    #chat .input table .icon-plus:before, #chat .input table .icon-plus:after {\n      background-color: #7f8389; }\n    #chat .input table .icon-sound {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position-x: 1px; }\n    #chat .input table .icon-send {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position: 2px 0;\n      -webkit-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n    #chat .input table .icon-face {\n      background-image: url(\"/src/statics/img/face.png\"); }\n    #chat .input table .operate-item {\n      width: 1px; }\n    #chat .input table .content {\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      width: 100%;\n      height: 32px;\n      outline: none;\n      padding: 5px;\n      box-sizing: border-box;\n      -webkit-appearance: none; }\n", "", {"version":3,"sources":["/./src/components/sendbox.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,UAAU;EACV,QAAQ;EACR,YAAY;EACZ,8BAA8B;EAC9B,iCAAiC;EACjC,0BAA0B,EAAE;EAC5B;IACE,YAAY,EAAE;IACd;MACE,iBAAiB,EAAE;IACrB;MACE,sBAAsB;MACtB,0BAA0B;MAC1B,mBAAmB;MACnB,aAAa,EAAE;IACjB;MACE,yBAAyB,EAAE;IAC7B;MACE,0BAA0B,EAAE;IAC9B;MACE,oDAAoD;MACpD,2BAA2B,EAAE;IAC/B;MACE,oDAAoD;MACpD,2BAA2B;MAC3B,kCAAkC;MAIlC,0BAA0B,EAAE;IAC9B;MACE,mDAAmD,EAAE;IACvD;MACE,WAAW,EAAE;IACf;MACE,0BAA0B;MAC1B,mBAAmB;MACnB,YAAY;MACZ,aAAa;MACb,cAAc;MACd,aAAa;MACb,uBAAuB;MACvB,yBAAyB,EAAE","file":"sendbox.vue","sourcesContent":["#chat .input {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  border-top: 1px solid #d9d9d9;\n  border-bottom: 1px solid #d9d9d9;\n  background-color: #f5f5f7; }\n  #chat .input table {\n    width: 100%; }\n    #chat .input table td {\n      padding: 8px 5px; }\n    #chat .input table .btn {\n      display: inline-block;\n      border: 1px solid #d9d9d9;\n      border-radius: 50%;\n      padding: 4px; }\n    #chat .input table .icon {\n      background-size: contain; }\n    #chat .input table .icon-plus:before, #chat .input table .icon-plus:after {\n      background-color: #7f8389; }\n    #chat .input table .icon-sound {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position-x: 1px; }\n    #chat .input table .icon-send {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position: 2px 0;\n      -webkit-transform: rotate(-90deg);\n      -moz-transform: rotate(-90deg);\n      -ms-transform: rotate(-90deg);\n      -o-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n    #chat .input table .icon-face {\n      background-image: url(\"/src/statics/img/face.png\"); }\n    #chat .input table .operate-item {\n      width: 1px; }\n    #chat .input table .content {\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      width: 100%;\n      height: 32px;\n      outline: none;\n      padding: 5px;\n      box-sizing: border-box;\n      -webkit-appearance: none; }\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, ".gallery .item {\n  *zoom: 1; }\n  .gallery .item:before, .gallery .item:after {\n    content: \"\";\n    display: table; }\n  .gallery .item:after {\n    clear: both; }\n\n.gallery .item {\n  padding: 10px 0; }\n  .gallery .item .avatar {\n    height: 40px;\n    width: 40px;\n    float: left;\n    margin-right: 10px; }\n  .gallery .item .content {\n    overflow: hidden;\n    padding-right: 40px; }\n    .gallery .item .content .inner {\n      float: left;\n      background-color: #fff;\n      border: 1px solid #d1d1d1;\n      padding: 12px;\n      border-radius: 4px; }\n\n.gallery .item.mine .avatar {\n  float: right;\n  margin-left: 10px;\n  margin-right: 0; }\n\n.gallery .item.mine .content {\n  padding-left: 40px;\n  padding-right: 0; }\n  .gallery .item.mine .content .inner {\n    float: right;\n    background-color: #a0e75a; }\n", "", {"version":3,"sources":["/./src/components/chat-item.vue"],"names":[],"mappings":"AAAA;GACE,QAAS,EAAE;EACX;IACE,YAAY;IACZ,eAAe,EAAE;EACnB;IACE,YAAY,EAAE;;AAElB;EACE,gBAAgB,EAAE;EAClB;IACE,aAAa;IACb,YAAY;IACZ,YAAY;IACZ,mBAAmB,EAAE;EACvB;IACE,iBAAiB;IACjB,oBAAoB,EAAE;IACtB;MACE,YAAY;MACZ,uBAAuB;MACvB,0BAA0B;MAC1B,cAAc;MACd,mBAAmB,EAAE;;AAE3B;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB,EAAE;;AAEpB;EACE,mBAAmB;EACnB,iBAAiB,EAAE;EACnB;IACE,aAAa;IACb,0BAA0B,EAAE","file":"chat-item.vue","sourcesContent":[".gallery .item {\n  *zoom: 1; }\n  .gallery .item:before, .gallery .item:after {\n    content: \"\";\n    display: table; }\n  .gallery .item:after {\n    clear: both; }\n\n.gallery .item {\n  padding: 10px 0; }\n  .gallery .item .avatar {\n    height: 40px;\n    width: 40px;\n    float: left;\n    margin-right: 10px; }\n  .gallery .item .content {\n    overflow: hidden;\n    padding-right: 40px; }\n    .gallery .item .content .inner {\n      float: left;\n      background-color: #fff;\n      border: 1px solid #d1d1d1;\n      padding: 12px;\n      border-radius: 4px; }\n\n.gallery .item.mine .avatar {\n  float: right;\n  margin-left: 10px;\n  margin-right: 0; }\n\n.gallery .item.mine .content {\n  padding-left: 40px;\n  padding-right: 0; }\n  .gallery .item.mine .content .inner {\n    float: right;\n    background-color: #a0e75a; }\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
 
 /***/ },
 /* 173 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	    props: ['one', 'author', 'relate']
+	};
+
+/***/ },
+/* 174 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"item\" :class=\"{'mine': one.sender === author._id}\" :messageid=\"one._id\">\n    <a>\n        <img :src=\"one.sender === author._id ? author.avatar : relate.avatar\" class=\"avatar\">\n    </a>\n    <div class=\"content\">\n        <div class=\"inner\">\n            <p>{{ one.content }}</p>\n        </div>\n    </div>\n</div>\n";
+
+/***/ },
+/* 175 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(176)
+	__vue_script__ = __webpack_require__(178)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/components/sendbox.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(179)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/components/sendbox.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 176 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(177);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(8)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sendbox.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sendbox.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(7)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "#chat .input {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  border-top: 1px solid #d9d9d9;\n  border-bottom: 1px solid #d9d9d9;\n  background-color: #f5f5f7; }\n  #chat .input table {\n    width: 100%; }\n    #chat .input table td {\n      padding: 8px 5px; }\n    #chat .input table .btn {\n      display: inline-block;\n      border: 1px solid #d9d9d9;\n      border-radius: 50%;\n      padding: 4px;\n      min-width: auto; }\n    #chat .input table .icon {\n      background-size: contain; }\n    #chat .input table .icon-plus:before, #chat .input table .icon-plus:after {\n      background-color: #7f8389; }\n    #chat .input table .icon-sound {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position-x: 1px; }\n    #chat .input table .icon-send {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position: 2px 0;\n      -webkit-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n    #chat .input table .icon-face {\n      background-image: url(\"/src/statics/img/face.png\"); }\n    #chat .input table .operate-item {\n      width: 1px; }\n    #chat .input table .content {\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      width: 100%;\n      height: 32px;\n      outline: none;\n      padding: 5px;\n      box-sizing: border-box;\n      -webkit-appearance: none; }\n", "", {"version":3,"sources":["/./src/components/sendbox.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,UAAU;EACV,QAAQ;EACR,YAAY;EACZ,8BAA8B;EAC9B,iCAAiC;EACjC,0BAA0B,EAAE;EAC5B;IACE,YAAY,EAAE;IACd;MACE,iBAAiB,EAAE;IACrB;MACE,sBAAsB;MACtB,0BAA0B;MAC1B,mBAAmB;MACnB,aAAa;MACb,gBAAgB,EAAE;IACpB;MACE,yBAAyB,EAAE;IAC7B;MACE,0BAA0B,EAAE;IAC9B;MACE,oDAAoD;MACpD,2BAA2B,EAAE;IAC/B;MACE,oDAAoD;MACpD,2BAA2B;MAC3B,kCAAkC;MAIlC,0BAA0B,EAAE;IAC9B;MACE,mDAAmD,EAAE;IACvD;MACE,WAAW,EAAE;IACf;MACE,0BAA0B;MAC1B,mBAAmB;MACnB,YAAY;MACZ,aAAa;MACb,cAAc;MACd,aAAa;MACb,uBAAuB;MACvB,yBAAyB,EAAE","file":"sendbox.vue","sourcesContent":["#chat .input {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  border-top: 1px solid #d9d9d9;\n  border-bottom: 1px solid #d9d9d9;\n  background-color: #f5f5f7; }\n  #chat .input table {\n    width: 100%; }\n    #chat .input table td {\n      padding: 8px 5px; }\n    #chat .input table .btn {\n      display: inline-block;\n      border: 1px solid #d9d9d9;\n      border-radius: 50%;\n      padding: 4px;\n      min-width: auto; }\n    #chat .input table .icon {\n      background-size: contain; }\n    #chat .input table .icon-plus:before, #chat .input table .icon-plus:after {\n      background-color: #7f8389; }\n    #chat .input table .icon-sound {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position-x: 1px; }\n    #chat .input table .icon-send {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position: 2px 0;\n      -webkit-transform: rotate(-90deg);\n      -moz-transform: rotate(-90deg);\n      -ms-transform: rotate(-90deg);\n      -o-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n    #chat .input table .icon-face {\n      background-image: url(\"/src/statics/img/face.png\"); }\n    #chat .input table .operate-item {\n      width: 1px; }\n    #chat .input table .content {\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      width: 100%;\n      height: 32px;\n      outline: none;\n      padding: 5px;\n      box-sizing: border-box;\n      -webkit-appearance: none; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 178 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25419,29 +25546,29 @@
 	};
 
 /***/ },
-/* 174 */
+/* 179 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div class=\"input\">\n    <div class=\"basic\">\n        <table>\n            <tbody>\n                <tr>\n                    <td class=\"operate-item plus\">\n                        <a class=\"btn\">\n                            <i class=\"icon icon-plus\"></i>\n                        </a>\n                    </td>\n                    <td class=\"\">\n                        <input v-model=\"input\" class=\"content\" type=\"text\" @keyup.enter=\"onEnterInput\">\n                    </td>\n                    <td class=\"operate-item face\">\n                        <a class=\"btn face\">\n                            <i class=\"icon icon-face\"></i>\n                        </a>\n                    </td>\n                    <td class=\"operate-item send\">\n                        <a class=\"btn\" @click=\"onClickSend\">\n                            <i class=\"icon icon-send\"></i>\n                        </a>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n    <div class=\"extra hide\"></div>\n</div>\n";
 
 /***/ },
-/* 175 */
+/* 180 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div id=\"chat\">\n    <m-header title=\"Someone\" page-type=\"chat\" refer=\"/friend\"></m-header>\n    <div class=\"main\">\n        <div class=\"gallery\">\n            <div class=\"chat-record-list\">\n                <m-item v-for=\"one in messages\" :one=\"one\" :author=\"author\" :relate=\"relate\"></m-item>\n            </div>\n        </div>\n        <m-sendbox @sendmsg=\"onSendMessage\"></m-sendbox>\n    </div>\n</div>\n";
 
 /***/ },
-/* 176 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(177)
-	__vue_script__ = __webpack_require__(179)
+	__webpack_require__(182)
+	__vue_script__ = __webpack_require__(184)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/views/friend.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(186)
+	__vue_template__ = __webpack_require__(191)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -25460,13 +25587,13 @@
 	})()}
 
 /***/ },
-/* 177 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(178);
+	var content = __webpack_require__(183);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -25486,7 +25613,7 @@
 	}
 
 /***/ },
-/* 178 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -25500,15 +25627,15 @@
 
 
 /***/ },
-/* 179 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	var auth = __webpack_require__(10);
-	var friendStore = __webpack_require__(180);
+	var friendStore = __webpack_require__(185);
 	var HeaderView = __webpack_require__(100);
-	var FriendItemView = __webpack_require__(181);
+	var FriendItemView = __webpack_require__(186);
 	
 	module.exports = {
 	    name: 'FriendView',
@@ -25539,7 +25666,7 @@
 	};
 
 /***/ },
-/* 180 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25550,17 +25677,17 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var EventEmitter = __webpack_require__(93);
 	var $ = __webpack_require__(66);
 	
-	// var friendStore = Object.assign(EventEmitter);
 	var friendStore = {};
 	
 	friendStore.fetch = function (author) {
 	    var url = '/friends';
 	
 	    var promise = new _promise2.default(function (resolve, reject) {
-	        $.get(url, { userId: author }, function (resp) {
+	        $.get(url, {
+	            userId: author
+	        }, function (resp) {
 	            if (resp.code == 0) {
 	                resolve(resp.data.friends);
 	            } else {
@@ -25572,20 +25699,53 @@
 	    return promise;
 	};
 	
+	// friendStore.findFriend = function(username) {
+	//     var promise = new Promise(function(resolve, reject) {
+	//         $.getJSON('/friend', {
+	//             username: username
+	//         }, function(resp) {
+	//             if (resp.code == 0) {
+	//                 resolve(resp.data.friend);
+	//             } else {
+	//                 reject();
+	//             }
+	//         });
+	//     });
+	
+	//     return promise;
+	// };
+	
+	friendStore.createFriend = function (author, friendName) {
+	    var promise = new _promise2.default(function (resolve, reject) {
+	        $.post('/friend', {
+	            author: author,
+	            friendName: friendName
+	        }, function (resp) {
+	            if (resp.code == 0) {
+	                resolve(resp.data.friend);
+	            } else {
+	                reject(resp);
+	            }
+	        });
+	    });
+	
+	    return promise;
+	};
+	
 	module.exports = friendStore;
 
 /***/ },
-/* 181 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_script__, __vue_template__
-	__webpack_require__(182)
-	__vue_script__ = __webpack_require__(184)
+	__webpack_require__(187)
+	__vue_script__ = __webpack_require__(189)
 	if (__vue_script__ &&
 	    __vue_script__.__esModule &&
 	    Object.keys(__vue_script__).length > 1) {
 	  console.warn("[vue-loader] src/components/friend-item.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(185)
+	__vue_template__ = __webpack_require__(190)
 	module.exports = __vue_script__ || {}
 	if (module.exports.__esModule) module.exports = module.exports.default
 	if (__vue_template__) {
@@ -25604,13 +25764,13 @@
 	})()}
 
 /***/ },
-/* 182 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(183);
+	var content = __webpack_require__(188);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(8)(content, {});
@@ -25630,7 +25790,7 @@
 	}
 
 /***/ },
-/* 183 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(7)();
@@ -25644,7 +25804,7 @@
 
 
 /***/ },
-/* 184 */
+/* 189 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -25658,13 +25818,13 @@
 	};
 
 /***/ },
-/* 185 */
+/* 190 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<li class=\"item\" \n    data-href=\"{{ one.relate }}\">\n    <div class=\"profile\" v-link=\"{name: 'chat', params: {relate: one.relate}}\">\n        <img class=\"avatar\" :src=\"one.avatar\">\n        <span class=\"remark\">{{ one.remark }}</span>\n    </div>\n    <div class=\"operate\">\n        <a class=\"remark\" href=\"\">备注</a>\n    </div>\n</li>\n";
+	module.exports = "\n<li class=\"item\" \n    data-href=\"{{ one.relate }}\">\n    <div class=\"profile\" v-link=\"{name: 'chat', params: {relate: one.relate}}\">\n        <img class=\"avatar\" :src=\"one.friendInfo.avatar\">\n        <span class=\"remark\">{{ one.remark || one.friendInfo.username }}</span>\n    </div>\n    <div class=\"operate\">\n        <a class=\"remark\" href=\"\">备注</a>\n    </div>\n</li>\n";
 
 /***/ },
-/* 186 */
+/* 191 */
 /***/ function(module, exports) {
 
 	module.exports = "\n<div id=\"phonebook\">\n    <m-header :title=\"'选择联系人'\" :page-type=\"'friend'\" refer=\"index\"></m-header>\n    <main class=\"main\">\n        <div class=\"friend-list\">\n            <ul class=\"friends\">\n                <m-item v-for=\"one in friends\" :one=\"one\" :index=\"$index\"></m-item>\n            </ul>\n        </div>\n    </main>\n</div>\n";

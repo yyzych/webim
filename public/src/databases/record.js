@@ -64,35 +64,19 @@ recordStore.getMessageList = function(author, contacter) {
     return _.where(messages, {recordId: record._id});
 };
 
-// recordStore.fetch = function(author) {
-//     var promise = new Promise(function(resolve, reject) {
-//         $.get('/records', {userId: author}, function(resp) {
-//             resolve(resp.data.records);
-//         });
-//     });
-//     return promise;
-// }
-
-recordStore.fetch = function(author) {
-    var records = this.getRecordList(author);
-    // 这么写的话每一个item都得会有有个请求
-    var promise = Promise.all(records.map(function(item) {
-        return userStore.fetch(item.author);
-    }));
-    promise = promise.then(function(contacters) {
-        var res = [];
-        var len = records.length;
-        for(var i = 0; i<len; i++) {
-            var record = records[i];
-            for(var j = 0; j<len; j++) {
-                var contacter = contacters[j];
-                if(record.contacter === contacters._id) {
-                    res.push(_.extend({}, record, contacter));
-                    break;
-                }
-            }
-        }
-        return res;
+/**
+ * 获取用户的所有聊天记录列表／获取用户与特定联系人的聊天记录信息
+ * @param  {string} author 用户id
+ * @param  {string} relate 联系人id
+ * @return {Promise}
+ */
+recordStore.fetch = function(author, relate) {
+    var query = {userId: author};
+    relate && (query.relate = relate);
+    var promise = new Promise(function(resolve, reject) {
+        $.get('/records', query, function(resp) {
+            resolve(resp.data.records);
+        });
     });
     return promise;
 };

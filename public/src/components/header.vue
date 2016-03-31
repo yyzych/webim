@@ -108,7 +108,7 @@
                 <li class="menu-item" v-link="'friend'">
                     <a>新建聊天</a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item" @click='onClickAddFri'>
                     <a>添加朋友</a>
                 </li>
                 <li class="menu-item" @click='onClickLogout'>
@@ -117,6 +117,11 @@
             </ul>
         </div>
         <div class="mask" @click="onClickMask" v-show="open"></div>
+        <m-modal :show.sync="modal.show" title="添加朋友" @modal-sure="onModalSure" :popup-tip.sync="modal.popupTip">
+            <div class="field-row">
+                <input class="form-control" v-model="modal.friendName" v-focus="modal.show" type="text" placeholder="输入用户名称">
+            </div>
+        </m-modal>
     </template>
 
     <template v-if="pageType === 'friend'">
@@ -139,7 +144,9 @@
 </template>
 
 <script>
+    var Vue = require('vue');
     var auth = require('../auth');
+    var friendStore = require('../databases/friend');
 
     module.exports = {
         name: 'Header',
@@ -148,9 +155,18 @@
             pageType: String,
             refer: String
         },
+        components: {
+            'm-modal': require('./modal.vue')
+        },
         data: function() {
             return {
-                open: false
+                open: false,
+
+                modal: {
+                    show: false,
+                    friendName: '',
+                    popupTip: ''
+                }
             }
         },
         methods: {
@@ -166,10 +182,34 @@
             },
             onClickCancel: function() {
                 this.$route.router.go(this.refer);
+            },
+            onClickAddFri: function() {
+                this.open = false;
+                this.modal.show = true;
+            },
+            onModalSure: function() {
+                if(!this.modal.friendName) 
+                    return;
+                var p = friendStore.createFriend(auth.user.userId, this.modal.friendName);
+                p
+                    .then((resp) => this.$route.router.go('./friend'))
+                    .catch((resp) => {
+                        this.modal.popupTip = resp.message;
+                    });
             }
         },
         detached: function() {
             this.open = false;
+            this.modal.show = false;
+        },
+        directives: {
+            focus: function(value) {
+                if(value) {
+                    Vue.nextTick(()=>{
+                        this.el.focus();
+                    });
+                }
+            }
         }
     };
 </script>

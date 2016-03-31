@@ -24,6 +24,7 @@
                     border: 1px solid #d9d9d9;
                     border-radius: 50%;
                     padding: 4px;
+                    min-width: auto;
                 }
 
                 .icon {

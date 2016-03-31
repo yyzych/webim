@@ -50,8 +50,8 @@
     <li class="item" 
         data-href="{{ one.relate }}">
         <div class="profile" v-link="{name: 'chat', params: {relate: one.relate}}">
-            <img class="avatar" :src="one.avatar">
-            <span class="remark">{{ one.remark }}</span>
+            <img class="avatar" :src="one.friendInfo.avatar">
+            <span class="remark">{{ one.remark || one.friendInfo.username }}</span>
         </div>
         <div class="operate">
             <a class="remark" href="">备注</a>
