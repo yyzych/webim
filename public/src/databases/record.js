@@ -2,18 +2,19 @@ var $ = require('../statics/js/zepto.ajax');
 var _ = require('underscore');
 var userStore = require('./user');
 
+var LS = localStorage;
+
 const ls_key_records = 'records';
 const ls_key_messages = 'messages';
-
-var LS = localStorage;
 var records = JSON.parse(LS.getItem(ls_key_records)) || [];
 var messages = JSON.parse(LS.getItem(ls_key_messages)) || [];
 
 var recordStore = {};
 
 recordStore.createMessage = function(recordId, attr) {
-    if(!recordId || !attr.sender || !attr.receiver) 
+    if(!recordId || !attr.sender || !attr.receiver) {
         return;
+    }
     
     var messageId = _.uniqueId('message_');
     attr.date = Date.now();
@@ -55,13 +56,20 @@ recordStore.getRecord = function(author, contacter) {
     return _.where(records, attr)[0];
 };
 
+
 recordStore.getMessageList = function(author, contacter) {
-    var record = this.getRecord(author, contacter);
+    var query = {
+        author: author,
+        contacter: contacter
+    };
 
-    if(!record)
-        return [];
+    var promise = new Promise(function(resolve, reject) {
+        $.getJSON('/messages', query, function(resp) {
+            resolve(resp.data.messages);
+        });
+    });
 
-    return _.where(messages, {recordId: record._id});
+    return promise;
 };
 
 /**

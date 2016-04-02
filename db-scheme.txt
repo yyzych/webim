@@ -12,15 +12,22 @@ friends = [{
     remark: ''
 }];
 
-// 所有的聊天记录表，存本地但支持上传
+// 所有的聊天记录表，一个聊天记录会有两条记录
 records = [{
     _id: '',
     author: '',
     contacter: '',
     messageId: '',
+    unread: true,
+    recent: {
+        sender: '',
+        receiver: '',
+        date: '',
+        content: ''
+    }
 }];
 
-// 所有的消息表，存本地支持上传
+// 所有的消息表
 messages = [{
     _id: '',
     list: [{

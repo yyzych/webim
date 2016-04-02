@@ -9,7 +9,7 @@ function User(userId) {
 /**
  * 获取某聊天记录的所有消息列表
  * @param  {string} recordId 记录id
- * @return {promise}          
+ * @return {promise} 
  */
 User.prototype.getMessages = function(recordId) {
     var db = mongoHelper.db;
@@ -32,7 +32,10 @@ User.prototype.getMessages = function(recordId) {
             if (err) {
                 reject(err);
             } else {
-                resolve(docs);
+                docs.forEach(function(item) {
+                    item.list = item.messages[0].list;
+                });
+                resolve(docs[0]);
             }
         });
     });
@@ -64,7 +67,7 @@ User.prototype.getRecords = function(contacter) {
                 from: 'users',
                 localField: 'contacter',
                 foreignField: '_id',
-                as: 'record_users'
+                as: 'contacterInfo'
             }
         }]).toArray(function(err, docs) {
             if (err) {
@@ -76,16 +79,10 @@ User.prototype.getRecords = function(contacter) {
     });
 
     promise = promise.then(function(docs) {
-        var records = [];
-        for (var i = 0; i < docs.length; i++) {
-            var item = docs[i];
-            records.pus({
-                _id: item._id,
-                author: item.author,
-                contacter: item.record_users[0]
-            });
-        }
-        return records;
+        docs.map(function(item) {
+            item.contacterInfo = item.contacterInfo[0];
+        });
+        return docs;
     });
 
     return promise;

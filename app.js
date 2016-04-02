@@ -12,6 +12,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
 var routes = require('./routes/index');
+var socketHelper = require('./socketHelper');
 
 
 app.use(session({
@@ -71,13 +72,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-io.on('connection', function(socket) {
-  console.log('a user connected!');
-  socket.on('message', function(data) {
-    console.log(data);
-    socket.broadcast.emit('message', data);
-  });
-});
+io.on('connection', socketHelper.onConnection.bind(io));
 
 
 http.listen(process.env.PORT || '3000');

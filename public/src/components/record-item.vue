@@ -30,6 +30,7 @@
             }
 
             .profile {
+                display: block;
                 padding: 10px;
                 background-color: #fff;
                 position: relative;
@@ -79,19 +80,18 @@
 
 <template>
     <li class="item" 
-        data-href="{{ one._id }}" 
-        v-bind:class="{'unread': one.unread}" 
-        v-on:click="onClickContacter">
-        <div class="profile">
-            <img class="avatar" v-bind:src="one.avatar">
+        data-message-id="{{ one.messageId }}" 
+        :class="{'unread': one.unread}">
+        <a class="profile" v-link="{name: 'chat', params: {relate: one.contacter}}">
+            <img class="avatar" :src="one.contacterInfo.avatar">
             <div class="top">
-                <span class="name ellipsis">{{ one.name }}</span>
+                <span class="name ellipsis">{{ one.contacterInfo.username }}</span>
                 <span class="time">{{ one.time }}</span>
             </div>
             <div class="btm">
                 <span class="recent ellipsis">{{ one.recent }}</span>
             </div>
-        </div>
+        </a>
         <div class="operate">
             <a class="delete" href="">删除</a>
         </div>

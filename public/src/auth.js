@@ -1,4 +1,5 @@
 var $ = require('./statics/js/zepto.ajax');
+var socket = require('./socket');
 
 var LS = localStorage;
 const login_url = '/login';
@@ -13,12 +14,25 @@ module.exports = {
     checkAuth: function() {
         var id = LS.getItem(id_token_key);
         if(id) {
-            this.user.authenticated = true;
-            this.user.userId = id;
+            this.enter(id);
         }else {
-            this.user.authenticated = false;
-            this.user.userId = '';
+            this.logout();
         }
+    },
+
+    enter: function(userId) {
+        LS.setItem(id_token_key, userId);
+
+        this.user.authenticated = true;
+        this.user.userId = userId;
+
+        socket.join(userId);
+    },
+
+    logout: function() {
+        this.user.authenticated = false;
+        this.user.userId = '';
+        LS.removeItem(id_token_key);  
     },
 
     login: function(u, p) {
@@ -44,11 +58,7 @@ module.exports = {
                     if(resp.code != 0) {
                         reject(resp);
                     }else {
-                        LS.setItem(id_token_key, resp.data.userId);
-
-                        self.user.authenticated = true;
-                        self.user.userId = resp.data.userId;
-
+                        self.enter(resp.data.userId);
                         resolve(resp);
                     }
                 }
@@ -56,12 +66,6 @@ module.exports = {
             
         });
         return promise;
-    },
-
-    logout: function() {
-        this.user.authenticated = false;
-        this.user.userId = '';
-        LS.removeItem(id_token_key);  
     },
 
     sign: function(u, p, a) {
@@ -94,10 +98,7 @@ module.exports = {
                 processData: false,
                 success: function(resp) {
                     if(resp.code == 0) {
-                        LS.setItem(id_token_key, resp.data.userId);
-
-                        self.user.authenticated = true;
-                        self.user.userId = resp.data.userId;
+                        self.enter(resp.data.userId);
                     }
                     resolve(resp); 
                 }

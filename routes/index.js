@@ -31,6 +31,38 @@ router.get('/chat', function(req, res, next) {
     });
 });
 
+router.get('/messages', function(req, res) {
+    var author = req.query.author,
+        contacter = req.query.contacter;
+
+    if(!author || !contacter) {
+        res.json({
+            code: -1
+        });
+        return;
+    }
+
+    var user = new User(author);
+
+    var promise = user.getRecords(contacter);
+
+    promise.then(function(records) {
+        if (records.length > 0) {
+            return user.getMessages(records[0]._id);
+        }else {
+            return {list: []}; 
+        }
+    }).then(function(messages) {
+        res.json({
+            code: 0,
+            data: {
+                messages: messages
+            }
+        });
+    });
+
+});
+
 router.get('/records', function(req, res) {
     var userId = req.query.userId;
 

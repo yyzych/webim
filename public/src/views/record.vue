@@ -1,10 +1,10 @@
 <template>
     <div id="record">
-        <m-header :page-type="'record'"></m-header>
+        <m-header :page-type="'record'" title="最近联系人"></m-header>
         <main class="main">
             <div class="contacter-list">
-                <ul class="contacters">
-                    <m-item v-for="one in contacters" :one="item" :index="$index"></m-item>
+                <ul class="records">
+                    <m-item v-for="one in records" :one="one" :index="$index"></m-item>
                 </ul>
             </div>
         </main>        
@@ -13,6 +13,7 @@
 
 <script>
     var auth = require('../auth');
+    var socket = require('../socket').socket;
     var recordStore = require('../databases/record');
     var HeaderView = require('../components/header.vue');
     var RecordItemView = require('../components/record-item.vue');
@@ -26,7 +27,7 @@
         },
         data: function() {
             return {
-                contacters: []
+                records: []
             }
         },
         route: {
@@ -46,16 +47,16 @@
                 // return recordStore.fetch('1001').then(function(list) {
                 //     // vue应该是在返回的promise上调用了then，将前面传回来的数据那去设置组件的值
                 //     return {
-                //         contacters: list
+                //         records: list
                 //     }
                 // });
                 // or
                 // recordStore.fetch('1001').then(function(list) {
-                //     transition.next({contacters: list});
+                //     transition.next({records: list});
                 // });
                 // or
                 return {
-                    contacters: recordStore.fetch(auth.user.userId)
+                    records: recordStore.fetch(auth.user.userId)
                 };
             }
         }
