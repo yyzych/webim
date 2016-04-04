@@ -6,6 +6,68 @@ function Record(recordId) {
     this.recordId = recordId;
 }
 
+Record.setMsgReadStatus = function(author, contacter, isRead) {
+    var db = mongoHelper.db;
+
+    var promise = new Promise(function(resolve, reject) {
+        var collection = db.collection('records');
+        collection.updateOne({
+            author: ObjectId(author),
+            contacter: ObjectId(contacter)
+        }, {
+            $set: { // 如果少了$set修饰符，会整个替换
+                unread: isRead
+            }
+        }, function(err, result) {
+            if(err) {
+                reject(err);
+            }else {
+                resolve(!!result.modifiedCount);
+            }
+        });
+    });
+
+    promise = promise.then(function(isOk) {
+        console.log('Did unread change: ', isOk);
+    }).catch(function(err) {
+        console.log(err);
+    });
+
+    return promise;
+};
+
+Record.setMsgRead = function(author, contacter) {
+    this.setMsgReadStatus(author, contacter, false);
+};
+
+Record.setMsgUnRead = function(author, contacter) {
+    this.setMsgReadStatus(author, contacter, true);
+};
+
+Record.activateRecord = function(messageId) {
+    var db = mongoHelper.db;
+    var query = {
+        messageId: ObjectId(messageId)
+    };
+
+    var promise = new Promise(function(resolve, reject) {
+        var collection = db.collection('records');
+        collection.updateMany(query, {
+            $set: {
+                status: 1 // 删除
+            }
+        }, function(err, result) {
+            if(err) {
+                reject(err);
+            }else {
+                resolve(!!result.modifiedCount);
+            }
+        });
+    });
+
+    return promise;
+};
+
 Record.createMessage = function(messageId, attr) {
     var db = mongoHelper.db;
     
@@ -49,11 +111,13 @@ Record.createRecord = function(author, contacter) {
             collection.insertMany([{
                 author: ObjectId(author),
                 contacter: ObjectId(contacter),
-                messageId: messageId
+                messageId: messageId,
+                unread: false
             }, {
                 author: ObjectId(contacter),
                 contacter: ObjectId(author),
-                messageId: messageId
+                messageId: messageId,
+                unread: true
             }], function(err, result) {
                 if(err) {
                     reject(err);

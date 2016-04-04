@@ -29,7 +29,18 @@ var searchFriend = function(userId) {
 var onMessage = function(data, messageId, io) {
     var socket = this;
 
-    var promise = Record.createMessage(messageId, data);
+    var promise;
+
+    if(true) {
+        promise = Record.activateRecord(messageId);
+        promise = promise.then(function() {
+            return Record.createMessage(messageId, data);
+        });
+    }else {
+        promise = Record.createMessage(messageId, data);
+    }
+
+    // var promise = Record.createMessage(messageId, data);
 
     promise.then(function(messageId) {
         var resp = {
@@ -42,9 +53,9 @@ var onMessage = function(data, messageId, io) {
 
         var friSocket = searchFriend(data.receiver);
         if(friSocket) {
-            friSocket.emit('record', resp);
+            friSocket.emit('message', resp);
         }else {
-            // Record.offlineMessage(data.receiver, data.sender, data);
+            Record.setMsgUnRead(data.receiver, data.sender);
         }
 
         socket.emit('message', resp);
@@ -91,6 +102,13 @@ var onRecord = function(data, io) {
         var friSocket = searchFriend(data.receiver);
         if(friSocket) {
             friSocket.emit('record', resp);
+
+            if(false) {
+                // 没有进入特定的房间
+                Record.setMsgUnRead(data.receiver, data.sender);    
+            }
+        }else {
+            Record.setMsgUnRead(data.receiver, data.sender); // 不需要依赖或等待
         }
 
         socket.emit('record', resp);
@@ -102,6 +120,14 @@ var onRecord = function(data, io) {
     });
 };
 
+var onEnterRoom = function(data, io) {
+    Record.setMsgRead(data.author, data.relate);
+};
+
+var onLeaveRoom = function(data, io) {
+    // Record.setMsgUnRead(data.author, data.relate);
+};
+
 
 // 使用devtool运行程序会有问题，有很多套接字链接。好像是devtool也使用了socket一样!!!
 exports.onConnection = function(socket) {
@@ -109,9 +135,20 @@ exports.onConnection = function(socket) {
 
     console.log('a user connected!');
 
-    socket.on('join', function(data) {
-        // persons[socket.id] = data.userId;
+    socket.on('login', function(data) {
+        console.log('a user login!');
+        socket.userId = data.userId;
         persons[data.userId] = socket;
+    });
+
+    socket.on('enter', function(data) {
+        console.log('user enter: ', data.author, data.relate);
+        onEnterRoom.call(socket, data, io);
+    });
+
+    socket.on('leave', function(data) {
+        console.log('user leave: ', data.author, data.relate);
+        onLeaveRoom.call(socket, data, io);
     });
 
     socket.on('message', function(data, messageId) {
@@ -122,8 +159,14 @@ exports.onConnection = function(socket) {
         onRecord.call(socket, data, io);
     });
 
+    socket.on('logout', function() {
+        console.log('a user logout!');
+        persons[socket.userId] = null;
+    });
+
     socket.on('disconnect', function() {
-        
+        console.log('a user disconnect!');
+        persons[socket.userId] = null;
     });
 
 };

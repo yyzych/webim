@@ -23,3 +23,7 @@ img {
     vertical-align: middle;
     border: none;
 }
+
+a,input,button {
+    -webkit-tap-highlight-color: transparent;
+}

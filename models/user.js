@@ -43,19 +43,58 @@ User.prototype.getMessages = function(recordId) {
     return promise;
 };
 
+// 如果是直接删掉的话，对方的记录要不要保存下来是个问题。只是设置一个标志为
+User.prototype.deleteRecord = function(contacter) {
+    var db = mongoHelper.db;
+    var query = {
+        author: ObjectId(this.userId)
+    };
+    if(contacter) {
+        query.contacter = ObjectId(contacter);
+    }
+
+    var promise = new Promise(function(resolve, reject) {
+        var collection = db.collection('records');
+        collection.updateOne(query, {
+            $set: {
+                status: 0 // 删除
+            }
+        }, function(err, result) {
+            if(err) {
+                reject(err);
+            }else {
+                resolve(!!result.modifiedCount);
+            }
+        });
+    });
+
+    return promise;
+};
+
 /**
  * 获取默认用户的所有聊天记录列表或与特定用户的聊天列表
  * @param  {string} contacter 特定用户id
  * @return {promise}          
  */
-User.prototype.getRecords = function(contacter) {
+User.prototype.getRecords = function(contacter, filterDelete) {
     var db = mongoHelper.db;
     var query = {
         author: ObjectId(this.userId)
     };
 
+    if(typeof contacter === 'boolean') {
+        filterDelete = contacter;
+        contacter=null;
+    }
+
     if (contacter) {
         query.contacter = ObjectId(contacter);
+    }
+
+    if(filterDelete === true) {
+        query.status = {
+            $ne: 0
+        };
     }
 
     var promise = new Promise(function(resolve, reject) {
@@ -69,6 +108,13 @@ User.prototype.getRecords = function(contacter) {
                 foreignField: '_id',
                 as: 'contacterInfo'
             }
+        }, {
+            $lookup: {
+                from: 'messages',
+                localField: 'messageId',
+                foreignField: '_id',
+                as: 'recent'
+            }
         }]).toArray(function(err, docs) {
             if (err) {
                 reject(err);
@@ -81,6 +127,7 @@ User.prototype.getRecords = function(contacter) {
     promise = promise.then(function(docs) {
         docs.map(function(item) {
             item.contacterInfo = item.contacterInfo[0];
+            item.recent = item.recent[0].list.pop();
         });
         return docs;
     });

@@ -26,10 +26,12 @@ module.exports = {
         this.user.authenticated = true;
         this.user.userId = userId;
 
-        socket.join(userId);
+        socket.login(userId);
     },
 
     logout: function() {
+        socket.logout(this.user.userId);
+        
         this.user.authenticated = false;
         this.user.userId = '';
         LS.removeItem(id_token_key);  

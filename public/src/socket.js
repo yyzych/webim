@@ -15,6 +15,25 @@ socket.on('error', (resp) => {
 });
 
 exports.socket = socket;
-exports.join = function(userId) {
-    socket.emit('join', {userId: userId});
+
+exports.enter = function(author, relate) {
+    socket.emit('enter', {
+        author: author,
+        relate: relate
+    });
+};
+
+exports.leave = function(author, relate) {
+    socket.emit('leave', {
+        author: author,
+        relate: relate
+    });
+};
+
+exports.login = function(userId) {
+    socket.emit('login', {userId: userId});
+};
+
+exports.logout = function(userId) {
+    socket.emit('logout', {userId: userId});
 };

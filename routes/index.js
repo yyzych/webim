@@ -63,8 +63,28 @@ router.get('/messages', function(req, res) {
 
 });
 
+router.post('/record', function(req, res) {
+    var author = req.body.author,
+        contacter = req.body.contacter;
+
+    var promise =  new User(author).deleteRecord(contacter);
+
+    promise.then(function(isOk) {
+        res.json({
+            code: isOk ? 0 : -1
+        });
+    }).catch(function(err) {
+        console.log(err);
+        res.json({
+            code: -1,
+            message: '系统出现问题请稍候重试'
+        });
+    });
+});
+
 router.get('/records', function(req, res) {
     var userId = req.query.userId;
+    var relate = req.query.relate;
 
     if(!userId) {
         res.json({
@@ -73,7 +93,7 @@ router.get('/records', function(req, res) {
         return;
     }
 
-    var promise = new User(userId).getRecords();
+    var promise = new User(userId).getRecords(relate);
 
     promise.then(function(records) {
         res.json({
@@ -336,5 +356,32 @@ router.post('/sign', function(req, res) {
 
     req.pipe(busboy);
 });
+
+router.post('/g/upload', function(req, res) {
+    var busboy = new Busboy({
+        headers: req.headers
+    });
+
+    busboy.on('file', function(filedname, file, filename) {
+
+        var ext = ('.' + filename.split('.')[1]) || '';
+        var savename = Date.now() + ext;
+        var filePath = path.join(__dirname, '../public/uploads/chats', savename);
+
+        file.pipe(fs.createWriteStream(filePath));
+
+        var imgpath = path.join('/uploads/chats', savename);
+
+        res.json({
+            code: 0,
+            data: {
+                imgPath: imgpath
+            }
+        });
+    });
+
+    req.pipe(busboy);
+});
+
 
 module.exports = router;

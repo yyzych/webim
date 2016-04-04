@@ -28,7 +28,7 @@
     <div id="chat">
         <m-header title="Someone" page-type="chat" :refer="refer" :title="relate.username"></m-header>
         <div class="main">
-            <div class="gallery">
+            <div class="gallery" v-el:gallery>
                 <div class="chat-record-list">
                     <m-item v-for="one in messages.list" :one="one" :author="author" :relate="relate"></m-item>
                 </div>
@@ -39,8 +39,9 @@
 </template>
 
 <script>
+    var Vue = require('vue');
     var auth = require('../auth');
-    var socket = require('../socket').socket;
+    var socketHepler = require('../socket');
     var userStore = require('../databases/user');
     var recordStore = require('../databases/record');
 
@@ -73,6 +74,7 @@
                 }
             },
             data: function(transition) {
+                // data在每次路由变动时都会被调用
                 var author = auth.user.userId,
                     relate = this.$route.params.relate;
 
@@ -82,6 +84,16 @@
                     author: userStore.fetch(author),
                     relate: userStore.fetch(relate),
                     messages: recordStore.getMessageList(author, relate)
+                }
+            }
+        },
+        watch: {
+            '$loadingRouteData': function(val, oldval) {
+                // $loadingRouteData: true - 正在加载 false － 完成加载
+                if(!val) {
+                    setTimeout(function() {
+                        this.toChatBtm();
+                    }.bind(this), 420); // 直接调用了this.toChatBtm没有效果，是因为从其他组件切换进来有过渡效果，这是为什么？？！
                 }
             }
         },
@@ -98,30 +110,49 @@
                 };
 
                 if(this.messages.messageId) {
-                    socket.emit('message', attr, this.messages.messageId);
+                    socketHepler.socket.emit('message', attr, this.messages.messageId);
                 }else {
-                    socket.emit('record', attr);
+                    socketHepler.socket.emit('record', attr);
                 }
             },
             onCreateRecord: function(resp) {
                 this.messages.messageId = resp.data.messageId;
                 this.messages.list.push(resp.data.attr);
+
+                this.toChatBtm();
             },
             onReceiveMessage: function(resp) {
                 if(this.messages.messageId !== resp.data.messageId) {
                     return;
                 }
                 this.messages.list.push(resp.data.attr);
+
+                this.toChatBtm();
+            },
+            toChatBtm: function() {
+                // 等待下一帧渲染界面时再更新界面
+                // 因为新的消息还没有渲染，现在更新的话scrollHeight这些没有变化
+                Vue.nextTick(()=>{
+                    var el = this.$els.gallery;
+                    el.scrollTop = el.scrollHeight - el.clientHeight;
+                });
             }
         },
-        created: function() {
+        attached: function() {
             // 会先于route.data执行
-            socket.on('message', this.onReceiveMessage.bind(this));
-            socket.on('record', this.onCreateRecord.bind(this));
+            socketHepler.socket.on('message', this.onReceiveMessage.bind(this));
+            socketHepler.socket.on('record', this.onCreateRecord.bind(this));
+
+            var author = auth.user.userId,
+                relate = this.$route.params.relate;
+
+            socketHepler.enter(author, relate);
         },
-        destroyed: function() {
-            socket.removeListener('message');
-            socket.removeListener('record');
+        detached: function() {
+            socketHepler.socket.removeListener('message');
+            socketHepler.socket.removeListener('record');
+
+            socketHepler.leave(this.author._id, this.relate._id);
         }
     };
 </script>

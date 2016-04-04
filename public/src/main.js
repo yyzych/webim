@@ -1,11 +1,13 @@
 var Vue = require('vue');
 var Router = require('vue-router');
+var VueTouch = require('vue-touch');
 
 var App = require('./views/app.vue');
 var auth = require('./auth');
 var routeMap = require('./router');
 
 Vue.use(Router);
+Vue.use(VueTouch);
 
 auth.checkAuth();
 

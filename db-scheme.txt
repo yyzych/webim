@@ -19,15 +19,11 @@ records = [{
     contacter: '',
     messageId: '',
     unread: true,
-    recent: {
-        sender: '',
-        receiver: '',
-        date: '',
-        content: ''
-    }
+    status: 0/1 // 0: 删除
 }];
 
 // 所有的消息表
+// author和contacter共用同一张表有问题，一个用户要删聊天记录另一用户难道也要跟着删吗？？！
 messages = [{
     _id: '',
     list: [{

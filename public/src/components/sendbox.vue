@@ -27,6 +27,20 @@
                     min-width: 0;
                 }
 
+                .btn.upload-img {
+                    position: relative;
+
+                    input[type=file] {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        z-index: 2;
+                        @include opacity(0);
+                    }
+                }
+
                 .icon {
                     background-size: contain;
                 }
@@ -79,8 +93,9 @@
                 <tbody>
                     <tr>
                         <td class="operate-item plus">
-                            <a class="btn">
+                            <a class="btn upload-img">
                                 <i class="icon icon-plus"></i>
+                                <input type="file" name="" id="" @change="onChangeFileInput">
                             </a>
                         </td>
                         <td class="">
@@ -105,6 +120,8 @@
 </template>
 
 <script>
+    var globalStore = require('../databases/global');
+
     module.exports = {
         data: function() {
             return {
@@ -122,8 +139,30 @@
                 if(!this.input.trim()) 
                     return;
 
-                this.$dispatch('sendmsg', this.input);
+                this.$dispatch('sendmsg', escape(this.input));
                 this.input = '';
+            },
+            onChangeFileInput: function(e) {
+                var files = e.target.files;
+                if(!files || files.length < 1) return;
+
+                var self = this;
+                var file = files[0];
+                var filefilers = /^(image\/gif|image\/jpeg|image\/png)$/i;
+
+                if(!filefilers.test(file.type)) {
+                    alert('只支持.gif, .jpeg, .png');
+                    return;
+                }
+
+                var p = globalStore.upload(file);
+
+                p.then((resp) => {
+                    if(resp.code == 0) {
+                        var msg = '<img src="'+resp.data.imgPath+'">';
+                        this.$dispatch('sendmsg', msg);            
+                    }
+                });
             }
         }
     }

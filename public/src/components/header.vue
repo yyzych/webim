@@ -202,6 +202,8 @@
             this.open = false;
             this.modal.show = false;
         },
+        
+        // 自定义指令提供一种机制将数据的变化映射为 DOM 行为。
         directives: {
             focus: function(value) {
                 if(value) {

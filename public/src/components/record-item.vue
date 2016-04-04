@@ -35,11 +35,18 @@
                 background-color: #fff;
                 position: relative;
                 z-index: 9;
+                left: 0;
+
+                @include transition(left .4s ease);
                 @extend %clearfix;
+
+                &.swipe-left {
+                    left: -48px;
+                }
             }
 
             .ellipsis {
-                @include ellipsis(65%);
+                @include ellipsis(50%);
                 display: inline-block;
             }
 
@@ -79,21 +86,22 @@
 </style>
 
 <template>
-    <li class="item" 
-        data-message-id="{{ one.messageId }}" 
-        :class="{'unread': one.unread}">
-        <a class="profile" v-link="{name: 'chat', params: {relate: one.contacter}}">
+    <li class="item" :class="{'unread': one.unread}" v-if="one.status != 0">
+        <a class="profile"
+            v-el:profile
+            v-link="{name: 'chat', params: {relate: one.contacter}}"
+            v-touch:swipe="onSwipeProfile">
             <img class="avatar" :src="one.contacterInfo.avatar">
             <div class="top">
                 <span class="name ellipsis">{{ one.contacterInfo.username }}</span>
-                <span class="time">{{ one.time }}</span>
+                <span class="time">{{ new Date(one.recent.date).toLocaleDateString() }}</span>
             </div>
             <div class="btm">
-                <span class="recent ellipsis">{{ one.recent }}</span>
+                <span class="recent ellipsis">{{ one.recent.content }}</span>
             </div>
         </a>
         <div class="operate">
-            <a class="delete" href="">删除</a>
+            <a class="delete" @click="onClickDelRecord">删除</a>
         </div>
     </li>
 </template>
@@ -105,12 +113,16 @@
             one: Object,
             index: Number
         },
-        computed: {
-
-        },
         methods: {
-            onClickContacter: function(e) {
-                
+            onSwipeProfile: function(e) {
+                if(e.direction == 2) {
+                    this.$els.profile.classList.add('swipe-left');
+                }else if(e.direction == 4) {
+                    this.$els.profile.classList.remove('swipe-left');
+                }
+            },
+            onClickDelRecord: function(e) {
+                this.$dispatch('deleterecord', this.one.author, this.one.contacter, this.index);
             }
         }
     };

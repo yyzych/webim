@@ -16,6 +16,24 @@ userStore.fetch = function(userId) {
     return promise;
 };
 
+userStore.deleteRecord = function(author, contacter) {
+    var data = {
+        author: author
+    };
+
+    if(contacter) {
+        data.contacter = contacter;
+    }
+
+    var promise = new Promise(function(resolve, reject) {
+        $.post('/record', data, function(resp) {
+            resolve(~resp.code);
+        });
+    });
+
+    return promise;
+};
+
 module.exports = userStore;
 
 

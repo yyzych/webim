@@ -43,7 +43,10 @@
                 .inner {
                     float: right;
                     background-color: #a0e75a;
+                }
 
+                img {
+                    max-width: 180px;
                 }
             }
         }
@@ -58,7 +61,7 @@
         </a>
         <div class="content">
             <div class="inner">
-                <p>{{ one.content }}</p>
+                <p>{{{ one.content }}}</p>
             </div>
         </div>
     </div>
