@@ -18,7 +18,7 @@ log.color = function() {
 var mongoHelper = Object.create(EventEmitter.prototype);
 
 mongoHelper.db = null;
-mongoHelper.db_url = 'mongodb://localhost:27017/webim';
+mongoHelper.db_url = 'mongodb://' + (process.env.IP || 'localhost') + ':27017/webim';
 
 mongoHelper.connect = function() {
     if(this.db) {
