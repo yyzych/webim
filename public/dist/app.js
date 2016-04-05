@@ -48,11 +48,11 @@
 	
 	var Vue = __webpack_require__(1);
 	var Router = __webpack_require__(3);
-	var VueTouch = __webpack_require__(193);
+	var VueTouch = __webpack_require__(4);
 	
-	var App = __webpack_require__(4);
-	var auth = __webpack_require__(10);
-	var routeMap = __webpack_require__(123);
+	var App = __webpack_require__(6);
+	var auth = __webpack_require__(12);
+	var routeMap = __webpack_require__(125);
 	
 	Vue.use(Router);
 	Vue.use(VueTouch);
@@ -12539,13436 +12539,11 @@
 /* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __vue_script__, __vue_template__
-	__webpack_require__(5)
-	__vue_template__ = __webpack_require__(9)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/views/app.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 5 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(6);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./app.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./app.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 6 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n/*! normalize.css v3.0.2 | MIT License | git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n@-webkit-keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.anim-fadein {\n  -webkit-animation: fadeIn .4s linear;\n  animation: fadeIn .4s linear; }\n\n.anim-fadeout {\n  -webkit-animation: fadeOut .4s linear;\n  animation: fadeOut .4s linear; }\n\n* {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-size: 14px;\n  font-family: \"Microsoft Yahei\", \"SimHei\", \"Arial\";\n  background-color: #fff; }\n\na {\n  color: inherit;\n  text-decoration: none; }\n\nul {\n  list-style: none; }\n\nimg {\n  vertical-align: middle;\n  border: none; }\n\na, input, button {\n  -webkit-tap-highlight-color: transparent; }\n\n.color-danger {\n  color: #e8415f; }\n\n.color-primary {\n  color: #3a89c9; }\n\n.color-dim {\n  color: #999; }\n\n.color-warning {\n  color: #f8a13f; }\n\n.color-success {\n  color: #61c155; }\n\n.pull-right {\n  float: right !important; }\n\n.pull-left {\n  float: left !important; }\n\n.hide {\n  display: none !important; }\n\n.disabled {\n  color: #666 !important;\n  text-decoration: none !important;\n  cursor: default !important; }\n\nul.inline {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ul.inline > .item {\n    float: left;\n    margin: 0 10px 10px 0; }\n\n.btn {\n  padding: 8px 10px;\n  background: #fff;\n  border: 1px solid #DEDEDE;\n  border-radius: 2px;\n  outline: none;\n  min-width: 70px; }\n  .btn.btn-block {\n    width: 100%; }\n  .btn.btn-primary {\n    background-color: #47B7F9;\n    color: #fff;\n    border-color: #3192CC; }\n\n.fade-transition {\n  -webkit-transition: opacity .4s ease;\n  transition: opacity .4s ease; }\n\n/* .expand-enter 定义进入的开始状态 */\n/* .expand-leave 定义离开的结束状态 */\n.fade-enter,\n.fade-leave {\n  opacity: 0; }\n\n.icon {\n  display: inline-block;\n  *display: inline;\n  *zoom: 1;\n  height: 24px;\n  width: 24px;\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.icon-back {\n  border: 2px solid #fff;\n  border-right: none;\n  border-bottom: none;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg); }\n\n.icon-plus {\n  position: relative; }\n  .icon-plus:before, .icon-plus:after {\n    content: '';\n    display: block;\n    position: absolute;\n    background-color: #fff; }\n  .icon-plus:before {\n    height: 100%;\n    width: 2px;\n    left: 50%;\n    margin-left: -1px; }\n  .icon-plus:after {\n    width: 100%;\n    height: 2px;\n    top: 50%;\n    margin-top: -1px; }\n", "", {"version":3,"sources":["/./src/views/app.vue"],"names":[],"mappings":"AAAA,iBAAiB;AACjB,4DAA4D;AAC5D;;;;GAIG;AACH;EACE,wBAAwB;EACxB,OAAO;EACP,2BAA2B;EAC3B,OAAO;EACP,+BAA+B;EAC/B,OAAO,EAAE;;AAEX;;GAEG;AACH;EACE,UAAU,EAAE;;AAEd;gFACgF;AAChF;;;;;GAKG;AACH;;;;;;;;;;;;;EAaE,eAAe,EAAE;;AAEnB;;;GAGG;AACH;;;;EAIE,sBAAsB;EACtB,OAAO;EACP,yBAAyB;EACzB,OAAO,EAAE;;AAEX;;;GAGG;AACH;EACE,cAAc;EACd,UAAU,EAAE;;AAEd;;;GAGG;AACH;;EAEE,cAAc,EAAE;;AAElB;gFACgF;AAChF;;GAEG;AACH;EACE,8BAA8B,EAAE;;AAElC;;GAEG;AACH;;EAEE,WAAW,EAAE;;AAEf;gFACgF;AAChF;;GAEG;AACH;EACE,0BAA0B,EAAE;;AAE9B;;GAEG;AACH;;EAEE,kBAAkB,EAAE;;AAEtB;;GAEG;AACH;EACE,mBAAmB,EAAE;;AAEvB;;;GAGG;AACH;EACE,eAAe;EACf,iBAAiB,EAAE;;AAErB;;GAEG;AACH;EACE,iBAAiB;EACjB,YAAY,EAAE;;AAEhB;;GAEG;AACH;EACE,eAAe,EAAE;;AAEnB;;GAEG;AACH;;EAEE,eAAe;EACf,eAAe;EACf,mBAAmB;EACnB,yBAAyB,EAAE;;AAE7B;EACE,YAAY,EAAE;;AAEhB;EACE,gBAAgB,EAAE;;AAEpB;gFACgF;AAChF;;GAEG;AACH;EACE,UAAU,EAAE;;AAEd;;GAEG;AACH;EACE,iBAAiB,EAAE;;AAErB;gFACgF;AAChF;;GAEG;AACH;EACE,iBAAiB,EAAE;;AAErB;;GAEG;AACH;EAEE,wBAAwB;EACxB,UAAU,EAAE;;AAEd;;GAEG;AACH;EACE,eAAe,EAAE;;AAEnB;;GAEG;AACH;;;;EAIE,kCAAkC;EAClC,eAAe,EAAE;;AAEnB;gFACgF;AAChF;;;GAGG;AACH;;;;;GAKG;AACH;;;;;EAKE,eAAe;EACf,OAAO;EACP,cAAc;EACd,OAAO;EACP,UAAU;EACV,OAAO,EAAE;;AAEX;;GAEG;AACH;EACE,kBAAkB,EAAE;;AAEtB;;;;;GAKG;AACH;;EAEE,qBAAqB,EAAE;;AAEzB;;;;;;GAMG;AACH;;;;EAIE,2BAA2B;EAC3B,OAAO;EACP,gBAAgB;EAChB,OAAO,EAAE;;AAEX;;GAEG;AACH;;EAEE,gBAAgB,EAAE;;AAEpB;;GAEG;AACH;;EAEE,UAAU;EACV,WAAW,EAAE;;AAEf;;;GAGG;AACH;EACE,oBAAoB,EAAE;;AAExB;;;;;;GAMG;AACH;;EAEE,uBAAuB;EACvB,OAAO;EACP,WAAW;EACX,OAAO,EAAE;;AAEX;;;;GAIG;AACH;;EAEE,aAAa,EAAE;;AAEjB;;;;GAIG;AACH;EACE,8BAA8B;EAC9B,OAAO;EAGP,OAAO;EACP,wBAAwB,EAAE;;AAE5B;;;;GAIG;AACH;;EAEE,yBAAyB,EAAE;;AAE7B;;GAEG;AACH;EACE,0BAA0B;EAC1B,cAAc;EACd,+BAA+B,EAAE;;AAEnC;;;GAGG;AACH;EACE,UAAU;EACV,OAAO;EACP,WAAW;EACX,OAAO,EAAE;;AAEX;;GAEG;AACH;EACE,eAAe,EAAE;;AAEnB;;;GAGG;AACH;EACE,kBAAkB,EAAE;;AAEtB;gFACgF;AAChF;;GAEG;AACH;EACE,0BAA0B;EAC1B,kBAAkB,EAAE;;AAEtB;;EAEE,WAAW,EAAE;;AAEf;EACE;IACE,WAAW,EAAE;EACf;IACE,WAAW,EAAE,EAAE;;AAJnB;EACE;IACE,WAAW,EAAE;EACf;IACE,WAAW,EAAE,EAAE;;AAEnB;EACE;IACE,WAAW,EAAE;EACf;IACE,WAAW,EAAE,EAAE;;AAJnB;EACE;IACE,WAAW,EAAE;EACf;IACE,WAAW,EAAE,EAAE;;AAEnB;EACE,qCAAqC;EAErC,6BAA6B,EAAE;;AAEjC;EACE,sCAAsC;EAEtC,8BAA8B,EAAE;;AAElC;EACE,UAAU;EACV,WAAW,EAAE;;AAEf;EACE,gBAAgB;EAChB,kDAAkD;EAClD,uBAAuB,EAAE;;AAE3B;EACE,eAAe;EACf,sBAAsB,EAAE;;AAE1B;EACE,iBAAiB,EAAE;;AAErB;EACE,uBAAuB;EACvB,aAAa,EAAE;;AAEjB;EACE,yCAAyC,EAAE;;AAE7C;EACE,eAAe,EAAE;;AAEnB;EACE,eAAe,EAAE;;AAEnB;EACE,YAAY,EAAE;;AAEhB;EACE,eAAe,EAAE;;AAEnB;EACE,eAAe,EAAE;;AAEnB;EACE,wBAAwB,EAAE;;AAE5B;EACE,uBAAuB,EAAE;;AAE3B;EACE,yBAAyB,EAAE;;AAE7B;EACE,uBAAuB;EACvB,iCAAiC;EACjC,2BAA2B,EAAE;;AAE/B;EACE,iBAAiB;EACjB,WAAW;EACX,UAAU;EACV,iBAAiB,EAAE;EACnB;IACE,YAAY;IACZ,sBAAsB,EAAE;;AAE5B;EACE,kBAAkB;EAClB,iBAAiB;EACjB,0BAA0B;EAC1B,mBAAmB;EACnB,cAAc;EACd,gBAAgB,EAAE;EAClB;IACE,YAAY,EAAE;EAChB;IACE,0BAA0B;IAC1B,YAAY;IACZ,sBAAsB,EAAE;;AAE5B;EACE,qCAA6B;EAA7B,6BAA6B,EAAE;;AAEjC,6BAA6B;AAC7B,6BAA6B;AAC7B;;EAEE,WAAW,EAAE;;AAEf;EACE,sBAAsB;GAStB,gBARiB;GASjB,QARS;EACT,aAAa;EACb,YAAY;EACZ,6BAA6B;EAC7B,uBAAuB,EAAE;;AAE3B;EACE,uBAAuB;EACvB,mBAAmB;EACnB,oBAAoB;EACpB,kCAAkC;EAIlC,0BAA0B,EAAE;;AAE9B;EACE,mBAAmB,EAAE;EACrB;IACE,YAAY;IACZ,eAAe;IACf,mBAAmB;IACnB,uBAAuB,EAAE;EAC3B;IACE,aAAa;IACb,WAAW;IACX,UAAU;IACV,kBAAkB,EAAE;EACtB;IACE,YAAY;IACZ,YAAY;IACZ,SAAS;IACT,iBAAiB,EAAE","file":"app.vue","sourcesContent":["@charset \"UTF-8\";\n/*! normalize.css v3.0.2 | MIT License | git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.anim-fadein {\n  -webkit-animation: fadeIn .4s linear;\n  -o-animation: fadeIn .4s linear;\n  animation: fadeIn .4s linear; }\n\n.anim-fadeout {\n  -webkit-animation: fadeOut .4s linear;\n  -o-animation: fadeOut .4s linear;\n  animation: fadeOut .4s linear; }\n\n* {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-size: 14px;\n  font-family: \"Microsoft Yahei\", \"SimHei\", \"Arial\";\n  background-color: #fff; }\n\na {\n  color: inherit;\n  text-decoration: none; }\n\nul {\n  list-style: none; }\n\nimg {\n  vertical-align: middle;\n  border: none; }\n\na, input, button {\n  -webkit-tap-highlight-color: transparent; }\n\n.color-danger {\n  color: #e8415f; }\n\n.color-primary {\n  color: #3a89c9; }\n\n.color-dim {\n  color: #999; }\n\n.color-warning {\n  color: #f8a13f; }\n\n.color-success {\n  color: #61c155; }\n\n.pull-right {\n  float: right !important; }\n\n.pull-left {\n  float: left !important; }\n\n.hide {\n  display: none !important; }\n\n.disabled {\n  color: #666 !important;\n  text-decoration: none !important;\n  cursor: default !important; }\n\nul.inline {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ul.inline > .item {\n    float: left;\n    margin: 0 10px 10px 0; }\n\n.btn {\n  padding: 8px 10px;\n  background: #fff;\n  border: 1px solid #DEDEDE;\n  border-radius: 2px;\n  outline: none;\n  min-width: 70px; }\n  .btn.btn-block {\n    width: 100%; }\n  .btn.btn-primary {\n    background-color: #47B7F9;\n    color: #fff;\n    border-color: #3192CC; }\n\n.fade-transition {\n  transition: opacity .4s ease; }\n\n/* .expand-enter 定义进入的开始状态 */\n/* .expand-leave 定义离开的结束状态 */\n.fade-enter,\n.fade-leave {\n  opacity: 0; }\n\n.icon {\n  display: inline-block;\n  *display: inline;\n  *zoom: 1;\n  height: 24px;\n  width: 24px;\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.icon-back {\n  border: 2px solid #fff;\n  border-right: none;\n  border-bottom: none;\n  -webkit-transform: rotate(-45deg);\n  -moz-transform: rotate(-45deg);\n  -ms-transform: rotate(-45deg);\n  -o-transform: rotate(-45deg);\n  transform: rotate(-45deg); }\n\n.icon-plus {\n  position: relative; }\n  .icon-plus:before, .icon-plus:after {\n    content: '';\n    display: block;\n    position: absolute;\n    background-color: #fff; }\n  .icon-plus:before {\n    height: 100%;\n    width: 2px;\n    left: 50%;\n    margin-left: -1px; }\n  .icon-plus:after {\n    width: 100%;\n    height: 2px;\n    top: 50%;\n    margin-top: -1px; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 7 */
-/***/ function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-	
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-	
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
-
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	var stylesInDom = {},
-		memoize = function(fn) {
-			var memo;
-			return function () {
-				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-				return memo;
-			};
-		},
-		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
-		}),
-		getHeadElement = memoize(function () {
-			return document.head || document.getElementsByTagName("head")[0];
-		}),
-		singletonElement = null,
-		singletonCounter = 0,
-		styleElementsInsertedAtTop = [];
-	
-	module.exports = function(list, options) {
-		if(false) {
-			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-		}
-	
-		options = options || {};
-		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-		// tags it will allow on a page
-		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
-	
-		// By default, add <style> tags to the bottom of <head>.
-		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
-	
-		var styles = listToStyles(list);
-		addStylesToDom(styles, options);
-	
-		return function update(newList) {
-			var mayRemove = [];
-			for(var i = 0; i < styles.length; i++) {
-				var item = styles[i];
-				var domStyle = stylesInDom[item.id];
-				domStyle.refs--;
-				mayRemove.push(domStyle);
-			}
-			if(newList) {
-				var newStyles = listToStyles(newList);
-				addStylesToDom(newStyles, options);
-			}
-			for(var i = 0; i < mayRemove.length; i++) {
-				var domStyle = mayRemove[i];
-				if(domStyle.refs === 0) {
-					for(var j = 0; j < domStyle.parts.length; j++)
-						domStyle.parts[j]();
-					delete stylesInDom[domStyle.id];
-				}
-			}
-		};
-	}
-	
-	function addStylesToDom(styles, options) {
-		for(var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-			if(domStyle) {
-				domStyle.refs++;
-				for(var j = 0; j < domStyle.parts.length; j++) {
-					domStyle.parts[j](item.parts[j]);
-				}
-				for(; j < item.parts.length; j++) {
-					domStyle.parts.push(addStyle(item.parts[j], options));
-				}
-			} else {
-				var parts = [];
-				for(var j = 0; j < item.parts.length; j++) {
-					parts.push(addStyle(item.parts[j], options));
-				}
-				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-			}
-		}
-	}
-	
-	function listToStyles(list) {
-		var styles = [];
-		var newStyles = {};
-		for(var i = 0; i < list.length; i++) {
-			var item = list[i];
-			var id = item[0];
-			var css = item[1];
-			var media = item[2];
-			var sourceMap = item[3];
-			var part = {css: css, media: media, sourceMap: sourceMap};
-			if(!newStyles[id])
-				styles.push(newStyles[id] = {id: id, parts: [part]});
-			else
-				newStyles[id].parts.push(part);
-		}
-		return styles;
-	}
-	
-	function insertStyleElement(options, styleElement) {
-		var head = getHeadElement();
-		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
-		if (options.insertAt === "top") {
-			if(!lastStyleElementInsertedAtTop) {
-				head.insertBefore(styleElement, head.firstChild);
-			} else if(lastStyleElementInsertedAtTop.nextSibling) {
-				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
-			} else {
-				head.appendChild(styleElement);
-			}
-			styleElementsInsertedAtTop.push(styleElement);
-		} else if (options.insertAt === "bottom") {
-			head.appendChild(styleElement);
-		} else {
-			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
-		}
-	}
-	
-	function removeStyleElement(styleElement) {
-		styleElement.parentNode.removeChild(styleElement);
-		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
-		if(idx >= 0) {
-			styleElementsInsertedAtTop.splice(idx, 1);
-		}
-	}
-	
-	function createStyleElement(options) {
-		var styleElement = document.createElement("style");
-		styleElement.type = "text/css";
-		insertStyleElement(options, styleElement);
-		return styleElement;
-	}
-	
-	function addStyle(obj, options) {
-		var styleElement, update, remove;
-	
-		if (options.singleton) {
-			var styleIndex = singletonCounter++;
-			styleElement = singletonElement || (singletonElement = createStyleElement(options));
-			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
-			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
-		} else {
-			styleElement = createStyleElement(options);
-			update = applyToTag.bind(null, styleElement);
-			remove = function() {
-				removeStyleElement(styleElement);
-			};
-		}
-	
-		update(obj);
-	
-		return function updateStyle(newObj) {
-			if(newObj) {
-				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
-					return;
-				update(obj = newObj);
-			} else {
-				remove();
-			}
-		};
-	}
-	
-	var replaceText = (function () {
-		var textStore = [];
-	
-		return function (index, replacement) {
-			textStore[index] = replacement;
-			return textStore.filter(Boolean).join('\n');
-		};
-	})();
-	
-	function applyToSingletonTag(styleElement, index, remove, obj) {
-		var css = remove ? "" : obj.css;
-	
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = replaceText(index, css);
-		} else {
-			var cssNode = document.createTextNode(css);
-			var childNodes = styleElement.childNodes;
-			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
-			if (childNodes.length) {
-				styleElement.insertBefore(cssNode, childNodes[index]);
-			} else {
-				styleElement.appendChild(cssNode);
-			}
-		}
-	}
-	
-	function applyToTag(styleElement, obj) {
-		var css = obj.css;
-		var media = obj.media;
-		var sourceMap = obj.sourceMap;
-	
-		if (media) {
-			styleElement.setAttribute("media", media);
-		}
-	
-		if (sourceMap) {
-			// https://developer.chrome.com/devtools/docs/javascript-debugging
-			// this makes source maps inside style tags work properly in Chrome
-			css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */';
-			// http://stackoverflow.com/a/26603875
-			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-		}
-	
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = css;
-		} else {
-			while(styleElement.firstChild) {
-				styleElement.removeChild(styleElement.firstChild);
-			}
-			styleElement.appendChild(document.createTextNode(css));
-		}
-	}
-
-
-/***/ },
-/* 9 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div id=\"container\">        \n    <router-view keep-alive transition=\"fade\" transition-mode='out-in'>\n    </router-view>\n</div>\n";
-
-/***/ },
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var _promise = __webpack_require__(11);
-	
-	var _promise2 = _interopRequireDefault(_promise);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var $ = __webpack_require__(66);
-	var socket = __webpack_require__(72);
-	
-	var LS = localStorage;
-	var login_url = '/login';
-	var sign_url = '/sign';
-	var id_token_key = 'id_token';
-	
-	module.exports = {
-	    user: {
-	        authenticated: false
-	    },
-	
-	    checkAuth: function checkAuth() {
-	        var id = LS.getItem(id_token_key);
-	        if (id) {
-	            this.enter(id);
-	        } else {
-	            this.logout();
-	        }
-	    },
-	
-	    enter: function enter(userId) {
-	        LS.setItem(id_token_key, userId);
-	
-	        this.user.authenticated = true;
-	        this.user.userId = userId;
-	
-	        socket.login(userId);
-	    },
-	
-	    logout: function logout() {
-	        socket.logout(this.user.userId);
-	
-	        this.user.authenticated = false;
-	        this.user.userId = '';
-	        LS.removeItem(id_token_key);
-	    },
-	
-	    login: function login(u, p) {
-	        var self = this;
-	        var data = {
-	            username: u,
-	            password: p
-	        };
-	        var promise = new _promise2.default(function (resolve, reject) {
-	            if (!data.username || !data.password) {
-	                reject({
-	                    code: 2,
-	                    message: '用户名或密码为空'
-	                });
-	            }
-	
-	            $.ajax({
-	                url: login_url,
-	                type: 'post',
-	                data: data,
-	                dataType: 'json',
-	                success: function success(resp) {
-	                    if (resp.code != 0) {
-	                        reject(resp);
-	                    } else {
-	                        self.enter(resp.data.userId);
-	                        resolve(resp);
-	                    }
-	                }
-	            });
-	        });
-	        return promise;
-	    },
-	
-	    sign: function sign(u, p, a) {
-	        var self = this;
-	        var data = {
-	            username: u,
-	            password: p,
-	            avatar: a
-	        };
-	
-	        var fd = new FormData();
-	        fd.append('username', u);
-	        fd.append('password', p);
-	        fd.append('avatar', a);
-	
-	        var promise = new _promise2.default(function (resolve, reject) {
-	            if (!data.username || !data.password) {
-	                reject({
-	                    code: 2,
-	                    message: '用户名或密码为空'
-	                });
-	            }
-	
-	            $.ajax({
-	                url: sign_url,
-	                type: 'post',
-	                dataType: 'json',
-	                data: fd,
-	                contentType: false,
-	                processData: false,
-	                success: function success(resp) {
-	                    if (resp.code == 0) {
-	                        self.enter(resp.data.userId);
-	                    }
-	                    resolve(resp);
-	                }
-	            });
-	        });
-	
-	        return promise;
-	    },
-	
-	    getAuthHeader: function getAuthHeader() {
-	        return {
-	            Authorization: 'CurUser' + LS.getItem(id_token_key)
-	        };
-	    }
-	};
-
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(12), __esModule: true };
-
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(13);
-	__webpack_require__(14);
-	__webpack_require__(38);
-	__webpack_require__(45);
-	module.exports = __webpack_require__(22).Promise;
-
-/***/ },
-/* 13 */
-/***/ function(module, exports) {
-
-
-
-/***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var $at  = __webpack_require__(15)(true);
-	
-	// 21.1.3.27 String.prototype[@@iterator]()
-	__webpack_require__(18)(String, 'String', function(iterated){
-	  this._t = String(iterated); // target
-	  this._i = 0;                // next index
-	// 21.1.5.2.1 %StringIteratorPrototype%.next()
-	}, function(){
-	  var O     = this._t
-	    , index = this._i
-	    , point;
-	  if(index >= O.length)return {value: undefined, done: true};
-	  point = $at(O, index);
-	  this._i += point.length;
-	  return {value: point, done: false};
-	});
-
-/***/ },
-/* 15 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var toInteger = __webpack_require__(16)
-	  , defined   = __webpack_require__(17);
-	// true  -> String#at
-	// false -> String#codePointAt
-	module.exports = function(TO_STRING){
-	  return function(that, pos){
-	    var s = String(defined(that))
-	      , i = toInteger(pos)
-	      , l = s.length
-	      , a, b;
-	    if(i < 0 || i >= l)return TO_STRING ? '' : undefined;
-	    a = s.charCodeAt(i);
-	    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
-	      ? TO_STRING ? s.charAt(i) : a
-	      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
-	  };
-	};
-
-/***/ },
-/* 16 */
-/***/ function(module, exports) {
-
-	// 7.1.4 ToInteger
-	var ceil  = Math.ceil
-	  , floor = Math.floor;
-	module.exports = function(it){
-	  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
-	};
-
-/***/ },
-/* 17 */
-/***/ function(module, exports) {
-
-	// 7.2.1 RequireObjectCoercible(argument)
-	module.exports = function(it){
-	  if(it == undefined)throw TypeError("Can't call method on  " + it);
-	  return it;
-	};
-
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var LIBRARY        = __webpack_require__(19)
-	  , $export        = __webpack_require__(20)
-	  , redefine       = __webpack_require__(25)
-	  , hide           = __webpack_require__(26)
-	  , has            = __webpack_require__(31)
-	  , Iterators      = __webpack_require__(32)
-	  , $iterCreate    = __webpack_require__(33)
-	  , setToStringTag = __webpack_require__(34)
-	  , getProto       = __webpack_require__(27).getProto
-	  , ITERATOR       = __webpack_require__(35)('iterator')
-	  , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
-	  , FF_ITERATOR    = '@@iterator'
-	  , KEYS           = 'keys'
-	  , VALUES         = 'values';
-	
-	var returnThis = function(){ return this; };
-	
-	module.exports = function(Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED){
-	  $iterCreate(Constructor, NAME, next);
-	  var getMethod = function(kind){
-	    if(!BUGGY && kind in proto)return proto[kind];
-	    switch(kind){
-	      case KEYS: return function keys(){ return new Constructor(this, kind); };
-	      case VALUES: return function values(){ return new Constructor(this, kind); };
-	    } return function entries(){ return new Constructor(this, kind); };
-	  };
-	  var TAG        = NAME + ' Iterator'
-	    , DEF_VALUES = DEFAULT == VALUES
-	    , VALUES_BUG = false
-	    , proto      = Base.prototype
-	    , $native    = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT]
-	    , $default   = $native || getMethod(DEFAULT)
-	    , methods, key;
-	  // Fix native
-	  if($native){
-	    var IteratorPrototype = getProto($default.call(new Base));
-	    // Set @@toStringTag to native iterators
-	    setToStringTag(IteratorPrototype, TAG, true);
-	    // FF fix
-	    if(!LIBRARY && has(proto, FF_ITERATOR))hide(IteratorPrototype, ITERATOR, returnThis);
-	    // fix Array#{values, @@iterator}.name in V8 / FF
-	    if(DEF_VALUES && $native.name !== VALUES){
-	      VALUES_BUG = true;
-	      $default = function values(){ return $native.call(this); };
-	    }
-	  }
-	  // Define iterator
-	  if((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])){
-	    hide(proto, ITERATOR, $default);
-	  }
-	  // Plug for library
-	  Iterators[NAME] = $default;
-	  Iterators[TAG]  = returnThis;
-	  if(DEFAULT){
-	    methods = {
-	      values:  DEF_VALUES  ? $default : getMethod(VALUES),
-	      keys:    IS_SET      ? $default : getMethod(KEYS),
-	      entries: !DEF_VALUES ? $default : getMethod('entries')
-	    };
-	    if(FORCED)for(key in methods){
-	      if(!(key in proto))redefine(proto, key, methods[key]);
-	    } else $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
-	  }
-	  return methods;
-	};
-
-/***/ },
-/* 19 */
-/***/ function(module, exports) {
-
-	module.exports = true;
-
-/***/ },
-/* 20 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var global    = __webpack_require__(21)
-	  , core      = __webpack_require__(22)
-	  , ctx       = __webpack_require__(23)
-	  , PROTOTYPE = 'prototype';
-	
-	var $export = function(type, name, source){
-	  var IS_FORCED = type & $export.F
-	    , IS_GLOBAL = type & $export.G
-	    , IS_STATIC = type & $export.S
-	    , IS_PROTO  = type & $export.P
-	    , IS_BIND   = type & $export.B
-	    , IS_WRAP   = type & $export.W
-	    , exports   = IS_GLOBAL ? core : core[name] || (core[name] = {})
-	    , target    = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE]
-	    , key, own, out;
-	  if(IS_GLOBAL)source = name;
-	  for(key in source){
-	    // contains in native
-	    own = !IS_FORCED && target && key in target;
-	    if(own && key in exports)continue;
-	    // export native or passed
-	    out = own ? target[key] : source[key];
-	    // prevent global pollution for namespaces
-	    exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key]
-	    // bind timers to global for call from export context
-	    : IS_BIND && own ? ctx(out, global)
-	    // wrap global constructors for prevent change them in library
-	    : IS_WRAP && target[key] == out ? (function(C){
-	      var F = function(param){
-	        return this instanceof C ? new C(param) : C(param);
-	      };
-	      F[PROTOTYPE] = C[PROTOTYPE];
-	      return F;
-	    // make static versions for prototype methods
-	    })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
-	    if(IS_PROTO)(exports[PROTOTYPE] || (exports[PROTOTYPE] = {}))[key] = out;
-	  }
-	};
-	// type bitmap
-	$export.F = 1;  // forced
-	$export.G = 2;  // global
-	$export.S = 4;  // static
-	$export.P = 8;  // proto
-	$export.B = 16; // bind
-	$export.W = 32; // wrap
-	module.exports = $export;
-
-/***/ },
-/* 21 */
-/***/ function(module, exports) {
-
-	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-	var global = module.exports = typeof window != 'undefined' && window.Math == Math
-	  ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
-	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
-
-/***/ },
-/* 22 */
-/***/ function(module, exports) {
-
-	var core = module.exports = {version: '1.2.6'};
-	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
-
-/***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// optional / simple context binding
-	var aFunction = __webpack_require__(24);
-	module.exports = function(fn, that, length){
-	  aFunction(fn);
-	  if(that === undefined)return fn;
-	  switch(length){
-	    case 1: return function(a){
-	      return fn.call(that, a);
-	    };
-	    case 2: return function(a, b){
-	      return fn.call(that, a, b);
-	    };
-	    case 3: return function(a, b, c){
-	      return fn.call(that, a, b, c);
-	    };
-	  }
-	  return function(/* ...args */){
-	    return fn.apply(that, arguments);
-	  };
-	};
-
-/***/ },
-/* 24 */
-/***/ function(module, exports) {
-
-	module.exports = function(it){
-	  if(typeof it != 'function')throw TypeError(it + ' is not a function!');
-	  return it;
-	};
-
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(26);
-
-/***/ },
-/* 26 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var $          = __webpack_require__(27)
-	  , createDesc = __webpack_require__(28);
-	module.exports = __webpack_require__(29) ? function(object, key, value){
-	  return $.setDesc(object, key, createDesc(1, value));
-	} : function(object, key, value){
-	  object[key] = value;
-	  return object;
-	};
-
-/***/ },
-/* 27 */
-/***/ function(module, exports) {
-
-	var $Object = Object;
-	module.exports = {
-	  create:     $Object.create,
-	  getProto:   $Object.getPrototypeOf,
-	  isEnum:     {}.propertyIsEnumerable,
-	  getDesc:    $Object.getOwnPropertyDescriptor,
-	  setDesc:    $Object.defineProperty,
-	  setDescs:   $Object.defineProperties,
-	  getKeys:    $Object.keys,
-	  getNames:   $Object.getOwnPropertyNames,
-	  getSymbols: $Object.getOwnPropertySymbols,
-	  each:       [].forEach
-	};
-
-/***/ },
-/* 28 */
-/***/ function(module, exports) {
-
-	module.exports = function(bitmap, value){
-	  return {
-	    enumerable  : !(bitmap & 1),
-	    configurable: !(bitmap & 2),
-	    writable    : !(bitmap & 4),
-	    value       : value
-	  };
-	};
-
-/***/ },
-/* 29 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// Thank's IE8 for his funny defineProperty
-	module.exports = !__webpack_require__(30)(function(){
-	  return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
-	});
-
-/***/ },
-/* 30 */
-/***/ function(module, exports) {
-
-	module.exports = function(exec){
-	  try {
-	    return !!exec();
-	  } catch(e){
-	    return true;
-	  }
-	};
-
-/***/ },
-/* 31 */
-/***/ function(module, exports) {
-
-	var hasOwnProperty = {}.hasOwnProperty;
-	module.exports = function(it, key){
-	  return hasOwnProperty.call(it, key);
-	};
-
-/***/ },
-/* 32 */
-/***/ function(module, exports) {
-
-	module.exports = {};
-
-/***/ },
-/* 33 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var $              = __webpack_require__(27)
-	  , descriptor     = __webpack_require__(28)
-	  , setToStringTag = __webpack_require__(34)
-	  , IteratorPrototype = {};
-	
-	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-	__webpack_require__(26)(IteratorPrototype, __webpack_require__(35)('iterator'), function(){ return this; });
-	
-	module.exports = function(Constructor, NAME, next){
-	  Constructor.prototype = $.create(IteratorPrototype, {next: descriptor(1, next)});
-	  setToStringTag(Constructor, NAME + ' Iterator');
-	};
-
-/***/ },
-/* 34 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var def = __webpack_require__(27).setDesc
-	  , has = __webpack_require__(31)
-	  , TAG = __webpack_require__(35)('toStringTag');
-	
-	module.exports = function(it, tag, stat){
-	  if(it && !has(it = stat ? it : it.prototype, TAG))def(it, TAG, {configurable: true, value: tag});
-	};
-
-/***/ },
-/* 35 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var store  = __webpack_require__(36)('wks')
-	  , uid    = __webpack_require__(37)
-	  , Symbol = __webpack_require__(21).Symbol;
-	module.exports = function(name){
-	  return store[name] || (store[name] =
-	    Symbol && Symbol[name] || (Symbol || uid)('Symbol.' + name));
-	};
-
-/***/ },
-/* 36 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var global = __webpack_require__(21)
-	  , SHARED = '__core-js_shared__'
-	  , store  = global[SHARED] || (global[SHARED] = {});
-	module.exports = function(key){
-	  return store[key] || (store[key] = {});
-	};
-
-/***/ },
-/* 37 */
-/***/ function(module, exports) {
-
-	var id = 0
-	  , px = Math.random();
-	module.exports = function(key){
-	  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
-	};
-
-/***/ },
-/* 38 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(39);
-	var Iterators = __webpack_require__(32);
-	Iterators.NodeList = Iterators.HTMLCollection = Iterators.Array;
-
-/***/ },
-/* 39 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var addToUnscopables = __webpack_require__(40)
-	  , step             = __webpack_require__(41)
-	  , Iterators        = __webpack_require__(32)
-	  , toIObject        = __webpack_require__(42);
-	
-	// 22.1.3.4 Array.prototype.entries()
-	// 22.1.3.13 Array.prototype.keys()
-	// 22.1.3.29 Array.prototype.values()
-	// 22.1.3.30 Array.prototype[@@iterator]()
-	module.exports = __webpack_require__(18)(Array, 'Array', function(iterated, kind){
-	  this._t = toIObject(iterated); // target
-	  this._i = 0;                   // next index
-	  this._k = kind;                // kind
-	// 22.1.5.2.1 %ArrayIteratorPrototype%.next()
-	}, function(){
-	  var O     = this._t
-	    , kind  = this._k
-	    , index = this._i++;
-	  if(!O || index >= O.length){
-	    this._t = undefined;
-	    return step(1);
-	  }
-	  if(kind == 'keys'  )return step(0, index);
-	  if(kind == 'values')return step(0, O[index]);
-	  return step(0, [index, O[index]]);
-	}, 'values');
-	
-	// argumentsList[@@iterator] is %ArrayProto_values% (9.4.4.6, 9.4.4.7)
-	Iterators.Arguments = Iterators.Array;
-	
-	addToUnscopables('keys');
-	addToUnscopables('values');
-	addToUnscopables('entries');
-
-/***/ },
-/* 40 */
-/***/ function(module, exports) {
-
-	module.exports = function(){ /* empty */ };
-
-/***/ },
-/* 41 */
-/***/ function(module, exports) {
-
-	module.exports = function(done, value){
-	  return {value: value, done: !!done};
-	};
-
-/***/ },
-/* 42 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// to indexed object, toObject with fallback for non-array-like ES3 strings
-	var IObject = __webpack_require__(43)
-	  , defined = __webpack_require__(17);
-	module.exports = function(it){
-	  return IObject(defined(it));
-	};
-
-/***/ },
-/* 43 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// fallback for non-array-like ES3 and non-enumerable old V8 strings
-	var cof = __webpack_require__(44);
-	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
-	  return cof(it) == 'String' ? it.split('') : Object(it);
-	};
-
-/***/ },
-/* 44 */
-/***/ function(module, exports) {
-
-	var toString = {}.toString;
-	
-	module.exports = function(it){
-	  return toString.call(it).slice(8, -1);
-	};
-
-/***/ },
-/* 45 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var $          = __webpack_require__(27)
-	  , LIBRARY    = __webpack_require__(19)
-	  , global     = __webpack_require__(21)
-	  , ctx        = __webpack_require__(23)
-	  , classof    = __webpack_require__(46)
-	  , $export    = __webpack_require__(20)
-	  , isObject   = __webpack_require__(47)
-	  , anObject   = __webpack_require__(48)
-	  , aFunction  = __webpack_require__(24)
-	  , strictNew  = __webpack_require__(49)
-	  , forOf      = __webpack_require__(50)
-	  , setProto   = __webpack_require__(55).set
-	  , same       = __webpack_require__(56)
-	  , SPECIES    = __webpack_require__(35)('species')
-	  , speciesConstructor = __webpack_require__(57)
-	  , asap       = __webpack_require__(58)
-	  , PROMISE    = 'Promise'
-	  , process    = global.process
-	  , isNode     = classof(process) == 'process'
-	  , P          = global[PROMISE]
-	  , Wrapper;
-	
-	var testResolve = function(sub){
-	  var test = new P(function(){});
-	  if(sub)test.constructor = Object;
-	  return P.resolve(test) === test;
-	};
-	
-	var USE_NATIVE = function(){
-	  var works = false;
-	  function P2(x){
-	    var self = new P(x);
-	    setProto(self, P2.prototype);
-	    return self;
-	  }
-	  try {
-	    works = P && P.resolve && testResolve();
-	    setProto(P2, P);
-	    P2.prototype = $.create(P.prototype, {constructor: {value: P2}});
-	    // actual Firefox has broken subclass support, test that
-	    if(!(P2.resolve(5).then(function(){}) instanceof P2)){
-	      works = false;
-	    }
-	    // actual V8 bug, https://code.google.com/p/v8/issues/detail?id=4162
-	    if(works && __webpack_require__(29)){
-	      var thenableThenGotten = false;
-	      P.resolve($.setDesc({}, 'then', {
-	        get: function(){ thenableThenGotten = true; }
-	      }));
-	      works = thenableThenGotten;
-	    }
-	  } catch(e){ works = false; }
-	  return works;
-	}();
-	
-	// helpers
-	var sameConstructor = function(a, b){
-	  // library wrapper special case
-	  if(LIBRARY && a === P && b === Wrapper)return true;
-	  return same(a, b);
-	};
-	var getConstructor = function(C){
-	  var S = anObject(C)[SPECIES];
-	  return S != undefined ? S : C;
-	};
-	var isThenable = function(it){
-	  var then;
-	  return isObject(it) && typeof (then = it.then) == 'function' ? then : false;
-	};
-	var PromiseCapability = function(C){
-	  var resolve, reject;
-	  this.promise = new C(function($$resolve, $$reject){
-	    if(resolve !== undefined || reject !== undefined)throw TypeError('Bad Promise constructor');
-	    resolve = $$resolve;
-	    reject  = $$reject;
-	  });
-	  this.resolve = aFunction(resolve),
-	  this.reject  = aFunction(reject)
-	};
-	var perform = function(exec){
-	  try {
-	    exec();
-	  } catch(e){
-	    return {error: e};
-	  }
-	};
-	var notify = function(record, isReject){
-	  if(record.n)return;
-	  record.n = true;
-	  var chain = record.c;
-	  asap(function(){
-	    var value = record.v
-	      , ok    = record.s == 1
-	      , i     = 0;
-	    var run = function(reaction){
-	      var handler = ok ? reaction.ok : reaction.fail
-	        , resolve = reaction.resolve
-	        , reject  = reaction.reject
-	        , result, then;
-	      try {
-	        if(handler){
-	          if(!ok)record.h = true;
-	          result = handler === true ? value : handler(value);
-	          if(result === reaction.promise){
-	            reject(TypeError('Promise-chain cycle'));
-	          } else if(then = isThenable(result)){
-	            then.call(result, resolve, reject);
-	          } else resolve(result);
-	        } else reject(value);
-	      } catch(e){
-	        reject(e);
-	      }
-	    };
-	    while(chain.length > i)run(chain[i++]); // variable length - can't use forEach
-	    chain.length = 0;
-	    record.n = false;
-	    if(isReject)setTimeout(function(){
-	      var promise = record.p
-	        , handler, console;
-	      if(isUnhandled(promise)){
-	        if(isNode){
-	          process.emit('unhandledRejection', value, promise);
-	        } else if(handler = global.onunhandledrejection){
-	          handler({promise: promise, reason: value});
-	        } else if((console = global.console) && console.error){
-	          console.error('Unhandled promise rejection', value);
-	        }
-	      } record.a = undefined;
-	    }, 1);
-	  });
-	};
-	var isUnhandled = function(promise){
-	  var record = promise._d
-	    , chain  = record.a || record.c
-	    , i      = 0
-	    , reaction;
-	  if(record.h)return false;
-	  while(chain.length > i){
-	    reaction = chain[i++];
-	    if(reaction.fail || !isUnhandled(reaction.promise))return false;
-	  } return true;
-	};
-	var $reject = function(value){
-	  var record = this;
-	  if(record.d)return;
-	  record.d = true;
-	  record = record.r || record; // unwrap
-	  record.v = value;
-	  record.s = 2;
-	  record.a = record.c.slice();
-	  notify(record, true);
-	};
-	var $resolve = function(value){
-	  var record = this
-	    , then;
-	  if(record.d)return;
-	  record.d = true;
-	  record = record.r || record; // unwrap
-	  try {
-	    if(record.p === value)throw TypeError("Promise can't be resolved itself");
-	    if(then = isThenable(value)){
-	      asap(function(){
-	        var wrapper = {r: record, d: false}; // wrap
-	        try {
-	          then.call(value, ctx($resolve, wrapper, 1), ctx($reject, wrapper, 1));
-	        } catch(e){
-	          $reject.call(wrapper, e);
-	        }
-	      });
-	    } else {
-	      record.v = value;
-	      record.s = 1;
-	      notify(record, false);
-	    }
-	  } catch(e){
-	    $reject.call({r: record, d: false}, e); // wrap
-	  }
-	};
-	
-	// constructor polyfill
-	if(!USE_NATIVE){
-	  // 25.4.3.1 Promise(executor)
-	  P = function Promise(executor){
-	    aFunction(executor);
-	    var record = this._d = {
-	      p: strictNew(this, P, PROMISE),         // <- promise
-	      c: [],                                  // <- awaiting reactions
-	      a: undefined,                           // <- checked in isUnhandled reactions
-	      s: 0,                                   // <- state
-	      d: false,                               // <- done
-	      v: undefined,                           // <- value
-	      h: false,                               // <- handled rejection
-	      n: false                                // <- notify
-	    };
-	    try {
-	      executor(ctx($resolve, record, 1), ctx($reject, record, 1));
-	    } catch(err){
-	      $reject.call(record, err);
-	    }
-	  };
-	  __webpack_require__(63)(P.prototype, {
-	    // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
-	    then: function then(onFulfilled, onRejected){
-	      var reaction = new PromiseCapability(speciesConstructor(this, P))
-	        , promise  = reaction.promise
-	        , record   = this._d;
-	      reaction.ok   = typeof onFulfilled == 'function' ? onFulfilled : true;
-	      reaction.fail = typeof onRejected == 'function' && onRejected;
-	      record.c.push(reaction);
-	      if(record.a)record.a.push(reaction);
-	      if(record.s)notify(record, false);
-	      return promise;
-	    },
-	    // 25.4.5.1 Promise.prototype.catch(onRejected)
-	    'catch': function(onRejected){
-	      return this.then(undefined, onRejected);
-	    }
-	  });
-	}
-	
-	$export($export.G + $export.W + $export.F * !USE_NATIVE, {Promise: P});
-	__webpack_require__(34)(P, PROMISE);
-	__webpack_require__(64)(PROMISE);
-	Wrapper = __webpack_require__(22)[PROMISE];
-	
-	// statics
-	$export($export.S + $export.F * !USE_NATIVE, PROMISE, {
-	  // 25.4.4.5 Promise.reject(r)
-	  reject: function reject(r){
-	    var capability = new PromiseCapability(this)
-	      , $$reject   = capability.reject;
-	    $$reject(r);
-	    return capability.promise;
-	  }
-	});
-	$export($export.S + $export.F * (!USE_NATIVE || testResolve(true)), PROMISE, {
-	  // 25.4.4.6 Promise.resolve(x)
-	  resolve: function resolve(x){
-	    // instanceof instead of internal slot check because we should fix it without replacement native Promise core
-	    if(x instanceof P && sameConstructor(x.constructor, this))return x;
-	    var capability = new PromiseCapability(this)
-	      , $$resolve  = capability.resolve;
-	    $$resolve(x);
-	    return capability.promise;
-	  }
-	});
-	$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(65)(function(iter){
-	  P.all(iter)['catch'](function(){});
-	})), PROMISE, {
-	  // 25.4.4.1 Promise.all(iterable)
-	  all: function all(iterable){
-	    var C          = getConstructor(this)
-	      , capability = new PromiseCapability(C)
-	      , resolve    = capability.resolve
-	      , reject     = capability.reject
-	      , values     = [];
-	    var abrupt = perform(function(){
-	      forOf(iterable, false, values.push, values);
-	      var remaining = values.length
-	        , results   = Array(remaining);
-	      if(remaining)$.each.call(values, function(promise, index){
-	        var alreadyCalled = false;
-	        C.resolve(promise).then(function(value){
-	          if(alreadyCalled)return;
-	          alreadyCalled = true;
-	          results[index] = value;
-	          --remaining || resolve(results);
-	        }, reject);
-	      });
-	      else resolve(results);
-	    });
-	    if(abrupt)reject(abrupt.error);
-	    return capability.promise;
-	  },
-	  // 25.4.4.4 Promise.race(iterable)
-	  race: function race(iterable){
-	    var C          = getConstructor(this)
-	      , capability = new PromiseCapability(C)
-	      , reject     = capability.reject;
-	    var abrupt = perform(function(){
-	      forOf(iterable, false, function(promise){
-	        C.resolve(promise).then(capability.resolve, reject);
-	      });
-	    });
-	    if(abrupt)reject(abrupt.error);
-	    return capability.promise;
-	  }
-	});
-
-/***/ },
-/* 46 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// getting tag from 19.1.3.6 Object.prototype.toString()
-	var cof = __webpack_require__(44)
-	  , TAG = __webpack_require__(35)('toStringTag')
-	  // ES3 wrong here
-	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
-	
-	module.exports = function(it){
-	  var O, T, B;
-	  return it === undefined ? 'Undefined' : it === null ? 'Null'
-	    // @@toStringTag case
-	    : typeof (T = (O = Object(it))[TAG]) == 'string' ? T
-	    // builtinTag case
-	    : ARG ? cof(O)
-	    // ES3 arguments fallback
-	    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
-	};
-
-/***/ },
-/* 47 */
-/***/ function(module, exports) {
-
-	module.exports = function(it){
-	  return typeof it === 'object' ? it !== null : typeof it === 'function';
-	};
-
-/***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(47);
-	module.exports = function(it){
-	  if(!isObject(it))throw TypeError(it + ' is not an object!');
-	  return it;
-	};
-
-/***/ },
-/* 49 */
-/***/ function(module, exports) {
-
-	module.exports = function(it, Constructor, name){
-	  if(!(it instanceof Constructor))throw TypeError(name + ": use the 'new' operator!");
-	  return it;
-	};
-
-/***/ },
-/* 50 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var ctx         = __webpack_require__(23)
-	  , call        = __webpack_require__(51)
-	  , isArrayIter = __webpack_require__(52)
-	  , anObject    = __webpack_require__(48)
-	  , toLength    = __webpack_require__(53)
-	  , getIterFn   = __webpack_require__(54);
-	module.exports = function(iterable, entries, fn, that){
-	  var iterFn = getIterFn(iterable)
-	    , f      = ctx(fn, that, entries ? 2 : 1)
-	    , index  = 0
-	    , length, step, iterator;
-	  if(typeof iterFn != 'function')throw TypeError(iterable + ' is not iterable!');
-	  // fast case for arrays with default iterator
-	  if(isArrayIter(iterFn))for(length = toLength(iterable.length); length > index; index++){
-	    entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
-	  } else for(iterator = iterFn.call(iterable); !(step = iterator.next()).done; ){
-	    call(iterator, f, step.value, entries);
-	  }
-	};
-
-/***/ },
-/* 51 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// call something on iterator step with safe closing on error
-	var anObject = __webpack_require__(48);
-	module.exports = function(iterator, fn, value, entries){
-	  try {
-	    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
-	  // 7.4.6 IteratorClose(iterator, completion)
-	  } catch(e){
-	    var ret = iterator['return'];
-	    if(ret !== undefined)anObject(ret.call(iterator));
-	    throw e;
-	  }
-	};
-
-/***/ },
-/* 52 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// check on default Array iterator
-	var Iterators  = __webpack_require__(32)
-	  , ITERATOR   = __webpack_require__(35)('iterator')
-	  , ArrayProto = Array.prototype;
-	
-	module.exports = function(it){
-	  return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
-	};
-
-/***/ },
-/* 53 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 7.1.15 ToLength
-	var toInteger = __webpack_require__(16)
-	  , min       = Math.min;
-	module.exports = function(it){
-	  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
-	};
-
-/***/ },
-/* 54 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var classof   = __webpack_require__(46)
-	  , ITERATOR  = __webpack_require__(35)('iterator')
-	  , Iterators = __webpack_require__(32);
-	module.exports = __webpack_require__(22).getIteratorMethod = function(it){
-	  if(it != undefined)return it[ITERATOR]
-	    || it['@@iterator']
-	    || Iterators[classof(it)];
-	};
-
-/***/ },
-/* 55 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// Works with __proto__ only. Old v8 can't work with null proto objects.
-	/* eslint-disable no-proto */
-	var getDesc  = __webpack_require__(27).getDesc
-	  , isObject = __webpack_require__(47)
-	  , anObject = __webpack_require__(48);
-	var check = function(O, proto){
-	  anObject(O);
-	  if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
-	};
-	module.exports = {
-	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-	    function(test, buggy, set){
-	      try {
-	        set = __webpack_require__(23)(Function.call, getDesc(Object.prototype, '__proto__').set, 2);
-	        set(test, []);
-	        buggy = !(test instanceof Array);
-	      } catch(e){ buggy = true; }
-	      return function setPrototypeOf(O, proto){
-	        check(O, proto);
-	        if(buggy)O.__proto__ = proto;
-	        else set(O, proto);
-	        return O;
-	      };
-	    }({}, false) : undefined),
-	  check: check
-	};
-
-/***/ },
-/* 56 */
-/***/ function(module, exports) {
-
-	// 7.2.9 SameValue(x, y)
-	module.exports = Object.is || function is(x, y){
-	  return x === y ? x !== 0 || 1 / x === 1 / y : x != x && y != y;
-	};
-
-/***/ },
-/* 57 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
-	var anObject  = __webpack_require__(48)
-	  , aFunction = __webpack_require__(24)
-	  , SPECIES   = __webpack_require__(35)('species');
-	module.exports = function(O, D){
-	  var C = anObject(O).constructor, S;
-	  return C === undefined || (S = anObject(C)[SPECIES]) == undefined ? D : aFunction(S);
-	};
-
-/***/ },
-/* 58 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var global    = __webpack_require__(21)
-	  , macrotask = __webpack_require__(59).set
-	  , Observer  = global.MutationObserver || global.WebKitMutationObserver
-	  , process   = global.process
-	  , Promise   = global.Promise
-	  , isNode    = __webpack_require__(44)(process) == 'process'
-	  , head, last, notify;
-	
-	var flush = function(){
-	  var parent, domain, fn;
-	  if(isNode && (parent = process.domain)){
-	    process.domain = null;
-	    parent.exit();
-	  }
-	  while(head){
-	    domain = head.domain;
-	    fn     = head.fn;
-	    if(domain)domain.enter();
-	    fn(); // <- currently we use it only for Promise - try / catch not required
-	    if(domain)domain.exit();
-	    head = head.next;
-	  } last = undefined;
-	  if(parent)parent.enter();
-	};
-	
-	// Node.js
-	if(isNode){
-	  notify = function(){
-	    process.nextTick(flush);
-	  };
-	// browsers with MutationObserver
-	} else if(Observer){
-	  var toggle = 1
-	    , node   = document.createTextNode('');
-	  new Observer(flush).observe(node, {characterData: true}); // eslint-disable-line no-new
-	  notify = function(){
-	    node.data = toggle = -toggle;
-	  };
-	// environments with maybe non-completely correct, but existent Promise
-	} else if(Promise && Promise.resolve){
-	  notify = function(){
-	    Promise.resolve().then(flush);
-	  };
-	// for other environments - macrotask based on:
-	// - setImmediate
-	// - MessageChannel
-	// - window.postMessag
-	// - onreadystatechange
-	// - setTimeout
-	} else {
-	  notify = function(){
-	    // strange IE + webpack dev server bug - use .call(global)
-	    macrotask.call(global, flush);
-	  };
-	}
-	
-	module.exports = function asap(fn){
-	  var task = {fn: fn, next: undefined, domain: isNode && process.domain};
-	  if(last)last.next = task;
-	  if(!head){
-	    head = task;
-	    notify();
-	  } last = task;
-	};
-
-/***/ },
-/* 59 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var ctx                = __webpack_require__(23)
-	  , invoke             = __webpack_require__(60)
-	  , html               = __webpack_require__(61)
-	  , cel                = __webpack_require__(62)
-	  , global             = __webpack_require__(21)
-	  , process            = global.process
-	  , setTask            = global.setImmediate
-	  , clearTask          = global.clearImmediate
-	  , MessageChannel     = global.MessageChannel
-	  , counter            = 0
-	  , queue              = {}
-	  , ONREADYSTATECHANGE = 'onreadystatechange'
-	  , defer, channel, port;
-	var run = function(){
-	  var id = +this;
-	  if(queue.hasOwnProperty(id)){
-	    var fn = queue[id];
-	    delete queue[id];
-	    fn();
-	  }
-	};
-	var listner = function(event){
-	  run.call(event.data);
-	};
-	// Node.js 0.9+ & IE10+ has setImmediate, otherwise:
-	if(!setTask || !clearTask){
-	  setTask = function setImmediate(fn){
-	    var args = [], i = 1;
-	    while(arguments.length > i)args.push(arguments[i++]);
-	    queue[++counter] = function(){
-	      invoke(typeof fn == 'function' ? fn : Function(fn), args);
-	    };
-	    defer(counter);
-	    return counter;
-	  };
-	  clearTask = function clearImmediate(id){
-	    delete queue[id];
-	  };
-	  // Node.js 0.8-
-	  if(__webpack_require__(44)(process) == 'process'){
-	    defer = function(id){
-	      process.nextTick(ctx(run, id, 1));
-	    };
-	  // Browsers with MessageChannel, includes WebWorkers
-	  } else if(MessageChannel){
-	    channel = new MessageChannel;
-	    port    = channel.port2;
-	    channel.port1.onmessage = listner;
-	    defer = ctx(port.postMessage, port, 1);
-	  // Browsers with postMessage, skip WebWorkers
-	  // IE8 has postMessage, but it's sync & typeof its postMessage is 'object'
-	  } else if(global.addEventListener && typeof postMessage == 'function' && !global.importScripts){
-	    defer = function(id){
-	      global.postMessage(id + '', '*');
-	    };
-	    global.addEventListener('message', listner, false);
-	  // IE8-
-	  } else if(ONREADYSTATECHANGE in cel('script')){
-	    defer = function(id){
-	      html.appendChild(cel('script'))[ONREADYSTATECHANGE] = function(){
-	        html.removeChild(this);
-	        run.call(id);
-	      };
-	    };
-	  // Rest old browsers
-	  } else {
-	    defer = function(id){
-	      setTimeout(ctx(run, id, 1), 0);
-	    };
-	  }
-	}
-	module.exports = {
-	  set:   setTask,
-	  clear: clearTask
-	};
-
-/***/ },
-/* 60 */
-/***/ function(module, exports) {
-
-	// fast apply, http://jsperf.lnkit.com/fast-apply/5
-	module.exports = function(fn, args, that){
-	  var un = that === undefined;
-	  switch(args.length){
-	    case 0: return un ? fn()
-	                      : fn.call(that);
-	    case 1: return un ? fn(args[0])
-	                      : fn.call(that, args[0]);
-	    case 2: return un ? fn(args[0], args[1])
-	                      : fn.call(that, args[0], args[1]);
-	    case 3: return un ? fn(args[0], args[1], args[2])
-	                      : fn.call(that, args[0], args[1], args[2]);
-	    case 4: return un ? fn(args[0], args[1], args[2], args[3])
-	                      : fn.call(that, args[0], args[1], args[2], args[3]);
-	  } return              fn.apply(that, args);
-	};
-
-/***/ },
-/* 61 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__(21).document && document.documentElement;
-
-/***/ },
-/* 62 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var isObject = __webpack_require__(47)
-	  , document = __webpack_require__(21).document
-	  // in old IE typeof document.createElement is 'object'
-	  , is = isObject(document) && isObject(document.createElement);
-	module.exports = function(it){
-	  return is ? document.createElement(it) : {};
-	};
-
-/***/ },
-/* 63 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var redefine = __webpack_require__(25);
-	module.exports = function(target, src){
-	  for(var key in src)redefine(target, key, src[key]);
-	  return target;
-	};
-
-/***/ },
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	var core        = __webpack_require__(22)
-	  , $           = __webpack_require__(27)
-	  , DESCRIPTORS = __webpack_require__(29)
-	  , SPECIES     = __webpack_require__(35)('species');
-	
-	module.exports = function(KEY){
-	  var C = core[KEY];
-	  if(DESCRIPTORS && C && !C[SPECIES])$.setDesc(C, SPECIES, {
-	    configurable: true,
-	    get: function(){ return this; }
-	  });
-	};
-
-/***/ },
-/* 65 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var ITERATOR     = __webpack_require__(35)('iterator')
-	  , SAFE_CLOSING = false;
-	
-	try {
-	  var riter = [7][ITERATOR]();
-	  riter['return'] = function(){ SAFE_CLOSING = true; };
-	  Array.from(riter, function(){ throw 2; });
-	} catch(e){ /* empty */ }
-	
-	module.exports = function(exec, skipClosing){
-	  if(!skipClosing && !SAFE_CLOSING)return false;
-	  var safe = false;
-	  try {
-	    var arr  = [7]
-	      , iter = arr[ITERATOR]();
-	    iter.next = function(){ safe = true; };
-	    arr[ITERATOR] = function(){ return iter; };
-	    exec(arr);
-	  } catch(e){ /* empty */ }
-	  return safe;
-	};
-
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	var _getPrototypeOf = __webpack_require__(67);
-	
-	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	//     Zepto.js
-	//     (c) 2010-2016 Thomas Fuchs
-	//     Zepto.js may be freely distributed under the MIT license.
-	
-	var Zepto = function Zepto() {};
-	var slice = Array.prototype.slice;
-	var class2type = {},
-	    toString = class2type.toString;
-	
-	module.exports = Zepto;
-	
-	function type(obj) {
-	  return obj == null ? String(obj) : class2type[toString.call(obj)] || "object";
-	}
-	
-	var isArray = Array.isArray || function (object) {
-	  return object instanceof Array;
-	};
-	
-	function isFunction(value) {
-	  return type(value) == "function";
-	}
-	
-	function isWindow(obj) {
-	  return obj != null && obj == obj.window;
-	}
-	
-	function isDocument(obj) {
-	  return obj != null && obj.nodeType == obj.DOCUMENT_NODE;
-	}
-	
-	function isObject(obj) {
-	  return type(obj) == "object";
-	}
-	
-	function isPlainObject(obj) {
-	  return isObject(obj) && !isWindow(obj) && (0, _getPrototypeOf2.default)(obj) == Object.prototype;
-	}
-	
-	function likeArray(obj) {
-	  return typeof obj.length == 'number';
-	}
-	
-	function extend(target, source, deep) {
-	  for (var key in source) {
-	    if (deep && (isPlainObject(source[key]) || isArray(source[key]))) {
-	      if (isPlainObject(source[key]) && !isPlainObject(target[key])) target[key] = {};
-	      if (isArray(source[key]) && !isArray(target[key])) target[key] = [];
-	      extend(target[key], source[key], deep);
-	    } else if (source[key] !== undefined) target[key] = source[key];
-	  }
-	}
-	
-	if (window.JSON) Zepto.parseJSON = JSON.parse;
-	
-	Zepto.type = type;
-	Zepto.isFunction = isFunction;
-	Zepto.isWindow = isWindow;
-	Zepto.isArray = isArray;
-	Zepto.isPlainObject = isPlainObject;
-	
-	Zepto.extend = function (target) {
-	  var deep,
-	      args = slice.call(arguments, 1);
-	  if (typeof target == 'boolean') {
-	    deep = target;
-	    target = args.shift();
-	  }
-	  args.forEach(function (arg) {
-	    extend(target, arg, deep);
-	  });
-	  return target;
-	};
-	
-	Zepto.isFunction = function (obj) {
-	  return obj instanceof Function;
-	};
-	
-	Zepto.each = function (elements, callback) {
-	  var i, key;
-	  if (likeArray(elements)) {
-	    for (i = 0; i < elements.length; i++) {
-	      if (callback.call(elements[i], i, elements[i]) === false) return elements;
-	    }
-	  } else {
-	    for (key in elements) {
-	      if (callback.call(elements[key], key, elements[key]) === false) return elements;
-	    }
-	  }
-	
-	  return elements;
-	};
-	
-	Zepto.each("Boolean Number String Function Array Date RegExp Object Error".split(" "), function (i, name) {
-	  class2type["[object " + name + "]"] = name.toLowerCase();
-	});
-	
-	;(function ($) {
-	  var jsonpID = 0,
-	      document = window.document,
-	      key,
-	      name,
-	      rscript = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
-	      scriptTypeRE = /^(?:text|application)\/javascript/i,
-	      xmlTypeRE = /^(?:text|application)\/xml/i,
-	      jsonType = 'application/json',
-	      htmlType = 'text/html',
-	      blankRE = /^\s*$/,
-	      originAnchor = document.createElement('a');
-	
-	  originAnchor.href = window.location.href;
-	
-	  // trigger a custom event and return false if it was cancelled
-	  function triggerAndReturn(context, eventName, data) {}
-	  // var event = $.Event(eventName)
-	  // $(context).trigger(event, data)
-	  // return !event.isDefaultPrevented()
-	
-	
-	  // trigger an Ajax "global" event
-	  function triggerGlobal(settings, context, eventName, data) {
-	    if (settings.global) return triggerAndReturn(context || document, eventName, data);
-	  }
-	
-	  // Number of active Ajax requests
-	  $.active = 0;
-	
-	  function ajaxStart(settings) {
-	    if (settings.global && $.active++ === 0) triggerGlobal(settings, null, 'ajaxStart');
-	  }
-	
-	  function ajaxStop(settings) {
-	    if (settings.global && ! --$.active) triggerGlobal(settings, null, 'ajaxStop');
-	  }
-	
-	  // triggers an extra global event "ajaxBeforeSend" that's like "ajaxSend" but cancelable
-	  function ajaxBeforeSend(xhr, settings) {
-	    var context = settings.context;
-	    if (settings.beforeSend.call(context, xhr, settings) === false || triggerGlobal(settings, context, 'ajaxBeforeSend', [xhr, settings]) === false) return false;
-	
-	    triggerGlobal(settings, context, 'ajaxSend', [xhr, settings]);
-	  }
-	
-	  function ajaxSuccess(data, xhr, settings, deferred) {
-	    var context = settings.context,
-	        status = 'success';
-	    settings.success.call(context, data, status, xhr);
-	    if (deferred) deferred.resolveWith(context, [data, status, xhr]);
-	    triggerGlobal(settings, context, 'ajaxSuccess', [xhr, settings, data]);
-	    ajaxComplete(status, xhr, settings);
-	  }
-	  // type: "timeout", "error", "abort", "parsererror"
-	  function ajaxError(error, type, xhr, settings, deferred) {
-	    var context = settings.context;
-	    settings.error.call(context, xhr, type, error);
-	    if (deferred) deferred.rejectWith(context, [xhr, type, error]);
-	    triggerGlobal(settings, context, 'ajaxError', [xhr, settings, error || type]);
-	    ajaxComplete(type, xhr, settings);
-	  }
-	  // status: "success", "notmodified", "error", "timeout", "abort", "parsererror"
-	  function ajaxComplete(status, xhr, settings) {
-	    var context = settings.context;
-	    settings.complete.call(context, xhr, status);
-	    triggerGlobal(settings, context, 'ajaxComplete', [xhr, settings]);
-	    ajaxStop(settings);
-	  }
-	
-	  // Empty function, used as default callback
-	  function empty() {}
-	
-	  $.ajaxSettings = {
-	    // Default type of request
-	    type: 'GET',
-	    // Callback that is executed before request
-	    beforeSend: empty,
-	    // Callback that is executed if the request succeeds
-	    success: empty,
-	    // Callback that is executed the the server drops error
-	    error: empty,
-	    // Callback that is executed on request complete (both: error and success)
-	    complete: empty,
-	    // The context for the callbacks
-	    context: null,
-	    // Whether to trigger "global" Ajax events
-	    global: true,
-	    // Transport
-	    xhr: function xhr() {
-	      return new window.XMLHttpRequest();
-	    },
-	    // MIME types mapping
-	    // IIS returns Javascript as "application/x-javascript"
-	    accepts: {
-	      script: 'text/javascript, application/javascript, application/x-javascript',
-	      json: jsonType,
-	      xml: 'application/xml, text/xml',
-	      html: htmlType,
-	      text: 'text/plain'
-	    },
-	    // Whether the request is to another domain
-	    crossDomain: false,
-	    // Default timeout
-	    timeout: 0,
-	    // Whether data should be serialized to string
-	    processData: true,
-	    // Whether the browser should be allowed to cache GET responses
-	    cache: true
-	  };
-	
-	  function mimeToDataType(mime) {
-	    if (mime) mime = mime.split(';', 2)[0];
-	    return mime && (mime == htmlType ? 'html' : mime == jsonType ? 'json' : scriptTypeRE.test(mime) ? 'script' : xmlTypeRE.test(mime) && 'xml') || 'text';
-	  }
-	
-	  function appendQuery(url, query) {
-	    if (query == '') return url;
-	    return (url + '&' + query).replace(/[&?]{1,2}/, '?');
-	  }
-	
-	  // serialize payload and append it to the URL for GET requests
-	  function serializeData(options) {
-	    if (options.processData && options.data && $.type(options.data) != "string") options.data = $.param(options.data, options.traditional);
-	    if (options.data && (!options.type || options.type.toUpperCase() == 'GET')) options.url = appendQuery(options.url, options.data), options.data = undefined;
-	  }
-	
-	  $.ajax = function (options) {
-	    var settings = $.extend({}, options || {}),
-	        deferred = $.Deferred && $.Deferred(),
-	        urlAnchor,
-	        hashIndex;
-	    for (key in $.ajaxSettings) {
-	      if (settings[key] === undefined) settings[key] = $.ajaxSettings[key];
-	    }ajaxStart(settings);
-	
-	    if (!settings.crossDomain) {
-	      urlAnchor = document.createElement('a');
-	      urlAnchor.href = settings.url;
-	      // cleans up URL for .href (IE only), see https://github.com/madrobby/zepto/pull/1049
-	      urlAnchor.href = urlAnchor.href;
-	      settings.crossDomain = originAnchor.protocol + '//' + originAnchor.host !== urlAnchor.protocol + '//' + urlAnchor.host;
-	    }
-	
-	    if (!settings.url) settings.url = window.location.toString();
-	    if ((hashIndex = settings.url.indexOf('#')) > -1) settings.url = settings.url.slice(0, hashIndex);
-	    serializeData(settings);
-	
-	    var dataType = settings.dataType,
-	        hasPlaceholder = /\?.+=\?/.test(settings.url);
-	    if (hasPlaceholder) dataType = 'jsonp';
-	
-	    if (settings.cache === false || (!options || options.cache !== true) && ('script' == dataType || 'jsonp' == dataType)) settings.url = appendQuery(settings.url, '_=' + Date.now());
-	
-	    if ('jsonp' == dataType) {
-	      if (!hasPlaceholder) settings.url = appendQuery(settings.url, settings.jsonp ? settings.jsonp + '=?' : settings.jsonp === false ? '' : 'callback=?');
-	      return $.ajaxJSONP(settings, deferred);
-	    }
-	
-	    var mime = settings.accepts[dataType],
-	        headers = {},
-	        setHeader = function setHeader(name, value) {
-	      headers[name.toLowerCase()] = [name, value];
-	    },
-	        protocol = /^([\w-]+:)\/\//.test(settings.url) ? RegExp.$1 : window.location.protocol,
-	        xhr = settings.xhr(),
-	        nativeSetHeader = xhr.setRequestHeader,
-	        abortTimeout;
-	
-	    if (deferred) deferred.promise(xhr);
-	
-	    if (!settings.crossDomain) setHeader('X-Requested-With', 'XMLHttpRequest');
-	    setHeader('Accept', mime || '*/*');
-	    if (mime = settings.mimeType || mime) {
-	      if (mime.indexOf(',') > -1) mime = mime.split(',', 2)[0];
-	      xhr.overrideMimeType && xhr.overrideMimeType(mime);
-	    }
-	    if (settings.contentType || settings.contentType !== false && settings.data && settings.type.toUpperCase() != 'GET') setHeader('Content-Type', settings.contentType || 'application/x-www-form-urlencoded');
-	
-	    if (settings.headers) for (name in settings.headers) {
-	      setHeader(name, settings.headers[name]);
-	    }xhr.setRequestHeader = setHeader;
-	
-	    xhr.onreadystatechange = function () {
-	      if (xhr.readyState == 4) {
-	        xhr.onreadystatechange = empty;
-	        clearTimeout(abortTimeout);
-	        var result,
-	            error = false;
-	        if (xhr.status >= 200 && xhr.status < 300 || xhr.status == 304 || xhr.status == 0 && protocol == 'file:') {
-	          dataType = dataType || mimeToDataType(settings.mimeType || xhr.getResponseHeader('content-type'));
-	
-	          if (xhr.responseType == 'arraybuffer' || xhr.responseType == 'blob') result = xhr.response;else {
-	            result = xhr.responseText;
-	
-	            try {
-	              // http://perfectionkills.com/global-eval-what-are-the-options/
-	              if (dataType == 'script') (1, eval)(result);else if (dataType == 'xml') result = xhr.responseXML;else if (dataType == 'json') result = blankRE.test(result) ? null : $.parseJSON(result);
-	            } catch (e) {
-	              error = e;
-	            }
-	
-	            if (error) return ajaxError(error, 'parsererror', xhr, settings, deferred);
-	          }
-	
-	          ajaxSuccess(result, xhr, settings, deferred);
-	        } else {
-	          ajaxError(xhr.statusText || null, xhr.status ? 'error' : 'abort', xhr, settings, deferred);
-	        }
-	      }
-	    };
-	
-	    if (ajaxBeforeSend(xhr, settings) === false) {
-	      xhr.abort();
-	      ajaxError(null, 'abort', xhr, settings, deferred);
-	      return xhr;
-	    }
-	
-	    if (settings.xhrFields) for (name in settings.xhrFields) {
-	      xhr[name] = settings.xhrFields[name];
-	    }var async = 'async' in settings ? settings.async : true;
-	    xhr.open(settings.type, settings.url, async, settings.username, settings.password);
-	
-	    for (name in headers) {
-	      nativeSetHeader.apply(xhr, headers[name]);
-	    }if (settings.timeout > 0) abortTimeout = setTimeout(function () {
-	      xhr.onreadystatechange = empty;
-	      xhr.abort();
-	      ajaxError(null, 'timeout', xhr, settings, deferred);
-	    }, settings.timeout);
-	
-	    // avoid sending empty string (#319)
-	    xhr.send(settings.data ? settings.data : null);
-	    return xhr;
-	  };
-	
-	  // handle optional data/success arguments
-	  function parseArguments(url, data, success, dataType) {
-	    if ($.isFunction(data)) dataType = success, success = data, data = undefined;
-	    if (!$.isFunction(success)) dataType = success, success = undefined;
-	    return {
-	      url: url,
-	      data: data,
-	      success: success,
-	      dataType: dataType
-	    };
-	  }
-	
-	  $.get = function () /* url, data, success, dataType */{
-	    return $.ajax(parseArguments.apply(null, arguments));
-	  };
-	
-	  $.post = function () /* url, data, success, dataType */{
-	    var options = parseArguments.apply(null, arguments);
-	    options.type = 'POST';
-	    return $.ajax(options);
-	  };
-	
-	  $.getJSON = function () /* url, data, success */{
-	    var options = parseArguments.apply(null, arguments);
-	    options.dataType = 'json';
-	    return $.ajax(options);
-	  };
-	
-	  var escape = encodeURIComponent;
-	
-	  function serialize(params, obj, traditional, scope) {
-	    var type,
-	        array = $.isArray(obj),
-	        hash = $.isPlainObject(obj);
-	    $.each(obj, function (key, value) {
-	      type = $.type(value);
-	      if (scope) key = traditional ? scope : scope + '[' + (hash || type == 'object' || type == 'array' ? key : '') + ']';
-	      // handle data in serializeArray() format
-	      if (!scope && array) params.add(value.name, value.value);
-	      // recurse into nested objects
-	      else if (type == "array" || !traditional && type == "object") serialize(params, value, traditional, key);else params.add(key, value);
-	    });
-	  }
-	
-	  $.param = function (obj, traditional) {
-	    var params = [];
-	    params.add = function (key, value) {
-	      if ($.isFunction(value)) value = value();
-	      if (value == null) value = "";
-	      this.push(escape(key) + '=' + escape(value));
-	    };
-	    serialize(params, obj, traditional);
-	    return params.join('&').replace(/%20/g, '+');
-	  };
-	})(Zepto);
-
-/***/ },
-/* 67 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(68), __esModule: true };
-
-/***/ },
-/* 68 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(69);
-	module.exports = __webpack_require__(22).Object.getPrototypeOf;
-
-/***/ },
-/* 69 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.9 Object.getPrototypeOf(O)
-	var toObject = __webpack_require__(70);
-	
-	__webpack_require__(71)('getPrototypeOf', function($getPrototypeOf){
-	  return function getPrototypeOf(it){
-	    return $getPrototypeOf(toObject(it));
-	  };
-	});
-
-/***/ },
-/* 70 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 7.1.13 ToObject(argument)
-	var defined = __webpack_require__(17);
-	module.exports = function(it){
-	  return Object(defined(it));
-	};
-
-/***/ },
-/* 71 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// most Object methods by ES6 should accept primitives
-	var $export = __webpack_require__(20)
-	  , core    = __webpack_require__(22)
-	  , fails   = __webpack_require__(30);
-	module.exports = function(KEY, exec){
-	  var fn  = (core.Object || {})[KEY] || Object[KEY]
-	    , exp = {};
-	  exp[KEY] = exec(fn);
-	  $export($export.S + $export.F * fails(function(){ fn(1); }), 'Object', exp);
-	};
-
-/***/ },
-/* 72 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var io = __webpack_require__(73);
-	
-	var socket = io();
-	
-	socket.on('message', function (resp) {
-	    console.log('message');
-	});
-	
-	socket.on('record', function (resp) {
-	    console.log('record');
-	});
-	
-	socket.on('error', function (resp) {
-	    console.error(resp.message);
-	});
-	
-	exports.socket = socket;
-	
-	exports.enter = function (author, relate) {
-	    socket.emit('enter', {
-	        author: author,
-	        relate: relate
-	    });
-	};
-	
-	exports.leave = function (author, relate) {
-	    socket.emit('leave', {
-	        author: author,
-	        relate: relate
-	    });
-	};
-	
-	exports.login = function (userId) {
-	    socket.emit('login', { userId: userId });
-	};
-	
-	exports.logout = function (userId) {
-	    socket.emit('logout', { userId: userId });
-	};
-
-/***/ },
-/* 73 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	/**
-	 * Module dependencies.
-	 */
-	
-	var url = __webpack_require__(74);
-	var parser = __webpack_require__(79);
-	var Manager = __webpack_require__(87);
-	var debug = __webpack_require__(76)('socket.io-client');
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = exports = lookup;
-	
-	/**
-	 * Managers cache.
-	 */
-	
-	var cache = exports.managers = {};
-	
-	/**
-	 * Looks up an existing `Manager` for multiplexing.
-	 * If the user summons:
-	 *
-	 *   `io('http://localhost/a');`
-	 *   `io('http://localhost/b');`
-	 *
-	 * We reuse the existing instance based on same scheme/port/host,
-	 * and we initialize sockets for each namespace.
-	 *
-	 * @api public
-	 */
-	
-	function lookup(uri, opts) {
-	  if (typeof uri == 'object') {
-	    opts = uri;
-	    uri = undefined;
-	  }
-	
-	  opts = opts || {};
-	
-	  var parsed = url(uri);
-	  var source = parsed.source;
-	  var id = parsed.id;
-	  var path = parsed.path;
-	  var sameNamespace = cache[id] && path in cache[id].nsps;
-	  var newConnection = opts.forceNew || opts['force new connection'] ||
-	                      false === opts.multiplex || sameNamespace;
-	
-	  var io;
-	
-	  if (newConnection) {
-	    debug('ignoring socket cache for %s', source);
-	    io = Manager(source, opts);
-	  } else {
-	    if (!cache[id]) {
-	      debug('new io instance for %s', source);
-	      cache[id] = Manager(source, opts);
-	    }
-	    io = cache[id];
-	  }
-	
-	  return io.socket(parsed.path);
-	}
-	
-	/**
-	 * Protocol version.
-	 *
-	 * @api public
-	 */
-	
-	exports.protocol = parser.protocol;
-	
-	/**
-	 * `connect`.
-	 *
-	 * @param {String} uri
-	 * @api public
-	 */
-	
-	exports.connect = lookup;
-	
-	/**
-	 * Expose constructors for standalone build.
-	 *
-	 * @api public
-	 */
-	
-	exports.Manager = __webpack_require__(87);
-	exports.Socket = __webpack_require__(115);
-
-
-/***/ },
-/* 74 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {
-	/**
-	 * Module dependencies.
-	 */
-	
-	var parseuri = __webpack_require__(75);
-	var debug = __webpack_require__(76)('socket.io-client:url');
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = url;
-	
-	/**
-	 * URL parser.
-	 *
-	 * @param {String} url
-	 * @param {Object} An object meant to mimic window.location.
-	 *                 Defaults to window.location.
-	 * @api public
-	 */
-	
-	function url(uri, loc){
-	  var obj = uri;
-	
-	  // default to window.location
-	  var loc = loc || global.location;
-	  if (null == uri) uri = loc.protocol + '//' + loc.host;
-	
-	  // relative path support
-	  if ('string' == typeof uri) {
-	    if ('/' == uri.charAt(0)) {
-	      if ('/' == uri.charAt(1)) {
-	        uri = loc.protocol + uri;
-	      } else {
-	        uri = loc.host + uri;
-	      }
-	    }
-	
-	    if (!/^(https?|wss?):\/\//.test(uri)) {
-	      debug('protocol-less url %s', uri);
-	      if ('undefined' != typeof loc) {
-	        uri = loc.protocol + '//' + uri;
-	      } else {
-	        uri = 'https://' + uri;
-	      }
-	    }
-	
-	    // parse
-	    debug('parse %s', uri);
-	    obj = parseuri(uri);
-	  }
-	
-	  // make sure we treat `localhost:80` and `localhost` equally
-	  if (!obj.port) {
-	    if (/^(http|ws)$/.test(obj.protocol)) {
-	      obj.port = '80';
-	    }
-	    else if (/^(http|ws)s$/.test(obj.protocol)) {
-	      obj.port = '443';
-	    }
-	  }
-	
-	  obj.path = obj.path || '/';
-	
-	  var ipv6 = obj.host.indexOf(':') !== -1;
-	  var host = ipv6 ? '[' + obj.host + ']' : obj.host;
-	
-	  // define unique id
-	  obj.id = obj.protocol + '://' + host + ':' + obj.port;
-	  // define href
-	  obj.href = obj.protocol + '://' + host + (loc && loc.port == obj.port ? '' : (':' + obj.port));
-	
-	  return obj;
-	}
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 75 */
-/***/ function(module, exports) {
-
-	/**
-	 * Parses an URI
-	 *
-	 * @author Steven Levithan <stevenlevithan.com> (MIT license)
-	 * @api private
-	 */
-	
-	var re = /^(?:(?![^:@]+:[^:@\/]*@)(http|https|ws|wss):\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?((?:[a-f0-9]{0,4}:){2,7}[a-f0-9]{0,4}|[^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/;
-	
-	var parts = [
-	    'source', 'protocol', 'authority', 'userInfo', 'user', 'password', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'anchor'
-	];
-	
-	module.exports = function parseuri(str) {
-	    var src = str,
-	        b = str.indexOf('['),
-	        e = str.indexOf(']');
-	
-	    if (b != -1 && e != -1) {
-	        str = str.substring(0, b) + str.substring(b, e).replace(/:/g, ';') + str.substring(e, str.length);
-	    }
-	
-	    var m = re.exec(str || ''),
-	        uri = {},
-	        i = 14;
-	
-	    while (i--) {
-	        uri[parts[i]] = m[i] || '';
-	    }
-	
-	    if (b != -1 && e != -1) {
-	        uri.source = src;
-	        uri.host = uri.host.substring(1, uri.host.length - 1).replace(/;/g, ':');
-	        uri.authority = uri.authority.replace('[', '').replace(']', '').replace(/;/g, ':');
-	        uri.ipv6uri = true;
-	    }
-	
-	    return uri;
-	};
-
-
-/***/ },
-/* 76 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	/**
-	 * This is the web browser implementation of `debug()`.
-	 *
-	 * Expose `debug()` as the module.
-	 */
-	
-	exports = module.exports = __webpack_require__(77);
-	exports.log = log;
-	exports.formatArgs = formatArgs;
-	exports.save = save;
-	exports.load = load;
-	exports.useColors = useColors;
-	exports.storage = 'undefined' != typeof chrome
-	               && 'undefined' != typeof chrome.storage
-	                  ? chrome.storage.local
-	                  : localstorage();
-	
-	/**
-	 * Colors.
-	 */
-	
-	exports.colors = [
-	  'lightseagreen',
-	  'forestgreen',
-	  'goldenrod',
-	  'dodgerblue',
-	  'darkorchid',
-	  'crimson'
-	];
-	
-	/**
-	 * Currently only WebKit-based Web Inspectors, Firefox >= v31,
-	 * and the Firebug extension (any Firefox version) are known
-	 * to support "%c" CSS customizations.
-	 *
-	 * TODO: add a `localStorage` variable to explicitly enable/disable colors
-	 */
-	
-	function useColors() {
-	  // is webkit? http://stackoverflow.com/a/16459606/376773
-	  return ('WebkitAppearance' in document.documentElement.style) ||
-	    // is firebug? http://stackoverflow.com/a/398120/376773
-	    (window.console && (console.firebug || (console.exception && console.table))) ||
-	    // is firefox >= v31?
-	    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-	    (navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31);
-	}
-	
-	/**
-	 * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
-	 */
-	
-	exports.formatters.j = function(v) {
-	  return JSON.stringify(v);
-	};
-	
-	
-	/**
-	 * Colorize log arguments if enabled.
-	 *
-	 * @api public
-	 */
-	
-	function formatArgs() {
-	  var args = arguments;
-	  var useColors = this.useColors;
-	
-	  args[0] = (useColors ? '%c' : '')
-	    + this.namespace
-	    + (useColors ? ' %c' : ' ')
-	    + args[0]
-	    + (useColors ? '%c ' : ' ')
-	    + '+' + exports.humanize(this.diff);
-	
-	  if (!useColors) return args;
-	
-	  var c = 'color: ' + this.color;
-	  args = [args[0], c, 'color: inherit'].concat(Array.prototype.slice.call(args, 1));
-	
-	  // the final "%c" is somewhat tricky, because there could be other
-	  // arguments passed either before or after the %c, so we need to
-	  // figure out the correct index to insert the CSS into
-	  var index = 0;
-	  var lastC = 0;
-	  args[0].replace(/%[a-z%]/g, function(match) {
-	    if ('%%' === match) return;
-	    index++;
-	    if ('%c' === match) {
-	      // we only are interested in the *last* %c
-	      // (the user may have provided their own)
-	      lastC = index;
-	    }
-	  });
-	
-	  args.splice(lastC, 0, c);
-	  return args;
-	}
-	
-	/**
-	 * Invokes `console.log()` when available.
-	 * No-op when `console.log` is not a "function".
-	 *
-	 * @api public
-	 */
-	
-	function log() {
-	  // this hackery is required for IE8/9, where
-	  // the `console.log` function doesn't have 'apply'
-	  return 'object' === typeof console
-	    && console.log
-	    && Function.prototype.apply.call(console.log, console, arguments);
-	}
-	
-	/**
-	 * Save `namespaces`.
-	 *
-	 * @param {String} namespaces
-	 * @api private
-	 */
-	
-	function save(namespaces) {
-	  try {
-	    if (null == namespaces) {
-	      exports.storage.removeItem('debug');
-	    } else {
-	      exports.storage.debug = namespaces;
-	    }
-	  } catch(e) {}
-	}
-	
-	/**
-	 * Load `namespaces`.
-	 *
-	 * @return {String} returns the previously persisted debug modes
-	 * @api private
-	 */
-	
-	function load() {
-	  var r;
-	  try {
-	    r = exports.storage.debug;
-	  } catch(e) {}
-	  return r;
-	}
-	
-	/**
-	 * Enable namespaces listed in `localStorage.debug` initially.
-	 */
-	
-	exports.enable(load());
-	
-	/**
-	 * Localstorage attempts to return the localstorage.
-	 *
-	 * This is necessary because safari throws
-	 * when a user disables cookies/localstorage
-	 * and you attempt to access it.
-	 *
-	 * @return {LocalStorage}
-	 * @api private
-	 */
-	
-	function localstorage(){
-	  try {
-	    return window.localStorage;
-	  } catch (e) {}
-	}
-
-
-/***/ },
-/* 77 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	/**
-	 * This is the common logic for both the Node.js and web browser
-	 * implementations of `debug()`.
-	 *
-	 * Expose `debug()` as the module.
-	 */
-	
-	exports = module.exports = debug;
-	exports.coerce = coerce;
-	exports.disable = disable;
-	exports.enable = enable;
-	exports.enabled = enabled;
-	exports.humanize = __webpack_require__(78);
-	
-	/**
-	 * The currently active debug mode names, and names to skip.
-	 */
-	
-	exports.names = [];
-	exports.skips = [];
-	
-	/**
-	 * Map of special "%n" handling functions, for the debug "format" argument.
-	 *
-	 * Valid key names are a single, lowercased letter, i.e. "n".
-	 */
-	
-	exports.formatters = {};
-	
-	/**
-	 * Previously assigned color.
-	 */
-	
-	var prevColor = 0;
-	
-	/**
-	 * Previous log timestamp.
-	 */
-	
-	var prevTime;
-	
-	/**
-	 * Select a color.
-	 *
-	 * @return {Number}
-	 * @api private
-	 */
-	
-	function selectColor() {
-	  return exports.colors[prevColor++ % exports.colors.length];
-	}
-	
-	/**
-	 * Create a debugger with the given `namespace`.
-	 *
-	 * @param {String} namespace
-	 * @return {Function}
-	 * @api public
-	 */
-	
-	function debug(namespace) {
-	
-	  // define the `disabled` version
-	  function disabled() {
-	  }
-	  disabled.enabled = false;
-	
-	  // define the `enabled` version
-	  function enabled() {
-	
-	    var self = enabled;
-	
-	    // set `diff` timestamp
-	    var curr = +new Date();
-	    var ms = curr - (prevTime || curr);
-	    self.diff = ms;
-	    self.prev = prevTime;
-	    self.curr = curr;
-	    prevTime = curr;
-	
-	    // add the `color` if not set
-	    if (null == self.useColors) self.useColors = exports.useColors();
-	    if (null == self.color && self.useColors) self.color = selectColor();
-	
-	    var args = Array.prototype.slice.call(arguments);
-	
-	    args[0] = exports.coerce(args[0]);
-	
-	    if ('string' !== typeof args[0]) {
-	      // anything else let's inspect with %o
-	      args = ['%o'].concat(args);
-	    }
-	
-	    // apply any `formatters` transformations
-	    var index = 0;
-	    args[0] = args[0].replace(/%([a-z%])/g, function(match, format) {
-	      // if we encounter an escaped % then don't increase the array index
-	      if (match === '%%') return match;
-	      index++;
-	      var formatter = exports.formatters[format];
-	      if ('function' === typeof formatter) {
-	        var val = args[index];
-	        match = formatter.call(self, val);
-	
-	        // now we need to remove `args[index]` since it's inlined in the `format`
-	        args.splice(index, 1);
-	        index--;
-	      }
-	      return match;
-	    });
-	
-	    if ('function' === typeof exports.formatArgs) {
-	      args = exports.formatArgs.apply(self, args);
-	    }
-	    var logFn = enabled.log || exports.log || console.log.bind(console);
-	    logFn.apply(self, args);
-	  }
-	  enabled.enabled = true;
-	
-	  var fn = exports.enabled(namespace) ? enabled : disabled;
-	
-	  fn.namespace = namespace;
-	
-	  return fn;
-	}
-	
-	/**
-	 * Enables a debug mode by namespaces. This can include modes
-	 * separated by a colon and wildcards.
-	 *
-	 * @param {String} namespaces
-	 * @api public
-	 */
-	
-	function enable(namespaces) {
-	  exports.save(namespaces);
-	
-	  var split = (namespaces || '').split(/[\s,]+/);
-	  var len = split.length;
-	
-	  for (var i = 0; i < len; i++) {
-	    if (!split[i]) continue; // ignore empty strings
-	    namespaces = split[i].replace(/\*/g, '.*?');
-	    if (namespaces[0] === '-') {
-	      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
-	    } else {
-	      exports.names.push(new RegExp('^' + namespaces + '$'));
-	    }
-	  }
-	}
-	
-	/**
-	 * Disable debug output.
-	 *
-	 * @api public
-	 */
-	
-	function disable() {
-	  exports.enable('');
-	}
-	
-	/**
-	 * Returns true if the given mode name is enabled, false otherwise.
-	 *
-	 * @param {String} name
-	 * @return {Boolean}
-	 * @api public
-	 */
-	
-	function enabled(name) {
-	  var i, len;
-	  for (i = 0, len = exports.skips.length; i < len; i++) {
-	    if (exports.skips[i].test(name)) {
-	      return false;
-	    }
-	  }
-	  for (i = 0, len = exports.names.length; i < len; i++) {
-	    if (exports.names[i].test(name)) {
-	      return true;
-	    }
-	  }
-	  return false;
-	}
-	
-	/**
-	 * Coerce `val`.
-	 *
-	 * @param {Mixed} val
-	 * @return {Mixed}
-	 * @api private
-	 */
-	
-	function coerce(val) {
-	  if (val instanceof Error) return val.stack || val.message;
-	  return val;
-	}
-
-
-/***/ },
-/* 78 */
-/***/ function(module, exports) {
-
-	/**
-	 * Helpers.
-	 */
-	
-	var s = 1000;
-	var m = s * 60;
-	var h = m * 60;
-	var d = h * 24;
-	var y = d * 365.25;
-	
-	/**
-	 * Parse or format the given `val`.
-	 *
-	 * Options:
-	 *
-	 *  - `long` verbose formatting [false]
-	 *
-	 * @param {String|Number} val
-	 * @param {Object} options
-	 * @return {String|Number}
-	 * @api public
-	 */
-	
-	module.exports = function(val, options){
-	  options = options || {};
-	  if ('string' == typeof val) return parse(val);
-	  return options.long
-	    ? long(val)
-	    : short(val);
-	};
-	
-	/**
-	 * Parse the given `str` and return milliseconds.
-	 *
-	 * @param {String} str
-	 * @return {Number}
-	 * @api private
-	 */
-	
-	function parse(str) {
-	  str = '' + str;
-	  if (str.length > 10000) return;
-	  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(str);
-	  if (!match) return;
-	  var n = parseFloat(match[1]);
-	  var type = (match[2] || 'ms').toLowerCase();
-	  switch (type) {
-	    case 'years':
-	    case 'year':
-	    case 'yrs':
-	    case 'yr':
-	    case 'y':
-	      return n * y;
-	    case 'days':
-	    case 'day':
-	    case 'd':
-	      return n * d;
-	    case 'hours':
-	    case 'hour':
-	    case 'hrs':
-	    case 'hr':
-	    case 'h':
-	      return n * h;
-	    case 'minutes':
-	    case 'minute':
-	    case 'mins':
-	    case 'min':
-	    case 'm':
-	      return n * m;
-	    case 'seconds':
-	    case 'second':
-	    case 'secs':
-	    case 'sec':
-	    case 's':
-	      return n * s;
-	    case 'milliseconds':
-	    case 'millisecond':
-	    case 'msecs':
-	    case 'msec':
-	    case 'ms':
-	      return n;
-	  }
-	}
-	
-	/**
-	 * Short format for `ms`.
-	 *
-	 * @param {Number} ms
-	 * @return {String}
-	 * @api private
-	 */
-	
-	function short(ms) {
-	  if (ms >= d) return Math.round(ms / d) + 'd';
-	  if (ms >= h) return Math.round(ms / h) + 'h';
-	  if (ms >= m) return Math.round(ms / m) + 'm';
-	  if (ms >= s) return Math.round(ms / s) + 's';
-	  return ms + 'ms';
-	}
-	
-	/**
-	 * Long format for `ms`.
-	 *
-	 * @param {Number} ms
-	 * @return {String}
-	 * @api private
-	 */
-	
-	function long(ms) {
-	  return plural(ms, d, 'day')
-	    || plural(ms, h, 'hour')
-	    || plural(ms, m, 'minute')
-	    || plural(ms, s, 'second')
-	    || ms + ' ms';
-	}
-	
-	/**
-	 * Pluralization helper.
-	 */
-	
-	function plural(ms, n, name) {
-	  if (ms < n) return;
-	  if (ms < n * 1.5) return Math.floor(ms / n) + ' ' + name;
-	  return Math.ceil(ms / n) + ' ' + name + 's';
-	}
-
-
-/***/ },
-/* 79 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	/**
-	 * Module dependencies.
-	 */
-	
-	var debug = __webpack_require__(76)('socket.io-parser');
-	var json = __webpack_require__(80);
-	var isArray = __webpack_require__(83);
-	var Emitter = __webpack_require__(84);
-	var binary = __webpack_require__(85);
-	var isBuf = __webpack_require__(86);
-	
-	/**
-	 * Protocol version.
-	 *
-	 * @api public
-	 */
-	
-	exports.protocol = 4;
-	
-	/**
-	 * Packet types.
-	 *
-	 * @api public
-	 */
-	
-	exports.types = [
-	  'CONNECT',
-	  'DISCONNECT',
-	  'EVENT',
-	  'ACK',
-	  'ERROR',
-	  'BINARY_EVENT',
-	  'BINARY_ACK'
-	];
-	
-	/**
-	 * Packet type `connect`.
-	 *
-	 * @api public
-	 */
-	
-	exports.CONNECT = 0;
-	
-	/**
-	 * Packet type `disconnect`.
-	 *
-	 * @api public
-	 */
-	
-	exports.DISCONNECT = 1;
-	
-	/**
-	 * Packet type `event`.
-	 *
-	 * @api public
-	 */
-	
-	exports.EVENT = 2;
-	
-	/**
-	 * Packet type `ack`.
-	 *
-	 * @api public
-	 */
-	
-	exports.ACK = 3;
-	
-	/**
-	 * Packet type `error`.
-	 *
-	 * @api public
-	 */
-	
-	exports.ERROR = 4;
-	
-	/**
-	 * Packet type 'binary event'
-	 *
-	 * @api public
-	 */
-	
-	exports.BINARY_EVENT = 5;
-	
-	/**
-	 * Packet type `binary ack`. For acks with binary arguments.
-	 *
-	 * @api public
-	 */
-	
-	exports.BINARY_ACK = 6;
-	
-	/**
-	 * Encoder constructor.
-	 *
-	 * @api public
-	 */
-	
-	exports.Encoder = Encoder;
-	
-	/**
-	 * Decoder constructor.
-	 *
-	 * @api public
-	 */
-	
-	exports.Decoder = Decoder;
-	
-	/**
-	 * A socket.io Encoder instance
-	 *
-	 * @api public
-	 */
-	
-	function Encoder() {}
-	
-	/**
-	 * Encode a packet as a single string if non-binary, or as a
-	 * buffer sequence, depending on packet type.
-	 *
-	 * @param {Object} obj - packet object
-	 * @param {Function} callback - function to handle encodings (likely engine.write)
-	 * @return Calls callback with Array of encodings
-	 * @api public
-	 */
-	
-	Encoder.prototype.encode = function(obj, callback){
-	  debug('encoding packet %j', obj);
-	
-	  if (exports.BINARY_EVENT == obj.type || exports.BINARY_ACK == obj.type) {
-	    encodeAsBinary(obj, callback);
-	  }
-	  else {
-	    var encoding = encodeAsString(obj);
-	    callback([encoding]);
-	  }
-	};
-	
-	/**
-	 * Encode packet as string.
-	 *
-	 * @param {Object} packet
-	 * @return {String} encoded
-	 * @api private
-	 */
-	
-	function encodeAsString(obj) {
-	  var str = '';
-	  var nsp = false;
-	
-	  // first is type
-	  str += obj.type;
-	
-	  // attachments if we have them
-	  if (exports.BINARY_EVENT == obj.type || exports.BINARY_ACK == obj.type) {
-	    str += obj.attachments;
-	    str += '-';
-	  }
-	
-	  // if we have a namespace other than `/`
-	  // we append it followed by a comma `,`
-	  if (obj.nsp && '/' != obj.nsp) {
-	    nsp = true;
-	    str += obj.nsp;
-	  }
-	
-	  // immediately followed by the id
-	  if (null != obj.id) {
-	    if (nsp) {
-	      str += ',';
-	      nsp = false;
-	    }
-	    str += obj.id;
-	  }
-	
-	  // json data
-	  if (null != obj.data) {
-	    if (nsp) str += ',';
-	    str += json.stringify(obj.data);
-	  }
-	
-	  debug('encoded %j as %s', obj, str);
-	  return str;
-	}
-	
-	/**
-	 * Encode packet as 'buffer sequence' by removing blobs, and
-	 * deconstructing packet into object with placeholders and
-	 * a list of buffers.
-	 *
-	 * @param {Object} packet
-	 * @return {Buffer} encoded
-	 * @api private
-	 */
-	
-	function encodeAsBinary(obj, callback) {
-	
-	  function writeEncoding(bloblessData) {
-	    var deconstruction = binary.deconstructPacket(bloblessData);
-	    var pack = encodeAsString(deconstruction.packet);
-	    var buffers = deconstruction.buffers;
-	
-	    buffers.unshift(pack); // add packet info to beginning of data list
-	    callback(buffers); // write all the buffers
-	  }
-	
-	  binary.removeBlobs(obj, writeEncoding);
-	}
-	
-	/**
-	 * A socket.io Decoder instance
-	 *
-	 * @return {Object} decoder
-	 * @api public
-	 */
-	
-	function Decoder() {
-	  this.reconstructor = null;
-	}
-	
-	/**
-	 * Mix in `Emitter` with Decoder.
-	 */
-	
-	Emitter(Decoder.prototype);
-	
-	/**
-	 * Decodes an ecoded packet string into packet JSON.
-	 *
-	 * @param {String} obj - encoded packet
-	 * @return {Object} packet
-	 * @api public
-	 */
-	
-	Decoder.prototype.add = function(obj) {
-	  var packet;
-	  if ('string' == typeof obj) {
-	    packet = decodeString(obj);
-	    if (exports.BINARY_EVENT == packet.type || exports.BINARY_ACK == packet.type) { // binary packet's json
-	      this.reconstructor = new BinaryReconstructor(packet);
-	
-	      // no attachments, labeled binary but no binary data to follow
-	      if (this.reconstructor.reconPack.attachments === 0) {
-	        this.emit('decoded', packet);
-	      }
-	    } else { // non-binary full packet
-	      this.emit('decoded', packet);
-	    }
-	  }
-	  else if (isBuf(obj) || obj.base64) { // raw binary data
-	    if (!this.reconstructor) {
-	      throw new Error('got binary data when not reconstructing a packet');
-	    } else {
-	      packet = this.reconstructor.takeBinaryData(obj);
-	      if (packet) { // received final buffer
-	        this.reconstructor = null;
-	        this.emit('decoded', packet);
-	      }
-	    }
-	  }
-	  else {
-	    throw new Error('Unknown type: ' + obj);
-	  }
-	};
-	
-	/**
-	 * Decode a packet String (JSON data)
-	 *
-	 * @param {String} str
-	 * @return {Object} packet
-	 * @api private
-	 */
-	
-	function decodeString(str) {
-	  var p = {};
-	  var i = 0;
-	
-	  // look up type
-	  p.type = Number(str.charAt(0));
-	  if (null == exports.types[p.type]) return error();
-	
-	  // look up attachments if type binary
-	  if (exports.BINARY_EVENT == p.type || exports.BINARY_ACK == p.type) {
-	    var buf = '';
-	    while (str.charAt(++i) != '-') {
-	      buf += str.charAt(i);
-	      if (i == str.length) break;
-	    }
-	    if (buf != Number(buf) || str.charAt(i) != '-') {
-	      throw new Error('Illegal attachments');
-	    }
-	    p.attachments = Number(buf);
-	  }
-	
-	  // look up namespace (if any)
-	  if ('/' == str.charAt(i + 1)) {
-	    p.nsp = '';
-	    while (++i) {
-	      var c = str.charAt(i);
-	      if (',' == c) break;
-	      p.nsp += c;
-	      if (i == str.length) break;
-	    }
-	  } else {
-	    p.nsp = '/';
-	  }
-	
-	  // look up id
-	  var next = str.charAt(i + 1);
-	  if ('' !== next && Number(next) == next) {
-	    p.id = '';
-	    while (++i) {
-	      var c = str.charAt(i);
-	      if (null == c || Number(c) != c) {
-	        --i;
-	        break;
-	      }
-	      p.id += str.charAt(i);
-	      if (i == str.length) break;
-	    }
-	    p.id = Number(p.id);
-	  }
-	
-	  // look up json data
-	  if (str.charAt(++i)) {
-	    try {
-	      p.data = json.parse(str.substr(i));
-	    } catch(e){
-	      return error();
-	    }
-	  }
-	
-	  debug('decoded %s as %j', str, p);
-	  return p;
-	}
-	
-	/**
-	 * Deallocates a parser's resources
-	 *
-	 * @api public
-	 */
-	
-	Decoder.prototype.destroy = function() {
-	  if (this.reconstructor) {
-	    this.reconstructor.finishedReconstruction();
-	  }
-	};
-	
-	/**
-	 * A manager of a binary event's 'buffer sequence'. Should
-	 * be constructed whenever a packet of type BINARY_EVENT is
-	 * decoded.
-	 *
-	 * @param {Object} packet
-	 * @return {BinaryReconstructor} initialized reconstructor
-	 * @api private
-	 */
-	
-	function BinaryReconstructor(packet) {
-	  this.reconPack = packet;
-	  this.buffers = [];
-	}
-	
-	/**
-	 * Method to be called when binary data received from connection
-	 * after a BINARY_EVENT packet.
-	 *
-	 * @param {Buffer | ArrayBuffer} binData - the raw binary data received
-	 * @return {null | Object} returns null if more binary data is expected or
-	 *   a reconstructed packet object if all buffers have been received.
-	 * @api private
-	 */
-	
-	BinaryReconstructor.prototype.takeBinaryData = function(binData) {
-	  this.buffers.push(binData);
-	  if (this.buffers.length == this.reconPack.attachments) { // done with buffer list
-	    var packet = binary.reconstructPacket(this.reconPack, this.buffers);
-	    this.finishedReconstruction();
-	    return packet;
-	  }
-	  return null;
-	};
-	
-	/**
-	 * Cleans up binary packet reconstruction variables.
-	 *
-	 * @api private
-	 */
-	
-	BinaryReconstructor.prototype.finishedReconstruction = function() {
-	  this.reconPack = null;
-	  this.buffers = [];
-	};
-	
-	function error(data){
-	  return {
-	    type: exports.ERROR,
-	    data: 'parser error'
-	  };
-	}
-
-
-/***/ },
-/* 80 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*! JSON v3.3.2 | http://bestiejs.github.io/json3 | Copyright 2012-2014, Kit Cambridge | http://kit.mit-license.org */
-	;(function () {
-	  // Detect the `define` function exposed by asynchronous module loaders. The
-	  // strict `define` check is necessary for compatibility with `r.js`.
-	  var isLoader = "function" === "function" && __webpack_require__(82);
-	
-	  // A set of types used to distinguish objects from primitives.
-	  var objectTypes = {
-	    "function": true,
-	    "object": true
-	  };
-	
-	  // Detect the `exports` object exposed by CommonJS implementations.
-	  var freeExports = objectTypes[typeof exports] && exports && !exports.nodeType && exports;
-	
-	  // Use the `global` object exposed by Node (including Browserify via
-	  // `insert-module-globals`), Narwhal, and Ringo as the default context,
-	  // and the `window` object in browsers. Rhino exports a `global` function
-	  // instead.
-	  var root = objectTypes[typeof window] && window || this,
-	      freeGlobal = freeExports && objectTypes[typeof module] && module && !module.nodeType && typeof global == "object" && global;
-	
-	  if (freeGlobal && (freeGlobal["global"] === freeGlobal || freeGlobal["window"] === freeGlobal || freeGlobal["self"] === freeGlobal)) {
-	    root = freeGlobal;
-	  }
-	
-	  // Public: Initializes JSON 3 using the given `context` object, attaching the
-	  // `stringify` and `parse` functions to the specified `exports` object.
-	  function runInContext(context, exports) {
-	    context || (context = root["Object"]());
-	    exports || (exports = root["Object"]());
-	
-	    // Native constructor aliases.
-	    var Number = context["Number"] || root["Number"],
-	        String = context["String"] || root["String"],
-	        Object = context["Object"] || root["Object"],
-	        Date = context["Date"] || root["Date"],
-	        SyntaxError = context["SyntaxError"] || root["SyntaxError"],
-	        TypeError = context["TypeError"] || root["TypeError"],
-	        Math = context["Math"] || root["Math"],
-	        nativeJSON = context["JSON"] || root["JSON"];
-	
-	    // Delegate to the native `stringify` and `parse` implementations.
-	    if (typeof nativeJSON == "object" && nativeJSON) {
-	      exports.stringify = nativeJSON.stringify;
-	      exports.parse = nativeJSON.parse;
-	    }
-	
-	    // Convenience aliases.
-	    var objectProto = Object.prototype,
-	        getClass = objectProto.toString,
-	        isProperty, forEach, undef;
-	
-	    // Test the `Date#getUTC*` methods. Based on work by @Yaffle.
-	    var isExtended = new Date(-3509827334573292);
-	    try {
-	      // The `getUTCFullYear`, `Month`, and `Date` methods return nonsensical
-	      // results for certain dates in Opera >= 10.53.
-	      isExtended = isExtended.getUTCFullYear() == -109252 && isExtended.getUTCMonth() === 0 && isExtended.getUTCDate() === 1 &&
-	        // Safari < 2.0.2 stores the internal millisecond time value correctly,
-	        // but clips the values returned by the date methods to the range of
-	        // signed 32-bit integers ([-2 ** 31, 2 ** 31 - 1]).
-	        isExtended.getUTCHours() == 10 && isExtended.getUTCMinutes() == 37 && isExtended.getUTCSeconds() == 6 && isExtended.getUTCMilliseconds() == 708;
-	    } catch (exception) {}
-	
-	    // Internal: Determines whether the native `JSON.stringify` and `parse`
-	    // implementations are spec-compliant. Based on work by Ken Snyder.
-	    function has(name) {
-	      if (has[name] !== undef) {
-	        // Return cached feature test result.
-	        return has[name];
-	      }
-	      var isSupported;
-	      if (name == "bug-string-char-index") {
-	        // IE <= 7 doesn't support accessing string characters using square
-	        // bracket notation. IE 8 only supports this for primitives.
-	        isSupported = "a"[0] != "a";
-	      } else if (name == "json") {
-	        // Indicates whether both `JSON.stringify` and `JSON.parse` are
-	        // supported.
-	        isSupported = has("json-stringify") && has("json-parse");
-	      } else {
-	        var value, serialized = '{"a":[1,true,false,null,"\\u0000\\b\\n\\f\\r\\t"]}';
-	        // Test `JSON.stringify`.
-	        if (name == "json-stringify") {
-	          var stringify = exports.stringify, stringifySupported = typeof stringify == "function" && isExtended;
-	          if (stringifySupported) {
-	            // A test function object with a custom `toJSON` method.
-	            (value = function () {
-	              return 1;
-	            }).toJSON = value;
-	            try {
-	              stringifySupported =
-	                // Firefox 3.1b1 and b2 serialize string, number, and boolean
-	                // primitives as object literals.
-	                stringify(0) === "0" &&
-	                // FF 3.1b1, b2, and JSON 2 serialize wrapped primitives as object
-	                // literals.
-	                stringify(new Number()) === "0" &&
-	                stringify(new String()) == '""' &&
-	                // FF 3.1b1, 2 throw an error if the value is `null`, `undefined`, or
-	                // does not define a canonical JSON representation (this applies to
-	                // objects with `toJSON` properties as well, *unless* they are nested
-	                // within an object or array).
-	                stringify(getClass) === undef &&
-	                // IE 8 serializes `undefined` as `"undefined"`. Safari <= 5.1.7 and
-	                // FF 3.1b3 pass this test.
-	                stringify(undef) === undef &&
-	                // Safari <= 5.1.7 and FF 3.1b3 throw `Error`s and `TypeError`s,
-	                // respectively, if the value is omitted entirely.
-	                stringify() === undef &&
-	                // FF 3.1b1, 2 throw an error if the given value is not a number,
-	                // string, array, object, Boolean, or `null` literal. This applies to
-	                // objects with custom `toJSON` methods as well, unless they are nested
-	                // inside object or array literals. YUI 3.0.0b1 ignores custom `toJSON`
-	                // methods entirely.
-	                stringify(value) === "1" &&
-	                stringify([value]) == "[1]" &&
-	                // Prototype <= 1.6.1 serializes `[undefined]` as `"[]"` instead of
-	                // `"[null]"`.
-	                stringify([undef]) == "[null]" &&
-	                // YUI 3.0.0b1 fails to serialize `null` literals.
-	                stringify(null) == "null" &&
-	                // FF 3.1b1, 2 halts serialization if an array contains a function:
-	                // `[1, true, getClass, 1]` serializes as "[1,true,],". FF 3.1b3
-	                // elides non-JSON values from objects and arrays, unless they
-	                // define custom `toJSON` methods.
-	                stringify([undef, getClass, null]) == "[null,null,null]" &&
-	                // Simple serialization test. FF 3.1b1 uses Unicode escape sequences
-	                // where character escape codes are expected (e.g., `\b` => `\u0008`).
-	                stringify({ "a": [value, true, false, null, "\x00\b\n\f\r\t"] }) == serialized &&
-	                // FF 3.1b1 and b2 ignore the `filter` and `width` arguments.
-	                stringify(null, value) === "1" &&
-	                stringify([1, 2], null, 1) == "[\n 1,\n 2\n]" &&
-	                // JSON 2, Prototype <= 1.7, and older WebKit builds incorrectly
-	                // serialize extended years.
-	                stringify(new Date(-8.64e15)) == '"-271821-04-20T00:00:00.000Z"' &&
-	                // The milliseconds are optional in ES 5, but required in 5.1.
-	                stringify(new Date(8.64e15)) == '"+275760-09-13T00:00:00.000Z"' &&
-	                // Firefox <= 11.0 incorrectly serializes years prior to 0 as negative
-	                // four-digit years instead of six-digit years. Credits: @Yaffle.
-	                stringify(new Date(-621987552e5)) == '"-000001-01-01T00:00:00.000Z"' &&
-	                // Safari <= 5.1.5 and Opera >= 10.53 incorrectly serialize millisecond
-	                // values less than 1000. Credits: @Yaffle.
-	                stringify(new Date(-1)) == '"1969-12-31T23:59:59.999Z"';
-	            } catch (exception) {
-	              stringifySupported = false;
-	            }
-	          }
-	          isSupported = stringifySupported;
-	        }
-	        // Test `JSON.parse`.
-	        if (name == "json-parse") {
-	          var parse = exports.parse;
-	          if (typeof parse == "function") {
-	            try {
-	              // FF 3.1b1, b2 will throw an exception if a bare literal is provided.
-	              // Conforming implementations should also coerce the initial argument to
-	              // a string prior to parsing.
-	              if (parse("0") === 0 && !parse(false)) {
-	                // Simple parsing test.
-	                value = parse(serialized);
-	                var parseSupported = value["a"].length == 5 && value["a"][0] === 1;
-	                if (parseSupported) {
-	                  try {
-	                    // Safari <= 5.1.2 and FF 3.1b1 allow unescaped tabs in strings.
-	                    parseSupported = !parse('"\t"');
-	                  } catch (exception) {}
-	                  if (parseSupported) {
-	                    try {
-	                      // FF 4.0 and 4.0.1 allow leading `+` signs and leading
-	                      // decimal points. FF 4.0, 4.0.1, and IE 9-10 also allow
-	                      // certain octal literals.
-	                      parseSupported = parse("01") !== 1;
-	                    } catch (exception) {}
-	                  }
-	                  if (parseSupported) {
-	                    try {
-	                      // FF 4.0, 4.0.1, and Rhino 1.7R3-R4 allow trailing decimal
-	                      // points. These environments, along with FF 3.1b1 and 2,
-	                      // also allow trailing commas in JSON objects and arrays.
-	                      parseSupported = parse("1.") !== 1;
-	                    } catch (exception) {}
-	                  }
-	                }
-	              }
-	            } catch (exception) {
-	              parseSupported = false;
-	            }
-	          }
-	          isSupported = parseSupported;
-	        }
-	      }
-	      return has[name] = !!isSupported;
-	    }
-	
-	    if (!has("json")) {
-	      // Common `[[Class]]` name aliases.
-	      var functionClass = "[object Function]",
-	          dateClass = "[object Date]",
-	          numberClass = "[object Number]",
-	          stringClass = "[object String]",
-	          arrayClass = "[object Array]",
-	          booleanClass = "[object Boolean]";
-	
-	      // Detect incomplete support for accessing string characters by index.
-	      var charIndexBuggy = has("bug-string-char-index");
-	
-	      // Define additional utility methods if the `Date` methods are buggy.
-	      if (!isExtended) {
-	        var floor = Math.floor;
-	        // A mapping between the months of the year and the number of days between
-	        // January 1st and the first of the respective month.
-	        var Months = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
-	        // Internal: Calculates the number of days between the Unix epoch and the
-	        // first day of the given month.
-	        var getDay = function (year, month) {
-	          return Months[month] + 365 * (year - 1970) + floor((year - 1969 + (month = +(month > 1))) / 4) - floor((year - 1901 + month) / 100) + floor((year - 1601 + month) / 400);
-	        };
-	      }
-	
-	      // Internal: Determines if a property is a direct property of the given
-	      // object. Delegates to the native `Object#hasOwnProperty` method.
-	      if (!(isProperty = objectProto.hasOwnProperty)) {
-	        isProperty = function (property) {
-	          var members = {}, constructor;
-	          if ((members.__proto__ = null, members.__proto__ = {
-	            // The *proto* property cannot be set multiple times in recent
-	            // versions of Firefox and SeaMonkey.
-	            "toString": 1
-	          }, members).toString != getClass) {
-	            // Safari <= 2.0.3 doesn't implement `Object#hasOwnProperty`, but
-	            // supports the mutable *proto* property.
-	            isProperty = function (property) {
-	              // Capture and break the object's prototype chain (see section 8.6.2
-	              // of the ES 5.1 spec). The parenthesized expression prevents an
-	              // unsafe transformation by the Closure Compiler.
-	              var original = this.__proto__, result = property in (this.__proto__ = null, this);
-	              // Restore the original prototype chain.
-	              this.__proto__ = original;
-	              return result;
-	            };
-	          } else {
-	            // Capture a reference to the top-level `Object` constructor.
-	            constructor = members.constructor;
-	            // Use the `constructor` property to simulate `Object#hasOwnProperty` in
-	            // other environments.
-	            isProperty = function (property) {
-	              var parent = (this.constructor || constructor).prototype;
-	              return property in this && !(property in parent && this[property] === parent[property]);
-	            };
-	          }
-	          members = null;
-	          return isProperty.call(this, property);
-	        };
-	      }
-	
-	      // Internal: Normalizes the `for...in` iteration algorithm across
-	      // environments. Each enumerated key is yielded to a `callback` function.
-	      forEach = function (object, callback) {
-	        var size = 0, Properties, members, property;
-	
-	        // Tests for bugs in the current environment's `for...in` algorithm. The
-	        // `valueOf` property inherits the non-enumerable flag from
-	        // `Object.prototype` in older versions of IE, Netscape, and Mozilla.
-	        (Properties = function () {
-	          this.valueOf = 0;
-	        }).prototype.valueOf = 0;
-	
-	        // Iterate over a new instance of the `Properties` class.
-	        members = new Properties();
-	        for (property in members) {
-	          // Ignore all properties inherited from `Object.prototype`.
-	          if (isProperty.call(members, property)) {
-	            size++;
-	          }
-	        }
-	        Properties = members = null;
-	
-	        // Normalize the iteration algorithm.
-	        if (!size) {
-	          // A list of non-enumerable properties inherited from `Object.prototype`.
-	          members = ["valueOf", "toString", "toLocaleString", "propertyIsEnumerable", "isPrototypeOf", "hasOwnProperty", "constructor"];
-	          // IE <= 8, Mozilla 1.0, and Netscape 6.2 ignore shadowed non-enumerable
-	          // properties.
-	          forEach = function (object, callback) {
-	            var isFunction = getClass.call(object) == functionClass, property, length;
-	            var hasProperty = !isFunction && typeof object.constructor != "function" && objectTypes[typeof object.hasOwnProperty] && object.hasOwnProperty || isProperty;
-	            for (property in object) {
-	              // Gecko <= 1.0 enumerates the `prototype` property of functions under
-	              // certain conditions; IE does not.
-	              if (!(isFunction && property == "prototype") && hasProperty.call(object, property)) {
-	                callback(property);
-	              }
-	            }
-	            // Manually invoke the callback for each non-enumerable property.
-	            for (length = members.length; property = members[--length]; hasProperty.call(object, property) && callback(property));
-	          };
-	        } else if (size == 2) {
-	          // Safari <= 2.0.4 enumerates shadowed properties twice.
-	          forEach = function (object, callback) {
-	            // Create a set of iterated properties.
-	            var members = {}, isFunction = getClass.call(object) == functionClass, property;
-	            for (property in object) {
-	              // Store each property name to prevent double enumeration. The
-	              // `prototype` property of functions is not enumerated due to cross-
-	              // environment inconsistencies.
-	              if (!(isFunction && property == "prototype") && !isProperty.call(members, property) && (members[property] = 1) && isProperty.call(object, property)) {
-	                callback(property);
-	              }
-	            }
-	          };
-	        } else {
-	          // No bugs detected; use the standard `for...in` algorithm.
-	          forEach = function (object, callback) {
-	            var isFunction = getClass.call(object) == functionClass, property, isConstructor;
-	            for (property in object) {
-	              if (!(isFunction && property == "prototype") && isProperty.call(object, property) && !(isConstructor = property === "constructor")) {
-	                callback(property);
-	              }
-	            }
-	            // Manually invoke the callback for the `constructor` property due to
-	            // cross-environment inconsistencies.
-	            if (isConstructor || isProperty.call(object, (property = "constructor"))) {
-	              callback(property);
-	            }
-	          };
-	        }
-	        return forEach(object, callback);
-	      };
-	
-	      // Public: Serializes a JavaScript `value` as a JSON string. The optional
-	      // `filter` argument may specify either a function that alters how object and
-	      // array members are serialized, or an array of strings and numbers that
-	      // indicates which properties should be serialized. The optional `width`
-	      // argument may be either a string or number that specifies the indentation
-	      // level of the output.
-	      if (!has("json-stringify")) {
-	        // Internal: A map of control characters and their escaped equivalents.
-	        var Escapes = {
-	          92: "\\\\",
-	          34: '\\"',
-	          8: "\\b",
-	          12: "\\f",
-	          10: "\\n",
-	          13: "\\r",
-	          9: "\\t"
-	        };
-	
-	        // Internal: Converts `value` into a zero-padded string such that its
-	        // length is at least equal to `width`. The `width` must be <= 6.
-	        var leadingZeroes = "000000";
-	        var toPaddedString = function (width, value) {
-	          // The `|| 0` expression is necessary to work around a bug in
-	          // Opera <= 7.54u2 where `0 == -0`, but `String(-0) !== "0"`.
-	          return (leadingZeroes + (value || 0)).slice(-width);
-	        };
-	
-	        // Internal: Double-quotes a string `value`, replacing all ASCII control
-	        // characters (characters with code unit values between 0 and 31) with
-	        // their escaped equivalents. This is an implementation of the
-	        // `Quote(value)` operation defined in ES 5.1 section 15.12.3.
-	        var unicodePrefix = "\\u00";
-	        var quote = function (value) {
-	          var result = '"', index = 0, length = value.length, useCharIndex = !charIndexBuggy || length > 10;
-	          var symbols = useCharIndex && (charIndexBuggy ? value.split("") : value);
-	          for (; index < length; index++) {
-	            var charCode = value.charCodeAt(index);
-	            // If the character is a control character, append its Unicode or
-	            // shorthand escape sequence; otherwise, append the character as-is.
-	            switch (charCode) {
-	              case 8: case 9: case 10: case 12: case 13: case 34: case 92:
-	                result += Escapes[charCode];
-	                break;
-	              default:
-	                if (charCode < 32) {
-	                  result += unicodePrefix + toPaddedString(2, charCode.toString(16));
-	                  break;
-	                }
-	                result += useCharIndex ? symbols[index] : value.charAt(index);
-	            }
-	          }
-	          return result + '"';
-	        };
-	
-	        // Internal: Recursively serializes an object. Implements the
-	        // `Str(key, holder)`, `JO(value)`, and `JA(value)` operations.
-	        var serialize = function (property, object, callback, properties, whitespace, indentation, stack) {
-	          var value, className, year, month, date, time, hours, minutes, seconds, milliseconds, results, element, index, length, prefix, result;
-	          try {
-	            // Necessary for host object support.
-	            value = object[property];
-	          } catch (exception) {}
-	          if (typeof value == "object" && value) {
-	            className = getClass.call(value);
-	            if (className == dateClass && !isProperty.call(value, "toJSON")) {
-	              if (value > -1 / 0 && value < 1 / 0) {
-	                // Dates are serialized according to the `Date#toJSON` method
-	                // specified in ES 5.1 section 15.9.5.44. See section 15.9.1.15
-	                // for the ISO 8601 date time string format.
-	                if (getDay) {
-	                  // Manually compute the year, month, date, hours, minutes,
-	                  // seconds, and milliseconds if the `getUTC*` methods are
-	                  // buggy. Adapted from @Yaffle's `date-shim` project.
-	                  date = floor(value / 864e5);
-	                  for (year = floor(date / 365.2425) + 1970 - 1; getDay(year + 1, 0) <= date; year++);
-	                  for (month = floor((date - getDay(year, 0)) / 30.42); getDay(year, month + 1) <= date; month++);
-	                  date = 1 + date - getDay(year, month);
-	                  // The `time` value specifies the time within the day (see ES
-	                  // 5.1 section 15.9.1.2). The formula `(A % B + B) % B` is used
-	                  // to compute `A modulo B`, as the `%` operator does not
-	                  // correspond to the `modulo` operation for negative numbers.
-	                  time = (value % 864e5 + 864e5) % 864e5;
-	                  // The hours, minutes, seconds, and milliseconds are obtained by
-	                  // decomposing the time within the day. See section 15.9.1.10.
-	                  hours = floor(time / 36e5) % 24;
-	                  minutes = floor(time / 6e4) % 60;
-	                  seconds = floor(time / 1e3) % 60;
-	                  milliseconds = time % 1e3;
-	                } else {
-	                  year = value.getUTCFullYear();
-	                  month = value.getUTCMonth();
-	                  date = value.getUTCDate();
-	                  hours = value.getUTCHours();
-	                  minutes = value.getUTCMinutes();
-	                  seconds = value.getUTCSeconds();
-	                  milliseconds = value.getUTCMilliseconds();
-	                }
-	                // Serialize extended years correctly.
-	                value = (year <= 0 || year >= 1e4 ? (year < 0 ? "-" : "+") + toPaddedString(6, year < 0 ? -year : year) : toPaddedString(4, year)) +
-	                  "-" + toPaddedString(2, month + 1) + "-" + toPaddedString(2, date) +
-	                  // Months, dates, hours, minutes, and seconds should have two
-	                  // digits; milliseconds should have three.
-	                  "T" + toPaddedString(2, hours) + ":" + toPaddedString(2, minutes) + ":" + toPaddedString(2, seconds) +
-	                  // Milliseconds are optional in ES 5.0, but required in 5.1.
-	                  "." + toPaddedString(3, milliseconds) + "Z";
-	              } else {
-	                value = null;
-	              }
-	            } else if (typeof value.toJSON == "function" && ((className != numberClass && className != stringClass && className != arrayClass) || isProperty.call(value, "toJSON"))) {
-	              // Prototype <= 1.6.1 adds non-standard `toJSON` methods to the
-	              // `Number`, `String`, `Date`, and `Array` prototypes. JSON 3
-	              // ignores all `toJSON` methods on these objects unless they are
-	              // defined directly on an instance.
-	              value = value.toJSON(property);
-	            }
-	          }
-	          if (callback) {
-	            // If a replacement function was provided, call it to obtain the value
-	            // for serialization.
-	            value = callback.call(object, property, value);
-	          }
-	          if (value === null) {
-	            return "null";
-	          }
-	          className = getClass.call(value);
-	          if (className == booleanClass) {
-	            // Booleans are represented literally.
-	            return "" + value;
-	          } else if (className == numberClass) {
-	            // JSON numbers must be finite. `Infinity` and `NaN` are serialized as
-	            // `"null"`.
-	            return value > -1 / 0 && value < 1 / 0 ? "" + value : "null";
-	          } else if (className == stringClass) {
-	            // Strings are double-quoted and escaped.
-	            return quote("" + value);
-	          }
-	          // Recursively serialize objects and arrays.
-	          if (typeof value == "object") {
-	            // Check for cyclic structures. This is a linear search; performance
-	            // is inversely proportional to the number of unique nested objects.
-	            for (length = stack.length; length--;) {
-	              if (stack[length] === value) {
-	                // Cyclic structures cannot be serialized by `JSON.stringify`.
-	                throw TypeError();
-	              }
-	            }
-	            // Add the object to the stack of traversed objects.
-	            stack.push(value);
-	            results = [];
-	            // Save the current indentation level and indent one additional level.
-	            prefix = indentation;
-	            indentation += whitespace;
-	            if (className == arrayClass) {
-	              // Recursively serialize array elements.
-	              for (index = 0, length = value.length; index < length; index++) {
-	                element = serialize(index, value, callback, properties, whitespace, indentation, stack);
-	                results.push(element === undef ? "null" : element);
-	              }
-	              result = results.length ? (whitespace ? "[\n" + indentation + results.join(",\n" + indentation) + "\n" + prefix + "]" : ("[" + results.join(",") + "]")) : "[]";
-	            } else {
-	              // Recursively serialize object members. Members are selected from
-	              // either a user-specified list of property names, or the object
-	              // itself.
-	              forEach(properties || value, function (property) {
-	                var element = serialize(property, value, callback, properties, whitespace, indentation, stack);
-	                if (element !== undef) {
-	                  // According to ES 5.1 section 15.12.3: "If `gap` {whitespace}
-	                  // is not the empty string, let `member` {quote(property) + ":"}
-	                  // be the concatenation of `member` and the `space` character."
-	                  // The "`space` character" refers to the literal space
-	                  // character, not the `space` {width} argument provided to
-	                  // `JSON.stringify`.
-	                  results.push(quote(property) + ":" + (whitespace ? " " : "") + element);
-	                }
-	              });
-	              result = results.length ? (whitespace ? "{\n" + indentation + results.join(",\n" + indentation) + "\n" + prefix + "}" : ("{" + results.join(",") + "}")) : "{}";
-	            }
-	            // Remove the object from the traversed object stack.
-	            stack.pop();
-	            return result;
-	          }
-	        };
-	
-	        // Public: `JSON.stringify`. See ES 5.1 section 15.12.3.
-	        exports.stringify = function (source, filter, width) {
-	          var whitespace, callback, properties, className;
-	          if (objectTypes[typeof filter] && filter) {
-	            if ((className = getClass.call(filter)) == functionClass) {
-	              callback = filter;
-	            } else if (className == arrayClass) {
-	              // Convert the property names array into a makeshift set.
-	              properties = {};
-	              for (var index = 0, length = filter.length, value; index < length; value = filter[index++], ((className = getClass.call(value)), className == stringClass || className == numberClass) && (properties[value] = 1));
-	            }
-	          }
-	          if (width) {
-	            if ((className = getClass.call(width)) == numberClass) {
-	              // Convert the `width` to an integer and create a string containing
-	              // `width` number of space characters.
-	              if ((width -= width % 1) > 0) {
-	                for (whitespace = "", width > 10 && (width = 10); whitespace.length < width; whitespace += " ");
-	              }
-	            } else if (className == stringClass) {
-	              whitespace = width.length <= 10 ? width : width.slice(0, 10);
-	            }
-	          }
-	          // Opera <= 7.54u2 discards the values associated with empty string keys
-	          // (`""`) only if they are used directly within an object member list
-	          // (e.g., `!("" in { "": 1})`).
-	          return serialize("", (value = {}, value[""] = source, value), callback, properties, whitespace, "", []);
-	        };
-	      }
-	
-	      // Public: Parses a JSON source string.
-	      if (!has("json-parse")) {
-	        var fromCharCode = String.fromCharCode;
-	
-	        // Internal: A map of escaped control characters and their unescaped
-	        // equivalents.
-	        var Unescapes = {
-	          92: "\\",
-	          34: '"',
-	          47: "/",
-	          98: "\b",
-	          116: "\t",
-	          110: "\n",
-	          102: "\f",
-	          114: "\r"
-	        };
-	
-	        // Internal: Stores the parser state.
-	        var Index, Source;
-	
-	        // Internal: Resets the parser state and throws a `SyntaxError`.
-	        var abort = function () {
-	          Index = Source = null;
-	          throw SyntaxError();
-	        };
-	
-	        // Internal: Returns the next token, or `"$"` if the parser has reached
-	        // the end of the source string. A token may be a string, number, `null`
-	        // literal, or Boolean literal.
-	        var lex = function () {
-	          var source = Source, length = source.length, value, begin, position, isSigned, charCode;
-	          while (Index < length) {
-	            charCode = source.charCodeAt(Index);
-	            switch (charCode) {
-	              case 9: case 10: case 13: case 32:
-	                // Skip whitespace tokens, including tabs, carriage returns, line
-	                // feeds, and space characters.
-	                Index++;
-	                break;
-	              case 123: case 125: case 91: case 93: case 58: case 44:
-	                // Parse a punctuator token (`{`, `}`, `[`, `]`, `:`, or `,`) at
-	                // the current position.
-	                value = charIndexBuggy ? source.charAt(Index) : source[Index];
-	                Index++;
-	                return value;
-	              case 34:
-	                // `"` delimits a JSON string; advance to the next character and
-	                // begin parsing the string. String tokens are prefixed with the
-	                // sentinel `@` character to distinguish them from punctuators and
-	                // end-of-string tokens.
-	                for (value = "@", Index++; Index < length;) {
-	                  charCode = source.charCodeAt(Index);
-	                  if (charCode < 32) {
-	                    // Unescaped ASCII control characters (those with a code unit
-	                    // less than the space character) are not permitted.
-	                    abort();
-	                  } else if (charCode == 92) {
-	                    // A reverse solidus (`\`) marks the beginning of an escaped
-	                    // control character (including `"`, `\`, and `/`) or Unicode
-	                    // escape sequence.
-	                    charCode = source.charCodeAt(++Index);
-	                    switch (charCode) {
-	                      case 92: case 34: case 47: case 98: case 116: case 110: case 102: case 114:
-	                        // Revive escaped control characters.
-	                        value += Unescapes[charCode];
-	                        Index++;
-	                        break;
-	                      case 117:
-	                        // `\u` marks the beginning of a Unicode escape sequence.
-	                        // Advance to the first character and validate the
-	                        // four-digit code point.
-	                        begin = ++Index;
-	                        for (position = Index + 4; Index < position; Index++) {
-	                          charCode = source.charCodeAt(Index);
-	                          // A valid sequence comprises four hexdigits (case-
-	                          // insensitive) that form a single hexadecimal value.
-	                          if (!(charCode >= 48 && charCode <= 57 || charCode >= 97 && charCode <= 102 || charCode >= 65 && charCode <= 70)) {
-	                            // Invalid Unicode escape sequence.
-	                            abort();
-	                          }
-	                        }
-	                        // Revive the escaped character.
-	                        value += fromCharCode("0x" + source.slice(begin, Index));
-	                        break;
-	                      default:
-	                        // Invalid escape sequence.
-	                        abort();
-	                    }
-	                  } else {
-	                    if (charCode == 34) {
-	                      // An unescaped double-quote character marks the end of the
-	                      // string.
-	                      break;
-	                    }
-	                    charCode = source.charCodeAt(Index);
-	                    begin = Index;
-	                    // Optimize for the common case where a string is valid.
-	                    while (charCode >= 32 && charCode != 92 && charCode != 34) {
-	                      charCode = source.charCodeAt(++Index);
-	                    }
-	                    // Append the string as-is.
-	                    value += source.slice(begin, Index);
-	                  }
-	                }
-	                if (source.charCodeAt(Index) == 34) {
-	                  // Advance to the next character and return the revived string.
-	                  Index++;
-	                  return value;
-	                }
-	                // Unterminated string.
-	                abort();
-	              default:
-	                // Parse numbers and literals.
-	                begin = Index;
-	                // Advance past the negative sign, if one is specified.
-	                if (charCode == 45) {
-	                  isSigned = true;
-	                  charCode = source.charCodeAt(++Index);
-	                }
-	                // Parse an integer or floating-point value.
-	                if (charCode >= 48 && charCode <= 57) {
-	                  // Leading zeroes are interpreted as octal literals.
-	                  if (charCode == 48 && ((charCode = source.charCodeAt(Index + 1)), charCode >= 48 && charCode <= 57)) {
-	                    // Illegal octal literal.
-	                    abort();
-	                  }
-	                  isSigned = false;
-	                  // Parse the integer component.
-	                  for (; Index < length && ((charCode = source.charCodeAt(Index)), charCode >= 48 && charCode <= 57); Index++);
-	                  // Floats cannot contain a leading decimal point; however, this
-	                  // case is already accounted for by the parser.
-	                  if (source.charCodeAt(Index) == 46) {
-	                    position = ++Index;
-	                    // Parse the decimal component.
-	                    for (; position < length && ((charCode = source.charCodeAt(position)), charCode >= 48 && charCode <= 57); position++);
-	                    if (position == Index) {
-	                      // Illegal trailing decimal.
-	                      abort();
-	                    }
-	                    Index = position;
-	                  }
-	                  // Parse exponents. The `e` denoting the exponent is
-	                  // case-insensitive.
-	                  charCode = source.charCodeAt(Index);
-	                  if (charCode == 101 || charCode == 69) {
-	                    charCode = source.charCodeAt(++Index);
-	                    // Skip past the sign following the exponent, if one is
-	                    // specified.
-	                    if (charCode == 43 || charCode == 45) {
-	                      Index++;
-	                    }
-	                    // Parse the exponential component.
-	                    for (position = Index; position < length && ((charCode = source.charCodeAt(position)), charCode >= 48 && charCode <= 57); position++);
-	                    if (position == Index) {
-	                      // Illegal empty exponent.
-	                      abort();
-	                    }
-	                    Index = position;
-	                  }
-	                  // Coerce the parsed value to a JavaScript number.
-	                  return +source.slice(begin, Index);
-	                }
-	                // A negative sign may only precede numbers.
-	                if (isSigned) {
-	                  abort();
-	                }
-	                // `true`, `false`, and `null` literals.
-	                if (source.slice(Index, Index + 4) == "true") {
-	                  Index += 4;
-	                  return true;
-	                } else if (source.slice(Index, Index + 5) == "false") {
-	                  Index += 5;
-	                  return false;
-	                } else if (source.slice(Index, Index + 4) == "null") {
-	                  Index += 4;
-	                  return null;
-	                }
-	                // Unrecognized token.
-	                abort();
-	            }
-	          }
-	          // Return the sentinel `$` character if the parser has reached the end
-	          // of the source string.
-	          return "$";
-	        };
-	
-	        // Internal: Parses a JSON `value` token.
-	        var get = function (value) {
-	          var results, hasMembers;
-	          if (value == "$") {
-	            // Unexpected end of input.
-	            abort();
-	          }
-	          if (typeof value == "string") {
-	            if ((charIndexBuggy ? value.charAt(0) : value[0]) == "@") {
-	              // Remove the sentinel `@` character.
-	              return value.slice(1);
-	            }
-	            // Parse object and array literals.
-	            if (value == "[") {
-	              // Parses a JSON array, returning a new JavaScript array.
-	              results = [];
-	              for (;; hasMembers || (hasMembers = true)) {
-	                value = lex();
-	                // A closing square bracket marks the end of the array literal.
-	                if (value == "]") {
-	                  break;
-	                }
-	                // If the array literal contains elements, the current token
-	                // should be a comma separating the previous element from the
-	                // next.
-	                if (hasMembers) {
-	                  if (value == ",") {
-	                    value = lex();
-	                    if (value == "]") {
-	                      // Unexpected trailing `,` in array literal.
-	                      abort();
-	                    }
-	                  } else {
-	                    // A `,` must separate each array element.
-	                    abort();
-	                  }
-	                }
-	                // Elisions and leading commas are not permitted.
-	                if (value == ",") {
-	                  abort();
-	                }
-	                results.push(get(value));
-	              }
-	              return results;
-	            } else if (value == "{") {
-	              // Parses a JSON object, returning a new JavaScript object.
-	              results = {};
-	              for (;; hasMembers || (hasMembers = true)) {
-	                value = lex();
-	                // A closing curly brace marks the end of the object literal.
-	                if (value == "}") {
-	                  break;
-	                }
-	                // If the object literal contains members, the current token
-	                // should be a comma separator.
-	                if (hasMembers) {
-	                  if (value == ",") {
-	                    value = lex();
-	                    if (value == "}") {
-	                      // Unexpected trailing `,` in object literal.
-	                      abort();
-	                    }
-	                  } else {
-	                    // A `,` must separate each object member.
-	                    abort();
-	                  }
-	                }
-	                // Leading commas are not permitted, object property names must be
-	                // double-quoted strings, and a `:` must separate each property
-	                // name and value.
-	                if (value == "," || typeof value != "string" || (charIndexBuggy ? value.charAt(0) : value[0]) != "@" || lex() != ":") {
-	                  abort();
-	                }
-	                results[value.slice(1)] = get(lex());
-	              }
-	              return results;
-	            }
-	            // Unexpected token encountered.
-	            abort();
-	          }
-	          return value;
-	        };
-	
-	        // Internal: Updates a traversed object member.
-	        var update = function (source, property, callback) {
-	          var element = walk(source, property, callback);
-	          if (element === undef) {
-	            delete source[property];
-	          } else {
-	            source[property] = element;
-	          }
-	        };
-	
-	        // Internal: Recursively traverses a parsed JSON object, invoking the
-	        // `callback` function for each value. This is an implementation of the
-	        // `Walk(holder, name)` operation defined in ES 5.1 section 15.12.2.
-	        var walk = function (source, property, callback) {
-	          var value = source[property], length;
-	          if (typeof value == "object" && value) {
-	            // `forEach` can't be used to traverse an array in Opera <= 8.54
-	            // because its `Object#hasOwnProperty` implementation returns `false`
-	            // for array indices (e.g., `![1, 2, 3].hasOwnProperty("0")`).
-	            if (getClass.call(value) == arrayClass) {
-	              for (length = value.length; length--;) {
-	                update(value, length, callback);
-	              }
-	            } else {
-	              forEach(value, function (property) {
-	                update(value, property, callback);
-	              });
-	            }
-	          }
-	          return callback.call(source, property, value);
-	        };
-	
-	        // Public: `JSON.parse`. See ES 5.1 section 15.12.2.
-	        exports.parse = function (source, callback) {
-	          var result, value;
-	          Index = 0;
-	          Source = "" + source;
-	          result = get(lex());
-	          // If a JSON string contains multiple tokens, it is invalid.
-	          if (lex() != "$") {
-	            abort();
-	          }
-	          // Reset the parser state.
-	          Index = Source = null;
-	          return callback && getClass.call(callback) == functionClass ? walk((value = {}, value[""] = result, value), "", callback) : result;
-	        };
-	      }
-	    }
-	
-	    exports["runInContext"] = runInContext;
-	    return exports;
-	  }
-	
-	  if (freeExports && !isLoader) {
-	    // Export for CommonJS environments.
-	    runInContext(root, freeExports);
-	  } else {
-	    // Export for web browsers and JavaScript engines.
-	    var nativeJSON = root.JSON,
-	        previousJSON = root["JSON3"],
-	        isRestored = false;
-	
-	    var JSON3 = runInContext(root, (root["JSON3"] = {
-	      // Public: Restores the original value of the global `JSON` object and
-	      // returns a reference to the `JSON3` object.
-	      "noConflict": function () {
-	        if (!isRestored) {
-	          isRestored = true;
-	          root.JSON = nativeJSON;
-	          root["JSON3"] = previousJSON;
-	          nativeJSON = previousJSON = null;
-	        }
-	        return JSON3;
-	      }
-	    }));
-	
-	    root.JSON = {
-	      "parse": JSON3.parse,
-	      "stringify": JSON3.stringify
-	    };
-	  }
-	
-	  // Export for asynchronous module loaders.
-	  if (isLoader) {
-	    !(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
-	      return JSON3;
-	    }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	  }
-	}).call(this);
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(81)(module), (function() { return this; }())))
-
-/***/ },
-/* 81 */
-/***/ function(module, exports) {
-
-	module.exports = function(module) {
-		if(!module.webpackPolyfill) {
-			module.deprecate = function() {};
-			module.paths = [];
-			// module.parent = undefined by default
-			module.children = [];
-			module.webpackPolyfill = 1;
-		}
-		return module;
-	}
-
-
-/***/ },
-/* 82 */
-/***/ function(module, exports) {
-
-	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, {}))
-
-/***/ },
-/* 83 */
-/***/ function(module, exports) {
-
-	module.exports = Array.isArray || function (arr) {
-	  return Object.prototype.toString.call(arr) == '[object Array]';
-	};
-
-
-/***/ },
-/* 84 */
-/***/ function(module, exports) {
-
-	
-	/**
-	 * Expose `Emitter`.
-	 */
-	
-	module.exports = Emitter;
-	
-	/**
-	 * Initialize a new `Emitter`.
-	 *
-	 * @api public
-	 */
-	
-	function Emitter(obj) {
-	  if (obj) return mixin(obj);
-	};
-	
-	/**
-	 * Mixin the emitter properties.
-	 *
-	 * @param {Object} obj
-	 * @return {Object}
-	 * @api private
-	 */
-	
-	function mixin(obj) {
-	  for (var key in Emitter.prototype) {
-	    obj[key] = Emitter.prototype[key];
-	  }
-	  return obj;
-	}
-	
-	/**
-	 * Listen on the given `event` with `fn`.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-	
-	Emitter.prototype.on =
-	Emitter.prototype.addEventListener = function(event, fn){
-	  this._callbacks = this._callbacks || {};
-	  (this._callbacks[event] = this._callbacks[event] || [])
-	    .push(fn);
-	  return this;
-	};
-	
-	/**
-	 * Adds an `event` listener that will be invoked a single
-	 * time then automatically removed.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-	
-	Emitter.prototype.once = function(event, fn){
-	  var self = this;
-	  this._callbacks = this._callbacks || {};
-	
-	  function on() {
-	    self.off(event, on);
-	    fn.apply(this, arguments);
-	  }
-	
-	  on.fn = fn;
-	  this.on(event, on);
-	  return this;
-	};
-	
-	/**
-	 * Remove the given callback for `event` or all
-	 * registered callbacks.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-	
-	Emitter.prototype.off =
-	Emitter.prototype.removeListener =
-	Emitter.prototype.removeAllListeners =
-	Emitter.prototype.removeEventListener = function(event, fn){
-	  this._callbacks = this._callbacks || {};
-	
-	  // all
-	  if (0 == arguments.length) {
-	    this._callbacks = {};
-	    return this;
-	  }
-	
-	  // specific event
-	  var callbacks = this._callbacks[event];
-	  if (!callbacks) return this;
-	
-	  // remove all handlers
-	  if (1 == arguments.length) {
-	    delete this._callbacks[event];
-	    return this;
-	  }
-	
-	  // remove specific handler
-	  var cb;
-	  for (var i = 0; i < callbacks.length; i++) {
-	    cb = callbacks[i];
-	    if (cb === fn || cb.fn === fn) {
-	      callbacks.splice(i, 1);
-	      break;
-	    }
-	  }
-	  return this;
-	};
-	
-	/**
-	 * Emit `event` with the given args.
-	 *
-	 * @param {String} event
-	 * @param {Mixed} ...
-	 * @return {Emitter}
-	 */
-	
-	Emitter.prototype.emit = function(event){
-	  this._callbacks = this._callbacks || {};
-	  var args = [].slice.call(arguments, 1)
-	    , callbacks = this._callbacks[event];
-	
-	  if (callbacks) {
-	    callbacks = callbacks.slice(0);
-	    for (var i = 0, len = callbacks.length; i < len; ++i) {
-	      callbacks[i].apply(this, args);
-	    }
-	  }
-	
-	  return this;
-	};
-	
-	/**
-	 * Return array of callbacks for `event`.
-	 *
-	 * @param {String} event
-	 * @return {Array}
-	 * @api public
-	 */
-	
-	Emitter.prototype.listeners = function(event){
-	  this._callbacks = this._callbacks || {};
-	  return this._callbacks[event] || [];
-	};
-	
-	/**
-	 * Check if this emitter has `event` handlers.
-	 *
-	 * @param {String} event
-	 * @return {Boolean}
-	 * @api public
-	 */
-	
-	Emitter.prototype.hasListeners = function(event){
-	  return !! this.listeners(event).length;
-	};
-
-
-/***/ },
-/* 85 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/*global Blob,File*/
-	
-	/**
-	 * Module requirements
-	 */
-	
-	var isArray = __webpack_require__(83);
-	var isBuf = __webpack_require__(86);
-	
-	/**
-	 * Replaces every Buffer | ArrayBuffer in packet with a numbered placeholder.
-	 * Anything with blobs or files should be fed through removeBlobs before coming
-	 * here.
-	 *
-	 * @param {Object} packet - socket.io event packet
-	 * @return {Object} with deconstructed packet and list of buffers
-	 * @api public
-	 */
-	
-	exports.deconstructPacket = function(packet){
-	  var buffers = [];
-	  var packetData = packet.data;
-	
-	  function _deconstructPacket(data) {
-	    if (!data) return data;
-	
-	    if (isBuf(data)) {
-	      var placeholder = { _placeholder: true, num: buffers.length };
-	      buffers.push(data);
-	      return placeholder;
-	    } else if (isArray(data)) {
-	      var newData = new Array(data.length);
-	      for (var i = 0; i < data.length; i++) {
-	        newData[i] = _deconstructPacket(data[i]);
-	      }
-	      return newData;
-	    } else if ('object' == typeof data && !(data instanceof Date)) {
-	      var newData = {};
-	      for (var key in data) {
-	        newData[key] = _deconstructPacket(data[key]);
-	      }
-	      return newData;
-	    }
-	    return data;
-	  }
-	
-	  var pack = packet;
-	  pack.data = _deconstructPacket(packetData);
-	  pack.attachments = buffers.length; // number of binary 'attachments'
-	  return {packet: pack, buffers: buffers};
-	};
-	
-	/**
-	 * Reconstructs a binary packet from its placeholder packet and buffers
-	 *
-	 * @param {Object} packet - event packet with placeholders
-	 * @param {Array} buffers - binary buffers to put in placeholder positions
-	 * @return {Object} reconstructed packet
-	 * @api public
-	 */
-	
-	exports.reconstructPacket = function(packet, buffers) {
-	  var curPlaceHolder = 0;
-	
-	  function _reconstructPacket(data) {
-	    if (data && data._placeholder) {
-	      var buf = buffers[data.num]; // appropriate buffer (should be natural order anyway)
-	      return buf;
-	    } else if (isArray(data)) {
-	      for (var i = 0; i < data.length; i++) {
-	        data[i] = _reconstructPacket(data[i]);
-	      }
-	      return data;
-	    } else if (data && 'object' == typeof data) {
-	      for (var key in data) {
-	        data[key] = _reconstructPacket(data[key]);
-	      }
-	      return data;
-	    }
-	    return data;
-	  }
-	
-	  packet.data = _reconstructPacket(packet.data);
-	  packet.attachments = undefined; // no longer useful
-	  return packet;
-	};
-	
-	/**
-	 * Asynchronously removes Blobs or Files from data via
-	 * FileReader's readAsArrayBuffer method. Used before encoding
-	 * data as msgpack. Calls callback with the blobless data.
-	 *
-	 * @param {Object} data
-	 * @param {Function} callback
-	 * @api private
-	 */
-	
-	exports.removeBlobs = function(data, callback) {
-	  function _removeBlobs(obj, curKey, containingObject) {
-	    if (!obj) return obj;
-	
-	    // convert any blob
-	    if ((global.Blob && obj instanceof Blob) ||
-	        (global.File && obj instanceof File)) {
-	      pendingBlobs++;
-	
-	      // async filereader
-	      var fileReader = new FileReader();
-	      fileReader.onload = function() { // this.result == arraybuffer
-	        if (containingObject) {
-	          containingObject[curKey] = this.result;
-	        }
-	        else {
-	          bloblessData = this.result;
-	        }
-	
-	        // if nothing pending its callback time
-	        if(! --pendingBlobs) {
-	          callback(bloblessData);
-	        }
-	      };
-	
-	      fileReader.readAsArrayBuffer(obj); // blob -> arraybuffer
-	    } else if (isArray(obj)) { // handle array
-	      for (var i = 0; i < obj.length; i++) {
-	        _removeBlobs(obj[i], i, obj);
-	      }
-	    } else if (obj && 'object' == typeof obj && !isBuf(obj)) { // and object
-	      for (var key in obj) {
-	        _removeBlobs(obj[key], key, obj);
-	      }
-	    }
-	  }
-	
-	  var pendingBlobs = 0;
-	  var bloblessData = data;
-	  _removeBlobs(bloblessData);
-	  if (!pendingBlobs) {
-	    callback(bloblessData);
-	  }
-	};
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 86 */
-/***/ function(module, exports) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {
-	module.exports = isBuf;
-	
-	/**
-	 * Returns true if obj is a buffer or an arraybuffer.
-	 *
-	 * @api private
-	 */
-	
-	function isBuf(obj) {
-	  return (global.Buffer && global.Buffer.isBuffer(obj)) ||
-	         (global.ArrayBuffer && obj instanceof ArrayBuffer);
-	}
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 87 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	/**
-	 * Module dependencies.
-	 */
-	
-	var eio = __webpack_require__(88);
-	var Socket = __webpack_require__(115);
-	var Emitter = __webpack_require__(116);
-	var parser = __webpack_require__(79);
-	var on = __webpack_require__(118);
-	var bind = __webpack_require__(119);
-	var debug = __webpack_require__(76)('socket.io-client:manager');
-	var indexOf = __webpack_require__(113);
-	var Backoff = __webpack_require__(122);
-	
-	/**
-	 * IE6+ hasOwnProperty
-	 */
-	
-	var has = Object.prototype.hasOwnProperty;
-	
-	/**
-	 * Module exports
-	 */
-	
-	module.exports = Manager;
-	
-	/**
-	 * `Manager` constructor.
-	 *
-	 * @param {String} engine instance or engine uri/opts
-	 * @param {Object} options
-	 * @api public
-	 */
-	
-	function Manager(uri, opts){
-	  if (!(this instanceof Manager)) return new Manager(uri, opts);
-	  if (uri && ('object' == typeof uri)) {
-	    opts = uri;
-	    uri = undefined;
-	  }
-	  opts = opts || {};
-	
-	  opts.path = opts.path || '/socket.io';
-	  this.nsps = {};
-	  this.subs = [];
-	  this.opts = opts;
-	  this.reconnection(opts.reconnection !== false);
-	  this.reconnectionAttempts(opts.reconnectionAttempts || Infinity);
-	  this.reconnectionDelay(opts.reconnectionDelay || 1000);
-	  this.reconnectionDelayMax(opts.reconnectionDelayMax || 5000);
-	  this.randomizationFactor(opts.randomizationFactor || 0.5);
-	  this.backoff = new Backoff({
-	    min: this.reconnectionDelay(),
-	    max: this.reconnectionDelayMax(),
-	    jitter: this.randomizationFactor()
-	  });
-	  this.timeout(null == opts.timeout ? 20000 : opts.timeout);
-	  this.readyState = 'closed';
-	  this.uri = uri;
-	  this.connecting = [];
-	  this.lastPing = null;
-	  this.encoding = false;
-	  this.packetBuffer = [];
-	  this.encoder = new parser.Encoder();
-	  this.decoder = new parser.Decoder();
-	  this.autoConnect = opts.autoConnect !== false;
-	  if (this.autoConnect) this.open();
-	}
-	
-	/**
-	 * Propagate given event to sockets and emit on `this`
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.emitAll = function() {
-	  this.emit.apply(this, arguments);
-	  for (var nsp in this.nsps) {
-	    if (has.call(this.nsps, nsp)) {
-	      this.nsps[nsp].emit.apply(this.nsps[nsp], arguments);
-	    }
-	  }
-	};
-	
-	/**
-	 * Update `socket.id` of all sockets
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.updateSocketIds = function(){
-	  for (var nsp in this.nsps) {
-	    if (has.call(this.nsps, nsp)) {
-	      this.nsps[nsp].id = this.engine.id;
-	    }
-	  }
-	};
-	
-	/**
-	 * Mix in `Emitter`.
-	 */
-	
-	Emitter(Manager.prototype);
-	
-	/**
-	 * Sets the `reconnection` config.
-	 *
-	 * @param {Boolean} true/false if it should automatically reconnect
-	 * @return {Manager} self or value
-	 * @api public
-	 */
-	
-	Manager.prototype.reconnection = function(v){
-	  if (!arguments.length) return this._reconnection;
-	  this._reconnection = !!v;
-	  return this;
-	};
-	
-	/**
-	 * Sets the reconnection attempts config.
-	 *
-	 * @param {Number} max reconnection attempts before giving up
-	 * @return {Manager} self or value
-	 * @api public
-	 */
-	
-	Manager.prototype.reconnectionAttempts = function(v){
-	  if (!arguments.length) return this._reconnectionAttempts;
-	  this._reconnectionAttempts = v;
-	  return this;
-	};
-	
-	/**
-	 * Sets the delay between reconnections.
-	 *
-	 * @param {Number} delay
-	 * @return {Manager} self or value
-	 * @api public
-	 */
-	
-	Manager.prototype.reconnectionDelay = function(v){
-	  if (!arguments.length) return this._reconnectionDelay;
-	  this._reconnectionDelay = v;
-	  this.backoff && this.backoff.setMin(v);
-	  return this;
-	};
-	
-	Manager.prototype.randomizationFactor = function(v){
-	  if (!arguments.length) return this._randomizationFactor;
-	  this._randomizationFactor = v;
-	  this.backoff && this.backoff.setJitter(v);
-	  return this;
-	};
-	
-	/**
-	 * Sets the maximum delay between reconnections.
-	 *
-	 * @param {Number} delay
-	 * @return {Manager} self or value
-	 * @api public
-	 */
-	
-	Manager.prototype.reconnectionDelayMax = function(v){
-	  if (!arguments.length) return this._reconnectionDelayMax;
-	  this._reconnectionDelayMax = v;
-	  this.backoff && this.backoff.setMax(v);
-	  return this;
-	};
-	
-	/**
-	 * Sets the connection timeout. `false` to disable
-	 *
-	 * @return {Manager} self or value
-	 * @api public
-	 */
-	
-	Manager.prototype.timeout = function(v){
-	  if (!arguments.length) return this._timeout;
-	  this._timeout = v;
-	  return this;
-	};
-	
-	/**
-	 * Starts trying to reconnect if reconnection is enabled and we have not
-	 * started reconnecting yet
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.maybeReconnectOnOpen = function() {
-	  // Only try to reconnect if it's the first time we're connecting
-	  if (!this.reconnecting && this._reconnection && this.backoff.attempts === 0) {
-	    // keeps reconnection from firing twice for the same reconnection loop
-	    this.reconnect();
-	  }
-	};
-	
-	
-	/**
-	 * Sets the current transport `socket`.
-	 *
-	 * @param {Function} optional, callback
-	 * @return {Manager} self
-	 * @api public
-	 */
-	
-	Manager.prototype.open =
-	Manager.prototype.connect = function(fn){
-	  debug('readyState %s', this.readyState);
-	  if (~this.readyState.indexOf('open')) return this;
-	
-	  debug('opening %s', this.uri);
-	  this.engine = eio(this.uri, this.opts);
-	  var socket = this.engine;
-	  var self = this;
-	  this.readyState = 'opening';
-	  this.skipReconnect = false;
-	
-	  // emit `open`
-	  var openSub = on(socket, 'open', function() {
-	    self.onopen();
-	    fn && fn();
-	  });
-	
-	  // emit `connect_error`
-	  var errorSub = on(socket, 'error', function(data){
-	    debug('connect_error');
-	    self.cleanup();
-	    self.readyState = 'closed';
-	    self.emitAll('connect_error', data);
-	    if (fn) {
-	      var err = new Error('Connection error');
-	      err.data = data;
-	      fn(err);
-	    } else {
-	      // Only do this if there is no fn to handle the error
-	      self.maybeReconnectOnOpen();
-	    }
-	  });
-	
-	  // emit `connect_timeout`
-	  if (false !== this._timeout) {
-	    var timeout = this._timeout;
-	    debug('connect attempt will timeout after %d', timeout);
-	
-	    // set timer
-	    var timer = setTimeout(function(){
-	      debug('connect attempt timed out after %d', timeout);
-	      openSub.destroy();
-	      socket.close();
-	      socket.emit('error', 'timeout');
-	      self.emitAll('connect_timeout', timeout);
-	    }, timeout);
-	
-	    this.subs.push({
-	      destroy: function(){
-	        clearTimeout(timer);
-	      }
-	    });
-	  }
-	
-	  this.subs.push(openSub);
-	  this.subs.push(errorSub);
-	
-	  return this;
-	};
-	
-	/**
-	 * Called upon transport open.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.onopen = function(){
-	  debug('open');
-	
-	  // clear old subs
-	  this.cleanup();
-	
-	  // mark as open
-	  this.readyState = 'open';
-	  this.emit('open');
-	
-	  // add new subs
-	  var socket = this.engine;
-	  this.subs.push(on(socket, 'data', bind(this, 'ondata')));
-	  this.subs.push(on(socket, 'ping', bind(this, 'onping')));
-	  this.subs.push(on(socket, 'pong', bind(this, 'onpong')));
-	  this.subs.push(on(socket, 'error', bind(this, 'onerror')));
-	  this.subs.push(on(socket, 'close', bind(this, 'onclose')));
-	  this.subs.push(on(this.decoder, 'decoded', bind(this, 'ondecoded')));
-	};
-	
-	/**
-	 * Called upon a ping.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.onping = function(){
-	  this.lastPing = new Date;
-	  this.emitAll('ping');
-	};
-	
-	/**
-	 * Called upon a packet.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.onpong = function(){
-	  this.emitAll('pong', new Date - this.lastPing);
-	};
-	
-	/**
-	 * Called with data.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.ondata = function(data){
-	  this.decoder.add(data);
-	};
-	
-	/**
-	 * Called when parser fully decodes a packet.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.ondecoded = function(packet) {
-	  this.emit('packet', packet);
-	};
-	
-	/**
-	 * Called upon socket error.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.onerror = function(err){
-	  debug('error', err);
-	  this.emitAll('error', err);
-	};
-	
-	/**
-	 * Creates a new socket for the given `nsp`.
-	 *
-	 * @return {Socket}
-	 * @api public
-	 */
-	
-	Manager.prototype.socket = function(nsp){
-	  var socket = this.nsps[nsp];
-	  if (!socket) {
-	    socket = new Socket(this, nsp);
-	    this.nsps[nsp] = socket;
-	    var self = this;
-	    socket.on('connecting', onConnecting);
-	    socket.on('connect', function(){
-	      socket.id = self.engine.id;
-	    });
-	
-	    if (this.autoConnect) {
-	      // manually call here since connecting evnet is fired before listening
-	      onConnecting();
-	    }
-	  }
-	
-	  function onConnecting() {
-	    if (!~indexOf(self.connecting, socket)) {
-	      self.connecting.push(socket);
-	    }
-	  }
-	
-	  return socket;
-	};
-	
-	/**
-	 * Called upon a socket close.
-	 *
-	 * @param {Socket} socket
-	 */
-	
-	Manager.prototype.destroy = function(socket){
-	  var index = indexOf(this.connecting, socket);
-	  if (~index) this.connecting.splice(index, 1);
-	  if (this.connecting.length) return;
-	
-	  this.close();
-	};
-	
-	/**
-	 * Writes a packet.
-	 *
-	 * @param {Object} packet
-	 * @api private
-	 */
-	
-	Manager.prototype.packet = function(packet){
-	  debug('writing packet %j', packet);
-	  var self = this;
-	
-	  if (!self.encoding) {
-	    // encode, then write to engine with result
-	    self.encoding = true;
-	    this.encoder.encode(packet, function(encodedPackets) {
-	      for (var i = 0; i < encodedPackets.length; i++) {
-	        self.engine.write(encodedPackets[i], packet.options);
-	      }
-	      self.encoding = false;
-	      self.processPacketQueue();
-	    });
-	  } else { // add packet to the queue
-	    self.packetBuffer.push(packet);
-	  }
-	};
-	
-	/**
-	 * If packet buffer is non-empty, begins encoding the
-	 * next packet in line.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.processPacketQueue = function() {
-	  if (this.packetBuffer.length > 0 && !this.encoding) {
-	    var pack = this.packetBuffer.shift();
-	    this.packet(pack);
-	  }
-	};
-	
-	/**
-	 * Clean up transport subscriptions and packet buffer.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.cleanup = function(){
-	  debug('cleanup');
-	
-	  var sub;
-	  while (sub = this.subs.shift()) sub.destroy();
-	
-	  this.packetBuffer = [];
-	  this.encoding = false;
-	  this.lastPing = null;
-	
-	  this.decoder.destroy();
-	};
-	
-	/**
-	 * Close the current socket.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.close =
-	Manager.prototype.disconnect = function(){
-	  debug('disconnect');
-	  this.skipReconnect = true;
-	  this.reconnecting = false;
-	  if ('opening' == this.readyState) {
-	    // `onclose` will not fire because
-	    // an open event never happened
-	    this.cleanup();
-	  }
-	  this.backoff.reset();
-	  this.readyState = 'closed';
-	  if (this.engine) this.engine.close();
-	};
-	
-	/**
-	 * Called upon engine close.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.onclose = function(reason){
-	  debug('onclose');
-	
-	  this.cleanup();
-	  this.backoff.reset();
-	  this.readyState = 'closed';
-	  this.emit('close', reason);
-	
-	  if (this._reconnection && !this.skipReconnect) {
-	    this.reconnect();
-	  }
-	};
-	
-	/**
-	 * Attempt a reconnection.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.reconnect = function(){
-	  if (this.reconnecting || this.skipReconnect) return this;
-	
-	  var self = this;
-	
-	  if (this.backoff.attempts >= this._reconnectionAttempts) {
-	    debug('reconnect failed');
-	    this.backoff.reset();
-	    this.emitAll('reconnect_failed');
-	    this.reconnecting = false;
-	  } else {
-	    var delay = this.backoff.duration();
-	    debug('will wait %dms before reconnect attempt', delay);
-	
-	    this.reconnecting = true;
-	    var timer = setTimeout(function(){
-	      if (self.skipReconnect) return;
-	
-	      debug('attempting reconnect');
-	      self.emitAll('reconnect_attempt', self.backoff.attempts);
-	      self.emitAll('reconnecting', self.backoff.attempts);
-	
-	      // check again for the case socket closed in above events
-	      if (self.skipReconnect) return;
-	
-	      self.open(function(err){
-	        if (err) {
-	          debug('reconnect attempt error');
-	          self.reconnecting = false;
-	          self.reconnect();
-	          self.emitAll('reconnect_error', err.data);
-	        } else {
-	          debug('reconnect success');
-	          self.onreconnect();
-	        }
-	      });
-	    }, delay);
-	
-	    this.subs.push({
-	      destroy: function(){
-	        clearTimeout(timer);
-	      }
-	    });
-	  }
-	};
-	
-	/**
-	 * Called upon successful reconnect.
-	 *
-	 * @api private
-	 */
-	
-	Manager.prototype.onreconnect = function(){
-	  var attempt = this.backoff.attempts;
-	  this.reconnecting = false;
-	  this.backoff.reset();
-	  this.updateSocketIds();
-	  this.emitAll('reconnect', attempt);
-	};
-
-
-/***/ },
-/* 88 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	module.exports =  __webpack_require__(89);
-
-
-/***/ },
-/* 89 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	module.exports = __webpack_require__(90);
-	
-	/**
-	 * Exports parser
-	 *
-	 * @api public
-	 *
-	 */
-	module.exports.parser = __webpack_require__(97);
-
-
-/***/ },
-/* 90 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * Module dependencies.
-	 */
-	
-	var transports = __webpack_require__(91);
-	var Emitter = __webpack_require__(106);
-	var debug = __webpack_require__(76)('engine.io-client:socket');
-	var index = __webpack_require__(113);
-	var parser = __webpack_require__(97);
-	var parseuri = __webpack_require__(75);
-	var parsejson = __webpack_require__(114);
-	var parseqs = __webpack_require__(107);
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = Socket;
-	
-	/**
-	 * Noop function.
-	 *
-	 * @api private
-	 */
-	
-	function noop(){}
-	
-	/**
-	 * Socket constructor.
-	 *
-	 * @param {String|Object} uri or options
-	 * @param {Object} options
-	 * @api public
-	 */
-	
-	function Socket(uri, opts){
-	  if (!(this instanceof Socket)) return new Socket(uri, opts);
-	
-	  opts = opts || {};
-	
-	  if (uri && 'object' == typeof uri) {
-	    opts = uri;
-	    uri = null;
-	  }
-	
-	  if (uri) {
-	    uri = parseuri(uri);
-	    opts.hostname = uri.host;
-	    opts.secure = uri.protocol == 'https' || uri.protocol == 'wss';
-	    opts.port = uri.port;
-	    if (uri.query) opts.query = uri.query;
-	  } else if (opts.host) {
-	    opts.hostname = parseuri(opts.host).host;
-	  }
-	
-	  this.secure = null != opts.secure ? opts.secure :
-	    (global.location && 'https:' == location.protocol);
-	
-	  if (opts.hostname && !opts.port) {
-	    // if no port is specified manually, use the protocol default
-	    opts.port = this.secure ? '443' : '80';
-	  }
-	
-	  this.agent = opts.agent || false;
-	  this.hostname = opts.hostname ||
-	    (global.location ? location.hostname : 'localhost');
-	  this.port = opts.port || (global.location && location.port ?
-	       location.port :
-	       (this.secure ? 443 : 80));
-	  this.query = opts.query || {};
-	  if ('string' == typeof this.query) this.query = parseqs.decode(this.query);
-	  this.upgrade = false !== opts.upgrade;
-	  this.path = (opts.path || '/engine.io').replace(/\/$/, '') + '/';
-	  this.forceJSONP = !!opts.forceJSONP;
-	  this.jsonp = false !== opts.jsonp;
-	  this.forceBase64 = !!opts.forceBase64;
-	  this.enablesXDR = !!opts.enablesXDR;
-	  this.timestampParam = opts.timestampParam || 't';
-	  this.timestampRequests = opts.timestampRequests;
-	  this.transports = opts.transports || ['polling', 'websocket'];
-	  this.readyState = '';
-	  this.writeBuffer = [];
-	  this.policyPort = opts.policyPort || 843;
-	  this.rememberUpgrade = opts.rememberUpgrade || false;
-	  this.binaryType = null;
-	  this.onlyBinaryUpgrades = opts.onlyBinaryUpgrades;
-	  this.perMessageDeflate = false !== opts.perMessageDeflate ? (opts.perMessageDeflate || {}) : false;
-	
-	  if (true === this.perMessageDeflate) this.perMessageDeflate = {};
-	  if (this.perMessageDeflate && null == this.perMessageDeflate.threshold) {
-	    this.perMessageDeflate.threshold = 1024;
-	  }
-	
-	  // SSL options for Node.js client
-	  this.pfx = opts.pfx || null;
-	  this.key = opts.key || null;
-	  this.passphrase = opts.passphrase || null;
-	  this.cert = opts.cert || null;
-	  this.ca = opts.ca || null;
-	  this.ciphers = opts.ciphers || null;
-	  this.rejectUnauthorized = opts.rejectUnauthorized === undefined ? null : opts.rejectUnauthorized;
-	
-	  // other options for Node.js client
-	  var freeGlobal = typeof global == 'object' && global;
-	  if (freeGlobal.global === freeGlobal) {
-	    if (opts.extraHeaders && Object.keys(opts.extraHeaders).length > 0) {
-	      this.extraHeaders = opts.extraHeaders;
-	    }
-	  }
-	
-	  this.open();
-	}
-	
-	Socket.priorWebsocketSuccess = false;
-	
-	/**
-	 * Mix in `Emitter`.
-	 */
-	
-	Emitter(Socket.prototype);
-	
-	/**
-	 * Protocol version.
-	 *
-	 * @api public
-	 */
-	
-	Socket.protocol = parser.protocol; // this is an int
-	
-	/**
-	 * Expose deps for legacy compatibility
-	 * and standalone browser access.
-	 */
-	
-	Socket.Socket = Socket;
-	Socket.Transport = __webpack_require__(96);
-	Socket.transports = __webpack_require__(91);
-	Socket.parser = __webpack_require__(97);
-	
-	/**
-	 * Creates transport of the given type.
-	 *
-	 * @param {String} transport name
-	 * @return {Transport}
-	 * @api private
-	 */
-	
-	Socket.prototype.createTransport = function (name) {
-	  debug('creating transport "%s"', name);
-	  var query = clone(this.query);
-	
-	  // append engine.io protocol identifier
-	  query.EIO = parser.protocol;
-	
-	  // transport name
-	  query.transport = name;
-	
-	  // session id if we already have one
-	  if (this.id) query.sid = this.id;
-	
-	  var transport = new transports[name]({
-	    agent: this.agent,
-	    hostname: this.hostname,
-	    port: this.port,
-	    secure: this.secure,
-	    path: this.path,
-	    query: query,
-	    forceJSONP: this.forceJSONP,
-	    jsonp: this.jsonp,
-	    forceBase64: this.forceBase64,
-	    enablesXDR: this.enablesXDR,
-	    timestampRequests: this.timestampRequests,
-	    timestampParam: this.timestampParam,
-	    policyPort: this.policyPort,
-	    socket: this,
-	    pfx: this.pfx,
-	    key: this.key,
-	    passphrase: this.passphrase,
-	    cert: this.cert,
-	    ca: this.ca,
-	    ciphers: this.ciphers,
-	    rejectUnauthorized: this.rejectUnauthorized,
-	    perMessageDeflate: this.perMessageDeflate,
-	    extraHeaders: this.extraHeaders
-	  });
-	
-	  return transport;
-	};
-	
-	function clone (obj) {
-	  var o = {};
-	  for (var i in obj) {
-	    if (obj.hasOwnProperty(i)) {
-	      o[i] = obj[i];
-	    }
-	  }
-	  return o;
-	}
-	
-	/**
-	 * Initializes transport to use and starts probe.
-	 *
-	 * @api private
-	 */
-	Socket.prototype.open = function () {
-	  var transport;
-	  if (this.rememberUpgrade && Socket.priorWebsocketSuccess && this.transports.indexOf('websocket') != -1) {
-	    transport = 'websocket';
-	  } else if (0 === this.transports.length) {
-	    // Emit error on next tick so it can be listened to
-	    var self = this;
-	    setTimeout(function() {
-	      self.emit('error', 'No transports available');
-	    }, 0);
-	    return;
-	  } else {
-	    transport = this.transports[0];
-	  }
-	  this.readyState = 'opening';
-	
-	  // Retry with the next transport if the transport is disabled (jsonp: false)
-	  try {
-	    transport = this.createTransport(transport);
-	  } catch (e) {
-	    this.transports.shift();
-	    this.open();
-	    return;
-	  }
-	
-	  transport.open();
-	  this.setTransport(transport);
-	};
-	
-	/**
-	 * Sets the current transport. Disables the existing one (if any).
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.setTransport = function(transport){
-	  debug('setting transport %s', transport.name);
-	  var self = this;
-	
-	  if (this.transport) {
-	    debug('clearing existing transport %s', this.transport.name);
-	    this.transport.removeAllListeners();
-	  }
-	
-	  // set up transport
-	  this.transport = transport;
-	
-	  // set up transport listeners
-	  transport
-	  .on('drain', function(){
-	    self.onDrain();
-	  })
-	  .on('packet', function(packet){
-	    self.onPacket(packet);
-	  })
-	  .on('error', function(e){
-	    self.onError(e);
-	  })
-	  .on('close', function(){
-	    self.onClose('transport close');
-	  });
-	};
-	
-	/**
-	 * Probes a transport.
-	 *
-	 * @param {String} transport name
-	 * @api private
-	 */
-	
-	Socket.prototype.probe = function (name) {
-	  debug('probing transport "%s"', name);
-	  var transport = this.createTransport(name, { probe: 1 })
-	    , failed = false
-	    , self = this;
-	
-	  Socket.priorWebsocketSuccess = false;
-	
-	  function onTransportOpen(){
-	    if (self.onlyBinaryUpgrades) {
-	      var upgradeLosesBinary = !this.supportsBinary && self.transport.supportsBinary;
-	      failed = failed || upgradeLosesBinary;
-	    }
-	    if (failed) return;
-	
-	    debug('probe transport "%s" opened', name);
-	    transport.send([{ type: 'ping', data: 'probe' }]);
-	    transport.once('packet', function (msg) {
-	      if (failed) return;
-	      if ('pong' == msg.type && 'probe' == msg.data) {
-	        debug('probe transport "%s" pong', name);
-	        self.upgrading = true;
-	        self.emit('upgrading', transport);
-	        if (!transport) return;
-	        Socket.priorWebsocketSuccess = 'websocket' == transport.name;
-	
-	        debug('pausing current transport "%s"', self.transport.name);
-	        self.transport.pause(function () {
-	          if (failed) return;
-	          if ('closed' == self.readyState) return;
-	          debug('changing transport and sending upgrade packet');
-	
-	          cleanup();
-	
-	          self.setTransport(transport);
-	          transport.send([{ type: 'upgrade' }]);
-	          self.emit('upgrade', transport);
-	          transport = null;
-	          self.upgrading = false;
-	          self.flush();
-	        });
-	      } else {
-	        debug('probe transport "%s" failed', name);
-	        var err = new Error('probe error');
-	        err.transport = transport.name;
-	        self.emit('upgradeError', err);
-	      }
-	    });
-	  }
-	
-	  function freezeTransport() {
-	    if (failed) return;
-	
-	    // Any callback called by transport should be ignored since now
-	    failed = true;
-	
-	    cleanup();
-	
-	    transport.close();
-	    transport = null;
-	  }
-	
-	  //Handle any error that happens while probing
-	  function onerror(err) {
-	    var error = new Error('probe error: ' + err);
-	    error.transport = transport.name;
-	
-	    freezeTransport();
-	
-	    debug('probe transport "%s" failed because of error: %s', name, err);
-	
-	    self.emit('upgradeError', error);
-	  }
-	
-	  function onTransportClose(){
-	    onerror("transport closed");
-	  }
-	
-	  //When the socket is closed while we're probing
-	  function onclose(){
-	    onerror("socket closed");
-	  }
-	
-	  //When the socket is upgraded while we're probing
-	  function onupgrade(to){
-	    if (transport && to.name != transport.name) {
-	      debug('"%s" works - aborting "%s"', to.name, transport.name);
-	      freezeTransport();
-	    }
-	  }
-	
-	  //Remove all listeners on the transport and on self
-	  function cleanup(){
-	    transport.removeListener('open', onTransportOpen);
-	    transport.removeListener('error', onerror);
-	    transport.removeListener('close', onTransportClose);
-	    self.removeListener('close', onclose);
-	    self.removeListener('upgrading', onupgrade);
-	  }
-	
-	  transport.once('open', onTransportOpen);
-	  transport.once('error', onerror);
-	  transport.once('close', onTransportClose);
-	
-	  this.once('close', onclose);
-	  this.once('upgrading', onupgrade);
-	
-	  transport.open();
-	
-	};
-	
-	/**
-	 * Called when connection is deemed open.
-	 *
-	 * @api public
-	 */
-	
-	Socket.prototype.onOpen = function () {
-	  debug('socket open');
-	  this.readyState = 'open';
-	  Socket.priorWebsocketSuccess = 'websocket' == this.transport.name;
-	  this.emit('open');
-	  this.flush();
-	
-	  // we check for `readyState` in case an `open`
-	  // listener already closed the socket
-	  if ('open' == this.readyState && this.upgrade && this.transport.pause) {
-	    debug('starting upgrade probes');
-	    for (var i = 0, l = this.upgrades.length; i < l; i++) {
-	      this.probe(this.upgrades[i]);
-	    }
-	  }
-	};
-	
-	/**
-	 * Handles a packet.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.onPacket = function (packet) {
-	  if ('opening' == this.readyState || 'open' == this.readyState) {
-	    debug('socket receive: type "%s", data "%s"', packet.type, packet.data);
-	
-	    this.emit('packet', packet);
-	
-	    // Socket is live - any packet counts
-	    this.emit('heartbeat');
-	
-	    switch (packet.type) {
-	      case 'open':
-	        this.onHandshake(parsejson(packet.data));
-	        break;
-	
-	      case 'pong':
-	        this.setPing();
-	        this.emit('pong');
-	        break;
-	
-	      case 'error':
-	        var err = new Error('server error');
-	        err.code = packet.data;
-	        this.onError(err);
-	        break;
-	
-	      case 'message':
-	        this.emit('data', packet.data);
-	        this.emit('message', packet.data);
-	        break;
-	    }
-	  } else {
-	    debug('packet received with socket readyState "%s"', this.readyState);
-	  }
-	};
-	
-	/**
-	 * Called upon handshake completion.
-	 *
-	 * @param {Object} handshake obj
-	 * @api private
-	 */
-	
-	Socket.prototype.onHandshake = function (data) {
-	  this.emit('handshake', data);
-	  this.id = data.sid;
-	  this.transport.query.sid = data.sid;
-	  this.upgrades = this.filterUpgrades(data.upgrades);
-	  this.pingInterval = data.pingInterval;
-	  this.pingTimeout = data.pingTimeout;
-	  this.onOpen();
-	  // In case open handler closes socket
-	  if  ('closed' == this.readyState) return;
-	  this.setPing();
-	
-	  // Prolong liveness of socket on heartbeat
-	  this.removeListener('heartbeat', this.onHeartbeat);
-	  this.on('heartbeat', this.onHeartbeat);
-	};
-	
-	/**
-	 * Resets ping timeout.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.onHeartbeat = function (timeout) {
-	  clearTimeout(this.pingTimeoutTimer);
-	  var self = this;
-	  self.pingTimeoutTimer = setTimeout(function () {
-	    if ('closed' == self.readyState) return;
-	    self.onClose('ping timeout');
-	  }, timeout || (self.pingInterval + self.pingTimeout));
-	};
-	
-	/**
-	 * Pings server every `this.pingInterval` and expects response
-	 * within `this.pingTimeout` or closes connection.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.setPing = function () {
-	  var self = this;
-	  clearTimeout(self.pingIntervalTimer);
-	  self.pingIntervalTimer = setTimeout(function () {
-	    debug('writing ping packet - expecting pong within %sms', self.pingTimeout);
-	    self.ping();
-	    self.onHeartbeat(self.pingTimeout);
-	  }, self.pingInterval);
-	};
-	
-	/**
-	* Sends a ping packet.
-	*
-	* @api private
-	*/
-	
-	Socket.prototype.ping = function () {
-	  var self = this;
-	  this.sendPacket('ping', function(){
-	    self.emit('ping');
-	  });
-	};
-	
-	/**
-	 * Called on `drain` event
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.onDrain = function() {
-	  this.writeBuffer.splice(0, this.prevBufferLen);
-	
-	  // setting prevBufferLen = 0 is very important
-	  // for example, when upgrading, upgrade packet is sent over,
-	  // and a nonzero prevBufferLen could cause problems on `drain`
-	  this.prevBufferLen = 0;
-	
-	  if (0 === this.writeBuffer.length) {
-	    this.emit('drain');
-	  } else {
-	    this.flush();
-	  }
-	};
-	
-	/**
-	 * Flush write buffers.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.flush = function () {
-	  if ('closed' != this.readyState && this.transport.writable &&
-	    !this.upgrading && this.writeBuffer.length) {
-	    debug('flushing %d packets in socket', this.writeBuffer.length);
-	    this.transport.send(this.writeBuffer);
-	    // keep track of current length of writeBuffer
-	    // splice writeBuffer and callbackBuffer on `drain`
-	    this.prevBufferLen = this.writeBuffer.length;
-	    this.emit('flush');
-	  }
-	};
-	
-	/**
-	 * Sends a message.
-	 *
-	 * @param {String} message.
-	 * @param {Function} callback function.
-	 * @param {Object} options.
-	 * @return {Socket} for chaining.
-	 * @api public
-	 */
-	
-	Socket.prototype.write =
-	Socket.prototype.send = function (msg, options, fn) {
-	  this.sendPacket('message', msg, options, fn);
-	  return this;
-	};
-	
-	/**
-	 * Sends a packet.
-	 *
-	 * @param {String} packet type.
-	 * @param {String} data.
-	 * @param {Object} options.
-	 * @param {Function} callback function.
-	 * @api private
-	 */
-	
-	Socket.prototype.sendPacket = function (type, data, options, fn) {
-	  if('function' == typeof data) {
-	    fn = data;
-	    data = undefined;
-	  }
-	
-	  if ('function' == typeof options) {
-	    fn = options;
-	    options = null;
-	  }
-	
-	  if ('closing' == this.readyState || 'closed' == this.readyState) {
-	    return;
-	  }
-	
-	  options = options || {};
-	  options.compress = false !== options.compress;
-	
-	  var packet = {
-	    type: type,
-	    data: data,
-	    options: options
-	  };
-	  this.emit('packetCreate', packet);
-	  this.writeBuffer.push(packet);
-	  if (fn) this.once('flush', fn);
-	  this.flush();
-	};
-	
-	/**
-	 * Closes the connection.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.close = function () {
-	  if ('opening' == this.readyState || 'open' == this.readyState) {
-	    this.readyState = 'closing';
-	
-	    var self = this;
-	
-	    if (this.writeBuffer.length) {
-	      this.once('drain', function() {
-	        if (this.upgrading) {
-	          waitForUpgrade();
-	        } else {
-	          close();
-	        }
-	      });
-	    } else if (this.upgrading) {
-	      waitForUpgrade();
-	    } else {
-	      close();
-	    }
-	  }
-	
-	  function close() {
-	    self.onClose('forced close');
-	    debug('socket closing - telling transport to close');
-	    self.transport.close();
-	  }
-	
-	  function cleanupAndClose() {
-	    self.removeListener('upgrade', cleanupAndClose);
-	    self.removeListener('upgradeError', cleanupAndClose);
-	    close();
-	  }
-	
-	  function waitForUpgrade() {
-	    // wait for upgrade to finish since we can't send packets while pausing a transport
-	    self.once('upgrade', cleanupAndClose);
-	    self.once('upgradeError', cleanupAndClose);
-	  }
-	
-	  return this;
-	};
-	
-	/**
-	 * Called upon transport error
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.onError = function (err) {
-	  debug('socket error %j', err);
-	  Socket.priorWebsocketSuccess = false;
-	  this.emit('error', err);
-	  this.onClose('transport error', err);
-	};
-	
-	/**
-	 * Called upon transport close.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.onClose = function (reason, desc) {
-	  if ('opening' == this.readyState || 'open' == this.readyState || 'closing' == this.readyState) {
-	    debug('socket close with reason: "%s"', reason);
-	    var self = this;
-	
-	    // clear timers
-	    clearTimeout(this.pingIntervalTimer);
-	    clearTimeout(this.pingTimeoutTimer);
-	
-	    // stop event from firing again for transport
-	    this.transport.removeAllListeners('close');
-	
-	    // ensure transport won't stay open
-	    this.transport.close();
-	
-	    // ignore further transport communication
-	    this.transport.removeAllListeners();
-	
-	    // set ready state
-	    this.readyState = 'closed';
-	
-	    // clear session id
-	    this.id = null;
-	
-	    // emit close event
-	    this.emit('close', reason, desc);
-	
-	    // clean buffers after, so users can still
-	    // grab the buffers on `close` event
-	    self.writeBuffer = [];
-	    self.prevBufferLen = 0;
-	  }
-	};
-	
-	/**
-	 * Filters upgrades, returning only those matching client transports.
-	 *
-	 * @param {Array} server upgrades
-	 * @api private
-	 *
-	 */
-	
-	Socket.prototype.filterUpgrades = function (upgrades) {
-	  var filteredUpgrades = [];
-	  for (var i = 0, j = upgrades.length; i<j; i++) {
-	    if (~index(this.transports, upgrades[i])) filteredUpgrades.push(upgrades[i]);
-	  }
-	  return filteredUpgrades;
-	};
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 91 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * Module dependencies
-	 */
-	
-	var XMLHttpRequest = __webpack_require__(92);
-	var XHR = __webpack_require__(94);
-	var JSONP = __webpack_require__(110);
-	var websocket = __webpack_require__(111);
-	
-	/**
-	 * Export transports.
-	 */
-	
-	exports.polling = polling;
-	exports.websocket = websocket;
-	
-	/**
-	 * Polling transport polymorphic constructor.
-	 * Decides on xhr vs jsonp based on feature detection.
-	 *
-	 * @api private
-	 */
-	
-	function polling(opts){
-	  var xhr;
-	  var xd = false;
-	  var xs = false;
-	  var jsonp = false !== opts.jsonp;
-	
-	  if (global.location) {
-	    var isSSL = 'https:' == location.protocol;
-	    var port = location.port;
-	
-	    // some user agents have empty `location.port`
-	    if (!port) {
-	      port = isSSL ? 443 : 80;
-	    }
-	
-	    xd = opts.hostname != location.hostname || port != opts.port;
-	    xs = opts.secure != isSSL;
-	  }
-	
-	  opts.xdomain = xd;
-	  opts.xscheme = xs;
-	  xhr = new XMLHttpRequest(opts);
-	
-	  if ('open' in xhr && !opts.forceJSONP) {
-	    return new XHR(opts);
-	  } else {
-	    if (!jsonp) throw new Error('JSONP disabled');
-	    return new JSONP(opts);
-	  }
-	}
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 92 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// browser shim for xmlhttprequest module
-	var hasCORS = __webpack_require__(93);
-	
-	module.exports = function(opts) {
-	  var xdomain = opts.xdomain;
-	
-	  // scheme must be same when usign XDomainRequest
-	  // http://blogs.msdn.com/b/ieinternals/archive/2010/05/13/xdomainrequest-restrictions-limitations-and-workarounds.aspx
-	  var xscheme = opts.xscheme;
-	
-	  // XDomainRequest has a flow of not sending cookie, therefore it should be disabled as a default.
-	  // https://github.com/Automattic/engine.io-client/pull/217
-	  var enablesXDR = opts.enablesXDR;
-	
-	  // XMLHttpRequest can be disabled on IE
-	  try {
-	    if ('undefined' != typeof XMLHttpRequest && (!xdomain || hasCORS)) {
-	      return new XMLHttpRequest();
-	    }
-	  } catch (e) { }
-	
-	  // Use XDomainRequest for IE8 if enablesXDR is true
-	  // because loading bar keeps flashing when using jsonp-polling
-	  // https://github.com/yujiosaka/socke.io-ie8-loading-example
-	  try {
-	    if ('undefined' != typeof XDomainRequest && !xscheme && enablesXDR) {
-	      return new XDomainRequest();
-	    }
-	  } catch (e) { }
-	
-	  if (!xdomain) {
-	    try {
-	      return new ActiveXObject('Microsoft.XMLHTTP');
-	    } catch(e) { }
-	  }
-	}
-
-
-/***/ },
-/* 93 */
-/***/ function(module, exports) {
-
-	
-	/**
-	 * Module exports.
-	 *
-	 * Logic borrowed from Modernizr:
-	 *
-	 *   - https://github.com/Modernizr/Modernizr/blob/master/feature-detects/cors.js
-	 */
-	
-	try {
-	  module.exports = typeof XMLHttpRequest !== 'undefined' &&
-	    'withCredentials' in new XMLHttpRequest();
-	} catch (err) {
-	  // if XMLHttp support is disabled in IE then it will throw
-	  // when trying to create
-	  module.exports = false;
-	}
-
-
-/***/ },
-/* 94 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * Module requirements.
-	 */
-	
-	var XMLHttpRequest = __webpack_require__(92);
-	var Polling = __webpack_require__(95);
-	var Emitter = __webpack_require__(106);
-	var inherit = __webpack_require__(108);
-	var debug = __webpack_require__(76)('engine.io-client:polling-xhr');
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = XHR;
-	module.exports.Request = Request;
-	
-	/**
-	 * Empty function
-	 */
-	
-	function empty(){}
-	
-	/**
-	 * XHR Polling constructor.
-	 *
-	 * @param {Object} opts
-	 * @api public
-	 */
-	
-	function XHR(opts){
-	  Polling.call(this, opts);
-	
-	  if (global.location) {
-	    var isSSL = 'https:' == location.protocol;
-	    var port = location.port;
-	
-	    // some user agents have empty `location.port`
-	    if (!port) {
-	      port = isSSL ? 443 : 80;
-	    }
-	
-	    this.xd = opts.hostname != global.location.hostname ||
-	      port != opts.port;
-	    this.xs = opts.secure != isSSL;
-	  } else {
-	    this.extraHeaders = opts.extraHeaders;
-	  }
-	}
-	
-	/**
-	 * Inherits from Polling.
-	 */
-	
-	inherit(XHR, Polling);
-	
-	/**
-	 * XHR supports binary
-	 */
-	
-	XHR.prototype.supportsBinary = true;
-	
-	/**
-	 * Creates a request.
-	 *
-	 * @param {String} method
-	 * @api private
-	 */
-	
-	XHR.prototype.request = function(opts){
-	  opts = opts || {};
-	  opts.uri = this.uri();
-	  opts.xd = this.xd;
-	  opts.xs = this.xs;
-	  opts.agent = this.agent || false;
-	  opts.supportsBinary = this.supportsBinary;
-	  opts.enablesXDR = this.enablesXDR;
-	
-	  // SSL options for Node.js client
-	  opts.pfx = this.pfx;
-	  opts.key = this.key;
-	  opts.passphrase = this.passphrase;
-	  opts.cert = this.cert;
-	  opts.ca = this.ca;
-	  opts.ciphers = this.ciphers;
-	  opts.rejectUnauthorized = this.rejectUnauthorized;
-	
-	  // other options for Node.js client
-	  opts.extraHeaders = this.extraHeaders;
-	
-	  return new Request(opts);
-	};
-	
-	/**
-	 * Sends data.
-	 *
-	 * @param {String} data to send.
-	 * @param {Function} called upon flush.
-	 * @api private
-	 */
-	
-	XHR.prototype.doWrite = function(data, fn){
-	  var isBinary = typeof data !== 'string' && data !== undefined;
-	  var req = this.request({ method: 'POST', data: data, isBinary: isBinary });
-	  var self = this;
-	  req.on('success', fn);
-	  req.on('error', function(err){
-	    self.onError('xhr post error', err);
-	  });
-	  this.sendXhr = req;
-	};
-	
-	/**
-	 * Starts a poll cycle.
-	 *
-	 * @api private
-	 */
-	
-	XHR.prototype.doPoll = function(){
-	  debug('xhr poll');
-	  var req = this.request();
-	  var self = this;
-	  req.on('data', function(data){
-	    self.onData(data);
-	  });
-	  req.on('error', function(err){
-	    self.onError('xhr poll error', err);
-	  });
-	  this.pollXhr = req;
-	};
-	
-	/**
-	 * Request constructor
-	 *
-	 * @param {Object} options
-	 * @api public
-	 */
-	
-	function Request(opts){
-	  this.method = opts.method || 'GET';
-	  this.uri = opts.uri;
-	  this.xd = !!opts.xd;
-	  this.xs = !!opts.xs;
-	  this.async = false !== opts.async;
-	  this.data = undefined != opts.data ? opts.data : null;
-	  this.agent = opts.agent;
-	  this.isBinary = opts.isBinary;
-	  this.supportsBinary = opts.supportsBinary;
-	  this.enablesXDR = opts.enablesXDR;
-	
-	  // SSL options for Node.js client
-	  this.pfx = opts.pfx;
-	  this.key = opts.key;
-	  this.passphrase = opts.passphrase;
-	  this.cert = opts.cert;
-	  this.ca = opts.ca;
-	  this.ciphers = opts.ciphers;
-	  this.rejectUnauthorized = opts.rejectUnauthorized;
-	
-	  // other options for Node.js client
-	  this.extraHeaders = opts.extraHeaders;
-	
-	  this.create();
-	}
-	
-	/**
-	 * Mix in `Emitter`.
-	 */
-	
-	Emitter(Request.prototype);
-	
-	/**
-	 * Creates the XHR object and sends the request.
-	 *
-	 * @api private
-	 */
-	
-	Request.prototype.create = function(){
-	  var opts = { agent: this.agent, xdomain: this.xd, xscheme: this.xs, enablesXDR: this.enablesXDR };
-	
-	  // SSL options for Node.js client
-	  opts.pfx = this.pfx;
-	  opts.key = this.key;
-	  opts.passphrase = this.passphrase;
-	  opts.cert = this.cert;
-	  opts.ca = this.ca;
-	  opts.ciphers = this.ciphers;
-	  opts.rejectUnauthorized = this.rejectUnauthorized;
-	
-	  var xhr = this.xhr = new XMLHttpRequest(opts);
-	  var self = this;
-	
-	  try {
-	    debug('xhr open %s: %s', this.method, this.uri);
-	    xhr.open(this.method, this.uri, this.async);
-	    try {
-	      if (this.extraHeaders) {
-	        xhr.setDisableHeaderCheck(true);
-	        for (var i in this.extraHeaders) {
-	          if (this.extraHeaders.hasOwnProperty(i)) {
-	            xhr.setRequestHeader(i, this.extraHeaders[i]);
-	          }
-	        }
-	      }
-	    } catch (e) {}
-	    if (this.supportsBinary) {
-	      // This has to be done after open because Firefox is stupid
-	      // http://stackoverflow.com/questions/13216903/get-binary-data-with-xmlhttprequest-in-a-firefox-extension
-	      xhr.responseType = 'arraybuffer';
-	    }
-	
-	    if ('POST' == this.method) {
-	      try {
-	        if (this.isBinary) {
-	          xhr.setRequestHeader('Content-type', 'application/octet-stream');
-	        } else {
-	          xhr.setRequestHeader('Content-type', 'text/plain;charset=UTF-8');
-	        }
-	      } catch (e) {}
-	    }
-	
-	    // ie6 check
-	    if ('withCredentials' in xhr) {
-	      xhr.withCredentials = true;
-	    }
-	
-	    if (this.hasXDR()) {
-	      xhr.onload = function(){
-	        self.onLoad();
-	      };
-	      xhr.onerror = function(){
-	        self.onError(xhr.responseText);
-	      };
-	    } else {
-	      xhr.onreadystatechange = function(){
-	        if (4 != xhr.readyState) return;
-	        if (200 == xhr.status || 1223 == xhr.status) {
-	          self.onLoad();
-	        } else {
-	          // make sure the `error` event handler that's user-set
-	          // does not throw in the same tick and gets caught here
-	          setTimeout(function(){
-	            self.onError(xhr.status);
-	          }, 0);
-	        }
-	      };
-	    }
-	
-	    debug('xhr data %s', this.data);
-	    xhr.send(this.data);
-	  } catch (e) {
-	    // Need to defer since .create() is called directly fhrom the constructor
-	    // and thus the 'error' event can only be only bound *after* this exception
-	    // occurs.  Therefore, also, we cannot throw here at all.
-	    setTimeout(function() {
-	      self.onError(e);
-	    }, 0);
-	    return;
-	  }
-	
-	  if (global.document) {
-	    this.index = Request.requestsCount++;
-	    Request.requests[this.index] = this;
-	  }
-	};
-	
-	/**
-	 * Called upon successful response.
-	 *
-	 * @api private
-	 */
-	
-	Request.prototype.onSuccess = function(){
-	  this.emit('success');
-	  this.cleanup();
-	};
-	
-	/**
-	 * Called if we have data.
-	 *
-	 * @api private
-	 */
-	
-	Request.prototype.onData = function(data){
-	  this.emit('data', data);
-	  this.onSuccess();
-	};
-	
-	/**
-	 * Called upon error.
-	 *
-	 * @api private
-	 */
-	
-	Request.prototype.onError = function(err){
-	  this.emit('error', err);
-	  this.cleanup(true);
-	};
-	
-	/**
-	 * Cleans up house.
-	 *
-	 * @api private
-	 */
-	
-	Request.prototype.cleanup = function(fromError){
-	  if ('undefined' == typeof this.xhr || null === this.xhr) {
-	    return;
-	  }
-	  // xmlhttprequest
-	  if (this.hasXDR()) {
-	    this.xhr.onload = this.xhr.onerror = empty;
-	  } else {
-	    this.xhr.onreadystatechange = empty;
-	  }
-	
-	  if (fromError) {
-	    try {
-	      this.xhr.abort();
-	    } catch(e) {}
-	  }
-	
-	  if (global.document) {
-	    delete Request.requests[this.index];
-	  }
-	
-	  this.xhr = null;
-	};
-	
-	/**
-	 * Called upon load.
-	 *
-	 * @api private
-	 */
-	
-	Request.prototype.onLoad = function(){
-	  var data;
-	  try {
-	    var contentType;
-	    try {
-	      contentType = this.xhr.getResponseHeader('Content-Type').split(';')[0];
-	    } catch (e) {}
-	    if (contentType === 'application/octet-stream') {
-	      data = this.xhr.response;
-	    } else {
-	      if (!this.supportsBinary) {
-	        data = this.xhr.responseText;
-	      } else {
-	        try {
-	          data = String.fromCharCode.apply(null, new Uint8Array(this.xhr.response));
-	        } catch (e) {
-	          var ui8Arr = new Uint8Array(this.xhr.response);
-	          var dataArray = [];
-	          for (var idx = 0, length = ui8Arr.length; idx < length; idx++) {
-	            dataArray.push(ui8Arr[idx]);
-	          }
-	
-	          data = String.fromCharCode.apply(null, dataArray);
-	        }
-	      }
-	    }
-	  } catch (e) {
-	    this.onError(e);
-	  }
-	  if (null != data) {
-	    this.onData(data);
-	  }
-	};
-	
-	/**
-	 * Check if it has XDomainRequest.
-	 *
-	 * @api private
-	 */
-	
-	Request.prototype.hasXDR = function(){
-	  return 'undefined' !== typeof global.XDomainRequest && !this.xs && this.enablesXDR;
-	};
-	
-	/**
-	 * Aborts the request.
-	 *
-	 * @api public
-	 */
-	
-	Request.prototype.abort = function(){
-	  this.cleanup();
-	};
-	
-	/**
-	 * Aborts pending requests when unloading the window. This is needed to prevent
-	 * memory leaks (e.g. when using IE) and to ensure that no spurious error is
-	 * emitted.
-	 */
-	
-	if (global.document) {
-	  Request.requestsCount = 0;
-	  Request.requests = {};
-	  if (global.attachEvent) {
-	    global.attachEvent('onunload', unloadHandler);
-	  } else if (global.addEventListener) {
-	    global.addEventListener('beforeunload', unloadHandler, false);
-	  }
-	}
-	
-	function unloadHandler() {
-	  for (var i in Request.requests) {
-	    if (Request.requests.hasOwnProperty(i)) {
-	      Request.requests[i].abort();
-	    }
-	  }
-	}
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 95 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Module dependencies.
-	 */
-	
-	var Transport = __webpack_require__(96);
-	var parseqs = __webpack_require__(107);
-	var parser = __webpack_require__(97);
-	var inherit = __webpack_require__(108);
-	var yeast = __webpack_require__(109);
-	var debug = __webpack_require__(76)('engine.io-client:polling');
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = Polling;
-	
-	/**
-	 * Is XHR2 supported?
-	 */
-	
-	var hasXHR2 = (function() {
-	  var XMLHttpRequest = __webpack_require__(92);
-	  var xhr = new XMLHttpRequest({ xdomain: false });
-	  return null != xhr.responseType;
-	})();
-	
-	/**
-	 * Polling interface.
-	 *
-	 * @param {Object} opts
-	 * @api private
-	 */
-	
-	function Polling(opts){
-	  var forceBase64 = (opts && opts.forceBase64);
-	  if (!hasXHR2 || forceBase64) {
-	    this.supportsBinary = false;
-	  }
-	  Transport.call(this, opts);
-	}
-	
-	/**
-	 * Inherits from Transport.
-	 */
-	
-	inherit(Polling, Transport);
-	
-	/**
-	 * Transport name.
-	 */
-	
-	Polling.prototype.name = 'polling';
-	
-	/**
-	 * Opens the socket (triggers polling). We write a PING message to determine
-	 * when the transport is open.
-	 *
-	 * @api private
-	 */
-	
-	Polling.prototype.doOpen = function(){
-	  this.poll();
-	};
-	
-	/**
-	 * Pauses polling.
-	 *
-	 * @param {Function} callback upon buffers are flushed and transport is paused
-	 * @api private
-	 */
-	
-	Polling.prototype.pause = function(onPause){
-	  var pending = 0;
-	  var self = this;
-	
-	  this.readyState = 'pausing';
-	
-	  function pause(){
-	    debug('paused');
-	    self.readyState = 'paused';
-	    onPause();
-	  }
-	
-	  if (this.polling || !this.writable) {
-	    var total = 0;
-	
-	    if (this.polling) {
-	      debug('we are currently polling - waiting to pause');
-	      total++;
-	      this.once('pollComplete', function(){
-	        debug('pre-pause polling complete');
-	        --total || pause();
-	      });
-	    }
-	
-	    if (!this.writable) {
-	      debug('we are currently writing - waiting to pause');
-	      total++;
-	      this.once('drain', function(){
-	        debug('pre-pause writing complete');
-	        --total || pause();
-	      });
-	    }
-	  } else {
-	    pause();
-	  }
-	};
-	
-	/**
-	 * Starts polling cycle.
-	 *
-	 * @api public
-	 */
-	
-	Polling.prototype.poll = function(){
-	  debug('polling');
-	  this.polling = true;
-	  this.doPoll();
-	  this.emit('poll');
-	};
-	
-	/**
-	 * Overloads onData to detect payloads.
-	 *
-	 * @api private
-	 */
-	
-	Polling.prototype.onData = function(data){
-	  var self = this;
-	  debug('polling got data %s', data);
-	  var callback = function(packet, index, total) {
-	    // if its the first message we consider the transport open
-	    if ('opening' == self.readyState) {
-	      self.onOpen();
-	    }
-	
-	    // if its a close packet, we close the ongoing requests
-	    if ('close' == packet.type) {
-	      self.onClose();
-	      return false;
-	    }
-	
-	    // otherwise bypass onData and handle the message
-	    self.onPacket(packet);
-	  };
-	
-	  // decode payload
-	  parser.decodePayload(data, this.socket.binaryType, callback);
-	
-	  // if an event did not trigger closing
-	  if ('closed' != this.readyState) {
-	    // if we got data we're not polling
-	    this.polling = false;
-	    this.emit('pollComplete');
-	
-	    if ('open' == this.readyState) {
-	      this.poll();
-	    } else {
-	      debug('ignoring poll - transport state "%s"', this.readyState);
-	    }
-	  }
-	};
-	
-	/**
-	 * For polling, send a close packet.
-	 *
-	 * @api private
-	 */
-	
-	Polling.prototype.doClose = function(){
-	  var self = this;
-	
-	  function close(){
-	    debug('writing close packet');
-	    self.write([{ type: 'close' }]);
-	  }
-	
-	  if ('open' == this.readyState) {
-	    debug('transport open - closing');
-	    close();
-	  } else {
-	    // in case we're trying to close while
-	    // handshaking is in progress (GH-164)
-	    debug('transport not open - deferring close');
-	    this.once('open', close);
-	  }
-	};
-	
-	/**
-	 * Writes a packets payload.
-	 *
-	 * @param {Array} data packets
-	 * @param {Function} drain callback
-	 * @api private
-	 */
-	
-	Polling.prototype.write = function(packets){
-	  var self = this;
-	  this.writable = false;
-	  var callbackfn = function() {
-	    self.writable = true;
-	    self.emit('drain');
-	  };
-	
-	  var self = this;
-	  parser.encodePayload(packets, this.supportsBinary, function(data) {
-	    self.doWrite(data, callbackfn);
-	  });
-	};
-	
-	/**
-	 * Generates uri for connection.
-	 *
-	 * @api private
-	 */
-	
-	Polling.prototype.uri = function(){
-	  var query = this.query || {};
-	  var schema = this.secure ? 'https' : 'http';
-	  var port = '';
-	
-	  // cache busting is forced
-	  if (false !== this.timestampRequests) {
-	    query[this.timestampParam] = yeast();
-	  }
-	
-	  if (!this.supportsBinary && !query.sid) {
-	    query.b64 = 1;
-	  }
-	
-	  query = parseqs.encode(query);
-	
-	  // avoid port if default for schema
-	  if (this.port && (('https' == schema && this.port != 443) ||
-	     ('http' == schema && this.port != 80))) {
-	    port = ':' + this.port;
-	  }
-	
-	  // prepend ? to query
-	  if (query.length) {
-	    query = '?' + query;
-	  }
-	
-	  var ipv6 = this.hostname.indexOf(':') !== -1;
-	  return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
-	};
-
-
-/***/ },
-/* 96 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Module dependencies.
-	 */
-	
-	var parser = __webpack_require__(97);
-	var Emitter = __webpack_require__(106);
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = Transport;
-	
-	/**
-	 * Transport abstract constructor.
-	 *
-	 * @param {Object} options.
-	 * @api private
-	 */
-	
-	function Transport (opts) {
-	  this.path = opts.path;
-	  this.hostname = opts.hostname;
-	  this.port = opts.port;
-	  this.secure = opts.secure;
-	  this.query = opts.query;
-	  this.timestampParam = opts.timestampParam;
-	  this.timestampRequests = opts.timestampRequests;
-	  this.readyState = '';
-	  this.agent = opts.agent || false;
-	  this.socket = opts.socket;
-	  this.enablesXDR = opts.enablesXDR;
-	
-	  // SSL options for Node.js client
-	  this.pfx = opts.pfx;
-	  this.key = opts.key;
-	  this.passphrase = opts.passphrase;
-	  this.cert = opts.cert;
-	  this.ca = opts.ca;
-	  this.ciphers = opts.ciphers;
-	  this.rejectUnauthorized = opts.rejectUnauthorized;
-	
-	  // other options for Node.js client
-	  this.extraHeaders = opts.extraHeaders;
-	}
-	
-	/**
-	 * Mix in `Emitter`.
-	 */
-	
-	Emitter(Transport.prototype);
-	
-	/**
-	 * Emits an error.
-	 *
-	 * @param {String} str
-	 * @return {Transport} for chaining
-	 * @api public
-	 */
-	
-	Transport.prototype.onError = function (msg, desc) {
-	  var err = new Error(msg);
-	  err.type = 'TransportError';
-	  err.description = desc;
-	  this.emit('error', err);
-	  return this;
-	};
-	
-	/**
-	 * Opens the transport.
-	 *
-	 * @api public
-	 */
-	
-	Transport.prototype.open = function () {
-	  if ('closed' == this.readyState || '' == this.readyState) {
-	    this.readyState = 'opening';
-	    this.doOpen();
-	  }
-	
-	  return this;
-	};
-	
-	/**
-	 * Closes the transport.
-	 *
-	 * @api private
-	 */
-	
-	Transport.prototype.close = function () {
-	  if ('opening' == this.readyState || 'open' == this.readyState) {
-	    this.doClose();
-	    this.onClose();
-	  }
-	
-	  return this;
-	};
-	
-	/**
-	 * Sends multiple packets.
-	 *
-	 * @param {Array} packets
-	 * @api private
-	 */
-	
-	Transport.prototype.send = function(packets){
-	  if ('open' == this.readyState) {
-	    this.write(packets);
-	  } else {
-	    throw new Error('Transport not open');
-	  }
-	};
-	
-	/**
-	 * Called upon open
-	 *
-	 * @api private
-	 */
-	
-	Transport.prototype.onOpen = function () {
-	  this.readyState = 'open';
-	  this.writable = true;
-	  this.emit('open');
-	};
-	
-	/**
-	 * Called with data.
-	 *
-	 * @param {String} data
-	 * @api private
-	 */
-	
-	Transport.prototype.onData = function(data){
-	  var packet = parser.decodePacket(data, this.socket.binaryType);
-	  this.onPacket(packet);
-	};
-	
-	/**
-	 * Called with a decoded packet.
-	 */
-	
-	Transport.prototype.onPacket = function (packet) {
-	  this.emit('packet', packet);
-	};
-	
-	/**
-	 * Called upon close.
-	 *
-	 * @api private
-	 */
-	
-	Transport.prototype.onClose = function () {
-	  this.readyState = 'closed';
-	  this.emit('close');
-	};
-
-
-/***/ },
-/* 97 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * Module dependencies.
-	 */
-	
-	var keys = __webpack_require__(98);
-	var hasBinary = __webpack_require__(99);
-	var sliceBuffer = __webpack_require__(101);
-	var base64encoder = __webpack_require__(102);
-	var after = __webpack_require__(103);
-	var utf8 = __webpack_require__(104);
-	
-	/**
-	 * Check if we are running an android browser. That requires us to use
-	 * ArrayBuffer with polling transports...
-	 *
-	 * http://ghinda.net/jpeg-blob-ajax-android/
-	 */
-	
-	var isAndroid = navigator.userAgent.match(/Android/i);
-	
-	/**
-	 * Check if we are running in PhantomJS.
-	 * Uploading a Blob with PhantomJS does not work correctly, as reported here:
-	 * https://github.com/ariya/phantomjs/issues/11395
-	 * @type boolean
-	 */
-	var isPhantomJS = /PhantomJS/i.test(navigator.userAgent);
-	
-	/**
-	 * When true, avoids using Blobs to encode payloads.
-	 * @type boolean
-	 */
-	var dontSendBlobs = isAndroid || isPhantomJS;
-	
-	/**
-	 * Current protocol version.
-	 */
-	
-	exports.protocol = 3;
-	
-	/**
-	 * Packet types.
-	 */
-	
-	var packets = exports.packets = {
-	    open:     0    // non-ws
-	  , close:    1    // non-ws
-	  , ping:     2
-	  , pong:     3
-	  , message:  4
-	  , upgrade:  5
-	  , noop:     6
-	};
-	
-	var packetslist = keys(packets);
-	
-	/**
-	 * Premade error packet.
-	 */
-	
-	var err = { type: 'error', data: 'parser error' };
-	
-	/**
-	 * Create a blob api even for blob builder when vendor prefixes exist
-	 */
-	
-	var Blob = __webpack_require__(105);
-	
-	/**
-	 * Encodes a packet.
-	 *
-	 *     <packet type id> [ <data> ]
-	 *
-	 * Example:
-	 *
-	 *     5hello world
-	 *     3
-	 *     4
-	 *
-	 * Binary is encoded in an identical principle
-	 *
-	 * @api private
-	 */
-	
-	exports.encodePacket = function (packet, supportsBinary, utf8encode, callback) {
-	  if ('function' == typeof supportsBinary) {
-	    callback = supportsBinary;
-	    supportsBinary = false;
-	  }
-	
-	  if ('function' == typeof utf8encode) {
-	    callback = utf8encode;
-	    utf8encode = null;
-	  }
-	
-	  var data = (packet.data === undefined)
-	    ? undefined
-	    : packet.data.buffer || packet.data;
-	
-	  if (global.ArrayBuffer && data instanceof ArrayBuffer) {
-	    return encodeArrayBuffer(packet, supportsBinary, callback);
-	  } else if (Blob && data instanceof global.Blob) {
-	    return encodeBlob(packet, supportsBinary, callback);
-	  }
-	
-	  // might be an object with { base64: true, data: dataAsBase64String }
-	  if (data && data.base64) {
-	    return encodeBase64Object(packet, callback);
-	  }
-	
-	  // Sending data as a utf-8 string
-	  var encoded = packets[packet.type];
-	
-	  // data fragment is optional
-	  if (undefined !== packet.data) {
-	    encoded += utf8encode ? utf8.encode(String(packet.data)) : String(packet.data);
-	  }
-	
-	  return callback('' + encoded);
-	
-	};
-	
-	function encodeBase64Object(packet, callback) {
-	  // packet data is an object { base64: true, data: dataAsBase64String }
-	  var message = 'b' + exports.packets[packet.type] + packet.data.data;
-	  return callback(message);
-	}
-	
-	/**
-	 * Encode packet helpers for binary types
-	 */
-	
-	function encodeArrayBuffer(packet, supportsBinary, callback) {
-	  if (!supportsBinary) {
-	    return exports.encodeBase64Packet(packet, callback);
-	  }
-	
-	  var data = packet.data;
-	  var contentArray = new Uint8Array(data);
-	  var resultBuffer = new Uint8Array(1 + data.byteLength);
-	
-	  resultBuffer[0] = packets[packet.type];
-	  for (var i = 0; i < contentArray.length; i++) {
-	    resultBuffer[i+1] = contentArray[i];
-	  }
-	
-	  return callback(resultBuffer.buffer);
-	}
-	
-	function encodeBlobAsArrayBuffer(packet, supportsBinary, callback) {
-	  if (!supportsBinary) {
-	    return exports.encodeBase64Packet(packet, callback);
-	  }
-	
-	  var fr = new FileReader();
-	  fr.onload = function() {
-	    packet.data = fr.result;
-	    exports.encodePacket(packet, supportsBinary, true, callback);
-	  };
-	  return fr.readAsArrayBuffer(packet.data);
-	}
-	
-	function encodeBlob(packet, supportsBinary, callback) {
-	  if (!supportsBinary) {
-	    return exports.encodeBase64Packet(packet, callback);
-	  }
-	
-	  if (dontSendBlobs) {
-	    return encodeBlobAsArrayBuffer(packet, supportsBinary, callback);
-	  }
-	
-	  var length = new Uint8Array(1);
-	  length[0] = packets[packet.type];
-	  var blob = new Blob([length.buffer, packet.data]);
-	
-	  return callback(blob);
-	}
-	
-	/**
-	 * Encodes a packet with binary data in a base64 string
-	 *
-	 * @param {Object} packet, has `type` and `data`
-	 * @return {String} base64 encoded message
-	 */
-	
-	exports.encodeBase64Packet = function(packet, callback) {
-	  var message = 'b' + exports.packets[packet.type];
-	  if (Blob && packet.data instanceof global.Blob) {
-	    var fr = new FileReader();
-	    fr.onload = function() {
-	      var b64 = fr.result.split(',')[1];
-	      callback(message + b64);
-	    };
-	    return fr.readAsDataURL(packet.data);
-	  }
-	
-	  var b64data;
-	  try {
-	    b64data = String.fromCharCode.apply(null, new Uint8Array(packet.data));
-	  } catch (e) {
-	    // iPhone Safari doesn't let you apply with typed arrays
-	    var typed = new Uint8Array(packet.data);
-	    var basic = new Array(typed.length);
-	    for (var i = 0; i < typed.length; i++) {
-	      basic[i] = typed[i];
-	    }
-	    b64data = String.fromCharCode.apply(null, basic);
-	  }
-	  message += global.btoa(b64data);
-	  return callback(message);
-	};
-	
-	/**
-	 * Decodes a packet. Changes format to Blob if requested.
-	 *
-	 * @return {Object} with `type` and `data` (if any)
-	 * @api private
-	 */
-	
-	exports.decodePacket = function (data, binaryType, utf8decode) {
-	  // String data
-	  if (typeof data == 'string' || data === undefined) {
-	    if (data.charAt(0) == 'b') {
-	      return exports.decodeBase64Packet(data.substr(1), binaryType);
-	    }
-	
-	    if (utf8decode) {
-	      try {
-	        data = utf8.decode(data);
-	      } catch (e) {
-	        return err;
-	      }
-	    }
-	    var type = data.charAt(0);
-	
-	    if (Number(type) != type || !packetslist[type]) {
-	      return err;
-	    }
-	
-	    if (data.length > 1) {
-	      return { type: packetslist[type], data: data.substring(1) };
-	    } else {
-	      return { type: packetslist[type] };
-	    }
-	  }
-	
-	  var asArray = new Uint8Array(data);
-	  var type = asArray[0];
-	  var rest = sliceBuffer(data, 1);
-	  if (Blob && binaryType === 'blob') {
-	    rest = new Blob([rest]);
-	  }
-	  return { type: packetslist[type], data: rest };
-	};
-	
-	/**
-	 * Decodes a packet encoded in a base64 string
-	 *
-	 * @param {String} base64 encoded message
-	 * @return {Object} with `type` and `data` (if any)
-	 */
-	
-	exports.decodeBase64Packet = function(msg, binaryType) {
-	  var type = packetslist[msg.charAt(0)];
-	  if (!global.ArrayBuffer) {
-	    return { type: type, data: { base64: true, data: msg.substr(1) } };
-	  }
-	
-	  var data = base64encoder.decode(msg.substr(1));
-	
-	  if (binaryType === 'blob' && Blob) {
-	    data = new Blob([data]);
-	  }
-	
-	  return { type: type, data: data };
-	};
-	
-	/**
-	 * Encodes multiple messages (payload).
-	 *
-	 *     <length>:data
-	 *
-	 * Example:
-	 *
-	 *     11:hello world2:hi
-	 *
-	 * If any contents are binary, they will be encoded as base64 strings. Base64
-	 * encoded strings are marked with a b before the length specifier
-	 *
-	 * @param {Array} packets
-	 * @api private
-	 */
-	
-	exports.encodePayload = function (packets, supportsBinary, callback) {
-	  if (typeof supportsBinary == 'function') {
-	    callback = supportsBinary;
-	    supportsBinary = null;
-	  }
-	
-	  var isBinary = hasBinary(packets);
-	
-	  if (supportsBinary && isBinary) {
-	    if (Blob && !dontSendBlobs) {
-	      return exports.encodePayloadAsBlob(packets, callback);
-	    }
-	
-	    return exports.encodePayloadAsArrayBuffer(packets, callback);
-	  }
-	
-	  if (!packets.length) {
-	    return callback('0:');
-	  }
-	
-	  function setLengthHeader(message) {
-	    return message.length + ':' + message;
-	  }
-	
-	  function encodeOne(packet, doneCallback) {
-	    exports.encodePacket(packet, !isBinary ? false : supportsBinary, true, function(message) {
-	      doneCallback(null, setLengthHeader(message));
-	    });
-	  }
-	
-	  map(packets, encodeOne, function(err, results) {
-	    return callback(results.join(''));
-	  });
-	};
-	
-	/**
-	 * Async array map using after
-	 */
-	
-	function map(ary, each, done) {
-	  var result = new Array(ary.length);
-	  var next = after(ary.length, done);
-	
-	  var eachWithIndex = function(i, el, cb) {
-	    each(el, function(error, msg) {
-	      result[i] = msg;
-	      cb(error, result);
-	    });
-	  };
-	
-	  for (var i = 0; i < ary.length; i++) {
-	    eachWithIndex(i, ary[i], next);
-	  }
-	}
-	
-	/*
-	 * Decodes data when a payload is maybe expected. Possible binary contents are
-	 * decoded from their base64 representation
-	 *
-	 * @param {String} data, callback method
-	 * @api public
-	 */
-	
-	exports.decodePayload = function (data, binaryType, callback) {
-	  if (typeof data != 'string') {
-	    return exports.decodePayloadAsBinary(data, binaryType, callback);
-	  }
-	
-	  if (typeof binaryType === 'function') {
-	    callback = binaryType;
-	    binaryType = null;
-	  }
-	
-	  var packet;
-	  if (data == '') {
-	    // parser error - ignoring payload
-	    return callback(err, 0, 1);
-	  }
-	
-	  var length = ''
-	    , n, msg;
-	
-	  for (var i = 0, l = data.length; i < l; i++) {
-	    var chr = data.charAt(i);
-	
-	    if (':' != chr) {
-	      length += chr;
-	    } else {
-	      if ('' == length || (length != (n = Number(length)))) {
-	        // parser error - ignoring payload
-	        return callback(err, 0, 1);
-	      }
-	
-	      msg = data.substr(i + 1, n);
-	
-	      if (length != msg.length) {
-	        // parser error - ignoring payload
-	        return callback(err, 0, 1);
-	      }
-	
-	      if (msg.length) {
-	        packet = exports.decodePacket(msg, binaryType, true);
-	
-	        if (err.type == packet.type && err.data == packet.data) {
-	          // parser error in individual packet - ignoring payload
-	          return callback(err, 0, 1);
-	        }
-	
-	        var ret = callback(packet, i + n, l);
-	        if (false === ret) return;
-	      }
-	
-	      // advance cursor
-	      i += n;
-	      length = '';
-	    }
-	  }
-	
-	  if (length != '') {
-	    // parser error - ignoring payload
-	    return callback(err, 0, 1);
-	  }
-	
-	};
-	
-	/**
-	 * Encodes multiple messages (payload) as binary.
-	 *
-	 * <1 = binary, 0 = string><number from 0-9><number from 0-9>[...]<number
-	 * 255><data>
-	 *
-	 * Example:
-	 * 1 3 255 1 2 3, if the binary contents are interpreted as 8 bit integers
-	 *
-	 * @param {Array} packets
-	 * @return {ArrayBuffer} encoded payload
-	 * @api private
-	 */
-	
-	exports.encodePayloadAsArrayBuffer = function(packets, callback) {
-	  if (!packets.length) {
-	    return callback(new ArrayBuffer(0));
-	  }
-	
-	  function encodeOne(packet, doneCallback) {
-	    exports.encodePacket(packet, true, true, function(data) {
-	      return doneCallback(null, data);
-	    });
-	  }
-	
-	  map(packets, encodeOne, function(err, encodedPackets) {
-	    var totalLength = encodedPackets.reduce(function(acc, p) {
-	      var len;
-	      if (typeof p === 'string'){
-	        len = p.length;
-	      } else {
-	        len = p.byteLength;
-	      }
-	      return acc + len.toString().length + len + 2; // string/binary identifier + separator = 2
-	    }, 0);
-	
-	    var resultArray = new Uint8Array(totalLength);
-	
-	    var bufferIndex = 0;
-	    encodedPackets.forEach(function(p) {
-	      var isString = typeof p === 'string';
-	      var ab = p;
-	      if (isString) {
-	        var view = new Uint8Array(p.length);
-	        for (var i = 0; i < p.length; i++) {
-	          view[i] = p.charCodeAt(i);
-	        }
-	        ab = view.buffer;
-	      }
-	
-	      if (isString) { // not true binary
-	        resultArray[bufferIndex++] = 0;
-	      } else { // true binary
-	        resultArray[bufferIndex++] = 1;
-	      }
-	
-	      var lenStr = ab.byteLength.toString();
-	      for (var i = 0; i < lenStr.length; i++) {
-	        resultArray[bufferIndex++] = parseInt(lenStr[i]);
-	      }
-	      resultArray[bufferIndex++] = 255;
-	
-	      var view = new Uint8Array(ab);
-	      for (var i = 0; i < view.length; i++) {
-	        resultArray[bufferIndex++] = view[i];
-	      }
-	    });
-	
-	    return callback(resultArray.buffer);
-	  });
-	};
-	
-	/**
-	 * Encode as Blob
-	 */
-	
-	exports.encodePayloadAsBlob = function(packets, callback) {
-	  function encodeOne(packet, doneCallback) {
-	    exports.encodePacket(packet, true, true, function(encoded) {
-	      var binaryIdentifier = new Uint8Array(1);
-	      binaryIdentifier[0] = 1;
-	      if (typeof encoded === 'string') {
-	        var view = new Uint8Array(encoded.length);
-	        for (var i = 0; i < encoded.length; i++) {
-	          view[i] = encoded.charCodeAt(i);
-	        }
-	        encoded = view.buffer;
-	        binaryIdentifier[0] = 0;
-	      }
-	
-	      var len = (encoded instanceof ArrayBuffer)
-	        ? encoded.byteLength
-	        : encoded.size;
-	
-	      var lenStr = len.toString();
-	      var lengthAry = new Uint8Array(lenStr.length + 1);
-	      for (var i = 0; i < lenStr.length; i++) {
-	        lengthAry[i] = parseInt(lenStr[i]);
-	      }
-	      lengthAry[lenStr.length] = 255;
-	
-	      if (Blob) {
-	        var blob = new Blob([binaryIdentifier.buffer, lengthAry.buffer, encoded]);
-	        doneCallback(null, blob);
-	      }
-	    });
-	  }
-	
-	  map(packets, encodeOne, function(err, results) {
-	    return callback(new Blob(results));
-	  });
-	};
-	
-	/*
-	 * Decodes data when a payload is maybe expected. Strings are decoded by
-	 * interpreting each byte as a key code for entries marked to start with 0. See
-	 * description of encodePayloadAsBinary
-	 *
-	 * @param {ArrayBuffer} data, callback method
-	 * @api public
-	 */
-	
-	exports.decodePayloadAsBinary = function (data, binaryType, callback) {
-	  if (typeof binaryType === 'function') {
-	    callback = binaryType;
-	    binaryType = null;
-	  }
-	
-	  var bufferTail = data;
-	  var buffers = [];
-	
-	  var numberTooLong = false;
-	  while (bufferTail.byteLength > 0) {
-	    var tailArray = new Uint8Array(bufferTail);
-	    var isString = tailArray[0] === 0;
-	    var msgLength = '';
-	
-	    for (var i = 1; ; i++) {
-	      if (tailArray[i] == 255) break;
-	
-	      if (msgLength.length > 310) {
-	        numberTooLong = true;
-	        break;
-	      }
-	
-	      msgLength += tailArray[i];
-	    }
-	
-	    if(numberTooLong) return callback(err, 0, 1);
-	
-	    bufferTail = sliceBuffer(bufferTail, 2 + msgLength.length);
-	    msgLength = parseInt(msgLength);
-	
-	    var msg = sliceBuffer(bufferTail, 0, msgLength);
-	    if (isString) {
-	      try {
-	        msg = String.fromCharCode.apply(null, new Uint8Array(msg));
-	      } catch (e) {
-	        // iPhone Safari doesn't let you apply to typed arrays
-	        var typed = new Uint8Array(msg);
-	        msg = '';
-	        for (var i = 0; i < typed.length; i++) {
-	          msg += String.fromCharCode(typed[i]);
-	        }
-	      }
-	    }
-	
-	    buffers.push(msg);
-	    bufferTail = sliceBuffer(bufferTail, msgLength);
-	  }
-	
-	  var total = buffers.length;
-	  buffers.forEach(function(buffer, i) {
-	    callback(exports.decodePacket(buffer, binaryType, true), i, total);
-	  });
-	};
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 98 */
-/***/ function(module, exports) {
-
-	
-	/**
-	 * Gets the keys for an object.
-	 *
-	 * @return {Array} keys
-	 * @api private
-	 */
-	
-	module.exports = Object.keys || function keys (obj){
-	  var arr = [];
-	  var has = Object.prototype.hasOwnProperty;
-	
-	  for (var i in obj) {
-	    if (has.call(obj, i)) {
-	      arr.push(i);
-	    }
-	  }
-	  return arr;
-	};
-
-
-/***/ },
-/* 99 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {
-	/*
-	 * Module requirements.
-	 */
-	
-	var isArray = __webpack_require__(100);
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = hasBinary;
-	
-	/**
-	 * Checks for binary data.
-	 *
-	 * Right now only Buffer and ArrayBuffer are supported..
-	 *
-	 * @param {Object} anything
-	 * @api public
-	 */
-	
-	function hasBinary(data) {
-	
-	  function _hasBinary(obj) {
-	    if (!obj) return false;
-	
-	    if ( (global.Buffer && global.Buffer.isBuffer(obj)) ||
-	         (global.ArrayBuffer && obj instanceof ArrayBuffer) ||
-	         (global.Blob && obj instanceof Blob) ||
-	         (global.File && obj instanceof File)
-	        ) {
-	      return true;
-	    }
-	
-	    if (isArray(obj)) {
-	      for (var i = 0; i < obj.length; i++) {
-	          if (_hasBinary(obj[i])) {
-	              return true;
-	          }
-	      }
-	    } else if (obj && 'object' == typeof obj) {
-	      if (obj.toJSON) {
-	        obj = obj.toJSON();
-	      }
-	
-	      for (var key in obj) {
-	        if (Object.prototype.hasOwnProperty.call(obj, key) && _hasBinary(obj[key])) {
-	          return true;
-	        }
-	      }
-	    }
-	
-	    return false;
-	  }
-	
-	  return _hasBinary(data);
-	}
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 100 */
-/***/ function(module, exports) {
-
-	module.exports = Array.isArray || function (arr) {
-	  return Object.prototype.toString.call(arr) == '[object Array]';
-	};
-
-
-/***/ },
-/* 101 */
-/***/ function(module, exports) {
-
-	/**
-	 * An abstraction for slicing an arraybuffer even when
-	 * ArrayBuffer.prototype.slice is not supported
-	 *
-	 * @api public
-	 */
-	
-	module.exports = function(arraybuffer, start, end) {
-	  var bytes = arraybuffer.byteLength;
-	  start = start || 0;
-	  end = end || bytes;
-	
-	  if (arraybuffer.slice) { return arraybuffer.slice(start, end); }
-	
-	  if (start < 0) { start += bytes; }
-	  if (end < 0) { end += bytes; }
-	  if (end > bytes) { end = bytes; }
-	
-	  if (start >= bytes || start >= end || bytes === 0) {
-	    return new ArrayBuffer(0);
-	  }
-	
-	  var abv = new Uint8Array(arraybuffer);
-	  var result = new Uint8Array(end - start);
-	  for (var i = start, ii = 0; i < end; i++, ii++) {
-	    result[ii] = abv[i];
-	  }
-	  return result.buffer;
-	};
-
-
-/***/ },
-/* 102 */
-/***/ function(module, exports) {
-
-	/*
-	 * base64-arraybuffer
-	 * https://github.com/niklasvh/base64-arraybuffer
-	 *
-	 * Copyright (c) 2012 Niklas von Hertzen
-	 * Licensed under the MIT license.
-	 */
-	(function(chars){
-	  "use strict";
-	
-	  exports.encode = function(arraybuffer) {
-	    var bytes = new Uint8Array(arraybuffer),
-	    i, len = bytes.length, base64 = "";
-	
-	    for (i = 0; i < len; i+=3) {
-	      base64 += chars[bytes[i] >> 2];
-	      base64 += chars[((bytes[i] & 3) << 4) | (bytes[i + 1] >> 4)];
-	      base64 += chars[((bytes[i + 1] & 15) << 2) | (bytes[i + 2] >> 6)];
-	      base64 += chars[bytes[i + 2] & 63];
-	    }
-	
-	    if ((len % 3) === 2) {
-	      base64 = base64.substring(0, base64.length - 1) + "=";
-	    } else if (len % 3 === 1) {
-	      base64 = base64.substring(0, base64.length - 2) + "==";
-	    }
-	
-	    return base64;
-	  };
-	
-	  exports.decode =  function(base64) {
-	    var bufferLength = base64.length * 0.75,
-	    len = base64.length, i, p = 0,
-	    encoded1, encoded2, encoded3, encoded4;
-	
-	    if (base64[base64.length - 1] === "=") {
-	      bufferLength--;
-	      if (base64[base64.length - 2] === "=") {
-	        bufferLength--;
-	      }
-	    }
-	
-	    var arraybuffer = new ArrayBuffer(bufferLength),
-	    bytes = new Uint8Array(arraybuffer);
-	
-	    for (i = 0; i < len; i+=4) {
-	      encoded1 = chars.indexOf(base64[i]);
-	      encoded2 = chars.indexOf(base64[i+1]);
-	      encoded3 = chars.indexOf(base64[i+2]);
-	      encoded4 = chars.indexOf(base64[i+3]);
-	
-	      bytes[p++] = (encoded1 << 2) | (encoded2 >> 4);
-	      bytes[p++] = ((encoded2 & 15) << 4) | (encoded3 >> 2);
-	      bytes[p++] = ((encoded3 & 3) << 6) | (encoded4 & 63);
-	    }
-	
-	    return arraybuffer;
-	  };
-	})("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/");
-
-
-/***/ },
-/* 103 */
-/***/ function(module, exports) {
-
-	module.exports = after
-	
-	function after(count, callback, err_cb) {
-	    var bail = false
-	    err_cb = err_cb || noop
-	    proxy.count = count
-	
-	    return (count === 0) ? callback() : proxy
-	
-	    function proxy(err, result) {
-	        if (proxy.count <= 0) {
-	            throw new Error('after called too many times')
-	        }
-	        --proxy.count
-	
-	        // after first error, rest are passed to err_cb
-	        if (err) {
-	            bail = true
-	            callback(err)
-	            // future error callbacks will go to error handler
-	            callback = err_cb
-	        } else if (proxy.count === 0 && !bail) {
-	            callback(null, result)
-	        }
-	    }
-	}
-	
-	function noop() {}
-
-
-/***/ },
-/* 104 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*! https://mths.be/utf8js v2.0.0 by @mathias */
-	;(function(root) {
-	
-		// Detect free variables `exports`
-		var freeExports = typeof exports == 'object' && exports;
-	
-		// Detect free variable `module`
-		var freeModule = typeof module == 'object' && module &&
-			module.exports == freeExports && module;
-	
-		// Detect free variable `global`, from Node.js or Browserified code,
-		// and use it as `root`
-		var freeGlobal = typeof global == 'object' && global;
-		if (freeGlobal.global === freeGlobal || freeGlobal.window === freeGlobal) {
-			root = freeGlobal;
-		}
-	
-		/*--------------------------------------------------------------------------*/
-	
-		var stringFromCharCode = String.fromCharCode;
-	
-		// Taken from https://mths.be/punycode
-		function ucs2decode(string) {
-			var output = [];
-			var counter = 0;
-			var length = string.length;
-			var value;
-			var extra;
-			while (counter < length) {
-				value = string.charCodeAt(counter++);
-				if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
-					// high surrogate, and there is a next character
-					extra = string.charCodeAt(counter++);
-					if ((extra & 0xFC00) == 0xDC00) { // low surrogate
-						output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
-					} else {
-						// unmatched surrogate; only append this code unit, in case the next
-						// code unit is the high surrogate of a surrogate pair
-						output.push(value);
-						counter--;
-					}
-				} else {
-					output.push(value);
-				}
-			}
-			return output;
-		}
-	
-		// Taken from https://mths.be/punycode
-		function ucs2encode(array) {
-			var length = array.length;
-			var index = -1;
-			var value;
-			var output = '';
-			while (++index < length) {
-				value = array[index];
-				if (value > 0xFFFF) {
-					value -= 0x10000;
-					output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
-					value = 0xDC00 | value & 0x3FF;
-				}
-				output += stringFromCharCode(value);
-			}
-			return output;
-		}
-	
-		function checkScalarValue(codePoint) {
-			if (codePoint >= 0xD800 && codePoint <= 0xDFFF) {
-				throw Error(
-					'Lone surrogate U+' + codePoint.toString(16).toUpperCase() +
-					' is not a scalar value'
-				);
-			}
-		}
-		/*--------------------------------------------------------------------------*/
-	
-		function createByte(codePoint, shift) {
-			return stringFromCharCode(((codePoint >> shift) & 0x3F) | 0x80);
-		}
-	
-		function encodeCodePoint(codePoint) {
-			if ((codePoint & 0xFFFFFF80) == 0) { // 1-byte sequence
-				return stringFromCharCode(codePoint);
-			}
-			var symbol = '';
-			if ((codePoint & 0xFFFFF800) == 0) { // 2-byte sequence
-				symbol = stringFromCharCode(((codePoint >> 6) & 0x1F) | 0xC0);
-			}
-			else if ((codePoint & 0xFFFF0000) == 0) { // 3-byte sequence
-				checkScalarValue(codePoint);
-				symbol = stringFromCharCode(((codePoint >> 12) & 0x0F) | 0xE0);
-				symbol += createByte(codePoint, 6);
-			}
-			else if ((codePoint & 0xFFE00000) == 0) { // 4-byte sequence
-				symbol = stringFromCharCode(((codePoint >> 18) & 0x07) | 0xF0);
-				symbol += createByte(codePoint, 12);
-				symbol += createByte(codePoint, 6);
-			}
-			symbol += stringFromCharCode((codePoint & 0x3F) | 0x80);
-			return symbol;
-		}
-	
-		function utf8encode(string) {
-			var codePoints = ucs2decode(string);
-			var length = codePoints.length;
-			var index = -1;
-			var codePoint;
-			var byteString = '';
-			while (++index < length) {
-				codePoint = codePoints[index];
-				byteString += encodeCodePoint(codePoint);
-			}
-			return byteString;
-		}
-	
-		/*--------------------------------------------------------------------------*/
-	
-		function readContinuationByte() {
-			if (byteIndex >= byteCount) {
-				throw Error('Invalid byte index');
-			}
-	
-			var continuationByte = byteArray[byteIndex] & 0xFF;
-			byteIndex++;
-	
-			if ((continuationByte & 0xC0) == 0x80) {
-				return continuationByte & 0x3F;
-			}
-	
-			// If we end up here, it’s not a continuation byte
-			throw Error('Invalid continuation byte');
-		}
-	
-		function decodeSymbol() {
-			var byte1;
-			var byte2;
-			var byte3;
-			var byte4;
-			var codePoint;
-	
-			if (byteIndex > byteCount) {
-				throw Error('Invalid byte index');
-			}
-	
-			if (byteIndex == byteCount) {
-				return false;
-			}
-	
-			// Read first byte
-			byte1 = byteArray[byteIndex] & 0xFF;
-			byteIndex++;
-	
-			// 1-byte sequence (no continuation bytes)
-			if ((byte1 & 0x80) == 0) {
-				return byte1;
-			}
-	
-			// 2-byte sequence
-			if ((byte1 & 0xE0) == 0xC0) {
-				var byte2 = readContinuationByte();
-				codePoint = ((byte1 & 0x1F) << 6) | byte2;
-				if (codePoint >= 0x80) {
-					return codePoint;
-				} else {
-					throw Error('Invalid continuation byte');
-				}
-			}
-	
-			// 3-byte sequence (may include unpaired surrogates)
-			if ((byte1 & 0xF0) == 0xE0) {
-				byte2 = readContinuationByte();
-				byte3 = readContinuationByte();
-				codePoint = ((byte1 & 0x0F) << 12) | (byte2 << 6) | byte3;
-				if (codePoint >= 0x0800) {
-					checkScalarValue(codePoint);
-					return codePoint;
-				} else {
-					throw Error('Invalid continuation byte');
-				}
-			}
-	
-			// 4-byte sequence
-			if ((byte1 & 0xF8) == 0xF0) {
-				byte2 = readContinuationByte();
-				byte3 = readContinuationByte();
-				byte4 = readContinuationByte();
-				codePoint = ((byte1 & 0x0F) << 0x12) | (byte2 << 0x0C) |
-					(byte3 << 0x06) | byte4;
-				if (codePoint >= 0x010000 && codePoint <= 0x10FFFF) {
-					return codePoint;
-				}
-			}
-	
-			throw Error('Invalid UTF-8 detected');
-		}
-	
-		var byteArray;
-		var byteCount;
-		var byteIndex;
-		function utf8decode(byteString) {
-			byteArray = ucs2decode(byteString);
-			byteCount = byteArray.length;
-			byteIndex = 0;
-			var codePoints = [];
-			var tmp;
-			while ((tmp = decodeSymbol()) !== false) {
-				codePoints.push(tmp);
-			}
-			return ucs2encode(codePoints);
-		}
-	
-		/*--------------------------------------------------------------------------*/
-	
-		var utf8 = {
-			'version': '2.0.0',
-			'encode': utf8encode,
-			'decode': utf8decode
-		};
-	
-		// Some AMD build optimizers, like r.js, check for specific condition patterns
-		// like the following:
-		if (
-			true
-		) {
-			!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
-				return utf8;
-			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		}	else if (freeExports && !freeExports.nodeType) {
-			if (freeModule) { // in Node.js or RingoJS v0.8.0+
-				freeModule.exports = utf8;
-			} else { // in Narwhal or RingoJS v0.7.0-
-				var object = {};
-				var hasOwnProperty = object.hasOwnProperty;
-				for (var key in utf8) {
-					hasOwnProperty.call(utf8, key) && (freeExports[key] = utf8[key]);
-				}
-			}
-		} else { // in Rhino or a web browser
-			root.utf8 = utf8;
-		}
-	
-	}(this));
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(81)(module), (function() { return this; }())))
-
-/***/ },
-/* 105 */
-/***/ function(module, exports) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * Create a blob builder even when vendor prefixes exist
-	 */
-	
-	var BlobBuilder = global.BlobBuilder
-	  || global.WebKitBlobBuilder
-	  || global.MSBlobBuilder
-	  || global.MozBlobBuilder;
-	
-	/**
-	 * Check if Blob constructor is supported
-	 */
-	
-	var blobSupported = (function() {
-	  try {
-	    var a = new Blob(['hi']);
-	    return a.size === 2;
-	  } catch(e) {
-	    return false;
-	  }
-	})();
-	
-	/**
-	 * Check if Blob constructor supports ArrayBufferViews
-	 * Fails in Safari 6, so we need to map to ArrayBuffers there.
-	 */
-	
-	var blobSupportsArrayBufferView = blobSupported && (function() {
-	  try {
-	    var b = new Blob([new Uint8Array([1,2])]);
-	    return b.size === 2;
-	  } catch(e) {
-	    return false;
-	  }
-	})();
-	
-	/**
-	 * Check if BlobBuilder is supported
-	 */
-	
-	var blobBuilderSupported = BlobBuilder
-	  && BlobBuilder.prototype.append
-	  && BlobBuilder.prototype.getBlob;
-	
-	/**
-	 * Helper function that maps ArrayBufferViews to ArrayBuffers
-	 * Used by BlobBuilder constructor and old browsers that didn't
-	 * support it in the Blob constructor.
-	 */
-	
-	function mapArrayBufferViews(ary) {
-	  for (var i = 0; i < ary.length; i++) {
-	    var chunk = ary[i];
-	    if (chunk.buffer instanceof ArrayBuffer) {
-	      var buf = chunk.buffer;
-	
-	      // if this is a subarray, make a copy so we only
-	      // include the subarray region from the underlying buffer
-	      if (chunk.byteLength !== buf.byteLength) {
-	        var copy = new Uint8Array(chunk.byteLength);
-	        copy.set(new Uint8Array(buf, chunk.byteOffset, chunk.byteLength));
-	        buf = copy.buffer;
-	      }
-	
-	      ary[i] = buf;
-	    }
-	  }
-	}
-	
-	function BlobBuilderConstructor(ary, options) {
-	  options = options || {};
-	
-	  var bb = new BlobBuilder();
-	  mapArrayBufferViews(ary);
-	
-	  for (var i = 0; i < ary.length; i++) {
-	    bb.append(ary[i]);
-	  }
-	
-	  return (options.type) ? bb.getBlob(options.type) : bb.getBlob();
-	};
-	
-	function BlobConstructor(ary, options) {
-	  mapArrayBufferViews(ary);
-	  return new Blob(ary, options || {});
-	};
-	
-	module.exports = (function() {
-	  if (blobSupported) {
-	    return blobSupportsArrayBufferView ? global.Blob : BlobConstructor;
-	  } else if (blobBuilderSupported) {
-	    return BlobBuilderConstructor;
-	  } else {
-	    return undefined;
-	  }
-	})();
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 106 */
-/***/ function(module, exports) {
-
-	
-	/**
-	 * Expose `Emitter`.
-	 */
-	
-	module.exports = Emitter;
-	
-	/**
-	 * Initialize a new `Emitter`.
-	 *
-	 * @api public
-	 */
-	
-	function Emitter(obj) {
-	  if (obj) return mixin(obj);
-	};
-	
-	/**
-	 * Mixin the emitter properties.
-	 *
-	 * @param {Object} obj
-	 * @return {Object}
-	 * @api private
-	 */
-	
-	function mixin(obj) {
-	  for (var key in Emitter.prototype) {
-	    obj[key] = Emitter.prototype[key];
-	  }
-	  return obj;
-	}
-	
-	/**
-	 * Listen on the given `event` with `fn`.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-	
-	Emitter.prototype.on =
-	Emitter.prototype.addEventListener = function(event, fn){
-	  this._callbacks = this._callbacks || {};
-	  (this._callbacks[event] = this._callbacks[event] || [])
-	    .push(fn);
-	  return this;
-	};
-	
-	/**
-	 * Adds an `event` listener that will be invoked a single
-	 * time then automatically removed.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-	
-	Emitter.prototype.once = function(event, fn){
-	  var self = this;
-	  this._callbacks = this._callbacks || {};
-	
-	  function on() {
-	    self.off(event, on);
-	    fn.apply(this, arguments);
-	  }
-	
-	  on.fn = fn;
-	  this.on(event, on);
-	  return this;
-	};
-	
-	/**
-	 * Remove the given callback for `event` or all
-	 * registered callbacks.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-	
-	Emitter.prototype.off =
-	Emitter.prototype.removeListener =
-	Emitter.prototype.removeAllListeners =
-	Emitter.prototype.removeEventListener = function(event, fn){
-	  this._callbacks = this._callbacks || {};
-	
-	  // all
-	  if (0 == arguments.length) {
-	    this._callbacks = {};
-	    return this;
-	  }
-	
-	  // specific event
-	  var callbacks = this._callbacks[event];
-	  if (!callbacks) return this;
-	
-	  // remove all handlers
-	  if (1 == arguments.length) {
-	    delete this._callbacks[event];
-	    return this;
-	  }
-	
-	  // remove specific handler
-	  var cb;
-	  for (var i = 0; i < callbacks.length; i++) {
-	    cb = callbacks[i];
-	    if (cb === fn || cb.fn === fn) {
-	      callbacks.splice(i, 1);
-	      break;
-	    }
-	  }
-	  return this;
-	};
-	
-	/**
-	 * Emit `event` with the given args.
-	 *
-	 * @param {String} event
-	 * @param {Mixed} ...
-	 * @return {Emitter}
-	 */
-	
-	Emitter.prototype.emit = function(event){
-	  this._callbacks = this._callbacks || {};
-	  var args = [].slice.call(arguments, 1)
-	    , callbacks = this._callbacks[event];
-	
-	  if (callbacks) {
-	    callbacks = callbacks.slice(0);
-	    for (var i = 0, len = callbacks.length; i < len; ++i) {
-	      callbacks[i].apply(this, args);
-	    }
-	  }
-	
-	  return this;
-	};
-	
-	/**
-	 * Return array of callbacks for `event`.
-	 *
-	 * @param {String} event
-	 * @return {Array}
-	 * @api public
-	 */
-	
-	Emitter.prototype.listeners = function(event){
-	  this._callbacks = this._callbacks || {};
-	  return this._callbacks[event] || [];
-	};
-	
-	/**
-	 * Check if this emitter has `event` handlers.
-	 *
-	 * @param {String} event
-	 * @return {Boolean}
-	 * @api public
-	 */
-	
-	Emitter.prototype.hasListeners = function(event){
-	  return !! this.listeners(event).length;
-	};
-
-
-/***/ },
-/* 107 */
-/***/ function(module, exports) {
-
-	/**
-	 * Compiles a querystring
-	 * Returns string representation of the object
-	 *
-	 * @param {Object}
-	 * @api private
-	 */
-	
-	exports.encode = function (obj) {
-	  var str = '';
-	
-	  for (var i in obj) {
-	    if (obj.hasOwnProperty(i)) {
-	      if (str.length) str += '&';
-	      str += encodeURIComponent(i) + '=' + encodeURIComponent(obj[i]);
-	    }
-	  }
-	
-	  return str;
-	};
-	
-	/**
-	 * Parses a simple querystring into an object
-	 *
-	 * @param {String} qs
-	 * @api private
-	 */
-	
-	exports.decode = function(qs){
-	  var qry = {};
-	  var pairs = qs.split('&');
-	  for (var i = 0, l = pairs.length; i < l; i++) {
-	    var pair = pairs[i].split('=');
-	    qry[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
-	  }
-	  return qry;
-	};
-
-
-/***/ },
-/* 108 */
-/***/ function(module, exports) {
-
-	
-	module.exports = function(a, b){
-	  var fn = function(){};
-	  fn.prototype = b.prototype;
-	  a.prototype = new fn;
-	  a.prototype.constructor = a;
-	};
-
-/***/ },
-/* 109 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split('')
-	  , length = 64
-	  , map = {}
-	  , seed = 0
-	  , i = 0
-	  , prev;
-	
-	/**
-	 * Return a string representing the specified number.
-	 *
-	 * @param {Number} num The number to convert.
-	 * @returns {String} The string representation of the number.
-	 * @api public
-	 */
-	function encode(num) {
-	  var encoded = '';
-	
-	  do {
-	    encoded = alphabet[num % length] + encoded;
-	    num = Math.floor(num / length);
-	  } while (num > 0);
-	
-	  return encoded;
-	}
-	
-	/**
-	 * Return the integer value specified by the given string.
-	 *
-	 * @param {String} str The string to convert.
-	 * @returns {Number} The integer value represented by the string.
-	 * @api public
-	 */
-	function decode(str) {
-	  var decoded = 0;
-	
-	  for (i = 0; i < str.length; i++) {
-	    decoded = decoded * length + map[str.charAt(i)];
-	  }
-	
-	  return decoded;
-	}
-	
-	/**
-	 * Yeast: A tiny growing id generator.
-	 *
-	 * @returns {String} A unique id.
-	 * @api public
-	 */
-	function yeast() {
-	  var now = encode(+new Date());
-	
-	  if (now !== prev) return seed = 0, prev = now;
-	  return now +'.'+ encode(seed++);
-	}
-	
-	//
-	// Map each character to its index.
-	//
-	for (; i < length; i++) map[alphabet[i]] = i;
-	
-	//
-	// Expose the `yeast`, `encode` and `decode` functions.
-	//
-	yeast.encode = encode;
-	yeast.decode = decode;
-	module.exports = yeast;
-
-
-/***/ },
-/* 110 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {
-	/**
-	 * Module requirements.
-	 */
-	
-	var Polling = __webpack_require__(95);
-	var inherit = __webpack_require__(108);
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = JSONPPolling;
-	
-	/**
-	 * Cached regular expressions.
-	 */
-	
-	var rNewline = /\n/g;
-	var rEscapedNewline = /\\n/g;
-	
-	/**
-	 * Global JSONP callbacks.
-	 */
-	
-	var callbacks;
-	
-	/**
-	 * Callbacks count.
-	 */
-	
-	var index = 0;
-	
-	/**
-	 * Noop.
-	 */
-	
-	function empty () { }
-	
-	/**
-	 * JSONP Polling constructor.
-	 *
-	 * @param {Object} opts.
-	 * @api public
-	 */
-	
-	function JSONPPolling (opts) {
-	  Polling.call(this, opts);
-	
-	  this.query = this.query || {};
-	
-	  // define global callbacks array if not present
-	  // we do this here (lazily) to avoid unneeded global pollution
-	  if (!callbacks) {
-	    // we need to consider multiple engines in the same page
-	    if (!global.___eio) global.___eio = [];
-	    callbacks = global.___eio;
-	  }
-	
-	  // callback identifier
-	  this.index = callbacks.length;
-	
-	  // add callback to jsonp global
-	  var self = this;
-	  callbacks.push(function (msg) {
-	    self.onData(msg);
-	  });
-	
-	  // append to query string
-	  this.query.j = this.index;
-	
-	  // prevent spurious errors from being emitted when the window is unloaded
-	  if (global.document && global.addEventListener) {
-	    global.addEventListener('beforeunload', function () {
-	      if (self.script) self.script.onerror = empty;
-	    }, false);
-	  }
-	}
-	
-	/**
-	 * Inherits from Polling.
-	 */
-	
-	inherit(JSONPPolling, Polling);
-	
-	/*
-	 * JSONP only supports binary as base64 encoded strings
-	 */
-	
-	JSONPPolling.prototype.supportsBinary = false;
-	
-	/**
-	 * Closes the socket.
-	 *
-	 * @api private
-	 */
-	
-	JSONPPolling.prototype.doClose = function () {
-	  if (this.script) {
-	    this.script.parentNode.removeChild(this.script);
-	    this.script = null;
-	  }
-	
-	  if (this.form) {
-	    this.form.parentNode.removeChild(this.form);
-	    this.form = null;
-	    this.iframe = null;
-	  }
-	
-	  Polling.prototype.doClose.call(this);
-	};
-	
-	/**
-	 * Starts a poll cycle.
-	 *
-	 * @api private
-	 */
-	
-	JSONPPolling.prototype.doPoll = function () {
-	  var self = this;
-	  var script = document.createElement('script');
-	
-	  if (this.script) {
-	    this.script.parentNode.removeChild(this.script);
-	    this.script = null;
-	  }
-	
-	  script.async = true;
-	  script.src = this.uri();
-	  script.onerror = function(e){
-	    self.onError('jsonp poll error',e);
-	  };
-	
-	  var insertAt = document.getElementsByTagName('script')[0];
-	  if (insertAt) {
-	    insertAt.parentNode.insertBefore(script, insertAt);
-	  }
-	  else {
-	    (document.head || document.body).appendChild(script);
-	  }
-	  this.script = script;
-	
-	  var isUAgecko = 'undefined' != typeof navigator && /gecko/i.test(navigator.userAgent);
-	  
-	  if (isUAgecko) {
-	    setTimeout(function () {
-	      var iframe = document.createElement('iframe');
-	      document.body.appendChild(iframe);
-	      document.body.removeChild(iframe);
-	    }, 100);
-	  }
-	};
-	
-	/**
-	 * Writes with a hidden iframe.
-	 *
-	 * @param {String} data to send
-	 * @param {Function} called upon flush.
-	 * @api private
-	 */
-	
-	JSONPPolling.prototype.doWrite = function (data, fn) {
-	  var self = this;
-	
-	  if (!this.form) {
-	    var form = document.createElement('form');
-	    var area = document.createElement('textarea');
-	    var id = this.iframeId = 'eio_iframe_' + this.index;
-	    var iframe;
-	
-	    form.className = 'socketio';
-	    form.style.position = 'absolute';
-	    form.style.top = '-1000px';
-	    form.style.left = '-1000px';
-	    form.target = id;
-	    form.method = 'POST';
-	    form.setAttribute('accept-charset', 'utf-8');
-	    area.name = 'd';
-	    form.appendChild(area);
-	    document.body.appendChild(form);
-	
-	    this.form = form;
-	    this.area = area;
-	  }
-	
-	  this.form.action = this.uri();
-	
-	  function complete () {
-	    initIframe();
-	    fn();
-	  }
-	
-	  function initIframe () {
-	    if (self.iframe) {
-	      try {
-	        self.form.removeChild(self.iframe);
-	      } catch (e) {
-	        self.onError('jsonp polling iframe removal error', e);
-	      }
-	    }
-	
-	    try {
-	      // ie6 dynamic iframes with target="" support (thanks Chris Lambacher)
-	      var html = '<iframe src="javascript:0" name="'+ self.iframeId +'">';
-	      iframe = document.createElement(html);
-	    } catch (e) {
-	      iframe = document.createElement('iframe');
-	      iframe.name = self.iframeId;
-	      iframe.src = 'javascript:0';
-	    }
-	
-	    iframe.id = self.iframeId;
-	
-	    self.form.appendChild(iframe);
-	    self.iframe = iframe;
-	  }
-	
-	  initIframe();
-	
-	  // escape \n to prevent it from being converted into \r\n by some UAs
-	  // double escaping is required for escaped new lines because unescaping of new lines can be done safely on server-side
-	  data = data.replace(rEscapedNewline, '\\\n');
-	  this.area.value = data.replace(rNewline, '\\n');
-	
-	  try {
-	    this.form.submit();
-	  } catch(e) {}
-	
-	  if (this.iframe.attachEvent) {
-	    this.iframe.onreadystatechange = function(){
-	      if (self.iframe.readyState == 'complete') {
-	        complete();
-	      }
-	    };
-	  } else {
-	    this.iframe.onload = complete;
-	  }
-	};
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 111 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * Module dependencies.
-	 */
-	
-	var Transport = __webpack_require__(96);
-	var parser = __webpack_require__(97);
-	var parseqs = __webpack_require__(107);
-	var inherit = __webpack_require__(108);
-	var yeast = __webpack_require__(109);
-	var debug = __webpack_require__(76)('engine.io-client:websocket');
-	var BrowserWebSocket = global.WebSocket || global.MozWebSocket;
-	
-	/**
-	 * Get either the `WebSocket` or `MozWebSocket` globals
-	 * in the browser or try to resolve WebSocket-compatible
-	 * interface exposed by `ws` for Node-like environment.
-	 */
-	
-	var WebSocket = BrowserWebSocket;
-	if (!WebSocket && typeof window === 'undefined') {
-	  try {
-	    WebSocket = __webpack_require__(112);
-	  } catch (e) { }
-	}
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = WS;
-	
-	/**
-	 * WebSocket transport constructor.
-	 *
-	 * @api {Object} connection options
-	 * @api public
-	 */
-	
-	function WS(opts){
-	  var forceBase64 = (opts && opts.forceBase64);
-	  if (forceBase64) {
-	    this.supportsBinary = false;
-	  }
-	  this.perMessageDeflate = opts.perMessageDeflate;
-	  Transport.call(this, opts);
-	}
-	
-	/**
-	 * Inherits from Transport.
-	 */
-	
-	inherit(WS, Transport);
-	
-	/**
-	 * Transport name.
-	 *
-	 * @api public
-	 */
-	
-	WS.prototype.name = 'websocket';
-	
-	/*
-	 * WebSockets support binary
-	 */
-	
-	WS.prototype.supportsBinary = true;
-	
-	/**
-	 * Opens socket.
-	 *
-	 * @api private
-	 */
-	
-	WS.prototype.doOpen = function(){
-	  if (!this.check()) {
-	    // let probe timeout
-	    return;
-	  }
-	
-	  var self = this;
-	  var uri = this.uri();
-	  var protocols = void(0);
-	  var opts = {
-	    agent: this.agent,
-	    perMessageDeflate: this.perMessageDeflate
-	  };
-	
-	  // SSL options for Node.js client
-	  opts.pfx = this.pfx;
-	  opts.key = this.key;
-	  opts.passphrase = this.passphrase;
-	  opts.cert = this.cert;
-	  opts.ca = this.ca;
-	  opts.ciphers = this.ciphers;
-	  opts.rejectUnauthorized = this.rejectUnauthorized;
-	  if (this.extraHeaders) {
-	    opts.headers = this.extraHeaders;
-	  }
-	
-	  this.ws = BrowserWebSocket ? new WebSocket(uri) : new WebSocket(uri, protocols, opts);
-	
-	  if (this.ws.binaryType === undefined) {
-	    this.supportsBinary = false;
-	  }
-	
-	  if (this.ws.supports && this.ws.supports.binary) {
-	    this.supportsBinary = true;
-	    this.ws.binaryType = 'buffer';
-	  } else {
-	    this.ws.binaryType = 'arraybuffer';
-	  }
-	
-	  this.addEventListeners();
-	};
-	
-	/**
-	 * Adds event listeners to the socket
-	 *
-	 * @api private
-	 */
-	
-	WS.prototype.addEventListeners = function(){
-	  var self = this;
-	
-	  this.ws.onopen = function(){
-	    self.onOpen();
-	  };
-	  this.ws.onclose = function(){
-	    self.onClose();
-	  };
-	  this.ws.onmessage = function(ev){
-	    self.onData(ev.data);
-	  };
-	  this.ws.onerror = function(e){
-	    self.onError('websocket error', e);
-	  };
-	};
-	
-	/**
-	 * Override `onData` to use a timer on iOS.
-	 * See: https://gist.github.com/mloughran/2052006
-	 *
-	 * @api private
-	 */
-	
-	if ('undefined' != typeof navigator
-	  && /iPad|iPhone|iPod/i.test(navigator.userAgent)) {
-	  WS.prototype.onData = function(data){
-	    var self = this;
-	    setTimeout(function(){
-	      Transport.prototype.onData.call(self, data);
-	    }, 0);
-	  };
-	}
-	
-	/**
-	 * Writes data to socket.
-	 *
-	 * @param {Array} array of packets.
-	 * @api private
-	 */
-	
-	WS.prototype.write = function(packets){
-	  var self = this;
-	  this.writable = false;
-	
-	  // encodePacket efficient as it uses WS framing
-	  // no need for encodePayload
-	  var total = packets.length;
-	  for (var i = 0, l = total; i < l; i++) {
-	    (function(packet) {
-	      parser.encodePacket(packet, self.supportsBinary, function(data) {
-	        if (!BrowserWebSocket) {
-	          // always create a new object (GH-437)
-	          var opts = {};
-	          if (packet.options) {
-	            opts.compress = packet.options.compress;
-	          }
-	
-	          if (self.perMessageDeflate) {
-	            var len = 'string' == typeof data ? global.Buffer.byteLength(data) : data.length;
-	            if (len < self.perMessageDeflate.threshold) {
-	              opts.compress = false;
-	            }
-	          }
-	        }
-	
-	        //Sometimes the websocket has already been closed but the browser didn't
-	        //have a chance of informing us about it yet, in that case send will
-	        //throw an error
-	        try {
-	          if (BrowserWebSocket) {
-	            // TypeError is thrown when passing the second argument on Safari
-	            self.ws.send(data);
-	          } else {
-	            self.ws.send(data, opts);
-	          }
-	        } catch (e){
-	          debug('websocket closed before onclose event');
-	        }
-	
-	        --total || done();
-	      });
-	    })(packets[i]);
-	  }
-	
-	  function done(){
-	    self.emit('flush');
-	
-	    // fake drain
-	    // defer to next tick to allow Socket to clear writeBuffer
-	    setTimeout(function(){
-	      self.writable = true;
-	      self.emit('drain');
-	    }, 0);
-	  }
-	};
-	
-	/**
-	 * Called upon close
-	 *
-	 * @api private
-	 */
-	
-	WS.prototype.onClose = function(){
-	  Transport.prototype.onClose.call(this);
-	};
-	
-	/**
-	 * Closes socket.
-	 *
-	 * @api private
-	 */
-	
-	WS.prototype.doClose = function(){
-	  if (typeof this.ws !== 'undefined') {
-	    this.ws.close();
-	  }
-	};
-	
-	/**
-	 * Generates uri for connection.
-	 *
-	 * @api private
-	 */
-	
-	WS.prototype.uri = function(){
-	  var query = this.query || {};
-	  var schema = this.secure ? 'wss' : 'ws';
-	  var port = '';
-	
-	  // avoid port if default for schema
-	  if (this.port && (('wss' == schema && this.port != 443)
-	    || ('ws' == schema && this.port != 80))) {
-	    port = ':' + this.port;
-	  }
-	
-	  // append timestamp to URI
-	  if (this.timestampRequests) {
-	    query[this.timestampParam] = yeast();
-	  }
-	
-	  // communicate binary support capabilities
-	  if (!this.supportsBinary) {
-	    query.b64 = 1;
-	  }
-	
-	  query = parseqs.encode(query);
-	
-	  // prepend ? to query
-	  if (query.length) {
-	    query = '?' + query;
-	  }
-	
-	  var ipv6 = this.hostname.indexOf(':') !== -1;
-	  return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
-	};
-	
-	/**
-	 * Feature detection for WebSocket.
-	 *
-	 * @return {Boolean} whether this transport is available.
-	 * @api public
-	 */
-	
-	WS.prototype.check = function(){
-	  return !!WebSocket && !('__initialize' in WebSocket && this.name === WS.prototype.name);
-	};
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 112 */
-/***/ function(module, exports) {
-
-	/* (ignored) */
-
-/***/ },
-/* 113 */
-/***/ function(module, exports) {
-
-	
-	var indexOf = [].indexOf;
-	
-	module.exports = function(arr, obj){
-	  if (indexOf) return arr.indexOf(obj);
-	  for (var i = 0; i < arr.length; ++i) {
-	    if (arr[i] === obj) return i;
-	  }
-	  return -1;
-	};
-
-/***/ },
-/* 114 */
-/***/ function(module, exports) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * JSON parse.
-	 *
-	 * @see Based on jQuery#parseJSON (MIT) and JSON2
-	 * @api private
-	 */
-	
-	var rvalidchars = /^[\],:{}\s]*$/;
-	var rvalidescape = /\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g;
-	var rvalidtokens = /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g;
-	var rvalidbraces = /(?:^|:|,)(?:\s*\[)+/g;
-	var rtrimLeft = /^\s+/;
-	var rtrimRight = /\s+$/;
-	
-	module.exports = function parsejson(data) {
-	  if ('string' != typeof data || !data) {
-	    return null;
-	  }
-	
-	  data = data.replace(rtrimLeft, '').replace(rtrimRight, '');
-	
-	  // Attempt to parse using the native JSON parser first
-	  if (global.JSON && JSON.parse) {
-	    return JSON.parse(data);
-	  }
-	
-	  if (rvalidchars.test(data.replace(rvalidescape, '@')
-	      .replace(rvalidtokens, ']')
-	      .replace(rvalidbraces, ''))) {
-	    return (new Function('return ' + data))();
-	  }
-	};
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 115 */
-/***/ function(module, exports, __webpack_require__) {
-
-	
-	/**
-	 * Module dependencies.
-	 */
-	
-	var parser = __webpack_require__(79);
-	var Emitter = __webpack_require__(116);
-	var toArray = __webpack_require__(117);
-	var on = __webpack_require__(118);
-	var bind = __webpack_require__(119);
-	var debug = __webpack_require__(76)('socket.io-client:socket');
-	var hasBin = __webpack_require__(120);
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = exports = Socket;
-	
-	/**
-	 * Internal events (blacklisted).
-	 * These events can't be emitted by the user.
-	 *
-	 * @api private
-	 */
-	
-	var events = {
-	  connect: 1,
-	  connect_error: 1,
-	  connect_timeout: 1,
-	  connecting: 1,
-	  disconnect: 1,
-	  error: 1,
-	  reconnect: 1,
-	  reconnect_attempt: 1,
-	  reconnect_failed: 1,
-	  reconnect_error: 1,
-	  reconnecting: 1,
-	  ping: 1,
-	  pong: 1
-	};
-	
-	/**
-	 * Shortcut to `Emitter#emit`.
-	 */
-	
-	var emit = Emitter.prototype.emit;
-	
-	/**
-	 * `Socket` constructor.
-	 *
-	 * @api public
-	 */
-	
-	function Socket(io, nsp){
-	  this.io = io;
-	  this.nsp = nsp;
-	  this.json = this; // compat
-	  this.ids = 0;
-	  this.acks = {};
-	  this.receiveBuffer = [];
-	  this.sendBuffer = [];
-	  this.connected = false;
-	  this.disconnected = true;
-	  if (this.io.autoConnect) this.open();
-	}
-	
-	/**
-	 * Mix in `Emitter`.
-	 */
-	
-	Emitter(Socket.prototype);
-	
-	/**
-	 * Subscribe to open, close and packet events
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.subEvents = function() {
-	  if (this.subs) return;
-	
-	  var io = this.io;
-	  this.subs = [
-	    on(io, 'open', bind(this, 'onopen')),
-	    on(io, 'packet', bind(this, 'onpacket')),
-	    on(io, 'close', bind(this, 'onclose'))
-	  ];
-	};
-	
-	/**
-	 * "Opens" the socket.
-	 *
-	 * @api public
-	 */
-	
-	Socket.prototype.open =
-	Socket.prototype.connect = function(){
-	  if (this.connected) return this;
-	
-	  this.subEvents();
-	  this.io.open(); // ensure open
-	  if ('open' == this.io.readyState) this.onopen();
-	  this.emit('connecting');
-	  return this;
-	};
-	
-	/**
-	 * Sends a `message` event.
-	 *
-	 * @return {Socket} self
-	 * @api public
-	 */
-	
-	Socket.prototype.send = function(){
-	  var args = toArray(arguments);
-	  args.unshift('message');
-	  this.emit.apply(this, args);
-	  return this;
-	};
-	
-	/**
-	 * Override `emit`.
-	 * If the event is in `events`, it's emitted normally.
-	 *
-	 * @param {String} event name
-	 * @return {Socket} self
-	 * @api public
-	 */
-	
-	Socket.prototype.emit = function(ev){
-	  if (events.hasOwnProperty(ev)) {
-	    emit.apply(this, arguments);
-	    return this;
-	  }
-	
-	  var args = toArray(arguments);
-	  var parserType = parser.EVENT; // default
-	  if (hasBin(args)) { parserType = parser.BINARY_EVENT; } // binary
-	  var packet = { type: parserType, data: args };
-	
-	  packet.options = {};
-	  packet.options.compress = !this.flags || false !== this.flags.compress;
-	
-	  // event ack callback
-	  if ('function' == typeof args[args.length - 1]) {
-	    debug('emitting packet with ack id %d', this.ids);
-	    this.acks[this.ids] = args.pop();
-	    packet.id = this.ids++;
-	  }
-	
-	  if (this.connected) {
-	    this.packet(packet);
-	  } else {
-	    this.sendBuffer.push(packet);
-	  }
-	
-	  delete this.flags;
-	
-	  return this;
-	};
-	
-	/**
-	 * Sends a packet.
-	 *
-	 * @param {Object} packet
-	 * @api private
-	 */
-	
-	Socket.prototype.packet = function(packet){
-	  packet.nsp = this.nsp;
-	  this.io.packet(packet);
-	};
-	
-	/**
-	 * Called upon engine `open`.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.onopen = function(){
-	  debug('transport is open - connecting');
-	
-	  // write connect packet if necessary
-	  if ('/' != this.nsp) {
-	    this.packet({ type: parser.CONNECT });
-	  }
-	};
-	
-	/**
-	 * Called upon engine `close`.
-	 *
-	 * @param {String} reason
-	 * @api private
-	 */
-	
-	Socket.prototype.onclose = function(reason){
-	  debug('close (%s)', reason);
-	  this.connected = false;
-	  this.disconnected = true;
-	  delete this.id;
-	  this.emit('disconnect', reason);
-	};
-	
-	/**
-	 * Called with socket packet.
-	 *
-	 * @param {Object} packet
-	 * @api private
-	 */
-	
-	Socket.prototype.onpacket = function(packet){
-	  if (packet.nsp != this.nsp) return;
-	
-	  switch (packet.type) {
-	    case parser.CONNECT:
-	      this.onconnect();
-	      break;
-	
-	    case parser.EVENT:
-	      this.onevent(packet);
-	      break;
-	
-	    case parser.BINARY_EVENT:
-	      this.onevent(packet);
-	      break;
-	
-	    case parser.ACK:
-	      this.onack(packet);
-	      break;
-	
-	    case parser.BINARY_ACK:
-	      this.onack(packet);
-	      break;
-	
-	    case parser.DISCONNECT:
-	      this.ondisconnect();
-	      break;
-	
-	    case parser.ERROR:
-	      this.emit('error', packet.data);
-	      break;
-	  }
-	};
-	
-	/**
-	 * Called upon a server event.
-	 *
-	 * @param {Object} packet
-	 * @api private
-	 */
-	
-	Socket.prototype.onevent = function(packet){
-	  var args = packet.data || [];
-	  debug('emitting event %j', args);
-	
-	  if (null != packet.id) {
-	    debug('attaching ack callback to event');
-	    args.push(this.ack(packet.id));
-	  }
-	
-	  if (this.connected) {
-	    emit.apply(this, args);
-	  } else {
-	    this.receiveBuffer.push(args);
-	  }
-	};
-	
-	/**
-	 * Produces an ack callback to emit with an event.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.ack = function(id){
-	  var self = this;
-	  var sent = false;
-	  return function(){
-	    // prevent double callbacks
-	    if (sent) return;
-	    sent = true;
-	    var args = toArray(arguments);
-	    debug('sending ack %j', args);
-	
-	    var type = hasBin(args) ? parser.BINARY_ACK : parser.ACK;
-	    self.packet({
-	      type: type,
-	      id: id,
-	      data: args
-	    });
-	  };
-	};
-	
-	/**
-	 * Called upon a server acknowlegement.
-	 *
-	 * @param {Object} packet
-	 * @api private
-	 */
-	
-	Socket.prototype.onack = function(packet){
-	  var ack = this.acks[packet.id];
-	  if ('function' == typeof ack) {
-	    debug('calling ack %s with %j', packet.id, packet.data);
-	    ack.apply(this, packet.data);
-	    delete this.acks[packet.id];
-	  } else {
-	    debug('bad ack %s', packet.id);
-	  }
-	};
-	
-	/**
-	 * Called upon server connect.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.onconnect = function(){
-	  this.connected = true;
-	  this.disconnected = false;
-	  this.emit('connect');
-	  this.emitBuffered();
-	};
-	
-	/**
-	 * Emit buffered events (received and emitted).
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.emitBuffered = function(){
-	  var i;
-	  for (i = 0; i < this.receiveBuffer.length; i++) {
-	    emit.apply(this, this.receiveBuffer[i]);
-	  }
-	  this.receiveBuffer = [];
-	
-	  for (i = 0; i < this.sendBuffer.length; i++) {
-	    this.packet(this.sendBuffer[i]);
-	  }
-	  this.sendBuffer = [];
-	};
-	
-	/**
-	 * Called upon server disconnect.
-	 *
-	 * @api private
-	 */
-	
-	Socket.prototype.ondisconnect = function(){
-	  debug('server disconnect (%s)', this.nsp);
-	  this.destroy();
-	  this.onclose('io server disconnect');
-	};
-	
-	/**
-	 * Called upon forced client/server side disconnections,
-	 * this method ensures the manager stops tracking us and
-	 * that reconnections don't get triggered for this.
-	 *
-	 * @api private.
-	 */
-	
-	Socket.prototype.destroy = function(){
-	  if (this.subs) {
-	    // clean subscriptions to avoid reconnections
-	    for (var i = 0; i < this.subs.length; i++) {
-	      this.subs[i].destroy();
-	    }
-	    this.subs = null;
-	  }
-	
-	  this.io.destroy(this);
-	};
-	
-	/**
-	 * Disconnects the socket manually.
-	 *
-	 * @return {Socket} self
-	 * @api public
-	 */
-	
-	Socket.prototype.close =
-	Socket.prototype.disconnect = function(){
-	  if (this.connected) {
-	    debug('performing disconnect (%s)', this.nsp);
-	    this.packet({ type: parser.DISCONNECT });
-	  }
-	
-	  // remove socket from pool
-	  this.destroy();
-	
-	  if (this.connected) {
-	    // fire events
-	    this.onclose('io client disconnect');
-	  }
-	  return this;
-	};
-	
-	/**
-	 * Sets the compress flag.
-	 *
-	 * @param {Boolean} if `true`, compresses the sending data
-	 * @return {Socket} self
-	 * @api public
-	 */
-	
-	Socket.prototype.compress = function(compress){
-	  this.flags = this.flags || {};
-	  this.flags.compress = compress;
-	  return this;
-	};
-
-
-/***/ },
-/* 116 */
-/***/ function(module, exports) {
-
-	
-	/**
-	 * Expose `Emitter`.
-	 */
-	
-	module.exports = Emitter;
-	
-	/**
-	 * Initialize a new `Emitter`.
-	 *
-	 * @api public
-	 */
-	
-	function Emitter(obj) {
-	  if (obj) return mixin(obj);
-	};
-	
-	/**
-	 * Mixin the emitter properties.
-	 *
-	 * @param {Object} obj
-	 * @return {Object}
-	 * @api private
-	 */
-	
-	function mixin(obj) {
-	  for (var key in Emitter.prototype) {
-	    obj[key] = Emitter.prototype[key];
-	  }
-	  return obj;
-	}
-	
-	/**
-	 * Listen on the given `event` with `fn`.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-	
-	Emitter.prototype.on =
-	Emitter.prototype.addEventListener = function(event, fn){
-	  this._callbacks = this._callbacks || {};
-	  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
-	    .push(fn);
-	  return this;
-	};
-	
-	/**
-	 * Adds an `event` listener that will be invoked a single
-	 * time then automatically removed.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-	
-	Emitter.prototype.once = function(event, fn){
-	  function on() {
-	    this.off(event, on);
-	    fn.apply(this, arguments);
-	  }
-	
-	  on.fn = fn;
-	  this.on(event, on);
-	  return this;
-	};
-	
-	/**
-	 * Remove the given callback for `event` or all
-	 * registered callbacks.
-	 *
-	 * @param {String} event
-	 * @param {Function} fn
-	 * @return {Emitter}
-	 * @api public
-	 */
-	
-	Emitter.prototype.off =
-	Emitter.prototype.removeListener =
-	Emitter.prototype.removeAllListeners =
-	Emitter.prototype.removeEventListener = function(event, fn){
-	  this._callbacks = this._callbacks || {};
-	
-	  // all
-	  if (0 == arguments.length) {
-	    this._callbacks = {};
-	    return this;
-	  }
-	
-	  // specific event
-	  var callbacks = this._callbacks['$' + event];
-	  if (!callbacks) return this;
-	
-	  // remove all handlers
-	  if (1 == arguments.length) {
-	    delete this._callbacks['$' + event];
-	    return this;
-	  }
-	
-	  // remove specific handler
-	  var cb;
-	  for (var i = 0; i < callbacks.length; i++) {
-	    cb = callbacks[i];
-	    if (cb === fn || cb.fn === fn) {
-	      callbacks.splice(i, 1);
-	      break;
-	    }
-	  }
-	  return this;
-	};
-	
-	/**
-	 * Emit `event` with the given args.
-	 *
-	 * @param {String} event
-	 * @param {Mixed} ...
-	 * @return {Emitter}
-	 */
-	
-	Emitter.prototype.emit = function(event){
-	  this._callbacks = this._callbacks || {};
-	  var args = [].slice.call(arguments, 1)
-	    , callbacks = this._callbacks['$' + event];
-	
-	  if (callbacks) {
-	    callbacks = callbacks.slice(0);
-	    for (var i = 0, len = callbacks.length; i < len; ++i) {
-	      callbacks[i].apply(this, args);
-	    }
-	  }
-	
-	  return this;
-	};
-	
-	/**
-	 * Return array of callbacks for `event`.
-	 *
-	 * @param {String} event
-	 * @return {Array}
-	 * @api public
-	 */
-	
-	Emitter.prototype.listeners = function(event){
-	  this._callbacks = this._callbacks || {};
-	  return this._callbacks['$' + event] || [];
-	};
-	
-	/**
-	 * Check if this emitter has `event` handlers.
-	 *
-	 * @param {String} event
-	 * @return {Boolean}
-	 * @api public
-	 */
-	
-	Emitter.prototype.hasListeners = function(event){
-	  return !! this.listeners(event).length;
-	};
-
-
-/***/ },
-/* 117 */
-/***/ function(module, exports) {
-
-	module.exports = toArray
-	
-	function toArray(list, index) {
-	    var array = []
-	
-	    index = index || 0
-	
-	    for (var i = index || 0; i < list.length; i++) {
-	        array[i - index] = list[i]
-	    }
-	
-	    return array
-	}
-
-
-/***/ },
-/* 118 */
-/***/ function(module, exports) {
-
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = on;
-	
-	/**
-	 * Helper for subscriptions.
-	 *
-	 * @param {Object|EventEmitter} obj with `Emitter` mixin or `EventEmitter`
-	 * @param {String} event name
-	 * @param {Function} callback
-	 * @api public
-	 */
-	
-	function on(obj, ev, fn) {
-	  obj.on(ev, fn);
-	  return {
-	    destroy: function(){
-	      obj.removeListener(ev, fn);
-	    }
-	  };
-	}
-
-
-/***/ },
-/* 119 */
-/***/ function(module, exports) {
-
-	/**
-	 * Slice reference.
-	 */
-	
-	var slice = [].slice;
-	
-	/**
-	 * Bind `obj` to `fn`.
-	 *
-	 * @param {Object} obj
-	 * @param {Function|String} fn or string
-	 * @return {Function}
-	 * @api public
-	 */
-	
-	module.exports = function(obj, fn){
-	  if ('string' == typeof fn) fn = obj[fn];
-	  if ('function' != typeof fn) throw new Error('bind() requires a function');
-	  var args = slice.call(arguments, 2);
-	  return function(){
-	    return fn.apply(obj, args.concat(slice.call(arguments)));
-	  }
-	};
-
-
-/***/ },
-/* 120 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(global) {
-	/*
-	 * Module requirements.
-	 */
-	
-	var isArray = __webpack_require__(121);
-	
-	/**
-	 * Module exports.
-	 */
-	
-	module.exports = hasBinary;
-	
-	/**
-	 * Checks for binary data.
-	 *
-	 * Right now only Buffer and ArrayBuffer are supported..
-	 *
-	 * @param {Object} anything
-	 * @api public
-	 */
-	
-	function hasBinary(data) {
-	
-	  function _hasBinary(obj) {
-	    if (!obj) return false;
-	
-	    if ( (global.Buffer && global.Buffer.isBuffer && global.Buffer.isBuffer(obj)) ||
-	         (global.ArrayBuffer && obj instanceof ArrayBuffer) ||
-	         (global.Blob && obj instanceof Blob) ||
-	         (global.File && obj instanceof File)
-	        ) {
-	      return true;
-	    }
-	
-	    if (isArray(obj)) {
-	      for (var i = 0; i < obj.length; i++) {
-	          if (_hasBinary(obj[i])) {
-	              return true;
-	          }
-	      }
-	    } else if (obj && 'object' == typeof obj) {
-	      // see: https://github.com/Automattic/has-binary/pull/4
-	      if (obj.toJSON && 'function' == typeof obj.toJSON) {
-	        obj = obj.toJSON();
-	      }
-	
-	      for (var key in obj) {
-	        if (Object.prototype.hasOwnProperty.call(obj, key) && _hasBinary(obj[key])) {
-	          return true;
-	        }
-	      }
-	    }
-	
-	    return false;
-	  }
-	
-	  return _hasBinary(data);
-	}
-	
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 121 */
-/***/ function(module, exports) {
-
-	module.exports = Array.isArray || function (arr) {
-	  return Object.prototype.toString.call(arr) == '[object Array]';
-	};
-
-
-/***/ },
-/* 122 */
-/***/ function(module, exports) {
-
-	
-	/**
-	 * Expose `Backoff`.
-	 */
-	
-	module.exports = Backoff;
-	
-	/**
-	 * Initialize backoff timer with `opts`.
-	 *
-	 * - `min` initial timeout in milliseconds [100]
-	 * - `max` max timeout [10000]
-	 * - `jitter` [0]
-	 * - `factor` [2]
-	 *
-	 * @param {Object} opts
-	 * @api public
-	 */
-	
-	function Backoff(opts) {
-	  opts = opts || {};
-	  this.ms = opts.min || 100;
-	  this.max = opts.max || 10000;
-	  this.factor = opts.factor || 2;
-	  this.jitter = opts.jitter > 0 && opts.jitter <= 1 ? opts.jitter : 0;
-	  this.attempts = 0;
-	}
-	
-	/**
-	 * Return the backoff duration.
-	 *
-	 * @return {Number}
-	 * @api public
-	 */
-	
-	Backoff.prototype.duration = function(){
-	  var ms = this.ms * Math.pow(this.factor, this.attempts++);
-	  if (this.jitter) {
-	    var rand =  Math.random();
-	    var deviation = Math.floor(rand * this.jitter * ms);
-	    ms = (Math.floor(rand * 10) & 1) == 0  ? ms - deviation : ms + deviation;
-	  }
-	  return Math.min(ms, this.max) | 0;
-	};
-	
-	/**
-	 * Reset the number of attempts.
-	 *
-	 * @api public
-	 */
-	
-	Backoff.prototype.reset = function(){
-	  this.attempts = 0;
-	};
-	
-	/**
-	 * Set the minimum duration
-	 *
-	 * @api public
-	 */
-	
-	Backoff.prototype.setMin = function(min){
-	  this.ms = min;
-	};
-	
-	/**
-	 * Set the maximum duration
-	 *
-	 * @api public
-	 */
-	
-	Backoff.prototype.setMax = function(max){
-	  this.max = max;
-	};
-	
-	/**
-	 * Set the jitter
-	 *
-	 * @api public
-	 */
-	
-	Backoff.prototype.setJitter = function(jitter){
-	  this.jitter = jitter;
-	};
-	
-
-
-/***/ },
-/* 123 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var LoginView = __webpack_require__(124);
-	var SignView = __webpack_require__(134);
-	var RecordView = __webpack_require__(139);
-	var ChatView = __webpack_require__(168);
-	var FriendView = __webpack_require__(183);
-	
-	module.exports = function (router) {
-	    router.map({
-	        '/index': {
-	            component: RecordView
-	        },
-	        '/chat/:relate': {
-	            name: 'chat',
-	            component: ChatView
-	        },
-	        '/login': {
-	            component: LoginView
-	        },
-	        '/sign': {
-	            component: SignView
-	        },
-	        '/friend': {
-	            component: FriendView
-	        }
-	    });
-	};
-
-/***/ },
-/* 124 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(125)
-	__vue_script__ = __webpack_require__(127)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/views/login.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(133)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/views/login.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 125 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(126);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./login.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./login.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 126 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".form {\n  padding: 50px 20px; }\n  .form .btm {\n    position: fixed;\n    bottom: 20px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n    transform: translateX(-50%); }\n    .form .btm a {\n      color: #D6AF7D;\n      padding: 0 5px; }\n\n.field-row {\n  margin: 25px 0; }\n  .field-row:first-child {\n    margin-top: 0; }\n  .field-row .field-title {\n    margin-bottom: 6px;\n    color: #666; }\n  .field-row .field-value input {\n    width: 100%;\n    padding: 4px 6px;\n    box-sizing: border-box;\n    outline: none;\n    border: 1px solid #eee;\n    height: 28px;\n    border-radius: 2px;\n    -webkit-appearance: none; }\n", "", {"version":3,"sources":["/./src/views/login.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB,EAAE;EACrB;IACE,gBAAgB;IAChB,aAAa;IACb,UAAU;IACV,oCAAoC;IAIpC,4BAA4B,EAAE;IAC9B;MACE,eAAe;MACf,eAAe,EAAE;;AAEvB;EACE,eAAe,EAAE;EACjB;IACE,cAAc,EAAE;EAClB;IACE,mBAAmB;IACnB,YAAY,EAAE;EAChB;IACE,YAAY;IACZ,iBAAiB;IACjB,uBAAuB;IACvB,cAAc;IACd,uBAAuB;IACvB,aAAa;IACb,mBAAmB;IACnB,yBAAyB,EAAE","file":"login.vue","sourcesContent":[".form {\n  padding: 50px 20px; }\n  .form .btm {\n    position: fixed;\n    bottom: 20px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n    -moz-transform: translateX(-50%);\n    -ms-transform: translateX(-50%);\n    -o-transform: translateX(-50%);\n    transform: translateX(-50%); }\n    .form .btm a {\n      color: #D6AF7D;\n      padding: 0 5px; }\n\n.field-row {\n  margin: 25px 0; }\n  .field-row:first-child {\n    margin-top: 0; }\n  .field-row .field-title {\n    margin-bottom: 6px;\n    color: #666; }\n  .field-row .field-value input {\n    width: 100%;\n    padding: 4px 6px;\n    box-sizing: border-box;\n    outline: none;\n    border: 1px solid #eee;\n    height: 28px;\n    border-radius: 2px;\n    -webkit-appearance: none; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 127 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var auth = __webpack_require__(10);
-	var MAlert = __webpack_require__(128);
-	
-	module.exports = {
-	    name: 'LoginView',
-	    components: {
-	        'm-alert': MAlert
-	    },
-	    data: function data() {
-	        return {
-	            username: '',
-	            password: '',
-	
-	            alert: {
-	                content: '',
-	                show: false,
-	                openFn: function openFn(txt, autoHide) {
-	                    this.content = txt;
-	                    this.show = true;
-	                    if (autoHide) {
-	                        this.hideFn();
-	                    }
-	                },
-	                hideFn: function hideFn(duration) {
-	                    var _this = this;
-	
-	                    clearTimeout(this.timer);
-	                    this.timer = setTimeout(function () {
-	                        _this.show = false;
-	                    }, duration || 1500);
-	                }
-	            }
-	        };
-	    },
-	    methods: {
-	        onClickSubmit: function onClickSubmit() {
-	            if (!this.username || !this.password) {
-	                return;
-	            }
-	
-	            this.alert.openFn('请稍等...');
-	
-	            var cb = function cb() {
-	                var _this2 = this;
-	
-	                var promise = auth.login(this.username, this.password);
-	
-	                promise.then(function (resp) {
-	                    _this2.alert.hideFn();
-	                    _this2.$route.router.go('./index');
-	                }).catch(function (resp) {
-	                    _this2.alert.openFn(resp.message, true);
-	                });
-	            };
-	
-	            setTimeout(cb.bind(this), 300);
-	        }
-	    }
-	};
-
-/***/ },
-/* 128 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(129)
-	__vue_script__ = __webpack_require__(131)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/alert.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(132)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/components/alert.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 129 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(130);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./alert.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./alert.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 130 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".alert {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: transparent;\n  text-align: center; }\n  .alert .inner {\n    text-align: center;\n    background-color: rgba(49, 49, 49, 0.8);\n    color: #fff;\n    border-radius: 6px;\n    font-size: 14px;\n    padding: 18px 25px;\n    word-break: break-all;\n    display: inline-block;\n    margin: 0 auto;\n    margin-top: 65%; }\n", "", {"version":3,"sources":["/./src/components/alert.vue"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,OAAO;EACP,QAAQ;EACR,UAAU;EACV,SAAS;EACT,YAAY;EACZ,8BAA8B;EAC9B,mBAAmB,EAAE;EACrB;IACE,mBAAmB;IACnB,wCAAwC;IACxC,YAAY;IACZ,mBAAmB;IACnB,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;IACtB,sBAAsB;IACtB,eAAe;IACf,gBAAgB,EAAE","file":"alert.vue","sourcesContent":[".alert {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: transparent;\n  text-align: center; }\n  .alert .inner {\n    text-align: center;\n    background-color: rgba(49, 49, 49, 0.8);\n    color: #fff;\n    border-radius: 6px;\n    font-size: 14px;\n    padding: 18px 25px;\n    word-break: break-all;\n    display: inline-block;\n    margin: 0 auto;\n    margin-top: 65%; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 131 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	    replace: true,
-	    props: ['content', 'show']
-	};
-
-/***/ },
-/* 132 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div class=\"alert\" transition=\"fade\" v-show=\"show\">\n    <div class=\"inner\">\n        {{content}}\n    </div>\n</div>\n";
-
-/***/ },
-/* 133 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div class=\"form\">\n    <form action=\"\">\n        <div class=\"field-row\">\n            <div class=\"field-title\">\n                <label for=\"\">用户名</label>\n            </div>\n            <div class=\"field-value\">\n                <input type=\"text\" name=\"username\" v-model=\"username\">\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <div class=\"field-title\">\n                <label for=\"\">密码</label>\n            </div>\n            <div class=\"field-value\">\n                <input type=\"password\" name=\"password\" v-model=\"password\">\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <input type=\"submit\" class=\"btn btn-block btn-primary\" value=\"登陆\" @click.prevent=\"onClickSubmit\">\n        </div>\n    </form>\n\n    <div class=\"btm\">\n        <a v-link=\"'sign'\">注册</a>\n    </div>\n\n    <m-alert :content=\"alert.content\" :show=\"alert.show\"></m-alert>\n</div>\n";
-
-/***/ },
-/* 134 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(135)
-	__vue_script__ = __webpack_require__(137)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/views/sign.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(138)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/views/sign.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 135 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(136);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sign.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sign.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 136 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".form {\n  padding: 50px 20px; }\n  .form .btm {\n    position: fixed;\n    bottom: 20px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n    transform: translateX(-50%); }\n    .form .btm a {\n      color: #D6AF7D;\n      padding: 0 5px; }\n\n.field-row {\n  margin: 25px 0; }\n  .field-row:first-child {\n    margin-top: 0; }\n  .field-row .field-title {\n    margin-bottom: 6px;\n    color: #666; }\n  .field-row .field-value input {\n    width: 100%;\n    padding: 4px 6px;\n    box-sizing: border-box;\n    outline: none;\n    border: 1px solid #eee;\n    height: 28px;\n    border-radius: 2px;\n    -webkit-appearance: none; }\n\n.avatar-upload {\n  background-color: #bc3d1e;\n  border-radius: 50%;\n  height: 90px;\n  width: 90px;\n  position: relative;\n  display: block;\n  margin: auto;\n  overflow: hidden; }\n  .avatar-upload input[type=file] {\n    position: absolute;\n    height: 100%;\n    width: 100%;\n    left: 0;\n    top: 0;\n    z-index: 2;\n    opacity: 0; }\n  .avatar-upload img {\n    height: 100%;\n    width: 100%;\n    position: relative;\n    z-index: 1;\n    border-radius: 50%; }\n", "", {"version":3,"sources":["/./src/views/sign.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB,EAAE;EACrB;IACE,gBAAgB;IAChB,aAAa;IACb,UAAU;IACV,oCAAoC;IAIpC,4BAA4B,EAAE;IAC9B;MACE,eAAe;MACf,eAAe,EAAE;;AAEvB;EACE,eAAe,EAAE;EACjB;IACE,cAAc,EAAE;EAClB;IACE,mBAAmB;IACnB,YAAY,EAAE;EAChB;IACE,YAAY;IACZ,iBAAiB;IACjB,uBAAuB;IACvB,cAAc;IACd,uBAAuB;IACvB,aAAa;IACb,mBAAmB;IACnB,yBAAyB,EAAE;;AAE/B;EACE,0BAA0B;EAC1B,mBAAmB;EACnB,aAAa;EACb,YAAY;EACZ,mBAAmB;EACnB,eAAe;EACf,aAAa;EACb,iBAAiB,EAAE;EACnB;IACE,mBAAmB;IACnB,aAAa;IACb,YAAY;IACZ,QAAQ;IACR,OAAO;IACP,WAAW;IACX,WAAW,EAAE;EACf;IACE,aAAa;IACb,YAAY;IACZ,mBAAmB;IACnB,WAAW;IACX,mBAAmB,EAAE","file":"sign.vue","sourcesContent":[".form {\n  padding: 50px 20px; }\n  .form .btm {\n    position: fixed;\n    bottom: 20px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n    -moz-transform: translateX(-50%);\n    -ms-transform: translateX(-50%);\n    -o-transform: translateX(-50%);\n    transform: translateX(-50%); }\n    .form .btm a {\n      color: #D6AF7D;\n      padding: 0 5px; }\n\n.field-row {\n  margin: 25px 0; }\n  .field-row:first-child {\n    margin-top: 0; }\n  .field-row .field-title {\n    margin-bottom: 6px;\n    color: #666; }\n  .field-row .field-value input {\n    width: 100%;\n    padding: 4px 6px;\n    box-sizing: border-box;\n    outline: none;\n    border: 1px solid #eee;\n    height: 28px;\n    border-radius: 2px;\n    -webkit-appearance: none; }\n\n.avatar-upload {\n  background-color: #bc3d1e;\n  border-radius: 50%;\n  height: 90px;\n  width: 90px;\n  position: relative;\n  display: block;\n  margin: auto;\n  overflow: hidden; }\n  .avatar-upload input[type=file] {\n    position: absolute;\n    height: 100%;\n    width: 100%;\n    left: 0;\n    top: 0;\n    z-index: 2;\n    opacity: 0; }\n  .avatar-upload img {\n    height: 100%;\n    width: 100%;\n    position: relative;\n    z-index: 1;\n    border-radius: 50%; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 137 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var auth = __webpack_require__(10);
-	var MAlert = __webpack_require__(128);
-	
-	module.exports = {
-	    name: 'SignView',
-	    components: {
-	        'm-alert': MAlert
-	    },
-	    data: function data() {
-	        return {
-	            username: '',
-	            password: '',
-	            avatar: null,
-	            avatarDataUrl: null,
-	
-	            alert: {
-	                content: '',
-	                show: false,
-	                openFn: function openFn(txt, autoHide) {
-	                    this.content = txt;
-	                    this.show = true;
-	                    if (autoHide) {
-	                        this.hideFn();
-	                    }
-	                },
-	                hideFn: function hideFn(duration) {
-	                    var _this = this;
-	
-	                    clearTimeout(this.timer);
-	                    this.timer = setTimeout(function () {
-	                        _this.show = false;
-	                    }, duration || 1500);
-	                }
-	            }
-	        };
-	    },
-	    methods: {
-	        onChangeFileInput: function onChangeFileInput(e) {
-	            var files = e.target.files;
-	            if (!files || files.length < 1) return;
-	
-	            var self = this;
-	            var file = files[0];
-	            var filefilers = /^(image\/gif|image\/jpeg|image\/png)$/i;
-	            var fileReader = new FileReader();
-	            fileReader.onload = function (fe) {
-	                self.avatarDataUrl = fe.target.result;
-	            };
-	            if (!filefilers.test(file.type)) {
-	                alert('只支持.gif, .jpeg, .png');
-	                return;
-	            }
-	            fileReader.readAsDataURL(file);
-	            this.avatar = file;
-	        },
-	        onClickSubmit: function onClickSubmit() {
-	            if (!this.username || !this.password) {
-	                return;
-	            }
-	
-	            this.alert.openFn('请稍等...');
-	
-	            var cb = function cb() {
-	                var _this2 = this;
-	
-	                var promise = auth.sign(this.username, this.password, this.avatar);
-	
-	                promise.then(function (resp) {
-	                    if (resp.code != 0) {
-	                        _this2.alert.openFn(resp.message, true);
-	                    } else {
-	                        _this2.alert.hideFn();
-	                        _this2.$route.router.go('./index');
-	                    }
-	                });
-	            };
-	
-	            setTimeout(cb.bind(this), 300);
-	        }
-	    }
-	};
-
-/***/ },
-/* 138 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div class=\"form\">\n    <form action=\"\">\n        <div class=\"field-row\">\n            <div class=\"field-title hide\">\n                <label for=\"\">头像</label>\n            </div>\n            <div class=\"field-value\">\n                <span class=\"avatar-upload\">\n                    <input type=\"file\" name=\"\" id=\"\" @change=\"onChangeFileInput\">\n                    <!-- \n                        src=\"{{ avatarDataUrl }}\" // 如果找不到会报错\n                        :src=\"avatarDataUrl\"  // 如果是用指令的话就不用再使用插值写法了\n                     -->\n                    <img v-if=\"avatarDataUrl\" :src=\"avatarDataUrl\" alt=\"\">\n                </span>\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <div class=\"field-title\">\n                <label for=\"\">用户名</label>\n            </div>\n            <div class=\"field-value\">\n                <input type=\"text\" name=\"username\" v-model=\"username\">\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <div class=\"field-title\">\n                <label for=\"\">密码</label>\n            </div>\n            <div class=\"field-value\">\n                <input type=\"password\" name=\"password\" v-model=\"password\">\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <input type=\"submit\" class=\"btn btn-block btn-primary\" value=\"注册\" @click.prevent=\"onClickSubmit\">\n        </div>\n    </form>\n\n    <div class=\"btm\">\n        <a v-link=\"'login'\">登录</a>\n    </div>\n\n    <m-alert :content=\"alert.content\" :show=\"alert.show\"></m-alert>\n</div>\n";
-
-/***/ },
-/* 139 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__vue_script__ = __webpack_require__(140)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/views/record.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(167)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/views/record.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 140 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var auth = __webpack_require__(10);
-	var socket = __webpack_require__(72).socket;
-	var recordStore = __webpack_require__(141);
-	var userStore = __webpack_require__(145);
-	var HeaderView = __webpack_require__(151);
-	var RecordItemView = __webpack_require__(162);
-	
-	module.exports = {
-	    name: 'RecordView',
-	    components: {
-	        'm-header': HeaderView,
-	        'm-item': RecordItemView
-	    },
-	    data: function data() {
-	        return {
-	            records: []
-	        };
-	    },
-	    route: {
-	        canActivate: function canActivate(transition) {
-	            if (auth.user.authenticated) {
-	                return true;
-	            } else {
-	                    transition.redirect('./login');
-	                    return false;
-	                }
-	        },
-	
-	        data: function data(transition) {
-	            return {
-	                records: recordStore.fetch(auth.user.userId)
-	            };
-	        }
-	    },
-	    methods: {
-	        onCreateRecord: function onCreateRecord(resp) {
-	            var _this = this;
-	
-	            var attr = resp.data.attr;
-	            var p = recordStore.fetch(attr.receiver, attr.sender);
-	            p.then(function (records) {
-	                var record = records[0];
-	
-	                record.unread = true;
-	                record && _this.records.push(record);
-	            });
-	        },
-	        onReceiveMessage: function onReceiveMessage(resp) {
-	            this.records.forEach(function (item) {
-	                if (item.messageId === resp.data.messageId) {
-	                    item.unread = true;
-	                    item.status = 1;
-	                    item.recent = resp.data.attr;
-	                }
-	            });
-	        },
-	        onDeleteRecord: function onDeleteRecord(author, contacter, index) {
-	            var self = this;
-	            var p = userStore.deleteRecord(author, contacter);
-	            p.then(function (isOk) {
-	                if (isOk) {
-	                    var record = self.records[index];
-	
-	                    record.status = 0;
-	                    self.records.$set(index, record);
-	                }
-	            });
-	        }
-	    },
-	
-	    attached: function attached() {
-	        socket.on('message', this.onReceiveMessage.bind(this));
-	        socket.on('record', this.onCreateRecord.bind(this));
-	    },
-	    detached: function detached() {
-	        socket.removeListener('message');
-	        socket.removeListener('record');
-	    }
-	};
-
-/***/ },
-/* 141 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var _promise = __webpack_require__(11);
-	
-	var _promise2 = _interopRequireDefault(_promise);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var $ = __webpack_require__(66);
-	var _ = __webpack_require__(144);
-	
-	// var LS = localStorage;
-	
-	// const ls_key_records = 'records';
-	// const ls_key_messages = 'messages';
-	// var records = JSON.parse(LS.getItem(ls_key_records)) || [];
-	// var messages = JSON.parse(LS.getItem(ls_key_messages)) || [];
-	
-	var recordStore = {};
-	
-	recordStore.getMessageList = function (author, contacter) {
-	    var query = {
-	        author: author,
-	        contacter: contacter
-	    };
-	
-	    var promise = new _promise2.default(function (resolve, reject) {
-	        $.getJSON('/messages', query, function (resp) {
-	            resolve(resp.data.messages);
-	        });
-	    });
-	
-	    return promise;
-	};
-	
-	/**
-	 * 获取用户的所有聊天记录列表／获取用户与特定联系人的聊天记录信息
-	 * @param  {string} author 用户id
-	 * @param  {string} relate 联系人id
-	 * @return {Promise}
-	 */
-	recordStore.fetch = function (author, relate) {
-	    var query = { userId: author };
-	    relate && (query.relate = relate);
-	    var promise = new _promise2.default(function (resolve, reject) {
-	        $.get('/records', query, function (resp) {
-	            resolve(resp.data.records);
-	        });
-	    });
-	    return promise;
-	};
-	
-	module.exports = recordStore;
-
-/***/ },
-/* 142 */,
-/* 143 */,
-/* 144 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Underscore.js 1.8.3
-	//     http://underscorejs.org
-	//     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
-	//     Underscore may be freely distributed under the MIT license.
-	
-	(function() {
-	
-	  // Baseline setup
-	  // --------------
-	
-	  // Establish the root object, `window` in the browser, or `exports` on the server.
-	  var root = this;
-	
-	  // Save the previous value of the `_` variable.
-	  var previousUnderscore = root._;
-	
-	  // Save bytes in the minified (but not gzipped) version:
-	  var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
-	
-	  // Create quick reference variables for speed access to core prototypes.
-	  var
-	    push             = ArrayProto.push,
-	    slice            = ArrayProto.slice,
-	    toString         = ObjProto.toString,
-	    hasOwnProperty   = ObjProto.hasOwnProperty;
-	
-	  // All **ECMAScript 5** native function implementations that we hope to use
-	  // are declared here.
-	  var
-	    nativeIsArray      = Array.isArray,
-	    nativeKeys         = Object.keys,
-	    nativeBind         = FuncProto.bind,
-	    nativeCreate       = Object.create;
-	
-	  // Naked function reference for surrogate-prototype-swapping.
-	  var Ctor = function(){};
-	
-	  // Create a safe reference to the Underscore object for use below.
-	  var _ = function(obj) {
-	    if (obj instanceof _) return obj;
-	    if (!(this instanceof _)) return new _(obj);
-	    this._wrapped = obj;
-	  };
-	
-	  // Export the Underscore object for **Node.js**, with
-	  // backwards-compatibility for the old `require()` API. If we're in
-	  // the browser, add `_` as a global object.
-	  if (true) {
-	    if (typeof module !== 'undefined' && module.exports) {
-	      exports = module.exports = _;
-	    }
-	    exports._ = _;
-	  } else {
-	    root._ = _;
-	  }
-	
-	  // Current version.
-	  _.VERSION = '1.8.3';
-	
-	  // Internal function that returns an efficient (for current engines) version
-	  // of the passed-in callback, to be repeatedly applied in other Underscore
-	  // functions.
-	  var optimizeCb = function(func, context, argCount) {
-	    if (context === void 0) return func;
-	    switch (argCount == null ? 3 : argCount) {
-	      case 1: return function(value) {
-	        return func.call(context, value);
-	      };
-	      case 2: return function(value, other) {
-	        return func.call(context, value, other);
-	      };
-	      case 3: return function(value, index, collection) {
-	        return func.call(context, value, index, collection);
-	      };
-	      case 4: return function(accumulator, value, index, collection) {
-	        return func.call(context, accumulator, value, index, collection);
-	      };
-	    }
-	    return function() {
-	      return func.apply(context, arguments);
-	    };
-	  };
-	
-	  // A mostly-internal function to generate callbacks that can be applied
-	  // to each element in a collection, returning the desired result — either
-	  // identity, an arbitrary callback, a property matcher, or a property accessor.
-	  var cb = function(value, context, argCount) {
-	    if (value == null) return _.identity;
-	    if (_.isFunction(value)) return optimizeCb(value, context, argCount);
-	    if (_.isObject(value)) return _.matcher(value);
-	    return _.property(value);
-	  };
-	  _.iteratee = function(value, context) {
-	    return cb(value, context, Infinity);
-	  };
-	
-	  // An internal function for creating assigner functions.
-	  var createAssigner = function(keysFunc, undefinedOnly) {
-	    return function(obj) {
-	      var length = arguments.length;
-	      if (length < 2 || obj == null) return obj;
-	      for (var index = 1; index < length; index++) {
-	        var source = arguments[index],
-	            keys = keysFunc(source),
-	            l = keys.length;
-	        for (var i = 0; i < l; i++) {
-	          var key = keys[i];
-	          if (!undefinedOnly || obj[key] === void 0) obj[key] = source[key];
-	        }
-	      }
-	      return obj;
-	    };
-	  };
-	
-	  // An internal function for creating a new object that inherits from another.
-	  var baseCreate = function(prototype) {
-	    if (!_.isObject(prototype)) return {};
-	    if (nativeCreate) return nativeCreate(prototype);
-	    Ctor.prototype = prototype;
-	    var result = new Ctor;
-	    Ctor.prototype = null;
-	    return result;
-	  };
-	
-	  var property = function(key) {
-	    return function(obj) {
-	      return obj == null ? void 0 : obj[key];
-	    };
-	  };
-	
-	  // Helper for collection methods to determine whether a collection
-	  // should be iterated as an array or as an object
-	  // Related: http://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength
-	  // Avoids a very nasty iOS 8 JIT bug on ARM-64. #2094
-	  var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
-	  var getLength = property('length');
-	  var isArrayLike = function(collection) {
-	    var length = getLength(collection);
-	    return typeof length == 'number' && length >= 0 && length <= MAX_ARRAY_INDEX;
-	  };
-	
-	  // Collection Functions
-	  // --------------------
-	
-	  // The cornerstone, an `each` implementation, aka `forEach`.
-	  // Handles raw objects in addition to array-likes. Treats all
-	  // sparse array-likes as if they were dense.
-	  _.each = _.forEach = function(obj, iteratee, context) {
-	    iteratee = optimizeCb(iteratee, context);
-	    var i, length;
-	    if (isArrayLike(obj)) {
-	      for (i = 0, length = obj.length; i < length; i++) {
-	        iteratee(obj[i], i, obj);
-	      }
-	    } else {
-	      var keys = _.keys(obj);
-	      for (i = 0, length = keys.length; i < length; i++) {
-	        iteratee(obj[keys[i]], keys[i], obj);
-	      }
-	    }
-	    return obj;
-	  };
-	
-	  // Return the results of applying the iteratee to each element.
-	  _.map = _.collect = function(obj, iteratee, context) {
-	    iteratee = cb(iteratee, context);
-	    var keys = !isArrayLike(obj) && _.keys(obj),
-	        length = (keys || obj).length,
-	        results = Array(length);
-	    for (var index = 0; index < length; index++) {
-	      var currentKey = keys ? keys[index] : index;
-	      results[index] = iteratee(obj[currentKey], currentKey, obj);
-	    }
-	    return results;
-	  };
-	
-	  // Create a reducing function iterating left or right.
-	  function createReduce(dir) {
-	    // Optimized iterator function as using arguments.length
-	    // in the main function will deoptimize the, see #1991.
-	    function iterator(obj, iteratee, memo, keys, index, length) {
-	      for (; index >= 0 && index < length; index += dir) {
-	        var currentKey = keys ? keys[index] : index;
-	        memo = iteratee(memo, obj[currentKey], currentKey, obj);
-	      }
-	      return memo;
-	    }
-	
-	    return function(obj, iteratee, memo, context) {
-	      iteratee = optimizeCb(iteratee, context, 4);
-	      var keys = !isArrayLike(obj) && _.keys(obj),
-	          length = (keys || obj).length,
-	          index = dir > 0 ? 0 : length - 1;
-	      // Determine the initial value if none is provided.
-	      if (arguments.length < 3) {
-	        memo = obj[keys ? keys[index] : index];
-	        index += dir;
-	      }
-	      return iterator(obj, iteratee, memo, keys, index, length);
-	    };
-	  }
-	
-	  // **Reduce** builds up a single result from a list of values, aka `inject`,
-	  // or `foldl`.
-	  _.reduce = _.foldl = _.inject = createReduce(1);
-	
-	  // The right-associative version of reduce, also known as `foldr`.
-	  _.reduceRight = _.foldr = createReduce(-1);
-	
-	  // Return the first value which passes a truth test. Aliased as `detect`.
-	  _.find = _.detect = function(obj, predicate, context) {
-	    var key;
-	    if (isArrayLike(obj)) {
-	      key = _.findIndex(obj, predicate, context);
-	    } else {
-	      key = _.findKey(obj, predicate, context);
-	    }
-	    if (key !== void 0 && key !== -1) return obj[key];
-	  };
-	
-	  // Return all the elements that pass a truth test.
-	  // Aliased as `select`.
-	  _.filter = _.select = function(obj, predicate, context) {
-	    var results = [];
-	    predicate = cb(predicate, context);
-	    _.each(obj, function(value, index, list) {
-	      if (predicate(value, index, list)) results.push(value);
-	    });
-	    return results;
-	  };
-	
-	  // Return all the elements for which a truth test fails.
-	  _.reject = function(obj, predicate, context) {
-	    return _.filter(obj, _.negate(cb(predicate)), context);
-	  };
-	
-	  // Determine whether all of the elements match a truth test.
-	  // Aliased as `all`.
-	  _.every = _.all = function(obj, predicate, context) {
-	    predicate = cb(predicate, context);
-	    var keys = !isArrayLike(obj) && _.keys(obj),
-	        length = (keys || obj).length;
-	    for (var index = 0; index < length; index++) {
-	      var currentKey = keys ? keys[index] : index;
-	      if (!predicate(obj[currentKey], currentKey, obj)) return false;
-	    }
-	    return true;
-	  };
-	
-	  // Determine if at least one element in the object matches a truth test.
-	  // Aliased as `any`.
-	  _.some = _.any = function(obj, predicate, context) {
-	    predicate = cb(predicate, context);
-	    var keys = !isArrayLike(obj) && _.keys(obj),
-	        length = (keys || obj).length;
-	    for (var index = 0; index < length; index++) {
-	      var currentKey = keys ? keys[index] : index;
-	      if (predicate(obj[currentKey], currentKey, obj)) return true;
-	    }
-	    return false;
-	  };
-	
-	  // Determine if the array or object contains a given item (using `===`).
-	  // Aliased as `includes` and `include`.
-	  _.contains = _.includes = _.include = function(obj, item, fromIndex, guard) {
-	    if (!isArrayLike(obj)) obj = _.values(obj);
-	    if (typeof fromIndex != 'number' || guard) fromIndex = 0;
-	    return _.indexOf(obj, item, fromIndex) >= 0;
-	  };
-	
-	  // Invoke a method (with arguments) on every item in a collection.
-	  _.invoke = function(obj, method) {
-	    var args = slice.call(arguments, 2);
-	    var isFunc = _.isFunction(method);
-	    return _.map(obj, function(value) {
-	      var func = isFunc ? method : value[method];
-	      return func == null ? func : func.apply(value, args);
-	    });
-	  };
-	
-	  // Convenience version of a common use case of `map`: fetching a property.
-	  _.pluck = function(obj, key) {
-	    return _.map(obj, _.property(key));
-	  };
-	
-	  // Convenience version of a common use case of `filter`: selecting only objects
-	  // containing specific `key:value` pairs.
-	  _.where = function(obj, attrs) {
-	    return _.filter(obj, _.matcher(attrs));
-	  };
-	
-	  // Convenience version of a common use case of `find`: getting the first object
-	  // containing specific `key:value` pairs.
-	  _.findWhere = function(obj, attrs) {
-	    return _.find(obj, _.matcher(attrs));
-	  };
-	
-	  // Return the maximum element (or element-based computation).
-	  _.max = function(obj, iteratee, context) {
-	    var result = -Infinity, lastComputed = -Infinity,
-	        value, computed;
-	    if (iteratee == null && obj != null) {
-	      obj = isArrayLike(obj) ? obj : _.values(obj);
-	      for (var i = 0, length = obj.length; i < length; i++) {
-	        value = obj[i];
-	        if (value > result) {
-	          result = value;
-	        }
-	      }
-	    } else {
-	      iteratee = cb(iteratee, context);
-	      _.each(obj, function(value, index, list) {
-	        computed = iteratee(value, index, list);
-	        if (computed > lastComputed || computed === -Infinity && result === -Infinity) {
-	          result = value;
-	          lastComputed = computed;
-	        }
-	      });
-	    }
-	    return result;
-	  };
-	
-	  // Return the minimum element (or element-based computation).
-	  _.min = function(obj, iteratee, context) {
-	    var result = Infinity, lastComputed = Infinity,
-	        value, computed;
-	    if (iteratee == null && obj != null) {
-	      obj = isArrayLike(obj) ? obj : _.values(obj);
-	      for (var i = 0, length = obj.length; i < length; i++) {
-	        value = obj[i];
-	        if (value < result) {
-	          result = value;
-	        }
-	      }
-	    } else {
-	      iteratee = cb(iteratee, context);
-	      _.each(obj, function(value, index, list) {
-	        computed = iteratee(value, index, list);
-	        if (computed < lastComputed || computed === Infinity && result === Infinity) {
-	          result = value;
-	          lastComputed = computed;
-	        }
-	      });
-	    }
-	    return result;
-	  };
-	
-	  // Shuffle a collection, using the modern version of the
-	  // [Fisher-Yates shuffle](http://en.wikipedia.org/wiki/Fisher–Yates_shuffle).
-	  _.shuffle = function(obj) {
-	    var set = isArrayLike(obj) ? obj : _.values(obj);
-	    var length = set.length;
-	    var shuffled = Array(length);
-	    for (var index = 0, rand; index < length; index++) {
-	      rand = _.random(0, index);
-	      if (rand !== index) shuffled[index] = shuffled[rand];
-	      shuffled[rand] = set[index];
-	    }
-	    return shuffled;
-	  };
-	
-	  // Sample **n** random values from a collection.
-	  // If **n** is not specified, returns a single random element.
-	  // The internal `guard` argument allows it to work with `map`.
-	  _.sample = function(obj, n, guard) {
-	    if (n == null || guard) {
-	      if (!isArrayLike(obj)) obj = _.values(obj);
-	      return obj[_.random(obj.length - 1)];
-	    }
-	    return _.shuffle(obj).slice(0, Math.max(0, n));
-	  };
-	
-	  // Sort the object's values by a criterion produced by an iteratee.
-	  _.sortBy = function(obj, iteratee, context) {
-	    iteratee = cb(iteratee, context);
-	    return _.pluck(_.map(obj, function(value, index, list) {
-	      return {
-	        value: value,
-	        index: index,
-	        criteria: iteratee(value, index, list)
-	      };
-	    }).sort(function(left, right) {
-	      var a = left.criteria;
-	      var b = right.criteria;
-	      if (a !== b) {
-	        if (a > b || a === void 0) return 1;
-	        if (a < b || b === void 0) return -1;
-	      }
-	      return left.index - right.index;
-	    }), 'value');
-	  };
-	
-	  // An internal function used for aggregate "group by" operations.
-	  var group = function(behavior) {
-	    return function(obj, iteratee, context) {
-	      var result = {};
-	      iteratee = cb(iteratee, context);
-	      _.each(obj, function(value, index) {
-	        var key = iteratee(value, index, obj);
-	        behavior(result, value, key);
-	      });
-	      return result;
-	    };
-	  };
-	
-	  // Groups the object's values by a criterion. Pass either a string attribute
-	  // to group by, or a function that returns the criterion.
-	  _.groupBy = group(function(result, value, key) {
-	    if (_.has(result, key)) result[key].push(value); else result[key] = [value];
-	  });
-	
-	  // Indexes the object's values by a criterion, similar to `groupBy`, but for
-	  // when you know that your index values will be unique.
-	  _.indexBy = group(function(result, value, key) {
-	    result[key] = value;
-	  });
-	
-	  // Counts instances of an object that group by a certain criterion. Pass
-	  // either a string attribute to count by, or a function that returns the
-	  // criterion.
-	  _.countBy = group(function(result, value, key) {
-	    if (_.has(result, key)) result[key]++; else result[key] = 1;
-	  });
-	
-	  // Safely create a real, live array from anything iterable.
-	  _.toArray = function(obj) {
-	    if (!obj) return [];
-	    if (_.isArray(obj)) return slice.call(obj);
-	    if (isArrayLike(obj)) return _.map(obj, _.identity);
-	    return _.values(obj);
-	  };
-	
-	  // Return the number of elements in an object.
-	  _.size = function(obj) {
-	    if (obj == null) return 0;
-	    return isArrayLike(obj) ? obj.length : _.keys(obj).length;
-	  };
-	
-	  // Split a collection into two arrays: one whose elements all satisfy the given
-	  // predicate, and one whose elements all do not satisfy the predicate.
-	  _.partition = function(obj, predicate, context) {
-	    predicate = cb(predicate, context);
-	    var pass = [], fail = [];
-	    _.each(obj, function(value, key, obj) {
-	      (predicate(value, key, obj) ? pass : fail).push(value);
-	    });
-	    return [pass, fail];
-	  };
-	
-	  // Array Functions
-	  // ---------------
-	
-	  // Get the first element of an array. Passing **n** will return the first N
-	  // values in the array. Aliased as `head` and `take`. The **guard** check
-	  // allows it to work with `_.map`.
-	  _.first = _.head = _.take = function(array, n, guard) {
-	    if (array == null) return void 0;
-	    if (n == null || guard) return array[0];
-	    return _.initial(array, array.length - n);
-	  };
-	
-	  // Returns everything but the last entry of the array. Especially useful on
-	  // the arguments object. Passing **n** will return all the values in
-	  // the array, excluding the last N.
-	  _.initial = function(array, n, guard) {
-	    return slice.call(array, 0, Math.max(0, array.length - (n == null || guard ? 1 : n)));
-	  };
-	
-	  // Get the last element of an array. Passing **n** will return the last N
-	  // values in the array.
-	  _.last = function(array, n, guard) {
-	    if (array == null) return void 0;
-	    if (n == null || guard) return array[array.length - 1];
-	    return _.rest(array, Math.max(0, array.length - n));
-	  };
-	
-	  // Returns everything but the first entry of the array. Aliased as `tail` and `drop`.
-	  // Especially useful on the arguments object. Passing an **n** will return
-	  // the rest N values in the array.
-	  _.rest = _.tail = _.drop = function(array, n, guard) {
-	    return slice.call(array, n == null || guard ? 1 : n);
-	  };
-	
-	  // Trim out all falsy values from an array.
-	  _.compact = function(array) {
-	    return _.filter(array, _.identity);
-	  };
-	
-	  // Internal implementation of a recursive `flatten` function.
-	  var flatten = function(input, shallow, strict, startIndex) {
-	    var output = [], idx = 0;
-	    for (var i = startIndex || 0, length = getLength(input); i < length; i++) {
-	      var value = input[i];
-	      if (isArrayLike(value) && (_.isArray(value) || _.isArguments(value))) {
-	        //flatten current level of array or arguments object
-	        if (!shallow) value = flatten(value, shallow, strict);
-	        var j = 0, len = value.length;
-	        output.length += len;
-	        while (j < len) {
-	          output[idx++] = value[j++];
-	        }
-	      } else if (!strict) {
-	        output[idx++] = value;
-	      }
-	    }
-	    return output;
-	  };
-	
-	  // Flatten out an array, either recursively (by default), or just one level.
-	  _.flatten = function(array, shallow) {
-	    return flatten(array, shallow, false);
-	  };
-	
-	  // Return a version of the array that does not contain the specified value(s).
-	  _.without = function(array) {
-	    return _.difference(array, slice.call(arguments, 1));
-	  };
-	
-	  // Produce a duplicate-free version of the array. If the array has already
-	  // been sorted, you have the option of using a faster algorithm.
-	  // Aliased as `unique`.
-	  _.uniq = _.unique = function(array, isSorted, iteratee, context) {
-	    if (!_.isBoolean(isSorted)) {
-	      context = iteratee;
-	      iteratee = isSorted;
-	      isSorted = false;
-	    }
-	    if (iteratee != null) iteratee = cb(iteratee, context);
-	    var result = [];
-	    var seen = [];
-	    for (var i = 0, length = getLength(array); i < length; i++) {
-	      var value = array[i],
-	          computed = iteratee ? iteratee(value, i, array) : value;
-	      if (isSorted) {
-	        if (!i || seen !== computed) result.push(value);
-	        seen = computed;
-	      } else if (iteratee) {
-	        if (!_.contains(seen, computed)) {
-	          seen.push(computed);
-	          result.push(value);
-	        }
-	      } else if (!_.contains(result, value)) {
-	        result.push(value);
-	      }
-	    }
-	    return result;
-	  };
-	
-	  // Produce an array that contains the union: each distinct element from all of
-	  // the passed-in arrays.
-	  _.union = function() {
-	    return _.uniq(flatten(arguments, true, true));
-	  };
-	
-	  // Produce an array that contains every item shared between all the
-	  // passed-in arrays.
-	  _.intersection = function(array) {
-	    var result = [];
-	    var argsLength = arguments.length;
-	    for (var i = 0, length = getLength(array); i < length; i++) {
-	      var item = array[i];
-	      if (_.contains(result, item)) continue;
-	      for (var j = 1; j < argsLength; j++) {
-	        if (!_.contains(arguments[j], item)) break;
-	      }
-	      if (j === argsLength) result.push(item);
-	    }
-	    return result;
-	  };
-	
-	  // Take the difference between one array and a number of other arrays.
-	  // Only the elements present in just the first array will remain.
-	  _.difference = function(array) {
-	    var rest = flatten(arguments, true, true, 1);
-	    return _.filter(array, function(value){
-	      return !_.contains(rest, value);
-	    });
-	  };
-	
-	  // Zip together multiple lists into a single array -- elements that share
-	  // an index go together.
-	  _.zip = function() {
-	    return _.unzip(arguments);
-	  };
-	
-	  // Complement of _.zip. Unzip accepts an array of arrays and groups
-	  // each array's elements on shared indices
-	  _.unzip = function(array) {
-	    var length = array && _.max(array, getLength).length || 0;
-	    var result = Array(length);
-	
-	    for (var index = 0; index < length; index++) {
-	      result[index] = _.pluck(array, index);
-	    }
-	    return result;
-	  };
-	
-	  // Converts lists into objects. Pass either a single array of `[key, value]`
-	  // pairs, or two parallel arrays of the same length -- one of keys, and one of
-	  // the corresponding values.
-	  _.object = function(list, values) {
-	    var result = {};
-	    for (var i = 0, length = getLength(list); i < length; i++) {
-	      if (values) {
-	        result[list[i]] = values[i];
-	      } else {
-	        result[list[i][0]] = list[i][1];
-	      }
-	    }
-	    return result;
-	  };
-	
-	  // Generator function to create the findIndex and findLastIndex functions
-	  function createPredicateIndexFinder(dir) {
-	    return function(array, predicate, context) {
-	      predicate = cb(predicate, context);
-	      var length = getLength(array);
-	      var index = dir > 0 ? 0 : length - 1;
-	      for (; index >= 0 && index < length; index += dir) {
-	        if (predicate(array[index], index, array)) return index;
-	      }
-	      return -1;
-	    };
-	  }
-	
-	  // Returns the first index on an array-like that passes a predicate test
-	  _.findIndex = createPredicateIndexFinder(1);
-	  _.findLastIndex = createPredicateIndexFinder(-1);
-	
-	  // Use a comparator function to figure out the smallest index at which
-	  // an object should be inserted so as to maintain order. Uses binary search.
-	  _.sortedIndex = function(array, obj, iteratee, context) {
-	    iteratee = cb(iteratee, context, 1);
-	    var value = iteratee(obj);
-	    var low = 0, high = getLength(array);
-	    while (low < high) {
-	      var mid = Math.floor((low + high) / 2);
-	      if (iteratee(array[mid]) < value) low = mid + 1; else high = mid;
-	    }
-	    return low;
-	  };
-	
-	  // Generator function to create the indexOf and lastIndexOf functions
-	  function createIndexFinder(dir, predicateFind, sortedIndex) {
-	    return function(array, item, idx) {
-	      var i = 0, length = getLength(array);
-	      if (typeof idx == 'number') {
-	        if (dir > 0) {
-	            i = idx >= 0 ? idx : Math.max(idx + length, i);
-	        } else {
-	            length = idx >= 0 ? Math.min(idx + 1, length) : idx + length + 1;
-	        }
-	      } else if (sortedIndex && idx && length) {
-	        idx = sortedIndex(array, item);
-	        return array[idx] === item ? idx : -1;
-	      }
-	      if (item !== item) {
-	        idx = predicateFind(slice.call(array, i, length), _.isNaN);
-	        return idx >= 0 ? idx + i : -1;
-	      }
-	      for (idx = dir > 0 ? i : length - 1; idx >= 0 && idx < length; idx += dir) {
-	        if (array[idx] === item) return idx;
-	      }
-	      return -1;
-	    };
-	  }
-	
-	  // Return the position of the first occurrence of an item in an array,
-	  // or -1 if the item is not included in the array.
-	  // If the array is large and already in sort order, pass `true`
-	  // for **isSorted** to use binary search.
-	  _.indexOf = createIndexFinder(1, _.findIndex, _.sortedIndex);
-	  _.lastIndexOf = createIndexFinder(-1, _.findLastIndex);
-	
-	  // Generate an integer Array containing an arithmetic progression. A port of
-	  // the native Python `range()` function. See
-	  // [the Python documentation](http://docs.python.org/library/functions.html#range).
-	  _.range = function(start, stop, step) {
-	    if (stop == null) {
-	      stop = start || 0;
-	      start = 0;
-	    }
-	    step = step || 1;
-	
-	    var length = Math.max(Math.ceil((stop - start) / step), 0);
-	    var range = Array(length);
-	
-	    for (var idx = 0; idx < length; idx++, start += step) {
-	      range[idx] = start;
-	    }
-	
-	    return range;
-	  };
-	
-	  // Function (ahem) Functions
-	  // ------------------
-	
-	  // Determines whether to execute a function as a constructor
-	  // or a normal function with the provided arguments
-	  var executeBound = function(sourceFunc, boundFunc, context, callingContext, args) {
-	    if (!(callingContext instanceof boundFunc)) return sourceFunc.apply(context, args);
-	    var self = baseCreate(sourceFunc.prototype);
-	    var result = sourceFunc.apply(self, args);
-	    if (_.isObject(result)) return result;
-	    return self;
-	  };
-	
-	  // Create a function bound to a given object (assigning `this`, and arguments,
-	  // optionally). Delegates to **ECMAScript 5**'s native `Function.bind` if
-	  // available.
-	  _.bind = function(func, context) {
-	    if (nativeBind && func.bind === nativeBind) return nativeBind.apply(func, slice.call(arguments, 1));
-	    if (!_.isFunction(func)) throw new TypeError('Bind must be called on a function');
-	    var args = slice.call(arguments, 2);
-	    var bound = function() {
-	      return executeBound(func, bound, context, this, args.concat(slice.call(arguments)));
-	    };
-	    return bound;
-	  };
-	
-	  // Partially apply a function by creating a version that has had some of its
-	  // arguments pre-filled, without changing its dynamic `this` context. _ acts
-	  // as a placeholder, allowing any combination of arguments to be pre-filled.
-	  _.partial = function(func) {
-	    var boundArgs = slice.call(arguments, 1);
-	    var bound = function() {
-	      var position = 0, length = boundArgs.length;
-	      var args = Array(length);
-	      for (var i = 0; i < length; i++) {
-	        args[i] = boundArgs[i] === _ ? arguments[position++] : boundArgs[i];
-	      }
-	      while (position < arguments.length) args.push(arguments[position++]);
-	      return executeBound(func, bound, this, this, args);
-	    };
-	    return bound;
-	  };
-	
-	  // Bind a number of an object's methods to that object. Remaining arguments
-	  // are the method names to be bound. Useful for ensuring that all callbacks
-	  // defined on an object belong to it.
-	  _.bindAll = function(obj) {
-	    var i, length = arguments.length, key;
-	    if (length <= 1) throw new Error('bindAll must be passed function names');
-	    for (i = 1; i < length; i++) {
-	      key = arguments[i];
-	      obj[key] = _.bind(obj[key], obj);
-	    }
-	    return obj;
-	  };
-	
-	  // Memoize an expensive function by storing its results.
-	  _.memoize = function(func, hasher) {
-	    var memoize = function(key) {
-	      var cache = memoize.cache;
-	      var address = '' + (hasher ? hasher.apply(this, arguments) : key);
-	      if (!_.has(cache, address)) cache[address] = func.apply(this, arguments);
-	      return cache[address];
-	    };
-	    memoize.cache = {};
-	    return memoize;
-	  };
-	
-	  // Delays a function for the given number of milliseconds, and then calls
-	  // it with the arguments supplied.
-	  _.delay = function(func, wait) {
-	    var args = slice.call(arguments, 2);
-	    return setTimeout(function(){
-	      return func.apply(null, args);
-	    }, wait);
-	  };
-	
-	  // Defers a function, scheduling it to run after the current call stack has
-	  // cleared.
-	  _.defer = _.partial(_.delay, _, 1);
-	
-	  // Returns a function, that, when invoked, will only be triggered at most once
-	  // during a given window of time. Normally, the throttled function will run
-	  // as much as it can, without ever going more than once per `wait` duration;
-	  // but if you'd like to disable the execution on the leading edge, pass
-	  // `{leading: false}`. To disable execution on the trailing edge, ditto.
-	  _.throttle = function(func, wait, options) {
-	    var context, args, result;
-	    var timeout = null;
-	    var previous = 0;
-	    if (!options) options = {};
-	    var later = function() {
-	      previous = options.leading === false ? 0 : _.now();
-	      timeout = null;
-	      result = func.apply(context, args);
-	      if (!timeout) context = args = null;
-	    };
-	    return function() {
-	      var now = _.now();
-	      if (!previous && options.leading === false) previous = now;
-	      var remaining = wait - (now - previous);
-	      context = this;
-	      args = arguments;
-	      if (remaining <= 0 || remaining > wait) {
-	        if (timeout) {
-	          clearTimeout(timeout);
-	          timeout = null;
-	        }
-	        previous = now;
-	        result = func.apply(context, args);
-	        if (!timeout) context = args = null;
-	      } else if (!timeout && options.trailing !== false) {
-	        timeout = setTimeout(later, remaining);
-	      }
-	      return result;
-	    };
-	  };
-	
-	  // Returns a function, that, as long as it continues to be invoked, will not
-	  // be triggered. The function will be called after it stops being called for
-	  // N milliseconds. If `immediate` is passed, trigger the function on the
-	  // leading edge, instead of the trailing.
-	  _.debounce = function(func, wait, immediate) {
-	    var timeout, args, context, timestamp, result;
-	
-	    var later = function() {
-	      var last = _.now() - timestamp;
-	
-	      if (last < wait && last >= 0) {
-	        timeout = setTimeout(later, wait - last);
-	      } else {
-	        timeout = null;
-	        if (!immediate) {
-	          result = func.apply(context, args);
-	          if (!timeout) context = args = null;
-	        }
-	      }
-	    };
-	
-	    return function() {
-	      context = this;
-	      args = arguments;
-	      timestamp = _.now();
-	      var callNow = immediate && !timeout;
-	      if (!timeout) timeout = setTimeout(later, wait);
-	      if (callNow) {
-	        result = func.apply(context, args);
-	        context = args = null;
-	      }
-	
-	      return result;
-	    };
-	  };
-	
-	  // Returns the first function passed as an argument to the second,
-	  // allowing you to adjust arguments, run code before and after, and
-	  // conditionally execute the original function.
-	  _.wrap = function(func, wrapper) {
-	    return _.partial(wrapper, func);
-	  };
-	
-	  // Returns a negated version of the passed-in predicate.
-	  _.negate = function(predicate) {
-	    return function() {
-	      return !predicate.apply(this, arguments);
-	    };
-	  };
-	
-	  // Returns a function that is the composition of a list of functions, each
-	  // consuming the return value of the function that follows.
-	  _.compose = function() {
-	    var args = arguments;
-	    var start = args.length - 1;
-	    return function() {
-	      var i = start;
-	      var result = args[start].apply(this, arguments);
-	      while (i--) result = args[i].call(this, result);
-	      return result;
-	    };
-	  };
-	
-	  // Returns a function that will only be executed on and after the Nth call.
-	  _.after = function(times, func) {
-	    return function() {
-	      if (--times < 1) {
-	        return func.apply(this, arguments);
-	      }
-	    };
-	  };
-	
-	  // Returns a function that will only be executed up to (but not including) the Nth call.
-	  _.before = function(times, func) {
-	    var memo;
-	    return function() {
-	      if (--times > 0) {
-	        memo = func.apply(this, arguments);
-	      }
-	      if (times <= 1) func = null;
-	      return memo;
-	    };
-	  };
-	
-	  // Returns a function that will be executed at most one time, no matter how
-	  // often you call it. Useful for lazy initialization.
-	  _.once = _.partial(_.before, 2);
-	
-	  // Object Functions
-	  // ----------------
-	
-	  // Keys in IE < 9 that won't be iterated by `for key in ...` and thus missed.
-	  var hasEnumBug = !{toString: null}.propertyIsEnumerable('toString');
-	  var nonEnumerableProps = ['valueOf', 'isPrototypeOf', 'toString',
-	                      'propertyIsEnumerable', 'hasOwnProperty', 'toLocaleString'];
-	
-	  function collectNonEnumProps(obj, keys) {
-	    var nonEnumIdx = nonEnumerableProps.length;
-	    var constructor = obj.constructor;
-	    var proto = (_.isFunction(constructor) && constructor.prototype) || ObjProto;
-	
-	    // Constructor is a special case.
-	    var prop = 'constructor';
-	    if (_.has(obj, prop) && !_.contains(keys, prop)) keys.push(prop);
-	
-	    while (nonEnumIdx--) {
-	      prop = nonEnumerableProps[nonEnumIdx];
-	      if (prop in obj && obj[prop] !== proto[prop] && !_.contains(keys, prop)) {
-	        keys.push(prop);
-	      }
-	    }
-	  }
-	
-	  // Retrieve the names of an object's own properties.
-	  // Delegates to **ECMAScript 5**'s native `Object.keys`
-	  _.keys = function(obj) {
-	    if (!_.isObject(obj)) return [];
-	    if (nativeKeys) return nativeKeys(obj);
-	    var keys = [];
-	    for (var key in obj) if (_.has(obj, key)) keys.push(key);
-	    // Ahem, IE < 9.
-	    if (hasEnumBug) collectNonEnumProps(obj, keys);
-	    return keys;
-	  };
-	
-	  // Retrieve all the property names of an object.
-	  _.allKeys = function(obj) {
-	    if (!_.isObject(obj)) return [];
-	    var keys = [];
-	    for (var key in obj) keys.push(key);
-	    // Ahem, IE < 9.
-	    if (hasEnumBug) collectNonEnumProps(obj, keys);
-	    return keys;
-	  };
-	
-	  // Retrieve the values of an object's properties.
-	  _.values = function(obj) {
-	    var keys = _.keys(obj);
-	    var length = keys.length;
-	    var values = Array(length);
-	    for (var i = 0; i < length; i++) {
-	      values[i] = obj[keys[i]];
-	    }
-	    return values;
-	  };
-	
-	  // Returns the results of applying the iteratee to each element of the object
-	  // In contrast to _.map it returns an object
-	  _.mapObject = function(obj, iteratee, context) {
-	    iteratee = cb(iteratee, context);
-	    var keys =  _.keys(obj),
-	          length = keys.length,
-	          results = {},
-	          currentKey;
-	      for (var index = 0; index < length; index++) {
-	        currentKey = keys[index];
-	        results[currentKey] = iteratee(obj[currentKey], currentKey, obj);
-	      }
-	      return results;
-	  };
-	
-	  // Convert an object into a list of `[key, value]` pairs.
-	  _.pairs = function(obj) {
-	    var keys = _.keys(obj);
-	    var length = keys.length;
-	    var pairs = Array(length);
-	    for (var i = 0; i < length; i++) {
-	      pairs[i] = [keys[i], obj[keys[i]]];
-	    }
-	    return pairs;
-	  };
-	
-	  // Invert the keys and values of an object. The values must be serializable.
-	  _.invert = function(obj) {
-	    var result = {};
-	    var keys = _.keys(obj);
-	    for (var i = 0, length = keys.length; i < length; i++) {
-	      result[obj[keys[i]]] = keys[i];
-	    }
-	    return result;
-	  };
-	
-	  // Return a sorted list of the function names available on the object.
-	  // Aliased as `methods`
-	  _.functions = _.methods = function(obj) {
-	    var names = [];
-	    for (var key in obj) {
-	      if (_.isFunction(obj[key])) names.push(key);
-	    }
-	    return names.sort();
-	  };
-	
-	  // Extend a given object with all the properties in passed-in object(s).
-	  _.extend = createAssigner(_.allKeys);
-	
-	  // Assigns a given object with all the own properties in the passed-in object(s)
-	  // (https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
-	  _.extendOwn = _.assign = createAssigner(_.keys);
-	
-	  // Returns the first key on an object that passes a predicate test
-	  _.findKey = function(obj, predicate, context) {
-	    predicate = cb(predicate, context);
-	    var keys = _.keys(obj), key;
-	    for (var i = 0, length = keys.length; i < length; i++) {
-	      key = keys[i];
-	      if (predicate(obj[key], key, obj)) return key;
-	    }
-	  };
-	
-	  // Return a copy of the object only containing the whitelisted properties.
-	  _.pick = function(object, oiteratee, context) {
-	    var result = {}, obj = object, iteratee, keys;
-	    if (obj == null) return result;
-	    if (_.isFunction(oiteratee)) {
-	      keys = _.allKeys(obj);
-	      iteratee = optimizeCb(oiteratee, context);
-	    } else {
-	      keys = flatten(arguments, false, false, 1);
-	      iteratee = function(value, key, obj) { return key in obj; };
-	      obj = Object(obj);
-	    }
-	    for (var i = 0, length = keys.length; i < length; i++) {
-	      var key = keys[i];
-	      var value = obj[key];
-	      if (iteratee(value, key, obj)) result[key] = value;
-	    }
-	    return result;
-	  };
-	
-	   // Return a copy of the object without the blacklisted properties.
-	  _.omit = function(obj, iteratee, context) {
-	    if (_.isFunction(iteratee)) {
-	      iteratee = _.negate(iteratee);
-	    } else {
-	      var keys = _.map(flatten(arguments, false, false, 1), String);
-	      iteratee = function(value, key) {
-	        return !_.contains(keys, key);
-	      };
-	    }
-	    return _.pick(obj, iteratee, context);
-	  };
-	
-	  // Fill in a given object with default properties.
-	  _.defaults = createAssigner(_.allKeys, true);
-	
-	  // Creates an object that inherits from the given prototype object.
-	  // If additional properties are provided then they will be added to the
-	  // created object.
-	  _.create = function(prototype, props) {
-	    var result = baseCreate(prototype);
-	    if (props) _.extendOwn(result, props);
-	    return result;
-	  };
-	
-	  // Create a (shallow-cloned) duplicate of an object.
-	  _.clone = function(obj) {
-	    if (!_.isObject(obj)) return obj;
-	    return _.isArray(obj) ? obj.slice() : _.extend({}, obj);
-	  };
-	
-	  // Invokes interceptor with the obj, and then returns obj.
-	  // The primary purpose of this method is to "tap into" a method chain, in
-	  // order to perform operations on intermediate results within the chain.
-	  _.tap = function(obj, interceptor) {
-	    interceptor(obj);
-	    return obj;
-	  };
-	
-	  // Returns whether an object has a given set of `key:value` pairs.
-	  _.isMatch = function(object, attrs) {
-	    var keys = _.keys(attrs), length = keys.length;
-	    if (object == null) return !length;
-	    var obj = Object(object);
-	    for (var i = 0; i < length; i++) {
-	      var key = keys[i];
-	      if (attrs[key] !== obj[key] || !(key in obj)) return false;
-	    }
-	    return true;
-	  };
-	
-	
-	  // Internal recursive comparison function for `isEqual`.
-	  var eq = function(a, b, aStack, bStack) {
-	    // Identical objects are equal. `0 === -0`, but they aren't identical.
-	    // See the [Harmony `egal` proposal](http://wiki.ecmascript.org/doku.php?id=harmony:egal).
-	    if (a === b) return a !== 0 || 1 / a === 1 / b;
-	    // A strict comparison is necessary because `null == undefined`.
-	    if (a == null || b == null) return a === b;
-	    // Unwrap any wrapped objects.
-	    if (a instanceof _) a = a._wrapped;
-	    if (b instanceof _) b = b._wrapped;
-	    // Compare `[[Class]]` names.
-	    var className = toString.call(a);
-	    if (className !== toString.call(b)) return false;
-	    switch (className) {
-	      // Strings, numbers, regular expressions, dates, and booleans are compared by value.
-	      case '[object RegExp]':
-	      // RegExps are coerced to strings for comparison (Note: '' + /a/i === '/a/i')
-	      case '[object String]':
-	        // Primitives and their corresponding object wrappers are equivalent; thus, `"5"` is
-	        // equivalent to `new String("5")`.
-	        return '' + a === '' + b;
-	      case '[object Number]':
-	        // `NaN`s are equivalent, but non-reflexive.
-	        // Object(NaN) is equivalent to NaN
-	        if (+a !== +a) return +b !== +b;
-	        // An `egal` comparison is performed for other numeric values.
-	        return +a === 0 ? 1 / +a === 1 / b : +a === +b;
-	      case '[object Date]':
-	      case '[object Boolean]':
-	        // Coerce dates and booleans to numeric primitive values. Dates are compared by their
-	        // millisecond representations. Note that invalid dates with millisecond representations
-	        // of `NaN` are not equivalent.
-	        return +a === +b;
-	    }
-	
-	    var areArrays = className === '[object Array]';
-	    if (!areArrays) {
-	      if (typeof a != 'object' || typeof b != 'object') return false;
-	
-	      // Objects with different constructors are not equivalent, but `Object`s or `Array`s
-	      // from different frames are.
-	      var aCtor = a.constructor, bCtor = b.constructor;
-	      if (aCtor !== bCtor && !(_.isFunction(aCtor) && aCtor instanceof aCtor &&
-	                               _.isFunction(bCtor) && bCtor instanceof bCtor)
-	                          && ('constructor' in a && 'constructor' in b)) {
-	        return false;
-	      }
-	    }
-	    // Assume equality for cyclic structures. The algorithm for detecting cyclic
-	    // structures is adapted from ES 5.1 section 15.12.3, abstract operation `JO`.
-	
-	    // Initializing stack of traversed objects.
-	    // It's done here since we only need them for objects and arrays comparison.
-	    aStack = aStack || [];
-	    bStack = bStack || [];
-	    var length = aStack.length;
-	    while (length--) {
-	      // Linear search. Performance is inversely proportional to the number of
-	      // unique nested structures.
-	      if (aStack[length] === a) return bStack[length] === b;
-	    }
-	
-	    // Add the first object to the stack of traversed objects.
-	    aStack.push(a);
-	    bStack.push(b);
-	
-	    // Recursively compare objects and arrays.
-	    if (areArrays) {
-	      // Compare array lengths to determine if a deep comparison is necessary.
-	      length = a.length;
-	      if (length !== b.length) return false;
-	      // Deep compare the contents, ignoring non-numeric properties.
-	      while (length--) {
-	        if (!eq(a[length], b[length], aStack, bStack)) return false;
-	      }
-	    } else {
-	      // Deep compare objects.
-	      var keys = _.keys(a), key;
-	      length = keys.length;
-	      // Ensure that both objects contain the same number of properties before comparing deep equality.
-	      if (_.keys(b).length !== length) return false;
-	      while (length--) {
-	        // Deep compare each member
-	        key = keys[length];
-	        if (!(_.has(b, key) && eq(a[key], b[key], aStack, bStack))) return false;
-	      }
-	    }
-	    // Remove the first object from the stack of traversed objects.
-	    aStack.pop();
-	    bStack.pop();
-	    return true;
-	  };
-	
-	  // Perform a deep comparison to check if two objects are equal.
-	  _.isEqual = function(a, b) {
-	    return eq(a, b);
-	  };
-	
-	  // Is a given array, string, or object empty?
-	  // An "empty" object has no enumerable own-properties.
-	  _.isEmpty = function(obj) {
-	    if (obj == null) return true;
-	    if (isArrayLike(obj) && (_.isArray(obj) || _.isString(obj) || _.isArguments(obj))) return obj.length === 0;
-	    return _.keys(obj).length === 0;
-	  };
-	
-	  // Is a given value a DOM element?
-	  _.isElement = function(obj) {
-	    return !!(obj && obj.nodeType === 1);
-	  };
-	
-	  // Is a given value an array?
-	  // Delegates to ECMA5's native Array.isArray
-	  _.isArray = nativeIsArray || function(obj) {
-	    return toString.call(obj) === '[object Array]';
-	  };
-	
-	  // Is a given variable an object?
-	  _.isObject = function(obj) {
-	    var type = typeof obj;
-	    return type === 'function' || type === 'object' && !!obj;
-	  };
-	
-	  // Add some isType methods: isArguments, isFunction, isString, isNumber, isDate, isRegExp, isError.
-	  _.each(['Arguments', 'Function', 'String', 'Number', 'Date', 'RegExp', 'Error'], function(name) {
-	    _['is' + name] = function(obj) {
-	      return toString.call(obj) === '[object ' + name + ']';
-	    };
-	  });
-	
-	  // Define a fallback version of the method in browsers (ahem, IE < 9), where
-	  // there isn't any inspectable "Arguments" type.
-	  if (!_.isArguments(arguments)) {
-	    _.isArguments = function(obj) {
-	      return _.has(obj, 'callee');
-	    };
-	  }
-	
-	  // Optimize `isFunction` if appropriate. Work around some typeof bugs in old v8,
-	  // IE 11 (#1621), and in Safari 8 (#1929).
-	  if (typeof /./ != 'function' && typeof Int8Array != 'object') {
-	    _.isFunction = function(obj) {
-	      return typeof obj == 'function' || false;
-	    };
-	  }
-	
-	  // Is a given object a finite number?
-	  _.isFinite = function(obj) {
-	    return isFinite(obj) && !isNaN(parseFloat(obj));
-	  };
-	
-	  // Is the given value `NaN`? (NaN is the only number which does not equal itself).
-	  _.isNaN = function(obj) {
-	    return _.isNumber(obj) && obj !== +obj;
-	  };
-	
-	  // Is a given value a boolean?
-	  _.isBoolean = function(obj) {
-	    return obj === true || obj === false || toString.call(obj) === '[object Boolean]';
-	  };
-	
-	  // Is a given value equal to null?
-	  _.isNull = function(obj) {
-	    return obj === null;
-	  };
-	
-	  // Is a given variable undefined?
-	  _.isUndefined = function(obj) {
-	    return obj === void 0;
-	  };
-	
-	  // Shortcut function for checking if an object has a given property directly
-	  // on itself (in other words, not on a prototype).
-	  _.has = function(obj, key) {
-	    return obj != null && hasOwnProperty.call(obj, key);
-	  };
-	
-	  // Utility Functions
-	  // -----------------
-	
-	  // Run Underscore.js in *noConflict* mode, returning the `_` variable to its
-	  // previous owner. Returns a reference to the Underscore object.
-	  _.noConflict = function() {
-	    root._ = previousUnderscore;
-	    return this;
-	  };
-	
-	  // Keep the identity function around for default iteratees.
-	  _.identity = function(value) {
-	    return value;
-	  };
-	
-	  // Predicate-generating functions. Often useful outside of Underscore.
-	  _.constant = function(value) {
-	    return function() {
-	      return value;
-	    };
-	  };
-	
-	  _.noop = function(){};
-	
-	  _.property = property;
-	
-	  // Generates a function for a given object that returns a given property.
-	  _.propertyOf = function(obj) {
-	    return obj == null ? function(){} : function(key) {
-	      return obj[key];
-	    };
-	  };
-	
-	  // Returns a predicate for checking whether an object has a given set of
-	  // `key:value` pairs.
-	  _.matcher = _.matches = function(attrs) {
-	    attrs = _.extendOwn({}, attrs);
-	    return function(obj) {
-	      return _.isMatch(obj, attrs);
-	    };
-	  };
-	
-	  // Run a function **n** times.
-	  _.times = function(n, iteratee, context) {
-	    var accum = Array(Math.max(0, n));
-	    iteratee = optimizeCb(iteratee, context, 1);
-	    for (var i = 0; i < n; i++) accum[i] = iteratee(i);
-	    return accum;
-	  };
-	
-	  // Return a random integer between min and max (inclusive).
-	  _.random = function(min, max) {
-	    if (max == null) {
-	      max = min;
-	      min = 0;
-	    }
-	    return min + Math.floor(Math.random() * (max - min + 1));
-	  };
-	
-	  // A (possibly faster) way to get the current timestamp as an integer.
-	  _.now = Date.now || function() {
-	    return new Date().getTime();
-	  };
-	
-	   // List of HTML entities for escaping.
-	  var escapeMap = {
-	    '&': '&amp;',
-	    '<': '&lt;',
-	    '>': '&gt;',
-	    '"': '&quot;',
-	    "'": '&#x27;',
-	    '`': '&#x60;'
-	  };
-	  var unescapeMap = _.invert(escapeMap);
-	
-	  // Functions for escaping and unescaping strings to/from HTML interpolation.
-	  var createEscaper = function(map) {
-	    var escaper = function(match) {
-	      return map[match];
-	    };
-	    // Regexes for identifying a key that needs to be escaped
-	    var source = '(?:' + _.keys(map).join('|') + ')';
-	    var testRegexp = RegExp(source);
-	    var replaceRegexp = RegExp(source, 'g');
-	    return function(string) {
-	      string = string == null ? '' : '' + string;
-	      return testRegexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
-	    };
-	  };
-	  _.escape = createEscaper(escapeMap);
-	  _.unescape = createEscaper(unescapeMap);
-	
-	  // If the value of the named `property` is a function then invoke it with the
-	  // `object` as context; otherwise, return it.
-	  _.result = function(object, property, fallback) {
-	    var value = object == null ? void 0 : object[property];
-	    if (value === void 0) {
-	      value = fallback;
-	    }
-	    return _.isFunction(value) ? value.call(object) : value;
-	  };
-	
-	  // Generate a unique integer id (unique within the entire client session).
-	  // Useful for temporary DOM ids.
-	  var idCounter = 0;
-	  _.uniqueId = function(prefix) {
-	    var id = ++idCounter + '';
-	    return prefix ? prefix + id : id;
-	  };
-	
-	  // By default, Underscore uses ERB-style template delimiters, change the
-	  // following template settings to use alternative delimiters.
-	  _.templateSettings = {
-	    evaluate    : /<%([\s\S]+?)%>/g,
-	    interpolate : /<%=([\s\S]+?)%>/g,
-	    escape      : /<%-([\s\S]+?)%>/g
-	  };
-	
-	  // When customizing `templateSettings`, if you don't want to define an
-	  // interpolation, evaluation or escaping regex, we need one that is
-	  // guaranteed not to match.
-	  var noMatch = /(.)^/;
-	
-	  // Certain characters need to be escaped so that they can be put into a
-	  // string literal.
-	  var escapes = {
-	    "'":      "'",
-	    '\\':     '\\',
-	    '\r':     'r',
-	    '\n':     'n',
-	    '\u2028': 'u2028',
-	    '\u2029': 'u2029'
-	  };
-	
-	  var escaper = /\\|'|\r|\n|\u2028|\u2029/g;
-	
-	  var escapeChar = function(match) {
-	    return '\\' + escapes[match];
-	  };
-	
-	  // JavaScript micro-templating, similar to John Resig's implementation.
-	  // Underscore templating handles arbitrary delimiters, preserves whitespace,
-	  // and correctly escapes quotes within interpolated code.
-	  // NB: `oldSettings` only exists for backwards compatibility.
-	  _.template = function(text, settings, oldSettings) {
-	    if (!settings && oldSettings) settings = oldSettings;
-	    settings = _.defaults({}, settings, _.templateSettings);
-	
-	    // Combine delimiters into one regular expression via alternation.
-	    var matcher = RegExp([
-	      (settings.escape || noMatch).source,
-	      (settings.interpolate || noMatch).source,
-	      (settings.evaluate || noMatch).source
-	    ].join('|') + '|$', 'g');
-	
-	    // Compile the template source, escaping string literals appropriately.
-	    var index = 0;
-	    var source = "__p+='";
-	    text.replace(matcher, function(match, escape, interpolate, evaluate, offset) {
-	      source += text.slice(index, offset).replace(escaper, escapeChar);
-	      index = offset + match.length;
-	
-	      if (escape) {
-	        source += "'+\n((__t=(" + escape + "))==null?'':_.escape(__t))+\n'";
-	      } else if (interpolate) {
-	        source += "'+\n((__t=(" + interpolate + "))==null?'':__t)+\n'";
-	      } else if (evaluate) {
-	        source += "';\n" + evaluate + "\n__p+='";
-	      }
-	
-	      // Adobe VMs need the match returned to produce the correct offest.
-	      return match;
-	    });
-	    source += "';\n";
-	
-	    // If a variable is not specified, place data values in local scope.
-	    if (!settings.variable) source = 'with(obj||{}){\n' + source + '}\n';
-	
-	    source = "var __t,__p='',__j=Array.prototype.join," +
-	      "print=function(){__p+=__j.call(arguments,'');};\n" +
-	      source + 'return __p;\n';
-	
-	    try {
-	      var render = new Function(settings.variable || 'obj', '_', source);
-	    } catch (e) {
-	      e.source = source;
-	      throw e;
-	    }
-	
-	    var template = function(data) {
-	      return render.call(this, data, _);
-	    };
-	
-	    // Provide the compiled source as a convenience for precompilation.
-	    var argument = settings.variable || 'obj';
-	    template.source = 'function(' + argument + '){\n' + source + '}';
-	
-	    return template;
-	  };
-	
-	  // Add a "chain" function. Start chaining a wrapped Underscore object.
-	  _.chain = function(obj) {
-	    var instance = _(obj);
-	    instance._chain = true;
-	    return instance;
-	  };
-	
-	  // OOP
-	  // ---------------
-	  // If Underscore is called as a function, it returns a wrapped object that
-	  // can be used OO-style. This wrapper holds altered versions of all the
-	  // underscore functions. Wrapped objects may be chained.
-	
-	  // Helper function to continue chaining intermediate results.
-	  var result = function(instance, obj) {
-	    return instance._chain ? _(obj).chain() : obj;
-	  };
-	
-	  // Add your own custom functions to the Underscore object.
-	  _.mixin = function(obj) {
-	    _.each(_.functions(obj), function(name) {
-	      var func = _[name] = obj[name];
-	      _.prototype[name] = function() {
-	        var args = [this._wrapped];
-	        push.apply(args, arguments);
-	        return result(this, func.apply(_, args));
-	      };
-	    });
-	  };
-	
-	  // Add all of the Underscore functions to the wrapper object.
-	  _.mixin(_);
-	
-	  // Add all mutator Array functions to the wrapper.
-	  _.each(['pop', 'push', 'reverse', 'shift', 'sort', 'splice', 'unshift'], function(name) {
-	    var method = ArrayProto[name];
-	    _.prototype[name] = function() {
-	      var obj = this._wrapped;
-	      method.apply(obj, arguments);
-	      if ((name === 'shift' || name === 'splice') && obj.length === 0) delete obj[0];
-	      return result(this, obj);
-	    };
-	  });
-	
-	  // Add all accessor Array functions to the wrapper.
-	  _.each(['concat', 'join', 'slice'], function(name) {
-	    var method = ArrayProto[name];
-	    _.prototype[name] = function() {
-	      return result(this, method.apply(this._wrapped, arguments));
-	    };
-	  });
-	
-	  // Extracts the result from a wrapped and chained object.
-	  _.prototype.value = function() {
-	    return this._wrapped;
-	  };
-	
-	  // Provide unwrapping proxy for some methods used in engine operations
-	  // such as arithmetic and JSON stringification.
-	  _.prototype.valueOf = _.prototype.toJSON = _.prototype.value;
-	
-	  _.prototype.toString = function() {
-	    return '' + this._wrapped;
-	  };
-	
-	  // AMD registration happens at the end for compatibility with AMD loaders
-	  // that may not enforce next-turn semantics on modules. Even though general
-	  // practice for AMD registration is to be anonymous, underscore registers
-	  // as a named module because, like jQuery, it is a base library that is
-	  // popular enough to be bundled in a third party lib, but not be part of
-	  // an AMD load request. Those cases could generate an error when an
-	  // anonymous define() is called outside of a loader request.
-	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
-	      return _;
-	    }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	  }
-	}.call(this));
-
-
-/***/ },
-/* 145 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var _promise = __webpack_require__(11);
-	
-	var _promise2 = _interopRequireDefault(_promise);
-	
-	var _assign = __webpack_require__(146);
-	
-	var _assign2 = _interopRequireDefault(_assign);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var EventEmitter = __webpack_require__(150);
-	var $ = __webpack_require__(66);
-	
-	// 数据的维护都是Vue帮你做的，自己只要操作后台就行
-	// 不用像Backbone自己维护Model
-	
-	var userStore = (0, _assign2.default)(EventEmitter);
-	
-	userStore.fetch = function (userId) {
-	    var promise = new _promise2.default(function (resolve, reject) {
-	        $.get('/users', { userId: userId }, function (resp) {
-	            resolve(resp.data.user);
-	        });
-	    });
-	    return promise;
-	};
-	
-	userStore.deleteRecord = function (author, contacter) {
-	    var data = {
-	        author: author
-	    };
-	
-	    if (contacter) {
-	        data.contacter = contacter;
-	    }
-	
-	    var promise = new _promise2.default(function (resolve, reject) {
-	        $.post('/record', data, function (resp) {
-	            resolve(~resp.code);
-	        });
-	    });
-	
-	    return promise;
-	};
-	
-	module.exports = userStore;
-
-/***/ },
-/* 146 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = { "default": __webpack_require__(147), __esModule: true };
-
-/***/ },
-/* 147 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(148);
-	module.exports = __webpack_require__(22).Object.assign;
-
-/***/ },
-/* 148 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.3.1 Object.assign(target, source)
-	var $export = __webpack_require__(20);
-	
-	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(149)});
-
-/***/ },
-/* 149 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// 19.1.2.1 Object.assign(target, source, ...)
-	var $        = __webpack_require__(27)
-	  , toObject = __webpack_require__(70)
-	  , IObject  = __webpack_require__(43);
-	
-	// should work with symbols and should have deterministic property order (V8 bug)
-	module.exports = __webpack_require__(30)(function(){
-	  var a = Object.assign
-	    , A = {}
-	    , B = {}
-	    , S = Symbol()
-	    , K = 'abcdefghijklmnopqrst';
-	  A[S] = 7;
-	  K.split('').forEach(function(k){ B[k] = k; });
-	  return a({}, A)[S] != 7 || Object.keys(a({}, B)).join('') != K;
-	}) ? function assign(target, source){ // eslint-disable-line no-unused-vars
-	  var T     = toObject(target)
-	    , $$    = arguments
-	    , $$len = $$.length
-	    , index = 1
-	    , getKeys    = $.getKeys
-	    , getSymbols = $.getSymbols
-	    , isEnum     = $.isEnum;
-	  while($$len > index){
-	    var S      = IObject($$[index++])
-	      , keys   = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S)
-	      , length = keys.length
-	      , j      = 0
-	      , key;
-	    while(length > j)if(isEnum.call(S, key = keys[j++]))T[key] = S[key];
-	  }
-	  return T;
-	} : Object.assign;
-
-/***/ },
-/* 150 */
-/***/ function(module, exports) {
-
-	// Copyright Joyent, Inc. and other Node contributors.
-	//
-	// Permission is hereby granted, free of charge, to any person obtaining a
-	// copy of this software and associated documentation files (the
-	// "Software"), to deal in the Software without restriction, including
-	// without limitation the rights to use, copy, modify, merge, publish,
-	// distribute, sublicense, and/or sell copies of the Software, and to permit
-	// persons to whom the Software is furnished to do so, subject to the
-	// following conditions:
-	//
-	// The above copyright notice and this permission notice shall be included
-	// in all copies or substantial portions of the Software.
-	//
-	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-	// USE OR OTHER DEALINGS IN THE SOFTWARE.
-	
-	function EventEmitter() {
-	  this._events = this._events || {};
-	  this._maxListeners = this._maxListeners || undefined;
-	}
-	module.exports = EventEmitter;
-	
-	// Backwards-compat with node 0.10.x
-	EventEmitter.EventEmitter = EventEmitter;
-	
-	EventEmitter.prototype._events = undefined;
-	EventEmitter.prototype._maxListeners = undefined;
-	
-	// By default EventEmitters will print a warning if more than 10 listeners are
-	// added to it. This is a useful default which helps finding memory leaks.
-	EventEmitter.defaultMaxListeners = 10;
-	
-	// Obviously not all Emitters should be limited to 10. This function allows
-	// that to be increased. Set to zero for unlimited.
-	EventEmitter.prototype.setMaxListeners = function(n) {
-	  if (!isNumber(n) || n < 0 || isNaN(n))
-	    throw TypeError('n must be a positive number');
-	  this._maxListeners = n;
-	  return this;
-	};
-	
-	EventEmitter.prototype.emit = function(type) {
-	  var er, handler, len, args, i, listeners;
-	
-	  if (!this._events)
-	    this._events = {};
-	
-	  // If there is no 'error' event listener then throw.
-	  if (type === 'error') {
-	    if (!this._events.error ||
-	        (isObject(this._events.error) && !this._events.error.length)) {
-	      er = arguments[1];
-	      if (er instanceof Error) {
-	        throw er; // Unhandled 'error' event
-	      }
-	      throw TypeError('Uncaught, unspecified "error" event.');
-	    }
-	  }
-	
-	  handler = this._events[type];
-	
-	  if (isUndefined(handler))
-	    return false;
-	
-	  if (isFunction(handler)) {
-	    switch (arguments.length) {
-	      // fast cases
-	      case 1:
-	        handler.call(this);
-	        break;
-	      case 2:
-	        handler.call(this, arguments[1]);
-	        break;
-	      case 3:
-	        handler.call(this, arguments[1], arguments[2]);
-	        break;
-	      // slower
-	      default:
-	        args = Array.prototype.slice.call(arguments, 1);
-	        handler.apply(this, args);
-	    }
-	  } else if (isObject(handler)) {
-	    args = Array.prototype.slice.call(arguments, 1);
-	    listeners = handler.slice();
-	    len = listeners.length;
-	    for (i = 0; i < len; i++)
-	      listeners[i].apply(this, args);
-	  }
-	
-	  return true;
-	};
-	
-	EventEmitter.prototype.addListener = function(type, listener) {
-	  var m;
-	
-	  if (!isFunction(listener))
-	    throw TypeError('listener must be a function');
-	
-	  if (!this._events)
-	    this._events = {};
-	
-	  // To avoid recursion in the case that type === "newListener"! Before
-	  // adding it to the listeners, first emit "newListener".
-	  if (this._events.newListener)
-	    this.emit('newListener', type,
-	              isFunction(listener.listener) ?
-	              listener.listener : listener);
-	
-	  if (!this._events[type])
-	    // Optimize the case of one listener. Don't need the extra array object.
-	    this._events[type] = listener;
-	  else if (isObject(this._events[type]))
-	    // If we've already got an array, just append.
-	    this._events[type].push(listener);
-	  else
-	    // Adding the second element, need to change to array.
-	    this._events[type] = [this._events[type], listener];
-	
-	  // Check for listener leak
-	  if (isObject(this._events[type]) && !this._events[type].warned) {
-	    if (!isUndefined(this._maxListeners)) {
-	      m = this._maxListeners;
-	    } else {
-	      m = EventEmitter.defaultMaxListeners;
-	    }
-	
-	    if (m && m > 0 && this._events[type].length > m) {
-	      this._events[type].warned = true;
-	      console.error('(node) warning: possible EventEmitter memory ' +
-	                    'leak detected. %d listeners added. ' +
-	                    'Use emitter.setMaxListeners() to increase limit.',
-	                    this._events[type].length);
-	      if (typeof console.trace === 'function') {
-	        // not supported in IE 10
-	        console.trace();
-	      }
-	    }
-	  }
-	
-	  return this;
-	};
-	
-	EventEmitter.prototype.on = EventEmitter.prototype.addListener;
-	
-	EventEmitter.prototype.once = function(type, listener) {
-	  if (!isFunction(listener))
-	    throw TypeError('listener must be a function');
-	
-	  var fired = false;
-	
-	  function g() {
-	    this.removeListener(type, g);
-	
-	    if (!fired) {
-	      fired = true;
-	      listener.apply(this, arguments);
-	    }
-	  }
-	
-	  g.listener = listener;
-	  this.on(type, g);
-	
-	  return this;
-	};
-	
-	// emits a 'removeListener' event iff the listener was removed
-	EventEmitter.prototype.removeListener = function(type, listener) {
-	  var list, position, length, i;
-	
-	  if (!isFunction(listener))
-	    throw TypeError('listener must be a function');
-	
-	  if (!this._events || !this._events[type])
-	    return this;
-	
-	  list = this._events[type];
-	  length = list.length;
-	  position = -1;
-	
-	  if (list === listener ||
-	      (isFunction(list.listener) && list.listener === listener)) {
-	    delete this._events[type];
-	    if (this._events.removeListener)
-	      this.emit('removeListener', type, listener);
-	
-	  } else if (isObject(list)) {
-	    for (i = length; i-- > 0;) {
-	      if (list[i] === listener ||
-	          (list[i].listener && list[i].listener === listener)) {
-	        position = i;
-	        break;
-	      }
-	    }
-	
-	    if (position < 0)
-	      return this;
-	
-	    if (list.length === 1) {
-	      list.length = 0;
-	      delete this._events[type];
-	    } else {
-	      list.splice(position, 1);
-	    }
-	
-	    if (this._events.removeListener)
-	      this.emit('removeListener', type, listener);
-	  }
-	
-	  return this;
-	};
-	
-	EventEmitter.prototype.removeAllListeners = function(type) {
-	  var key, listeners;
-	
-	  if (!this._events)
-	    return this;
-	
-	  // not listening for removeListener, no need to emit
-	  if (!this._events.removeListener) {
-	    if (arguments.length === 0)
-	      this._events = {};
-	    else if (this._events[type])
-	      delete this._events[type];
-	    return this;
-	  }
-	
-	  // emit removeListener for all listeners on all events
-	  if (arguments.length === 0) {
-	    for (key in this._events) {
-	      if (key === 'removeListener') continue;
-	      this.removeAllListeners(key);
-	    }
-	    this.removeAllListeners('removeListener');
-	    this._events = {};
-	    return this;
-	  }
-	
-	  listeners = this._events[type];
-	
-	  if (isFunction(listeners)) {
-	    this.removeListener(type, listeners);
-	  } else if (listeners) {
-	    // LIFO order
-	    while (listeners.length)
-	      this.removeListener(type, listeners[listeners.length - 1]);
-	  }
-	  delete this._events[type];
-	
-	  return this;
-	};
-	
-	EventEmitter.prototype.listeners = function(type) {
-	  var ret;
-	  if (!this._events || !this._events[type])
-	    ret = [];
-	  else if (isFunction(this._events[type]))
-	    ret = [this._events[type]];
-	  else
-	    ret = this._events[type].slice();
-	  return ret;
-	};
-	
-	EventEmitter.prototype.listenerCount = function(type) {
-	  if (this._events) {
-	    var evlistener = this._events[type];
-	
-	    if (isFunction(evlistener))
-	      return 1;
-	    else if (evlistener)
-	      return evlistener.length;
-	  }
-	  return 0;
-	};
-	
-	EventEmitter.listenerCount = function(emitter, type) {
-	  return emitter.listenerCount(type);
-	};
-	
-	function isFunction(arg) {
-	  return typeof arg === 'function';
-	}
-	
-	function isNumber(arg) {
-	  return typeof arg === 'number';
-	}
-	
-	function isObject(arg) {
-	  return typeof arg === 'object' && arg !== null;
-	}
-	
-	function isUndefined(arg) {
-	  return arg === void 0;
-	}
-
-
-/***/ },
-/* 151 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(152)
-	__vue_script__ = __webpack_require__(154)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/header.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(161)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/components/header.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 152 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(153);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./header.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./header.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 153 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".dropmenu:before {\n  content: \"\";\n  height: 0;\n  width: 0;\n  overflow: hidden; }\n\n.header {\n  height: 44px;\n  line-height: 44px;\n  background-color: #39393d;\n  color: #fff;\n  text-align: center;\n  font-size: 18px;\n  padding: 0 20px;\n  position: relative;\n  z-index: 99; }\n  .header .opt {\n    padding: 0 10px;\n    font-size: 16px; }\n  .header .icon-plus {\n    height: 18px;\n    width: 18px; }\n  .header .icon-back {\n    height: 12px;\n    width: 12px; }\n  .header .left,\n  .header .right {\n    position: absolute;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n    transform: translateY(-50%); }\n  .header .left {\n    left: 15px; }\n    .header .left.opt {\n      left: 5px; }\n  .header .right {\n    right: 15px; }\n    .header .right.opt {\n      right: 5px; }\n\n.dropmenu {\n  position: fixed;\n  right: 7px;\n  top: 57px;\n  border-radius: 4px;\n  background-color: #4F4F54;\n  z-index: 100;\n  text-align: center; }\n  .dropmenu:before {\n    content: '';\n    display: inline-block;\n    border-bottom: 8px solid #4F4F54;\n    border-left: 8px dashed transparent;\n    border-right: 8px dashed transparent;\n    position: absolute;\n    top: -8px;\n    right: 8px; }\n  .dropmenu .menu-item {\n    padding: 8px 15px;\n    border-top: 1px solid #646467;\n    color: #fff;\n    font-size: 14px;\n    line-height: 1;\n    margin: 0 10px; }\n    .dropmenu .menu-item:first-child {\n      border-top: none; }\n\n.mask {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: transparent; }\n", "", {"version":3,"sources":["/./src/components/header.vue"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,UAAU;EACV,SAAS;EACT,iBAAiB,EAAE;;AAErB;EACE,aAAa;EACb,kBAAkB;EAClB,0BAA0B;EAC1B,YAAY;EACZ,mBAAmB;EACnB,gBAAgB;EAChB,gBAAgB;EAChB,mBAAmB;EACnB,YAAY,EAAE;EACd;IACE,gBAAgB;IAChB,gBAAgB,EAAE;EACpB;IACE,aAAa;IACb,YAAY,EAAE;EAChB;IACE,aAAa;IACb,YAAY,EAAE;EAChB;;IAEE,mBAAmB;IACnB,SAAS;IACT,oCAAoC;IAIpC,4BAA4B,EAAE;EAChC;IACE,WAAW,EAAE;IACb;MACE,UAAU,EAAE;EAChB;IACE,YAAY,EAAE;IACd;MACE,WAAW,EAAE;;AAEnB;EACE,gBAAgB;EAChB,WAAW;EACX,UAAU;EACV,mBAAmB;EACnB,0BAA0B;EAC1B,aAAa;EACb,mBAAmB,EAAE;EACrB;IACE,YAAY;IACZ,sBAAsB;IACtB,iCAAiC;IACjC,oCAAoC;IACpC,qCAAqC;IACrC,mBAAmB;IACnB,UAAU;IACV,WAAW,EAAE;EACf;IACE,kBAAkB;IAClB,8BAA8B;IAC9B,YAAY;IACZ,gBAAgB;IAChB,eAAe;IACf,eAAe,EAAE;IACjB;MACE,iBAAiB,EAAE;;AAEzB;EACE,gBAAgB;EAChB,OAAO;EACP,QAAQ;EACR,UAAU;EACV,SAAS;EACT,YAAY;EACZ,8BAA8B,EAAE","file":"header.vue","sourcesContent":[".dropmenu:before {\n  content: \"\";\n  height: 0;\n  width: 0;\n  overflow: hidden; }\n\n.header {\n  height: 44px;\n  line-height: 44px;\n  background-color: #39393d;\n  color: #fff;\n  text-align: center;\n  font-size: 18px;\n  padding: 0 20px;\n  position: relative;\n  z-index: 99; }\n  .header .opt {\n    padding: 0 10px;\n    font-size: 16px; }\n  .header .icon-plus {\n    height: 18px;\n    width: 18px; }\n  .header .icon-back {\n    height: 12px;\n    width: 12px; }\n  .header .left,\n  .header .right {\n    position: absolute;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n    -moz-transform: translateY(-50%);\n    -ms-transform: translateY(-50%);\n    -o-transform: translateY(-50%);\n    transform: translateY(-50%); }\n  .header .left {\n    left: 15px; }\n    .header .left.opt {\n      left: 5px; }\n  .header .right {\n    right: 15px; }\n    .header .right.opt {\n      right: 5px; }\n\n.dropmenu {\n  position: fixed;\n  right: 7px;\n  top: 57px;\n  border-radius: 4px;\n  background-color: #4F4F54;\n  z-index: 100;\n  text-align: center; }\n  .dropmenu:before {\n    content: '';\n    display: inline-block;\n    border-bottom: 8px solid #4F4F54;\n    border-left: 8px dashed transparent;\n    border-right: 8px dashed transparent;\n    position: absolute;\n    top: -8px;\n    right: 8px; }\n  .dropmenu .menu-item {\n    padding: 8px 15px;\n    border-top: 1px solid #646467;\n    color: #fff;\n    font-size: 14px;\n    line-height: 1;\n    margin: 0 10px; }\n    .dropmenu .menu-item:first-child {\n      border-top: none; }\n\n.mask {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: transparent; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 154 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var Vue = __webpack_require__(1);
-	var auth = __webpack_require__(10);
-	var friendStore = __webpack_require__(155);
-	
-	module.exports = {
-	    name: 'Header',
-	    props: {
-	        title: String,
-	        pageType: String,
-	        refer: String
-	    },
-	    components: {
-	        'm-modal': __webpack_require__(156)
-	    },
-	    data: function data() {
-	        return {
-	            open: false,
-	
-	            modal: {
-	                show: false,
-	                friendName: '',
-	                popupTip: ''
-	            }
-	        };
-	    },
-	    methods: {
-	        onClickPlus: function onClickPlus() {
-	            this.open = !this.open;
-	        },
-	        onClickLogout: function onClickLogout() {
-	            auth.logout();
-	            this.$route.router.go('./login');
-	        },
-	        onClickMask: function onClickMask() {
-	            this.open = false;
-	        },
-	        onClickCancel: function onClickCancel() {
-	            this.$route.router.go(this.refer);
-	        },
-	        onClickAddFri: function onClickAddFri() {
-	            this.open = false;
-	            this.modal.show = true;
-	        },
-	        onModalSure: function onModalSure() {
-	            var _this = this;
-	
-	            if (!this.modal.friendName) return;
-	            var p = friendStore.createFriend(auth.user.userId, this.modal.friendName);
-	            p.then(function (resp) {
-	                return _this.$route.router.go('./friend');
-	            }).catch(function (resp) {
-	                _this.modal.popupTip = resp.message;
-	            });
-	        }
-	    },
-	    detached: function detached() {
-	        this.open = false;
-	        this.modal.show = false;
-	    },
-	
-	    directives: {
-	        focus: function focus(value) {
-	            var _this2 = this;
-	
-	            if (value) {
-	                Vue.nextTick(function () {
-	                    _this2.el.focus();
-	                });
-	            }
-	        }
-	    }
-	};
-
-/***/ },
-/* 155 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var _promise = __webpack_require__(11);
-	
-	var _promise2 = _interopRequireDefault(_promise);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var $ = __webpack_require__(66);
-	
-	var friendStore = {};
-	
-	friendStore.fetch = function (author) {
-	    var url = '/friends';
-	
-	    var promise = new _promise2.default(function (resolve, reject) {
-	        $.get(url, {
-	            userId: author
-	        }, function (resp) {
-	            if (resp.code == 0) {
-	                resolve(resp.data.friends);
-	            } else {
-	                resolve([]);
-	            }
-	        });
-	    });
-	
-	    return promise;
-	};
-	
-	// friendStore.findFriend = function(username) {
-	//     var promise = new Promise(function(resolve, reject) {
-	//         $.getJSON('/friend', {
-	//             username: username
-	//         }, function(resp) {
-	//             if (resp.code == 0) {
-	//                 resolve(resp.data.friend);
-	//             } else {
-	//                 reject();
-	//             }
-	//         });
-	//     });
-	
-	//     return promise;
-	// };
-	
-	friendStore.createFriend = function (author, friendName) {
-	    var promise = new _promise2.default(function (resolve, reject) {
-	        $.post('/friend', {
-	            author: author,
-	            friendName: friendName
-	        }, function (resp) {
-	            if (resp.code == 0) {
-	                resolve(resp.data.friend);
-	            } else {
-	                reject(resp);
-	            }
-	        });
-	    });
-	
-	    return promise;
-	};
-	
-	module.exports = friendStore;
-
-/***/ },
-/* 156 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(157)
-	__vue_script__ = __webpack_require__(159)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/modal.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(160)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/components/modal.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 157 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(158);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 158 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".collapse-transition {\n  -webkit-transition: all .4s ease;\n  transition: all .4s ease;\n  overflow: hidden;\n  height: 14px;\n  margin: 10px 0 5px; }\n\n.collapse-enter,\n.collapse-leave {\n  height: 0;\n  margin: 0;\n  opacity: 0; }\n\n.modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: rgba(0, 0, 0, 0.5);\n  text-align: center; }\n  .modal .inner {\n    width: 65%;\n    text-align: center;\n    background-color: white;\n    color: #666;\n    border-radius: 4px;\n    font-size: 14px;\n    padding: 15px;\n    position: absolute;\n    left: 50%;\n    top: 35%;\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%); }\n  .modal .form {\n    padding: 0; }\n    .modal .form .hd {\n      font-size: 16px; }\n    .modal .form .bd {\n      margin: 15px 0; }\n    .modal .form .field-row {\n      margin: 10px 0; }\n    .modal .form .form-control {\n      padding: 6px;\n      border: 1px solid #eee;\n      border-radius: 3px;\n      outline: none;\n      width: 100%;\n      box-sizing: border-box; }\n    .modal .form .popup-tip {\n      font-size: 12px;\n      color: #E6A00F; }\n", "", {"version":3,"sources":["/./src/components/modal.vue"],"names":[],"mappings":"AAAA;EACE,iCAAyB;EAAzB,yBAAyB;EACzB,iBAAiB;EACjB,aAAa;EACb,mBAAmB,EAAE;;AAEvB;;EAEE,UAAU;EACV,UAAU;EACV,WAAW,EAAE;;AAEf;EACE,gBAAgB;EAChB,OAAO;EACP,QAAQ;EACR,UAAU;EACV,SAAS;EACT,YAAY;EACZ,qCAAqC;EACrC,mBAAmB,EAAE;EACrB;IACE,WAAW;IACX,mBAAmB;IACnB,wBAAwB;IACxB,YAAY;IACZ,mBAAmB;IACnB,gBAAgB;IAChB,cAAc;IACd,mBAAmB;IACnB,UAAU;IACV,SAAS;IACT,yCAAyC;IAIzC,iCAAiC,EAAE;EACrC;IACE,WAAW,EAAE;IACb;MACE,gBAAgB,EAAE;IACpB;MACE,eAAe,EAAE;IACnB;MACE,eAAe,EAAE;IACnB;MACE,aAAa;MACb,uBAAuB;MACvB,mBAAmB;MACnB,cAAc;MACd,YAAY;MACZ,uBAAuB,EAAE;IAC3B;MACE,gBAAgB;MAChB,eAAe,EAAE","file":"modal.vue","sourcesContent":[".collapse-transition {\n  transition: all .4s ease;\n  overflow: hidden;\n  height: 14px;\n  margin: 10px 0 5px; }\n\n.collapse-enter,\n.collapse-leave {\n  height: 0;\n  margin: 0;\n  opacity: 0; }\n\n.modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: rgba(0, 0, 0, 0.5);\n  text-align: center; }\n  .modal .inner {\n    width: 65%;\n    text-align: center;\n    background-color: white;\n    color: #666;\n    border-radius: 4px;\n    font-size: 14px;\n    padding: 15px;\n    position: absolute;\n    left: 50%;\n    top: 35%;\n    -webkit-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%); }\n  .modal .form {\n    padding: 0; }\n    .modal .form .hd {\n      font-size: 16px; }\n    .modal .form .bd {\n      margin: 15px 0; }\n    .modal .form .field-row {\n      margin: 10px 0; }\n    .modal .form .form-control {\n      padding: 6px;\n      border: 1px solid #eee;\n      border-radius: 3px;\n      outline: none;\n      width: 100%;\n      box-sizing: border-box; }\n    .modal .form .popup-tip {\n      font-size: 12px;\n      color: #E6A00F; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 159 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	    props: ['show', 'title', 'popupTip'],
-	    methods: {
-	        onClickBg: function onClickBg() {
-	            this.show = false;
-	        },
-	        onClickSure: function onClickSure() {
-	            this.$dispatch('modal-sure');
-	        }
-	    },
-	    watch: {
-	        popupTip: function popupTip(value) {
-	            var _this = this;
-	
-	            if (this.popupTipTimer) {
-	                clearTimeout(this.popupTipTimer);
-	            }
-	            this.popupTipTimer = setTimeout(function () {
-	                _this.popupTip = '';
-	            }, 3500);
-	        }
-	    }
-	};
-
-/***/ },
-/* 160 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div class=\"modal\" transition=\"fade\" v-show=\"show\" @click.self=\"onClickBg\">\n    <div class=\"inner\">\n        <div class=\"form\">\n            <div class=\"hd\">\n                {{ title }}\n            </div>\n            <div class=\"popup-tip\" transition=\"collapse\" v-show=\"!!popupTip\">{{popupTip}}</div>\n            <div class=\"bd\">\n                <slot></slot>\n            </div>\n            <div class=\"fot\">\n                <button class=\"btn btn-primary sure\" @click=\"onClickSure\">确定</button>\n            </div>\n        </div>\n    </div>\n</div>\n";
-
-/***/ },
-/* 161 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<template v-if=\"pageType === 'record'\">\n    <header class=\"header\">\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n        <a class=\"opt right plus\" href=\"./chat\" @click.prevent=\"onClickPlus\">\n            <i class=\"icon icon-plus\"></i>\n        </a>\n    </header>\n    <div class=\"dropmenu\" v-show=\"open\">\n        <ul class=\"menus\">\n            <li class=\"menu-item\" v-link=\"'friend'\">\n                <a>新建聊天</a>\n            </li>\n            <li class=\"menu-item\" @click='onClickAddFri'>\n                <a>添加朋友</a>\n            </li>\n            <li class=\"menu-item\" @click='onClickLogout'>\n                <a>退出</a>\n            </li>\n        </ul>\n    </div>\n    <div class=\"mask\" @click=\"onClickMask\" v-show=\"open\"></div>\n    <m-modal :show.sync=\"modal.show\" title=\"添加朋友\" @modal-sure=\"onModalSure\" :popup-tip.sync=\"modal.popupTip\">\n        <div class=\"field-row\">\n            <input class=\"form-control\" v-model=\"modal.friendName\" v-focus=\"modal.show\" type=\"text\" placeholder=\"输入用户名称\">\n        </div>\n    </m-modal>\n</template>\n\n<template v-if=\"pageType === 'friend'\">\n    <header class=\"header\">\n        <a class=\"opt left cancel\" @click='onClickCancel'>\n            取消\n        </a>\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n    </header>\n</template>\n\n<template v-if=\"pageType === 'chat'\">\n    <header class=\"header\">\n        <a class=\"opt left back\" v-link=\"refer\">\n            <i class=\"icon icon-back\"></i>返回\n        </a>\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n    </header>\n</template>\n";
-
-/***/ },
-/* 162 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(163)
-	__vue_script__ = __webpack_require__(165)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/record-item.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(166)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/components/record-item.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 163 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(164);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./record-item.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./record-item.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 164 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".contacter-list .item .profile {\n  *zoom: 1; }\n  .contacter-list .item .profile:before, .contacter-list .item .profile:after {\n    content: \"\";\n    display: table; }\n  .contacter-list .item .profile:after {\n    clear: both; }\n\n.contacter-list .item .ellipsis {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n.contacter-list .item {\n  border-bottom: 1px solid #d9d9d9;\n  height: 65px;\n  box-sizing: border-box;\n  color: #999;\n  overflow: hidden;\n  position: relative; }\n  .contacter-list .item .operate {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 65px;\n    line-height: 65px;\n    width: 48px;\n    color: #fff; }\n    .contacter-list .item .operate .delete {\n      background: red;\n      display: block;\n      text-align: center; }\n  .contacter-list .item .profile {\n    display: block;\n    padding: 10px;\n    background-color: #fff;\n    position: relative;\n    z-index: 9;\n    left: 0;\n    -webkit-transition: left 0.4s ease;\n    transition: left 0.4s ease; }\n    .contacter-list .item .profile.swipe-left {\n      left: -48px; }\n  .contacter-list .item .ellipsis {\n    width: 50%;\n    display: inline-block; }\n  .contacter-list .item .name {\n    color: #555;\n    font-size: 18px; }\n  .contacter-list .item .time {\n    float: right; }\n  .contacter-list .item .avatar {\n    height: 45px;\n    width: 45px;\n    border-radius: 4px;\n    float: left;\n    margin-right: 10px; }\n\n.contacter-list .item.unread .profile:before {\n  content: '';\n  position: absolute;\n  top: 4px;\n  left: 47px;\n  border-radius: 50%;\n  background-color: red;\n  color: #fff;\n  height: 14px;\n  width: 14px;\n  text-align: center; }\n", "", {"version":3,"sources":["/./src/components/record-item.vue"],"names":[],"mappings":"AAAA;GACE,QAAS,EAAE;EACX;IACE,YAAY;IACZ,eAAe,EAAE;EACnB;IACE,YAAY,EAAE;;AAElB;EACE,iBAAiB;EACjB,wBAAwB;EACxB,oBAAoB,EAAE;;AAExB;EACE,iCAAiC;EACjC,aAAa;EACb,uBAAuB;EACvB,YAAY;EACZ,iBAAiB;EACjB,mBAAmB,EAAE;EACrB;IACE,mBAAmB;IACnB,SAAS;IACT,OAAO;IACP,aAAa;IACb,kBAAkB;IAClB,YAAY;IACZ,YAAY,EAAE;IACd;MACE,gBAAgB;MAChB,eAAe;MACf,mBAAmB,EAAE;EACzB;IACE,eAAe;IACf,cAAc;IACd,uBAAuB;IACvB,mBAAmB;IACnB,WAAW;IACX,QAAQ;IACR,mCAAmC;IAInC,2BAA2B,EAAE;IAC7B;MACE,YAAY,EAAE;EAClB;IACE,WAAW;IACX,sBAAsB,EAAE;EAC1B;IACE,YAAY;IACZ,gBAAgB,EAAE;EACpB;IACE,aAAa,EAAE;EACjB;IACE,aAAa;IACb,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,mBAAmB,EAAE;;AAEzB;EACE,YAAY;EACZ,mBAAmB;EACnB,SAAS;EACT,WAAW;EACX,mBAAmB;EACnB,sBAAsB;EACtB,YAAY;EACZ,aAAa;EACb,YAAY;EACZ,mBAAmB,EAAE","file":"record-item.vue","sourcesContent":[".contacter-list .item .profile {\n  *zoom: 1; }\n  .contacter-list .item .profile:before, .contacter-list .item .profile:after {\n    content: \"\";\n    display: table; }\n  .contacter-list .item .profile:after {\n    clear: both; }\n\n.contacter-list .item .ellipsis {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n.contacter-list .item {\n  border-bottom: 1px solid #d9d9d9;\n  height: 65px;\n  box-sizing: border-box;\n  color: #999;\n  overflow: hidden;\n  position: relative; }\n  .contacter-list .item .operate {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 65px;\n    line-height: 65px;\n    width: 48px;\n    color: #fff; }\n    .contacter-list .item .operate .delete {\n      background: red;\n      display: block;\n      text-align: center; }\n  .contacter-list .item .profile {\n    display: block;\n    padding: 10px;\n    background-color: #fff;\n    position: relative;\n    z-index: 9;\n    left: 0;\n    -webkit-transition: left 0.4s ease;\n    -moz-transition: left 0.4s ease;\n    -ms-transition: left 0.4s ease;\n    -o-transition: left 0.4s ease;\n    transition: left 0.4s ease; }\n    .contacter-list .item .profile.swipe-left {\n      left: -48px; }\n  .contacter-list .item .ellipsis {\n    width: 50%;\n    display: inline-block; }\n  .contacter-list .item .name {\n    color: #555;\n    font-size: 18px; }\n  .contacter-list .item .time {\n    float: right; }\n  .contacter-list .item .avatar {\n    height: 45px;\n    width: 45px;\n    border-radius: 4px;\n    float: left;\n    margin-right: 10px; }\n\n.contacter-list .item.unread .profile:before {\n  content: '';\n  position: absolute;\n  top: 4px;\n  left: 47px;\n  border-radius: 50%;\n  background-color: red;\n  color: #fff;\n  height: 14px;\n  width: 14px;\n  text-align: center; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 165 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	    name: 'RecorditemView',
-	    props: {
-	        one: Object,
-	        index: Number
-	    },
-	    methods: {
-	        onSwipeProfile: function onSwipeProfile(e) {
-	            if (e.direction == 2) {
-	                this.$els.profile.classList.add('swipe-left');
-	            } else if (e.direction == 4) {
-	                this.$els.profile.classList.remove('swipe-left');
-	            }
-	        },
-	        onClickDelRecord: function onClickDelRecord(e) {
-	            this.$dispatch('deleterecord', this.one.author, this.one.contacter, this.index);
-	        }
-	    }
-	};
-
-/***/ },
-/* 166 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<li class=\"item\" :class=\"{'unread': one.unread}\" v-if=\"one.status != 0\">\n    <a class=\"profile\"\n        v-el:profile\n        v-link=\"{name: 'chat', params: {relate: one.contacter}}\"\n        v-touch:swipe=\"onSwipeProfile\">\n        <img class=\"avatar\" :src=\"one.contacterInfo.avatar\">\n        <div class=\"top\">\n            <span class=\"name ellipsis\">{{ one.contacterInfo.username }}</span>\n            <span class=\"time\">{{ new Date(one.recent.date).toLocaleDateString() }}</span>\n        </div>\n        <div class=\"btm\">\n            <span class=\"recent ellipsis\">{{ one.recent.content }}</span>\n        </div>\n    </a>\n    <div class=\"operate\">\n        <a class=\"delete\" @click=\"onClickDelRecord\">删除</a>\n    </div>\n</li>\n";
-
-/***/ },
-/* 167 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div id=\"record\">\n    <m-header :page-type=\"'record'\" title=\"最近联系人\"></m-header>\n    <main class=\"main\">\n        <div class=\"contacter-list\">\n            <ul class=\"records\">\n                <m-item v-for=\"one in records\" :one=\"one\" :index=\"$index\" @deleterecord=\"onDeleteRecord\"></m-item>\n            </ul>\n        </div>\n    </main>        \n</div>\n";
-
-/***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(169)
-	__vue_script__ = __webpack_require__(171)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/views/chat.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(182)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/views/chat.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 169 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(170);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 170 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "#chat .main {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  padding-top: 44px;\n  background-color: #ebebeb; }\n\n#chat .gallery {\n  overflow-y: auto;\n  -webkit-overflow-scrolling: touch;\n  height: 100%; }\n  #chat .gallery .chat-record-list {\n    padding: 15px 10px 65px; }\n", "", {"version":3,"sources":["/./src/views/chat.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,OAAO;EACP,QAAQ;EACR,UAAU;EACV,SAAS;EACT,kBAAkB;EAClB,0BAA0B,EAAE;;AAE9B;EACE,iBAAiB;EACjB,kCAAkC;EAClC,aAAa,EAAE;EACf;IACE,wBAAwB,EAAE","file":"chat.vue","sourcesContent":["#chat .main {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  padding-top: 44px;\n  background-color: #ebebeb; }\n\n#chat .gallery {\n  overflow-y: auto;\n  -webkit-overflow-scrolling: touch;\n  height: 100%; }\n  #chat .gallery .chat-record-list {\n    padding: 15px 10px 65px; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 171 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var Vue = __webpack_require__(1);
-	var auth = __webpack_require__(10);
-	var socketHepler = __webpack_require__(72);
-	var userStore = __webpack_require__(145);
-	var recordStore = __webpack_require__(141);
-	
-	module.exports = {
-	    name: 'ChatView',
-	    components: {
-	        'm-header': __webpack_require__(151),
-	        'm-item': __webpack_require__(172),
-	        'm-sendbox': __webpack_require__(177)
-	    },
-	    data: function data() {
-	        return {
-	            author: {},
-	            relate: {},
-	            messages: {
-	                messageId: '',
-	                list: []
-	            },
-	
-	            refer: ''
-	        };
-	    },
-	    route: {
-	        canActivate: function canActivate(transition) {
-	            if (auth.user.authenticated) {
-	                return true;
-	            } else {
-	                transition.redirect('/login');
-	                return false;
-	            }
-	        },
-	        data: function data(transition) {
-	            var author = auth.user.userId,
-	                relate = this.$route.params.relate;
-	
-	            return {
-	                refer: transition.from.path || '/index',
-	
-	                author: userStore.fetch(author),
-	                relate: userStore.fetch(relate),
-	                messages: recordStore.getMessageList(author, relate)
-	            };
-	        }
-	    },
-	    watch: {
-	        '$loadingRouteData': function $loadingRouteData(val, oldval) {
-	            if (!val) {
-	                setTimeout(function () {
-	                    this.toChatBtm();
-	                }.bind(this), 420);
-	            }
-	        }
-	    },
-	    methods: {
-	        onSendMessage: function onSendMessage(msg) {
-	            var author = this.author._id,
-	                relate = this.relate._id;
-	
-	            var attr = {
-	                sender: author,
-	                receiver: relate,
-	                content: msg,
-	                date: Date.now()
-	            };
-	
-	            if (this.messages.messageId) {
-	                socketHepler.socket.emit('message', attr, this.messages.messageId);
-	            } else {
-	                socketHepler.socket.emit('record', attr);
-	            }
-	        },
-	        onCreateRecord: function onCreateRecord(resp) {
-	            this.messages.messageId = resp.data.messageId;
-	            this.messages.list.push(resp.data.attr);
-	
-	            this.toChatBtm();
-	        },
-	        onReceiveMessage: function onReceiveMessage(resp) {
-	            if (this.messages.messageId !== resp.data.messageId) {
-	                return;
-	            }
-	            this.messages.list.push(resp.data.attr);
-	
-	            this.toChatBtm();
-	        },
-	        toChatBtm: function toChatBtm() {
-	            var _this = this;
-	
-	            Vue.nextTick(function () {
-	                var el = _this.$els.gallery;
-	                el.scrollTop = el.scrollHeight - el.clientHeight;
-	            });
-	        }
-	    },
-	    attached: function attached() {
-	        socketHepler.socket.on('message', this.onReceiveMessage.bind(this));
-	        socketHepler.socket.on('record', this.onCreateRecord.bind(this));
-	
-	        var author = auth.user.userId,
-	            relate = this.$route.params.relate;
-	
-	        socketHepler.enter(author, relate);
-	    },
-	    detached: function detached() {
-	        socketHepler.socket.removeListener('message');
-	        socketHepler.socket.removeListener('record');
-	
-	        socketHepler.leave(this.author._id, this.relate._id);
-	    }
-	};
-
-/***/ },
-/* 172 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(173)
-	__vue_script__ = __webpack_require__(175)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/chat-item.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(176)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/components/chat-item.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 173 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(174);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat-item.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat-item.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 174 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".gallery .item {\n  *zoom: 1; }\n  .gallery .item:before, .gallery .item:after {\n    content: \"\";\n    display: table; }\n  .gallery .item:after {\n    clear: both; }\n\n.gallery .item {\n  padding: 10px 0; }\n  .gallery .item .avatar {\n    height: 40px;\n    width: 40px;\n    float: left;\n    margin-right: 10px; }\n  .gallery .item .content {\n    overflow: hidden;\n    padding-right: 40px; }\n    .gallery .item .content .inner {\n      float: left;\n      background-color: #fff;\n      border: 1px solid #d1d1d1;\n      padding: 12px;\n      border-radius: 4px; }\n\n.gallery .item.mine .avatar {\n  float: right;\n  margin-left: 10px;\n  margin-right: 0; }\n\n.gallery .item.mine .content {\n  padding-left: 40px;\n  padding-right: 0; }\n  .gallery .item.mine .content .inner {\n    float: right;\n    background-color: #a0e75a; }\n  .gallery .item.mine .content img {\n    max-width: 180px; }\n", "", {"version":3,"sources":["/./src/components/chat-item.vue"],"names":[],"mappings":"AAAA;GACE,QAAS,EAAE;EACX;IACE,YAAY;IACZ,eAAe,EAAE;EACnB;IACE,YAAY,EAAE;;AAElB;EACE,gBAAgB,EAAE;EAClB;IACE,aAAa;IACb,YAAY;IACZ,YAAY;IACZ,mBAAmB,EAAE;EACvB;IACE,iBAAiB;IACjB,oBAAoB,EAAE;IACtB;MACE,YAAY;MACZ,uBAAuB;MACvB,0BAA0B;MAC1B,cAAc;MACd,mBAAmB,EAAE;;AAE3B;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB,EAAE;;AAEpB;EACE,mBAAmB;EACnB,iBAAiB,EAAE;EACnB;IACE,aAAa;IACb,0BAA0B,EAAE;EAC9B;IACE,iBAAiB,EAAE","file":"chat-item.vue","sourcesContent":[".gallery .item {\n  *zoom: 1; }\n  .gallery .item:before, .gallery .item:after {\n    content: \"\";\n    display: table; }\n  .gallery .item:after {\n    clear: both; }\n\n.gallery .item {\n  padding: 10px 0; }\n  .gallery .item .avatar {\n    height: 40px;\n    width: 40px;\n    float: left;\n    margin-right: 10px; }\n  .gallery .item .content {\n    overflow: hidden;\n    padding-right: 40px; }\n    .gallery .item .content .inner {\n      float: left;\n      background-color: #fff;\n      border: 1px solid #d1d1d1;\n      padding: 12px;\n      border-radius: 4px; }\n\n.gallery .item.mine .avatar {\n  float: right;\n  margin-left: 10px;\n  margin-right: 0; }\n\n.gallery .item.mine .content {\n  padding-left: 40px;\n  padding-right: 0; }\n  .gallery .item.mine .content .inner {\n    float: right;\n    background-color: #a0e75a; }\n  .gallery .item.mine .content img {\n    max-width: 180px; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 175 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	    props: ['one', 'author', 'relate']
-	};
-
-/***/ },
-/* 176 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div class=\"item\" :class=\"{'mine': one.sender === author._id}\" :messageid=\"one._id\">\n    <a>\n        <img :src=\"one.sender === author._id ? author.avatar : relate.avatar\" class=\"avatar\">\n    </a>\n    <div class=\"content\">\n        <div class=\"inner\">\n            <p>{{{ one.content }}}</p>\n        </div>\n    </div>\n</div>\n";
-
-/***/ },
-/* 177 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(178)
-	__vue_script__ = __webpack_require__(180)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/sendbox.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(181)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/components/sendbox.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(179);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sendbox.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sendbox.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 179 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "#chat .input {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  border-top: 1px solid #d9d9d9;\n  border-bottom: 1px solid #d9d9d9;\n  background-color: #f5f5f7; }\n  #chat .input table {\n    width: 100%; }\n    #chat .input table td {\n      padding: 8px 5px; }\n    #chat .input table .btn {\n      display: inline-block;\n      border: 1px solid #d9d9d9;\n      border-radius: 50%;\n      padding: 4px;\n      min-width: 0; }\n    #chat .input table .btn.upload-img {\n      position: relative; }\n      #chat .input table .btn.upload-img input[type=file] {\n        position: absolute;\n        height: 100%;\n        width: 100%;\n        left: 0;\n        top: 0;\n        z-index: 2;\n        opacity: 0; }\n    #chat .input table .icon {\n      background-size: contain; }\n    #chat .input table .icon-plus:before, #chat .input table .icon-plus:after {\n      background-color: #7f8389; }\n    #chat .input table .icon-sound {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position-x: 1px; }\n    #chat .input table .icon-send {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position: 2px 0;\n      -webkit-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n    #chat .input table .icon-face {\n      background-image: url(\"/src/statics/img/face.png\"); }\n    #chat .input table .operate-item {\n      width: 1px; }\n    #chat .input table .content {\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      width: 100%;\n      height: 32px;\n      outline: none;\n      padding: 5px;\n      box-sizing: border-box;\n      -webkit-appearance: none; }\n", "", {"version":3,"sources":["/./src/components/sendbox.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,UAAU;EACV,QAAQ;EACR,YAAY;EACZ,8BAA8B;EAC9B,iCAAiC;EACjC,0BAA0B,EAAE;EAC5B;IACE,YAAY,EAAE;IACd;MACE,iBAAiB,EAAE;IACrB;MACE,sBAAsB;MACtB,0BAA0B;MAC1B,mBAAmB;MACnB,aAAa;MACb,aAAa,EAAE;IACjB;MACE,mBAAmB,EAAE;MACrB;QACE,mBAAmB;QACnB,aAAa;QACb,YAAY;QACZ,QAAQ;QACR,OAAO;QACP,WAAW;QACX,WAAW,EAAE;IACjB;MACE,yBAAyB,EAAE;IAC7B;MACE,0BAA0B,EAAE;IAC9B;MACE,oDAAoD;MACpD,2BAA2B,EAAE;IAC/B;MACE,oDAAoD;MACpD,2BAA2B;MAC3B,kCAAkC;MAIlC,0BAA0B,EAAE;IAC9B;MACE,mDAAmD,EAAE;IACvD;MACE,WAAW,EAAE;IACf;MACE,0BAA0B;MAC1B,mBAAmB;MACnB,YAAY;MACZ,aAAa;MACb,cAAc;MACd,aAAa;MACb,uBAAuB;MACvB,yBAAyB,EAAE","file":"sendbox.vue","sourcesContent":["#chat .input {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  border-top: 1px solid #d9d9d9;\n  border-bottom: 1px solid #d9d9d9;\n  background-color: #f5f5f7; }\n  #chat .input table {\n    width: 100%; }\n    #chat .input table td {\n      padding: 8px 5px; }\n    #chat .input table .btn {\n      display: inline-block;\n      border: 1px solid #d9d9d9;\n      border-radius: 50%;\n      padding: 4px;\n      min-width: 0; }\n    #chat .input table .btn.upload-img {\n      position: relative; }\n      #chat .input table .btn.upload-img input[type=file] {\n        position: absolute;\n        height: 100%;\n        width: 100%;\n        left: 0;\n        top: 0;\n        z-index: 2;\n        opacity: 0; }\n    #chat .input table .icon {\n      background-size: contain; }\n    #chat .input table .icon-plus:before, #chat .input table .icon-plus:after {\n      background-color: #7f8389; }\n    #chat .input table .icon-sound {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position-x: 1px; }\n    #chat .input table .icon-send {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position: 2px 0;\n      -webkit-transform: rotate(-90deg);\n      -moz-transform: rotate(-90deg);\n      -ms-transform: rotate(-90deg);\n      -o-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n    #chat .input table .icon-face {\n      background-image: url(\"/src/statics/img/face.png\"); }\n    #chat .input table .operate-item {\n      width: 1px; }\n    #chat .input table .content {\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      width: 100%;\n      height: 32px;\n      outline: none;\n      padding: 5px;\n      box-sizing: border-box;\n      -webkit-appearance: none; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 180 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var globalStore = __webpack_require__(195);
-	
-	module.exports = {
-	    data: function data() {
-	        return {
-	            input: ''
-	        };
-	    },
-	    methods: {
-	        onClickSend: function onClickSend() {
-	            this.sendMsg();
-	        },
-	        onEnterInput: function onEnterInput() {
-	            this.sendMsg();
-	        },
-	        sendMsg: function sendMsg() {
-	            if (!this.input.trim()) return;
-	
-	            this.$dispatch('sendmsg', escape(this.input));
-	            this.input = '';
-	        },
-	        onChangeFileInput: function onChangeFileInput(e) {
-	            var _this = this;
-	
-	            var files = e.target.files;
-	            if (!files || files.length < 1) return;
-	
-	            var self = this;
-	            var file = files[0];
-	            var filefilers = /^(image\/gif|image\/jpeg|image\/png)$/i;
-	
-	            if (!filefilers.test(file.type)) {
-	                alert('只支持.gif, .jpeg, .png');
-	                return;
-	            }
-	
-	            var p = globalStore.upload(file);
-	
-	            p.then(function (resp) {
-	                if (resp.code == 0) {
-	                    var msg = '<img src="' + resp.data.imgPath + '">';
-	                    _this.$dispatch('sendmsg', msg);
-	                }
-	            });
-	        }
-	    }
-	};
-
-/***/ },
-/* 181 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div class=\"input\">\n    <div class=\"basic\">\n        <table>\n            <tbody>\n                <tr>\n                    <td class=\"operate-item plus\">\n                        <a class=\"btn upload-img\">\n                            <i class=\"icon icon-plus\"></i>\n                            <input type=\"file\" name=\"\" id=\"\" @change=\"onChangeFileInput\">\n                        </a>\n                    </td>\n                    <td class=\"\">\n                        <input v-model=\"input\" class=\"content\" type=\"text\" @keyup.enter=\"onEnterInput\">\n                    </td>\n                    <td class=\"operate-item face\">\n                        <a class=\"btn face\">\n                            <i class=\"icon icon-face\"></i>\n                        </a>\n                    </td>\n                    <td class=\"operate-item send\">\n                        <a class=\"btn\" @click=\"onClickSend\">\n                            <i class=\"icon icon-send\"></i>\n                        </a>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n    <div class=\"extra hide\"></div>\n</div>\n";
-
-/***/ },
-/* 182 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div id=\"chat\">\n    <m-header title=\"Someone\" page-type=\"chat\" :refer=\"refer\" :title=\"relate.username\"></m-header>\n    <div class=\"main\">\n        <div class=\"gallery\" v-el:gallery>\n            <div class=\"chat-record-list\">\n                <m-item v-for=\"one in messages.list\" :one=\"one\" :author=\"author\" :relate=\"relate\"></m-item>\n            </div>\n        </div>\n        <m-sendbox @sendmsg=\"onSendMessage\"></m-sendbox>\n    </div>\n</div>\n";
-
-/***/ },
-/* 183 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(184)
-	__vue_script__ = __webpack_require__(186)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/views/friend.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(192)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/views/friend.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 184 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(185);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./friend.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./friend.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 185 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"friend.vue","sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 186 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	var auth = __webpack_require__(10);
-	var friendStore = __webpack_require__(155);
-	var HeaderView = __webpack_require__(151);
-	var FriendItemView = __webpack_require__(187);
-	
-	module.exports = {
-	    name: 'FriendView',
-	    components: {
-	        'm-item': FriendItemView,
-	        'm-header': HeaderView
-	    },
-	    data: function data() {
-	        return {
-	            friends: []
-	        };
-	    },
-	    route: {
-	        canActivate: function canActivate(transition) {
-	            if (auth.user.authenticated) {
-	                return true;
-	            } else {
-	                transition.redirect('./login');
-	                return false;
-	            }
-	        },
-	        data: function data(transition) {
-	            return {
-	                friends: friendStore.fetch(auth.user.userId)
-	            };
-	        }
-	    }
-	};
-
-/***/ },
-/* 187 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __vue_script__, __vue_template__
-	__webpack_require__(188)
-	__vue_script__ = __webpack_require__(190)
-	if (__vue_script__ &&
-	    __vue_script__.__esModule &&
-	    Object.keys(__vue_script__).length > 1) {
-	  console.warn("[vue-loader] src/components/friend-item.vue: named exports in *.vue files are ignored.")}
-	__vue_template__ = __webpack_require__(191)
-	module.exports = __vue_script__ || {}
-	if (module.exports.__esModule) module.exports = module.exports.default
-	if (__vue_template__) {
-	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
-	}
-	if (false) {(function () {  module.hot.accept()
-	  var hotAPI = require("vue-hot-reload-api")
-	  hotAPI.install(require("vue"), true)
-	  if (!hotAPI.compatible) return
-	  var id = "/Users/yll/Desktop/webim/public/src/components/friend-item.vue"
-	  if (!module.hot.data) {
-	    hotAPI.createRecord(id, module.exports)
-	  } else {
-	    hotAPI.update(id, module.exports, __vue_template__)
-	  }
-	})()}
-
-/***/ },
-/* 188 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(189);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(8)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./friend-item.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./friend-item.vue");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 189 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(7)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".friend-list .item .profile {\n  *zoom: 1; }\n  .friend-list .item .profile:before, .friend-list .item .profile:after {\n    content: \"\";\n    display: table; }\n  .friend-list .item .profile:after {\n    clear: both; }\n\n.friend-list .item {\n  border-bottom: 1px solid #d9d9d9;\n  line-height: 44px;\n  box-sizing: border-box;\n  color: #999;\n  overflow: hidden;\n  position: relative; }\n  .friend-list .item .avatar {\n    height: 30px;\n    width: 30px;\n    margin-right: 10px; }\n  .friend-list .item .profile {\n    padding: 0 10px;\n    background-color: #fff;\n    position: relative;\n    z-index: 9; }\n  .friend-list .item .operate {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 44px;\n    line-height: 44px;\n    width: 48px;\n    color: #fff; }\n    .friend-list .item .operate .remark {\n      background: #B9B9B9;\n      display: block;\n      text-align: center; }\n", "", {"version":3,"sources":["/./src/components/friend-item.vue"],"names":[],"mappings":"AAAA;GACE,QAAS,EAAE;EACX;IACE,YAAY;IACZ,eAAe,EAAE;EACnB;IACE,YAAY,EAAE;;AAElB;EACE,iCAAiC;EACjC,kBAAkB;EAClB,uBAAuB;EACvB,YAAY;EACZ,iBAAiB;EACjB,mBAAmB,EAAE;EACrB;IACE,aAAa;IACb,YAAY;IACZ,mBAAmB,EAAE;EACvB;IACE,gBAAgB;IAChB,uBAAuB;IACvB,mBAAmB;IACnB,WAAW,EAAE;EACf;IACE,mBAAmB;IACnB,SAAS;IACT,OAAO;IACP,aAAa;IACb,kBAAkB;IAClB,YAAY;IACZ,YAAY,EAAE;IACd;MACE,oBAAoB;MACpB,eAAe;MACf,mBAAmB,EAAE","file":"friend-item.vue","sourcesContent":[".friend-list .item .profile {\n  *zoom: 1; }\n  .friend-list .item .profile:before, .friend-list .item .profile:after {\n    content: \"\";\n    display: table; }\n  .friend-list .item .profile:after {\n    clear: both; }\n\n.friend-list .item {\n  border-bottom: 1px solid #d9d9d9;\n  line-height: 44px;\n  box-sizing: border-box;\n  color: #999;\n  overflow: hidden;\n  position: relative; }\n  .friend-list .item .avatar {\n    height: 30px;\n    width: 30px;\n    margin-right: 10px; }\n  .friend-list .item .profile {\n    padding: 0 10px;\n    background-color: #fff;\n    position: relative;\n    z-index: 9; }\n  .friend-list .item .operate {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 44px;\n    line-height: 44px;\n    width: 48px;\n    color: #fff; }\n    .friend-list .item .operate .remark {\n      background: #B9B9B9;\n      display: block;\n      text-align: center; }\n"],"sourceRoot":"webpack://"}]);
-	
-	// exports
-
-
-/***/ },
-/* 190 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	module.exports = {
-	    name: 'FriendItemView',
-	    props: {
-	        one: Object,
-	        index: Number
-	    }
-	};
-
-/***/ },
-/* 191 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<li class=\"item\" \n    data-href=\"{{ one.relate }}\">\n    <div class=\"profile\" v-link=\"{name: 'chat', params: {relate: one.relate}}\">\n        <img class=\"avatar\" :src=\"one.friendInfo.avatar\">\n        <span class=\"remark\">{{ one.remark || one.friendInfo.username }}</span>\n    </div>\n    <div class=\"operate\">\n        <a class=\"remark\" href=\"\">备注</a>\n    </div>\n</li>\n";
-
-/***/ },
-/* 192 */
-/***/ function(module, exports) {
-
-	module.exports = "\n<div id=\"phonebook\">\n    <m-header :title=\"'选择联系人'\" :page-type=\"'friend'\" refer=\"index\"></m-header>\n    <main class=\"main\">\n        <div class=\"friend-list\">\n            <ul class=\"friends\">\n                <m-item v-for=\"one in friends\" :one=\"one\" :index=\"$index\"></m-item>\n            </ul>\n        </div>\n    </main>\n</div>\n";
-
-/***/ },
-/* 193 */
-/***/ function(module, exports, __webpack_require__) {
-
 	;(function () {
 	
 	  var vueTouch = {}
 	  var Hammer =  true
-	    ? __webpack_require__(194)
+	    ? __webpack_require__(5)
 	    : window.Hammer
 	  var gestures = ['tap', 'pan', 'pinch', 'press', 'rotate', 'swipe']
 	  var directions = ['up', 'down', 'left', 'right', 'horizontal', 'vertical']
@@ -26128,7 +12703,7 @@
 
 
 /***/ },
-/* 194 */
+/* 5 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/*! Hammer.JS - v2.0.6 - 2015-12-23
@@ -28702,12 +15277,11971 @@
 
 
 /***/ },
-/* 195 */
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(7)
+	__vue_template__ = __webpack_require__(11)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/views/app.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(8);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./app.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./app.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "@charset \"UTF-8\";\n/*! normalize.css v3.0.2 | MIT License | git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n@-webkit-keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@-webkit-keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.anim-fadein {\n  -webkit-animation: fadeIn .4s linear;\n  animation: fadeIn .4s linear; }\n\n.anim-fadeout {\n  -webkit-animation: fadeOut .4s linear;\n  animation: fadeOut .4s linear; }\n\n* {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-size: 14px;\n  font-family: \"Microsoft Yahei\", \"SimHei\", \"Arial\";\n  background-color: #fff; }\n\na {\n  color: inherit;\n  text-decoration: none; }\n\nul {\n  list-style: none; }\n\nimg {\n  vertical-align: middle;\n  border: none; }\n\na, input, button {\n  -webkit-tap-highlight-color: transparent; }\n\n.color-danger {\n  color: #e8415f; }\n\n.color-primary {\n  color: #3a89c9; }\n\n.color-dim {\n  color: #999; }\n\n.color-warning {\n  color: #f8a13f; }\n\n.color-success {\n  color: #61c155; }\n\n.pull-right {\n  float: right !important; }\n\n.pull-left {\n  float: left !important; }\n\n.hide {\n  display: none !important; }\n\n.disabled {\n  color: #666 !important;\n  text-decoration: none !important;\n  cursor: default !important; }\n\nul.inline {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ul.inline > .item {\n    float: left;\n    margin: 0 10px 10px 0; }\n\n.btn {\n  padding: 8px 10px;\n  background: #fff;\n  border: 1px solid #DEDEDE;\n  border-radius: 2px;\n  outline: none;\n  min-width: 70px; }\n  .btn.btn-block {\n    width: 100%; }\n  .btn.btn-primary {\n    background-color: #47B7F9;\n    color: #fff;\n    border-color: #3192CC; }\n\n.fade-transition {\n  -webkit-transition: opacity .4s ease;\n  transition: opacity .4s ease; }\n\n/* .expand-enter 定义进入的开始状态 */\n/* .expand-leave 定义离开的结束状态 */\n.fade-enter,\n.fade-leave {\n  opacity: 0; }\n\n.icon {\n  display: inline-block;\n  *display: inline;\n  *zoom: 1;\n  height: 24px;\n  width: 24px;\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.icon-back {\n  border: 2px solid #fff;\n  border-right: none;\n  border-bottom: none;\n  -webkit-transform: rotate(-45deg);\n  transform: rotate(-45deg); }\n\n.icon-plus {\n  position: relative; }\n  .icon-plus:before, .icon-plus:after {\n    content: '';\n    display: block;\n    position: absolute;\n    background-color: #fff; }\n  .icon-plus:before {\n    height: 100%;\n    width: 2px;\n    left: 50%;\n    margin-left: -1px; }\n  .icon-plus:after {\n    width: 100%;\n    height: 2px;\n    top: 50%;\n    margin-top: -1px; }\n\n.qqface {\n  background: url(/src/statics/img/qqfacePanel.png) no-repeat;\n  background-size: 434px 202px;\n  display: inline-block;\n  height: 28px;\n  width: 28px; }\n  .qqface.qqface0 {\n    background-position: 0 0; }\n  .qqface.qqface1 {\n    background-position: -29px 0; }\n  .qqface.qqface2 {\n    background-position: -58px 0; }\n  .qqface.qqface3 {\n    background-position: -87px 0; }\n  .qqface.qqface4 {\n    background-position: -116px 0; }\n  .qqface.qqface5 {\n    background-position: -145px 0; }\n  .qqface.qqface6 {\n    background-position: -174px 0; }\n  .qqface.qqface7 {\n    background-position: -203px 0; }\n  .qqface.qqface8 {\n    background-position: -232px 0; }\n  .qqface.qqface9 {\n    background-position: -261px 0; }\n  .qqface.qqface10 {\n    background-position: -290px 0; }\n  .qqface.qqface11 {\n    background-position: -319px 0; }\n  .qqface.qqface12 {\n    background-position: -348px 0; }\n  .qqface.qqface13 {\n    background-position: -377px 0; }\n  .qqface.qqface14 {\n    background-position: -406px 0; }\n  .qqface.qqface15 {\n    background-position: 0 -29px; }\n  .qqface.qqface16 {\n    background-position: -29px -29px; }\n  .qqface.qqface17 {\n    background-position: -58px -29px; }\n  .qqface.qqface18 {\n    background-position: -87px -29px; }\n  .qqface.qqface19 {\n    background-position: -116px -29px; }\n  .qqface.qqface20 {\n    background-position: -145px -29px; }\n  .qqface.qqface21 {\n    background-position: -174px -29px; }\n  .qqface.qqface22 {\n    background-position: -203px -29px; }\n  .qqface.qqface23 {\n    background-position: -232px -29px; }\n  .qqface.qqface24 {\n    background-position: -261px -29px; }\n  .qqface.qqface25 {\n    background-position: -290px -29px; }\n", "", {"version":3,"sources":["/./src/views/app.vue"],"names":[],"mappings":"AAAA,iBAAiB;AACjB,4DAA4D;AAC5D;;;;GAIG;AACH;EACE,wBAAwB;EACxB,OAAO;EACP,2BAA2B;EAC3B,OAAO;EACP,+BAA+B;EAC/B,OAAO,EAAE;;AAEX;;GAEG;AACH;EACE,UAAU,EAAE;;AAEd;gFACgF;AAChF;;;;;GAKG;AACH;;;;;;;;;;;;;EAaE,eAAe,EAAE;;AAEnB;;;GAGG;AACH;;;;EAIE,sBAAsB;EACtB,OAAO;EACP,yBAAyB;EACzB,OAAO,EAAE;;AAEX;;;GAGG;AACH;EACE,cAAc;EACd,UAAU,EAAE;;AAEd;;;GAGG;AACH;;EAEE,cAAc,EAAE;;AAElB;gFACgF;AAChF;;GAEG;AACH;EACE,8BAA8B,EAAE;;AAElC;;GAEG;AACH;;EAEE,WAAW,EAAE;;AAEf;gFACgF;AAChF;;GAEG;AACH;EACE,0BAA0B,EAAE;;AAE9B;;GAEG;AACH;;EAEE,kBAAkB,EAAE;;AAEtB;;GAEG;AACH;EACE,mBAAmB,EAAE;;AAEvB;;;GAGG;AACH;EACE,eAAe;EACf,iBAAiB,EAAE;;AAErB;;GAEG;AACH;EACE,iBAAiB;EACjB,YAAY,EAAE;;AAEhB;;GAEG;AACH;EACE,eAAe,EAAE;;AAEnB;;GAEG;AACH;;EAEE,eAAe;EACf,eAAe;EACf,mBAAmB;EACnB,yBAAyB,EAAE;;AAE7B;EACE,YAAY,EAAE;;AAEhB;EACE,gBAAgB,EAAE;;AAEpB;gFACgF;AAChF;;GAEG;AACH;EACE,UAAU,EAAE;;AAEd;;GAEG;AACH;EACE,iBAAiB,EAAE;;AAErB;gFACgF;AAChF;;GAEG;AACH;EACE,iBAAiB,EAAE;;AAErB;;GAEG;AACH;EAEE,wBAAwB;EACxB,UAAU,EAAE;;AAEd;;GAEG;AACH;EACE,eAAe,EAAE;;AAEnB;;GAEG;AACH;;;;EAIE,kCAAkC;EAClC,eAAe,EAAE;;AAEnB;gFACgF;AAChF;;;GAGG;AACH;;;;;GAKG;AACH;;;;;EAKE,eAAe;EACf,OAAO;EACP,cAAc;EACd,OAAO;EACP,UAAU;EACV,OAAO,EAAE;;AAEX;;GAEG;AACH;EACE,kBAAkB,EAAE;;AAEtB;;;;;GAKG;AACH;;EAEE,qBAAqB,EAAE;;AAEzB;;;;;;GAMG;AACH;;;;EAIE,2BAA2B;EAC3B,OAAO;EACP,gBAAgB;EAChB,OAAO,EAAE;;AAEX;;GAEG;AACH;;EAEE,gBAAgB,EAAE;;AAEpB;;GAEG;AACH;;EAEE,UAAU;EACV,WAAW,EAAE;;AAEf;;;GAGG;AACH;EACE,oBAAoB,EAAE;;AAExB;;;;;;GAMG;AACH;;EAEE,uBAAuB;EACvB,OAAO;EACP,WAAW;EACX,OAAO,EAAE;;AAEX;;;;GAIG;AACH;;EAEE,aAAa,EAAE;;AAEjB;;;;GAIG;AACH;EACE,8BAA8B;EAC9B,OAAO;EAGP,OAAO;EACP,wBAAwB,EAAE;;AAE5B;;;;GAIG;AACH;;EAEE,yBAAyB,EAAE;;AAE7B;;GAEG;AACH;EACE,0BAA0B;EAC1B,cAAc;EACd,+BAA+B,EAAE;;AAEnC;;;GAGG;AACH;EACE,UAAU;EACV,OAAO;EACP,WAAW;EACX,OAAO,EAAE;;AAEX;;GAEG;AACH;EACE,eAAe,EAAE;;AAEnB;;;GAGG;AACH;EACE,kBAAkB,EAAE;;AAEtB;gFACgF;AAChF;;GAEG;AACH;EACE,0BAA0B;EAC1B,kBAAkB,EAAE;;AAEtB;;EAEE,WAAW,EAAE;;AAEf;EACE;IACE,WAAW,EAAE;EACf;IACE,WAAW,EAAE,EAAE;;AAJnB;EACE;IACE,WAAW,EAAE;EACf;IACE,WAAW,EAAE,EAAE;;AAEnB;EACE;IACE,WAAW,EAAE;EACf;IACE,WAAW,EAAE,EAAE;;AAJnB;EACE;IACE,WAAW,EAAE;EACf;IACE,WAAW,EAAE,EAAE;;AAEnB;EACE,qCAAqC;EAErC,6BAA6B,EAAE;;AAEjC;EACE,sCAAsC;EAEtC,8BAA8B,EAAE;;AAElC;EACE,UAAU;EACV,WAAW,EAAE;;AAEf;EACE,gBAAgB;EAChB,kDAAkD;EAClD,uBAAuB,EAAE;;AAE3B;EACE,eAAe;EACf,sBAAsB,EAAE;;AAE1B;EACE,iBAAiB,EAAE;;AAErB;EACE,uBAAuB;EACvB,aAAa,EAAE;;AAEjB;EACE,yCAAyC,EAAE;;AAE7C;EACE,eAAe,EAAE;;AAEnB;EACE,eAAe,EAAE;;AAEnB;EACE,YAAY,EAAE;;AAEhB;EACE,eAAe,EAAE;;AAEnB;EACE,eAAe,EAAE;;AAEnB;EACE,wBAAwB,EAAE;;AAE5B;EACE,uBAAuB,EAAE;;AAE3B;EACE,yBAAyB,EAAE;;AAE7B;EACE,uBAAuB;EACvB,iCAAiC;EACjC,2BAA2B,EAAE;;AAE/B;EACE,iBAAiB;EACjB,WAAW;EACX,UAAU;EACV,iBAAiB,EAAE;EACnB;IACE,YAAY;IACZ,sBAAsB,EAAE;;AAE5B;EACE,kBAAkB;EAClB,iBAAiB;EACjB,0BAA0B;EAC1B,mBAAmB;EACnB,cAAc;EACd,gBAAgB,EAAE;EAClB;IACE,YAAY,EAAE;EAChB;IACE,0BAA0B;IAC1B,YAAY;IACZ,sBAAsB,EAAE;;AAE5B;EACE,qCAA6B;EAA7B,6BAA6B,EAAE;;AAEjC,6BAA6B;AAC7B,6BAA6B;AAC7B;;EAEE,WAAW,EAAE;;AAEf;EACE,sBAAsB;GAStB,gBARiB;GASjB,QARS;EACT,aAAa;EACb,YAAY;EACZ,6BAA6B;EAC7B,uBAAuB,EAAE;;AAE3B;EACE,uBAAuB;EACvB,mBAAmB;EACnB,oBAAoB;EACpB,kCAAkC;EAIlC,0BAA0B,EAAE;;AAE9B;EACE,mBAAmB,EAAE;EACrB;IACE,YAAY;IACZ,eAAe;IACf,mBAAmB;IACnB,uBAAuB,EAAE;EAC3B;IACE,aAAa;IACb,WAAW;IACX,UAAU;IACV,kBAAkB,EAAE;EACtB;IACE,YAAY;IACZ,YAAY;IACZ,SAAS;IACT,iBAAiB,EAAE;;AAEvB;EACE,4DAA4D;EAE5D,6BAA6B;EAC7B,sBAAsB;EACtB,aAAa;EACb,YAAY,EAAE;EACd;IACE,yBAAyB,EAAE;EAC7B;IACE,6BAA6B,EAAE;EACjC;IACE,6BAA6B,EAAE;EACjC;IACE,6BAA6B,EAAE;EACjC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,8BAA8B,EAAE;EAClC;IACE,6BAA6B,EAAE;EACjC;IACE,iCAAiC,EAAE;EACrC;IACE,iCAAiC,EAAE;EACrC;IACE,iCAAiC,EAAE;EACrC;IACE,kCAAkC,EAAE;EACtC;IACE,kCAAkC,EAAE;EACtC;IACE,kCAAkC,EAAE;EACtC;IACE,kCAAkC,EAAE;EACtC;IACE,kCAAkC,EAAE;EACtC;IACE,kCAAkC,EAAE;EACtC;IACE,kCAAkC,EAAE","file":"app.vue","sourcesContent":["@charset \"UTF-8\";\n/*! normalize.css v3.0.2 | MIT License | git.io/normalize */\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS text size adjust after orientation change, without disabling\n *    user zoom.\n */\nhtml {\n  font-family: sans-serif;\n  /* 1 */\n  -ms-text-size-adjust: 100%;\n  /* 2 */\n  -webkit-text-size-adjust: 100%;\n  /* 2 */ }\n\n/**\n * Remove default margin.\n */\nbody {\n  margin: 0; }\n\n/* HTML5 display definitions\n   ========================================================================== */\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block; }\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block;\n  /* 1 */\n  vertical-align: baseline;\n  /* 2 */ }\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.\n */\n[hidden],\ntemplate {\n  display: none; }\n\n/* Links\n   ========================================================================== */\n/**\n * Remove the gray background color from active links in IE 10.\n */\na {\n  background-color: transparent; }\n\n/**\n * Improve readability when focused and also mouse hovered in all browsers.\n */\na:active,\na:hover {\n  outline: 0; }\n\n/* Text-level semantics\n   ========================================================================== */\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\nabbr[title] {\n  border-bottom: 1px dotted; }\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\nb,\nstrong {\n  font-weight: bold; }\n\n/**\n * Address styling not present in Safari and Chrome.\n */\ndfn {\n  font-style: italic; }\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\n/**\n * Address styling not present in IE 8/9.\n */\nmark {\n  background: #ff0;\n  color: #000; }\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\nsmall {\n  font-size: 80%; }\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\n/* Embedded content\n   ========================================================================== */\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\nimg {\n  border: 0; }\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\nsvg:not(:root) {\n  overflow: hidden; }\n\n/* Grouping content\n   ========================================================================== */\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\nfigure {\n  margin: 1em 40px; }\n\n/**\n * Address differences between Firefox and other browsers.\n */\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\n/**\n * Contain overflow in all browsers.\n */\npre {\n  overflow: auto; }\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em; }\n\n/* Forms\n   ========================================================================== */\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit;\n  /* 1 */\n  font: inherit;\n  /* 2 */\n  margin: 0;\n  /* 3 */ }\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\nbutton {\n  overflow: visible; }\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\nbutton,\nselect {\n  text-transform: none; }\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\nbutton,\nhtml input[type=\"button\"],\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button;\n  /* 2 */\n  cursor: pointer;\n  /* 3 */ }\n\n/**\n * Re-set default cursor for disabled elements.\n */\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default; }\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\ninput {\n  line-height: normal; }\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto; }\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome\n *    (include `-moz` to future-proof).\n */\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  /* 1 */\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  /* 2 */\n  box-sizing: content-box; }\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\n/**\n * Define consistent border, margin, and padding.\n */\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\nlegend {\n  border: 0;\n  /* 1 */\n  padding: 0;\n  /* 2 */ }\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\ntextarea {\n  overflow: auto; }\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\noptgroup {\n  font-weight: bold; }\n\n/* Tables\n   ========================================================================== */\n/**\n * Remove most spacing between table cells.\n */\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\ntd,\nth {\n  padding: 0; }\n\n@keyframes fadein {\n  0% {\n    opacity: 0; }\n  100% {\n    opacity: 1; } }\n\n@keyframes fadeout {\n  0% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n.anim-fadein {\n  -webkit-animation: fadeIn .4s linear;\n  -o-animation: fadeIn .4s linear;\n  animation: fadeIn .4s linear; }\n\n.anim-fadeout {\n  -webkit-animation: fadeOut .4s linear;\n  -o-animation: fadeOut .4s linear;\n  animation: fadeOut .4s linear; }\n\n* {\n  margin: 0;\n  padding: 0; }\n\nbody {\n  font-size: 14px;\n  font-family: \"Microsoft Yahei\", \"SimHei\", \"Arial\";\n  background-color: #fff; }\n\na {\n  color: inherit;\n  text-decoration: none; }\n\nul {\n  list-style: none; }\n\nimg {\n  vertical-align: middle;\n  border: none; }\n\na, input, button {\n  -webkit-tap-highlight-color: transparent; }\n\n.color-danger {\n  color: #e8415f; }\n\n.color-primary {\n  color: #3a89c9; }\n\n.color-dim {\n  color: #999; }\n\n.color-warning {\n  color: #f8a13f; }\n\n.color-success {\n  color: #61c155; }\n\n.pull-right {\n  float: right !important; }\n\n.pull-left {\n  float: left !important; }\n\n.hide {\n  display: none !important; }\n\n.disabled {\n  color: #666 !important;\n  text-decoration: none !important;\n  cursor: default !important; }\n\nul.inline {\n  overflow: hidden;\n  padding: 0;\n  margin: 0;\n  list-style: none; }\n  ul.inline > .item {\n    float: left;\n    margin: 0 10px 10px 0; }\n\n.btn {\n  padding: 8px 10px;\n  background: #fff;\n  border: 1px solid #DEDEDE;\n  border-radius: 2px;\n  outline: none;\n  min-width: 70px; }\n  .btn.btn-block {\n    width: 100%; }\n  .btn.btn-primary {\n    background-color: #47B7F9;\n    color: #fff;\n    border-color: #3192CC; }\n\n.fade-transition {\n  transition: opacity .4s ease; }\n\n/* .expand-enter 定义进入的开始状态 */\n/* .expand-leave 定义离开的结束状态 */\n.fade-enter,\n.fade-leave {\n  opacity: 0; }\n\n.icon {\n  display: inline-block;\n  *display: inline;\n  *zoom: 1;\n  height: 24px;\n  width: 24px;\n  background-repeat: no-repeat;\n  vertical-align: middle; }\n\n.icon-back {\n  border: 2px solid #fff;\n  border-right: none;\n  border-bottom: none;\n  -webkit-transform: rotate(-45deg);\n  -moz-transform: rotate(-45deg);\n  -ms-transform: rotate(-45deg);\n  -o-transform: rotate(-45deg);\n  transform: rotate(-45deg); }\n\n.icon-plus {\n  position: relative; }\n  .icon-plus:before, .icon-plus:after {\n    content: '';\n    display: block;\n    position: absolute;\n    background-color: #fff; }\n  .icon-plus:before {\n    height: 100%;\n    width: 2px;\n    left: 50%;\n    margin-left: -1px; }\n  .icon-plus:after {\n    width: 100%;\n    height: 2px;\n    top: 50%;\n    margin-top: -1px; }\n\n.qqface {\n  background: url(/src/statics/img/qqfacePanel.png) no-repeat;\n  -webkit-background-size: 434px 202px;\n  background-size: 434px 202px;\n  display: inline-block;\n  height: 28px;\n  width: 28px; }\n  .qqface.qqface0 {\n    background-position: 0 0; }\n  .qqface.qqface1 {\n    background-position: -29px 0; }\n  .qqface.qqface2 {\n    background-position: -58px 0; }\n  .qqface.qqface3 {\n    background-position: -87px 0; }\n  .qqface.qqface4 {\n    background-position: -116px 0; }\n  .qqface.qqface5 {\n    background-position: -145px 0; }\n  .qqface.qqface6 {\n    background-position: -174px 0; }\n  .qqface.qqface7 {\n    background-position: -203px 0; }\n  .qqface.qqface8 {\n    background-position: -232px 0; }\n  .qqface.qqface9 {\n    background-position: -261px 0; }\n  .qqface.qqface10 {\n    background-position: -290px 0; }\n  .qqface.qqface11 {\n    background-position: -319px 0; }\n  .qqface.qqface12 {\n    background-position: -348px 0; }\n  .qqface.qqface13 {\n    background-position: -377px 0; }\n  .qqface.qqface14 {\n    background-position: -406px 0; }\n  .qqface.qqface15 {\n    background-position: 0 -29px; }\n  .qqface.qqface16 {\n    background-position: -29px -29px; }\n  .qqface.qqface17 {\n    background-position: -58px -29px; }\n  .qqface.qqface18 {\n    background-position: -87px -29px; }\n  .qqface.qqface19 {\n    background-position: -116px -29px; }\n  .qqface.qqface20 {\n    background-position: -145px -29px; }\n  .qqface.qqface21 {\n    background-position: -174px -29px; }\n  .qqface.qqface22 {\n    background-position: -203px -29px; }\n  .qqface.qqface23 {\n    background-position: -232px -29px; }\n  .qqface.qqface24 {\n    background-position: -261px -29px; }\n  .qqface.qqface25 {\n    background-position: -290px -29px; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 9 */
+/***/ function(module, exports) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+	
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+	
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	var stylesInDom = {},
+		memoize = function(fn) {
+			var memo;
+			return function () {
+				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+				return memo;
+			};
+		},
+		isOldIE = memoize(function() {
+			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+		}),
+		getHeadElement = memoize(function () {
+			return document.head || document.getElementsByTagName("head")[0];
+		}),
+		singletonElement = null,
+		singletonCounter = 0,
+		styleElementsInsertedAtTop = [];
+	
+	module.exports = function(list, options) {
+		if(false) {
+			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+		}
+	
+		options = options || {};
+		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+		// tags it will allow on a page
+		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
+	
+		// By default, add <style> tags to the bottom of <head>.
+		if (typeof options.insertAt === "undefined") options.insertAt = "bottom";
+	
+		var styles = listToStyles(list);
+		addStylesToDom(styles, options);
+	
+		return function update(newList) {
+			var mayRemove = [];
+			for(var i = 0; i < styles.length; i++) {
+				var item = styles[i];
+				var domStyle = stylesInDom[item.id];
+				domStyle.refs--;
+				mayRemove.push(domStyle);
+			}
+			if(newList) {
+				var newStyles = listToStyles(newList);
+				addStylesToDom(newStyles, options);
+			}
+			for(var i = 0; i < mayRemove.length; i++) {
+				var domStyle = mayRemove[i];
+				if(domStyle.refs === 0) {
+					for(var j = 0; j < domStyle.parts.length; j++)
+						domStyle.parts[j]();
+					delete stylesInDom[domStyle.id];
+				}
+			}
+		};
+	}
+	
+	function addStylesToDom(styles, options) {
+		for(var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+			if(domStyle) {
+				domStyle.refs++;
+				for(var j = 0; j < domStyle.parts.length; j++) {
+					domStyle.parts[j](item.parts[j]);
+				}
+				for(; j < item.parts.length; j++) {
+					domStyle.parts.push(addStyle(item.parts[j], options));
+				}
+			} else {
+				var parts = [];
+				for(var j = 0; j < item.parts.length; j++) {
+					parts.push(addStyle(item.parts[j], options));
+				}
+				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+			}
+		}
+	}
+	
+	function listToStyles(list) {
+		var styles = [];
+		var newStyles = {};
+		for(var i = 0; i < list.length; i++) {
+			var item = list[i];
+			var id = item[0];
+			var css = item[1];
+			var media = item[2];
+			var sourceMap = item[3];
+			var part = {css: css, media: media, sourceMap: sourceMap};
+			if(!newStyles[id])
+				styles.push(newStyles[id] = {id: id, parts: [part]});
+			else
+				newStyles[id].parts.push(part);
+		}
+		return styles;
+	}
+	
+	function insertStyleElement(options, styleElement) {
+		var head = getHeadElement();
+		var lastStyleElementInsertedAtTop = styleElementsInsertedAtTop[styleElementsInsertedAtTop.length - 1];
+		if (options.insertAt === "top") {
+			if(!lastStyleElementInsertedAtTop) {
+				head.insertBefore(styleElement, head.firstChild);
+			} else if(lastStyleElementInsertedAtTop.nextSibling) {
+				head.insertBefore(styleElement, lastStyleElementInsertedAtTop.nextSibling);
+			} else {
+				head.appendChild(styleElement);
+			}
+			styleElementsInsertedAtTop.push(styleElement);
+		} else if (options.insertAt === "bottom") {
+			head.appendChild(styleElement);
+		} else {
+			throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");
+		}
+	}
+	
+	function removeStyleElement(styleElement) {
+		styleElement.parentNode.removeChild(styleElement);
+		var idx = styleElementsInsertedAtTop.indexOf(styleElement);
+		if(idx >= 0) {
+			styleElementsInsertedAtTop.splice(idx, 1);
+		}
+	}
+	
+	function createStyleElement(options) {
+		var styleElement = document.createElement("style");
+		styleElement.type = "text/css";
+		insertStyleElement(options, styleElement);
+		return styleElement;
+	}
+	
+	function addStyle(obj, options) {
+		var styleElement, update, remove;
+	
+		if (options.singleton) {
+			var styleIndex = singletonCounter++;
+			styleElement = singletonElement || (singletonElement = createStyleElement(options));
+			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
+			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
+		} else {
+			styleElement = createStyleElement(options);
+			update = applyToTag.bind(null, styleElement);
+			remove = function() {
+				removeStyleElement(styleElement);
+			};
+		}
+	
+		update(obj);
+	
+		return function updateStyle(newObj) {
+			if(newObj) {
+				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
+					return;
+				update(obj = newObj);
+			} else {
+				remove();
+			}
+		};
+	}
+	
+	var replaceText = (function () {
+		var textStore = [];
+	
+		return function (index, replacement) {
+			textStore[index] = replacement;
+			return textStore.filter(Boolean).join('\n');
+		};
+	})();
+	
+	function applyToSingletonTag(styleElement, index, remove, obj) {
+		var css = remove ? "" : obj.css;
+	
+		if (styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = replaceText(index, css);
+		} else {
+			var cssNode = document.createTextNode(css);
+			var childNodes = styleElement.childNodes;
+			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
+			if (childNodes.length) {
+				styleElement.insertBefore(cssNode, childNodes[index]);
+			} else {
+				styleElement.appendChild(cssNode);
+			}
+		}
+	}
+	
+	function applyToTag(styleElement, obj) {
+		var css = obj.css;
+		var media = obj.media;
+		var sourceMap = obj.sourceMap;
+	
+		if (media) {
+			styleElement.setAttribute("media", media);
+		}
+	
+		if (sourceMap) {
+			// https://developer.chrome.com/devtools/docs/javascript-debugging
+			// this makes source maps inside style tags work properly in Chrome
+			css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */';
+			// http://stackoverflow.com/a/26603875
+			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+		}
+	
+		if (styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = css;
+		} else {
+			while(styleElement.firstChild) {
+				styleElement.removeChild(styleElement.firstChild);
+			}
+			styleElement.appendChild(document.createTextNode(css));
+		}
+	}
+
+
+/***/ },
+/* 11 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div id=\"container\">        \n    <router-view keep-alive transition=\"fade\" transition-mode='out-in'>\n    </router-view>\n</div>\n";
+
+/***/ },
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var _promise = __webpack_require__(11);
+	var _promise = __webpack_require__(13);
+	
+	var _promise2 = _interopRequireDefault(_promise);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var $ = __webpack_require__(68);
+	var socket = __webpack_require__(74);
+	
+	var LS = localStorage;
+	var login_url = '/login';
+	var sign_url = '/sign';
+	var id_token_key = 'id_token';
+	
+	module.exports = {
+	    user: {
+	        authenticated: false
+	    },
+	
+	    checkAuth: function checkAuth() {
+	        var id = LS.getItem(id_token_key);
+	        if (id) {
+	            this.enter(id);
+	        } else {
+	            this.logout();
+	        }
+	    },
+	
+	    enter: function enter(userId) {
+	        LS.setItem(id_token_key, userId);
+	
+	        this.user.authenticated = true;
+	        this.user.userId = userId;
+	
+	        socket.login(userId);
+	    },
+	
+	    logout: function logout() {
+	        socket.logout(this.user.userId);
+	
+	        this.user.authenticated = false;
+	        this.user.userId = '';
+	        LS.removeItem(id_token_key);
+	    },
+	
+	    login: function login(u, p) {
+	        var self = this;
+	        var data = {
+	            username: u,
+	            password: p
+	        };
+	        var promise = new _promise2.default(function (resolve, reject) {
+	            if (!data.username || !data.password) {
+	                reject({
+	                    code: 2,
+	                    message: '用户名或密码为空'
+	                });
+	            }
+	
+	            $.ajax({
+	                url: login_url,
+	                type: 'post',
+	                data: data,
+	                dataType: 'json',
+	                success: function success(resp) {
+	                    if (resp.code != 0) {
+	                        reject(resp);
+	                    } else {
+	                        self.enter(resp.data.userId);
+	                        resolve(resp);
+	                    }
+	                }
+	            });
+	        });
+	        return promise;
+	    },
+	
+	    sign: function sign(u, p, a) {
+	        var self = this;
+	        var data = {
+	            username: u,
+	            password: p,
+	            avatar: a
+	        };
+	
+	        var fd = new FormData();
+	        fd.append('username', u);
+	        fd.append('password', p);
+	        fd.append('avatar', a);
+	
+	        var promise = new _promise2.default(function (resolve, reject) {
+	            if (!data.username || !data.password) {
+	                reject({
+	                    code: 2,
+	                    message: '用户名或密码为空'
+	                });
+	            }
+	
+	            $.ajax({
+	                url: sign_url,
+	                type: 'post',
+	                dataType: 'json',
+	                data: fd,
+	                contentType: false,
+	                processData: false,
+	                success: function success(resp) {
+	                    if (resp.code == 0) {
+	                        self.enter(resp.data.userId);
+	                    }
+	                    resolve(resp);
+	                }
+	            });
+	        });
+	
+	        return promise;
+	    },
+	
+	    getAuthHeader: function getAuthHeader() {
+	        return {
+	            Authorization: 'CurUser' + LS.getItem(id_token_key)
+	        };
+	    }
+	};
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(14), __esModule: true };
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(15);
+	__webpack_require__(16);
+	__webpack_require__(40);
+	__webpack_require__(47);
+	module.exports = __webpack_require__(24).Promise;
+
+/***/ },
+/* 15 */
+/***/ function(module, exports) {
+
+
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $at  = __webpack_require__(17)(true);
+	
+	// 21.1.3.27 String.prototype[@@iterator]()
+	__webpack_require__(20)(String, 'String', function(iterated){
+	  this._t = String(iterated); // target
+	  this._i = 0;                // next index
+	// 21.1.5.2.1 %StringIteratorPrototype%.next()
+	}, function(){
+	  var O     = this._t
+	    , index = this._i
+	    , point;
+	  if(index >= O.length)return {value: undefined, done: true};
+	  point = $at(O, index);
+	  this._i += point.length;
+	  return {value: point, done: false};
+	});
+
+/***/ },
+/* 17 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var toInteger = __webpack_require__(18)
+	  , defined   = __webpack_require__(19);
+	// true  -> String#at
+	// false -> String#codePointAt
+	module.exports = function(TO_STRING){
+	  return function(that, pos){
+	    var s = String(defined(that))
+	      , i = toInteger(pos)
+	      , l = s.length
+	      , a, b;
+	    if(i < 0 || i >= l)return TO_STRING ? '' : undefined;
+	    a = s.charCodeAt(i);
+	    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
+	      ? TO_STRING ? s.charAt(i) : a
+	      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
+	  };
+	};
+
+/***/ },
+/* 18 */
+/***/ function(module, exports) {
+
+	// 7.1.4 ToInteger
+	var ceil  = Math.ceil
+	  , floor = Math.floor;
+	module.exports = function(it){
+	  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
+	};
+
+/***/ },
+/* 19 */
+/***/ function(module, exports) {
+
+	// 7.2.1 RequireObjectCoercible(argument)
+	module.exports = function(it){
+	  if(it == undefined)throw TypeError("Can't call method on  " + it);
+	  return it;
+	};
+
+/***/ },
+/* 20 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var LIBRARY        = __webpack_require__(21)
+	  , $export        = __webpack_require__(22)
+	  , redefine       = __webpack_require__(27)
+	  , hide           = __webpack_require__(28)
+	  , has            = __webpack_require__(33)
+	  , Iterators      = __webpack_require__(34)
+	  , $iterCreate    = __webpack_require__(35)
+	  , setToStringTag = __webpack_require__(36)
+	  , getProto       = __webpack_require__(29).getProto
+	  , ITERATOR       = __webpack_require__(37)('iterator')
+	  , BUGGY          = !([].keys && 'next' in [].keys()) // Safari has buggy iterators w/o `next`
+	  , FF_ITERATOR    = '@@iterator'
+	  , KEYS           = 'keys'
+	  , VALUES         = 'values';
+	
+	var returnThis = function(){ return this; };
+	
+	module.exports = function(Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED){
+	  $iterCreate(Constructor, NAME, next);
+	  var getMethod = function(kind){
+	    if(!BUGGY && kind in proto)return proto[kind];
+	    switch(kind){
+	      case KEYS: return function keys(){ return new Constructor(this, kind); };
+	      case VALUES: return function values(){ return new Constructor(this, kind); };
+	    } return function entries(){ return new Constructor(this, kind); };
+	  };
+	  var TAG        = NAME + ' Iterator'
+	    , DEF_VALUES = DEFAULT == VALUES
+	    , VALUES_BUG = false
+	    , proto      = Base.prototype
+	    , $native    = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT]
+	    , $default   = $native || getMethod(DEFAULT)
+	    , methods, key;
+	  // Fix native
+	  if($native){
+	    var IteratorPrototype = getProto($default.call(new Base));
+	    // Set @@toStringTag to native iterators
+	    setToStringTag(IteratorPrototype, TAG, true);
+	    // FF fix
+	    if(!LIBRARY && has(proto, FF_ITERATOR))hide(IteratorPrototype, ITERATOR, returnThis);
+	    // fix Array#{values, @@iterator}.name in V8 / FF
+	    if(DEF_VALUES && $native.name !== VALUES){
+	      VALUES_BUG = true;
+	      $default = function values(){ return $native.call(this); };
+	    }
+	  }
+	  // Define iterator
+	  if((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])){
+	    hide(proto, ITERATOR, $default);
+	  }
+	  // Plug for library
+	  Iterators[NAME] = $default;
+	  Iterators[TAG]  = returnThis;
+	  if(DEFAULT){
+	    methods = {
+	      values:  DEF_VALUES  ? $default : getMethod(VALUES),
+	      keys:    IS_SET      ? $default : getMethod(KEYS),
+	      entries: !DEF_VALUES ? $default : getMethod('entries')
+	    };
+	    if(FORCED)for(key in methods){
+	      if(!(key in proto))redefine(proto, key, methods[key]);
+	    } else $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
+	  }
+	  return methods;
+	};
+
+/***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+	module.exports = true;
+
+/***/ },
+/* 22 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global    = __webpack_require__(23)
+	  , core      = __webpack_require__(24)
+	  , ctx       = __webpack_require__(25)
+	  , PROTOTYPE = 'prototype';
+	
+	var $export = function(type, name, source){
+	  var IS_FORCED = type & $export.F
+	    , IS_GLOBAL = type & $export.G
+	    , IS_STATIC = type & $export.S
+	    , IS_PROTO  = type & $export.P
+	    , IS_BIND   = type & $export.B
+	    , IS_WRAP   = type & $export.W
+	    , exports   = IS_GLOBAL ? core : core[name] || (core[name] = {})
+	    , target    = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE]
+	    , key, own, out;
+	  if(IS_GLOBAL)source = name;
+	  for(key in source){
+	    // contains in native
+	    own = !IS_FORCED && target && key in target;
+	    if(own && key in exports)continue;
+	    // export native or passed
+	    out = own ? target[key] : source[key];
+	    // prevent global pollution for namespaces
+	    exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key]
+	    // bind timers to global for call from export context
+	    : IS_BIND && own ? ctx(out, global)
+	    // wrap global constructors for prevent change them in library
+	    : IS_WRAP && target[key] == out ? (function(C){
+	      var F = function(param){
+	        return this instanceof C ? new C(param) : C(param);
+	      };
+	      F[PROTOTYPE] = C[PROTOTYPE];
+	      return F;
+	    // make static versions for prototype methods
+	    })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
+	    if(IS_PROTO)(exports[PROTOTYPE] || (exports[PROTOTYPE] = {}))[key] = out;
+	  }
+	};
+	// type bitmap
+	$export.F = 1;  // forced
+	$export.G = 2;  // global
+	$export.S = 4;  // static
+	$export.P = 8;  // proto
+	$export.B = 16; // bind
+	$export.W = 32; // wrap
+	module.exports = $export;
+
+/***/ },
+/* 23 */
+/***/ function(module, exports) {
+
+	// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
+	var global = module.exports = typeof window != 'undefined' && window.Math == Math
+	  ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
+	if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+	var core = module.exports = {version: '1.2.6'};
+	if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
+
+/***/ },
+/* 25 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// optional / simple context binding
+	var aFunction = __webpack_require__(26);
+	module.exports = function(fn, that, length){
+	  aFunction(fn);
+	  if(that === undefined)return fn;
+	  switch(length){
+	    case 1: return function(a){
+	      return fn.call(that, a);
+	    };
+	    case 2: return function(a, b){
+	      return fn.call(that, a, b);
+	    };
+	    case 3: return function(a, b, c){
+	      return fn.call(that, a, b, c);
+	    };
+	  }
+	  return function(/* ...args */){
+	    return fn.apply(that, arguments);
+	  };
+	};
+
+/***/ },
+/* 26 */
+/***/ function(module, exports) {
+
+	module.exports = function(it){
+	  if(typeof it != 'function')throw TypeError(it + ' is not a function!');
+	  return it;
+	};
+
+/***/ },
+/* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(28);
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var $          = __webpack_require__(29)
+	  , createDesc = __webpack_require__(30);
+	module.exports = __webpack_require__(31) ? function(object, key, value){
+	  return $.setDesc(object, key, createDesc(1, value));
+	} : function(object, key, value){
+	  object[key] = value;
+	  return object;
+	};
+
+/***/ },
+/* 29 */
+/***/ function(module, exports) {
+
+	var $Object = Object;
+	module.exports = {
+	  create:     $Object.create,
+	  getProto:   $Object.getPrototypeOf,
+	  isEnum:     {}.propertyIsEnumerable,
+	  getDesc:    $Object.getOwnPropertyDescriptor,
+	  setDesc:    $Object.defineProperty,
+	  setDescs:   $Object.defineProperties,
+	  getKeys:    $Object.keys,
+	  getNames:   $Object.getOwnPropertyNames,
+	  getSymbols: $Object.getOwnPropertySymbols,
+	  each:       [].forEach
+	};
+
+/***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	module.exports = function(bitmap, value){
+	  return {
+	    enumerable  : !(bitmap & 1),
+	    configurable: !(bitmap & 2),
+	    writable    : !(bitmap & 4),
+	    value       : value
+	  };
+	};
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Thank's IE8 for his funny defineProperty
+	module.exports = !__webpack_require__(32)(function(){
+	  return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
+	});
+
+/***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	module.exports = function(exec){
+	  try {
+	    return !!exec();
+	  } catch(e){
+	    return true;
+	  }
+	};
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
+
+	var hasOwnProperty = {}.hasOwnProperty;
+	module.exports = function(it, key){
+	  return hasOwnProperty.call(it, key);
+	};
+
+/***/ },
+/* 34 */
+/***/ function(module, exports) {
+
+	module.exports = {};
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $              = __webpack_require__(29)
+	  , descriptor     = __webpack_require__(30)
+	  , setToStringTag = __webpack_require__(36)
+	  , IteratorPrototype = {};
+	
+	// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
+	__webpack_require__(28)(IteratorPrototype, __webpack_require__(37)('iterator'), function(){ return this; });
+	
+	module.exports = function(Constructor, NAME, next){
+	  Constructor.prototype = $.create(IteratorPrototype, {next: descriptor(1, next)});
+	  setToStringTag(Constructor, NAME + ' Iterator');
+	};
+
+/***/ },
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var def = __webpack_require__(29).setDesc
+	  , has = __webpack_require__(33)
+	  , TAG = __webpack_require__(37)('toStringTag');
+	
+	module.exports = function(it, tag, stat){
+	  if(it && !has(it = stat ? it : it.prototype, TAG))def(it, TAG, {configurable: true, value: tag});
+	};
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var store  = __webpack_require__(38)('wks')
+	  , uid    = __webpack_require__(39)
+	  , Symbol = __webpack_require__(23).Symbol;
+	module.exports = function(name){
+	  return store[name] || (store[name] =
+	    Symbol && Symbol[name] || (Symbol || uid)('Symbol.' + name));
+	};
+
+/***/ },
+/* 38 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global = __webpack_require__(23)
+	  , SHARED = '__core-js_shared__'
+	  , store  = global[SHARED] || (global[SHARED] = {});
+	module.exports = function(key){
+	  return store[key] || (store[key] = {});
+	};
+
+/***/ },
+/* 39 */
+/***/ function(module, exports) {
+
+	var id = 0
+	  , px = Math.random();
+	module.exports = function(key){
+	  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
+	};
+
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(41);
+	var Iterators = __webpack_require__(34);
+	Iterators.NodeList = Iterators.HTMLCollection = Iterators.Array;
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var addToUnscopables = __webpack_require__(42)
+	  , step             = __webpack_require__(43)
+	  , Iterators        = __webpack_require__(34)
+	  , toIObject        = __webpack_require__(44);
+	
+	// 22.1.3.4 Array.prototype.entries()
+	// 22.1.3.13 Array.prototype.keys()
+	// 22.1.3.29 Array.prototype.values()
+	// 22.1.3.30 Array.prototype[@@iterator]()
+	module.exports = __webpack_require__(20)(Array, 'Array', function(iterated, kind){
+	  this._t = toIObject(iterated); // target
+	  this._i = 0;                   // next index
+	  this._k = kind;                // kind
+	// 22.1.5.2.1 %ArrayIteratorPrototype%.next()
+	}, function(){
+	  var O     = this._t
+	    , kind  = this._k
+	    , index = this._i++;
+	  if(!O || index >= O.length){
+	    this._t = undefined;
+	    return step(1);
+	  }
+	  if(kind == 'keys'  )return step(0, index);
+	  if(kind == 'values')return step(0, O[index]);
+	  return step(0, [index, O[index]]);
+	}, 'values');
+	
+	// argumentsList[@@iterator] is %ArrayProto_values% (9.4.4.6, 9.4.4.7)
+	Iterators.Arguments = Iterators.Array;
+	
+	addToUnscopables('keys');
+	addToUnscopables('values');
+	addToUnscopables('entries');
+
+/***/ },
+/* 42 */
+/***/ function(module, exports) {
+
+	module.exports = function(){ /* empty */ };
+
+/***/ },
+/* 43 */
+/***/ function(module, exports) {
+
+	module.exports = function(done, value){
+	  return {value: value, done: !!done};
+	};
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// to indexed object, toObject with fallback for non-array-like ES3 strings
+	var IObject = __webpack_require__(45)
+	  , defined = __webpack_require__(19);
+	module.exports = function(it){
+	  return IObject(defined(it));
+	};
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// fallback for non-array-like ES3 and non-enumerable old V8 strings
+	var cof = __webpack_require__(46);
+	module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
+	  return cof(it) == 'String' ? it.split('') : Object(it);
+	};
+
+/***/ },
+/* 46 */
+/***/ function(module, exports) {
+
+	var toString = {}.toString;
+	
+	module.exports = function(it){
+	  return toString.call(it).slice(8, -1);
+	};
+
+/***/ },
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var $          = __webpack_require__(29)
+	  , LIBRARY    = __webpack_require__(21)
+	  , global     = __webpack_require__(23)
+	  , ctx        = __webpack_require__(25)
+	  , classof    = __webpack_require__(48)
+	  , $export    = __webpack_require__(22)
+	  , isObject   = __webpack_require__(49)
+	  , anObject   = __webpack_require__(50)
+	  , aFunction  = __webpack_require__(26)
+	  , strictNew  = __webpack_require__(51)
+	  , forOf      = __webpack_require__(52)
+	  , setProto   = __webpack_require__(57).set
+	  , same       = __webpack_require__(58)
+	  , SPECIES    = __webpack_require__(37)('species')
+	  , speciesConstructor = __webpack_require__(59)
+	  , asap       = __webpack_require__(60)
+	  , PROMISE    = 'Promise'
+	  , process    = global.process
+	  , isNode     = classof(process) == 'process'
+	  , P          = global[PROMISE]
+	  , Wrapper;
+	
+	var testResolve = function(sub){
+	  var test = new P(function(){});
+	  if(sub)test.constructor = Object;
+	  return P.resolve(test) === test;
+	};
+	
+	var USE_NATIVE = function(){
+	  var works = false;
+	  function P2(x){
+	    var self = new P(x);
+	    setProto(self, P2.prototype);
+	    return self;
+	  }
+	  try {
+	    works = P && P.resolve && testResolve();
+	    setProto(P2, P);
+	    P2.prototype = $.create(P.prototype, {constructor: {value: P2}});
+	    // actual Firefox has broken subclass support, test that
+	    if(!(P2.resolve(5).then(function(){}) instanceof P2)){
+	      works = false;
+	    }
+	    // actual V8 bug, https://code.google.com/p/v8/issues/detail?id=4162
+	    if(works && __webpack_require__(31)){
+	      var thenableThenGotten = false;
+	      P.resolve($.setDesc({}, 'then', {
+	        get: function(){ thenableThenGotten = true; }
+	      }));
+	      works = thenableThenGotten;
+	    }
+	  } catch(e){ works = false; }
+	  return works;
+	}();
+	
+	// helpers
+	var sameConstructor = function(a, b){
+	  // library wrapper special case
+	  if(LIBRARY && a === P && b === Wrapper)return true;
+	  return same(a, b);
+	};
+	var getConstructor = function(C){
+	  var S = anObject(C)[SPECIES];
+	  return S != undefined ? S : C;
+	};
+	var isThenable = function(it){
+	  var then;
+	  return isObject(it) && typeof (then = it.then) == 'function' ? then : false;
+	};
+	var PromiseCapability = function(C){
+	  var resolve, reject;
+	  this.promise = new C(function($$resolve, $$reject){
+	    if(resolve !== undefined || reject !== undefined)throw TypeError('Bad Promise constructor');
+	    resolve = $$resolve;
+	    reject  = $$reject;
+	  });
+	  this.resolve = aFunction(resolve),
+	  this.reject  = aFunction(reject)
+	};
+	var perform = function(exec){
+	  try {
+	    exec();
+	  } catch(e){
+	    return {error: e};
+	  }
+	};
+	var notify = function(record, isReject){
+	  if(record.n)return;
+	  record.n = true;
+	  var chain = record.c;
+	  asap(function(){
+	    var value = record.v
+	      , ok    = record.s == 1
+	      , i     = 0;
+	    var run = function(reaction){
+	      var handler = ok ? reaction.ok : reaction.fail
+	        , resolve = reaction.resolve
+	        , reject  = reaction.reject
+	        , result, then;
+	      try {
+	        if(handler){
+	          if(!ok)record.h = true;
+	          result = handler === true ? value : handler(value);
+	          if(result === reaction.promise){
+	            reject(TypeError('Promise-chain cycle'));
+	          } else if(then = isThenable(result)){
+	            then.call(result, resolve, reject);
+	          } else resolve(result);
+	        } else reject(value);
+	      } catch(e){
+	        reject(e);
+	      }
+	    };
+	    while(chain.length > i)run(chain[i++]); // variable length - can't use forEach
+	    chain.length = 0;
+	    record.n = false;
+	    if(isReject)setTimeout(function(){
+	      var promise = record.p
+	        , handler, console;
+	      if(isUnhandled(promise)){
+	        if(isNode){
+	          process.emit('unhandledRejection', value, promise);
+	        } else if(handler = global.onunhandledrejection){
+	          handler({promise: promise, reason: value});
+	        } else if((console = global.console) && console.error){
+	          console.error('Unhandled promise rejection', value);
+	        }
+	      } record.a = undefined;
+	    }, 1);
+	  });
+	};
+	var isUnhandled = function(promise){
+	  var record = promise._d
+	    , chain  = record.a || record.c
+	    , i      = 0
+	    , reaction;
+	  if(record.h)return false;
+	  while(chain.length > i){
+	    reaction = chain[i++];
+	    if(reaction.fail || !isUnhandled(reaction.promise))return false;
+	  } return true;
+	};
+	var $reject = function(value){
+	  var record = this;
+	  if(record.d)return;
+	  record.d = true;
+	  record = record.r || record; // unwrap
+	  record.v = value;
+	  record.s = 2;
+	  record.a = record.c.slice();
+	  notify(record, true);
+	};
+	var $resolve = function(value){
+	  var record = this
+	    , then;
+	  if(record.d)return;
+	  record.d = true;
+	  record = record.r || record; // unwrap
+	  try {
+	    if(record.p === value)throw TypeError("Promise can't be resolved itself");
+	    if(then = isThenable(value)){
+	      asap(function(){
+	        var wrapper = {r: record, d: false}; // wrap
+	        try {
+	          then.call(value, ctx($resolve, wrapper, 1), ctx($reject, wrapper, 1));
+	        } catch(e){
+	          $reject.call(wrapper, e);
+	        }
+	      });
+	    } else {
+	      record.v = value;
+	      record.s = 1;
+	      notify(record, false);
+	    }
+	  } catch(e){
+	    $reject.call({r: record, d: false}, e); // wrap
+	  }
+	};
+	
+	// constructor polyfill
+	if(!USE_NATIVE){
+	  // 25.4.3.1 Promise(executor)
+	  P = function Promise(executor){
+	    aFunction(executor);
+	    var record = this._d = {
+	      p: strictNew(this, P, PROMISE),         // <- promise
+	      c: [],                                  // <- awaiting reactions
+	      a: undefined,                           // <- checked in isUnhandled reactions
+	      s: 0,                                   // <- state
+	      d: false,                               // <- done
+	      v: undefined,                           // <- value
+	      h: false,                               // <- handled rejection
+	      n: false                                // <- notify
+	    };
+	    try {
+	      executor(ctx($resolve, record, 1), ctx($reject, record, 1));
+	    } catch(err){
+	      $reject.call(record, err);
+	    }
+	  };
+	  __webpack_require__(65)(P.prototype, {
+	    // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
+	    then: function then(onFulfilled, onRejected){
+	      var reaction = new PromiseCapability(speciesConstructor(this, P))
+	        , promise  = reaction.promise
+	        , record   = this._d;
+	      reaction.ok   = typeof onFulfilled == 'function' ? onFulfilled : true;
+	      reaction.fail = typeof onRejected == 'function' && onRejected;
+	      record.c.push(reaction);
+	      if(record.a)record.a.push(reaction);
+	      if(record.s)notify(record, false);
+	      return promise;
+	    },
+	    // 25.4.5.1 Promise.prototype.catch(onRejected)
+	    'catch': function(onRejected){
+	      return this.then(undefined, onRejected);
+	    }
+	  });
+	}
+	
+	$export($export.G + $export.W + $export.F * !USE_NATIVE, {Promise: P});
+	__webpack_require__(36)(P, PROMISE);
+	__webpack_require__(66)(PROMISE);
+	Wrapper = __webpack_require__(24)[PROMISE];
+	
+	// statics
+	$export($export.S + $export.F * !USE_NATIVE, PROMISE, {
+	  // 25.4.4.5 Promise.reject(r)
+	  reject: function reject(r){
+	    var capability = new PromiseCapability(this)
+	      , $$reject   = capability.reject;
+	    $$reject(r);
+	    return capability.promise;
+	  }
+	});
+	$export($export.S + $export.F * (!USE_NATIVE || testResolve(true)), PROMISE, {
+	  // 25.4.4.6 Promise.resolve(x)
+	  resolve: function resolve(x){
+	    // instanceof instead of internal slot check because we should fix it without replacement native Promise core
+	    if(x instanceof P && sameConstructor(x.constructor, this))return x;
+	    var capability = new PromiseCapability(this)
+	      , $$resolve  = capability.resolve;
+	    $$resolve(x);
+	    return capability.promise;
+	  }
+	});
+	$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(67)(function(iter){
+	  P.all(iter)['catch'](function(){});
+	})), PROMISE, {
+	  // 25.4.4.1 Promise.all(iterable)
+	  all: function all(iterable){
+	    var C          = getConstructor(this)
+	      , capability = new PromiseCapability(C)
+	      , resolve    = capability.resolve
+	      , reject     = capability.reject
+	      , values     = [];
+	    var abrupt = perform(function(){
+	      forOf(iterable, false, values.push, values);
+	      var remaining = values.length
+	        , results   = Array(remaining);
+	      if(remaining)$.each.call(values, function(promise, index){
+	        var alreadyCalled = false;
+	        C.resolve(promise).then(function(value){
+	          if(alreadyCalled)return;
+	          alreadyCalled = true;
+	          results[index] = value;
+	          --remaining || resolve(results);
+	        }, reject);
+	      });
+	      else resolve(results);
+	    });
+	    if(abrupt)reject(abrupt.error);
+	    return capability.promise;
+	  },
+	  // 25.4.4.4 Promise.race(iterable)
+	  race: function race(iterable){
+	    var C          = getConstructor(this)
+	      , capability = new PromiseCapability(C)
+	      , reject     = capability.reject;
+	    var abrupt = perform(function(){
+	      forOf(iterable, false, function(promise){
+	        C.resolve(promise).then(capability.resolve, reject);
+	      });
+	    });
+	    if(abrupt)reject(abrupt.error);
+	    return capability.promise;
+	  }
+	});
+
+/***/ },
+/* 48 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// getting tag from 19.1.3.6 Object.prototype.toString()
+	var cof = __webpack_require__(46)
+	  , TAG = __webpack_require__(37)('toStringTag')
+	  // ES3 wrong here
+	  , ARG = cof(function(){ return arguments; }()) == 'Arguments';
+	
+	module.exports = function(it){
+	  var O, T, B;
+	  return it === undefined ? 'Undefined' : it === null ? 'Null'
+	    // @@toStringTag case
+	    : typeof (T = (O = Object(it))[TAG]) == 'string' ? T
+	    // builtinTag case
+	    : ARG ? cof(O)
+	    // ES3 arguments fallback
+	    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
+	};
+
+/***/ },
+/* 49 */
+/***/ function(module, exports) {
+
+	module.exports = function(it){
+	  return typeof it === 'object' ? it !== null : typeof it === 'function';
+	};
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(49);
+	module.exports = function(it){
+	  if(!isObject(it))throw TypeError(it + ' is not an object!');
+	  return it;
+	};
+
+/***/ },
+/* 51 */
+/***/ function(module, exports) {
+
+	module.exports = function(it, Constructor, name){
+	  if(!(it instanceof Constructor))throw TypeError(name + ": use the 'new' operator!");
+	  return it;
+	};
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var ctx         = __webpack_require__(25)
+	  , call        = __webpack_require__(53)
+	  , isArrayIter = __webpack_require__(54)
+	  , anObject    = __webpack_require__(50)
+	  , toLength    = __webpack_require__(55)
+	  , getIterFn   = __webpack_require__(56);
+	module.exports = function(iterable, entries, fn, that){
+	  var iterFn = getIterFn(iterable)
+	    , f      = ctx(fn, that, entries ? 2 : 1)
+	    , index  = 0
+	    , length, step, iterator;
+	  if(typeof iterFn != 'function')throw TypeError(iterable + ' is not iterable!');
+	  // fast case for arrays with default iterator
+	  if(isArrayIter(iterFn))for(length = toLength(iterable.length); length > index; index++){
+	    entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
+	  } else for(iterator = iterFn.call(iterable); !(step = iterator.next()).done; ){
+	    call(iterator, f, step.value, entries);
+	  }
+	};
+
+/***/ },
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// call something on iterator step with safe closing on error
+	var anObject = __webpack_require__(50);
+	module.exports = function(iterator, fn, value, entries){
+	  try {
+	    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
+	  // 7.4.6 IteratorClose(iterator, completion)
+	  } catch(e){
+	    var ret = iterator['return'];
+	    if(ret !== undefined)anObject(ret.call(iterator));
+	    throw e;
+	  }
+	};
+
+/***/ },
+/* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// check on default Array iterator
+	var Iterators  = __webpack_require__(34)
+	  , ITERATOR   = __webpack_require__(37)('iterator')
+	  , ArrayProto = Array.prototype;
+	
+	module.exports = function(it){
+	  return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
+	};
+
+/***/ },
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 7.1.15 ToLength
+	var toInteger = __webpack_require__(18)
+	  , min       = Math.min;
+	module.exports = function(it){
+	  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
+	};
+
+/***/ },
+/* 56 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var classof   = __webpack_require__(48)
+	  , ITERATOR  = __webpack_require__(37)('iterator')
+	  , Iterators = __webpack_require__(34);
+	module.exports = __webpack_require__(24).getIteratorMethod = function(it){
+	  if(it != undefined)return it[ITERATOR]
+	    || it['@@iterator']
+	    || Iterators[classof(it)];
+	};
+
+/***/ },
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// Works with __proto__ only. Old v8 can't work with null proto objects.
+	/* eslint-disable no-proto */
+	var getDesc  = __webpack_require__(29).getDesc
+	  , isObject = __webpack_require__(49)
+	  , anObject = __webpack_require__(50);
+	var check = function(O, proto){
+	  anObject(O);
+	  if(!isObject(proto) && proto !== null)throw TypeError(proto + ": can't set as prototype!");
+	};
+	module.exports = {
+	  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
+	    function(test, buggy, set){
+	      try {
+	        set = __webpack_require__(25)(Function.call, getDesc(Object.prototype, '__proto__').set, 2);
+	        set(test, []);
+	        buggy = !(test instanceof Array);
+	      } catch(e){ buggy = true; }
+	      return function setPrototypeOf(O, proto){
+	        check(O, proto);
+	        if(buggy)O.__proto__ = proto;
+	        else set(O, proto);
+	        return O;
+	      };
+	    }({}, false) : undefined),
+	  check: check
+	};
+
+/***/ },
+/* 58 */
+/***/ function(module, exports) {
+
+	// 7.2.9 SameValue(x, y)
+	module.exports = Object.is || function is(x, y){
+	  return x === y ? x !== 0 || 1 / x === 1 / y : x != x && y != y;
+	};
+
+/***/ },
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 7.3.20 SpeciesConstructor(O, defaultConstructor)
+	var anObject  = __webpack_require__(50)
+	  , aFunction = __webpack_require__(26)
+	  , SPECIES   = __webpack_require__(37)('species');
+	module.exports = function(O, D){
+	  var C = anObject(O).constructor, S;
+	  return C === undefined || (S = anObject(C)[SPECIES]) == undefined ? D : aFunction(S);
+	};
+
+/***/ },
+/* 60 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var global    = __webpack_require__(23)
+	  , macrotask = __webpack_require__(61).set
+	  , Observer  = global.MutationObserver || global.WebKitMutationObserver
+	  , process   = global.process
+	  , Promise   = global.Promise
+	  , isNode    = __webpack_require__(46)(process) == 'process'
+	  , head, last, notify;
+	
+	var flush = function(){
+	  var parent, domain, fn;
+	  if(isNode && (parent = process.domain)){
+	    process.domain = null;
+	    parent.exit();
+	  }
+	  while(head){
+	    domain = head.domain;
+	    fn     = head.fn;
+	    if(domain)domain.enter();
+	    fn(); // <- currently we use it only for Promise - try / catch not required
+	    if(domain)domain.exit();
+	    head = head.next;
+	  } last = undefined;
+	  if(parent)parent.enter();
+	};
+	
+	// Node.js
+	if(isNode){
+	  notify = function(){
+	    process.nextTick(flush);
+	  };
+	// browsers with MutationObserver
+	} else if(Observer){
+	  var toggle = 1
+	    , node   = document.createTextNode('');
+	  new Observer(flush).observe(node, {characterData: true}); // eslint-disable-line no-new
+	  notify = function(){
+	    node.data = toggle = -toggle;
+	  };
+	// environments with maybe non-completely correct, but existent Promise
+	} else if(Promise && Promise.resolve){
+	  notify = function(){
+	    Promise.resolve().then(flush);
+	  };
+	// for other environments - macrotask based on:
+	// - setImmediate
+	// - MessageChannel
+	// - window.postMessag
+	// - onreadystatechange
+	// - setTimeout
+	} else {
+	  notify = function(){
+	    // strange IE + webpack dev server bug - use .call(global)
+	    macrotask.call(global, flush);
+	  };
+	}
+	
+	module.exports = function asap(fn){
+	  var task = {fn: fn, next: undefined, domain: isNode && process.domain};
+	  if(last)last.next = task;
+	  if(!head){
+	    head = task;
+	    notify();
+	  } last = task;
+	};
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var ctx                = __webpack_require__(25)
+	  , invoke             = __webpack_require__(62)
+	  , html               = __webpack_require__(63)
+	  , cel                = __webpack_require__(64)
+	  , global             = __webpack_require__(23)
+	  , process            = global.process
+	  , setTask            = global.setImmediate
+	  , clearTask          = global.clearImmediate
+	  , MessageChannel     = global.MessageChannel
+	  , counter            = 0
+	  , queue              = {}
+	  , ONREADYSTATECHANGE = 'onreadystatechange'
+	  , defer, channel, port;
+	var run = function(){
+	  var id = +this;
+	  if(queue.hasOwnProperty(id)){
+	    var fn = queue[id];
+	    delete queue[id];
+	    fn();
+	  }
+	};
+	var listner = function(event){
+	  run.call(event.data);
+	};
+	// Node.js 0.9+ & IE10+ has setImmediate, otherwise:
+	if(!setTask || !clearTask){
+	  setTask = function setImmediate(fn){
+	    var args = [], i = 1;
+	    while(arguments.length > i)args.push(arguments[i++]);
+	    queue[++counter] = function(){
+	      invoke(typeof fn == 'function' ? fn : Function(fn), args);
+	    };
+	    defer(counter);
+	    return counter;
+	  };
+	  clearTask = function clearImmediate(id){
+	    delete queue[id];
+	  };
+	  // Node.js 0.8-
+	  if(__webpack_require__(46)(process) == 'process'){
+	    defer = function(id){
+	      process.nextTick(ctx(run, id, 1));
+	    };
+	  // Browsers with MessageChannel, includes WebWorkers
+	  } else if(MessageChannel){
+	    channel = new MessageChannel;
+	    port    = channel.port2;
+	    channel.port1.onmessage = listner;
+	    defer = ctx(port.postMessage, port, 1);
+	  // Browsers with postMessage, skip WebWorkers
+	  // IE8 has postMessage, but it's sync & typeof its postMessage is 'object'
+	  } else if(global.addEventListener && typeof postMessage == 'function' && !global.importScripts){
+	    defer = function(id){
+	      global.postMessage(id + '', '*');
+	    };
+	    global.addEventListener('message', listner, false);
+	  // IE8-
+	  } else if(ONREADYSTATECHANGE in cel('script')){
+	    defer = function(id){
+	      html.appendChild(cel('script'))[ONREADYSTATECHANGE] = function(){
+	        html.removeChild(this);
+	        run.call(id);
+	      };
+	    };
+	  // Rest old browsers
+	  } else {
+	    defer = function(id){
+	      setTimeout(ctx(run, id, 1), 0);
+	    };
+	  }
+	}
+	module.exports = {
+	  set:   setTask,
+	  clear: clearTask
+	};
+
+/***/ },
+/* 62 */
+/***/ function(module, exports) {
+
+	// fast apply, http://jsperf.lnkit.com/fast-apply/5
+	module.exports = function(fn, args, that){
+	  var un = that === undefined;
+	  switch(args.length){
+	    case 0: return un ? fn()
+	                      : fn.call(that);
+	    case 1: return un ? fn(args[0])
+	                      : fn.call(that, args[0]);
+	    case 2: return un ? fn(args[0], args[1])
+	                      : fn.call(that, args[0], args[1]);
+	    case 3: return un ? fn(args[0], args[1], args[2])
+	                      : fn.call(that, args[0], args[1], args[2]);
+	    case 4: return un ? fn(args[0], args[1], args[2], args[3])
+	                      : fn.call(that, args[0], args[1], args[2], args[3]);
+	  } return              fn.apply(that, args);
+	};
+
+/***/ },
+/* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(23).document && document.documentElement;
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var isObject = __webpack_require__(49)
+	  , document = __webpack_require__(23).document
+	  // in old IE typeof document.createElement is 'object'
+	  , is = isObject(document) && isObject(document.createElement);
+	module.exports = function(it){
+	  return is ? document.createElement(it) : {};
+	};
+
+/***/ },
+/* 65 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var redefine = __webpack_require__(27);
+	module.exports = function(target, src){
+	  for(var key in src)redefine(target, key, src[key]);
+	  return target;
+	};
+
+/***/ },
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	var core        = __webpack_require__(24)
+	  , $           = __webpack_require__(29)
+	  , DESCRIPTORS = __webpack_require__(31)
+	  , SPECIES     = __webpack_require__(37)('species');
+	
+	module.exports = function(KEY){
+	  var C = core[KEY];
+	  if(DESCRIPTORS && C && !C[SPECIES])$.setDesc(C, SPECIES, {
+	    configurable: true,
+	    get: function(){ return this; }
+	  });
+	};
+
+/***/ },
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var ITERATOR     = __webpack_require__(37)('iterator')
+	  , SAFE_CLOSING = false;
+	
+	try {
+	  var riter = [7][ITERATOR]();
+	  riter['return'] = function(){ SAFE_CLOSING = true; };
+	  Array.from(riter, function(){ throw 2; });
+	} catch(e){ /* empty */ }
+	
+	module.exports = function(exec, skipClosing){
+	  if(!skipClosing && !SAFE_CLOSING)return false;
+	  var safe = false;
+	  try {
+	    var arr  = [7]
+	      , iter = arr[ITERATOR]();
+	    iter.next = function(){ safe = true; };
+	    arr[ITERATOR] = function(){ return iter; };
+	    exec(arr);
+	  } catch(e){ /* empty */ }
+	  return safe;
+	};
+
+/***/ },
+/* 68 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	var _getPrototypeOf = __webpack_require__(69);
+	
+	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	//     Zepto.js
+	//     (c) 2010-2016 Thomas Fuchs
+	//     Zepto.js may be freely distributed under the MIT license.
+	
+	var Zepto = function Zepto() {};
+	var slice = Array.prototype.slice;
+	var class2type = {},
+	    toString = class2type.toString;
+	
+	module.exports = Zepto;
+	
+	function type(obj) {
+	  return obj == null ? String(obj) : class2type[toString.call(obj)] || "object";
+	}
+	
+	var isArray = Array.isArray || function (object) {
+	  return object instanceof Array;
+	};
+	
+	function isFunction(value) {
+	  return type(value) == "function";
+	}
+	
+	function isWindow(obj) {
+	  return obj != null && obj == obj.window;
+	}
+	
+	function isDocument(obj) {
+	  return obj != null && obj.nodeType == obj.DOCUMENT_NODE;
+	}
+	
+	function isObject(obj) {
+	  return type(obj) == "object";
+	}
+	
+	function isPlainObject(obj) {
+	  return isObject(obj) && !isWindow(obj) && (0, _getPrototypeOf2.default)(obj) == Object.prototype;
+	}
+	
+	function likeArray(obj) {
+	  return typeof obj.length == 'number';
+	}
+	
+	function extend(target, source, deep) {
+	  for (var key in source) {
+	    if (deep && (isPlainObject(source[key]) || isArray(source[key]))) {
+	      if (isPlainObject(source[key]) && !isPlainObject(target[key])) target[key] = {};
+	      if (isArray(source[key]) && !isArray(target[key])) target[key] = [];
+	      extend(target[key], source[key], deep);
+	    } else if (source[key] !== undefined) target[key] = source[key];
+	  }
+	}
+	
+	if (window.JSON) Zepto.parseJSON = JSON.parse;
+	
+	Zepto.type = type;
+	Zepto.isFunction = isFunction;
+	Zepto.isWindow = isWindow;
+	Zepto.isArray = isArray;
+	Zepto.isPlainObject = isPlainObject;
+	
+	Zepto.extend = function (target) {
+	  var deep,
+	      args = slice.call(arguments, 1);
+	  if (typeof target == 'boolean') {
+	    deep = target;
+	    target = args.shift();
+	  }
+	  args.forEach(function (arg) {
+	    extend(target, arg, deep);
+	  });
+	  return target;
+	};
+	
+	Zepto.isFunction = function (obj) {
+	  return obj instanceof Function;
+	};
+	
+	Zepto.each = function (elements, callback) {
+	  var i, key;
+	  if (likeArray(elements)) {
+	    for (i = 0; i < elements.length; i++) {
+	      if (callback.call(elements[i], i, elements[i]) === false) return elements;
+	    }
+	  } else {
+	    for (key in elements) {
+	      if (callback.call(elements[key], key, elements[key]) === false) return elements;
+	    }
+	  }
+	
+	  return elements;
+	};
+	
+	Zepto.each("Boolean Number String Function Array Date RegExp Object Error".split(" "), function (i, name) {
+	  class2type["[object " + name + "]"] = name.toLowerCase();
+	});
+	
+	;(function ($) {
+	  var jsonpID = 0,
+	      document = window.document,
+	      key,
+	      name,
+	      rscript = /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
+	      scriptTypeRE = /^(?:text|application)\/javascript/i,
+	      xmlTypeRE = /^(?:text|application)\/xml/i,
+	      jsonType = 'application/json',
+	      htmlType = 'text/html',
+	      blankRE = /^\s*$/,
+	      originAnchor = document.createElement('a');
+	
+	  originAnchor.href = window.location.href;
+	
+	  // trigger a custom event and return false if it was cancelled
+	  function triggerAndReturn(context, eventName, data) {}
+	  // var event = $.Event(eventName)
+	  // $(context).trigger(event, data)
+	  // return !event.isDefaultPrevented()
+	
+	
+	  // trigger an Ajax "global" event
+	  function triggerGlobal(settings, context, eventName, data) {
+	    if (settings.global) return triggerAndReturn(context || document, eventName, data);
+	  }
+	
+	  // Number of active Ajax requests
+	  $.active = 0;
+	
+	  function ajaxStart(settings) {
+	    if (settings.global && $.active++ === 0) triggerGlobal(settings, null, 'ajaxStart');
+	  }
+	
+	  function ajaxStop(settings) {
+	    if (settings.global && ! --$.active) triggerGlobal(settings, null, 'ajaxStop');
+	  }
+	
+	  // triggers an extra global event "ajaxBeforeSend" that's like "ajaxSend" but cancelable
+	  function ajaxBeforeSend(xhr, settings) {
+	    var context = settings.context;
+	    if (settings.beforeSend.call(context, xhr, settings) === false || triggerGlobal(settings, context, 'ajaxBeforeSend', [xhr, settings]) === false) return false;
+	
+	    triggerGlobal(settings, context, 'ajaxSend', [xhr, settings]);
+	  }
+	
+	  function ajaxSuccess(data, xhr, settings, deferred) {
+	    var context = settings.context,
+	        status = 'success';
+	    settings.success.call(context, data, status, xhr);
+	    if (deferred) deferred.resolveWith(context, [data, status, xhr]);
+	    triggerGlobal(settings, context, 'ajaxSuccess', [xhr, settings, data]);
+	    ajaxComplete(status, xhr, settings);
+	  }
+	  // type: "timeout", "error", "abort", "parsererror"
+	  function ajaxError(error, type, xhr, settings, deferred) {
+	    var context = settings.context;
+	    settings.error.call(context, xhr, type, error);
+	    if (deferred) deferred.rejectWith(context, [xhr, type, error]);
+	    triggerGlobal(settings, context, 'ajaxError', [xhr, settings, error || type]);
+	    ajaxComplete(type, xhr, settings);
+	  }
+	  // status: "success", "notmodified", "error", "timeout", "abort", "parsererror"
+	  function ajaxComplete(status, xhr, settings) {
+	    var context = settings.context;
+	    settings.complete.call(context, xhr, status);
+	    triggerGlobal(settings, context, 'ajaxComplete', [xhr, settings]);
+	    ajaxStop(settings);
+	  }
+	
+	  // Empty function, used as default callback
+	  function empty() {}
+	
+	  $.ajaxSettings = {
+	    // Default type of request
+	    type: 'GET',
+	    // Callback that is executed before request
+	    beforeSend: empty,
+	    // Callback that is executed if the request succeeds
+	    success: empty,
+	    // Callback that is executed the the server drops error
+	    error: empty,
+	    // Callback that is executed on request complete (both: error and success)
+	    complete: empty,
+	    // The context for the callbacks
+	    context: null,
+	    // Whether to trigger "global" Ajax events
+	    global: true,
+	    // Transport
+	    xhr: function xhr() {
+	      return new window.XMLHttpRequest();
+	    },
+	    // MIME types mapping
+	    // IIS returns Javascript as "application/x-javascript"
+	    accepts: {
+	      script: 'text/javascript, application/javascript, application/x-javascript',
+	      json: jsonType,
+	      xml: 'application/xml, text/xml',
+	      html: htmlType,
+	      text: 'text/plain'
+	    },
+	    // Whether the request is to another domain
+	    crossDomain: false,
+	    // Default timeout
+	    timeout: 0,
+	    // Whether data should be serialized to string
+	    processData: true,
+	    // Whether the browser should be allowed to cache GET responses
+	    cache: true
+	  };
+	
+	  function mimeToDataType(mime) {
+	    if (mime) mime = mime.split(';', 2)[0];
+	    return mime && (mime == htmlType ? 'html' : mime == jsonType ? 'json' : scriptTypeRE.test(mime) ? 'script' : xmlTypeRE.test(mime) && 'xml') || 'text';
+	  }
+	
+	  function appendQuery(url, query) {
+	    if (query == '') return url;
+	    return (url + '&' + query).replace(/[&?]{1,2}/, '?');
+	  }
+	
+	  // serialize payload and append it to the URL for GET requests
+	  function serializeData(options) {
+	    if (options.processData && options.data && $.type(options.data) != "string") options.data = $.param(options.data, options.traditional);
+	    if (options.data && (!options.type || options.type.toUpperCase() == 'GET')) options.url = appendQuery(options.url, options.data), options.data = undefined;
+	  }
+	
+	  $.ajax = function (options) {
+	    var settings = $.extend({}, options || {}),
+	        deferred = $.Deferred && $.Deferred(),
+	        urlAnchor,
+	        hashIndex;
+	    for (key in $.ajaxSettings) {
+	      if (settings[key] === undefined) settings[key] = $.ajaxSettings[key];
+	    }ajaxStart(settings);
+	
+	    if (!settings.crossDomain) {
+	      urlAnchor = document.createElement('a');
+	      urlAnchor.href = settings.url;
+	      // cleans up URL for .href (IE only), see https://github.com/madrobby/zepto/pull/1049
+	      urlAnchor.href = urlAnchor.href;
+	      settings.crossDomain = originAnchor.protocol + '//' + originAnchor.host !== urlAnchor.protocol + '//' + urlAnchor.host;
+	    }
+	
+	    if (!settings.url) settings.url = window.location.toString();
+	    if ((hashIndex = settings.url.indexOf('#')) > -1) settings.url = settings.url.slice(0, hashIndex);
+	    serializeData(settings);
+	
+	    var dataType = settings.dataType,
+	        hasPlaceholder = /\?.+=\?/.test(settings.url);
+	    if (hasPlaceholder) dataType = 'jsonp';
+	
+	    if (settings.cache === false || (!options || options.cache !== true) && ('script' == dataType || 'jsonp' == dataType)) settings.url = appendQuery(settings.url, '_=' + Date.now());
+	
+	    if ('jsonp' == dataType) {
+	      if (!hasPlaceholder) settings.url = appendQuery(settings.url, settings.jsonp ? settings.jsonp + '=?' : settings.jsonp === false ? '' : 'callback=?');
+	      return $.ajaxJSONP(settings, deferred);
+	    }
+	
+	    var mime = settings.accepts[dataType],
+	        headers = {},
+	        setHeader = function setHeader(name, value) {
+	      headers[name.toLowerCase()] = [name, value];
+	    },
+	        protocol = /^([\w-]+:)\/\//.test(settings.url) ? RegExp.$1 : window.location.protocol,
+	        xhr = settings.xhr(),
+	        nativeSetHeader = xhr.setRequestHeader,
+	        abortTimeout;
+	
+	    if (deferred) deferred.promise(xhr);
+	
+	    if (!settings.crossDomain) setHeader('X-Requested-With', 'XMLHttpRequest');
+	    setHeader('Accept', mime || '*/*');
+	    if (mime = settings.mimeType || mime) {
+	      if (mime.indexOf(',') > -1) mime = mime.split(',', 2)[0];
+	      xhr.overrideMimeType && xhr.overrideMimeType(mime);
+	    }
+	    if (settings.contentType || settings.contentType !== false && settings.data && settings.type.toUpperCase() != 'GET') setHeader('Content-Type', settings.contentType || 'application/x-www-form-urlencoded');
+	
+	    if (settings.headers) for (name in settings.headers) {
+	      setHeader(name, settings.headers[name]);
+	    }xhr.setRequestHeader = setHeader;
+	
+	    xhr.onreadystatechange = function () {
+	      if (xhr.readyState == 4) {
+	        xhr.onreadystatechange = empty;
+	        clearTimeout(abortTimeout);
+	        var result,
+	            error = false;
+	        if (xhr.status >= 200 && xhr.status < 300 || xhr.status == 304 || xhr.status == 0 && protocol == 'file:') {
+	          dataType = dataType || mimeToDataType(settings.mimeType || xhr.getResponseHeader('content-type'));
+	
+	          if (xhr.responseType == 'arraybuffer' || xhr.responseType == 'blob') result = xhr.response;else {
+	            result = xhr.responseText;
+	
+	            try {
+	              // http://perfectionkills.com/global-eval-what-are-the-options/
+	              if (dataType == 'script') (1, eval)(result);else if (dataType == 'xml') result = xhr.responseXML;else if (dataType == 'json') result = blankRE.test(result) ? null : $.parseJSON(result);
+	            } catch (e) {
+	              error = e;
+	            }
+	
+	            if (error) return ajaxError(error, 'parsererror', xhr, settings, deferred);
+	          }
+	
+	          ajaxSuccess(result, xhr, settings, deferred);
+	        } else {
+	          ajaxError(xhr.statusText || null, xhr.status ? 'error' : 'abort', xhr, settings, deferred);
+	        }
+	      }
+	    };
+	
+	    if (ajaxBeforeSend(xhr, settings) === false) {
+	      xhr.abort();
+	      ajaxError(null, 'abort', xhr, settings, deferred);
+	      return xhr;
+	    }
+	
+	    if (settings.xhrFields) for (name in settings.xhrFields) {
+	      xhr[name] = settings.xhrFields[name];
+	    }var async = 'async' in settings ? settings.async : true;
+	    xhr.open(settings.type, settings.url, async, settings.username, settings.password);
+	
+	    for (name in headers) {
+	      nativeSetHeader.apply(xhr, headers[name]);
+	    }if (settings.timeout > 0) abortTimeout = setTimeout(function () {
+	      xhr.onreadystatechange = empty;
+	      xhr.abort();
+	      ajaxError(null, 'timeout', xhr, settings, deferred);
+	    }, settings.timeout);
+	
+	    // avoid sending empty string (#319)
+	    xhr.send(settings.data ? settings.data : null);
+	    return xhr;
+	  };
+	
+	  // handle optional data/success arguments
+	  function parseArguments(url, data, success, dataType) {
+	    if ($.isFunction(data)) dataType = success, success = data, data = undefined;
+	    if (!$.isFunction(success)) dataType = success, success = undefined;
+	    return {
+	      url: url,
+	      data: data,
+	      success: success,
+	      dataType: dataType
+	    };
+	  }
+	
+	  $.get = function () /* url, data, success, dataType */{
+	    return $.ajax(parseArguments.apply(null, arguments));
+	  };
+	
+	  $.post = function () /* url, data, success, dataType */{
+	    var options = parseArguments.apply(null, arguments);
+	    options.type = 'POST';
+	    return $.ajax(options);
+	  };
+	
+	  $.getJSON = function () /* url, data, success */{
+	    var options = parseArguments.apply(null, arguments);
+	    options.dataType = 'json';
+	    return $.ajax(options);
+	  };
+	
+	  var escape = encodeURIComponent;
+	
+	  function serialize(params, obj, traditional, scope) {
+	    var type,
+	        array = $.isArray(obj),
+	        hash = $.isPlainObject(obj);
+	    $.each(obj, function (key, value) {
+	      type = $.type(value);
+	      if (scope) key = traditional ? scope : scope + '[' + (hash || type == 'object' || type == 'array' ? key : '') + ']';
+	      // handle data in serializeArray() format
+	      if (!scope && array) params.add(value.name, value.value);
+	      // recurse into nested objects
+	      else if (type == "array" || !traditional && type == "object") serialize(params, value, traditional, key);else params.add(key, value);
+	    });
+	  }
+	
+	  $.param = function (obj, traditional) {
+	    var params = [];
+	    params.add = function (key, value) {
+	      if ($.isFunction(value)) value = value();
+	      if (value == null) value = "";
+	      this.push(escape(key) + '=' + escape(value));
+	    };
+	    serialize(params, obj, traditional);
+	    return params.join('&').replace(/%20/g, '+');
+	  };
+	})(Zepto);
+
+/***/ },
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(70), __esModule: true };
+
+/***/ },
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(71);
+	module.exports = __webpack_require__(24).Object.getPrototypeOf;
+
+/***/ },
+/* 71 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.9 Object.getPrototypeOf(O)
+	var toObject = __webpack_require__(72);
+	
+	__webpack_require__(73)('getPrototypeOf', function($getPrototypeOf){
+	  return function getPrototypeOf(it){
+	    return $getPrototypeOf(toObject(it));
+	  };
+	});
+
+/***/ },
+/* 72 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 7.1.13 ToObject(argument)
+	var defined = __webpack_require__(19);
+	module.exports = function(it){
+	  return Object(defined(it));
+	};
+
+/***/ },
+/* 73 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// most Object methods by ES6 should accept primitives
+	var $export = __webpack_require__(22)
+	  , core    = __webpack_require__(24)
+	  , fails   = __webpack_require__(32);
+	module.exports = function(KEY, exec){
+	  var fn  = (core.Object || {})[KEY] || Object[KEY]
+	    , exp = {};
+	  exp[KEY] = exec(fn);
+	  $export($export.S + $export.F * fails(function(){ fn(1); }), 'Object', exp);
+	};
+
+/***/ },
+/* 74 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var io = __webpack_require__(75);
+	
+	var socket = io();
+	
+	socket.on('message', function (resp) {
+	    console.log('message');
+	});
+	
+	socket.on('record', function (resp) {
+	    console.log('record');
+	});
+	
+	socket.on('error', function (resp) {
+	    console.error(resp.message);
+	});
+	
+	exports.socket = socket;
+	
+	exports.enter = function (author, relate) {
+	    socket.emit('enter', {
+	        author: author,
+	        relate: relate
+	    });
+	};
+	
+	exports.leave = function (author, relate) {
+	    socket.emit('leave', {
+	        author: author,
+	        relate: relate
+	    });
+	};
+	
+	exports.login = function (userId) {
+	    socket.emit('login', { userId: userId });
+	};
+	
+	exports.logout = function (userId) {
+	    socket.emit('logout', { userId: userId });
+	};
+
+/***/ },
+/* 75 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	/**
+	 * Module dependencies.
+	 */
+	
+	var url = __webpack_require__(76);
+	var parser = __webpack_require__(81);
+	var Manager = __webpack_require__(89);
+	var debug = __webpack_require__(78)('socket.io-client');
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = exports = lookup;
+	
+	/**
+	 * Managers cache.
+	 */
+	
+	var cache = exports.managers = {};
+	
+	/**
+	 * Looks up an existing `Manager` for multiplexing.
+	 * If the user summons:
+	 *
+	 *   `io('http://localhost/a');`
+	 *   `io('http://localhost/b');`
+	 *
+	 * We reuse the existing instance based on same scheme/port/host,
+	 * and we initialize sockets for each namespace.
+	 *
+	 * @api public
+	 */
+	
+	function lookup(uri, opts) {
+	  if (typeof uri == 'object') {
+	    opts = uri;
+	    uri = undefined;
+	  }
+	
+	  opts = opts || {};
+	
+	  var parsed = url(uri);
+	  var source = parsed.source;
+	  var id = parsed.id;
+	  var path = parsed.path;
+	  var sameNamespace = cache[id] && path in cache[id].nsps;
+	  var newConnection = opts.forceNew || opts['force new connection'] ||
+	                      false === opts.multiplex || sameNamespace;
+	
+	  var io;
+	
+	  if (newConnection) {
+	    debug('ignoring socket cache for %s', source);
+	    io = Manager(source, opts);
+	  } else {
+	    if (!cache[id]) {
+	      debug('new io instance for %s', source);
+	      cache[id] = Manager(source, opts);
+	    }
+	    io = cache[id];
+	  }
+	
+	  return io.socket(parsed.path);
+	}
+	
+	/**
+	 * Protocol version.
+	 *
+	 * @api public
+	 */
+	
+	exports.protocol = parser.protocol;
+	
+	/**
+	 * `connect`.
+	 *
+	 * @param {String} uri
+	 * @api public
+	 */
+	
+	exports.connect = lookup;
+	
+	/**
+	 * Expose constructors for standalone build.
+	 *
+	 * @api public
+	 */
+	
+	exports.Manager = __webpack_require__(89);
+	exports.Socket = __webpack_require__(117);
+
+
+/***/ },
+/* 76 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {
+	/**
+	 * Module dependencies.
+	 */
+	
+	var parseuri = __webpack_require__(77);
+	var debug = __webpack_require__(78)('socket.io-client:url');
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = url;
+	
+	/**
+	 * URL parser.
+	 *
+	 * @param {String} url
+	 * @param {Object} An object meant to mimic window.location.
+	 *                 Defaults to window.location.
+	 * @api public
+	 */
+	
+	function url(uri, loc){
+	  var obj = uri;
+	
+	  // default to window.location
+	  var loc = loc || global.location;
+	  if (null == uri) uri = loc.protocol + '//' + loc.host;
+	
+	  // relative path support
+	  if ('string' == typeof uri) {
+	    if ('/' == uri.charAt(0)) {
+	      if ('/' == uri.charAt(1)) {
+	        uri = loc.protocol + uri;
+	      } else {
+	        uri = loc.host + uri;
+	      }
+	    }
+	
+	    if (!/^(https?|wss?):\/\//.test(uri)) {
+	      debug('protocol-less url %s', uri);
+	      if ('undefined' != typeof loc) {
+	        uri = loc.protocol + '//' + uri;
+	      } else {
+	        uri = 'https://' + uri;
+	      }
+	    }
+	
+	    // parse
+	    debug('parse %s', uri);
+	    obj = parseuri(uri);
+	  }
+	
+	  // make sure we treat `localhost:80` and `localhost` equally
+	  if (!obj.port) {
+	    if (/^(http|ws)$/.test(obj.protocol)) {
+	      obj.port = '80';
+	    }
+	    else if (/^(http|ws)s$/.test(obj.protocol)) {
+	      obj.port = '443';
+	    }
+	  }
+	
+	  obj.path = obj.path || '/';
+	
+	  var ipv6 = obj.host.indexOf(':') !== -1;
+	  var host = ipv6 ? '[' + obj.host + ']' : obj.host;
+	
+	  // define unique id
+	  obj.id = obj.protocol + '://' + host + ':' + obj.port;
+	  // define href
+	  obj.href = obj.protocol + '://' + host + (loc && loc.port == obj.port ? '' : (':' + obj.port));
+	
+	  return obj;
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 77 */
+/***/ function(module, exports) {
+
+	/**
+	 * Parses an URI
+	 *
+	 * @author Steven Levithan <stevenlevithan.com> (MIT license)
+	 * @api private
+	 */
+	
+	var re = /^(?:(?![^:@]+:[^:@\/]*@)(http|https|ws|wss):\/\/)?((?:(([^:@]*)(?::([^:@]*))?)?@)?((?:[a-f0-9]{0,4}:){2,7}[a-f0-9]{0,4}|[^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/;
+	
+	var parts = [
+	    'source', 'protocol', 'authority', 'userInfo', 'user', 'password', 'host', 'port', 'relative', 'path', 'directory', 'file', 'query', 'anchor'
+	];
+	
+	module.exports = function parseuri(str) {
+	    var src = str,
+	        b = str.indexOf('['),
+	        e = str.indexOf(']');
+	
+	    if (b != -1 && e != -1) {
+	        str = str.substring(0, b) + str.substring(b, e).replace(/:/g, ';') + str.substring(e, str.length);
+	    }
+	
+	    var m = re.exec(str || ''),
+	        uri = {},
+	        i = 14;
+	
+	    while (i--) {
+	        uri[parts[i]] = m[i] || '';
+	    }
+	
+	    if (b != -1 && e != -1) {
+	        uri.source = src;
+	        uri.host = uri.host.substring(1, uri.host.length - 1).replace(/;/g, ':');
+	        uri.authority = uri.authority.replace('[', '').replace(']', '').replace(/;/g, ':');
+	        uri.ipv6uri = true;
+	    }
+	
+	    return uri;
+	};
+
+
+/***/ },
+/* 78 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	/**
+	 * This is the web browser implementation of `debug()`.
+	 *
+	 * Expose `debug()` as the module.
+	 */
+	
+	exports = module.exports = __webpack_require__(79);
+	exports.log = log;
+	exports.formatArgs = formatArgs;
+	exports.save = save;
+	exports.load = load;
+	exports.useColors = useColors;
+	exports.storage = 'undefined' != typeof chrome
+	               && 'undefined' != typeof chrome.storage
+	                  ? chrome.storage.local
+	                  : localstorage();
+	
+	/**
+	 * Colors.
+	 */
+	
+	exports.colors = [
+	  'lightseagreen',
+	  'forestgreen',
+	  'goldenrod',
+	  'dodgerblue',
+	  'darkorchid',
+	  'crimson'
+	];
+	
+	/**
+	 * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+	 * and the Firebug extension (any Firefox version) are known
+	 * to support "%c" CSS customizations.
+	 *
+	 * TODO: add a `localStorage` variable to explicitly enable/disable colors
+	 */
+	
+	function useColors() {
+	  // is webkit? http://stackoverflow.com/a/16459606/376773
+	  return ('WebkitAppearance' in document.documentElement.style) ||
+	    // is firebug? http://stackoverflow.com/a/398120/376773
+	    (window.console && (console.firebug || (console.exception && console.table))) ||
+	    // is firefox >= v31?
+	    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+	    (navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31);
+	}
+	
+	/**
+	 * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+	 */
+	
+	exports.formatters.j = function(v) {
+	  return JSON.stringify(v);
+	};
+	
+	
+	/**
+	 * Colorize log arguments if enabled.
+	 *
+	 * @api public
+	 */
+	
+	function formatArgs() {
+	  var args = arguments;
+	  var useColors = this.useColors;
+	
+	  args[0] = (useColors ? '%c' : '')
+	    + this.namespace
+	    + (useColors ? ' %c' : ' ')
+	    + args[0]
+	    + (useColors ? '%c ' : ' ')
+	    + '+' + exports.humanize(this.diff);
+	
+	  if (!useColors) return args;
+	
+	  var c = 'color: ' + this.color;
+	  args = [args[0], c, 'color: inherit'].concat(Array.prototype.slice.call(args, 1));
+	
+	  // the final "%c" is somewhat tricky, because there could be other
+	  // arguments passed either before or after the %c, so we need to
+	  // figure out the correct index to insert the CSS into
+	  var index = 0;
+	  var lastC = 0;
+	  args[0].replace(/%[a-z%]/g, function(match) {
+	    if ('%%' === match) return;
+	    index++;
+	    if ('%c' === match) {
+	      // we only are interested in the *last* %c
+	      // (the user may have provided their own)
+	      lastC = index;
+	    }
+	  });
+	
+	  args.splice(lastC, 0, c);
+	  return args;
+	}
+	
+	/**
+	 * Invokes `console.log()` when available.
+	 * No-op when `console.log` is not a "function".
+	 *
+	 * @api public
+	 */
+	
+	function log() {
+	  // this hackery is required for IE8/9, where
+	  // the `console.log` function doesn't have 'apply'
+	  return 'object' === typeof console
+	    && console.log
+	    && Function.prototype.apply.call(console.log, console, arguments);
+	}
+	
+	/**
+	 * Save `namespaces`.
+	 *
+	 * @param {String} namespaces
+	 * @api private
+	 */
+	
+	function save(namespaces) {
+	  try {
+	    if (null == namespaces) {
+	      exports.storage.removeItem('debug');
+	    } else {
+	      exports.storage.debug = namespaces;
+	    }
+	  } catch(e) {}
+	}
+	
+	/**
+	 * Load `namespaces`.
+	 *
+	 * @return {String} returns the previously persisted debug modes
+	 * @api private
+	 */
+	
+	function load() {
+	  var r;
+	  try {
+	    r = exports.storage.debug;
+	  } catch(e) {}
+	  return r;
+	}
+	
+	/**
+	 * Enable namespaces listed in `localStorage.debug` initially.
+	 */
+	
+	exports.enable(load());
+	
+	/**
+	 * Localstorage attempts to return the localstorage.
+	 *
+	 * This is necessary because safari throws
+	 * when a user disables cookies/localstorage
+	 * and you attempt to access it.
+	 *
+	 * @return {LocalStorage}
+	 * @api private
+	 */
+	
+	function localstorage(){
+	  try {
+	    return window.localStorage;
+	  } catch (e) {}
+	}
+
+
+/***/ },
+/* 79 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	/**
+	 * This is the common logic for both the Node.js and web browser
+	 * implementations of `debug()`.
+	 *
+	 * Expose `debug()` as the module.
+	 */
+	
+	exports = module.exports = debug;
+	exports.coerce = coerce;
+	exports.disable = disable;
+	exports.enable = enable;
+	exports.enabled = enabled;
+	exports.humanize = __webpack_require__(80);
+	
+	/**
+	 * The currently active debug mode names, and names to skip.
+	 */
+	
+	exports.names = [];
+	exports.skips = [];
+	
+	/**
+	 * Map of special "%n" handling functions, for the debug "format" argument.
+	 *
+	 * Valid key names are a single, lowercased letter, i.e. "n".
+	 */
+	
+	exports.formatters = {};
+	
+	/**
+	 * Previously assigned color.
+	 */
+	
+	var prevColor = 0;
+	
+	/**
+	 * Previous log timestamp.
+	 */
+	
+	var prevTime;
+	
+	/**
+	 * Select a color.
+	 *
+	 * @return {Number}
+	 * @api private
+	 */
+	
+	function selectColor() {
+	  return exports.colors[prevColor++ % exports.colors.length];
+	}
+	
+	/**
+	 * Create a debugger with the given `namespace`.
+	 *
+	 * @param {String} namespace
+	 * @return {Function}
+	 * @api public
+	 */
+	
+	function debug(namespace) {
+	
+	  // define the `disabled` version
+	  function disabled() {
+	  }
+	  disabled.enabled = false;
+	
+	  // define the `enabled` version
+	  function enabled() {
+	
+	    var self = enabled;
+	
+	    // set `diff` timestamp
+	    var curr = +new Date();
+	    var ms = curr - (prevTime || curr);
+	    self.diff = ms;
+	    self.prev = prevTime;
+	    self.curr = curr;
+	    prevTime = curr;
+	
+	    // add the `color` if not set
+	    if (null == self.useColors) self.useColors = exports.useColors();
+	    if (null == self.color && self.useColors) self.color = selectColor();
+	
+	    var args = Array.prototype.slice.call(arguments);
+	
+	    args[0] = exports.coerce(args[0]);
+	
+	    if ('string' !== typeof args[0]) {
+	      // anything else let's inspect with %o
+	      args = ['%o'].concat(args);
+	    }
+	
+	    // apply any `formatters` transformations
+	    var index = 0;
+	    args[0] = args[0].replace(/%([a-z%])/g, function(match, format) {
+	      // if we encounter an escaped % then don't increase the array index
+	      if (match === '%%') return match;
+	      index++;
+	      var formatter = exports.formatters[format];
+	      if ('function' === typeof formatter) {
+	        var val = args[index];
+	        match = formatter.call(self, val);
+	
+	        // now we need to remove `args[index]` since it's inlined in the `format`
+	        args.splice(index, 1);
+	        index--;
+	      }
+	      return match;
+	    });
+	
+	    if ('function' === typeof exports.formatArgs) {
+	      args = exports.formatArgs.apply(self, args);
+	    }
+	    var logFn = enabled.log || exports.log || console.log.bind(console);
+	    logFn.apply(self, args);
+	  }
+	  enabled.enabled = true;
+	
+	  var fn = exports.enabled(namespace) ? enabled : disabled;
+	
+	  fn.namespace = namespace;
+	
+	  return fn;
+	}
+	
+	/**
+	 * Enables a debug mode by namespaces. This can include modes
+	 * separated by a colon and wildcards.
+	 *
+	 * @param {String} namespaces
+	 * @api public
+	 */
+	
+	function enable(namespaces) {
+	  exports.save(namespaces);
+	
+	  var split = (namespaces || '').split(/[\s,]+/);
+	  var len = split.length;
+	
+	  for (var i = 0; i < len; i++) {
+	    if (!split[i]) continue; // ignore empty strings
+	    namespaces = split[i].replace(/\*/g, '.*?');
+	    if (namespaces[0] === '-') {
+	      exports.skips.push(new RegExp('^' + namespaces.substr(1) + '$'));
+	    } else {
+	      exports.names.push(new RegExp('^' + namespaces + '$'));
+	    }
+	  }
+	}
+	
+	/**
+	 * Disable debug output.
+	 *
+	 * @api public
+	 */
+	
+	function disable() {
+	  exports.enable('');
+	}
+	
+	/**
+	 * Returns true if the given mode name is enabled, false otherwise.
+	 *
+	 * @param {String} name
+	 * @return {Boolean}
+	 * @api public
+	 */
+	
+	function enabled(name) {
+	  var i, len;
+	  for (i = 0, len = exports.skips.length; i < len; i++) {
+	    if (exports.skips[i].test(name)) {
+	      return false;
+	    }
+	  }
+	  for (i = 0, len = exports.names.length; i < len; i++) {
+	    if (exports.names[i].test(name)) {
+	      return true;
+	    }
+	  }
+	  return false;
+	}
+	
+	/**
+	 * Coerce `val`.
+	 *
+	 * @param {Mixed} val
+	 * @return {Mixed}
+	 * @api private
+	 */
+	
+	function coerce(val) {
+	  if (val instanceof Error) return val.stack || val.message;
+	  return val;
+	}
+
+
+/***/ },
+/* 80 */
+/***/ function(module, exports) {
+
+	/**
+	 * Helpers.
+	 */
+	
+	var s = 1000;
+	var m = s * 60;
+	var h = m * 60;
+	var d = h * 24;
+	var y = d * 365.25;
+	
+	/**
+	 * Parse or format the given `val`.
+	 *
+	 * Options:
+	 *
+	 *  - `long` verbose formatting [false]
+	 *
+	 * @param {String|Number} val
+	 * @param {Object} options
+	 * @return {String|Number}
+	 * @api public
+	 */
+	
+	module.exports = function(val, options){
+	  options = options || {};
+	  if ('string' == typeof val) return parse(val);
+	  return options.long
+	    ? long(val)
+	    : short(val);
+	};
+	
+	/**
+	 * Parse the given `str` and return milliseconds.
+	 *
+	 * @param {String} str
+	 * @return {Number}
+	 * @api private
+	 */
+	
+	function parse(str) {
+	  str = '' + str;
+	  if (str.length > 10000) return;
+	  var match = /^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(str);
+	  if (!match) return;
+	  var n = parseFloat(match[1]);
+	  var type = (match[2] || 'ms').toLowerCase();
+	  switch (type) {
+	    case 'years':
+	    case 'year':
+	    case 'yrs':
+	    case 'yr':
+	    case 'y':
+	      return n * y;
+	    case 'days':
+	    case 'day':
+	    case 'd':
+	      return n * d;
+	    case 'hours':
+	    case 'hour':
+	    case 'hrs':
+	    case 'hr':
+	    case 'h':
+	      return n * h;
+	    case 'minutes':
+	    case 'minute':
+	    case 'mins':
+	    case 'min':
+	    case 'm':
+	      return n * m;
+	    case 'seconds':
+	    case 'second':
+	    case 'secs':
+	    case 'sec':
+	    case 's':
+	      return n * s;
+	    case 'milliseconds':
+	    case 'millisecond':
+	    case 'msecs':
+	    case 'msec':
+	    case 'ms':
+	      return n;
+	  }
+	}
+	
+	/**
+	 * Short format for `ms`.
+	 *
+	 * @param {Number} ms
+	 * @return {String}
+	 * @api private
+	 */
+	
+	function short(ms) {
+	  if (ms >= d) return Math.round(ms / d) + 'd';
+	  if (ms >= h) return Math.round(ms / h) + 'h';
+	  if (ms >= m) return Math.round(ms / m) + 'm';
+	  if (ms >= s) return Math.round(ms / s) + 's';
+	  return ms + 'ms';
+	}
+	
+	/**
+	 * Long format for `ms`.
+	 *
+	 * @param {Number} ms
+	 * @return {String}
+	 * @api private
+	 */
+	
+	function long(ms) {
+	  return plural(ms, d, 'day')
+	    || plural(ms, h, 'hour')
+	    || plural(ms, m, 'minute')
+	    || plural(ms, s, 'second')
+	    || ms + ' ms';
+	}
+	
+	/**
+	 * Pluralization helper.
+	 */
+	
+	function plural(ms, n, name) {
+	  if (ms < n) return;
+	  if (ms < n * 1.5) return Math.floor(ms / n) + ' ' + name;
+	  return Math.ceil(ms / n) + ' ' + name + 's';
+	}
+
+
+/***/ },
+/* 81 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	/**
+	 * Module dependencies.
+	 */
+	
+	var debug = __webpack_require__(78)('socket.io-parser');
+	var json = __webpack_require__(82);
+	var isArray = __webpack_require__(85);
+	var Emitter = __webpack_require__(86);
+	var binary = __webpack_require__(87);
+	var isBuf = __webpack_require__(88);
+	
+	/**
+	 * Protocol version.
+	 *
+	 * @api public
+	 */
+	
+	exports.protocol = 4;
+	
+	/**
+	 * Packet types.
+	 *
+	 * @api public
+	 */
+	
+	exports.types = [
+	  'CONNECT',
+	  'DISCONNECT',
+	  'EVENT',
+	  'ACK',
+	  'ERROR',
+	  'BINARY_EVENT',
+	  'BINARY_ACK'
+	];
+	
+	/**
+	 * Packet type `connect`.
+	 *
+	 * @api public
+	 */
+	
+	exports.CONNECT = 0;
+	
+	/**
+	 * Packet type `disconnect`.
+	 *
+	 * @api public
+	 */
+	
+	exports.DISCONNECT = 1;
+	
+	/**
+	 * Packet type `event`.
+	 *
+	 * @api public
+	 */
+	
+	exports.EVENT = 2;
+	
+	/**
+	 * Packet type `ack`.
+	 *
+	 * @api public
+	 */
+	
+	exports.ACK = 3;
+	
+	/**
+	 * Packet type `error`.
+	 *
+	 * @api public
+	 */
+	
+	exports.ERROR = 4;
+	
+	/**
+	 * Packet type 'binary event'
+	 *
+	 * @api public
+	 */
+	
+	exports.BINARY_EVENT = 5;
+	
+	/**
+	 * Packet type `binary ack`. For acks with binary arguments.
+	 *
+	 * @api public
+	 */
+	
+	exports.BINARY_ACK = 6;
+	
+	/**
+	 * Encoder constructor.
+	 *
+	 * @api public
+	 */
+	
+	exports.Encoder = Encoder;
+	
+	/**
+	 * Decoder constructor.
+	 *
+	 * @api public
+	 */
+	
+	exports.Decoder = Decoder;
+	
+	/**
+	 * A socket.io Encoder instance
+	 *
+	 * @api public
+	 */
+	
+	function Encoder() {}
+	
+	/**
+	 * Encode a packet as a single string if non-binary, or as a
+	 * buffer sequence, depending on packet type.
+	 *
+	 * @param {Object} obj - packet object
+	 * @param {Function} callback - function to handle encodings (likely engine.write)
+	 * @return Calls callback with Array of encodings
+	 * @api public
+	 */
+	
+	Encoder.prototype.encode = function(obj, callback){
+	  debug('encoding packet %j', obj);
+	
+	  if (exports.BINARY_EVENT == obj.type || exports.BINARY_ACK == obj.type) {
+	    encodeAsBinary(obj, callback);
+	  }
+	  else {
+	    var encoding = encodeAsString(obj);
+	    callback([encoding]);
+	  }
+	};
+	
+	/**
+	 * Encode packet as string.
+	 *
+	 * @param {Object} packet
+	 * @return {String} encoded
+	 * @api private
+	 */
+	
+	function encodeAsString(obj) {
+	  var str = '';
+	  var nsp = false;
+	
+	  // first is type
+	  str += obj.type;
+	
+	  // attachments if we have them
+	  if (exports.BINARY_EVENT == obj.type || exports.BINARY_ACK == obj.type) {
+	    str += obj.attachments;
+	    str += '-';
+	  }
+	
+	  // if we have a namespace other than `/`
+	  // we append it followed by a comma `,`
+	  if (obj.nsp && '/' != obj.nsp) {
+	    nsp = true;
+	    str += obj.nsp;
+	  }
+	
+	  // immediately followed by the id
+	  if (null != obj.id) {
+	    if (nsp) {
+	      str += ',';
+	      nsp = false;
+	    }
+	    str += obj.id;
+	  }
+	
+	  // json data
+	  if (null != obj.data) {
+	    if (nsp) str += ',';
+	    str += json.stringify(obj.data);
+	  }
+	
+	  debug('encoded %j as %s', obj, str);
+	  return str;
+	}
+	
+	/**
+	 * Encode packet as 'buffer sequence' by removing blobs, and
+	 * deconstructing packet into object with placeholders and
+	 * a list of buffers.
+	 *
+	 * @param {Object} packet
+	 * @return {Buffer} encoded
+	 * @api private
+	 */
+	
+	function encodeAsBinary(obj, callback) {
+	
+	  function writeEncoding(bloblessData) {
+	    var deconstruction = binary.deconstructPacket(bloblessData);
+	    var pack = encodeAsString(deconstruction.packet);
+	    var buffers = deconstruction.buffers;
+	
+	    buffers.unshift(pack); // add packet info to beginning of data list
+	    callback(buffers); // write all the buffers
+	  }
+	
+	  binary.removeBlobs(obj, writeEncoding);
+	}
+	
+	/**
+	 * A socket.io Decoder instance
+	 *
+	 * @return {Object} decoder
+	 * @api public
+	 */
+	
+	function Decoder() {
+	  this.reconstructor = null;
+	}
+	
+	/**
+	 * Mix in `Emitter` with Decoder.
+	 */
+	
+	Emitter(Decoder.prototype);
+	
+	/**
+	 * Decodes an ecoded packet string into packet JSON.
+	 *
+	 * @param {String} obj - encoded packet
+	 * @return {Object} packet
+	 * @api public
+	 */
+	
+	Decoder.prototype.add = function(obj) {
+	  var packet;
+	  if ('string' == typeof obj) {
+	    packet = decodeString(obj);
+	    if (exports.BINARY_EVENT == packet.type || exports.BINARY_ACK == packet.type) { // binary packet's json
+	      this.reconstructor = new BinaryReconstructor(packet);
+	
+	      // no attachments, labeled binary but no binary data to follow
+	      if (this.reconstructor.reconPack.attachments === 0) {
+	        this.emit('decoded', packet);
+	      }
+	    } else { // non-binary full packet
+	      this.emit('decoded', packet);
+	    }
+	  }
+	  else if (isBuf(obj) || obj.base64) { // raw binary data
+	    if (!this.reconstructor) {
+	      throw new Error('got binary data when not reconstructing a packet');
+	    } else {
+	      packet = this.reconstructor.takeBinaryData(obj);
+	      if (packet) { // received final buffer
+	        this.reconstructor = null;
+	        this.emit('decoded', packet);
+	      }
+	    }
+	  }
+	  else {
+	    throw new Error('Unknown type: ' + obj);
+	  }
+	};
+	
+	/**
+	 * Decode a packet String (JSON data)
+	 *
+	 * @param {String} str
+	 * @return {Object} packet
+	 * @api private
+	 */
+	
+	function decodeString(str) {
+	  var p = {};
+	  var i = 0;
+	
+	  // look up type
+	  p.type = Number(str.charAt(0));
+	  if (null == exports.types[p.type]) return error();
+	
+	  // look up attachments if type binary
+	  if (exports.BINARY_EVENT == p.type || exports.BINARY_ACK == p.type) {
+	    var buf = '';
+	    while (str.charAt(++i) != '-') {
+	      buf += str.charAt(i);
+	      if (i == str.length) break;
+	    }
+	    if (buf != Number(buf) || str.charAt(i) != '-') {
+	      throw new Error('Illegal attachments');
+	    }
+	    p.attachments = Number(buf);
+	  }
+	
+	  // look up namespace (if any)
+	  if ('/' == str.charAt(i + 1)) {
+	    p.nsp = '';
+	    while (++i) {
+	      var c = str.charAt(i);
+	      if (',' == c) break;
+	      p.nsp += c;
+	      if (i == str.length) break;
+	    }
+	  } else {
+	    p.nsp = '/';
+	  }
+	
+	  // look up id
+	  var next = str.charAt(i + 1);
+	  if ('' !== next && Number(next) == next) {
+	    p.id = '';
+	    while (++i) {
+	      var c = str.charAt(i);
+	      if (null == c || Number(c) != c) {
+	        --i;
+	        break;
+	      }
+	      p.id += str.charAt(i);
+	      if (i == str.length) break;
+	    }
+	    p.id = Number(p.id);
+	  }
+	
+	  // look up json data
+	  if (str.charAt(++i)) {
+	    try {
+	      p.data = json.parse(str.substr(i));
+	    } catch(e){
+	      return error();
+	    }
+	  }
+	
+	  debug('decoded %s as %j', str, p);
+	  return p;
+	}
+	
+	/**
+	 * Deallocates a parser's resources
+	 *
+	 * @api public
+	 */
+	
+	Decoder.prototype.destroy = function() {
+	  if (this.reconstructor) {
+	    this.reconstructor.finishedReconstruction();
+	  }
+	};
+	
+	/**
+	 * A manager of a binary event's 'buffer sequence'. Should
+	 * be constructed whenever a packet of type BINARY_EVENT is
+	 * decoded.
+	 *
+	 * @param {Object} packet
+	 * @return {BinaryReconstructor} initialized reconstructor
+	 * @api private
+	 */
+	
+	function BinaryReconstructor(packet) {
+	  this.reconPack = packet;
+	  this.buffers = [];
+	}
+	
+	/**
+	 * Method to be called when binary data received from connection
+	 * after a BINARY_EVENT packet.
+	 *
+	 * @param {Buffer | ArrayBuffer} binData - the raw binary data received
+	 * @return {null | Object} returns null if more binary data is expected or
+	 *   a reconstructed packet object if all buffers have been received.
+	 * @api private
+	 */
+	
+	BinaryReconstructor.prototype.takeBinaryData = function(binData) {
+	  this.buffers.push(binData);
+	  if (this.buffers.length == this.reconPack.attachments) { // done with buffer list
+	    var packet = binary.reconstructPacket(this.reconPack, this.buffers);
+	    this.finishedReconstruction();
+	    return packet;
+	  }
+	  return null;
+	};
+	
+	/**
+	 * Cleans up binary packet reconstruction variables.
+	 *
+	 * @api private
+	 */
+	
+	BinaryReconstructor.prototype.finishedReconstruction = function() {
+	  this.reconPack = null;
+	  this.buffers = [];
+	};
+	
+	function error(data){
+	  return {
+	    type: exports.ERROR,
+	    data: 'parser error'
+	  };
+	}
+
+
+/***/ },
+/* 82 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*! JSON v3.3.2 | http://bestiejs.github.io/json3 | Copyright 2012-2014, Kit Cambridge | http://kit.mit-license.org */
+	;(function () {
+	  // Detect the `define` function exposed by asynchronous module loaders. The
+	  // strict `define` check is necessary for compatibility with `r.js`.
+	  var isLoader = "function" === "function" && __webpack_require__(84);
+	
+	  // A set of types used to distinguish objects from primitives.
+	  var objectTypes = {
+	    "function": true,
+	    "object": true
+	  };
+	
+	  // Detect the `exports` object exposed by CommonJS implementations.
+	  var freeExports = objectTypes[typeof exports] && exports && !exports.nodeType && exports;
+	
+	  // Use the `global` object exposed by Node (including Browserify via
+	  // `insert-module-globals`), Narwhal, and Ringo as the default context,
+	  // and the `window` object in browsers. Rhino exports a `global` function
+	  // instead.
+	  var root = objectTypes[typeof window] && window || this,
+	      freeGlobal = freeExports && objectTypes[typeof module] && module && !module.nodeType && typeof global == "object" && global;
+	
+	  if (freeGlobal && (freeGlobal["global"] === freeGlobal || freeGlobal["window"] === freeGlobal || freeGlobal["self"] === freeGlobal)) {
+	    root = freeGlobal;
+	  }
+	
+	  // Public: Initializes JSON 3 using the given `context` object, attaching the
+	  // `stringify` and `parse` functions to the specified `exports` object.
+	  function runInContext(context, exports) {
+	    context || (context = root["Object"]());
+	    exports || (exports = root["Object"]());
+	
+	    // Native constructor aliases.
+	    var Number = context["Number"] || root["Number"],
+	        String = context["String"] || root["String"],
+	        Object = context["Object"] || root["Object"],
+	        Date = context["Date"] || root["Date"],
+	        SyntaxError = context["SyntaxError"] || root["SyntaxError"],
+	        TypeError = context["TypeError"] || root["TypeError"],
+	        Math = context["Math"] || root["Math"],
+	        nativeJSON = context["JSON"] || root["JSON"];
+	
+	    // Delegate to the native `stringify` and `parse` implementations.
+	    if (typeof nativeJSON == "object" && nativeJSON) {
+	      exports.stringify = nativeJSON.stringify;
+	      exports.parse = nativeJSON.parse;
+	    }
+	
+	    // Convenience aliases.
+	    var objectProto = Object.prototype,
+	        getClass = objectProto.toString,
+	        isProperty, forEach, undef;
+	
+	    // Test the `Date#getUTC*` methods. Based on work by @Yaffle.
+	    var isExtended = new Date(-3509827334573292);
+	    try {
+	      // The `getUTCFullYear`, `Month`, and `Date` methods return nonsensical
+	      // results for certain dates in Opera >= 10.53.
+	      isExtended = isExtended.getUTCFullYear() == -109252 && isExtended.getUTCMonth() === 0 && isExtended.getUTCDate() === 1 &&
+	        // Safari < 2.0.2 stores the internal millisecond time value correctly,
+	        // but clips the values returned by the date methods to the range of
+	        // signed 32-bit integers ([-2 ** 31, 2 ** 31 - 1]).
+	        isExtended.getUTCHours() == 10 && isExtended.getUTCMinutes() == 37 && isExtended.getUTCSeconds() == 6 && isExtended.getUTCMilliseconds() == 708;
+	    } catch (exception) {}
+	
+	    // Internal: Determines whether the native `JSON.stringify` and `parse`
+	    // implementations are spec-compliant. Based on work by Ken Snyder.
+	    function has(name) {
+	      if (has[name] !== undef) {
+	        // Return cached feature test result.
+	        return has[name];
+	      }
+	      var isSupported;
+	      if (name == "bug-string-char-index") {
+	        // IE <= 7 doesn't support accessing string characters using square
+	        // bracket notation. IE 8 only supports this for primitives.
+	        isSupported = "a"[0] != "a";
+	      } else if (name == "json") {
+	        // Indicates whether both `JSON.stringify` and `JSON.parse` are
+	        // supported.
+	        isSupported = has("json-stringify") && has("json-parse");
+	      } else {
+	        var value, serialized = '{"a":[1,true,false,null,"\\u0000\\b\\n\\f\\r\\t"]}';
+	        // Test `JSON.stringify`.
+	        if (name == "json-stringify") {
+	          var stringify = exports.stringify, stringifySupported = typeof stringify == "function" && isExtended;
+	          if (stringifySupported) {
+	            // A test function object with a custom `toJSON` method.
+	            (value = function () {
+	              return 1;
+	            }).toJSON = value;
+	            try {
+	              stringifySupported =
+	                // Firefox 3.1b1 and b2 serialize string, number, and boolean
+	                // primitives as object literals.
+	                stringify(0) === "0" &&
+	                // FF 3.1b1, b2, and JSON 2 serialize wrapped primitives as object
+	                // literals.
+	                stringify(new Number()) === "0" &&
+	                stringify(new String()) == '""' &&
+	                // FF 3.1b1, 2 throw an error if the value is `null`, `undefined`, or
+	                // does not define a canonical JSON representation (this applies to
+	                // objects with `toJSON` properties as well, *unless* they are nested
+	                // within an object or array).
+	                stringify(getClass) === undef &&
+	                // IE 8 serializes `undefined` as `"undefined"`. Safari <= 5.1.7 and
+	                // FF 3.1b3 pass this test.
+	                stringify(undef) === undef &&
+	                // Safari <= 5.1.7 and FF 3.1b3 throw `Error`s and `TypeError`s,
+	                // respectively, if the value is omitted entirely.
+	                stringify() === undef &&
+	                // FF 3.1b1, 2 throw an error if the given value is not a number,
+	                // string, array, object, Boolean, or `null` literal. This applies to
+	                // objects with custom `toJSON` methods as well, unless they are nested
+	                // inside object or array literals. YUI 3.0.0b1 ignores custom `toJSON`
+	                // methods entirely.
+	                stringify(value) === "1" &&
+	                stringify([value]) == "[1]" &&
+	                // Prototype <= 1.6.1 serializes `[undefined]` as `"[]"` instead of
+	                // `"[null]"`.
+	                stringify([undef]) == "[null]" &&
+	                // YUI 3.0.0b1 fails to serialize `null` literals.
+	                stringify(null) == "null" &&
+	                // FF 3.1b1, 2 halts serialization if an array contains a function:
+	                // `[1, true, getClass, 1]` serializes as "[1,true,],". FF 3.1b3
+	                // elides non-JSON values from objects and arrays, unless they
+	                // define custom `toJSON` methods.
+	                stringify([undef, getClass, null]) == "[null,null,null]" &&
+	                // Simple serialization test. FF 3.1b1 uses Unicode escape sequences
+	                // where character escape codes are expected (e.g., `\b` => `\u0008`).
+	                stringify({ "a": [value, true, false, null, "\x00\b\n\f\r\t"] }) == serialized &&
+	                // FF 3.1b1 and b2 ignore the `filter` and `width` arguments.
+	                stringify(null, value) === "1" &&
+	                stringify([1, 2], null, 1) == "[\n 1,\n 2\n]" &&
+	                // JSON 2, Prototype <= 1.7, and older WebKit builds incorrectly
+	                // serialize extended years.
+	                stringify(new Date(-8.64e15)) == '"-271821-04-20T00:00:00.000Z"' &&
+	                // The milliseconds are optional in ES 5, but required in 5.1.
+	                stringify(new Date(8.64e15)) == '"+275760-09-13T00:00:00.000Z"' &&
+	                // Firefox <= 11.0 incorrectly serializes years prior to 0 as negative
+	                // four-digit years instead of six-digit years. Credits: @Yaffle.
+	                stringify(new Date(-621987552e5)) == '"-000001-01-01T00:00:00.000Z"' &&
+	                // Safari <= 5.1.5 and Opera >= 10.53 incorrectly serialize millisecond
+	                // values less than 1000. Credits: @Yaffle.
+	                stringify(new Date(-1)) == '"1969-12-31T23:59:59.999Z"';
+	            } catch (exception) {
+	              stringifySupported = false;
+	            }
+	          }
+	          isSupported = stringifySupported;
+	        }
+	        // Test `JSON.parse`.
+	        if (name == "json-parse") {
+	          var parse = exports.parse;
+	          if (typeof parse == "function") {
+	            try {
+	              // FF 3.1b1, b2 will throw an exception if a bare literal is provided.
+	              // Conforming implementations should also coerce the initial argument to
+	              // a string prior to parsing.
+	              if (parse("0") === 0 && !parse(false)) {
+	                // Simple parsing test.
+	                value = parse(serialized);
+	                var parseSupported = value["a"].length == 5 && value["a"][0] === 1;
+	                if (parseSupported) {
+	                  try {
+	                    // Safari <= 5.1.2 and FF 3.1b1 allow unescaped tabs in strings.
+	                    parseSupported = !parse('"\t"');
+	                  } catch (exception) {}
+	                  if (parseSupported) {
+	                    try {
+	                      // FF 4.0 and 4.0.1 allow leading `+` signs and leading
+	                      // decimal points. FF 4.0, 4.0.1, and IE 9-10 also allow
+	                      // certain octal literals.
+	                      parseSupported = parse("01") !== 1;
+	                    } catch (exception) {}
+	                  }
+	                  if (parseSupported) {
+	                    try {
+	                      // FF 4.0, 4.0.1, and Rhino 1.7R3-R4 allow trailing decimal
+	                      // points. These environments, along with FF 3.1b1 and 2,
+	                      // also allow trailing commas in JSON objects and arrays.
+	                      parseSupported = parse("1.") !== 1;
+	                    } catch (exception) {}
+	                  }
+	                }
+	              }
+	            } catch (exception) {
+	              parseSupported = false;
+	            }
+	          }
+	          isSupported = parseSupported;
+	        }
+	      }
+	      return has[name] = !!isSupported;
+	    }
+	
+	    if (!has("json")) {
+	      // Common `[[Class]]` name aliases.
+	      var functionClass = "[object Function]",
+	          dateClass = "[object Date]",
+	          numberClass = "[object Number]",
+	          stringClass = "[object String]",
+	          arrayClass = "[object Array]",
+	          booleanClass = "[object Boolean]";
+	
+	      // Detect incomplete support for accessing string characters by index.
+	      var charIndexBuggy = has("bug-string-char-index");
+	
+	      // Define additional utility methods if the `Date` methods are buggy.
+	      if (!isExtended) {
+	        var floor = Math.floor;
+	        // A mapping between the months of the year and the number of days between
+	        // January 1st and the first of the respective month.
+	        var Months = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+	        // Internal: Calculates the number of days between the Unix epoch and the
+	        // first day of the given month.
+	        var getDay = function (year, month) {
+	          return Months[month] + 365 * (year - 1970) + floor((year - 1969 + (month = +(month > 1))) / 4) - floor((year - 1901 + month) / 100) + floor((year - 1601 + month) / 400);
+	        };
+	      }
+	
+	      // Internal: Determines if a property is a direct property of the given
+	      // object. Delegates to the native `Object#hasOwnProperty` method.
+	      if (!(isProperty = objectProto.hasOwnProperty)) {
+	        isProperty = function (property) {
+	          var members = {}, constructor;
+	          if ((members.__proto__ = null, members.__proto__ = {
+	            // The *proto* property cannot be set multiple times in recent
+	            // versions of Firefox and SeaMonkey.
+	            "toString": 1
+	          }, members).toString != getClass) {
+	            // Safari <= 2.0.3 doesn't implement `Object#hasOwnProperty`, but
+	            // supports the mutable *proto* property.
+	            isProperty = function (property) {
+	              // Capture and break the object's prototype chain (see section 8.6.2
+	              // of the ES 5.1 spec). The parenthesized expression prevents an
+	              // unsafe transformation by the Closure Compiler.
+	              var original = this.__proto__, result = property in (this.__proto__ = null, this);
+	              // Restore the original prototype chain.
+	              this.__proto__ = original;
+	              return result;
+	            };
+	          } else {
+	            // Capture a reference to the top-level `Object` constructor.
+	            constructor = members.constructor;
+	            // Use the `constructor` property to simulate `Object#hasOwnProperty` in
+	            // other environments.
+	            isProperty = function (property) {
+	              var parent = (this.constructor || constructor).prototype;
+	              return property in this && !(property in parent && this[property] === parent[property]);
+	            };
+	          }
+	          members = null;
+	          return isProperty.call(this, property);
+	        };
+	      }
+	
+	      // Internal: Normalizes the `for...in` iteration algorithm across
+	      // environments. Each enumerated key is yielded to a `callback` function.
+	      forEach = function (object, callback) {
+	        var size = 0, Properties, members, property;
+	
+	        // Tests for bugs in the current environment's `for...in` algorithm. The
+	        // `valueOf` property inherits the non-enumerable flag from
+	        // `Object.prototype` in older versions of IE, Netscape, and Mozilla.
+	        (Properties = function () {
+	          this.valueOf = 0;
+	        }).prototype.valueOf = 0;
+	
+	        // Iterate over a new instance of the `Properties` class.
+	        members = new Properties();
+	        for (property in members) {
+	          // Ignore all properties inherited from `Object.prototype`.
+	          if (isProperty.call(members, property)) {
+	            size++;
+	          }
+	        }
+	        Properties = members = null;
+	
+	        // Normalize the iteration algorithm.
+	        if (!size) {
+	          // A list of non-enumerable properties inherited from `Object.prototype`.
+	          members = ["valueOf", "toString", "toLocaleString", "propertyIsEnumerable", "isPrototypeOf", "hasOwnProperty", "constructor"];
+	          // IE <= 8, Mozilla 1.0, and Netscape 6.2 ignore shadowed non-enumerable
+	          // properties.
+	          forEach = function (object, callback) {
+	            var isFunction = getClass.call(object) == functionClass, property, length;
+	            var hasProperty = !isFunction && typeof object.constructor != "function" && objectTypes[typeof object.hasOwnProperty] && object.hasOwnProperty || isProperty;
+	            for (property in object) {
+	              // Gecko <= 1.0 enumerates the `prototype` property of functions under
+	              // certain conditions; IE does not.
+	              if (!(isFunction && property == "prototype") && hasProperty.call(object, property)) {
+	                callback(property);
+	              }
+	            }
+	            // Manually invoke the callback for each non-enumerable property.
+	            for (length = members.length; property = members[--length]; hasProperty.call(object, property) && callback(property));
+	          };
+	        } else if (size == 2) {
+	          // Safari <= 2.0.4 enumerates shadowed properties twice.
+	          forEach = function (object, callback) {
+	            // Create a set of iterated properties.
+	            var members = {}, isFunction = getClass.call(object) == functionClass, property;
+	            for (property in object) {
+	              // Store each property name to prevent double enumeration. The
+	              // `prototype` property of functions is not enumerated due to cross-
+	              // environment inconsistencies.
+	              if (!(isFunction && property == "prototype") && !isProperty.call(members, property) && (members[property] = 1) && isProperty.call(object, property)) {
+	                callback(property);
+	              }
+	            }
+	          };
+	        } else {
+	          // No bugs detected; use the standard `for...in` algorithm.
+	          forEach = function (object, callback) {
+	            var isFunction = getClass.call(object) == functionClass, property, isConstructor;
+	            for (property in object) {
+	              if (!(isFunction && property == "prototype") && isProperty.call(object, property) && !(isConstructor = property === "constructor")) {
+	                callback(property);
+	              }
+	            }
+	            // Manually invoke the callback for the `constructor` property due to
+	            // cross-environment inconsistencies.
+	            if (isConstructor || isProperty.call(object, (property = "constructor"))) {
+	              callback(property);
+	            }
+	          };
+	        }
+	        return forEach(object, callback);
+	      };
+	
+	      // Public: Serializes a JavaScript `value` as a JSON string. The optional
+	      // `filter` argument may specify either a function that alters how object and
+	      // array members are serialized, or an array of strings and numbers that
+	      // indicates which properties should be serialized. The optional `width`
+	      // argument may be either a string or number that specifies the indentation
+	      // level of the output.
+	      if (!has("json-stringify")) {
+	        // Internal: A map of control characters and their escaped equivalents.
+	        var Escapes = {
+	          92: "\\\\",
+	          34: '\\"',
+	          8: "\\b",
+	          12: "\\f",
+	          10: "\\n",
+	          13: "\\r",
+	          9: "\\t"
+	        };
+	
+	        // Internal: Converts `value` into a zero-padded string such that its
+	        // length is at least equal to `width`. The `width` must be <= 6.
+	        var leadingZeroes = "000000";
+	        var toPaddedString = function (width, value) {
+	          // The `|| 0` expression is necessary to work around a bug in
+	          // Opera <= 7.54u2 where `0 == -0`, but `String(-0) !== "0"`.
+	          return (leadingZeroes + (value || 0)).slice(-width);
+	        };
+	
+	        // Internal: Double-quotes a string `value`, replacing all ASCII control
+	        // characters (characters with code unit values between 0 and 31) with
+	        // their escaped equivalents. This is an implementation of the
+	        // `Quote(value)` operation defined in ES 5.1 section 15.12.3.
+	        var unicodePrefix = "\\u00";
+	        var quote = function (value) {
+	          var result = '"', index = 0, length = value.length, useCharIndex = !charIndexBuggy || length > 10;
+	          var symbols = useCharIndex && (charIndexBuggy ? value.split("") : value);
+	          for (; index < length; index++) {
+	            var charCode = value.charCodeAt(index);
+	            // If the character is a control character, append its Unicode or
+	            // shorthand escape sequence; otherwise, append the character as-is.
+	            switch (charCode) {
+	              case 8: case 9: case 10: case 12: case 13: case 34: case 92:
+	                result += Escapes[charCode];
+	                break;
+	              default:
+	                if (charCode < 32) {
+	                  result += unicodePrefix + toPaddedString(2, charCode.toString(16));
+	                  break;
+	                }
+	                result += useCharIndex ? symbols[index] : value.charAt(index);
+	            }
+	          }
+	          return result + '"';
+	        };
+	
+	        // Internal: Recursively serializes an object. Implements the
+	        // `Str(key, holder)`, `JO(value)`, and `JA(value)` operations.
+	        var serialize = function (property, object, callback, properties, whitespace, indentation, stack) {
+	          var value, className, year, month, date, time, hours, minutes, seconds, milliseconds, results, element, index, length, prefix, result;
+	          try {
+	            // Necessary for host object support.
+	            value = object[property];
+	          } catch (exception) {}
+	          if (typeof value == "object" && value) {
+	            className = getClass.call(value);
+	            if (className == dateClass && !isProperty.call(value, "toJSON")) {
+	              if (value > -1 / 0 && value < 1 / 0) {
+	                // Dates are serialized according to the `Date#toJSON` method
+	                // specified in ES 5.1 section 15.9.5.44. See section 15.9.1.15
+	                // for the ISO 8601 date time string format.
+	                if (getDay) {
+	                  // Manually compute the year, month, date, hours, minutes,
+	                  // seconds, and milliseconds if the `getUTC*` methods are
+	                  // buggy. Adapted from @Yaffle's `date-shim` project.
+	                  date = floor(value / 864e5);
+	                  for (year = floor(date / 365.2425) + 1970 - 1; getDay(year + 1, 0) <= date; year++);
+	                  for (month = floor((date - getDay(year, 0)) / 30.42); getDay(year, month + 1) <= date; month++);
+	                  date = 1 + date - getDay(year, month);
+	                  // The `time` value specifies the time within the day (see ES
+	                  // 5.1 section 15.9.1.2). The formula `(A % B + B) % B` is used
+	                  // to compute `A modulo B`, as the `%` operator does not
+	                  // correspond to the `modulo` operation for negative numbers.
+	                  time = (value % 864e5 + 864e5) % 864e5;
+	                  // The hours, minutes, seconds, and milliseconds are obtained by
+	                  // decomposing the time within the day. See section 15.9.1.10.
+	                  hours = floor(time / 36e5) % 24;
+	                  minutes = floor(time / 6e4) % 60;
+	                  seconds = floor(time / 1e3) % 60;
+	                  milliseconds = time % 1e3;
+	                } else {
+	                  year = value.getUTCFullYear();
+	                  month = value.getUTCMonth();
+	                  date = value.getUTCDate();
+	                  hours = value.getUTCHours();
+	                  minutes = value.getUTCMinutes();
+	                  seconds = value.getUTCSeconds();
+	                  milliseconds = value.getUTCMilliseconds();
+	                }
+	                // Serialize extended years correctly.
+	                value = (year <= 0 || year >= 1e4 ? (year < 0 ? "-" : "+") + toPaddedString(6, year < 0 ? -year : year) : toPaddedString(4, year)) +
+	                  "-" + toPaddedString(2, month + 1) + "-" + toPaddedString(2, date) +
+	                  // Months, dates, hours, minutes, and seconds should have two
+	                  // digits; milliseconds should have three.
+	                  "T" + toPaddedString(2, hours) + ":" + toPaddedString(2, minutes) + ":" + toPaddedString(2, seconds) +
+	                  // Milliseconds are optional in ES 5.0, but required in 5.1.
+	                  "." + toPaddedString(3, milliseconds) + "Z";
+	              } else {
+	                value = null;
+	              }
+	            } else if (typeof value.toJSON == "function" && ((className != numberClass && className != stringClass && className != arrayClass) || isProperty.call(value, "toJSON"))) {
+	              // Prototype <= 1.6.1 adds non-standard `toJSON` methods to the
+	              // `Number`, `String`, `Date`, and `Array` prototypes. JSON 3
+	              // ignores all `toJSON` methods on these objects unless they are
+	              // defined directly on an instance.
+	              value = value.toJSON(property);
+	            }
+	          }
+	          if (callback) {
+	            // If a replacement function was provided, call it to obtain the value
+	            // for serialization.
+	            value = callback.call(object, property, value);
+	          }
+	          if (value === null) {
+	            return "null";
+	          }
+	          className = getClass.call(value);
+	          if (className == booleanClass) {
+	            // Booleans are represented literally.
+	            return "" + value;
+	          } else if (className == numberClass) {
+	            // JSON numbers must be finite. `Infinity` and `NaN` are serialized as
+	            // `"null"`.
+	            return value > -1 / 0 && value < 1 / 0 ? "" + value : "null";
+	          } else if (className == stringClass) {
+	            // Strings are double-quoted and escaped.
+	            return quote("" + value);
+	          }
+	          // Recursively serialize objects and arrays.
+	          if (typeof value == "object") {
+	            // Check for cyclic structures. This is a linear search; performance
+	            // is inversely proportional to the number of unique nested objects.
+	            for (length = stack.length; length--;) {
+	              if (stack[length] === value) {
+	                // Cyclic structures cannot be serialized by `JSON.stringify`.
+	                throw TypeError();
+	              }
+	            }
+	            // Add the object to the stack of traversed objects.
+	            stack.push(value);
+	            results = [];
+	            // Save the current indentation level and indent one additional level.
+	            prefix = indentation;
+	            indentation += whitespace;
+	            if (className == arrayClass) {
+	              // Recursively serialize array elements.
+	              for (index = 0, length = value.length; index < length; index++) {
+	                element = serialize(index, value, callback, properties, whitespace, indentation, stack);
+	                results.push(element === undef ? "null" : element);
+	              }
+	              result = results.length ? (whitespace ? "[\n" + indentation + results.join(",\n" + indentation) + "\n" + prefix + "]" : ("[" + results.join(",") + "]")) : "[]";
+	            } else {
+	              // Recursively serialize object members. Members are selected from
+	              // either a user-specified list of property names, or the object
+	              // itself.
+	              forEach(properties || value, function (property) {
+	                var element = serialize(property, value, callback, properties, whitespace, indentation, stack);
+	                if (element !== undef) {
+	                  // According to ES 5.1 section 15.12.3: "If `gap` {whitespace}
+	                  // is not the empty string, let `member` {quote(property) + ":"}
+	                  // be the concatenation of `member` and the `space` character."
+	                  // The "`space` character" refers to the literal space
+	                  // character, not the `space` {width} argument provided to
+	                  // `JSON.stringify`.
+	                  results.push(quote(property) + ":" + (whitespace ? " " : "") + element);
+	                }
+	              });
+	              result = results.length ? (whitespace ? "{\n" + indentation + results.join(",\n" + indentation) + "\n" + prefix + "}" : ("{" + results.join(",") + "}")) : "{}";
+	            }
+	            // Remove the object from the traversed object stack.
+	            stack.pop();
+	            return result;
+	          }
+	        };
+	
+	        // Public: `JSON.stringify`. See ES 5.1 section 15.12.3.
+	        exports.stringify = function (source, filter, width) {
+	          var whitespace, callback, properties, className;
+	          if (objectTypes[typeof filter] && filter) {
+	            if ((className = getClass.call(filter)) == functionClass) {
+	              callback = filter;
+	            } else if (className == arrayClass) {
+	              // Convert the property names array into a makeshift set.
+	              properties = {};
+	              for (var index = 0, length = filter.length, value; index < length; value = filter[index++], ((className = getClass.call(value)), className == stringClass || className == numberClass) && (properties[value] = 1));
+	            }
+	          }
+	          if (width) {
+	            if ((className = getClass.call(width)) == numberClass) {
+	              // Convert the `width` to an integer and create a string containing
+	              // `width` number of space characters.
+	              if ((width -= width % 1) > 0) {
+	                for (whitespace = "", width > 10 && (width = 10); whitespace.length < width; whitespace += " ");
+	              }
+	            } else if (className == stringClass) {
+	              whitespace = width.length <= 10 ? width : width.slice(0, 10);
+	            }
+	          }
+	          // Opera <= 7.54u2 discards the values associated with empty string keys
+	          // (`""`) only if they are used directly within an object member list
+	          // (e.g., `!("" in { "": 1})`).
+	          return serialize("", (value = {}, value[""] = source, value), callback, properties, whitespace, "", []);
+	        };
+	      }
+	
+	      // Public: Parses a JSON source string.
+	      if (!has("json-parse")) {
+	        var fromCharCode = String.fromCharCode;
+	
+	        // Internal: A map of escaped control characters and their unescaped
+	        // equivalents.
+	        var Unescapes = {
+	          92: "\\",
+	          34: '"',
+	          47: "/",
+	          98: "\b",
+	          116: "\t",
+	          110: "\n",
+	          102: "\f",
+	          114: "\r"
+	        };
+	
+	        // Internal: Stores the parser state.
+	        var Index, Source;
+	
+	        // Internal: Resets the parser state and throws a `SyntaxError`.
+	        var abort = function () {
+	          Index = Source = null;
+	          throw SyntaxError();
+	        };
+	
+	        // Internal: Returns the next token, or `"$"` if the parser has reached
+	        // the end of the source string. A token may be a string, number, `null`
+	        // literal, or Boolean literal.
+	        var lex = function () {
+	          var source = Source, length = source.length, value, begin, position, isSigned, charCode;
+	          while (Index < length) {
+	            charCode = source.charCodeAt(Index);
+	            switch (charCode) {
+	              case 9: case 10: case 13: case 32:
+	                // Skip whitespace tokens, including tabs, carriage returns, line
+	                // feeds, and space characters.
+	                Index++;
+	                break;
+	              case 123: case 125: case 91: case 93: case 58: case 44:
+	                // Parse a punctuator token (`{`, `}`, `[`, `]`, `:`, or `,`) at
+	                // the current position.
+	                value = charIndexBuggy ? source.charAt(Index) : source[Index];
+	                Index++;
+	                return value;
+	              case 34:
+	                // `"` delimits a JSON string; advance to the next character and
+	                // begin parsing the string. String tokens are prefixed with the
+	                // sentinel `@` character to distinguish them from punctuators and
+	                // end-of-string tokens.
+	                for (value = "@", Index++; Index < length;) {
+	                  charCode = source.charCodeAt(Index);
+	                  if (charCode < 32) {
+	                    // Unescaped ASCII control characters (those with a code unit
+	                    // less than the space character) are not permitted.
+	                    abort();
+	                  } else if (charCode == 92) {
+	                    // A reverse solidus (`\`) marks the beginning of an escaped
+	                    // control character (including `"`, `\`, and `/`) or Unicode
+	                    // escape sequence.
+	                    charCode = source.charCodeAt(++Index);
+	                    switch (charCode) {
+	                      case 92: case 34: case 47: case 98: case 116: case 110: case 102: case 114:
+	                        // Revive escaped control characters.
+	                        value += Unescapes[charCode];
+	                        Index++;
+	                        break;
+	                      case 117:
+	                        // `\u` marks the beginning of a Unicode escape sequence.
+	                        // Advance to the first character and validate the
+	                        // four-digit code point.
+	                        begin = ++Index;
+	                        for (position = Index + 4; Index < position; Index++) {
+	                          charCode = source.charCodeAt(Index);
+	                          // A valid sequence comprises four hexdigits (case-
+	                          // insensitive) that form a single hexadecimal value.
+	                          if (!(charCode >= 48 && charCode <= 57 || charCode >= 97 && charCode <= 102 || charCode >= 65 && charCode <= 70)) {
+	                            // Invalid Unicode escape sequence.
+	                            abort();
+	                          }
+	                        }
+	                        // Revive the escaped character.
+	                        value += fromCharCode("0x" + source.slice(begin, Index));
+	                        break;
+	                      default:
+	                        // Invalid escape sequence.
+	                        abort();
+	                    }
+	                  } else {
+	                    if (charCode == 34) {
+	                      // An unescaped double-quote character marks the end of the
+	                      // string.
+	                      break;
+	                    }
+	                    charCode = source.charCodeAt(Index);
+	                    begin = Index;
+	                    // Optimize for the common case where a string is valid.
+	                    while (charCode >= 32 && charCode != 92 && charCode != 34) {
+	                      charCode = source.charCodeAt(++Index);
+	                    }
+	                    // Append the string as-is.
+	                    value += source.slice(begin, Index);
+	                  }
+	                }
+	                if (source.charCodeAt(Index) == 34) {
+	                  // Advance to the next character and return the revived string.
+	                  Index++;
+	                  return value;
+	                }
+	                // Unterminated string.
+	                abort();
+	              default:
+	                // Parse numbers and literals.
+	                begin = Index;
+	                // Advance past the negative sign, if one is specified.
+	                if (charCode == 45) {
+	                  isSigned = true;
+	                  charCode = source.charCodeAt(++Index);
+	                }
+	                // Parse an integer or floating-point value.
+	                if (charCode >= 48 && charCode <= 57) {
+	                  // Leading zeroes are interpreted as octal literals.
+	                  if (charCode == 48 && ((charCode = source.charCodeAt(Index + 1)), charCode >= 48 && charCode <= 57)) {
+	                    // Illegal octal literal.
+	                    abort();
+	                  }
+	                  isSigned = false;
+	                  // Parse the integer component.
+	                  for (; Index < length && ((charCode = source.charCodeAt(Index)), charCode >= 48 && charCode <= 57); Index++);
+	                  // Floats cannot contain a leading decimal point; however, this
+	                  // case is already accounted for by the parser.
+	                  if (source.charCodeAt(Index) == 46) {
+	                    position = ++Index;
+	                    // Parse the decimal component.
+	                    for (; position < length && ((charCode = source.charCodeAt(position)), charCode >= 48 && charCode <= 57); position++);
+	                    if (position == Index) {
+	                      // Illegal trailing decimal.
+	                      abort();
+	                    }
+	                    Index = position;
+	                  }
+	                  // Parse exponents. The `e` denoting the exponent is
+	                  // case-insensitive.
+	                  charCode = source.charCodeAt(Index);
+	                  if (charCode == 101 || charCode == 69) {
+	                    charCode = source.charCodeAt(++Index);
+	                    // Skip past the sign following the exponent, if one is
+	                    // specified.
+	                    if (charCode == 43 || charCode == 45) {
+	                      Index++;
+	                    }
+	                    // Parse the exponential component.
+	                    for (position = Index; position < length && ((charCode = source.charCodeAt(position)), charCode >= 48 && charCode <= 57); position++);
+	                    if (position == Index) {
+	                      // Illegal empty exponent.
+	                      abort();
+	                    }
+	                    Index = position;
+	                  }
+	                  // Coerce the parsed value to a JavaScript number.
+	                  return +source.slice(begin, Index);
+	                }
+	                // A negative sign may only precede numbers.
+	                if (isSigned) {
+	                  abort();
+	                }
+	                // `true`, `false`, and `null` literals.
+	                if (source.slice(Index, Index + 4) == "true") {
+	                  Index += 4;
+	                  return true;
+	                } else if (source.slice(Index, Index + 5) == "false") {
+	                  Index += 5;
+	                  return false;
+	                } else if (source.slice(Index, Index + 4) == "null") {
+	                  Index += 4;
+	                  return null;
+	                }
+	                // Unrecognized token.
+	                abort();
+	            }
+	          }
+	          // Return the sentinel `$` character if the parser has reached the end
+	          // of the source string.
+	          return "$";
+	        };
+	
+	        // Internal: Parses a JSON `value` token.
+	        var get = function (value) {
+	          var results, hasMembers;
+	          if (value == "$") {
+	            // Unexpected end of input.
+	            abort();
+	          }
+	          if (typeof value == "string") {
+	            if ((charIndexBuggy ? value.charAt(0) : value[0]) == "@") {
+	              // Remove the sentinel `@` character.
+	              return value.slice(1);
+	            }
+	            // Parse object and array literals.
+	            if (value == "[") {
+	              // Parses a JSON array, returning a new JavaScript array.
+	              results = [];
+	              for (;; hasMembers || (hasMembers = true)) {
+	                value = lex();
+	                // A closing square bracket marks the end of the array literal.
+	                if (value == "]") {
+	                  break;
+	                }
+	                // If the array literal contains elements, the current token
+	                // should be a comma separating the previous element from the
+	                // next.
+	                if (hasMembers) {
+	                  if (value == ",") {
+	                    value = lex();
+	                    if (value == "]") {
+	                      // Unexpected trailing `,` in array literal.
+	                      abort();
+	                    }
+	                  } else {
+	                    // A `,` must separate each array element.
+	                    abort();
+	                  }
+	                }
+	                // Elisions and leading commas are not permitted.
+	                if (value == ",") {
+	                  abort();
+	                }
+	                results.push(get(value));
+	              }
+	              return results;
+	            } else if (value == "{") {
+	              // Parses a JSON object, returning a new JavaScript object.
+	              results = {};
+	              for (;; hasMembers || (hasMembers = true)) {
+	                value = lex();
+	                // A closing curly brace marks the end of the object literal.
+	                if (value == "}") {
+	                  break;
+	                }
+	                // If the object literal contains members, the current token
+	                // should be a comma separator.
+	                if (hasMembers) {
+	                  if (value == ",") {
+	                    value = lex();
+	                    if (value == "}") {
+	                      // Unexpected trailing `,` in object literal.
+	                      abort();
+	                    }
+	                  } else {
+	                    // A `,` must separate each object member.
+	                    abort();
+	                  }
+	                }
+	                // Leading commas are not permitted, object property names must be
+	                // double-quoted strings, and a `:` must separate each property
+	                // name and value.
+	                if (value == "," || typeof value != "string" || (charIndexBuggy ? value.charAt(0) : value[0]) != "@" || lex() != ":") {
+	                  abort();
+	                }
+	                results[value.slice(1)] = get(lex());
+	              }
+	              return results;
+	            }
+	            // Unexpected token encountered.
+	            abort();
+	          }
+	          return value;
+	        };
+	
+	        // Internal: Updates a traversed object member.
+	        var update = function (source, property, callback) {
+	          var element = walk(source, property, callback);
+	          if (element === undef) {
+	            delete source[property];
+	          } else {
+	            source[property] = element;
+	          }
+	        };
+	
+	        // Internal: Recursively traverses a parsed JSON object, invoking the
+	        // `callback` function for each value. This is an implementation of the
+	        // `Walk(holder, name)` operation defined in ES 5.1 section 15.12.2.
+	        var walk = function (source, property, callback) {
+	          var value = source[property], length;
+	          if (typeof value == "object" && value) {
+	            // `forEach` can't be used to traverse an array in Opera <= 8.54
+	            // because its `Object#hasOwnProperty` implementation returns `false`
+	            // for array indices (e.g., `![1, 2, 3].hasOwnProperty("0")`).
+	            if (getClass.call(value) == arrayClass) {
+	              for (length = value.length; length--;) {
+	                update(value, length, callback);
+	              }
+	            } else {
+	              forEach(value, function (property) {
+	                update(value, property, callback);
+	              });
+	            }
+	          }
+	          return callback.call(source, property, value);
+	        };
+	
+	        // Public: `JSON.parse`. See ES 5.1 section 15.12.2.
+	        exports.parse = function (source, callback) {
+	          var result, value;
+	          Index = 0;
+	          Source = "" + source;
+	          result = get(lex());
+	          // If a JSON string contains multiple tokens, it is invalid.
+	          if (lex() != "$") {
+	            abort();
+	          }
+	          // Reset the parser state.
+	          Index = Source = null;
+	          return callback && getClass.call(callback) == functionClass ? walk((value = {}, value[""] = result, value), "", callback) : result;
+	        };
+	      }
+	    }
+	
+	    exports["runInContext"] = runInContext;
+	    return exports;
+	  }
+	
+	  if (freeExports && !isLoader) {
+	    // Export for CommonJS environments.
+	    runInContext(root, freeExports);
+	  } else {
+	    // Export for web browsers and JavaScript engines.
+	    var nativeJSON = root.JSON,
+	        previousJSON = root["JSON3"],
+	        isRestored = false;
+	
+	    var JSON3 = runInContext(root, (root["JSON3"] = {
+	      // Public: Restores the original value of the global `JSON` object and
+	      // returns a reference to the `JSON3` object.
+	      "noConflict": function () {
+	        if (!isRestored) {
+	          isRestored = true;
+	          root.JSON = nativeJSON;
+	          root["JSON3"] = previousJSON;
+	          nativeJSON = previousJSON = null;
+	        }
+	        return JSON3;
+	      }
+	    }));
+	
+	    root.JSON = {
+	      "parse": JSON3.parse,
+	      "stringify": JSON3.stringify
+	    };
+	  }
+	
+	  // Export for asynchronous module loaders.
+	  if (isLoader) {
+	    !(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
+	      return JSON3;
+	    }.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  }
+	}).call(this);
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(83)(module), (function() { return this; }())))
+
+/***/ },
+/* 83 */
+/***/ function(module, exports) {
+
+	module.exports = function(module) {
+		if(!module.webpackPolyfill) {
+			module.deprecate = function() {};
+			module.paths = [];
+			// module.parent = undefined by default
+			module.children = [];
+			module.webpackPolyfill = 1;
+		}
+		return module;
+	}
+
+
+/***/ },
+/* 84 */
+/***/ function(module, exports) {
+
+	/* WEBPACK VAR INJECTION */(function(__webpack_amd_options__) {module.exports = __webpack_amd_options__;
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, {}))
+
+/***/ },
+/* 85 */
+/***/ function(module, exports) {
+
+	module.exports = Array.isArray || function (arr) {
+	  return Object.prototype.toString.call(arr) == '[object Array]';
+	};
+
+
+/***/ },
+/* 86 */
+/***/ function(module, exports) {
+
+	
+	/**
+	 * Expose `Emitter`.
+	 */
+	
+	module.exports = Emitter;
+	
+	/**
+	 * Initialize a new `Emitter`.
+	 *
+	 * @api public
+	 */
+	
+	function Emitter(obj) {
+	  if (obj) return mixin(obj);
+	};
+	
+	/**
+	 * Mixin the emitter properties.
+	 *
+	 * @param {Object} obj
+	 * @return {Object}
+	 * @api private
+	 */
+	
+	function mixin(obj) {
+	  for (var key in Emitter.prototype) {
+	    obj[key] = Emitter.prototype[key];
+	  }
+	  return obj;
+	}
+	
+	/**
+	 * Listen on the given `event` with `fn`.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+	
+	Emitter.prototype.on =
+	Emitter.prototype.addEventListener = function(event, fn){
+	  this._callbacks = this._callbacks || {};
+	  (this._callbacks[event] = this._callbacks[event] || [])
+	    .push(fn);
+	  return this;
+	};
+	
+	/**
+	 * Adds an `event` listener that will be invoked a single
+	 * time then automatically removed.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+	
+	Emitter.prototype.once = function(event, fn){
+	  var self = this;
+	  this._callbacks = this._callbacks || {};
+	
+	  function on() {
+	    self.off(event, on);
+	    fn.apply(this, arguments);
+	  }
+	
+	  on.fn = fn;
+	  this.on(event, on);
+	  return this;
+	};
+	
+	/**
+	 * Remove the given callback for `event` or all
+	 * registered callbacks.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+	
+	Emitter.prototype.off =
+	Emitter.prototype.removeListener =
+	Emitter.prototype.removeAllListeners =
+	Emitter.prototype.removeEventListener = function(event, fn){
+	  this._callbacks = this._callbacks || {};
+	
+	  // all
+	  if (0 == arguments.length) {
+	    this._callbacks = {};
+	    return this;
+	  }
+	
+	  // specific event
+	  var callbacks = this._callbacks[event];
+	  if (!callbacks) return this;
+	
+	  // remove all handlers
+	  if (1 == arguments.length) {
+	    delete this._callbacks[event];
+	    return this;
+	  }
+	
+	  // remove specific handler
+	  var cb;
+	  for (var i = 0; i < callbacks.length; i++) {
+	    cb = callbacks[i];
+	    if (cb === fn || cb.fn === fn) {
+	      callbacks.splice(i, 1);
+	      break;
+	    }
+	  }
+	  return this;
+	};
+	
+	/**
+	 * Emit `event` with the given args.
+	 *
+	 * @param {String} event
+	 * @param {Mixed} ...
+	 * @return {Emitter}
+	 */
+	
+	Emitter.prototype.emit = function(event){
+	  this._callbacks = this._callbacks || {};
+	  var args = [].slice.call(arguments, 1)
+	    , callbacks = this._callbacks[event];
+	
+	  if (callbacks) {
+	    callbacks = callbacks.slice(0);
+	    for (var i = 0, len = callbacks.length; i < len; ++i) {
+	      callbacks[i].apply(this, args);
+	    }
+	  }
+	
+	  return this;
+	};
+	
+	/**
+	 * Return array of callbacks for `event`.
+	 *
+	 * @param {String} event
+	 * @return {Array}
+	 * @api public
+	 */
+	
+	Emitter.prototype.listeners = function(event){
+	  this._callbacks = this._callbacks || {};
+	  return this._callbacks[event] || [];
+	};
+	
+	/**
+	 * Check if this emitter has `event` handlers.
+	 *
+	 * @param {String} event
+	 * @return {Boolean}
+	 * @api public
+	 */
+	
+	Emitter.prototype.hasListeners = function(event){
+	  return !! this.listeners(event).length;
+	};
+
+
+/***/ },
+/* 87 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/*global Blob,File*/
+	
+	/**
+	 * Module requirements
+	 */
+	
+	var isArray = __webpack_require__(85);
+	var isBuf = __webpack_require__(88);
+	
+	/**
+	 * Replaces every Buffer | ArrayBuffer in packet with a numbered placeholder.
+	 * Anything with blobs or files should be fed through removeBlobs before coming
+	 * here.
+	 *
+	 * @param {Object} packet - socket.io event packet
+	 * @return {Object} with deconstructed packet and list of buffers
+	 * @api public
+	 */
+	
+	exports.deconstructPacket = function(packet){
+	  var buffers = [];
+	  var packetData = packet.data;
+	
+	  function _deconstructPacket(data) {
+	    if (!data) return data;
+	
+	    if (isBuf(data)) {
+	      var placeholder = { _placeholder: true, num: buffers.length };
+	      buffers.push(data);
+	      return placeholder;
+	    } else if (isArray(data)) {
+	      var newData = new Array(data.length);
+	      for (var i = 0; i < data.length; i++) {
+	        newData[i] = _deconstructPacket(data[i]);
+	      }
+	      return newData;
+	    } else if ('object' == typeof data && !(data instanceof Date)) {
+	      var newData = {};
+	      for (var key in data) {
+	        newData[key] = _deconstructPacket(data[key]);
+	      }
+	      return newData;
+	    }
+	    return data;
+	  }
+	
+	  var pack = packet;
+	  pack.data = _deconstructPacket(packetData);
+	  pack.attachments = buffers.length; // number of binary 'attachments'
+	  return {packet: pack, buffers: buffers};
+	};
+	
+	/**
+	 * Reconstructs a binary packet from its placeholder packet and buffers
+	 *
+	 * @param {Object} packet - event packet with placeholders
+	 * @param {Array} buffers - binary buffers to put in placeholder positions
+	 * @return {Object} reconstructed packet
+	 * @api public
+	 */
+	
+	exports.reconstructPacket = function(packet, buffers) {
+	  var curPlaceHolder = 0;
+	
+	  function _reconstructPacket(data) {
+	    if (data && data._placeholder) {
+	      var buf = buffers[data.num]; // appropriate buffer (should be natural order anyway)
+	      return buf;
+	    } else if (isArray(data)) {
+	      for (var i = 0; i < data.length; i++) {
+	        data[i] = _reconstructPacket(data[i]);
+	      }
+	      return data;
+	    } else if (data && 'object' == typeof data) {
+	      for (var key in data) {
+	        data[key] = _reconstructPacket(data[key]);
+	      }
+	      return data;
+	    }
+	    return data;
+	  }
+	
+	  packet.data = _reconstructPacket(packet.data);
+	  packet.attachments = undefined; // no longer useful
+	  return packet;
+	};
+	
+	/**
+	 * Asynchronously removes Blobs or Files from data via
+	 * FileReader's readAsArrayBuffer method. Used before encoding
+	 * data as msgpack. Calls callback with the blobless data.
+	 *
+	 * @param {Object} data
+	 * @param {Function} callback
+	 * @api private
+	 */
+	
+	exports.removeBlobs = function(data, callback) {
+	  function _removeBlobs(obj, curKey, containingObject) {
+	    if (!obj) return obj;
+	
+	    // convert any blob
+	    if ((global.Blob && obj instanceof Blob) ||
+	        (global.File && obj instanceof File)) {
+	      pendingBlobs++;
+	
+	      // async filereader
+	      var fileReader = new FileReader();
+	      fileReader.onload = function() { // this.result == arraybuffer
+	        if (containingObject) {
+	          containingObject[curKey] = this.result;
+	        }
+	        else {
+	          bloblessData = this.result;
+	        }
+	
+	        // if nothing pending its callback time
+	        if(! --pendingBlobs) {
+	          callback(bloblessData);
+	        }
+	      };
+	
+	      fileReader.readAsArrayBuffer(obj); // blob -> arraybuffer
+	    } else if (isArray(obj)) { // handle array
+	      for (var i = 0; i < obj.length; i++) {
+	        _removeBlobs(obj[i], i, obj);
+	      }
+	    } else if (obj && 'object' == typeof obj && !isBuf(obj)) { // and object
+	      for (var key in obj) {
+	        _removeBlobs(obj[key], key, obj);
+	      }
+	    }
+	  }
+	
+	  var pendingBlobs = 0;
+	  var bloblessData = data;
+	  _removeBlobs(bloblessData);
+	  if (!pendingBlobs) {
+	    callback(bloblessData);
+	  }
+	};
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 88 */
+/***/ function(module, exports) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {
+	module.exports = isBuf;
+	
+	/**
+	 * Returns true if obj is a buffer or an arraybuffer.
+	 *
+	 * @api private
+	 */
+	
+	function isBuf(obj) {
+	  return (global.Buffer && global.Buffer.isBuffer(obj)) ||
+	         (global.ArrayBuffer && obj instanceof ArrayBuffer);
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 89 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	/**
+	 * Module dependencies.
+	 */
+	
+	var eio = __webpack_require__(90);
+	var Socket = __webpack_require__(117);
+	var Emitter = __webpack_require__(118);
+	var parser = __webpack_require__(81);
+	var on = __webpack_require__(120);
+	var bind = __webpack_require__(121);
+	var debug = __webpack_require__(78)('socket.io-client:manager');
+	var indexOf = __webpack_require__(115);
+	var Backoff = __webpack_require__(124);
+	
+	/**
+	 * IE6+ hasOwnProperty
+	 */
+	
+	var has = Object.prototype.hasOwnProperty;
+	
+	/**
+	 * Module exports
+	 */
+	
+	module.exports = Manager;
+	
+	/**
+	 * `Manager` constructor.
+	 *
+	 * @param {String} engine instance or engine uri/opts
+	 * @param {Object} options
+	 * @api public
+	 */
+	
+	function Manager(uri, opts){
+	  if (!(this instanceof Manager)) return new Manager(uri, opts);
+	  if (uri && ('object' == typeof uri)) {
+	    opts = uri;
+	    uri = undefined;
+	  }
+	  opts = opts || {};
+	
+	  opts.path = opts.path || '/socket.io';
+	  this.nsps = {};
+	  this.subs = [];
+	  this.opts = opts;
+	  this.reconnection(opts.reconnection !== false);
+	  this.reconnectionAttempts(opts.reconnectionAttempts || Infinity);
+	  this.reconnectionDelay(opts.reconnectionDelay || 1000);
+	  this.reconnectionDelayMax(opts.reconnectionDelayMax || 5000);
+	  this.randomizationFactor(opts.randomizationFactor || 0.5);
+	  this.backoff = new Backoff({
+	    min: this.reconnectionDelay(),
+	    max: this.reconnectionDelayMax(),
+	    jitter: this.randomizationFactor()
+	  });
+	  this.timeout(null == opts.timeout ? 20000 : opts.timeout);
+	  this.readyState = 'closed';
+	  this.uri = uri;
+	  this.connecting = [];
+	  this.lastPing = null;
+	  this.encoding = false;
+	  this.packetBuffer = [];
+	  this.encoder = new parser.Encoder();
+	  this.decoder = new parser.Decoder();
+	  this.autoConnect = opts.autoConnect !== false;
+	  if (this.autoConnect) this.open();
+	}
+	
+	/**
+	 * Propagate given event to sockets and emit on `this`
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.emitAll = function() {
+	  this.emit.apply(this, arguments);
+	  for (var nsp in this.nsps) {
+	    if (has.call(this.nsps, nsp)) {
+	      this.nsps[nsp].emit.apply(this.nsps[nsp], arguments);
+	    }
+	  }
+	};
+	
+	/**
+	 * Update `socket.id` of all sockets
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.updateSocketIds = function(){
+	  for (var nsp in this.nsps) {
+	    if (has.call(this.nsps, nsp)) {
+	      this.nsps[nsp].id = this.engine.id;
+	    }
+	  }
+	};
+	
+	/**
+	 * Mix in `Emitter`.
+	 */
+	
+	Emitter(Manager.prototype);
+	
+	/**
+	 * Sets the `reconnection` config.
+	 *
+	 * @param {Boolean} true/false if it should automatically reconnect
+	 * @return {Manager} self or value
+	 * @api public
+	 */
+	
+	Manager.prototype.reconnection = function(v){
+	  if (!arguments.length) return this._reconnection;
+	  this._reconnection = !!v;
+	  return this;
+	};
+	
+	/**
+	 * Sets the reconnection attempts config.
+	 *
+	 * @param {Number} max reconnection attempts before giving up
+	 * @return {Manager} self or value
+	 * @api public
+	 */
+	
+	Manager.prototype.reconnectionAttempts = function(v){
+	  if (!arguments.length) return this._reconnectionAttempts;
+	  this._reconnectionAttempts = v;
+	  return this;
+	};
+	
+	/**
+	 * Sets the delay between reconnections.
+	 *
+	 * @param {Number} delay
+	 * @return {Manager} self or value
+	 * @api public
+	 */
+	
+	Manager.prototype.reconnectionDelay = function(v){
+	  if (!arguments.length) return this._reconnectionDelay;
+	  this._reconnectionDelay = v;
+	  this.backoff && this.backoff.setMin(v);
+	  return this;
+	};
+	
+	Manager.prototype.randomizationFactor = function(v){
+	  if (!arguments.length) return this._randomizationFactor;
+	  this._randomizationFactor = v;
+	  this.backoff && this.backoff.setJitter(v);
+	  return this;
+	};
+	
+	/**
+	 * Sets the maximum delay between reconnections.
+	 *
+	 * @param {Number} delay
+	 * @return {Manager} self or value
+	 * @api public
+	 */
+	
+	Manager.prototype.reconnectionDelayMax = function(v){
+	  if (!arguments.length) return this._reconnectionDelayMax;
+	  this._reconnectionDelayMax = v;
+	  this.backoff && this.backoff.setMax(v);
+	  return this;
+	};
+	
+	/**
+	 * Sets the connection timeout. `false` to disable
+	 *
+	 * @return {Manager} self or value
+	 * @api public
+	 */
+	
+	Manager.prototype.timeout = function(v){
+	  if (!arguments.length) return this._timeout;
+	  this._timeout = v;
+	  return this;
+	};
+	
+	/**
+	 * Starts trying to reconnect if reconnection is enabled and we have not
+	 * started reconnecting yet
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.maybeReconnectOnOpen = function() {
+	  // Only try to reconnect if it's the first time we're connecting
+	  if (!this.reconnecting && this._reconnection && this.backoff.attempts === 0) {
+	    // keeps reconnection from firing twice for the same reconnection loop
+	    this.reconnect();
+	  }
+	};
+	
+	
+	/**
+	 * Sets the current transport `socket`.
+	 *
+	 * @param {Function} optional, callback
+	 * @return {Manager} self
+	 * @api public
+	 */
+	
+	Manager.prototype.open =
+	Manager.prototype.connect = function(fn){
+	  debug('readyState %s', this.readyState);
+	  if (~this.readyState.indexOf('open')) return this;
+	
+	  debug('opening %s', this.uri);
+	  this.engine = eio(this.uri, this.opts);
+	  var socket = this.engine;
+	  var self = this;
+	  this.readyState = 'opening';
+	  this.skipReconnect = false;
+	
+	  // emit `open`
+	  var openSub = on(socket, 'open', function() {
+	    self.onopen();
+	    fn && fn();
+	  });
+	
+	  // emit `connect_error`
+	  var errorSub = on(socket, 'error', function(data){
+	    debug('connect_error');
+	    self.cleanup();
+	    self.readyState = 'closed';
+	    self.emitAll('connect_error', data);
+	    if (fn) {
+	      var err = new Error('Connection error');
+	      err.data = data;
+	      fn(err);
+	    } else {
+	      // Only do this if there is no fn to handle the error
+	      self.maybeReconnectOnOpen();
+	    }
+	  });
+	
+	  // emit `connect_timeout`
+	  if (false !== this._timeout) {
+	    var timeout = this._timeout;
+	    debug('connect attempt will timeout after %d', timeout);
+	
+	    // set timer
+	    var timer = setTimeout(function(){
+	      debug('connect attempt timed out after %d', timeout);
+	      openSub.destroy();
+	      socket.close();
+	      socket.emit('error', 'timeout');
+	      self.emitAll('connect_timeout', timeout);
+	    }, timeout);
+	
+	    this.subs.push({
+	      destroy: function(){
+	        clearTimeout(timer);
+	      }
+	    });
+	  }
+	
+	  this.subs.push(openSub);
+	  this.subs.push(errorSub);
+	
+	  return this;
+	};
+	
+	/**
+	 * Called upon transport open.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.onopen = function(){
+	  debug('open');
+	
+	  // clear old subs
+	  this.cleanup();
+	
+	  // mark as open
+	  this.readyState = 'open';
+	  this.emit('open');
+	
+	  // add new subs
+	  var socket = this.engine;
+	  this.subs.push(on(socket, 'data', bind(this, 'ondata')));
+	  this.subs.push(on(socket, 'ping', bind(this, 'onping')));
+	  this.subs.push(on(socket, 'pong', bind(this, 'onpong')));
+	  this.subs.push(on(socket, 'error', bind(this, 'onerror')));
+	  this.subs.push(on(socket, 'close', bind(this, 'onclose')));
+	  this.subs.push(on(this.decoder, 'decoded', bind(this, 'ondecoded')));
+	};
+	
+	/**
+	 * Called upon a ping.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.onping = function(){
+	  this.lastPing = new Date;
+	  this.emitAll('ping');
+	};
+	
+	/**
+	 * Called upon a packet.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.onpong = function(){
+	  this.emitAll('pong', new Date - this.lastPing);
+	};
+	
+	/**
+	 * Called with data.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.ondata = function(data){
+	  this.decoder.add(data);
+	};
+	
+	/**
+	 * Called when parser fully decodes a packet.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.ondecoded = function(packet) {
+	  this.emit('packet', packet);
+	};
+	
+	/**
+	 * Called upon socket error.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.onerror = function(err){
+	  debug('error', err);
+	  this.emitAll('error', err);
+	};
+	
+	/**
+	 * Creates a new socket for the given `nsp`.
+	 *
+	 * @return {Socket}
+	 * @api public
+	 */
+	
+	Manager.prototype.socket = function(nsp){
+	  var socket = this.nsps[nsp];
+	  if (!socket) {
+	    socket = new Socket(this, nsp);
+	    this.nsps[nsp] = socket;
+	    var self = this;
+	    socket.on('connecting', onConnecting);
+	    socket.on('connect', function(){
+	      socket.id = self.engine.id;
+	    });
+	
+	    if (this.autoConnect) {
+	      // manually call here since connecting evnet is fired before listening
+	      onConnecting();
+	    }
+	  }
+	
+	  function onConnecting() {
+	    if (!~indexOf(self.connecting, socket)) {
+	      self.connecting.push(socket);
+	    }
+	  }
+	
+	  return socket;
+	};
+	
+	/**
+	 * Called upon a socket close.
+	 *
+	 * @param {Socket} socket
+	 */
+	
+	Manager.prototype.destroy = function(socket){
+	  var index = indexOf(this.connecting, socket);
+	  if (~index) this.connecting.splice(index, 1);
+	  if (this.connecting.length) return;
+	
+	  this.close();
+	};
+	
+	/**
+	 * Writes a packet.
+	 *
+	 * @param {Object} packet
+	 * @api private
+	 */
+	
+	Manager.prototype.packet = function(packet){
+	  debug('writing packet %j', packet);
+	  var self = this;
+	
+	  if (!self.encoding) {
+	    // encode, then write to engine with result
+	    self.encoding = true;
+	    this.encoder.encode(packet, function(encodedPackets) {
+	      for (var i = 0; i < encodedPackets.length; i++) {
+	        self.engine.write(encodedPackets[i], packet.options);
+	      }
+	      self.encoding = false;
+	      self.processPacketQueue();
+	    });
+	  } else { // add packet to the queue
+	    self.packetBuffer.push(packet);
+	  }
+	};
+	
+	/**
+	 * If packet buffer is non-empty, begins encoding the
+	 * next packet in line.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.processPacketQueue = function() {
+	  if (this.packetBuffer.length > 0 && !this.encoding) {
+	    var pack = this.packetBuffer.shift();
+	    this.packet(pack);
+	  }
+	};
+	
+	/**
+	 * Clean up transport subscriptions and packet buffer.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.cleanup = function(){
+	  debug('cleanup');
+	
+	  var sub;
+	  while (sub = this.subs.shift()) sub.destroy();
+	
+	  this.packetBuffer = [];
+	  this.encoding = false;
+	  this.lastPing = null;
+	
+	  this.decoder.destroy();
+	};
+	
+	/**
+	 * Close the current socket.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.close =
+	Manager.prototype.disconnect = function(){
+	  debug('disconnect');
+	  this.skipReconnect = true;
+	  this.reconnecting = false;
+	  if ('opening' == this.readyState) {
+	    // `onclose` will not fire because
+	    // an open event never happened
+	    this.cleanup();
+	  }
+	  this.backoff.reset();
+	  this.readyState = 'closed';
+	  if (this.engine) this.engine.close();
+	};
+	
+	/**
+	 * Called upon engine close.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.onclose = function(reason){
+	  debug('onclose');
+	
+	  this.cleanup();
+	  this.backoff.reset();
+	  this.readyState = 'closed';
+	  this.emit('close', reason);
+	
+	  if (this._reconnection && !this.skipReconnect) {
+	    this.reconnect();
+	  }
+	};
+	
+	/**
+	 * Attempt a reconnection.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.reconnect = function(){
+	  if (this.reconnecting || this.skipReconnect) return this;
+	
+	  var self = this;
+	
+	  if (this.backoff.attempts >= this._reconnectionAttempts) {
+	    debug('reconnect failed');
+	    this.backoff.reset();
+	    this.emitAll('reconnect_failed');
+	    this.reconnecting = false;
+	  } else {
+	    var delay = this.backoff.duration();
+	    debug('will wait %dms before reconnect attempt', delay);
+	
+	    this.reconnecting = true;
+	    var timer = setTimeout(function(){
+	      if (self.skipReconnect) return;
+	
+	      debug('attempting reconnect');
+	      self.emitAll('reconnect_attempt', self.backoff.attempts);
+	      self.emitAll('reconnecting', self.backoff.attempts);
+	
+	      // check again for the case socket closed in above events
+	      if (self.skipReconnect) return;
+	
+	      self.open(function(err){
+	        if (err) {
+	          debug('reconnect attempt error');
+	          self.reconnecting = false;
+	          self.reconnect();
+	          self.emitAll('reconnect_error', err.data);
+	        } else {
+	          debug('reconnect success');
+	          self.onreconnect();
+	        }
+	      });
+	    }, delay);
+	
+	    this.subs.push({
+	      destroy: function(){
+	        clearTimeout(timer);
+	      }
+	    });
+	  }
+	};
+	
+	/**
+	 * Called upon successful reconnect.
+	 *
+	 * @api private
+	 */
+	
+	Manager.prototype.onreconnect = function(){
+	  var attempt = this.backoff.attempts;
+	  this.reconnecting = false;
+	  this.backoff.reset();
+	  this.updateSocketIds();
+	  this.emitAll('reconnect', attempt);
+	};
+
+
+/***/ },
+/* 90 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	module.exports =  __webpack_require__(91);
+
+
+/***/ },
+/* 91 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	module.exports = __webpack_require__(92);
+	
+	/**
+	 * Exports parser
+	 *
+	 * @api public
+	 *
+	 */
+	module.exports.parser = __webpack_require__(99);
+
+
+/***/ },
+/* 92 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * Module dependencies.
+	 */
+	
+	var transports = __webpack_require__(93);
+	var Emitter = __webpack_require__(108);
+	var debug = __webpack_require__(78)('engine.io-client:socket');
+	var index = __webpack_require__(115);
+	var parser = __webpack_require__(99);
+	var parseuri = __webpack_require__(77);
+	var parsejson = __webpack_require__(116);
+	var parseqs = __webpack_require__(109);
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = Socket;
+	
+	/**
+	 * Noop function.
+	 *
+	 * @api private
+	 */
+	
+	function noop(){}
+	
+	/**
+	 * Socket constructor.
+	 *
+	 * @param {String|Object} uri or options
+	 * @param {Object} options
+	 * @api public
+	 */
+	
+	function Socket(uri, opts){
+	  if (!(this instanceof Socket)) return new Socket(uri, opts);
+	
+	  opts = opts || {};
+	
+	  if (uri && 'object' == typeof uri) {
+	    opts = uri;
+	    uri = null;
+	  }
+	
+	  if (uri) {
+	    uri = parseuri(uri);
+	    opts.hostname = uri.host;
+	    opts.secure = uri.protocol == 'https' || uri.protocol == 'wss';
+	    opts.port = uri.port;
+	    if (uri.query) opts.query = uri.query;
+	  } else if (opts.host) {
+	    opts.hostname = parseuri(opts.host).host;
+	  }
+	
+	  this.secure = null != opts.secure ? opts.secure :
+	    (global.location && 'https:' == location.protocol);
+	
+	  if (opts.hostname && !opts.port) {
+	    // if no port is specified manually, use the protocol default
+	    opts.port = this.secure ? '443' : '80';
+	  }
+	
+	  this.agent = opts.agent || false;
+	  this.hostname = opts.hostname ||
+	    (global.location ? location.hostname : 'localhost');
+	  this.port = opts.port || (global.location && location.port ?
+	       location.port :
+	       (this.secure ? 443 : 80));
+	  this.query = opts.query || {};
+	  if ('string' == typeof this.query) this.query = parseqs.decode(this.query);
+	  this.upgrade = false !== opts.upgrade;
+	  this.path = (opts.path || '/engine.io').replace(/\/$/, '') + '/';
+	  this.forceJSONP = !!opts.forceJSONP;
+	  this.jsonp = false !== opts.jsonp;
+	  this.forceBase64 = !!opts.forceBase64;
+	  this.enablesXDR = !!opts.enablesXDR;
+	  this.timestampParam = opts.timestampParam || 't';
+	  this.timestampRequests = opts.timestampRequests;
+	  this.transports = opts.transports || ['polling', 'websocket'];
+	  this.readyState = '';
+	  this.writeBuffer = [];
+	  this.policyPort = opts.policyPort || 843;
+	  this.rememberUpgrade = opts.rememberUpgrade || false;
+	  this.binaryType = null;
+	  this.onlyBinaryUpgrades = opts.onlyBinaryUpgrades;
+	  this.perMessageDeflate = false !== opts.perMessageDeflate ? (opts.perMessageDeflate || {}) : false;
+	
+	  if (true === this.perMessageDeflate) this.perMessageDeflate = {};
+	  if (this.perMessageDeflate && null == this.perMessageDeflate.threshold) {
+	    this.perMessageDeflate.threshold = 1024;
+	  }
+	
+	  // SSL options for Node.js client
+	  this.pfx = opts.pfx || null;
+	  this.key = opts.key || null;
+	  this.passphrase = opts.passphrase || null;
+	  this.cert = opts.cert || null;
+	  this.ca = opts.ca || null;
+	  this.ciphers = opts.ciphers || null;
+	  this.rejectUnauthorized = opts.rejectUnauthorized === undefined ? null : opts.rejectUnauthorized;
+	
+	  // other options for Node.js client
+	  var freeGlobal = typeof global == 'object' && global;
+	  if (freeGlobal.global === freeGlobal) {
+	    if (opts.extraHeaders && Object.keys(opts.extraHeaders).length > 0) {
+	      this.extraHeaders = opts.extraHeaders;
+	    }
+	  }
+	
+	  this.open();
+	}
+	
+	Socket.priorWebsocketSuccess = false;
+	
+	/**
+	 * Mix in `Emitter`.
+	 */
+	
+	Emitter(Socket.prototype);
+	
+	/**
+	 * Protocol version.
+	 *
+	 * @api public
+	 */
+	
+	Socket.protocol = parser.protocol; // this is an int
+	
+	/**
+	 * Expose deps for legacy compatibility
+	 * and standalone browser access.
+	 */
+	
+	Socket.Socket = Socket;
+	Socket.Transport = __webpack_require__(98);
+	Socket.transports = __webpack_require__(93);
+	Socket.parser = __webpack_require__(99);
+	
+	/**
+	 * Creates transport of the given type.
+	 *
+	 * @param {String} transport name
+	 * @return {Transport}
+	 * @api private
+	 */
+	
+	Socket.prototype.createTransport = function (name) {
+	  debug('creating transport "%s"', name);
+	  var query = clone(this.query);
+	
+	  // append engine.io protocol identifier
+	  query.EIO = parser.protocol;
+	
+	  // transport name
+	  query.transport = name;
+	
+	  // session id if we already have one
+	  if (this.id) query.sid = this.id;
+	
+	  var transport = new transports[name]({
+	    agent: this.agent,
+	    hostname: this.hostname,
+	    port: this.port,
+	    secure: this.secure,
+	    path: this.path,
+	    query: query,
+	    forceJSONP: this.forceJSONP,
+	    jsonp: this.jsonp,
+	    forceBase64: this.forceBase64,
+	    enablesXDR: this.enablesXDR,
+	    timestampRequests: this.timestampRequests,
+	    timestampParam: this.timestampParam,
+	    policyPort: this.policyPort,
+	    socket: this,
+	    pfx: this.pfx,
+	    key: this.key,
+	    passphrase: this.passphrase,
+	    cert: this.cert,
+	    ca: this.ca,
+	    ciphers: this.ciphers,
+	    rejectUnauthorized: this.rejectUnauthorized,
+	    perMessageDeflate: this.perMessageDeflate,
+	    extraHeaders: this.extraHeaders
+	  });
+	
+	  return transport;
+	};
+	
+	function clone (obj) {
+	  var o = {};
+	  for (var i in obj) {
+	    if (obj.hasOwnProperty(i)) {
+	      o[i] = obj[i];
+	    }
+	  }
+	  return o;
+	}
+	
+	/**
+	 * Initializes transport to use and starts probe.
+	 *
+	 * @api private
+	 */
+	Socket.prototype.open = function () {
+	  var transport;
+	  if (this.rememberUpgrade && Socket.priorWebsocketSuccess && this.transports.indexOf('websocket') != -1) {
+	    transport = 'websocket';
+	  } else if (0 === this.transports.length) {
+	    // Emit error on next tick so it can be listened to
+	    var self = this;
+	    setTimeout(function() {
+	      self.emit('error', 'No transports available');
+	    }, 0);
+	    return;
+	  } else {
+	    transport = this.transports[0];
+	  }
+	  this.readyState = 'opening';
+	
+	  // Retry with the next transport if the transport is disabled (jsonp: false)
+	  try {
+	    transport = this.createTransport(transport);
+	  } catch (e) {
+	    this.transports.shift();
+	    this.open();
+	    return;
+	  }
+	
+	  transport.open();
+	  this.setTransport(transport);
+	};
+	
+	/**
+	 * Sets the current transport. Disables the existing one (if any).
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.setTransport = function(transport){
+	  debug('setting transport %s', transport.name);
+	  var self = this;
+	
+	  if (this.transport) {
+	    debug('clearing existing transport %s', this.transport.name);
+	    this.transport.removeAllListeners();
+	  }
+	
+	  // set up transport
+	  this.transport = transport;
+	
+	  // set up transport listeners
+	  transport
+	  .on('drain', function(){
+	    self.onDrain();
+	  })
+	  .on('packet', function(packet){
+	    self.onPacket(packet);
+	  })
+	  .on('error', function(e){
+	    self.onError(e);
+	  })
+	  .on('close', function(){
+	    self.onClose('transport close');
+	  });
+	};
+	
+	/**
+	 * Probes a transport.
+	 *
+	 * @param {String} transport name
+	 * @api private
+	 */
+	
+	Socket.prototype.probe = function (name) {
+	  debug('probing transport "%s"', name);
+	  var transport = this.createTransport(name, { probe: 1 })
+	    , failed = false
+	    , self = this;
+	
+	  Socket.priorWebsocketSuccess = false;
+	
+	  function onTransportOpen(){
+	    if (self.onlyBinaryUpgrades) {
+	      var upgradeLosesBinary = !this.supportsBinary && self.transport.supportsBinary;
+	      failed = failed || upgradeLosesBinary;
+	    }
+	    if (failed) return;
+	
+	    debug('probe transport "%s" opened', name);
+	    transport.send([{ type: 'ping', data: 'probe' }]);
+	    transport.once('packet', function (msg) {
+	      if (failed) return;
+	      if ('pong' == msg.type && 'probe' == msg.data) {
+	        debug('probe transport "%s" pong', name);
+	        self.upgrading = true;
+	        self.emit('upgrading', transport);
+	        if (!transport) return;
+	        Socket.priorWebsocketSuccess = 'websocket' == transport.name;
+	
+	        debug('pausing current transport "%s"', self.transport.name);
+	        self.transport.pause(function () {
+	          if (failed) return;
+	          if ('closed' == self.readyState) return;
+	          debug('changing transport and sending upgrade packet');
+	
+	          cleanup();
+	
+	          self.setTransport(transport);
+	          transport.send([{ type: 'upgrade' }]);
+	          self.emit('upgrade', transport);
+	          transport = null;
+	          self.upgrading = false;
+	          self.flush();
+	        });
+	      } else {
+	        debug('probe transport "%s" failed', name);
+	        var err = new Error('probe error');
+	        err.transport = transport.name;
+	        self.emit('upgradeError', err);
+	      }
+	    });
+	  }
+	
+	  function freezeTransport() {
+	    if (failed) return;
+	
+	    // Any callback called by transport should be ignored since now
+	    failed = true;
+	
+	    cleanup();
+	
+	    transport.close();
+	    transport = null;
+	  }
+	
+	  //Handle any error that happens while probing
+	  function onerror(err) {
+	    var error = new Error('probe error: ' + err);
+	    error.transport = transport.name;
+	
+	    freezeTransport();
+	
+	    debug('probe transport "%s" failed because of error: %s', name, err);
+	
+	    self.emit('upgradeError', error);
+	  }
+	
+	  function onTransportClose(){
+	    onerror("transport closed");
+	  }
+	
+	  //When the socket is closed while we're probing
+	  function onclose(){
+	    onerror("socket closed");
+	  }
+	
+	  //When the socket is upgraded while we're probing
+	  function onupgrade(to){
+	    if (transport && to.name != transport.name) {
+	      debug('"%s" works - aborting "%s"', to.name, transport.name);
+	      freezeTransport();
+	    }
+	  }
+	
+	  //Remove all listeners on the transport and on self
+	  function cleanup(){
+	    transport.removeListener('open', onTransportOpen);
+	    transport.removeListener('error', onerror);
+	    transport.removeListener('close', onTransportClose);
+	    self.removeListener('close', onclose);
+	    self.removeListener('upgrading', onupgrade);
+	  }
+	
+	  transport.once('open', onTransportOpen);
+	  transport.once('error', onerror);
+	  transport.once('close', onTransportClose);
+	
+	  this.once('close', onclose);
+	  this.once('upgrading', onupgrade);
+	
+	  transport.open();
+	
+	};
+	
+	/**
+	 * Called when connection is deemed open.
+	 *
+	 * @api public
+	 */
+	
+	Socket.prototype.onOpen = function () {
+	  debug('socket open');
+	  this.readyState = 'open';
+	  Socket.priorWebsocketSuccess = 'websocket' == this.transport.name;
+	  this.emit('open');
+	  this.flush();
+	
+	  // we check for `readyState` in case an `open`
+	  // listener already closed the socket
+	  if ('open' == this.readyState && this.upgrade && this.transport.pause) {
+	    debug('starting upgrade probes');
+	    for (var i = 0, l = this.upgrades.length; i < l; i++) {
+	      this.probe(this.upgrades[i]);
+	    }
+	  }
+	};
+	
+	/**
+	 * Handles a packet.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.onPacket = function (packet) {
+	  if ('opening' == this.readyState || 'open' == this.readyState) {
+	    debug('socket receive: type "%s", data "%s"', packet.type, packet.data);
+	
+	    this.emit('packet', packet);
+	
+	    // Socket is live - any packet counts
+	    this.emit('heartbeat');
+	
+	    switch (packet.type) {
+	      case 'open':
+	        this.onHandshake(parsejson(packet.data));
+	        break;
+	
+	      case 'pong':
+	        this.setPing();
+	        this.emit('pong');
+	        break;
+	
+	      case 'error':
+	        var err = new Error('server error');
+	        err.code = packet.data;
+	        this.onError(err);
+	        break;
+	
+	      case 'message':
+	        this.emit('data', packet.data);
+	        this.emit('message', packet.data);
+	        break;
+	    }
+	  } else {
+	    debug('packet received with socket readyState "%s"', this.readyState);
+	  }
+	};
+	
+	/**
+	 * Called upon handshake completion.
+	 *
+	 * @param {Object} handshake obj
+	 * @api private
+	 */
+	
+	Socket.prototype.onHandshake = function (data) {
+	  this.emit('handshake', data);
+	  this.id = data.sid;
+	  this.transport.query.sid = data.sid;
+	  this.upgrades = this.filterUpgrades(data.upgrades);
+	  this.pingInterval = data.pingInterval;
+	  this.pingTimeout = data.pingTimeout;
+	  this.onOpen();
+	  // In case open handler closes socket
+	  if  ('closed' == this.readyState) return;
+	  this.setPing();
+	
+	  // Prolong liveness of socket on heartbeat
+	  this.removeListener('heartbeat', this.onHeartbeat);
+	  this.on('heartbeat', this.onHeartbeat);
+	};
+	
+	/**
+	 * Resets ping timeout.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.onHeartbeat = function (timeout) {
+	  clearTimeout(this.pingTimeoutTimer);
+	  var self = this;
+	  self.pingTimeoutTimer = setTimeout(function () {
+	    if ('closed' == self.readyState) return;
+	    self.onClose('ping timeout');
+	  }, timeout || (self.pingInterval + self.pingTimeout));
+	};
+	
+	/**
+	 * Pings server every `this.pingInterval` and expects response
+	 * within `this.pingTimeout` or closes connection.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.setPing = function () {
+	  var self = this;
+	  clearTimeout(self.pingIntervalTimer);
+	  self.pingIntervalTimer = setTimeout(function () {
+	    debug('writing ping packet - expecting pong within %sms', self.pingTimeout);
+	    self.ping();
+	    self.onHeartbeat(self.pingTimeout);
+	  }, self.pingInterval);
+	};
+	
+	/**
+	* Sends a ping packet.
+	*
+	* @api private
+	*/
+	
+	Socket.prototype.ping = function () {
+	  var self = this;
+	  this.sendPacket('ping', function(){
+	    self.emit('ping');
+	  });
+	};
+	
+	/**
+	 * Called on `drain` event
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.onDrain = function() {
+	  this.writeBuffer.splice(0, this.prevBufferLen);
+	
+	  // setting prevBufferLen = 0 is very important
+	  // for example, when upgrading, upgrade packet is sent over,
+	  // and a nonzero prevBufferLen could cause problems on `drain`
+	  this.prevBufferLen = 0;
+	
+	  if (0 === this.writeBuffer.length) {
+	    this.emit('drain');
+	  } else {
+	    this.flush();
+	  }
+	};
+	
+	/**
+	 * Flush write buffers.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.flush = function () {
+	  if ('closed' != this.readyState && this.transport.writable &&
+	    !this.upgrading && this.writeBuffer.length) {
+	    debug('flushing %d packets in socket', this.writeBuffer.length);
+	    this.transport.send(this.writeBuffer);
+	    // keep track of current length of writeBuffer
+	    // splice writeBuffer and callbackBuffer on `drain`
+	    this.prevBufferLen = this.writeBuffer.length;
+	    this.emit('flush');
+	  }
+	};
+	
+	/**
+	 * Sends a message.
+	 *
+	 * @param {String} message.
+	 * @param {Function} callback function.
+	 * @param {Object} options.
+	 * @return {Socket} for chaining.
+	 * @api public
+	 */
+	
+	Socket.prototype.write =
+	Socket.prototype.send = function (msg, options, fn) {
+	  this.sendPacket('message', msg, options, fn);
+	  return this;
+	};
+	
+	/**
+	 * Sends a packet.
+	 *
+	 * @param {String} packet type.
+	 * @param {String} data.
+	 * @param {Object} options.
+	 * @param {Function} callback function.
+	 * @api private
+	 */
+	
+	Socket.prototype.sendPacket = function (type, data, options, fn) {
+	  if('function' == typeof data) {
+	    fn = data;
+	    data = undefined;
+	  }
+	
+	  if ('function' == typeof options) {
+	    fn = options;
+	    options = null;
+	  }
+	
+	  if ('closing' == this.readyState || 'closed' == this.readyState) {
+	    return;
+	  }
+	
+	  options = options || {};
+	  options.compress = false !== options.compress;
+	
+	  var packet = {
+	    type: type,
+	    data: data,
+	    options: options
+	  };
+	  this.emit('packetCreate', packet);
+	  this.writeBuffer.push(packet);
+	  if (fn) this.once('flush', fn);
+	  this.flush();
+	};
+	
+	/**
+	 * Closes the connection.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.close = function () {
+	  if ('opening' == this.readyState || 'open' == this.readyState) {
+	    this.readyState = 'closing';
+	
+	    var self = this;
+	
+	    if (this.writeBuffer.length) {
+	      this.once('drain', function() {
+	        if (this.upgrading) {
+	          waitForUpgrade();
+	        } else {
+	          close();
+	        }
+	      });
+	    } else if (this.upgrading) {
+	      waitForUpgrade();
+	    } else {
+	      close();
+	    }
+	  }
+	
+	  function close() {
+	    self.onClose('forced close');
+	    debug('socket closing - telling transport to close');
+	    self.transport.close();
+	  }
+	
+	  function cleanupAndClose() {
+	    self.removeListener('upgrade', cleanupAndClose);
+	    self.removeListener('upgradeError', cleanupAndClose);
+	    close();
+	  }
+	
+	  function waitForUpgrade() {
+	    // wait for upgrade to finish since we can't send packets while pausing a transport
+	    self.once('upgrade', cleanupAndClose);
+	    self.once('upgradeError', cleanupAndClose);
+	  }
+	
+	  return this;
+	};
+	
+	/**
+	 * Called upon transport error
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.onError = function (err) {
+	  debug('socket error %j', err);
+	  Socket.priorWebsocketSuccess = false;
+	  this.emit('error', err);
+	  this.onClose('transport error', err);
+	};
+	
+	/**
+	 * Called upon transport close.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.onClose = function (reason, desc) {
+	  if ('opening' == this.readyState || 'open' == this.readyState || 'closing' == this.readyState) {
+	    debug('socket close with reason: "%s"', reason);
+	    var self = this;
+	
+	    // clear timers
+	    clearTimeout(this.pingIntervalTimer);
+	    clearTimeout(this.pingTimeoutTimer);
+	
+	    // stop event from firing again for transport
+	    this.transport.removeAllListeners('close');
+	
+	    // ensure transport won't stay open
+	    this.transport.close();
+	
+	    // ignore further transport communication
+	    this.transport.removeAllListeners();
+	
+	    // set ready state
+	    this.readyState = 'closed';
+	
+	    // clear session id
+	    this.id = null;
+	
+	    // emit close event
+	    this.emit('close', reason, desc);
+	
+	    // clean buffers after, so users can still
+	    // grab the buffers on `close` event
+	    self.writeBuffer = [];
+	    self.prevBufferLen = 0;
+	  }
+	};
+	
+	/**
+	 * Filters upgrades, returning only those matching client transports.
+	 *
+	 * @param {Array} server upgrades
+	 * @api private
+	 *
+	 */
+	
+	Socket.prototype.filterUpgrades = function (upgrades) {
+	  var filteredUpgrades = [];
+	  for (var i = 0, j = upgrades.length; i<j; i++) {
+	    if (~index(this.transports, upgrades[i])) filteredUpgrades.push(upgrades[i]);
+	  }
+	  return filteredUpgrades;
+	};
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 93 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * Module dependencies
+	 */
+	
+	var XMLHttpRequest = __webpack_require__(94);
+	var XHR = __webpack_require__(96);
+	var JSONP = __webpack_require__(112);
+	var websocket = __webpack_require__(113);
+	
+	/**
+	 * Export transports.
+	 */
+	
+	exports.polling = polling;
+	exports.websocket = websocket;
+	
+	/**
+	 * Polling transport polymorphic constructor.
+	 * Decides on xhr vs jsonp based on feature detection.
+	 *
+	 * @api private
+	 */
+	
+	function polling(opts){
+	  var xhr;
+	  var xd = false;
+	  var xs = false;
+	  var jsonp = false !== opts.jsonp;
+	
+	  if (global.location) {
+	    var isSSL = 'https:' == location.protocol;
+	    var port = location.port;
+	
+	    // some user agents have empty `location.port`
+	    if (!port) {
+	      port = isSSL ? 443 : 80;
+	    }
+	
+	    xd = opts.hostname != location.hostname || port != opts.port;
+	    xs = opts.secure != isSSL;
+	  }
+	
+	  opts.xdomain = xd;
+	  opts.xscheme = xs;
+	  xhr = new XMLHttpRequest(opts);
+	
+	  if ('open' in xhr && !opts.forceJSONP) {
+	    return new XHR(opts);
+	  } else {
+	    if (!jsonp) throw new Error('JSONP disabled');
+	    return new JSONP(opts);
+	  }
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 94 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// browser shim for xmlhttprequest module
+	var hasCORS = __webpack_require__(95);
+	
+	module.exports = function(opts) {
+	  var xdomain = opts.xdomain;
+	
+	  // scheme must be same when usign XDomainRequest
+	  // http://blogs.msdn.com/b/ieinternals/archive/2010/05/13/xdomainrequest-restrictions-limitations-and-workarounds.aspx
+	  var xscheme = opts.xscheme;
+	
+	  // XDomainRequest has a flow of not sending cookie, therefore it should be disabled as a default.
+	  // https://github.com/Automattic/engine.io-client/pull/217
+	  var enablesXDR = opts.enablesXDR;
+	
+	  // XMLHttpRequest can be disabled on IE
+	  try {
+	    if ('undefined' != typeof XMLHttpRequest && (!xdomain || hasCORS)) {
+	      return new XMLHttpRequest();
+	    }
+	  } catch (e) { }
+	
+	  // Use XDomainRequest for IE8 if enablesXDR is true
+	  // because loading bar keeps flashing when using jsonp-polling
+	  // https://github.com/yujiosaka/socke.io-ie8-loading-example
+	  try {
+	    if ('undefined' != typeof XDomainRequest && !xscheme && enablesXDR) {
+	      return new XDomainRequest();
+	    }
+	  } catch (e) { }
+	
+	  if (!xdomain) {
+	    try {
+	      return new ActiveXObject('Microsoft.XMLHTTP');
+	    } catch(e) { }
+	  }
+	}
+
+
+/***/ },
+/* 95 */
+/***/ function(module, exports) {
+
+	
+	/**
+	 * Module exports.
+	 *
+	 * Logic borrowed from Modernizr:
+	 *
+	 *   - https://github.com/Modernizr/Modernizr/blob/master/feature-detects/cors.js
+	 */
+	
+	try {
+	  module.exports = typeof XMLHttpRequest !== 'undefined' &&
+	    'withCredentials' in new XMLHttpRequest();
+	} catch (err) {
+	  // if XMLHttp support is disabled in IE then it will throw
+	  // when trying to create
+	  module.exports = false;
+	}
+
+
+/***/ },
+/* 96 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * Module requirements.
+	 */
+	
+	var XMLHttpRequest = __webpack_require__(94);
+	var Polling = __webpack_require__(97);
+	var Emitter = __webpack_require__(108);
+	var inherit = __webpack_require__(110);
+	var debug = __webpack_require__(78)('engine.io-client:polling-xhr');
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = XHR;
+	module.exports.Request = Request;
+	
+	/**
+	 * Empty function
+	 */
+	
+	function empty(){}
+	
+	/**
+	 * XHR Polling constructor.
+	 *
+	 * @param {Object} opts
+	 * @api public
+	 */
+	
+	function XHR(opts){
+	  Polling.call(this, opts);
+	
+	  if (global.location) {
+	    var isSSL = 'https:' == location.protocol;
+	    var port = location.port;
+	
+	    // some user agents have empty `location.port`
+	    if (!port) {
+	      port = isSSL ? 443 : 80;
+	    }
+	
+	    this.xd = opts.hostname != global.location.hostname ||
+	      port != opts.port;
+	    this.xs = opts.secure != isSSL;
+	  } else {
+	    this.extraHeaders = opts.extraHeaders;
+	  }
+	}
+	
+	/**
+	 * Inherits from Polling.
+	 */
+	
+	inherit(XHR, Polling);
+	
+	/**
+	 * XHR supports binary
+	 */
+	
+	XHR.prototype.supportsBinary = true;
+	
+	/**
+	 * Creates a request.
+	 *
+	 * @param {String} method
+	 * @api private
+	 */
+	
+	XHR.prototype.request = function(opts){
+	  opts = opts || {};
+	  opts.uri = this.uri();
+	  opts.xd = this.xd;
+	  opts.xs = this.xs;
+	  opts.agent = this.agent || false;
+	  opts.supportsBinary = this.supportsBinary;
+	  opts.enablesXDR = this.enablesXDR;
+	
+	  // SSL options for Node.js client
+	  opts.pfx = this.pfx;
+	  opts.key = this.key;
+	  opts.passphrase = this.passphrase;
+	  opts.cert = this.cert;
+	  opts.ca = this.ca;
+	  opts.ciphers = this.ciphers;
+	  opts.rejectUnauthorized = this.rejectUnauthorized;
+	
+	  // other options for Node.js client
+	  opts.extraHeaders = this.extraHeaders;
+	
+	  return new Request(opts);
+	};
+	
+	/**
+	 * Sends data.
+	 *
+	 * @param {String} data to send.
+	 * @param {Function} called upon flush.
+	 * @api private
+	 */
+	
+	XHR.prototype.doWrite = function(data, fn){
+	  var isBinary = typeof data !== 'string' && data !== undefined;
+	  var req = this.request({ method: 'POST', data: data, isBinary: isBinary });
+	  var self = this;
+	  req.on('success', fn);
+	  req.on('error', function(err){
+	    self.onError('xhr post error', err);
+	  });
+	  this.sendXhr = req;
+	};
+	
+	/**
+	 * Starts a poll cycle.
+	 *
+	 * @api private
+	 */
+	
+	XHR.prototype.doPoll = function(){
+	  debug('xhr poll');
+	  var req = this.request();
+	  var self = this;
+	  req.on('data', function(data){
+	    self.onData(data);
+	  });
+	  req.on('error', function(err){
+	    self.onError('xhr poll error', err);
+	  });
+	  this.pollXhr = req;
+	};
+	
+	/**
+	 * Request constructor
+	 *
+	 * @param {Object} options
+	 * @api public
+	 */
+	
+	function Request(opts){
+	  this.method = opts.method || 'GET';
+	  this.uri = opts.uri;
+	  this.xd = !!opts.xd;
+	  this.xs = !!opts.xs;
+	  this.async = false !== opts.async;
+	  this.data = undefined != opts.data ? opts.data : null;
+	  this.agent = opts.agent;
+	  this.isBinary = opts.isBinary;
+	  this.supportsBinary = opts.supportsBinary;
+	  this.enablesXDR = opts.enablesXDR;
+	
+	  // SSL options for Node.js client
+	  this.pfx = opts.pfx;
+	  this.key = opts.key;
+	  this.passphrase = opts.passphrase;
+	  this.cert = opts.cert;
+	  this.ca = opts.ca;
+	  this.ciphers = opts.ciphers;
+	  this.rejectUnauthorized = opts.rejectUnauthorized;
+	
+	  // other options for Node.js client
+	  this.extraHeaders = opts.extraHeaders;
+	
+	  this.create();
+	}
+	
+	/**
+	 * Mix in `Emitter`.
+	 */
+	
+	Emitter(Request.prototype);
+	
+	/**
+	 * Creates the XHR object and sends the request.
+	 *
+	 * @api private
+	 */
+	
+	Request.prototype.create = function(){
+	  var opts = { agent: this.agent, xdomain: this.xd, xscheme: this.xs, enablesXDR: this.enablesXDR };
+	
+	  // SSL options for Node.js client
+	  opts.pfx = this.pfx;
+	  opts.key = this.key;
+	  opts.passphrase = this.passphrase;
+	  opts.cert = this.cert;
+	  opts.ca = this.ca;
+	  opts.ciphers = this.ciphers;
+	  opts.rejectUnauthorized = this.rejectUnauthorized;
+	
+	  var xhr = this.xhr = new XMLHttpRequest(opts);
+	  var self = this;
+	
+	  try {
+	    debug('xhr open %s: %s', this.method, this.uri);
+	    xhr.open(this.method, this.uri, this.async);
+	    try {
+	      if (this.extraHeaders) {
+	        xhr.setDisableHeaderCheck(true);
+	        for (var i in this.extraHeaders) {
+	          if (this.extraHeaders.hasOwnProperty(i)) {
+	            xhr.setRequestHeader(i, this.extraHeaders[i]);
+	          }
+	        }
+	      }
+	    } catch (e) {}
+	    if (this.supportsBinary) {
+	      // This has to be done after open because Firefox is stupid
+	      // http://stackoverflow.com/questions/13216903/get-binary-data-with-xmlhttprequest-in-a-firefox-extension
+	      xhr.responseType = 'arraybuffer';
+	    }
+	
+	    if ('POST' == this.method) {
+	      try {
+	        if (this.isBinary) {
+	          xhr.setRequestHeader('Content-type', 'application/octet-stream');
+	        } else {
+	          xhr.setRequestHeader('Content-type', 'text/plain;charset=UTF-8');
+	        }
+	      } catch (e) {}
+	    }
+	
+	    // ie6 check
+	    if ('withCredentials' in xhr) {
+	      xhr.withCredentials = true;
+	    }
+	
+	    if (this.hasXDR()) {
+	      xhr.onload = function(){
+	        self.onLoad();
+	      };
+	      xhr.onerror = function(){
+	        self.onError(xhr.responseText);
+	      };
+	    } else {
+	      xhr.onreadystatechange = function(){
+	        if (4 != xhr.readyState) return;
+	        if (200 == xhr.status || 1223 == xhr.status) {
+	          self.onLoad();
+	        } else {
+	          // make sure the `error` event handler that's user-set
+	          // does not throw in the same tick and gets caught here
+	          setTimeout(function(){
+	            self.onError(xhr.status);
+	          }, 0);
+	        }
+	      };
+	    }
+	
+	    debug('xhr data %s', this.data);
+	    xhr.send(this.data);
+	  } catch (e) {
+	    // Need to defer since .create() is called directly fhrom the constructor
+	    // and thus the 'error' event can only be only bound *after* this exception
+	    // occurs.  Therefore, also, we cannot throw here at all.
+	    setTimeout(function() {
+	      self.onError(e);
+	    }, 0);
+	    return;
+	  }
+	
+	  if (global.document) {
+	    this.index = Request.requestsCount++;
+	    Request.requests[this.index] = this;
+	  }
+	};
+	
+	/**
+	 * Called upon successful response.
+	 *
+	 * @api private
+	 */
+	
+	Request.prototype.onSuccess = function(){
+	  this.emit('success');
+	  this.cleanup();
+	};
+	
+	/**
+	 * Called if we have data.
+	 *
+	 * @api private
+	 */
+	
+	Request.prototype.onData = function(data){
+	  this.emit('data', data);
+	  this.onSuccess();
+	};
+	
+	/**
+	 * Called upon error.
+	 *
+	 * @api private
+	 */
+	
+	Request.prototype.onError = function(err){
+	  this.emit('error', err);
+	  this.cleanup(true);
+	};
+	
+	/**
+	 * Cleans up house.
+	 *
+	 * @api private
+	 */
+	
+	Request.prototype.cleanup = function(fromError){
+	  if ('undefined' == typeof this.xhr || null === this.xhr) {
+	    return;
+	  }
+	  // xmlhttprequest
+	  if (this.hasXDR()) {
+	    this.xhr.onload = this.xhr.onerror = empty;
+	  } else {
+	    this.xhr.onreadystatechange = empty;
+	  }
+	
+	  if (fromError) {
+	    try {
+	      this.xhr.abort();
+	    } catch(e) {}
+	  }
+	
+	  if (global.document) {
+	    delete Request.requests[this.index];
+	  }
+	
+	  this.xhr = null;
+	};
+	
+	/**
+	 * Called upon load.
+	 *
+	 * @api private
+	 */
+	
+	Request.prototype.onLoad = function(){
+	  var data;
+	  try {
+	    var contentType;
+	    try {
+	      contentType = this.xhr.getResponseHeader('Content-Type').split(';')[0];
+	    } catch (e) {}
+	    if (contentType === 'application/octet-stream') {
+	      data = this.xhr.response;
+	    } else {
+	      if (!this.supportsBinary) {
+	        data = this.xhr.responseText;
+	      } else {
+	        try {
+	          data = String.fromCharCode.apply(null, new Uint8Array(this.xhr.response));
+	        } catch (e) {
+	          var ui8Arr = new Uint8Array(this.xhr.response);
+	          var dataArray = [];
+	          for (var idx = 0, length = ui8Arr.length; idx < length; idx++) {
+	            dataArray.push(ui8Arr[idx]);
+	          }
+	
+	          data = String.fromCharCode.apply(null, dataArray);
+	        }
+	      }
+	    }
+	  } catch (e) {
+	    this.onError(e);
+	  }
+	  if (null != data) {
+	    this.onData(data);
+	  }
+	};
+	
+	/**
+	 * Check if it has XDomainRequest.
+	 *
+	 * @api private
+	 */
+	
+	Request.prototype.hasXDR = function(){
+	  return 'undefined' !== typeof global.XDomainRequest && !this.xs && this.enablesXDR;
+	};
+	
+	/**
+	 * Aborts the request.
+	 *
+	 * @api public
+	 */
+	
+	Request.prototype.abort = function(){
+	  this.cleanup();
+	};
+	
+	/**
+	 * Aborts pending requests when unloading the window. This is needed to prevent
+	 * memory leaks (e.g. when using IE) and to ensure that no spurious error is
+	 * emitted.
+	 */
+	
+	if (global.document) {
+	  Request.requestsCount = 0;
+	  Request.requests = {};
+	  if (global.attachEvent) {
+	    global.attachEvent('onunload', unloadHandler);
+	  } else if (global.addEventListener) {
+	    global.addEventListener('beforeunload', unloadHandler, false);
+	  }
+	}
+	
+	function unloadHandler() {
+	  for (var i in Request.requests) {
+	    if (Request.requests.hasOwnProperty(i)) {
+	      Request.requests[i].abort();
+	    }
+	  }
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 97 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Module dependencies.
+	 */
+	
+	var Transport = __webpack_require__(98);
+	var parseqs = __webpack_require__(109);
+	var parser = __webpack_require__(99);
+	var inherit = __webpack_require__(110);
+	var yeast = __webpack_require__(111);
+	var debug = __webpack_require__(78)('engine.io-client:polling');
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = Polling;
+	
+	/**
+	 * Is XHR2 supported?
+	 */
+	
+	var hasXHR2 = (function() {
+	  var XMLHttpRequest = __webpack_require__(94);
+	  var xhr = new XMLHttpRequest({ xdomain: false });
+	  return null != xhr.responseType;
+	})();
+	
+	/**
+	 * Polling interface.
+	 *
+	 * @param {Object} opts
+	 * @api private
+	 */
+	
+	function Polling(opts){
+	  var forceBase64 = (opts && opts.forceBase64);
+	  if (!hasXHR2 || forceBase64) {
+	    this.supportsBinary = false;
+	  }
+	  Transport.call(this, opts);
+	}
+	
+	/**
+	 * Inherits from Transport.
+	 */
+	
+	inherit(Polling, Transport);
+	
+	/**
+	 * Transport name.
+	 */
+	
+	Polling.prototype.name = 'polling';
+	
+	/**
+	 * Opens the socket (triggers polling). We write a PING message to determine
+	 * when the transport is open.
+	 *
+	 * @api private
+	 */
+	
+	Polling.prototype.doOpen = function(){
+	  this.poll();
+	};
+	
+	/**
+	 * Pauses polling.
+	 *
+	 * @param {Function} callback upon buffers are flushed and transport is paused
+	 * @api private
+	 */
+	
+	Polling.prototype.pause = function(onPause){
+	  var pending = 0;
+	  var self = this;
+	
+	  this.readyState = 'pausing';
+	
+	  function pause(){
+	    debug('paused');
+	    self.readyState = 'paused';
+	    onPause();
+	  }
+	
+	  if (this.polling || !this.writable) {
+	    var total = 0;
+	
+	    if (this.polling) {
+	      debug('we are currently polling - waiting to pause');
+	      total++;
+	      this.once('pollComplete', function(){
+	        debug('pre-pause polling complete');
+	        --total || pause();
+	      });
+	    }
+	
+	    if (!this.writable) {
+	      debug('we are currently writing - waiting to pause');
+	      total++;
+	      this.once('drain', function(){
+	        debug('pre-pause writing complete');
+	        --total || pause();
+	      });
+	    }
+	  } else {
+	    pause();
+	  }
+	};
+	
+	/**
+	 * Starts polling cycle.
+	 *
+	 * @api public
+	 */
+	
+	Polling.prototype.poll = function(){
+	  debug('polling');
+	  this.polling = true;
+	  this.doPoll();
+	  this.emit('poll');
+	};
+	
+	/**
+	 * Overloads onData to detect payloads.
+	 *
+	 * @api private
+	 */
+	
+	Polling.prototype.onData = function(data){
+	  var self = this;
+	  debug('polling got data %s', data);
+	  var callback = function(packet, index, total) {
+	    // if its the first message we consider the transport open
+	    if ('opening' == self.readyState) {
+	      self.onOpen();
+	    }
+	
+	    // if its a close packet, we close the ongoing requests
+	    if ('close' == packet.type) {
+	      self.onClose();
+	      return false;
+	    }
+	
+	    // otherwise bypass onData and handle the message
+	    self.onPacket(packet);
+	  };
+	
+	  // decode payload
+	  parser.decodePayload(data, this.socket.binaryType, callback);
+	
+	  // if an event did not trigger closing
+	  if ('closed' != this.readyState) {
+	    // if we got data we're not polling
+	    this.polling = false;
+	    this.emit('pollComplete');
+	
+	    if ('open' == this.readyState) {
+	      this.poll();
+	    } else {
+	      debug('ignoring poll - transport state "%s"', this.readyState);
+	    }
+	  }
+	};
+	
+	/**
+	 * For polling, send a close packet.
+	 *
+	 * @api private
+	 */
+	
+	Polling.prototype.doClose = function(){
+	  var self = this;
+	
+	  function close(){
+	    debug('writing close packet');
+	    self.write([{ type: 'close' }]);
+	  }
+	
+	  if ('open' == this.readyState) {
+	    debug('transport open - closing');
+	    close();
+	  } else {
+	    // in case we're trying to close while
+	    // handshaking is in progress (GH-164)
+	    debug('transport not open - deferring close');
+	    this.once('open', close);
+	  }
+	};
+	
+	/**
+	 * Writes a packets payload.
+	 *
+	 * @param {Array} data packets
+	 * @param {Function} drain callback
+	 * @api private
+	 */
+	
+	Polling.prototype.write = function(packets){
+	  var self = this;
+	  this.writable = false;
+	  var callbackfn = function() {
+	    self.writable = true;
+	    self.emit('drain');
+	  };
+	
+	  var self = this;
+	  parser.encodePayload(packets, this.supportsBinary, function(data) {
+	    self.doWrite(data, callbackfn);
+	  });
+	};
+	
+	/**
+	 * Generates uri for connection.
+	 *
+	 * @api private
+	 */
+	
+	Polling.prototype.uri = function(){
+	  var query = this.query || {};
+	  var schema = this.secure ? 'https' : 'http';
+	  var port = '';
+	
+	  // cache busting is forced
+	  if (false !== this.timestampRequests) {
+	    query[this.timestampParam] = yeast();
+	  }
+	
+	  if (!this.supportsBinary && !query.sid) {
+	    query.b64 = 1;
+	  }
+	
+	  query = parseqs.encode(query);
+	
+	  // avoid port if default for schema
+	  if (this.port && (('https' == schema && this.port != 443) ||
+	     ('http' == schema && this.port != 80))) {
+	    port = ':' + this.port;
+	  }
+	
+	  // prepend ? to query
+	  if (query.length) {
+	    query = '?' + query;
+	  }
+	
+	  var ipv6 = this.hostname.indexOf(':') !== -1;
+	  return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
+	};
+
+
+/***/ },
+/* 98 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Module dependencies.
+	 */
+	
+	var parser = __webpack_require__(99);
+	var Emitter = __webpack_require__(108);
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = Transport;
+	
+	/**
+	 * Transport abstract constructor.
+	 *
+	 * @param {Object} options.
+	 * @api private
+	 */
+	
+	function Transport (opts) {
+	  this.path = opts.path;
+	  this.hostname = opts.hostname;
+	  this.port = opts.port;
+	  this.secure = opts.secure;
+	  this.query = opts.query;
+	  this.timestampParam = opts.timestampParam;
+	  this.timestampRequests = opts.timestampRequests;
+	  this.readyState = '';
+	  this.agent = opts.agent || false;
+	  this.socket = opts.socket;
+	  this.enablesXDR = opts.enablesXDR;
+	
+	  // SSL options for Node.js client
+	  this.pfx = opts.pfx;
+	  this.key = opts.key;
+	  this.passphrase = opts.passphrase;
+	  this.cert = opts.cert;
+	  this.ca = opts.ca;
+	  this.ciphers = opts.ciphers;
+	  this.rejectUnauthorized = opts.rejectUnauthorized;
+	
+	  // other options for Node.js client
+	  this.extraHeaders = opts.extraHeaders;
+	}
+	
+	/**
+	 * Mix in `Emitter`.
+	 */
+	
+	Emitter(Transport.prototype);
+	
+	/**
+	 * Emits an error.
+	 *
+	 * @param {String} str
+	 * @return {Transport} for chaining
+	 * @api public
+	 */
+	
+	Transport.prototype.onError = function (msg, desc) {
+	  var err = new Error(msg);
+	  err.type = 'TransportError';
+	  err.description = desc;
+	  this.emit('error', err);
+	  return this;
+	};
+	
+	/**
+	 * Opens the transport.
+	 *
+	 * @api public
+	 */
+	
+	Transport.prototype.open = function () {
+	  if ('closed' == this.readyState || '' == this.readyState) {
+	    this.readyState = 'opening';
+	    this.doOpen();
+	  }
+	
+	  return this;
+	};
+	
+	/**
+	 * Closes the transport.
+	 *
+	 * @api private
+	 */
+	
+	Transport.prototype.close = function () {
+	  if ('opening' == this.readyState || 'open' == this.readyState) {
+	    this.doClose();
+	    this.onClose();
+	  }
+	
+	  return this;
+	};
+	
+	/**
+	 * Sends multiple packets.
+	 *
+	 * @param {Array} packets
+	 * @api private
+	 */
+	
+	Transport.prototype.send = function(packets){
+	  if ('open' == this.readyState) {
+	    this.write(packets);
+	  } else {
+	    throw new Error('Transport not open');
+	  }
+	};
+	
+	/**
+	 * Called upon open
+	 *
+	 * @api private
+	 */
+	
+	Transport.prototype.onOpen = function () {
+	  this.readyState = 'open';
+	  this.writable = true;
+	  this.emit('open');
+	};
+	
+	/**
+	 * Called with data.
+	 *
+	 * @param {String} data
+	 * @api private
+	 */
+	
+	Transport.prototype.onData = function(data){
+	  var packet = parser.decodePacket(data, this.socket.binaryType);
+	  this.onPacket(packet);
+	};
+	
+	/**
+	 * Called with a decoded packet.
+	 */
+	
+	Transport.prototype.onPacket = function (packet) {
+	  this.emit('packet', packet);
+	};
+	
+	/**
+	 * Called upon close.
+	 *
+	 * @api private
+	 */
+	
+	Transport.prototype.onClose = function () {
+	  this.readyState = 'closed';
+	  this.emit('close');
+	};
+
+
+/***/ },
+/* 99 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * Module dependencies.
+	 */
+	
+	var keys = __webpack_require__(100);
+	var hasBinary = __webpack_require__(101);
+	var sliceBuffer = __webpack_require__(103);
+	var base64encoder = __webpack_require__(104);
+	var after = __webpack_require__(105);
+	var utf8 = __webpack_require__(106);
+	
+	/**
+	 * Check if we are running an android browser. That requires us to use
+	 * ArrayBuffer with polling transports...
+	 *
+	 * http://ghinda.net/jpeg-blob-ajax-android/
+	 */
+	
+	var isAndroid = navigator.userAgent.match(/Android/i);
+	
+	/**
+	 * Check if we are running in PhantomJS.
+	 * Uploading a Blob with PhantomJS does not work correctly, as reported here:
+	 * https://github.com/ariya/phantomjs/issues/11395
+	 * @type boolean
+	 */
+	var isPhantomJS = /PhantomJS/i.test(navigator.userAgent);
+	
+	/**
+	 * When true, avoids using Blobs to encode payloads.
+	 * @type boolean
+	 */
+	var dontSendBlobs = isAndroid || isPhantomJS;
+	
+	/**
+	 * Current protocol version.
+	 */
+	
+	exports.protocol = 3;
+	
+	/**
+	 * Packet types.
+	 */
+	
+	var packets = exports.packets = {
+	    open:     0    // non-ws
+	  , close:    1    // non-ws
+	  , ping:     2
+	  , pong:     3
+	  , message:  4
+	  , upgrade:  5
+	  , noop:     6
+	};
+	
+	var packetslist = keys(packets);
+	
+	/**
+	 * Premade error packet.
+	 */
+	
+	var err = { type: 'error', data: 'parser error' };
+	
+	/**
+	 * Create a blob api even for blob builder when vendor prefixes exist
+	 */
+	
+	var Blob = __webpack_require__(107);
+	
+	/**
+	 * Encodes a packet.
+	 *
+	 *     <packet type id> [ <data> ]
+	 *
+	 * Example:
+	 *
+	 *     5hello world
+	 *     3
+	 *     4
+	 *
+	 * Binary is encoded in an identical principle
+	 *
+	 * @api private
+	 */
+	
+	exports.encodePacket = function (packet, supportsBinary, utf8encode, callback) {
+	  if ('function' == typeof supportsBinary) {
+	    callback = supportsBinary;
+	    supportsBinary = false;
+	  }
+	
+	  if ('function' == typeof utf8encode) {
+	    callback = utf8encode;
+	    utf8encode = null;
+	  }
+	
+	  var data = (packet.data === undefined)
+	    ? undefined
+	    : packet.data.buffer || packet.data;
+	
+	  if (global.ArrayBuffer && data instanceof ArrayBuffer) {
+	    return encodeArrayBuffer(packet, supportsBinary, callback);
+	  } else if (Blob && data instanceof global.Blob) {
+	    return encodeBlob(packet, supportsBinary, callback);
+	  }
+	
+	  // might be an object with { base64: true, data: dataAsBase64String }
+	  if (data && data.base64) {
+	    return encodeBase64Object(packet, callback);
+	  }
+	
+	  // Sending data as a utf-8 string
+	  var encoded = packets[packet.type];
+	
+	  // data fragment is optional
+	  if (undefined !== packet.data) {
+	    encoded += utf8encode ? utf8.encode(String(packet.data)) : String(packet.data);
+	  }
+	
+	  return callback('' + encoded);
+	
+	};
+	
+	function encodeBase64Object(packet, callback) {
+	  // packet data is an object { base64: true, data: dataAsBase64String }
+	  var message = 'b' + exports.packets[packet.type] + packet.data.data;
+	  return callback(message);
+	}
+	
+	/**
+	 * Encode packet helpers for binary types
+	 */
+	
+	function encodeArrayBuffer(packet, supportsBinary, callback) {
+	  if (!supportsBinary) {
+	    return exports.encodeBase64Packet(packet, callback);
+	  }
+	
+	  var data = packet.data;
+	  var contentArray = new Uint8Array(data);
+	  var resultBuffer = new Uint8Array(1 + data.byteLength);
+	
+	  resultBuffer[0] = packets[packet.type];
+	  for (var i = 0; i < contentArray.length; i++) {
+	    resultBuffer[i+1] = contentArray[i];
+	  }
+	
+	  return callback(resultBuffer.buffer);
+	}
+	
+	function encodeBlobAsArrayBuffer(packet, supportsBinary, callback) {
+	  if (!supportsBinary) {
+	    return exports.encodeBase64Packet(packet, callback);
+	  }
+	
+	  var fr = new FileReader();
+	  fr.onload = function() {
+	    packet.data = fr.result;
+	    exports.encodePacket(packet, supportsBinary, true, callback);
+	  };
+	  return fr.readAsArrayBuffer(packet.data);
+	}
+	
+	function encodeBlob(packet, supportsBinary, callback) {
+	  if (!supportsBinary) {
+	    return exports.encodeBase64Packet(packet, callback);
+	  }
+	
+	  if (dontSendBlobs) {
+	    return encodeBlobAsArrayBuffer(packet, supportsBinary, callback);
+	  }
+	
+	  var length = new Uint8Array(1);
+	  length[0] = packets[packet.type];
+	  var blob = new Blob([length.buffer, packet.data]);
+	
+	  return callback(blob);
+	}
+	
+	/**
+	 * Encodes a packet with binary data in a base64 string
+	 *
+	 * @param {Object} packet, has `type` and `data`
+	 * @return {String} base64 encoded message
+	 */
+	
+	exports.encodeBase64Packet = function(packet, callback) {
+	  var message = 'b' + exports.packets[packet.type];
+	  if (Blob && packet.data instanceof global.Blob) {
+	    var fr = new FileReader();
+	    fr.onload = function() {
+	      var b64 = fr.result.split(',')[1];
+	      callback(message + b64);
+	    };
+	    return fr.readAsDataURL(packet.data);
+	  }
+	
+	  var b64data;
+	  try {
+	    b64data = String.fromCharCode.apply(null, new Uint8Array(packet.data));
+	  } catch (e) {
+	    // iPhone Safari doesn't let you apply with typed arrays
+	    var typed = new Uint8Array(packet.data);
+	    var basic = new Array(typed.length);
+	    for (var i = 0; i < typed.length; i++) {
+	      basic[i] = typed[i];
+	    }
+	    b64data = String.fromCharCode.apply(null, basic);
+	  }
+	  message += global.btoa(b64data);
+	  return callback(message);
+	};
+	
+	/**
+	 * Decodes a packet. Changes format to Blob if requested.
+	 *
+	 * @return {Object} with `type` and `data` (if any)
+	 * @api private
+	 */
+	
+	exports.decodePacket = function (data, binaryType, utf8decode) {
+	  // String data
+	  if (typeof data == 'string' || data === undefined) {
+	    if (data.charAt(0) == 'b') {
+	      return exports.decodeBase64Packet(data.substr(1), binaryType);
+	    }
+	
+	    if (utf8decode) {
+	      try {
+	        data = utf8.decode(data);
+	      } catch (e) {
+	        return err;
+	      }
+	    }
+	    var type = data.charAt(0);
+	
+	    if (Number(type) != type || !packetslist[type]) {
+	      return err;
+	    }
+	
+	    if (data.length > 1) {
+	      return { type: packetslist[type], data: data.substring(1) };
+	    } else {
+	      return { type: packetslist[type] };
+	    }
+	  }
+	
+	  var asArray = new Uint8Array(data);
+	  var type = asArray[0];
+	  var rest = sliceBuffer(data, 1);
+	  if (Blob && binaryType === 'blob') {
+	    rest = new Blob([rest]);
+	  }
+	  return { type: packetslist[type], data: rest };
+	};
+	
+	/**
+	 * Decodes a packet encoded in a base64 string
+	 *
+	 * @param {String} base64 encoded message
+	 * @return {Object} with `type` and `data` (if any)
+	 */
+	
+	exports.decodeBase64Packet = function(msg, binaryType) {
+	  var type = packetslist[msg.charAt(0)];
+	  if (!global.ArrayBuffer) {
+	    return { type: type, data: { base64: true, data: msg.substr(1) } };
+	  }
+	
+	  var data = base64encoder.decode(msg.substr(1));
+	
+	  if (binaryType === 'blob' && Blob) {
+	    data = new Blob([data]);
+	  }
+	
+	  return { type: type, data: data };
+	};
+	
+	/**
+	 * Encodes multiple messages (payload).
+	 *
+	 *     <length>:data
+	 *
+	 * Example:
+	 *
+	 *     11:hello world2:hi
+	 *
+	 * If any contents are binary, they will be encoded as base64 strings. Base64
+	 * encoded strings are marked with a b before the length specifier
+	 *
+	 * @param {Array} packets
+	 * @api private
+	 */
+	
+	exports.encodePayload = function (packets, supportsBinary, callback) {
+	  if (typeof supportsBinary == 'function') {
+	    callback = supportsBinary;
+	    supportsBinary = null;
+	  }
+	
+	  var isBinary = hasBinary(packets);
+	
+	  if (supportsBinary && isBinary) {
+	    if (Blob && !dontSendBlobs) {
+	      return exports.encodePayloadAsBlob(packets, callback);
+	    }
+	
+	    return exports.encodePayloadAsArrayBuffer(packets, callback);
+	  }
+	
+	  if (!packets.length) {
+	    return callback('0:');
+	  }
+	
+	  function setLengthHeader(message) {
+	    return message.length + ':' + message;
+	  }
+	
+	  function encodeOne(packet, doneCallback) {
+	    exports.encodePacket(packet, !isBinary ? false : supportsBinary, true, function(message) {
+	      doneCallback(null, setLengthHeader(message));
+	    });
+	  }
+	
+	  map(packets, encodeOne, function(err, results) {
+	    return callback(results.join(''));
+	  });
+	};
+	
+	/**
+	 * Async array map using after
+	 */
+	
+	function map(ary, each, done) {
+	  var result = new Array(ary.length);
+	  var next = after(ary.length, done);
+	
+	  var eachWithIndex = function(i, el, cb) {
+	    each(el, function(error, msg) {
+	      result[i] = msg;
+	      cb(error, result);
+	    });
+	  };
+	
+	  for (var i = 0; i < ary.length; i++) {
+	    eachWithIndex(i, ary[i], next);
+	  }
+	}
+	
+	/*
+	 * Decodes data when a payload is maybe expected. Possible binary contents are
+	 * decoded from their base64 representation
+	 *
+	 * @param {String} data, callback method
+	 * @api public
+	 */
+	
+	exports.decodePayload = function (data, binaryType, callback) {
+	  if (typeof data != 'string') {
+	    return exports.decodePayloadAsBinary(data, binaryType, callback);
+	  }
+	
+	  if (typeof binaryType === 'function') {
+	    callback = binaryType;
+	    binaryType = null;
+	  }
+	
+	  var packet;
+	  if (data == '') {
+	    // parser error - ignoring payload
+	    return callback(err, 0, 1);
+	  }
+	
+	  var length = ''
+	    , n, msg;
+	
+	  for (var i = 0, l = data.length; i < l; i++) {
+	    var chr = data.charAt(i);
+	
+	    if (':' != chr) {
+	      length += chr;
+	    } else {
+	      if ('' == length || (length != (n = Number(length)))) {
+	        // parser error - ignoring payload
+	        return callback(err, 0, 1);
+	      }
+	
+	      msg = data.substr(i + 1, n);
+	
+	      if (length != msg.length) {
+	        // parser error - ignoring payload
+	        return callback(err, 0, 1);
+	      }
+	
+	      if (msg.length) {
+	        packet = exports.decodePacket(msg, binaryType, true);
+	
+	        if (err.type == packet.type && err.data == packet.data) {
+	          // parser error in individual packet - ignoring payload
+	          return callback(err, 0, 1);
+	        }
+	
+	        var ret = callback(packet, i + n, l);
+	        if (false === ret) return;
+	      }
+	
+	      // advance cursor
+	      i += n;
+	      length = '';
+	    }
+	  }
+	
+	  if (length != '') {
+	    // parser error - ignoring payload
+	    return callback(err, 0, 1);
+	  }
+	
+	};
+	
+	/**
+	 * Encodes multiple messages (payload) as binary.
+	 *
+	 * <1 = binary, 0 = string><number from 0-9><number from 0-9>[...]<number
+	 * 255><data>
+	 *
+	 * Example:
+	 * 1 3 255 1 2 3, if the binary contents are interpreted as 8 bit integers
+	 *
+	 * @param {Array} packets
+	 * @return {ArrayBuffer} encoded payload
+	 * @api private
+	 */
+	
+	exports.encodePayloadAsArrayBuffer = function(packets, callback) {
+	  if (!packets.length) {
+	    return callback(new ArrayBuffer(0));
+	  }
+	
+	  function encodeOne(packet, doneCallback) {
+	    exports.encodePacket(packet, true, true, function(data) {
+	      return doneCallback(null, data);
+	    });
+	  }
+	
+	  map(packets, encodeOne, function(err, encodedPackets) {
+	    var totalLength = encodedPackets.reduce(function(acc, p) {
+	      var len;
+	      if (typeof p === 'string'){
+	        len = p.length;
+	      } else {
+	        len = p.byteLength;
+	      }
+	      return acc + len.toString().length + len + 2; // string/binary identifier + separator = 2
+	    }, 0);
+	
+	    var resultArray = new Uint8Array(totalLength);
+	
+	    var bufferIndex = 0;
+	    encodedPackets.forEach(function(p) {
+	      var isString = typeof p === 'string';
+	      var ab = p;
+	      if (isString) {
+	        var view = new Uint8Array(p.length);
+	        for (var i = 0; i < p.length; i++) {
+	          view[i] = p.charCodeAt(i);
+	        }
+	        ab = view.buffer;
+	      }
+	
+	      if (isString) { // not true binary
+	        resultArray[bufferIndex++] = 0;
+	      } else { // true binary
+	        resultArray[bufferIndex++] = 1;
+	      }
+	
+	      var lenStr = ab.byteLength.toString();
+	      for (var i = 0; i < lenStr.length; i++) {
+	        resultArray[bufferIndex++] = parseInt(lenStr[i]);
+	      }
+	      resultArray[bufferIndex++] = 255;
+	
+	      var view = new Uint8Array(ab);
+	      for (var i = 0; i < view.length; i++) {
+	        resultArray[bufferIndex++] = view[i];
+	      }
+	    });
+	
+	    return callback(resultArray.buffer);
+	  });
+	};
+	
+	/**
+	 * Encode as Blob
+	 */
+	
+	exports.encodePayloadAsBlob = function(packets, callback) {
+	  function encodeOne(packet, doneCallback) {
+	    exports.encodePacket(packet, true, true, function(encoded) {
+	      var binaryIdentifier = new Uint8Array(1);
+	      binaryIdentifier[0] = 1;
+	      if (typeof encoded === 'string') {
+	        var view = new Uint8Array(encoded.length);
+	        for (var i = 0; i < encoded.length; i++) {
+	          view[i] = encoded.charCodeAt(i);
+	        }
+	        encoded = view.buffer;
+	        binaryIdentifier[0] = 0;
+	      }
+	
+	      var len = (encoded instanceof ArrayBuffer)
+	        ? encoded.byteLength
+	        : encoded.size;
+	
+	      var lenStr = len.toString();
+	      var lengthAry = new Uint8Array(lenStr.length + 1);
+	      for (var i = 0; i < lenStr.length; i++) {
+	        lengthAry[i] = parseInt(lenStr[i]);
+	      }
+	      lengthAry[lenStr.length] = 255;
+	
+	      if (Blob) {
+	        var blob = new Blob([binaryIdentifier.buffer, lengthAry.buffer, encoded]);
+	        doneCallback(null, blob);
+	      }
+	    });
+	  }
+	
+	  map(packets, encodeOne, function(err, results) {
+	    return callback(new Blob(results));
+	  });
+	};
+	
+	/*
+	 * Decodes data when a payload is maybe expected. Strings are decoded by
+	 * interpreting each byte as a key code for entries marked to start with 0. See
+	 * description of encodePayloadAsBinary
+	 *
+	 * @param {ArrayBuffer} data, callback method
+	 * @api public
+	 */
+	
+	exports.decodePayloadAsBinary = function (data, binaryType, callback) {
+	  if (typeof binaryType === 'function') {
+	    callback = binaryType;
+	    binaryType = null;
+	  }
+	
+	  var bufferTail = data;
+	  var buffers = [];
+	
+	  var numberTooLong = false;
+	  while (bufferTail.byteLength > 0) {
+	    var tailArray = new Uint8Array(bufferTail);
+	    var isString = tailArray[0] === 0;
+	    var msgLength = '';
+	
+	    for (var i = 1; ; i++) {
+	      if (tailArray[i] == 255) break;
+	
+	      if (msgLength.length > 310) {
+	        numberTooLong = true;
+	        break;
+	      }
+	
+	      msgLength += tailArray[i];
+	    }
+	
+	    if(numberTooLong) return callback(err, 0, 1);
+	
+	    bufferTail = sliceBuffer(bufferTail, 2 + msgLength.length);
+	    msgLength = parseInt(msgLength);
+	
+	    var msg = sliceBuffer(bufferTail, 0, msgLength);
+	    if (isString) {
+	      try {
+	        msg = String.fromCharCode.apply(null, new Uint8Array(msg));
+	      } catch (e) {
+	        // iPhone Safari doesn't let you apply to typed arrays
+	        var typed = new Uint8Array(msg);
+	        msg = '';
+	        for (var i = 0; i < typed.length; i++) {
+	          msg += String.fromCharCode(typed[i]);
+	        }
+	      }
+	    }
+	
+	    buffers.push(msg);
+	    bufferTail = sliceBuffer(bufferTail, msgLength);
+	  }
+	
+	  var total = buffers.length;
+	  buffers.forEach(function(buffer, i) {
+	    callback(exports.decodePacket(buffer, binaryType, true), i, total);
+	  });
+	};
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 100 */
+/***/ function(module, exports) {
+
+	
+	/**
+	 * Gets the keys for an object.
+	 *
+	 * @return {Array} keys
+	 * @api private
+	 */
+	
+	module.exports = Object.keys || function keys (obj){
+	  var arr = [];
+	  var has = Object.prototype.hasOwnProperty;
+	
+	  for (var i in obj) {
+	    if (has.call(obj, i)) {
+	      arr.push(i);
+	    }
+	  }
+	  return arr;
+	};
+
+
+/***/ },
+/* 101 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {
+	/*
+	 * Module requirements.
+	 */
+	
+	var isArray = __webpack_require__(102);
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = hasBinary;
+	
+	/**
+	 * Checks for binary data.
+	 *
+	 * Right now only Buffer and ArrayBuffer are supported..
+	 *
+	 * @param {Object} anything
+	 * @api public
+	 */
+	
+	function hasBinary(data) {
+	
+	  function _hasBinary(obj) {
+	    if (!obj) return false;
+	
+	    if ( (global.Buffer && global.Buffer.isBuffer(obj)) ||
+	         (global.ArrayBuffer && obj instanceof ArrayBuffer) ||
+	         (global.Blob && obj instanceof Blob) ||
+	         (global.File && obj instanceof File)
+	        ) {
+	      return true;
+	    }
+	
+	    if (isArray(obj)) {
+	      for (var i = 0; i < obj.length; i++) {
+	          if (_hasBinary(obj[i])) {
+	              return true;
+	          }
+	      }
+	    } else if (obj && 'object' == typeof obj) {
+	      if (obj.toJSON) {
+	        obj = obj.toJSON();
+	      }
+	
+	      for (var key in obj) {
+	        if (Object.prototype.hasOwnProperty.call(obj, key) && _hasBinary(obj[key])) {
+	          return true;
+	        }
+	      }
+	    }
+	
+	    return false;
+	  }
+	
+	  return _hasBinary(data);
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 102 */
+/***/ function(module, exports) {
+
+	module.exports = Array.isArray || function (arr) {
+	  return Object.prototype.toString.call(arr) == '[object Array]';
+	};
+
+
+/***/ },
+/* 103 */
+/***/ function(module, exports) {
+
+	/**
+	 * An abstraction for slicing an arraybuffer even when
+	 * ArrayBuffer.prototype.slice is not supported
+	 *
+	 * @api public
+	 */
+	
+	module.exports = function(arraybuffer, start, end) {
+	  var bytes = arraybuffer.byteLength;
+	  start = start || 0;
+	  end = end || bytes;
+	
+	  if (arraybuffer.slice) { return arraybuffer.slice(start, end); }
+	
+	  if (start < 0) { start += bytes; }
+	  if (end < 0) { end += bytes; }
+	  if (end > bytes) { end = bytes; }
+	
+	  if (start >= bytes || start >= end || bytes === 0) {
+	    return new ArrayBuffer(0);
+	  }
+	
+	  var abv = new Uint8Array(arraybuffer);
+	  var result = new Uint8Array(end - start);
+	  for (var i = start, ii = 0; i < end; i++, ii++) {
+	    result[ii] = abv[i];
+	  }
+	  return result.buffer;
+	};
+
+
+/***/ },
+/* 104 */
+/***/ function(module, exports) {
+
+	/*
+	 * base64-arraybuffer
+	 * https://github.com/niklasvh/base64-arraybuffer
+	 *
+	 * Copyright (c) 2012 Niklas von Hertzen
+	 * Licensed under the MIT license.
+	 */
+	(function(chars){
+	  "use strict";
+	
+	  exports.encode = function(arraybuffer) {
+	    var bytes = new Uint8Array(arraybuffer),
+	    i, len = bytes.length, base64 = "";
+	
+	    for (i = 0; i < len; i+=3) {
+	      base64 += chars[bytes[i] >> 2];
+	      base64 += chars[((bytes[i] & 3) << 4) | (bytes[i + 1] >> 4)];
+	      base64 += chars[((bytes[i + 1] & 15) << 2) | (bytes[i + 2] >> 6)];
+	      base64 += chars[bytes[i + 2] & 63];
+	    }
+	
+	    if ((len % 3) === 2) {
+	      base64 = base64.substring(0, base64.length - 1) + "=";
+	    } else if (len % 3 === 1) {
+	      base64 = base64.substring(0, base64.length - 2) + "==";
+	    }
+	
+	    return base64;
+	  };
+	
+	  exports.decode =  function(base64) {
+	    var bufferLength = base64.length * 0.75,
+	    len = base64.length, i, p = 0,
+	    encoded1, encoded2, encoded3, encoded4;
+	
+	    if (base64[base64.length - 1] === "=") {
+	      bufferLength--;
+	      if (base64[base64.length - 2] === "=") {
+	        bufferLength--;
+	      }
+	    }
+	
+	    var arraybuffer = new ArrayBuffer(bufferLength),
+	    bytes = new Uint8Array(arraybuffer);
+	
+	    for (i = 0; i < len; i+=4) {
+	      encoded1 = chars.indexOf(base64[i]);
+	      encoded2 = chars.indexOf(base64[i+1]);
+	      encoded3 = chars.indexOf(base64[i+2]);
+	      encoded4 = chars.indexOf(base64[i+3]);
+	
+	      bytes[p++] = (encoded1 << 2) | (encoded2 >> 4);
+	      bytes[p++] = ((encoded2 & 15) << 4) | (encoded3 >> 2);
+	      bytes[p++] = ((encoded3 & 3) << 6) | (encoded4 & 63);
+	    }
+	
+	    return arraybuffer;
+	  };
+	})("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/");
+
+
+/***/ },
+/* 105 */
+/***/ function(module, exports) {
+
+	module.exports = after
+	
+	function after(count, callback, err_cb) {
+	    var bail = false
+	    err_cb = err_cb || noop
+	    proxy.count = count
+	
+	    return (count === 0) ? callback() : proxy
+	
+	    function proxy(err, result) {
+	        if (proxy.count <= 0) {
+	            throw new Error('after called too many times')
+	        }
+	        --proxy.count
+	
+	        // after first error, rest are passed to err_cb
+	        if (err) {
+	            bail = true
+	            callback(err)
+	            // future error callbacks will go to error handler
+	            callback = err_cb
+	        } else if (proxy.count === 0 && !bail) {
+	            callback(null, result)
+	        }
+	    }
+	}
+	
+	function noop() {}
+
+
+/***/ },
+/* 106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module, global) {/*! https://mths.be/utf8js v2.0.0 by @mathias */
+	;(function(root) {
+	
+		// Detect free variables `exports`
+		var freeExports = typeof exports == 'object' && exports;
+	
+		// Detect free variable `module`
+		var freeModule = typeof module == 'object' && module &&
+			module.exports == freeExports && module;
+	
+		// Detect free variable `global`, from Node.js or Browserified code,
+		// and use it as `root`
+		var freeGlobal = typeof global == 'object' && global;
+		if (freeGlobal.global === freeGlobal || freeGlobal.window === freeGlobal) {
+			root = freeGlobal;
+		}
+	
+		/*--------------------------------------------------------------------------*/
+	
+		var stringFromCharCode = String.fromCharCode;
+	
+		// Taken from https://mths.be/punycode
+		function ucs2decode(string) {
+			var output = [];
+			var counter = 0;
+			var length = string.length;
+			var value;
+			var extra;
+			while (counter < length) {
+				value = string.charCodeAt(counter++);
+				if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
+					// high surrogate, and there is a next character
+					extra = string.charCodeAt(counter++);
+					if ((extra & 0xFC00) == 0xDC00) { // low surrogate
+						output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
+					} else {
+						// unmatched surrogate; only append this code unit, in case the next
+						// code unit is the high surrogate of a surrogate pair
+						output.push(value);
+						counter--;
+					}
+				} else {
+					output.push(value);
+				}
+			}
+			return output;
+		}
+	
+		// Taken from https://mths.be/punycode
+		function ucs2encode(array) {
+			var length = array.length;
+			var index = -1;
+			var value;
+			var output = '';
+			while (++index < length) {
+				value = array[index];
+				if (value > 0xFFFF) {
+					value -= 0x10000;
+					output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
+					value = 0xDC00 | value & 0x3FF;
+				}
+				output += stringFromCharCode(value);
+			}
+			return output;
+		}
+	
+		function checkScalarValue(codePoint) {
+			if (codePoint >= 0xD800 && codePoint <= 0xDFFF) {
+				throw Error(
+					'Lone surrogate U+' + codePoint.toString(16).toUpperCase() +
+					' is not a scalar value'
+				);
+			}
+		}
+		/*--------------------------------------------------------------------------*/
+	
+		function createByte(codePoint, shift) {
+			return stringFromCharCode(((codePoint >> shift) & 0x3F) | 0x80);
+		}
+	
+		function encodeCodePoint(codePoint) {
+			if ((codePoint & 0xFFFFFF80) == 0) { // 1-byte sequence
+				return stringFromCharCode(codePoint);
+			}
+			var symbol = '';
+			if ((codePoint & 0xFFFFF800) == 0) { // 2-byte sequence
+				symbol = stringFromCharCode(((codePoint >> 6) & 0x1F) | 0xC0);
+			}
+			else if ((codePoint & 0xFFFF0000) == 0) { // 3-byte sequence
+				checkScalarValue(codePoint);
+				symbol = stringFromCharCode(((codePoint >> 12) & 0x0F) | 0xE0);
+				symbol += createByte(codePoint, 6);
+			}
+			else if ((codePoint & 0xFFE00000) == 0) { // 4-byte sequence
+				symbol = stringFromCharCode(((codePoint >> 18) & 0x07) | 0xF0);
+				symbol += createByte(codePoint, 12);
+				symbol += createByte(codePoint, 6);
+			}
+			symbol += stringFromCharCode((codePoint & 0x3F) | 0x80);
+			return symbol;
+		}
+	
+		function utf8encode(string) {
+			var codePoints = ucs2decode(string);
+			var length = codePoints.length;
+			var index = -1;
+			var codePoint;
+			var byteString = '';
+			while (++index < length) {
+				codePoint = codePoints[index];
+				byteString += encodeCodePoint(codePoint);
+			}
+			return byteString;
+		}
+	
+		/*--------------------------------------------------------------------------*/
+	
+		function readContinuationByte() {
+			if (byteIndex >= byteCount) {
+				throw Error('Invalid byte index');
+			}
+	
+			var continuationByte = byteArray[byteIndex] & 0xFF;
+			byteIndex++;
+	
+			if ((continuationByte & 0xC0) == 0x80) {
+				return continuationByte & 0x3F;
+			}
+	
+			// If we end up here, it’s not a continuation byte
+			throw Error('Invalid continuation byte');
+		}
+	
+		function decodeSymbol() {
+			var byte1;
+			var byte2;
+			var byte3;
+			var byte4;
+			var codePoint;
+	
+			if (byteIndex > byteCount) {
+				throw Error('Invalid byte index');
+			}
+	
+			if (byteIndex == byteCount) {
+				return false;
+			}
+	
+			// Read first byte
+			byte1 = byteArray[byteIndex] & 0xFF;
+			byteIndex++;
+	
+			// 1-byte sequence (no continuation bytes)
+			if ((byte1 & 0x80) == 0) {
+				return byte1;
+			}
+	
+			// 2-byte sequence
+			if ((byte1 & 0xE0) == 0xC0) {
+				var byte2 = readContinuationByte();
+				codePoint = ((byte1 & 0x1F) << 6) | byte2;
+				if (codePoint >= 0x80) {
+					return codePoint;
+				} else {
+					throw Error('Invalid continuation byte');
+				}
+			}
+	
+			// 3-byte sequence (may include unpaired surrogates)
+			if ((byte1 & 0xF0) == 0xE0) {
+				byte2 = readContinuationByte();
+				byte3 = readContinuationByte();
+				codePoint = ((byte1 & 0x0F) << 12) | (byte2 << 6) | byte3;
+				if (codePoint >= 0x0800) {
+					checkScalarValue(codePoint);
+					return codePoint;
+				} else {
+					throw Error('Invalid continuation byte');
+				}
+			}
+	
+			// 4-byte sequence
+			if ((byte1 & 0xF8) == 0xF0) {
+				byte2 = readContinuationByte();
+				byte3 = readContinuationByte();
+				byte4 = readContinuationByte();
+				codePoint = ((byte1 & 0x0F) << 0x12) | (byte2 << 0x0C) |
+					(byte3 << 0x06) | byte4;
+				if (codePoint >= 0x010000 && codePoint <= 0x10FFFF) {
+					return codePoint;
+				}
+			}
+	
+			throw Error('Invalid UTF-8 detected');
+		}
+	
+		var byteArray;
+		var byteCount;
+		var byteIndex;
+		function utf8decode(byteString) {
+			byteArray = ucs2decode(byteString);
+			byteCount = byteArray.length;
+			byteIndex = 0;
+			var codePoints = [];
+			var tmp;
+			while ((tmp = decodeSymbol()) !== false) {
+				codePoints.push(tmp);
+			}
+			return ucs2encode(codePoints);
+		}
+	
+		/*--------------------------------------------------------------------------*/
+	
+		var utf8 = {
+			'version': '2.0.0',
+			'encode': utf8encode,
+			'decode': utf8decode
+		};
+	
+		// Some AMD build optimizers, like r.js, check for specific condition patterns
+		// like the following:
+		if (
+			true
+		) {
+			!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+				return utf8;
+			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		}	else if (freeExports && !freeExports.nodeType) {
+			if (freeModule) { // in Node.js or RingoJS v0.8.0+
+				freeModule.exports = utf8;
+			} else { // in Narwhal or RingoJS v0.7.0-
+				var object = {};
+				var hasOwnProperty = object.hasOwnProperty;
+				for (var key in utf8) {
+					hasOwnProperty.call(utf8, key) && (freeExports[key] = utf8[key]);
+				}
+			}
+		} else { // in Rhino or a web browser
+			root.utf8 = utf8;
+		}
+	
+	}(this));
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(83)(module), (function() { return this; }())))
+
+/***/ },
+/* 107 */
+/***/ function(module, exports) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * Create a blob builder even when vendor prefixes exist
+	 */
+	
+	var BlobBuilder = global.BlobBuilder
+	  || global.WebKitBlobBuilder
+	  || global.MSBlobBuilder
+	  || global.MozBlobBuilder;
+	
+	/**
+	 * Check if Blob constructor is supported
+	 */
+	
+	var blobSupported = (function() {
+	  try {
+	    var a = new Blob(['hi']);
+	    return a.size === 2;
+	  } catch(e) {
+	    return false;
+	  }
+	})();
+	
+	/**
+	 * Check if Blob constructor supports ArrayBufferViews
+	 * Fails in Safari 6, so we need to map to ArrayBuffers there.
+	 */
+	
+	var blobSupportsArrayBufferView = blobSupported && (function() {
+	  try {
+	    var b = new Blob([new Uint8Array([1,2])]);
+	    return b.size === 2;
+	  } catch(e) {
+	    return false;
+	  }
+	})();
+	
+	/**
+	 * Check if BlobBuilder is supported
+	 */
+	
+	var blobBuilderSupported = BlobBuilder
+	  && BlobBuilder.prototype.append
+	  && BlobBuilder.prototype.getBlob;
+	
+	/**
+	 * Helper function that maps ArrayBufferViews to ArrayBuffers
+	 * Used by BlobBuilder constructor and old browsers that didn't
+	 * support it in the Blob constructor.
+	 */
+	
+	function mapArrayBufferViews(ary) {
+	  for (var i = 0; i < ary.length; i++) {
+	    var chunk = ary[i];
+	    if (chunk.buffer instanceof ArrayBuffer) {
+	      var buf = chunk.buffer;
+	
+	      // if this is a subarray, make a copy so we only
+	      // include the subarray region from the underlying buffer
+	      if (chunk.byteLength !== buf.byteLength) {
+	        var copy = new Uint8Array(chunk.byteLength);
+	        copy.set(new Uint8Array(buf, chunk.byteOffset, chunk.byteLength));
+	        buf = copy.buffer;
+	      }
+	
+	      ary[i] = buf;
+	    }
+	  }
+	}
+	
+	function BlobBuilderConstructor(ary, options) {
+	  options = options || {};
+	
+	  var bb = new BlobBuilder();
+	  mapArrayBufferViews(ary);
+	
+	  for (var i = 0; i < ary.length; i++) {
+	    bb.append(ary[i]);
+	  }
+	
+	  return (options.type) ? bb.getBlob(options.type) : bb.getBlob();
+	};
+	
+	function BlobConstructor(ary, options) {
+	  mapArrayBufferViews(ary);
+	  return new Blob(ary, options || {});
+	};
+	
+	module.exports = (function() {
+	  if (blobSupported) {
+	    return blobSupportsArrayBufferView ? global.Blob : BlobConstructor;
+	  } else if (blobBuilderSupported) {
+	    return BlobBuilderConstructor;
+	  } else {
+	    return undefined;
+	  }
+	})();
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 108 */
+/***/ function(module, exports) {
+
+	
+	/**
+	 * Expose `Emitter`.
+	 */
+	
+	module.exports = Emitter;
+	
+	/**
+	 * Initialize a new `Emitter`.
+	 *
+	 * @api public
+	 */
+	
+	function Emitter(obj) {
+	  if (obj) return mixin(obj);
+	};
+	
+	/**
+	 * Mixin the emitter properties.
+	 *
+	 * @param {Object} obj
+	 * @return {Object}
+	 * @api private
+	 */
+	
+	function mixin(obj) {
+	  for (var key in Emitter.prototype) {
+	    obj[key] = Emitter.prototype[key];
+	  }
+	  return obj;
+	}
+	
+	/**
+	 * Listen on the given `event` with `fn`.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+	
+	Emitter.prototype.on =
+	Emitter.prototype.addEventListener = function(event, fn){
+	  this._callbacks = this._callbacks || {};
+	  (this._callbacks[event] = this._callbacks[event] || [])
+	    .push(fn);
+	  return this;
+	};
+	
+	/**
+	 * Adds an `event` listener that will be invoked a single
+	 * time then automatically removed.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+	
+	Emitter.prototype.once = function(event, fn){
+	  var self = this;
+	  this._callbacks = this._callbacks || {};
+	
+	  function on() {
+	    self.off(event, on);
+	    fn.apply(this, arguments);
+	  }
+	
+	  on.fn = fn;
+	  this.on(event, on);
+	  return this;
+	};
+	
+	/**
+	 * Remove the given callback for `event` or all
+	 * registered callbacks.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+	
+	Emitter.prototype.off =
+	Emitter.prototype.removeListener =
+	Emitter.prototype.removeAllListeners =
+	Emitter.prototype.removeEventListener = function(event, fn){
+	  this._callbacks = this._callbacks || {};
+	
+	  // all
+	  if (0 == arguments.length) {
+	    this._callbacks = {};
+	    return this;
+	  }
+	
+	  // specific event
+	  var callbacks = this._callbacks[event];
+	  if (!callbacks) return this;
+	
+	  // remove all handlers
+	  if (1 == arguments.length) {
+	    delete this._callbacks[event];
+	    return this;
+	  }
+	
+	  // remove specific handler
+	  var cb;
+	  for (var i = 0; i < callbacks.length; i++) {
+	    cb = callbacks[i];
+	    if (cb === fn || cb.fn === fn) {
+	      callbacks.splice(i, 1);
+	      break;
+	    }
+	  }
+	  return this;
+	};
+	
+	/**
+	 * Emit `event` with the given args.
+	 *
+	 * @param {String} event
+	 * @param {Mixed} ...
+	 * @return {Emitter}
+	 */
+	
+	Emitter.prototype.emit = function(event){
+	  this._callbacks = this._callbacks || {};
+	  var args = [].slice.call(arguments, 1)
+	    , callbacks = this._callbacks[event];
+	
+	  if (callbacks) {
+	    callbacks = callbacks.slice(0);
+	    for (var i = 0, len = callbacks.length; i < len; ++i) {
+	      callbacks[i].apply(this, args);
+	    }
+	  }
+	
+	  return this;
+	};
+	
+	/**
+	 * Return array of callbacks for `event`.
+	 *
+	 * @param {String} event
+	 * @return {Array}
+	 * @api public
+	 */
+	
+	Emitter.prototype.listeners = function(event){
+	  this._callbacks = this._callbacks || {};
+	  return this._callbacks[event] || [];
+	};
+	
+	/**
+	 * Check if this emitter has `event` handlers.
+	 *
+	 * @param {String} event
+	 * @return {Boolean}
+	 * @api public
+	 */
+	
+	Emitter.prototype.hasListeners = function(event){
+	  return !! this.listeners(event).length;
+	};
+
+
+/***/ },
+/* 109 */
+/***/ function(module, exports) {
+
+	/**
+	 * Compiles a querystring
+	 * Returns string representation of the object
+	 *
+	 * @param {Object}
+	 * @api private
+	 */
+	
+	exports.encode = function (obj) {
+	  var str = '';
+	
+	  for (var i in obj) {
+	    if (obj.hasOwnProperty(i)) {
+	      if (str.length) str += '&';
+	      str += encodeURIComponent(i) + '=' + encodeURIComponent(obj[i]);
+	    }
+	  }
+	
+	  return str;
+	};
+	
+	/**
+	 * Parses a simple querystring into an object
+	 *
+	 * @param {String} qs
+	 * @api private
+	 */
+	
+	exports.decode = function(qs){
+	  var qry = {};
+	  var pairs = qs.split('&');
+	  for (var i = 0, l = pairs.length; i < l; i++) {
+	    var pair = pairs[i].split('=');
+	    qry[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
+	  }
+	  return qry;
+	};
+
+
+/***/ },
+/* 110 */
+/***/ function(module, exports) {
+
+	
+	module.exports = function(a, b){
+	  var fn = function(){};
+	  fn.prototype = b.prototype;
+	  a.prototype = new fn;
+	  a.prototype.constructor = a;
+	};
+
+/***/ },
+/* 111 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	var alphabet = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split('')
+	  , length = 64
+	  , map = {}
+	  , seed = 0
+	  , i = 0
+	  , prev;
+	
+	/**
+	 * Return a string representing the specified number.
+	 *
+	 * @param {Number} num The number to convert.
+	 * @returns {String} The string representation of the number.
+	 * @api public
+	 */
+	function encode(num) {
+	  var encoded = '';
+	
+	  do {
+	    encoded = alphabet[num % length] + encoded;
+	    num = Math.floor(num / length);
+	  } while (num > 0);
+	
+	  return encoded;
+	}
+	
+	/**
+	 * Return the integer value specified by the given string.
+	 *
+	 * @param {String} str The string to convert.
+	 * @returns {Number} The integer value represented by the string.
+	 * @api public
+	 */
+	function decode(str) {
+	  var decoded = 0;
+	
+	  for (i = 0; i < str.length; i++) {
+	    decoded = decoded * length + map[str.charAt(i)];
+	  }
+	
+	  return decoded;
+	}
+	
+	/**
+	 * Yeast: A tiny growing id generator.
+	 *
+	 * @returns {String} A unique id.
+	 * @api public
+	 */
+	function yeast() {
+	  var now = encode(+new Date());
+	
+	  if (now !== prev) return seed = 0, prev = now;
+	  return now +'.'+ encode(seed++);
+	}
+	
+	//
+	// Map each character to its index.
+	//
+	for (; i < length; i++) map[alphabet[i]] = i;
+	
+	//
+	// Expose the `yeast`, `encode` and `decode` functions.
+	//
+	yeast.encode = encode;
+	yeast.decode = decode;
+	module.exports = yeast;
+
+
+/***/ },
+/* 112 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {
+	/**
+	 * Module requirements.
+	 */
+	
+	var Polling = __webpack_require__(97);
+	var inherit = __webpack_require__(110);
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = JSONPPolling;
+	
+	/**
+	 * Cached regular expressions.
+	 */
+	
+	var rNewline = /\n/g;
+	var rEscapedNewline = /\\n/g;
+	
+	/**
+	 * Global JSONP callbacks.
+	 */
+	
+	var callbacks;
+	
+	/**
+	 * Callbacks count.
+	 */
+	
+	var index = 0;
+	
+	/**
+	 * Noop.
+	 */
+	
+	function empty () { }
+	
+	/**
+	 * JSONP Polling constructor.
+	 *
+	 * @param {Object} opts.
+	 * @api public
+	 */
+	
+	function JSONPPolling (opts) {
+	  Polling.call(this, opts);
+	
+	  this.query = this.query || {};
+	
+	  // define global callbacks array if not present
+	  // we do this here (lazily) to avoid unneeded global pollution
+	  if (!callbacks) {
+	    // we need to consider multiple engines in the same page
+	    if (!global.___eio) global.___eio = [];
+	    callbacks = global.___eio;
+	  }
+	
+	  // callback identifier
+	  this.index = callbacks.length;
+	
+	  // add callback to jsonp global
+	  var self = this;
+	  callbacks.push(function (msg) {
+	    self.onData(msg);
+	  });
+	
+	  // append to query string
+	  this.query.j = this.index;
+	
+	  // prevent spurious errors from being emitted when the window is unloaded
+	  if (global.document && global.addEventListener) {
+	    global.addEventListener('beforeunload', function () {
+	      if (self.script) self.script.onerror = empty;
+	    }, false);
+	  }
+	}
+	
+	/**
+	 * Inherits from Polling.
+	 */
+	
+	inherit(JSONPPolling, Polling);
+	
+	/*
+	 * JSONP only supports binary as base64 encoded strings
+	 */
+	
+	JSONPPolling.prototype.supportsBinary = false;
+	
+	/**
+	 * Closes the socket.
+	 *
+	 * @api private
+	 */
+	
+	JSONPPolling.prototype.doClose = function () {
+	  if (this.script) {
+	    this.script.parentNode.removeChild(this.script);
+	    this.script = null;
+	  }
+	
+	  if (this.form) {
+	    this.form.parentNode.removeChild(this.form);
+	    this.form = null;
+	    this.iframe = null;
+	  }
+	
+	  Polling.prototype.doClose.call(this);
+	};
+	
+	/**
+	 * Starts a poll cycle.
+	 *
+	 * @api private
+	 */
+	
+	JSONPPolling.prototype.doPoll = function () {
+	  var self = this;
+	  var script = document.createElement('script');
+	
+	  if (this.script) {
+	    this.script.parentNode.removeChild(this.script);
+	    this.script = null;
+	  }
+	
+	  script.async = true;
+	  script.src = this.uri();
+	  script.onerror = function(e){
+	    self.onError('jsonp poll error',e);
+	  };
+	
+	  var insertAt = document.getElementsByTagName('script')[0];
+	  if (insertAt) {
+	    insertAt.parentNode.insertBefore(script, insertAt);
+	  }
+	  else {
+	    (document.head || document.body).appendChild(script);
+	  }
+	  this.script = script;
+	
+	  var isUAgecko = 'undefined' != typeof navigator && /gecko/i.test(navigator.userAgent);
+	  
+	  if (isUAgecko) {
+	    setTimeout(function () {
+	      var iframe = document.createElement('iframe');
+	      document.body.appendChild(iframe);
+	      document.body.removeChild(iframe);
+	    }, 100);
+	  }
+	};
+	
+	/**
+	 * Writes with a hidden iframe.
+	 *
+	 * @param {String} data to send
+	 * @param {Function} called upon flush.
+	 * @api private
+	 */
+	
+	JSONPPolling.prototype.doWrite = function (data, fn) {
+	  var self = this;
+	
+	  if (!this.form) {
+	    var form = document.createElement('form');
+	    var area = document.createElement('textarea');
+	    var id = this.iframeId = 'eio_iframe_' + this.index;
+	    var iframe;
+	
+	    form.className = 'socketio';
+	    form.style.position = 'absolute';
+	    form.style.top = '-1000px';
+	    form.style.left = '-1000px';
+	    form.target = id;
+	    form.method = 'POST';
+	    form.setAttribute('accept-charset', 'utf-8');
+	    area.name = 'd';
+	    form.appendChild(area);
+	    document.body.appendChild(form);
+	
+	    this.form = form;
+	    this.area = area;
+	  }
+	
+	  this.form.action = this.uri();
+	
+	  function complete () {
+	    initIframe();
+	    fn();
+	  }
+	
+	  function initIframe () {
+	    if (self.iframe) {
+	      try {
+	        self.form.removeChild(self.iframe);
+	      } catch (e) {
+	        self.onError('jsonp polling iframe removal error', e);
+	      }
+	    }
+	
+	    try {
+	      // ie6 dynamic iframes with target="" support (thanks Chris Lambacher)
+	      var html = '<iframe src="javascript:0" name="'+ self.iframeId +'">';
+	      iframe = document.createElement(html);
+	    } catch (e) {
+	      iframe = document.createElement('iframe');
+	      iframe.name = self.iframeId;
+	      iframe.src = 'javascript:0';
+	    }
+	
+	    iframe.id = self.iframeId;
+	
+	    self.form.appendChild(iframe);
+	    self.iframe = iframe;
+	  }
+	
+	  initIframe();
+	
+	  // escape \n to prevent it from being converted into \r\n by some UAs
+	  // double escaping is required for escaped new lines because unescaping of new lines can be done safely on server-side
+	  data = data.replace(rEscapedNewline, '\\\n');
+	  this.area.value = data.replace(rNewline, '\\n');
+	
+	  try {
+	    this.form.submit();
+	  } catch(e) {}
+	
+	  if (this.iframe.attachEvent) {
+	    this.iframe.onreadystatechange = function(){
+	      if (self.iframe.readyState == 'complete') {
+	        complete();
+	      }
+	    };
+	  } else {
+	    this.iframe.onload = complete;
+	  }
+	};
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 113 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * Module dependencies.
+	 */
+	
+	var Transport = __webpack_require__(98);
+	var parser = __webpack_require__(99);
+	var parseqs = __webpack_require__(109);
+	var inherit = __webpack_require__(110);
+	var yeast = __webpack_require__(111);
+	var debug = __webpack_require__(78)('engine.io-client:websocket');
+	var BrowserWebSocket = global.WebSocket || global.MozWebSocket;
+	
+	/**
+	 * Get either the `WebSocket` or `MozWebSocket` globals
+	 * in the browser or try to resolve WebSocket-compatible
+	 * interface exposed by `ws` for Node-like environment.
+	 */
+	
+	var WebSocket = BrowserWebSocket;
+	if (!WebSocket && typeof window === 'undefined') {
+	  try {
+	    WebSocket = __webpack_require__(114);
+	  } catch (e) { }
+	}
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = WS;
+	
+	/**
+	 * WebSocket transport constructor.
+	 *
+	 * @api {Object} connection options
+	 * @api public
+	 */
+	
+	function WS(opts){
+	  var forceBase64 = (opts && opts.forceBase64);
+	  if (forceBase64) {
+	    this.supportsBinary = false;
+	  }
+	  this.perMessageDeflate = opts.perMessageDeflate;
+	  Transport.call(this, opts);
+	}
+	
+	/**
+	 * Inherits from Transport.
+	 */
+	
+	inherit(WS, Transport);
+	
+	/**
+	 * Transport name.
+	 *
+	 * @api public
+	 */
+	
+	WS.prototype.name = 'websocket';
+	
+	/*
+	 * WebSockets support binary
+	 */
+	
+	WS.prototype.supportsBinary = true;
+	
+	/**
+	 * Opens socket.
+	 *
+	 * @api private
+	 */
+	
+	WS.prototype.doOpen = function(){
+	  if (!this.check()) {
+	    // let probe timeout
+	    return;
+	  }
+	
+	  var self = this;
+	  var uri = this.uri();
+	  var protocols = void(0);
+	  var opts = {
+	    agent: this.agent,
+	    perMessageDeflate: this.perMessageDeflate
+	  };
+	
+	  // SSL options for Node.js client
+	  opts.pfx = this.pfx;
+	  opts.key = this.key;
+	  opts.passphrase = this.passphrase;
+	  opts.cert = this.cert;
+	  opts.ca = this.ca;
+	  opts.ciphers = this.ciphers;
+	  opts.rejectUnauthorized = this.rejectUnauthorized;
+	  if (this.extraHeaders) {
+	    opts.headers = this.extraHeaders;
+	  }
+	
+	  this.ws = BrowserWebSocket ? new WebSocket(uri) : new WebSocket(uri, protocols, opts);
+	
+	  if (this.ws.binaryType === undefined) {
+	    this.supportsBinary = false;
+	  }
+	
+	  if (this.ws.supports && this.ws.supports.binary) {
+	    this.supportsBinary = true;
+	    this.ws.binaryType = 'buffer';
+	  } else {
+	    this.ws.binaryType = 'arraybuffer';
+	  }
+	
+	  this.addEventListeners();
+	};
+	
+	/**
+	 * Adds event listeners to the socket
+	 *
+	 * @api private
+	 */
+	
+	WS.prototype.addEventListeners = function(){
+	  var self = this;
+	
+	  this.ws.onopen = function(){
+	    self.onOpen();
+	  };
+	  this.ws.onclose = function(){
+	    self.onClose();
+	  };
+	  this.ws.onmessage = function(ev){
+	    self.onData(ev.data);
+	  };
+	  this.ws.onerror = function(e){
+	    self.onError('websocket error', e);
+	  };
+	};
+	
+	/**
+	 * Override `onData` to use a timer on iOS.
+	 * See: https://gist.github.com/mloughran/2052006
+	 *
+	 * @api private
+	 */
+	
+	if ('undefined' != typeof navigator
+	  && /iPad|iPhone|iPod/i.test(navigator.userAgent)) {
+	  WS.prototype.onData = function(data){
+	    var self = this;
+	    setTimeout(function(){
+	      Transport.prototype.onData.call(self, data);
+	    }, 0);
+	  };
+	}
+	
+	/**
+	 * Writes data to socket.
+	 *
+	 * @param {Array} array of packets.
+	 * @api private
+	 */
+	
+	WS.prototype.write = function(packets){
+	  var self = this;
+	  this.writable = false;
+	
+	  // encodePacket efficient as it uses WS framing
+	  // no need for encodePayload
+	  var total = packets.length;
+	  for (var i = 0, l = total; i < l; i++) {
+	    (function(packet) {
+	      parser.encodePacket(packet, self.supportsBinary, function(data) {
+	        if (!BrowserWebSocket) {
+	          // always create a new object (GH-437)
+	          var opts = {};
+	          if (packet.options) {
+	            opts.compress = packet.options.compress;
+	          }
+	
+	          if (self.perMessageDeflate) {
+	            var len = 'string' == typeof data ? global.Buffer.byteLength(data) : data.length;
+	            if (len < self.perMessageDeflate.threshold) {
+	              opts.compress = false;
+	            }
+	          }
+	        }
+	
+	        //Sometimes the websocket has already been closed but the browser didn't
+	        //have a chance of informing us about it yet, in that case send will
+	        //throw an error
+	        try {
+	          if (BrowserWebSocket) {
+	            // TypeError is thrown when passing the second argument on Safari
+	            self.ws.send(data);
+	          } else {
+	            self.ws.send(data, opts);
+	          }
+	        } catch (e){
+	          debug('websocket closed before onclose event');
+	        }
+	
+	        --total || done();
+	      });
+	    })(packets[i]);
+	  }
+	
+	  function done(){
+	    self.emit('flush');
+	
+	    // fake drain
+	    // defer to next tick to allow Socket to clear writeBuffer
+	    setTimeout(function(){
+	      self.writable = true;
+	      self.emit('drain');
+	    }, 0);
+	  }
+	};
+	
+	/**
+	 * Called upon close
+	 *
+	 * @api private
+	 */
+	
+	WS.prototype.onClose = function(){
+	  Transport.prototype.onClose.call(this);
+	};
+	
+	/**
+	 * Closes socket.
+	 *
+	 * @api private
+	 */
+	
+	WS.prototype.doClose = function(){
+	  if (typeof this.ws !== 'undefined') {
+	    this.ws.close();
+	  }
+	};
+	
+	/**
+	 * Generates uri for connection.
+	 *
+	 * @api private
+	 */
+	
+	WS.prototype.uri = function(){
+	  var query = this.query || {};
+	  var schema = this.secure ? 'wss' : 'ws';
+	  var port = '';
+	
+	  // avoid port if default for schema
+	  if (this.port && (('wss' == schema && this.port != 443)
+	    || ('ws' == schema && this.port != 80))) {
+	    port = ':' + this.port;
+	  }
+	
+	  // append timestamp to URI
+	  if (this.timestampRequests) {
+	    query[this.timestampParam] = yeast();
+	  }
+	
+	  // communicate binary support capabilities
+	  if (!this.supportsBinary) {
+	    query.b64 = 1;
+	  }
+	
+	  query = parseqs.encode(query);
+	
+	  // prepend ? to query
+	  if (query.length) {
+	    query = '?' + query;
+	  }
+	
+	  var ipv6 = this.hostname.indexOf(':') !== -1;
+	  return schema + '://' + (ipv6 ? '[' + this.hostname + ']' : this.hostname) + port + this.path + query;
+	};
+	
+	/**
+	 * Feature detection for WebSocket.
+	 *
+	 * @return {Boolean} whether this transport is available.
+	 * @api public
+	 */
+	
+	WS.prototype.check = function(){
+	  return !!WebSocket && !('__initialize' in WebSocket && this.name === WS.prototype.name);
+	};
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 114 */
+/***/ function(module, exports) {
+
+	/* (ignored) */
+
+/***/ },
+/* 115 */
+/***/ function(module, exports) {
+
+	
+	var indexOf = [].indexOf;
+	
+	module.exports = function(arr, obj){
+	  if (indexOf) return arr.indexOf(obj);
+	  for (var i = 0; i < arr.length; ++i) {
+	    if (arr[i] === obj) return i;
+	  }
+	  return -1;
+	};
+
+/***/ },
+/* 116 */
+/***/ function(module, exports) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {/**
+	 * JSON parse.
+	 *
+	 * @see Based on jQuery#parseJSON (MIT) and JSON2
+	 * @api private
+	 */
+	
+	var rvalidchars = /^[\],:{}\s]*$/;
+	var rvalidescape = /\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g;
+	var rvalidtokens = /"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g;
+	var rvalidbraces = /(?:^|:|,)(?:\s*\[)+/g;
+	var rtrimLeft = /^\s+/;
+	var rtrimRight = /\s+$/;
+	
+	module.exports = function parsejson(data) {
+	  if ('string' != typeof data || !data) {
+	    return null;
+	  }
+	
+	  data = data.replace(rtrimLeft, '').replace(rtrimRight, '');
+	
+	  // Attempt to parse using the native JSON parser first
+	  if (global.JSON && JSON.parse) {
+	    return JSON.parse(data);
+	  }
+	
+	  if (rvalidchars.test(data.replace(rvalidescape, '@')
+	      .replace(rvalidtokens, ']')
+	      .replace(rvalidbraces, ''))) {
+	    return (new Function('return ' + data))();
+	  }
+	};
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 117 */
+/***/ function(module, exports, __webpack_require__) {
+
+	
+	/**
+	 * Module dependencies.
+	 */
+	
+	var parser = __webpack_require__(81);
+	var Emitter = __webpack_require__(118);
+	var toArray = __webpack_require__(119);
+	var on = __webpack_require__(120);
+	var bind = __webpack_require__(121);
+	var debug = __webpack_require__(78)('socket.io-client:socket');
+	var hasBin = __webpack_require__(122);
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = exports = Socket;
+	
+	/**
+	 * Internal events (blacklisted).
+	 * These events can't be emitted by the user.
+	 *
+	 * @api private
+	 */
+	
+	var events = {
+	  connect: 1,
+	  connect_error: 1,
+	  connect_timeout: 1,
+	  connecting: 1,
+	  disconnect: 1,
+	  error: 1,
+	  reconnect: 1,
+	  reconnect_attempt: 1,
+	  reconnect_failed: 1,
+	  reconnect_error: 1,
+	  reconnecting: 1,
+	  ping: 1,
+	  pong: 1
+	};
+	
+	/**
+	 * Shortcut to `Emitter#emit`.
+	 */
+	
+	var emit = Emitter.prototype.emit;
+	
+	/**
+	 * `Socket` constructor.
+	 *
+	 * @api public
+	 */
+	
+	function Socket(io, nsp){
+	  this.io = io;
+	  this.nsp = nsp;
+	  this.json = this; // compat
+	  this.ids = 0;
+	  this.acks = {};
+	  this.receiveBuffer = [];
+	  this.sendBuffer = [];
+	  this.connected = false;
+	  this.disconnected = true;
+	  if (this.io.autoConnect) this.open();
+	}
+	
+	/**
+	 * Mix in `Emitter`.
+	 */
+	
+	Emitter(Socket.prototype);
+	
+	/**
+	 * Subscribe to open, close and packet events
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.subEvents = function() {
+	  if (this.subs) return;
+	
+	  var io = this.io;
+	  this.subs = [
+	    on(io, 'open', bind(this, 'onopen')),
+	    on(io, 'packet', bind(this, 'onpacket')),
+	    on(io, 'close', bind(this, 'onclose'))
+	  ];
+	};
+	
+	/**
+	 * "Opens" the socket.
+	 *
+	 * @api public
+	 */
+	
+	Socket.prototype.open =
+	Socket.prototype.connect = function(){
+	  if (this.connected) return this;
+	
+	  this.subEvents();
+	  this.io.open(); // ensure open
+	  if ('open' == this.io.readyState) this.onopen();
+	  this.emit('connecting');
+	  return this;
+	};
+	
+	/**
+	 * Sends a `message` event.
+	 *
+	 * @return {Socket} self
+	 * @api public
+	 */
+	
+	Socket.prototype.send = function(){
+	  var args = toArray(arguments);
+	  args.unshift('message');
+	  this.emit.apply(this, args);
+	  return this;
+	};
+	
+	/**
+	 * Override `emit`.
+	 * If the event is in `events`, it's emitted normally.
+	 *
+	 * @param {String} event name
+	 * @return {Socket} self
+	 * @api public
+	 */
+	
+	Socket.prototype.emit = function(ev){
+	  if (events.hasOwnProperty(ev)) {
+	    emit.apply(this, arguments);
+	    return this;
+	  }
+	
+	  var args = toArray(arguments);
+	  var parserType = parser.EVENT; // default
+	  if (hasBin(args)) { parserType = parser.BINARY_EVENT; } // binary
+	  var packet = { type: parserType, data: args };
+	
+	  packet.options = {};
+	  packet.options.compress = !this.flags || false !== this.flags.compress;
+	
+	  // event ack callback
+	  if ('function' == typeof args[args.length - 1]) {
+	    debug('emitting packet with ack id %d', this.ids);
+	    this.acks[this.ids] = args.pop();
+	    packet.id = this.ids++;
+	  }
+	
+	  if (this.connected) {
+	    this.packet(packet);
+	  } else {
+	    this.sendBuffer.push(packet);
+	  }
+	
+	  delete this.flags;
+	
+	  return this;
+	};
+	
+	/**
+	 * Sends a packet.
+	 *
+	 * @param {Object} packet
+	 * @api private
+	 */
+	
+	Socket.prototype.packet = function(packet){
+	  packet.nsp = this.nsp;
+	  this.io.packet(packet);
+	};
+	
+	/**
+	 * Called upon engine `open`.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.onopen = function(){
+	  debug('transport is open - connecting');
+	
+	  // write connect packet if necessary
+	  if ('/' != this.nsp) {
+	    this.packet({ type: parser.CONNECT });
+	  }
+	};
+	
+	/**
+	 * Called upon engine `close`.
+	 *
+	 * @param {String} reason
+	 * @api private
+	 */
+	
+	Socket.prototype.onclose = function(reason){
+	  debug('close (%s)', reason);
+	  this.connected = false;
+	  this.disconnected = true;
+	  delete this.id;
+	  this.emit('disconnect', reason);
+	};
+	
+	/**
+	 * Called with socket packet.
+	 *
+	 * @param {Object} packet
+	 * @api private
+	 */
+	
+	Socket.prototype.onpacket = function(packet){
+	  if (packet.nsp != this.nsp) return;
+	
+	  switch (packet.type) {
+	    case parser.CONNECT:
+	      this.onconnect();
+	      break;
+	
+	    case parser.EVENT:
+	      this.onevent(packet);
+	      break;
+	
+	    case parser.BINARY_EVENT:
+	      this.onevent(packet);
+	      break;
+	
+	    case parser.ACK:
+	      this.onack(packet);
+	      break;
+	
+	    case parser.BINARY_ACK:
+	      this.onack(packet);
+	      break;
+	
+	    case parser.DISCONNECT:
+	      this.ondisconnect();
+	      break;
+	
+	    case parser.ERROR:
+	      this.emit('error', packet.data);
+	      break;
+	  }
+	};
+	
+	/**
+	 * Called upon a server event.
+	 *
+	 * @param {Object} packet
+	 * @api private
+	 */
+	
+	Socket.prototype.onevent = function(packet){
+	  var args = packet.data || [];
+	  debug('emitting event %j', args);
+	
+	  if (null != packet.id) {
+	    debug('attaching ack callback to event');
+	    args.push(this.ack(packet.id));
+	  }
+	
+	  if (this.connected) {
+	    emit.apply(this, args);
+	  } else {
+	    this.receiveBuffer.push(args);
+	  }
+	};
+	
+	/**
+	 * Produces an ack callback to emit with an event.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.ack = function(id){
+	  var self = this;
+	  var sent = false;
+	  return function(){
+	    // prevent double callbacks
+	    if (sent) return;
+	    sent = true;
+	    var args = toArray(arguments);
+	    debug('sending ack %j', args);
+	
+	    var type = hasBin(args) ? parser.BINARY_ACK : parser.ACK;
+	    self.packet({
+	      type: type,
+	      id: id,
+	      data: args
+	    });
+	  };
+	};
+	
+	/**
+	 * Called upon a server acknowlegement.
+	 *
+	 * @param {Object} packet
+	 * @api private
+	 */
+	
+	Socket.prototype.onack = function(packet){
+	  var ack = this.acks[packet.id];
+	  if ('function' == typeof ack) {
+	    debug('calling ack %s with %j', packet.id, packet.data);
+	    ack.apply(this, packet.data);
+	    delete this.acks[packet.id];
+	  } else {
+	    debug('bad ack %s', packet.id);
+	  }
+	};
+	
+	/**
+	 * Called upon server connect.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.onconnect = function(){
+	  this.connected = true;
+	  this.disconnected = false;
+	  this.emit('connect');
+	  this.emitBuffered();
+	};
+	
+	/**
+	 * Emit buffered events (received and emitted).
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.emitBuffered = function(){
+	  var i;
+	  for (i = 0; i < this.receiveBuffer.length; i++) {
+	    emit.apply(this, this.receiveBuffer[i]);
+	  }
+	  this.receiveBuffer = [];
+	
+	  for (i = 0; i < this.sendBuffer.length; i++) {
+	    this.packet(this.sendBuffer[i]);
+	  }
+	  this.sendBuffer = [];
+	};
+	
+	/**
+	 * Called upon server disconnect.
+	 *
+	 * @api private
+	 */
+	
+	Socket.prototype.ondisconnect = function(){
+	  debug('server disconnect (%s)', this.nsp);
+	  this.destroy();
+	  this.onclose('io server disconnect');
+	};
+	
+	/**
+	 * Called upon forced client/server side disconnections,
+	 * this method ensures the manager stops tracking us and
+	 * that reconnections don't get triggered for this.
+	 *
+	 * @api private.
+	 */
+	
+	Socket.prototype.destroy = function(){
+	  if (this.subs) {
+	    // clean subscriptions to avoid reconnections
+	    for (var i = 0; i < this.subs.length; i++) {
+	      this.subs[i].destroy();
+	    }
+	    this.subs = null;
+	  }
+	
+	  this.io.destroy(this);
+	};
+	
+	/**
+	 * Disconnects the socket manually.
+	 *
+	 * @return {Socket} self
+	 * @api public
+	 */
+	
+	Socket.prototype.close =
+	Socket.prototype.disconnect = function(){
+	  if (this.connected) {
+	    debug('performing disconnect (%s)', this.nsp);
+	    this.packet({ type: parser.DISCONNECT });
+	  }
+	
+	  // remove socket from pool
+	  this.destroy();
+	
+	  if (this.connected) {
+	    // fire events
+	    this.onclose('io client disconnect');
+	  }
+	  return this;
+	};
+	
+	/**
+	 * Sets the compress flag.
+	 *
+	 * @param {Boolean} if `true`, compresses the sending data
+	 * @return {Socket} self
+	 * @api public
+	 */
+	
+	Socket.prototype.compress = function(compress){
+	  this.flags = this.flags || {};
+	  this.flags.compress = compress;
+	  return this;
+	};
+
+
+/***/ },
+/* 118 */
+/***/ function(module, exports) {
+
+	
+	/**
+	 * Expose `Emitter`.
+	 */
+	
+	module.exports = Emitter;
+	
+	/**
+	 * Initialize a new `Emitter`.
+	 *
+	 * @api public
+	 */
+	
+	function Emitter(obj) {
+	  if (obj) return mixin(obj);
+	};
+	
+	/**
+	 * Mixin the emitter properties.
+	 *
+	 * @param {Object} obj
+	 * @return {Object}
+	 * @api private
+	 */
+	
+	function mixin(obj) {
+	  for (var key in Emitter.prototype) {
+	    obj[key] = Emitter.prototype[key];
+	  }
+	  return obj;
+	}
+	
+	/**
+	 * Listen on the given `event` with `fn`.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+	
+	Emitter.prototype.on =
+	Emitter.prototype.addEventListener = function(event, fn){
+	  this._callbacks = this._callbacks || {};
+	  (this._callbacks['$' + event] = this._callbacks['$' + event] || [])
+	    .push(fn);
+	  return this;
+	};
+	
+	/**
+	 * Adds an `event` listener that will be invoked a single
+	 * time then automatically removed.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+	
+	Emitter.prototype.once = function(event, fn){
+	  function on() {
+	    this.off(event, on);
+	    fn.apply(this, arguments);
+	  }
+	
+	  on.fn = fn;
+	  this.on(event, on);
+	  return this;
+	};
+	
+	/**
+	 * Remove the given callback for `event` or all
+	 * registered callbacks.
+	 *
+	 * @param {String} event
+	 * @param {Function} fn
+	 * @return {Emitter}
+	 * @api public
+	 */
+	
+	Emitter.prototype.off =
+	Emitter.prototype.removeListener =
+	Emitter.prototype.removeAllListeners =
+	Emitter.prototype.removeEventListener = function(event, fn){
+	  this._callbacks = this._callbacks || {};
+	
+	  // all
+	  if (0 == arguments.length) {
+	    this._callbacks = {};
+	    return this;
+	  }
+	
+	  // specific event
+	  var callbacks = this._callbacks['$' + event];
+	  if (!callbacks) return this;
+	
+	  // remove all handlers
+	  if (1 == arguments.length) {
+	    delete this._callbacks['$' + event];
+	    return this;
+	  }
+	
+	  // remove specific handler
+	  var cb;
+	  for (var i = 0; i < callbacks.length; i++) {
+	    cb = callbacks[i];
+	    if (cb === fn || cb.fn === fn) {
+	      callbacks.splice(i, 1);
+	      break;
+	    }
+	  }
+	  return this;
+	};
+	
+	/**
+	 * Emit `event` with the given args.
+	 *
+	 * @param {String} event
+	 * @param {Mixed} ...
+	 * @return {Emitter}
+	 */
+	
+	Emitter.prototype.emit = function(event){
+	  this._callbacks = this._callbacks || {};
+	  var args = [].slice.call(arguments, 1)
+	    , callbacks = this._callbacks['$' + event];
+	
+	  if (callbacks) {
+	    callbacks = callbacks.slice(0);
+	    for (var i = 0, len = callbacks.length; i < len; ++i) {
+	      callbacks[i].apply(this, args);
+	    }
+	  }
+	
+	  return this;
+	};
+	
+	/**
+	 * Return array of callbacks for `event`.
+	 *
+	 * @param {String} event
+	 * @return {Array}
+	 * @api public
+	 */
+	
+	Emitter.prototype.listeners = function(event){
+	  this._callbacks = this._callbacks || {};
+	  return this._callbacks['$' + event] || [];
+	};
+	
+	/**
+	 * Check if this emitter has `event` handlers.
+	 *
+	 * @param {String} event
+	 * @return {Boolean}
+	 * @api public
+	 */
+	
+	Emitter.prototype.hasListeners = function(event){
+	  return !! this.listeners(event).length;
+	};
+
+
+/***/ },
+/* 119 */
+/***/ function(module, exports) {
+
+	module.exports = toArray
+	
+	function toArray(list, index) {
+	    var array = []
+	
+	    index = index || 0
+	
+	    for (var i = index || 0; i < list.length; i++) {
+	        array[i - index] = list[i]
+	    }
+	
+	    return array
+	}
+
+
+/***/ },
+/* 120 */
+/***/ function(module, exports) {
+
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = on;
+	
+	/**
+	 * Helper for subscriptions.
+	 *
+	 * @param {Object|EventEmitter} obj with `Emitter` mixin or `EventEmitter`
+	 * @param {String} event name
+	 * @param {Function} callback
+	 * @api public
+	 */
+	
+	function on(obj, ev, fn) {
+	  obj.on(ev, fn);
+	  return {
+	    destroy: function(){
+	      obj.removeListener(ev, fn);
+	    }
+	  };
+	}
+
+
+/***/ },
+/* 121 */
+/***/ function(module, exports) {
+
+	/**
+	 * Slice reference.
+	 */
+	
+	var slice = [].slice;
+	
+	/**
+	 * Bind `obj` to `fn`.
+	 *
+	 * @param {Object} obj
+	 * @param {Function|String} fn or string
+	 * @return {Function}
+	 * @api public
+	 */
+	
+	module.exports = function(obj, fn){
+	  if ('string' == typeof fn) fn = obj[fn];
+	  if ('function' != typeof fn) throw new Error('bind() requires a function');
+	  var args = slice.call(arguments, 2);
+	  return function(){
+	    return fn.apply(obj, args.concat(slice.call(arguments)));
+	  }
+	};
+
+
+/***/ },
+/* 122 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {
+	/*
+	 * Module requirements.
+	 */
+	
+	var isArray = __webpack_require__(123);
+	
+	/**
+	 * Module exports.
+	 */
+	
+	module.exports = hasBinary;
+	
+	/**
+	 * Checks for binary data.
+	 *
+	 * Right now only Buffer and ArrayBuffer are supported..
+	 *
+	 * @param {Object} anything
+	 * @api public
+	 */
+	
+	function hasBinary(data) {
+	
+	  function _hasBinary(obj) {
+	    if (!obj) return false;
+	
+	    if ( (global.Buffer && global.Buffer.isBuffer && global.Buffer.isBuffer(obj)) ||
+	         (global.ArrayBuffer && obj instanceof ArrayBuffer) ||
+	         (global.Blob && obj instanceof Blob) ||
+	         (global.File && obj instanceof File)
+	        ) {
+	      return true;
+	    }
+	
+	    if (isArray(obj)) {
+	      for (var i = 0; i < obj.length; i++) {
+	          if (_hasBinary(obj[i])) {
+	              return true;
+	          }
+	      }
+	    } else if (obj && 'object' == typeof obj) {
+	      // see: https://github.com/Automattic/has-binary/pull/4
+	      if (obj.toJSON && 'function' == typeof obj.toJSON) {
+	        obj = obj.toJSON();
+	      }
+	
+	      for (var key in obj) {
+	        if (Object.prototype.hasOwnProperty.call(obj, key) && _hasBinary(obj[key])) {
+	          return true;
+	        }
+	      }
+	    }
+	
+	    return false;
+	  }
+	
+	  return _hasBinary(data);
+	}
+	
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 123 */
+/***/ function(module, exports) {
+
+	module.exports = Array.isArray || function (arr) {
+	  return Object.prototype.toString.call(arr) == '[object Array]';
+	};
+
+
+/***/ },
+/* 124 */
+/***/ function(module, exports) {
+
+	
+	/**
+	 * Expose `Backoff`.
+	 */
+	
+	module.exports = Backoff;
+	
+	/**
+	 * Initialize backoff timer with `opts`.
+	 *
+	 * - `min` initial timeout in milliseconds [100]
+	 * - `max` max timeout [10000]
+	 * - `jitter` [0]
+	 * - `factor` [2]
+	 *
+	 * @param {Object} opts
+	 * @api public
+	 */
+	
+	function Backoff(opts) {
+	  opts = opts || {};
+	  this.ms = opts.min || 100;
+	  this.max = opts.max || 10000;
+	  this.factor = opts.factor || 2;
+	  this.jitter = opts.jitter > 0 && opts.jitter <= 1 ? opts.jitter : 0;
+	  this.attempts = 0;
+	}
+	
+	/**
+	 * Return the backoff duration.
+	 *
+	 * @return {Number}
+	 * @api public
+	 */
+	
+	Backoff.prototype.duration = function(){
+	  var ms = this.ms * Math.pow(this.factor, this.attempts++);
+	  if (this.jitter) {
+	    var rand =  Math.random();
+	    var deviation = Math.floor(rand * this.jitter * ms);
+	    ms = (Math.floor(rand * 10) & 1) == 0  ? ms - deviation : ms + deviation;
+	  }
+	  return Math.min(ms, this.max) | 0;
+	};
+	
+	/**
+	 * Reset the number of attempts.
+	 *
+	 * @api public
+	 */
+	
+	Backoff.prototype.reset = function(){
+	  this.attempts = 0;
+	};
+	
+	/**
+	 * Set the minimum duration
+	 *
+	 * @api public
+	 */
+	
+	Backoff.prototype.setMin = function(min){
+	  this.ms = min;
+	};
+	
+	/**
+	 * Set the maximum duration
+	 *
+	 * @api public
+	 */
+	
+	Backoff.prototype.setMax = function(max){
+	  this.max = max;
+	};
+	
+	/**
+	 * Set the jitter
+	 *
+	 * @api public
+	 */
+	
+	Backoff.prototype.setJitter = function(jitter){
+	  this.jitter = jitter;
+	};
+	
+
+
+/***/ },
+/* 125 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var LoginView = __webpack_require__(126);
+	var SignView = __webpack_require__(136);
+	var RecordView = __webpack_require__(141);
+	var ChatView = __webpack_require__(168);
+	var FriendView = __webpack_require__(187);
+	
+	module.exports = function (router) {
+	    router.map({
+	        '/index': {
+	            component: RecordView
+	        },
+	        '/chat/:relate': {
+	            name: 'chat',
+	            component: ChatView
+	        },
+	        '/login': {
+	            component: LoginView
+	        },
+	        '/sign': {
+	            component: SignView
+	        },
+	        '/friend': {
+	            component: FriendView
+	        }
+	    });
+	};
+
+/***/ },
+/* 126 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(127)
+	__vue_script__ = __webpack_require__(129)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/views/login.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(135)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/views/login.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 127 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(128);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./login.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./login.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 128 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".form {\n  padding: 50px 20px; }\n  .form .btm {\n    position: fixed;\n    bottom: 20px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n    transform: translateX(-50%); }\n    .form .btm a {\n      color: #D6AF7D;\n      padding: 0 5px; }\n\n.field-row {\n  margin: 25px 0; }\n  .field-row:first-child {\n    margin-top: 0; }\n  .field-row .field-title {\n    margin-bottom: 6px;\n    color: #666; }\n  .field-row .field-value input {\n    width: 100%;\n    padding: 4px 6px;\n    box-sizing: border-box;\n    outline: none;\n    border: 1px solid #eee;\n    height: 28px;\n    border-radius: 2px;\n    -webkit-appearance: none; }\n", "", {"version":3,"sources":["/./src/views/login.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB,EAAE;EACrB;IACE,gBAAgB;IAChB,aAAa;IACb,UAAU;IACV,oCAAoC;IAIpC,4BAA4B,EAAE;IAC9B;MACE,eAAe;MACf,eAAe,EAAE;;AAEvB;EACE,eAAe,EAAE;EACjB;IACE,cAAc,EAAE;EAClB;IACE,mBAAmB;IACnB,YAAY,EAAE;EAChB;IACE,YAAY;IACZ,iBAAiB;IACjB,uBAAuB;IACvB,cAAc;IACd,uBAAuB;IACvB,aAAa;IACb,mBAAmB;IACnB,yBAAyB,EAAE","file":"login.vue","sourcesContent":[".form {\n  padding: 50px 20px; }\n  .form .btm {\n    position: fixed;\n    bottom: 20px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n    -moz-transform: translateX(-50%);\n    -ms-transform: translateX(-50%);\n    -o-transform: translateX(-50%);\n    transform: translateX(-50%); }\n    .form .btm a {\n      color: #D6AF7D;\n      padding: 0 5px; }\n\n.field-row {\n  margin: 25px 0; }\n  .field-row:first-child {\n    margin-top: 0; }\n  .field-row .field-title {\n    margin-bottom: 6px;\n    color: #666; }\n  .field-row .field-value input {\n    width: 100%;\n    padding: 4px 6px;\n    box-sizing: border-box;\n    outline: none;\n    border: 1px solid #eee;\n    height: 28px;\n    border-radius: 2px;\n    -webkit-appearance: none; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 129 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var auth = __webpack_require__(12);
+	var MAlert = __webpack_require__(130);
+	
+	module.exports = {
+	    name: 'LoginView',
+	    components: {
+	        'm-alert': MAlert
+	    },
+	    data: function data() {
+	        return {
+	            username: '',
+	            password: '',
+	
+	            alert: {
+	                content: '',
+	                show: false,
+	                openFn: function openFn(txt, autoHide) {
+	                    this.content = txt;
+	                    this.show = true;
+	                    if (autoHide) {
+	                        this.hideFn();
+	                    }
+	                },
+	                hideFn: function hideFn(duration) {
+	                    var _this = this;
+	
+	                    clearTimeout(this.timer);
+	                    this.timer = setTimeout(function () {
+	                        _this.show = false;
+	                    }, duration || 1500);
+	                }
+	            }
+	        };
+	    },
+	    methods: {
+	        onClickSubmit: function onClickSubmit() {
+	            if (!this.username || !this.password) {
+	                return;
+	            }
+	
+	            this.alert.openFn('请稍等...');
+	
+	            var cb = function cb() {
+	                var _this2 = this;
+	
+	                var promise = auth.login(this.username, this.password);
+	
+	                promise.then(function (resp) {
+	                    _this2.alert.hideFn();
+	                    _this2.$route.router.go('./index');
+	                }).catch(function (resp) {
+	                    _this2.alert.openFn(resp.message, true);
+	                });
+	            };
+	
+	            setTimeout(cb.bind(this), 300);
+	        }
+	    }
+	};
+
+/***/ },
+/* 130 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(131)
+	__vue_script__ = __webpack_require__(133)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/components/alert.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(134)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/components/alert.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 131 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(132);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./alert.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./alert.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 132 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".alert {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: transparent;\n  text-align: center; }\n  .alert .inner {\n    text-align: center;\n    background-color: rgba(49, 49, 49, 0.8);\n    color: #fff;\n    border-radius: 6px;\n    font-size: 14px;\n    padding: 18px 25px;\n    word-break: break-all;\n    display: inline-block;\n    margin: 0 auto;\n    margin-top: 65%; }\n", "", {"version":3,"sources":["/./src/components/alert.vue"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,OAAO;EACP,QAAQ;EACR,UAAU;EACV,SAAS;EACT,YAAY;EACZ,8BAA8B;EAC9B,mBAAmB,EAAE;EACrB;IACE,mBAAmB;IACnB,wCAAwC;IACxC,YAAY;IACZ,mBAAmB;IACnB,gBAAgB;IAChB,mBAAmB;IACnB,sBAAsB;IACtB,sBAAsB;IACtB,eAAe;IACf,gBAAgB,EAAE","file":"alert.vue","sourcesContent":[".alert {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: transparent;\n  text-align: center; }\n  .alert .inner {\n    text-align: center;\n    background-color: rgba(49, 49, 49, 0.8);\n    color: #fff;\n    border-radius: 6px;\n    font-size: 14px;\n    padding: 18px 25px;\n    word-break: break-all;\n    display: inline-block;\n    margin: 0 auto;\n    margin-top: 65%; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 133 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	    replace: true,
+	    props: ['content', 'show']
+	};
+
+/***/ },
+/* 134 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"alert\" transition=\"fade\" v-show=\"show\">\n    <div class=\"inner\">\n        {{content}}\n    </div>\n</div>\n";
+
+/***/ },
+/* 135 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"form\">\n    <form action=\"\">\n        <div class=\"field-row\">\n            <div class=\"field-title\">\n                <label for=\"\">用户名</label>\n            </div>\n            <div class=\"field-value\">\n                <input type=\"text\" name=\"username\" v-model=\"username\">\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <div class=\"field-title\">\n                <label for=\"\">密码</label>\n            </div>\n            <div class=\"field-value\">\n                <input type=\"password\" name=\"password\" v-model=\"password\">\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <input type=\"submit\" class=\"btn btn-block btn-primary\" value=\"登陆\" @click.prevent=\"onClickSubmit\">\n        </div>\n    </form>\n\n    <div class=\"btm\">\n        <a v-link=\"'sign'\">注册</a>\n    </div>\n\n    <m-alert :content=\"alert.content\" :show=\"alert.show\"></m-alert>\n</div>\n";
+
+/***/ },
+/* 136 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(137)
+	__vue_script__ = __webpack_require__(139)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/views/sign.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(140)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/views/sign.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 137 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(138);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sign.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sign.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 138 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".form {\n  padding: 50px 20px; }\n  .form .btm {\n    position: fixed;\n    bottom: 20px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n    transform: translateX(-50%); }\n    .form .btm a {\n      color: #D6AF7D;\n      padding: 0 5px; }\n\n.field-row {\n  margin: 25px 0; }\n  .field-row:first-child {\n    margin-top: 0; }\n  .field-row .field-title {\n    margin-bottom: 6px;\n    color: #666; }\n  .field-row .field-value input {\n    width: 100%;\n    padding: 4px 6px;\n    box-sizing: border-box;\n    outline: none;\n    border: 1px solid #eee;\n    height: 28px;\n    border-radius: 2px;\n    -webkit-appearance: none; }\n\n.avatar-upload {\n  background-color: #bc3d1e;\n  border-radius: 50%;\n  height: 90px;\n  width: 90px;\n  position: relative;\n  display: block;\n  margin: auto;\n  overflow: hidden; }\n  .avatar-upload input[type=file] {\n    position: absolute;\n    height: 100%;\n    width: 100%;\n    left: 0;\n    top: 0;\n    z-index: 2;\n    opacity: 0; }\n  .avatar-upload img {\n    height: 100%;\n    width: 100%;\n    position: relative;\n    z-index: 1;\n    border-radius: 50%; }\n", "", {"version":3,"sources":["/./src/views/sign.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB,EAAE;EACrB;IACE,gBAAgB;IAChB,aAAa;IACb,UAAU;IACV,oCAAoC;IAIpC,4BAA4B,EAAE;IAC9B;MACE,eAAe;MACf,eAAe,EAAE;;AAEvB;EACE,eAAe,EAAE;EACjB;IACE,cAAc,EAAE;EAClB;IACE,mBAAmB;IACnB,YAAY,EAAE;EAChB;IACE,YAAY;IACZ,iBAAiB;IACjB,uBAAuB;IACvB,cAAc;IACd,uBAAuB;IACvB,aAAa;IACb,mBAAmB;IACnB,yBAAyB,EAAE;;AAE/B;EACE,0BAA0B;EAC1B,mBAAmB;EACnB,aAAa;EACb,YAAY;EACZ,mBAAmB;EACnB,eAAe;EACf,aAAa;EACb,iBAAiB,EAAE;EACnB;IACE,mBAAmB;IACnB,aAAa;IACb,YAAY;IACZ,QAAQ;IACR,OAAO;IACP,WAAW;IACX,WAAW,EAAE;EACf;IACE,aAAa;IACb,YAAY;IACZ,mBAAmB;IACnB,WAAW;IACX,mBAAmB,EAAE","file":"sign.vue","sourcesContent":[".form {\n  padding: 50px 20px; }\n  .form .btm {\n    position: fixed;\n    bottom: 20px;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n    -moz-transform: translateX(-50%);\n    -ms-transform: translateX(-50%);\n    -o-transform: translateX(-50%);\n    transform: translateX(-50%); }\n    .form .btm a {\n      color: #D6AF7D;\n      padding: 0 5px; }\n\n.field-row {\n  margin: 25px 0; }\n  .field-row:first-child {\n    margin-top: 0; }\n  .field-row .field-title {\n    margin-bottom: 6px;\n    color: #666; }\n  .field-row .field-value input {\n    width: 100%;\n    padding: 4px 6px;\n    box-sizing: border-box;\n    outline: none;\n    border: 1px solid #eee;\n    height: 28px;\n    border-radius: 2px;\n    -webkit-appearance: none; }\n\n.avatar-upload {\n  background-color: #bc3d1e;\n  border-radius: 50%;\n  height: 90px;\n  width: 90px;\n  position: relative;\n  display: block;\n  margin: auto;\n  overflow: hidden; }\n  .avatar-upload input[type=file] {\n    position: absolute;\n    height: 100%;\n    width: 100%;\n    left: 0;\n    top: 0;\n    z-index: 2;\n    opacity: 0; }\n  .avatar-upload img {\n    height: 100%;\n    width: 100%;\n    position: relative;\n    z-index: 1;\n    border-radius: 50%; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 139 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var auth = __webpack_require__(12);
+	var MAlert = __webpack_require__(130);
+	
+	module.exports = {
+	    name: 'SignView',
+	    components: {
+	        'm-alert': MAlert
+	    },
+	    data: function data() {
+	        return {
+	            username: '',
+	            password: '',
+	            avatar: null,
+	            avatarDataUrl: null,
+	
+	            alert: {
+	                content: '',
+	                show: false,
+	                openFn: function openFn(txt, autoHide) {
+	                    this.content = txt;
+	                    this.show = true;
+	                    if (autoHide) {
+	                        this.hideFn();
+	                    }
+	                },
+	                hideFn: function hideFn(duration) {
+	                    var _this = this;
+	
+	                    clearTimeout(this.timer);
+	                    this.timer = setTimeout(function () {
+	                        _this.show = false;
+	                    }, duration || 1500);
+	                }
+	            }
+	        };
+	    },
+	    methods: {
+	        onChangeFileInput: function onChangeFileInput(e) {
+	            var files = e.target.files;
+	            if (!files || files.length < 1) return;
+	
+	            var self = this;
+	            var file = files[0];
+	            var filefilers = /^(image\/gif|image\/jpeg|image\/png)$/i;
+	            var fileReader = new FileReader();
+	            fileReader.onload = function (fe) {
+	                self.avatarDataUrl = fe.target.result;
+	            };
+	            if (!filefilers.test(file.type)) {
+	                alert('只支持.gif, .jpeg, .png');
+	                return;
+	            }
+	            fileReader.readAsDataURL(file);
+	            this.avatar = file;
+	        },
+	        onClickSubmit: function onClickSubmit() {
+	            if (!this.username || !this.password) {
+	                return;
+	            }
+	
+	            this.alert.openFn('请稍等...');
+	
+	            var cb = function cb() {
+	                var _this2 = this;
+	
+	                var promise = auth.sign(this.username, this.password, this.avatar);
+	
+	                promise.then(function (resp) {
+	                    if (resp.code != 0) {
+	                        _this2.alert.openFn(resp.message, true);
+	                    } else {
+	                        _this2.alert.hideFn();
+	                        _this2.$route.router.go('./index');
+	                    }
+	                });
+	            };
+	
+	            setTimeout(cb.bind(this), 300);
+	        }
+	    }
+	};
+
+/***/ },
+/* 140 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"form\">\n    <form action=\"\">\n        <div class=\"field-row\">\n            <div class=\"field-title hide\">\n                <label for=\"\">头像</label>\n            </div>\n            <div class=\"field-value\">\n                <span class=\"avatar-upload\">\n                    <input type=\"file\" name=\"\" id=\"\" @change=\"onChangeFileInput\">\n                    <!-- \n                        src=\"{{ avatarDataUrl }}\" // 如果找不到会报错\n                        :src=\"avatarDataUrl\"  // 如果是用指令的话就不用再使用插值写法了\n                     -->\n                    <img v-if=\"avatarDataUrl\" :src=\"avatarDataUrl\" alt=\"\">\n                </span>\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <div class=\"field-title\">\n                <label for=\"\">用户名</label>\n            </div>\n            <div class=\"field-value\">\n                <input type=\"text\" name=\"username\" v-model=\"username\">\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <div class=\"field-title\">\n                <label for=\"\">密码</label>\n            </div>\n            <div class=\"field-value\">\n                <input type=\"password\" name=\"password\" v-model=\"password\">\n            </div>\n        </div>\n        <div class=\"field-row\">\n            <input type=\"submit\" class=\"btn btn-block btn-primary\" value=\"注册\" @click.prevent=\"onClickSubmit\">\n        </div>\n    </form>\n\n    <div class=\"btm\">\n        <a v-link=\"'login'\">登录</a>\n    </div>\n\n    <m-alert :content=\"alert.content\" :show=\"alert.show\"></m-alert>\n</div>\n";
+
+/***/ },
+/* 141 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__vue_script__ = __webpack_require__(142)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/views/record.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(167)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/views/record.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 142 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var auth = __webpack_require__(12);
+	var socket = __webpack_require__(74).socket;
+	var recordStore = __webpack_require__(143);
+	var userStore = __webpack_require__(145);
+	var HeaderView = __webpack_require__(151);
+	var RecordItemView = __webpack_require__(162);
+	
+	module.exports = {
+	    name: 'RecordView',
+	    components: {
+	        'm-header': HeaderView,
+	        'm-item': RecordItemView
+	    },
+	    data: function data() {
+	        return {
+	            records: []
+	        };
+	    },
+	    route: {
+	        canActivate: function canActivate(transition) {
+	            if (auth.user.authenticated) {
+	                return true;
+	            } else {
+	                    transition.redirect('./login');
+	                    return false;
+	                }
+	        },
+	
+	        data: function data(transition) {
+	            return {
+	                records: recordStore.fetch(auth.user.userId)
+	            };
+	        }
+	    },
+	    methods: {
+	        onCreateRecord: function onCreateRecord(resp) {
+	            var _this = this;
+	
+	            var attr = resp.data.attr;
+	            var p = recordStore.fetch(attr.receiver, attr.sender);
+	            p.then(function (records) {
+	                var record = records[0];
+	
+	                record.unread = true;
+	                record && _this.records.push(record);
+	            });
+	        },
+	        onReceiveMessage: function onReceiveMessage(resp) {
+	            this.records.forEach(function (item) {
+	                if (item.messageId === resp.data.messageId) {
+	                    item.unread = true;
+	                    item.status = 1;
+	                    item.recent = resp.data.attr;
+	                }
+	            });
+	        },
+	        onDeleteRecord: function onDeleteRecord(author, contacter, index) {
+	            var self = this;
+	            var p = userStore.deleteRecord(author, contacter);
+	            p.then(function (isOk) {
+	                if (isOk) {
+	                    var record = self.records[index];
+	
+	                    record.status = 0;
+	                    self.records.$set(index, record);
+	                }
+	            });
+	        }
+	    },
+	
+	    attached: function attached() {
+	        socket.on('message', this.onReceiveMessage.bind(this));
+	        socket.on('record', this.onCreateRecord.bind(this));
+	    },
+	    detached: function detached() {
+	        socket.removeListener('message');
+	        socket.removeListener('record');
+	    }
+	};
+
+/***/ },
+/* 143 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _promise = __webpack_require__(13);
+	
+	var _promise2 = _interopRequireDefault(_promise);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var $ = __webpack_require__(68);
+	var _ = __webpack_require__(144);
+	
+	// var LS = localStorage;
+	
+	// const ls_key_records = 'records';
+	// const ls_key_messages = 'messages';
+	// var records = JSON.parse(LS.getItem(ls_key_records)) || [];
+	// var messages = JSON.parse(LS.getItem(ls_key_messages)) || [];
+	
+	var recordStore = {};
+	
+	recordStore.getMessageList = function (author, contacter) {
+	    var query = {
+	        author: author,
+	        contacter: contacter
+	    };
+	
+	    var promise = new _promise2.default(function (resolve, reject) {
+	        $.getJSON('/messages', query, function (resp) {
+	            resolve(resp.data.messages);
+	        });
+	    });
+	
+	    return promise;
+	};
+	
+	/**
+	 * 获取用户的所有聊天记录列表／获取用户与特定联系人的聊天记录信息
+	 * @param  {string} author 用户id
+	 * @param  {string} relate 联系人id
+	 * @return {Promise}
+	 */
+	recordStore.fetch = function (author, relate) {
+	    var query = { userId: author };
+	    relate && (query.relate = relate);
+	    var promise = new _promise2.default(function (resolve, reject) {
+	        $.get('/records', query, function (resp) {
+	            resolve(resp.data.records);
+	        });
+	    });
+	    return promise;
+	};
+	
+	module.exports = recordStore;
+
+/***/ },
+/* 144 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Underscore.js 1.8.3
+	//     http://underscorejs.org
+	//     (c) 2009-2015 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+	//     Underscore may be freely distributed under the MIT license.
+	
+	(function() {
+	
+	  // Baseline setup
+	  // --------------
+	
+	  // Establish the root object, `window` in the browser, or `exports` on the server.
+	  var root = this;
+	
+	  // Save the previous value of the `_` variable.
+	  var previousUnderscore = root._;
+	
+	  // Save bytes in the minified (but not gzipped) version:
+	  var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
+	
+	  // Create quick reference variables for speed access to core prototypes.
+	  var
+	    push             = ArrayProto.push,
+	    slice            = ArrayProto.slice,
+	    toString         = ObjProto.toString,
+	    hasOwnProperty   = ObjProto.hasOwnProperty;
+	
+	  // All **ECMAScript 5** native function implementations that we hope to use
+	  // are declared here.
+	  var
+	    nativeIsArray      = Array.isArray,
+	    nativeKeys         = Object.keys,
+	    nativeBind         = FuncProto.bind,
+	    nativeCreate       = Object.create;
+	
+	  // Naked function reference for surrogate-prototype-swapping.
+	  var Ctor = function(){};
+	
+	  // Create a safe reference to the Underscore object for use below.
+	  var _ = function(obj) {
+	    if (obj instanceof _) return obj;
+	    if (!(this instanceof _)) return new _(obj);
+	    this._wrapped = obj;
+	  };
+	
+	  // Export the Underscore object for **Node.js**, with
+	  // backwards-compatibility for the old `require()` API. If we're in
+	  // the browser, add `_` as a global object.
+	  if (true) {
+	    if (typeof module !== 'undefined' && module.exports) {
+	      exports = module.exports = _;
+	    }
+	    exports._ = _;
+	  } else {
+	    root._ = _;
+	  }
+	
+	  // Current version.
+	  _.VERSION = '1.8.3';
+	
+	  // Internal function that returns an efficient (for current engines) version
+	  // of the passed-in callback, to be repeatedly applied in other Underscore
+	  // functions.
+	  var optimizeCb = function(func, context, argCount) {
+	    if (context === void 0) return func;
+	    switch (argCount == null ? 3 : argCount) {
+	      case 1: return function(value) {
+	        return func.call(context, value);
+	      };
+	      case 2: return function(value, other) {
+	        return func.call(context, value, other);
+	      };
+	      case 3: return function(value, index, collection) {
+	        return func.call(context, value, index, collection);
+	      };
+	      case 4: return function(accumulator, value, index, collection) {
+	        return func.call(context, accumulator, value, index, collection);
+	      };
+	    }
+	    return function() {
+	      return func.apply(context, arguments);
+	    };
+	  };
+	
+	  // A mostly-internal function to generate callbacks that can be applied
+	  // to each element in a collection, returning the desired result — either
+	  // identity, an arbitrary callback, a property matcher, or a property accessor.
+	  var cb = function(value, context, argCount) {
+	    if (value == null) return _.identity;
+	    if (_.isFunction(value)) return optimizeCb(value, context, argCount);
+	    if (_.isObject(value)) return _.matcher(value);
+	    return _.property(value);
+	  };
+	  _.iteratee = function(value, context) {
+	    return cb(value, context, Infinity);
+	  };
+	
+	  // An internal function for creating assigner functions.
+	  var createAssigner = function(keysFunc, undefinedOnly) {
+	    return function(obj) {
+	      var length = arguments.length;
+	      if (length < 2 || obj == null) return obj;
+	      for (var index = 1; index < length; index++) {
+	        var source = arguments[index],
+	            keys = keysFunc(source),
+	            l = keys.length;
+	        for (var i = 0; i < l; i++) {
+	          var key = keys[i];
+	          if (!undefinedOnly || obj[key] === void 0) obj[key] = source[key];
+	        }
+	      }
+	      return obj;
+	    };
+	  };
+	
+	  // An internal function for creating a new object that inherits from another.
+	  var baseCreate = function(prototype) {
+	    if (!_.isObject(prototype)) return {};
+	    if (nativeCreate) return nativeCreate(prototype);
+	    Ctor.prototype = prototype;
+	    var result = new Ctor;
+	    Ctor.prototype = null;
+	    return result;
+	  };
+	
+	  var property = function(key) {
+	    return function(obj) {
+	      return obj == null ? void 0 : obj[key];
+	    };
+	  };
+	
+	  // Helper for collection methods to determine whether a collection
+	  // should be iterated as an array or as an object
+	  // Related: http://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength
+	  // Avoids a very nasty iOS 8 JIT bug on ARM-64. #2094
+	  var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
+	  var getLength = property('length');
+	  var isArrayLike = function(collection) {
+	    var length = getLength(collection);
+	    return typeof length == 'number' && length >= 0 && length <= MAX_ARRAY_INDEX;
+	  };
+	
+	  // Collection Functions
+	  // --------------------
+	
+	  // The cornerstone, an `each` implementation, aka `forEach`.
+	  // Handles raw objects in addition to array-likes. Treats all
+	  // sparse array-likes as if they were dense.
+	  _.each = _.forEach = function(obj, iteratee, context) {
+	    iteratee = optimizeCb(iteratee, context);
+	    var i, length;
+	    if (isArrayLike(obj)) {
+	      for (i = 0, length = obj.length; i < length; i++) {
+	        iteratee(obj[i], i, obj);
+	      }
+	    } else {
+	      var keys = _.keys(obj);
+	      for (i = 0, length = keys.length; i < length; i++) {
+	        iteratee(obj[keys[i]], keys[i], obj);
+	      }
+	    }
+	    return obj;
+	  };
+	
+	  // Return the results of applying the iteratee to each element.
+	  _.map = _.collect = function(obj, iteratee, context) {
+	    iteratee = cb(iteratee, context);
+	    var keys = !isArrayLike(obj) && _.keys(obj),
+	        length = (keys || obj).length,
+	        results = Array(length);
+	    for (var index = 0; index < length; index++) {
+	      var currentKey = keys ? keys[index] : index;
+	      results[index] = iteratee(obj[currentKey], currentKey, obj);
+	    }
+	    return results;
+	  };
+	
+	  // Create a reducing function iterating left or right.
+	  function createReduce(dir) {
+	    // Optimized iterator function as using arguments.length
+	    // in the main function will deoptimize the, see #1991.
+	    function iterator(obj, iteratee, memo, keys, index, length) {
+	      for (; index >= 0 && index < length; index += dir) {
+	        var currentKey = keys ? keys[index] : index;
+	        memo = iteratee(memo, obj[currentKey], currentKey, obj);
+	      }
+	      return memo;
+	    }
+	
+	    return function(obj, iteratee, memo, context) {
+	      iteratee = optimizeCb(iteratee, context, 4);
+	      var keys = !isArrayLike(obj) && _.keys(obj),
+	          length = (keys || obj).length,
+	          index = dir > 0 ? 0 : length - 1;
+	      // Determine the initial value if none is provided.
+	      if (arguments.length < 3) {
+	        memo = obj[keys ? keys[index] : index];
+	        index += dir;
+	      }
+	      return iterator(obj, iteratee, memo, keys, index, length);
+	    };
+	  }
+	
+	  // **Reduce** builds up a single result from a list of values, aka `inject`,
+	  // or `foldl`.
+	  _.reduce = _.foldl = _.inject = createReduce(1);
+	
+	  // The right-associative version of reduce, also known as `foldr`.
+	  _.reduceRight = _.foldr = createReduce(-1);
+	
+	  // Return the first value which passes a truth test. Aliased as `detect`.
+	  _.find = _.detect = function(obj, predicate, context) {
+	    var key;
+	    if (isArrayLike(obj)) {
+	      key = _.findIndex(obj, predicate, context);
+	    } else {
+	      key = _.findKey(obj, predicate, context);
+	    }
+	    if (key !== void 0 && key !== -1) return obj[key];
+	  };
+	
+	  // Return all the elements that pass a truth test.
+	  // Aliased as `select`.
+	  _.filter = _.select = function(obj, predicate, context) {
+	    var results = [];
+	    predicate = cb(predicate, context);
+	    _.each(obj, function(value, index, list) {
+	      if (predicate(value, index, list)) results.push(value);
+	    });
+	    return results;
+	  };
+	
+	  // Return all the elements for which a truth test fails.
+	  _.reject = function(obj, predicate, context) {
+	    return _.filter(obj, _.negate(cb(predicate)), context);
+	  };
+	
+	  // Determine whether all of the elements match a truth test.
+	  // Aliased as `all`.
+	  _.every = _.all = function(obj, predicate, context) {
+	    predicate = cb(predicate, context);
+	    var keys = !isArrayLike(obj) && _.keys(obj),
+	        length = (keys || obj).length;
+	    for (var index = 0; index < length; index++) {
+	      var currentKey = keys ? keys[index] : index;
+	      if (!predicate(obj[currentKey], currentKey, obj)) return false;
+	    }
+	    return true;
+	  };
+	
+	  // Determine if at least one element in the object matches a truth test.
+	  // Aliased as `any`.
+	  _.some = _.any = function(obj, predicate, context) {
+	    predicate = cb(predicate, context);
+	    var keys = !isArrayLike(obj) && _.keys(obj),
+	        length = (keys || obj).length;
+	    for (var index = 0; index < length; index++) {
+	      var currentKey = keys ? keys[index] : index;
+	      if (predicate(obj[currentKey], currentKey, obj)) return true;
+	    }
+	    return false;
+	  };
+	
+	  // Determine if the array or object contains a given item (using `===`).
+	  // Aliased as `includes` and `include`.
+	  _.contains = _.includes = _.include = function(obj, item, fromIndex, guard) {
+	    if (!isArrayLike(obj)) obj = _.values(obj);
+	    if (typeof fromIndex != 'number' || guard) fromIndex = 0;
+	    return _.indexOf(obj, item, fromIndex) >= 0;
+	  };
+	
+	  // Invoke a method (with arguments) on every item in a collection.
+	  _.invoke = function(obj, method) {
+	    var args = slice.call(arguments, 2);
+	    var isFunc = _.isFunction(method);
+	    return _.map(obj, function(value) {
+	      var func = isFunc ? method : value[method];
+	      return func == null ? func : func.apply(value, args);
+	    });
+	  };
+	
+	  // Convenience version of a common use case of `map`: fetching a property.
+	  _.pluck = function(obj, key) {
+	    return _.map(obj, _.property(key));
+	  };
+	
+	  // Convenience version of a common use case of `filter`: selecting only objects
+	  // containing specific `key:value` pairs.
+	  _.where = function(obj, attrs) {
+	    return _.filter(obj, _.matcher(attrs));
+	  };
+	
+	  // Convenience version of a common use case of `find`: getting the first object
+	  // containing specific `key:value` pairs.
+	  _.findWhere = function(obj, attrs) {
+	    return _.find(obj, _.matcher(attrs));
+	  };
+	
+	  // Return the maximum element (or element-based computation).
+	  _.max = function(obj, iteratee, context) {
+	    var result = -Infinity, lastComputed = -Infinity,
+	        value, computed;
+	    if (iteratee == null && obj != null) {
+	      obj = isArrayLike(obj) ? obj : _.values(obj);
+	      for (var i = 0, length = obj.length; i < length; i++) {
+	        value = obj[i];
+	        if (value > result) {
+	          result = value;
+	        }
+	      }
+	    } else {
+	      iteratee = cb(iteratee, context);
+	      _.each(obj, function(value, index, list) {
+	        computed = iteratee(value, index, list);
+	        if (computed > lastComputed || computed === -Infinity && result === -Infinity) {
+	          result = value;
+	          lastComputed = computed;
+	        }
+	      });
+	    }
+	    return result;
+	  };
+	
+	  // Return the minimum element (or element-based computation).
+	  _.min = function(obj, iteratee, context) {
+	    var result = Infinity, lastComputed = Infinity,
+	        value, computed;
+	    if (iteratee == null && obj != null) {
+	      obj = isArrayLike(obj) ? obj : _.values(obj);
+	      for (var i = 0, length = obj.length; i < length; i++) {
+	        value = obj[i];
+	        if (value < result) {
+	          result = value;
+	        }
+	      }
+	    } else {
+	      iteratee = cb(iteratee, context);
+	      _.each(obj, function(value, index, list) {
+	        computed = iteratee(value, index, list);
+	        if (computed < lastComputed || computed === Infinity && result === Infinity) {
+	          result = value;
+	          lastComputed = computed;
+	        }
+	      });
+	    }
+	    return result;
+	  };
+	
+	  // Shuffle a collection, using the modern version of the
+	  // [Fisher-Yates shuffle](http://en.wikipedia.org/wiki/Fisher–Yates_shuffle).
+	  _.shuffle = function(obj) {
+	    var set = isArrayLike(obj) ? obj : _.values(obj);
+	    var length = set.length;
+	    var shuffled = Array(length);
+	    for (var index = 0, rand; index < length; index++) {
+	      rand = _.random(0, index);
+	      if (rand !== index) shuffled[index] = shuffled[rand];
+	      shuffled[rand] = set[index];
+	    }
+	    return shuffled;
+	  };
+	
+	  // Sample **n** random values from a collection.
+	  // If **n** is not specified, returns a single random element.
+	  // The internal `guard` argument allows it to work with `map`.
+	  _.sample = function(obj, n, guard) {
+	    if (n == null || guard) {
+	      if (!isArrayLike(obj)) obj = _.values(obj);
+	      return obj[_.random(obj.length - 1)];
+	    }
+	    return _.shuffle(obj).slice(0, Math.max(0, n));
+	  };
+	
+	  // Sort the object's values by a criterion produced by an iteratee.
+	  _.sortBy = function(obj, iteratee, context) {
+	    iteratee = cb(iteratee, context);
+	    return _.pluck(_.map(obj, function(value, index, list) {
+	      return {
+	        value: value,
+	        index: index,
+	        criteria: iteratee(value, index, list)
+	      };
+	    }).sort(function(left, right) {
+	      var a = left.criteria;
+	      var b = right.criteria;
+	      if (a !== b) {
+	        if (a > b || a === void 0) return 1;
+	        if (a < b || b === void 0) return -1;
+	      }
+	      return left.index - right.index;
+	    }), 'value');
+	  };
+	
+	  // An internal function used for aggregate "group by" operations.
+	  var group = function(behavior) {
+	    return function(obj, iteratee, context) {
+	      var result = {};
+	      iteratee = cb(iteratee, context);
+	      _.each(obj, function(value, index) {
+	        var key = iteratee(value, index, obj);
+	        behavior(result, value, key);
+	      });
+	      return result;
+	    };
+	  };
+	
+	  // Groups the object's values by a criterion. Pass either a string attribute
+	  // to group by, or a function that returns the criterion.
+	  _.groupBy = group(function(result, value, key) {
+	    if (_.has(result, key)) result[key].push(value); else result[key] = [value];
+	  });
+	
+	  // Indexes the object's values by a criterion, similar to `groupBy`, but for
+	  // when you know that your index values will be unique.
+	  _.indexBy = group(function(result, value, key) {
+	    result[key] = value;
+	  });
+	
+	  // Counts instances of an object that group by a certain criterion. Pass
+	  // either a string attribute to count by, or a function that returns the
+	  // criterion.
+	  _.countBy = group(function(result, value, key) {
+	    if (_.has(result, key)) result[key]++; else result[key] = 1;
+	  });
+	
+	  // Safely create a real, live array from anything iterable.
+	  _.toArray = function(obj) {
+	    if (!obj) return [];
+	    if (_.isArray(obj)) return slice.call(obj);
+	    if (isArrayLike(obj)) return _.map(obj, _.identity);
+	    return _.values(obj);
+	  };
+	
+	  // Return the number of elements in an object.
+	  _.size = function(obj) {
+	    if (obj == null) return 0;
+	    return isArrayLike(obj) ? obj.length : _.keys(obj).length;
+	  };
+	
+	  // Split a collection into two arrays: one whose elements all satisfy the given
+	  // predicate, and one whose elements all do not satisfy the predicate.
+	  _.partition = function(obj, predicate, context) {
+	    predicate = cb(predicate, context);
+	    var pass = [], fail = [];
+	    _.each(obj, function(value, key, obj) {
+	      (predicate(value, key, obj) ? pass : fail).push(value);
+	    });
+	    return [pass, fail];
+	  };
+	
+	  // Array Functions
+	  // ---------------
+	
+	  // Get the first element of an array. Passing **n** will return the first N
+	  // values in the array. Aliased as `head` and `take`. The **guard** check
+	  // allows it to work with `_.map`.
+	  _.first = _.head = _.take = function(array, n, guard) {
+	    if (array == null) return void 0;
+	    if (n == null || guard) return array[0];
+	    return _.initial(array, array.length - n);
+	  };
+	
+	  // Returns everything but the last entry of the array. Especially useful on
+	  // the arguments object. Passing **n** will return all the values in
+	  // the array, excluding the last N.
+	  _.initial = function(array, n, guard) {
+	    return slice.call(array, 0, Math.max(0, array.length - (n == null || guard ? 1 : n)));
+	  };
+	
+	  // Get the last element of an array. Passing **n** will return the last N
+	  // values in the array.
+	  _.last = function(array, n, guard) {
+	    if (array == null) return void 0;
+	    if (n == null || guard) return array[array.length - 1];
+	    return _.rest(array, Math.max(0, array.length - n));
+	  };
+	
+	  // Returns everything but the first entry of the array. Aliased as `tail` and `drop`.
+	  // Especially useful on the arguments object. Passing an **n** will return
+	  // the rest N values in the array.
+	  _.rest = _.tail = _.drop = function(array, n, guard) {
+	    return slice.call(array, n == null || guard ? 1 : n);
+	  };
+	
+	  // Trim out all falsy values from an array.
+	  _.compact = function(array) {
+	    return _.filter(array, _.identity);
+	  };
+	
+	  // Internal implementation of a recursive `flatten` function.
+	  var flatten = function(input, shallow, strict, startIndex) {
+	    var output = [], idx = 0;
+	    for (var i = startIndex || 0, length = getLength(input); i < length; i++) {
+	      var value = input[i];
+	      if (isArrayLike(value) && (_.isArray(value) || _.isArguments(value))) {
+	        //flatten current level of array or arguments object
+	        if (!shallow) value = flatten(value, shallow, strict);
+	        var j = 0, len = value.length;
+	        output.length += len;
+	        while (j < len) {
+	          output[idx++] = value[j++];
+	        }
+	      } else if (!strict) {
+	        output[idx++] = value;
+	      }
+	    }
+	    return output;
+	  };
+	
+	  // Flatten out an array, either recursively (by default), or just one level.
+	  _.flatten = function(array, shallow) {
+	    return flatten(array, shallow, false);
+	  };
+	
+	  // Return a version of the array that does not contain the specified value(s).
+	  _.without = function(array) {
+	    return _.difference(array, slice.call(arguments, 1));
+	  };
+	
+	  // Produce a duplicate-free version of the array. If the array has already
+	  // been sorted, you have the option of using a faster algorithm.
+	  // Aliased as `unique`.
+	  _.uniq = _.unique = function(array, isSorted, iteratee, context) {
+	    if (!_.isBoolean(isSorted)) {
+	      context = iteratee;
+	      iteratee = isSorted;
+	      isSorted = false;
+	    }
+	    if (iteratee != null) iteratee = cb(iteratee, context);
+	    var result = [];
+	    var seen = [];
+	    for (var i = 0, length = getLength(array); i < length; i++) {
+	      var value = array[i],
+	          computed = iteratee ? iteratee(value, i, array) : value;
+	      if (isSorted) {
+	        if (!i || seen !== computed) result.push(value);
+	        seen = computed;
+	      } else if (iteratee) {
+	        if (!_.contains(seen, computed)) {
+	          seen.push(computed);
+	          result.push(value);
+	        }
+	      } else if (!_.contains(result, value)) {
+	        result.push(value);
+	      }
+	    }
+	    return result;
+	  };
+	
+	  // Produce an array that contains the union: each distinct element from all of
+	  // the passed-in arrays.
+	  _.union = function() {
+	    return _.uniq(flatten(arguments, true, true));
+	  };
+	
+	  // Produce an array that contains every item shared between all the
+	  // passed-in arrays.
+	  _.intersection = function(array) {
+	    var result = [];
+	    var argsLength = arguments.length;
+	    for (var i = 0, length = getLength(array); i < length; i++) {
+	      var item = array[i];
+	      if (_.contains(result, item)) continue;
+	      for (var j = 1; j < argsLength; j++) {
+	        if (!_.contains(arguments[j], item)) break;
+	      }
+	      if (j === argsLength) result.push(item);
+	    }
+	    return result;
+	  };
+	
+	  // Take the difference between one array and a number of other arrays.
+	  // Only the elements present in just the first array will remain.
+	  _.difference = function(array) {
+	    var rest = flatten(arguments, true, true, 1);
+	    return _.filter(array, function(value){
+	      return !_.contains(rest, value);
+	    });
+	  };
+	
+	  // Zip together multiple lists into a single array -- elements that share
+	  // an index go together.
+	  _.zip = function() {
+	    return _.unzip(arguments);
+	  };
+	
+	  // Complement of _.zip. Unzip accepts an array of arrays and groups
+	  // each array's elements on shared indices
+	  _.unzip = function(array) {
+	    var length = array && _.max(array, getLength).length || 0;
+	    var result = Array(length);
+	
+	    for (var index = 0; index < length; index++) {
+	      result[index] = _.pluck(array, index);
+	    }
+	    return result;
+	  };
+	
+	  // Converts lists into objects. Pass either a single array of `[key, value]`
+	  // pairs, or two parallel arrays of the same length -- one of keys, and one of
+	  // the corresponding values.
+	  _.object = function(list, values) {
+	    var result = {};
+	    for (var i = 0, length = getLength(list); i < length; i++) {
+	      if (values) {
+	        result[list[i]] = values[i];
+	      } else {
+	        result[list[i][0]] = list[i][1];
+	      }
+	    }
+	    return result;
+	  };
+	
+	  // Generator function to create the findIndex and findLastIndex functions
+	  function createPredicateIndexFinder(dir) {
+	    return function(array, predicate, context) {
+	      predicate = cb(predicate, context);
+	      var length = getLength(array);
+	      var index = dir > 0 ? 0 : length - 1;
+	      for (; index >= 0 && index < length; index += dir) {
+	        if (predicate(array[index], index, array)) return index;
+	      }
+	      return -1;
+	    };
+	  }
+	
+	  // Returns the first index on an array-like that passes a predicate test
+	  _.findIndex = createPredicateIndexFinder(1);
+	  _.findLastIndex = createPredicateIndexFinder(-1);
+	
+	  // Use a comparator function to figure out the smallest index at which
+	  // an object should be inserted so as to maintain order. Uses binary search.
+	  _.sortedIndex = function(array, obj, iteratee, context) {
+	    iteratee = cb(iteratee, context, 1);
+	    var value = iteratee(obj);
+	    var low = 0, high = getLength(array);
+	    while (low < high) {
+	      var mid = Math.floor((low + high) / 2);
+	      if (iteratee(array[mid]) < value) low = mid + 1; else high = mid;
+	    }
+	    return low;
+	  };
+	
+	  // Generator function to create the indexOf and lastIndexOf functions
+	  function createIndexFinder(dir, predicateFind, sortedIndex) {
+	    return function(array, item, idx) {
+	      var i = 0, length = getLength(array);
+	      if (typeof idx == 'number') {
+	        if (dir > 0) {
+	            i = idx >= 0 ? idx : Math.max(idx + length, i);
+	        } else {
+	            length = idx >= 0 ? Math.min(idx + 1, length) : idx + length + 1;
+	        }
+	      } else if (sortedIndex && idx && length) {
+	        idx = sortedIndex(array, item);
+	        return array[idx] === item ? idx : -1;
+	      }
+	      if (item !== item) {
+	        idx = predicateFind(slice.call(array, i, length), _.isNaN);
+	        return idx >= 0 ? idx + i : -1;
+	      }
+	      for (idx = dir > 0 ? i : length - 1; idx >= 0 && idx < length; idx += dir) {
+	        if (array[idx] === item) return idx;
+	      }
+	      return -1;
+	    };
+	  }
+	
+	  // Return the position of the first occurrence of an item in an array,
+	  // or -1 if the item is not included in the array.
+	  // If the array is large and already in sort order, pass `true`
+	  // for **isSorted** to use binary search.
+	  _.indexOf = createIndexFinder(1, _.findIndex, _.sortedIndex);
+	  _.lastIndexOf = createIndexFinder(-1, _.findLastIndex);
+	
+	  // Generate an integer Array containing an arithmetic progression. A port of
+	  // the native Python `range()` function. See
+	  // [the Python documentation](http://docs.python.org/library/functions.html#range).
+	  _.range = function(start, stop, step) {
+	    if (stop == null) {
+	      stop = start || 0;
+	      start = 0;
+	    }
+	    step = step || 1;
+	
+	    var length = Math.max(Math.ceil((stop - start) / step), 0);
+	    var range = Array(length);
+	
+	    for (var idx = 0; idx < length; idx++, start += step) {
+	      range[idx] = start;
+	    }
+	
+	    return range;
+	  };
+	
+	  // Function (ahem) Functions
+	  // ------------------
+	
+	  // Determines whether to execute a function as a constructor
+	  // or a normal function with the provided arguments
+	  var executeBound = function(sourceFunc, boundFunc, context, callingContext, args) {
+	    if (!(callingContext instanceof boundFunc)) return sourceFunc.apply(context, args);
+	    var self = baseCreate(sourceFunc.prototype);
+	    var result = sourceFunc.apply(self, args);
+	    if (_.isObject(result)) return result;
+	    return self;
+	  };
+	
+	  // Create a function bound to a given object (assigning `this`, and arguments,
+	  // optionally). Delegates to **ECMAScript 5**'s native `Function.bind` if
+	  // available.
+	  _.bind = function(func, context) {
+	    if (nativeBind && func.bind === nativeBind) return nativeBind.apply(func, slice.call(arguments, 1));
+	    if (!_.isFunction(func)) throw new TypeError('Bind must be called on a function');
+	    var args = slice.call(arguments, 2);
+	    var bound = function() {
+	      return executeBound(func, bound, context, this, args.concat(slice.call(arguments)));
+	    };
+	    return bound;
+	  };
+	
+	  // Partially apply a function by creating a version that has had some of its
+	  // arguments pre-filled, without changing its dynamic `this` context. _ acts
+	  // as a placeholder, allowing any combination of arguments to be pre-filled.
+	  _.partial = function(func) {
+	    var boundArgs = slice.call(arguments, 1);
+	    var bound = function() {
+	      var position = 0, length = boundArgs.length;
+	      var args = Array(length);
+	      for (var i = 0; i < length; i++) {
+	        args[i] = boundArgs[i] === _ ? arguments[position++] : boundArgs[i];
+	      }
+	      while (position < arguments.length) args.push(arguments[position++]);
+	      return executeBound(func, bound, this, this, args);
+	    };
+	    return bound;
+	  };
+	
+	  // Bind a number of an object's methods to that object. Remaining arguments
+	  // are the method names to be bound. Useful for ensuring that all callbacks
+	  // defined on an object belong to it.
+	  _.bindAll = function(obj) {
+	    var i, length = arguments.length, key;
+	    if (length <= 1) throw new Error('bindAll must be passed function names');
+	    for (i = 1; i < length; i++) {
+	      key = arguments[i];
+	      obj[key] = _.bind(obj[key], obj);
+	    }
+	    return obj;
+	  };
+	
+	  // Memoize an expensive function by storing its results.
+	  _.memoize = function(func, hasher) {
+	    var memoize = function(key) {
+	      var cache = memoize.cache;
+	      var address = '' + (hasher ? hasher.apply(this, arguments) : key);
+	      if (!_.has(cache, address)) cache[address] = func.apply(this, arguments);
+	      return cache[address];
+	    };
+	    memoize.cache = {};
+	    return memoize;
+	  };
+	
+	  // Delays a function for the given number of milliseconds, and then calls
+	  // it with the arguments supplied.
+	  _.delay = function(func, wait) {
+	    var args = slice.call(arguments, 2);
+	    return setTimeout(function(){
+	      return func.apply(null, args);
+	    }, wait);
+	  };
+	
+	  // Defers a function, scheduling it to run after the current call stack has
+	  // cleared.
+	  _.defer = _.partial(_.delay, _, 1);
+	
+	  // Returns a function, that, when invoked, will only be triggered at most once
+	  // during a given window of time. Normally, the throttled function will run
+	  // as much as it can, without ever going more than once per `wait` duration;
+	  // but if you'd like to disable the execution on the leading edge, pass
+	  // `{leading: false}`. To disable execution on the trailing edge, ditto.
+	  _.throttle = function(func, wait, options) {
+	    var context, args, result;
+	    var timeout = null;
+	    var previous = 0;
+	    if (!options) options = {};
+	    var later = function() {
+	      previous = options.leading === false ? 0 : _.now();
+	      timeout = null;
+	      result = func.apply(context, args);
+	      if (!timeout) context = args = null;
+	    };
+	    return function() {
+	      var now = _.now();
+	      if (!previous && options.leading === false) previous = now;
+	      var remaining = wait - (now - previous);
+	      context = this;
+	      args = arguments;
+	      if (remaining <= 0 || remaining > wait) {
+	        if (timeout) {
+	          clearTimeout(timeout);
+	          timeout = null;
+	        }
+	        previous = now;
+	        result = func.apply(context, args);
+	        if (!timeout) context = args = null;
+	      } else if (!timeout && options.trailing !== false) {
+	        timeout = setTimeout(later, remaining);
+	      }
+	      return result;
+	    };
+	  };
+	
+	  // Returns a function, that, as long as it continues to be invoked, will not
+	  // be triggered. The function will be called after it stops being called for
+	  // N milliseconds. If `immediate` is passed, trigger the function on the
+	  // leading edge, instead of the trailing.
+	  _.debounce = function(func, wait, immediate) {
+	    var timeout, args, context, timestamp, result;
+	
+	    var later = function() {
+	      var last = _.now() - timestamp;
+	
+	      if (last < wait && last >= 0) {
+	        timeout = setTimeout(later, wait - last);
+	      } else {
+	        timeout = null;
+	        if (!immediate) {
+	          result = func.apply(context, args);
+	          if (!timeout) context = args = null;
+	        }
+	      }
+	    };
+	
+	    return function() {
+	      context = this;
+	      args = arguments;
+	      timestamp = _.now();
+	      var callNow = immediate && !timeout;
+	      if (!timeout) timeout = setTimeout(later, wait);
+	      if (callNow) {
+	        result = func.apply(context, args);
+	        context = args = null;
+	      }
+	
+	      return result;
+	    };
+	  };
+	
+	  // Returns the first function passed as an argument to the second,
+	  // allowing you to adjust arguments, run code before and after, and
+	  // conditionally execute the original function.
+	  _.wrap = function(func, wrapper) {
+	    return _.partial(wrapper, func);
+	  };
+	
+	  // Returns a negated version of the passed-in predicate.
+	  _.negate = function(predicate) {
+	    return function() {
+	      return !predicate.apply(this, arguments);
+	    };
+	  };
+	
+	  // Returns a function that is the composition of a list of functions, each
+	  // consuming the return value of the function that follows.
+	  _.compose = function() {
+	    var args = arguments;
+	    var start = args.length - 1;
+	    return function() {
+	      var i = start;
+	      var result = args[start].apply(this, arguments);
+	      while (i--) result = args[i].call(this, result);
+	      return result;
+	    };
+	  };
+	
+	  // Returns a function that will only be executed on and after the Nth call.
+	  _.after = function(times, func) {
+	    return function() {
+	      if (--times < 1) {
+	        return func.apply(this, arguments);
+	      }
+	    };
+	  };
+	
+	  // Returns a function that will only be executed up to (but not including) the Nth call.
+	  _.before = function(times, func) {
+	    var memo;
+	    return function() {
+	      if (--times > 0) {
+	        memo = func.apply(this, arguments);
+	      }
+	      if (times <= 1) func = null;
+	      return memo;
+	    };
+	  };
+	
+	  // Returns a function that will be executed at most one time, no matter how
+	  // often you call it. Useful for lazy initialization.
+	  _.once = _.partial(_.before, 2);
+	
+	  // Object Functions
+	  // ----------------
+	
+	  // Keys in IE < 9 that won't be iterated by `for key in ...` and thus missed.
+	  var hasEnumBug = !{toString: null}.propertyIsEnumerable('toString');
+	  var nonEnumerableProps = ['valueOf', 'isPrototypeOf', 'toString',
+	                      'propertyIsEnumerable', 'hasOwnProperty', 'toLocaleString'];
+	
+	  function collectNonEnumProps(obj, keys) {
+	    var nonEnumIdx = nonEnumerableProps.length;
+	    var constructor = obj.constructor;
+	    var proto = (_.isFunction(constructor) && constructor.prototype) || ObjProto;
+	
+	    // Constructor is a special case.
+	    var prop = 'constructor';
+	    if (_.has(obj, prop) && !_.contains(keys, prop)) keys.push(prop);
+	
+	    while (nonEnumIdx--) {
+	      prop = nonEnumerableProps[nonEnumIdx];
+	      if (prop in obj && obj[prop] !== proto[prop] && !_.contains(keys, prop)) {
+	        keys.push(prop);
+	      }
+	    }
+	  }
+	
+	  // Retrieve the names of an object's own properties.
+	  // Delegates to **ECMAScript 5**'s native `Object.keys`
+	  _.keys = function(obj) {
+	    if (!_.isObject(obj)) return [];
+	    if (nativeKeys) return nativeKeys(obj);
+	    var keys = [];
+	    for (var key in obj) if (_.has(obj, key)) keys.push(key);
+	    // Ahem, IE < 9.
+	    if (hasEnumBug) collectNonEnumProps(obj, keys);
+	    return keys;
+	  };
+	
+	  // Retrieve all the property names of an object.
+	  _.allKeys = function(obj) {
+	    if (!_.isObject(obj)) return [];
+	    var keys = [];
+	    for (var key in obj) keys.push(key);
+	    // Ahem, IE < 9.
+	    if (hasEnumBug) collectNonEnumProps(obj, keys);
+	    return keys;
+	  };
+	
+	  // Retrieve the values of an object's properties.
+	  _.values = function(obj) {
+	    var keys = _.keys(obj);
+	    var length = keys.length;
+	    var values = Array(length);
+	    for (var i = 0; i < length; i++) {
+	      values[i] = obj[keys[i]];
+	    }
+	    return values;
+	  };
+	
+	  // Returns the results of applying the iteratee to each element of the object
+	  // In contrast to _.map it returns an object
+	  _.mapObject = function(obj, iteratee, context) {
+	    iteratee = cb(iteratee, context);
+	    var keys =  _.keys(obj),
+	          length = keys.length,
+	          results = {},
+	          currentKey;
+	      for (var index = 0; index < length; index++) {
+	        currentKey = keys[index];
+	        results[currentKey] = iteratee(obj[currentKey], currentKey, obj);
+	      }
+	      return results;
+	  };
+	
+	  // Convert an object into a list of `[key, value]` pairs.
+	  _.pairs = function(obj) {
+	    var keys = _.keys(obj);
+	    var length = keys.length;
+	    var pairs = Array(length);
+	    for (var i = 0; i < length; i++) {
+	      pairs[i] = [keys[i], obj[keys[i]]];
+	    }
+	    return pairs;
+	  };
+	
+	  // Invert the keys and values of an object. The values must be serializable.
+	  _.invert = function(obj) {
+	    var result = {};
+	    var keys = _.keys(obj);
+	    for (var i = 0, length = keys.length; i < length; i++) {
+	      result[obj[keys[i]]] = keys[i];
+	    }
+	    return result;
+	  };
+	
+	  // Return a sorted list of the function names available on the object.
+	  // Aliased as `methods`
+	  _.functions = _.methods = function(obj) {
+	    var names = [];
+	    for (var key in obj) {
+	      if (_.isFunction(obj[key])) names.push(key);
+	    }
+	    return names.sort();
+	  };
+	
+	  // Extend a given object with all the properties in passed-in object(s).
+	  _.extend = createAssigner(_.allKeys);
+	
+	  // Assigns a given object with all the own properties in the passed-in object(s)
+	  // (https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+	  _.extendOwn = _.assign = createAssigner(_.keys);
+	
+	  // Returns the first key on an object that passes a predicate test
+	  _.findKey = function(obj, predicate, context) {
+	    predicate = cb(predicate, context);
+	    var keys = _.keys(obj), key;
+	    for (var i = 0, length = keys.length; i < length; i++) {
+	      key = keys[i];
+	      if (predicate(obj[key], key, obj)) return key;
+	    }
+	  };
+	
+	  // Return a copy of the object only containing the whitelisted properties.
+	  _.pick = function(object, oiteratee, context) {
+	    var result = {}, obj = object, iteratee, keys;
+	    if (obj == null) return result;
+	    if (_.isFunction(oiteratee)) {
+	      keys = _.allKeys(obj);
+	      iteratee = optimizeCb(oiteratee, context);
+	    } else {
+	      keys = flatten(arguments, false, false, 1);
+	      iteratee = function(value, key, obj) { return key in obj; };
+	      obj = Object(obj);
+	    }
+	    for (var i = 0, length = keys.length; i < length; i++) {
+	      var key = keys[i];
+	      var value = obj[key];
+	      if (iteratee(value, key, obj)) result[key] = value;
+	    }
+	    return result;
+	  };
+	
+	   // Return a copy of the object without the blacklisted properties.
+	  _.omit = function(obj, iteratee, context) {
+	    if (_.isFunction(iteratee)) {
+	      iteratee = _.negate(iteratee);
+	    } else {
+	      var keys = _.map(flatten(arguments, false, false, 1), String);
+	      iteratee = function(value, key) {
+	        return !_.contains(keys, key);
+	      };
+	    }
+	    return _.pick(obj, iteratee, context);
+	  };
+	
+	  // Fill in a given object with default properties.
+	  _.defaults = createAssigner(_.allKeys, true);
+	
+	  // Creates an object that inherits from the given prototype object.
+	  // If additional properties are provided then they will be added to the
+	  // created object.
+	  _.create = function(prototype, props) {
+	    var result = baseCreate(prototype);
+	    if (props) _.extendOwn(result, props);
+	    return result;
+	  };
+	
+	  // Create a (shallow-cloned) duplicate of an object.
+	  _.clone = function(obj) {
+	    if (!_.isObject(obj)) return obj;
+	    return _.isArray(obj) ? obj.slice() : _.extend({}, obj);
+	  };
+	
+	  // Invokes interceptor with the obj, and then returns obj.
+	  // The primary purpose of this method is to "tap into" a method chain, in
+	  // order to perform operations on intermediate results within the chain.
+	  _.tap = function(obj, interceptor) {
+	    interceptor(obj);
+	    return obj;
+	  };
+	
+	  // Returns whether an object has a given set of `key:value` pairs.
+	  _.isMatch = function(object, attrs) {
+	    var keys = _.keys(attrs), length = keys.length;
+	    if (object == null) return !length;
+	    var obj = Object(object);
+	    for (var i = 0; i < length; i++) {
+	      var key = keys[i];
+	      if (attrs[key] !== obj[key] || !(key in obj)) return false;
+	    }
+	    return true;
+	  };
+	
+	
+	  // Internal recursive comparison function for `isEqual`.
+	  var eq = function(a, b, aStack, bStack) {
+	    // Identical objects are equal. `0 === -0`, but they aren't identical.
+	    // See the [Harmony `egal` proposal](http://wiki.ecmascript.org/doku.php?id=harmony:egal).
+	    if (a === b) return a !== 0 || 1 / a === 1 / b;
+	    // A strict comparison is necessary because `null == undefined`.
+	    if (a == null || b == null) return a === b;
+	    // Unwrap any wrapped objects.
+	    if (a instanceof _) a = a._wrapped;
+	    if (b instanceof _) b = b._wrapped;
+	    // Compare `[[Class]]` names.
+	    var className = toString.call(a);
+	    if (className !== toString.call(b)) return false;
+	    switch (className) {
+	      // Strings, numbers, regular expressions, dates, and booleans are compared by value.
+	      case '[object RegExp]':
+	      // RegExps are coerced to strings for comparison (Note: '' + /a/i === '/a/i')
+	      case '[object String]':
+	        // Primitives and their corresponding object wrappers are equivalent; thus, `"5"` is
+	        // equivalent to `new String("5")`.
+	        return '' + a === '' + b;
+	      case '[object Number]':
+	        // `NaN`s are equivalent, but non-reflexive.
+	        // Object(NaN) is equivalent to NaN
+	        if (+a !== +a) return +b !== +b;
+	        // An `egal` comparison is performed for other numeric values.
+	        return +a === 0 ? 1 / +a === 1 / b : +a === +b;
+	      case '[object Date]':
+	      case '[object Boolean]':
+	        // Coerce dates and booleans to numeric primitive values. Dates are compared by their
+	        // millisecond representations. Note that invalid dates with millisecond representations
+	        // of `NaN` are not equivalent.
+	        return +a === +b;
+	    }
+	
+	    var areArrays = className === '[object Array]';
+	    if (!areArrays) {
+	      if (typeof a != 'object' || typeof b != 'object') return false;
+	
+	      // Objects with different constructors are not equivalent, but `Object`s or `Array`s
+	      // from different frames are.
+	      var aCtor = a.constructor, bCtor = b.constructor;
+	      if (aCtor !== bCtor && !(_.isFunction(aCtor) && aCtor instanceof aCtor &&
+	                               _.isFunction(bCtor) && bCtor instanceof bCtor)
+	                          && ('constructor' in a && 'constructor' in b)) {
+	        return false;
+	      }
+	    }
+	    // Assume equality for cyclic structures. The algorithm for detecting cyclic
+	    // structures is adapted from ES 5.1 section 15.12.3, abstract operation `JO`.
+	
+	    // Initializing stack of traversed objects.
+	    // It's done here since we only need them for objects and arrays comparison.
+	    aStack = aStack || [];
+	    bStack = bStack || [];
+	    var length = aStack.length;
+	    while (length--) {
+	      // Linear search. Performance is inversely proportional to the number of
+	      // unique nested structures.
+	      if (aStack[length] === a) return bStack[length] === b;
+	    }
+	
+	    // Add the first object to the stack of traversed objects.
+	    aStack.push(a);
+	    bStack.push(b);
+	
+	    // Recursively compare objects and arrays.
+	    if (areArrays) {
+	      // Compare array lengths to determine if a deep comparison is necessary.
+	      length = a.length;
+	      if (length !== b.length) return false;
+	      // Deep compare the contents, ignoring non-numeric properties.
+	      while (length--) {
+	        if (!eq(a[length], b[length], aStack, bStack)) return false;
+	      }
+	    } else {
+	      // Deep compare objects.
+	      var keys = _.keys(a), key;
+	      length = keys.length;
+	      // Ensure that both objects contain the same number of properties before comparing deep equality.
+	      if (_.keys(b).length !== length) return false;
+	      while (length--) {
+	        // Deep compare each member
+	        key = keys[length];
+	        if (!(_.has(b, key) && eq(a[key], b[key], aStack, bStack))) return false;
+	      }
+	    }
+	    // Remove the first object from the stack of traversed objects.
+	    aStack.pop();
+	    bStack.pop();
+	    return true;
+	  };
+	
+	  // Perform a deep comparison to check if two objects are equal.
+	  _.isEqual = function(a, b) {
+	    return eq(a, b);
+	  };
+	
+	  // Is a given array, string, or object empty?
+	  // An "empty" object has no enumerable own-properties.
+	  _.isEmpty = function(obj) {
+	    if (obj == null) return true;
+	    if (isArrayLike(obj) && (_.isArray(obj) || _.isString(obj) || _.isArguments(obj))) return obj.length === 0;
+	    return _.keys(obj).length === 0;
+	  };
+	
+	  // Is a given value a DOM element?
+	  _.isElement = function(obj) {
+	    return !!(obj && obj.nodeType === 1);
+	  };
+	
+	  // Is a given value an array?
+	  // Delegates to ECMA5's native Array.isArray
+	  _.isArray = nativeIsArray || function(obj) {
+	    return toString.call(obj) === '[object Array]';
+	  };
+	
+	  // Is a given variable an object?
+	  _.isObject = function(obj) {
+	    var type = typeof obj;
+	    return type === 'function' || type === 'object' && !!obj;
+	  };
+	
+	  // Add some isType methods: isArguments, isFunction, isString, isNumber, isDate, isRegExp, isError.
+	  _.each(['Arguments', 'Function', 'String', 'Number', 'Date', 'RegExp', 'Error'], function(name) {
+	    _['is' + name] = function(obj) {
+	      return toString.call(obj) === '[object ' + name + ']';
+	    };
+	  });
+	
+	  // Define a fallback version of the method in browsers (ahem, IE < 9), where
+	  // there isn't any inspectable "Arguments" type.
+	  if (!_.isArguments(arguments)) {
+	    _.isArguments = function(obj) {
+	      return _.has(obj, 'callee');
+	    };
+	  }
+	
+	  // Optimize `isFunction` if appropriate. Work around some typeof bugs in old v8,
+	  // IE 11 (#1621), and in Safari 8 (#1929).
+	  if (typeof /./ != 'function' && typeof Int8Array != 'object') {
+	    _.isFunction = function(obj) {
+	      return typeof obj == 'function' || false;
+	    };
+	  }
+	
+	  // Is a given object a finite number?
+	  _.isFinite = function(obj) {
+	    return isFinite(obj) && !isNaN(parseFloat(obj));
+	  };
+	
+	  // Is the given value `NaN`? (NaN is the only number which does not equal itself).
+	  _.isNaN = function(obj) {
+	    return _.isNumber(obj) && obj !== +obj;
+	  };
+	
+	  // Is a given value a boolean?
+	  _.isBoolean = function(obj) {
+	    return obj === true || obj === false || toString.call(obj) === '[object Boolean]';
+	  };
+	
+	  // Is a given value equal to null?
+	  _.isNull = function(obj) {
+	    return obj === null;
+	  };
+	
+	  // Is a given variable undefined?
+	  _.isUndefined = function(obj) {
+	    return obj === void 0;
+	  };
+	
+	  // Shortcut function for checking if an object has a given property directly
+	  // on itself (in other words, not on a prototype).
+	  _.has = function(obj, key) {
+	    return obj != null && hasOwnProperty.call(obj, key);
+	  };
+	
+	  // Utility Functions
+	  // -----------------
+	
+	  // Run Underscore.js in *noConflict* mode, returning the `_` variable to its
+	  // previous owner. Returns a reference to the Underscore object.
+	  _.noConflict = function() {
+	    root._ = previousUnderscore;
+	    return this;
+	  };
+	
+	  // Keep the identity function around for default iteratees.
+	  _.identity = function(value) {
+	    return value;
+	  };
+	
+	  // Predicate-generating functions. Often useful outside of Underscore.
+	  _.constant = function(value) {
+	    return function() {
+	      return value;
+	    };
+	  };
+	
+	  _.noop = function(){};
+	
+	  _.property = property;
+	
+	  // Generates a function for a given object that returns a given property.
+	  _.propertyOf = function(obj) {
+	    return obj == null ? function(){} : function(key) {
+	      return obj[key];
+	    };
+	  };
+	
+	  // Returns a predicate for checking whether an object has a given set of
+	  // `key:value` pairs.
+	  _.matcher = _.matches = function(attrs) {
+	    attrs = _.extendOwn({}, attrs);
+	    return function(obj) {
+	      return _.isMatch(obj, attrs);
+	    };
+	  };
+	
+	  // Run a function **n** times.
+	  _.times = function(n, iteratee, context) {
+	    var accum = Array(Math.max(0, n));
+	    iteratee = optimizeCb(iteratee, context, 1);
+	    for (var i = 0; i < n; i++) accum[i] = iteratee(i);
+	    return accum;
+	  };
+	
+	  // Return a random integer between min and max (inclusive).
+	  _.random = function(min, max) {
+	    if (max == null) {
+	      max = min;
+	      min = 0;
+	    }
+	    return min + Math.floor(Math.random() * (max - min + 1));
+	  };
+	
+	  // A (possibly faster) way to get the current timestamp as an integer.
+	  _.now = Date.now || function() {
+	    return new Date().getTime();
+	  };
+	
+	   // List of HTML entities for escaping.
+	  var escapeMap = {
+	    '&': '&amp;',
+	    '<': '&lt;',
+	    '>': '&gt;',
+	    '"': '&quot;',
+	    "'": '&#x27;',
+	    '`': '&#x60;'
+	  };
+	  var unescapeMap = _.invert(escapeMap);
+	
+	  // Functions for escaping and unescaping strings to/from HTML interpolation.
+	  var createEscaper = function(map) {
+	    var escaper = function(match) {
+	      return map[match];
+	    };
+	    // Regexes for identifying a key that needs to be escaped
+	    var source = '(?:' + _.keys(map).join('|') + ')';
+	    var testRegexp = RegExp(source);
+	    var replaceRegexp = RegExp(source, 'g');
+	    return function(string) {
+	      string = string == null ? '' : '' + string;
+	      return testRegexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
+	    };
+	  };
+	  _.escape = createEscaper(escapeMap);
+	  _.unescape = createEscaper(unescapeMap);
+	
+	  // If the value of the named `property` is a function then invoke it with the
+	  // `object` as context; otherwise, return it.
+	  _.result = function(object, property, fallback) {
+	    var value = object == null ? void 0 : object[property];
+	    if (value === void 0) {
+	      value = fallback;
+	    }
+	    return _.isFunction(value) ? value.call(object) : value;
+	  };
+	
+	  // Generate a unique integer id (unique within the entire client session).
+	  // Useful for temporary DOM ids.
+	  var idCounter = 0;
+	  _.uniqueId = function(prefix) {
+	    var id = ++idCounter + '';
+	    return prefix ? prefix + id : id;
+	  };
+	
+	  // By default, Underscore uses ERB-style template delimiters, change the
+	  // following template settings to use alternative delimiters.
+	  _.templateSettings = {
+	    evaluate    : /<%([\s\S]+?)%>/g,
+	    interpolate : /<%=([\s\S]+?)%>/g,
+	    escape      : /<%-([\s\S]+?)%>/g
+	  };
+	
+	  // When customizing `templateSettings`, if you don't want to define an
+	  // interpolation, evaluation or escaping regex, we need one that is
+	  // guaranteed not to match.
+	  var noMatch = /(.)^/;
+	
+	  // Certain characters need to be escaped so that they can be put into a
+	  // string literal.
+	  var escapes = {
+	    "'":      "'",
+	    '\\':     '\\',
+	    '\r':     'r',
+	    '\n':     'n',
+	    '\u2028': 'u2028',
+	    '\u2029': 'u2029'
+	  };
+	
+	  var escaper = /\\|'|\r|\n|\u2028|\u2029/g;
+	
+	  var escapeChar = function(match) {
+	    return '\\' + escapes[match];
+	  };
+	
+	  // JavaScript micro-templating, similar to John Resig's implementation.
+	  // Underscore templating handles arbitrary delimiters, preserves whitespace,
+	  // and correctly escapes quotes within interpolated code.
+	  // NB: `oldSettings` only exists for backwards compatibility.
+	  _.template = function(text, settings, oldSettings) {
+	    if (!settings && oldSettings) settings = oldSettings;
+	    settings = _.defaults({}, settings, _.templateSettings);
+	
+	    // Combine delimiters into one regular expression via alternation.
+	    var matcher = RegExp([
+	      (settings.escape || noMatch).source,
+	      (settings.interpolate || noMatch).source,
+	      (settings.evaluate || noMatch).source
+	    ].join('|') + '|$', 'g');
+	
+	    // Compile the template source, escaping string literals appropriately.
+	    var index = 0;
+	    var source = "__p+='";
+	    text.replace(matcher, function(match, escape, interpolate, evaluate, offset) {
+	      source += text.slice(index, offset).replace(escaper, escapeChar);
+	      index = offset + match.length;
+	
+	      if (escape) {
+	        source += "'+\n((__t=(" + escape + "))==null?'':_.escape(__t))+\n'";
+	      } else if (interpolate) {
+	        source += "'+\n((__t=(" + interpolate + "))==null?'':__t)+\n'";
+	      } else if (evaluate) {
+	        source += "';\n" + evaluate + "\n__p+='";
+	      }
+	
+	      // Adobe VMs need the match returned to produce the correct offest.
+	      return match;
+	    });
+	    source += "';\n";
+	
+	    // If a variable is not specified, place data values in local scope.
+	    if (!settings.variable) source = 'with(obj||{}){\n' + source + '}\n';
+	
+	    source = "var __t,__p='',__j=Array.prototype.join," +
+	      "print=function(){__p+=__j.call(arguments,'');};\n" +
+	      source + 'return __p;\n';
+	
+	    try {
+	      var render = new Function(settings.variable || 'obj', '_', source);
+	    } catch (e) {
+	      e.source = source;
+	      throw e;
+	    }
+	
+	    var template = function(data) {
+	      return render.call(this, data, _);
+	    };
+	
+	    // Provide the compiled source as a convenience for precompilation.
+	    var argument = settings.variable || 'obj';
+	    template.source = 'function(' + argument + '){\n' + source + '}';
+	
+	    return template;
+	  };
+	
+	  // Add a "chain" function. Start chaining a wrapped Underscore object.
+	  _.chain = function(obj) {
+	    var instance = _(obj);
+	    instance._chain = true;
+	    return instance;
+	  };
+	
+	  // OOP
+	  // ---------------
+	  // If Underscore is called as a function, it returns a wrapped object that
+	  // can be used OO-style. This wrapper holds altered versions of all the
+	  // underscore functions. Wrapped objects may be chained.
+	
+	  // Helper function to continue chaining intermediate results.
+	  var result = function(instance, obj) {
+	    return instance._chain ? _(obj).chain() : obj;
+	  };
+	
+	  // Add your own custom functions to the Underscore object.
+	  _.mixin = function(obj) {
+	    _.each(_.functions(obj), function(name) {
+	      var func = _[name] = obj[name];
+	      _.prototype[name] = function() {
+	        var args = [this._wrapped];
+	        push.apply(args, arguments);
+	        return result(this, func.apply(_, args));
+	      };
+	    });
+	  };
+	
+	  // Add all of the Underscore functions to the wrapper object.
+	  _.mixin(_);
+	
+	  // Add all mutator Array functions to the wrapper.
+	  _.each(['pop', 'push', 'reverse', 'shift', 'sort', 'splice', 'unshift'], function(name) {
+	    var method = ArrayProto[name];
+	    _.prototype[name] = function() {
+	      var obj = this._wrapped;
+	      method.apply(obj, arguments);
+	      if ((name === 'shift' || name === 'splice') && obj.length === 0) delete obj[0];
+	      return result(this, obj);
+	    };
+	  });
+	
+	  // Add all accessor Array functions to the wrapper.
+	  _.each(['concat', 'join', 'slice'], function(name) {
+	    var method = ArrayProto[name];
+	    _.prototype[name] = function() {
+	      return result(this, method.apply(this._wrapped, arguments));
+	    };
+	  });
+	
+	  // Extracts the result from a wrapped and chained object.
+	  _.prototype.value = function() {
+	    return this._wrapped;
+	  };
+	
+	  // Provide unwrapping proxy for some methods used in engine operations
+	  // such as arithmetic and JSON stringification.
+	  _.prototype.valueOf = _.prototype.toJSON = _.prototype.value;
+	
+	  _.prototype.toString = function() {
+	    return '' + this._wrapped;
+	  };
+	
+	  // AMD registration happens at the end for compatibility with AMD loaders
+	  // that may not enforce next-turn semantics on modules. Even though general
+	  // practice for AMD registration is to be anonymous, underscore registers
+	  // as a named module because, like jQuery, it is a base library that is
+	  // popular enough to be bundled in a third party lib, but not be part of
+	  // an AMD load request. Those cases could generate an error when an
+	  // anonymous define() is called outside of a loader request.
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+	      return _;
+	    }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  }
+	}.call(this));
+
+
+/***/ },
+/* 145 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _promise = __webpack_require__(13);
 	
 	var _promise2 = _interopRequireDefault(_promise);
 	
@@ -28718,7 +27252,1368 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var EventEmitter = __webpack_require__(150);
-	var $ = __webpack_require__(66);
+	var $ = __webpack_require__(68);
+	
+	// 数据的维护都是Vue帮你做的，自己只要操作后台就行
+	// 不用像Backbone自己维护Model
+	
+	var userStore = (0, _assign2.default)(EventEmitter);
+	
+	userStore.fetch = function (userId) {
+	    var promise = new _promise2.default(function (resolve, reject) {
+	        $.get('/users', { userId: userId }, function (resp) {
+	            resolve(resp.data.user);
+	        });
+	    });
+	    return promise;
+	};
+	
+	userStore.deleteRecord = function (author, contacter) {
+	    var data = {
+	        author: author
+	    };
+	
+	    if (contacter) {
+	        data.contacter = contacter;
+	    }
+	
+	    var promise = new _promise2.default(function (resolve, reject) {
+	        $.post('/record', data, function (resp) {
+	            resolve(~resp.code);
+	        });
+	    });
+	
+	    return promise;
+	};
+	
+	module.exports = userStore;
+
+/***/ },
+/* 146 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(147), __esModule: true };
+
+/***/ },
+/* 147 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(148);
+	module.exports = __webpack_require__(24).Object.assign;
+
+/***/ },
+/* 148 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.3.1 Object.assign(target, source)
+	var $export = __webpack_require__(22);
+	
+	$export($export.S + $export.F, 'Object', {assign: __webpack_require__(149)});
+
+/***/ },
+/* 149 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.1 Object.assign(target, source, ...)
+	var $        = __webpack_require__(29)
+	  , toObject = __webpack_require__(72)
+	  , IObject  = __webpack_require__(45);
+	
+	// should work with symbols and should have deterministic property order (V8 bug)
+	module.exports = __webpack_require__(32)(function(){
+	  var a = Object.assign
+	    , A = {}
+	    , B = {}
+	    , S = Symbol()
+	    , K = 'abcdefghijklmnopqrst';
+	  A[S] = 7;
+	  K.split('').forEach(function(k){ B[k] = k; });
+	  return a({}, A)[S] != 7 || Object.keys(a({}, B)).join('') != K;
+	}) ? function assign(target, source){ // eslint-disable-line no-unused-vars
+	  var T     = toObject(target)
+	    , $$    = arguments
+	    , $$len = $$.length
+	    , index = 1
+	    , getKeys    = $.getKeys
+	    , getSymbols = $.getSymbols
+	    , isEnum     = $.isEnum;
+	  while($$len > index){
+	    var S      = IObject($$[index++])
+	      , keys   = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S)
+	      , length = keys.length
+	      , j      = 0
+	      , key;
+	    while(length > j)if(isEnum.call(S, key = keys[j++]))T[key] = S[key];
+	  }
+	  return T;
+	} : Object.assign;
+
+/***/ },
+/* 150 */
+/***/ function(module, exports) {
+
+	// Copyright Joyent, Inc. and other Node contributors.
+	//
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this software and associated documentation files (the
+	// "Software"), to deal in the Software without restriction, including
+	// without limitation the rights to use, copy, modify, merge, publish,
+	// distribute, sublicense, and/or sell copies of the Software, and to permit
+	// persons to whom the Software is furnished to do so, subject to the
+	// following conditions:
+	//
+	// The above copyright notice and this permission notice shall be included
+	// in all copies or substantial portions of the Software.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+	// USE OR OTHER DEALINGS IN THE SOFTWARE.
+	
+	function EventEmitter() {
+	  this._events = this._events || {};
+	  this._maxListeners = this._maxListeners || undefined;
+	}
+	module.exports = EventEmitter;
+	
+	// Backwards-compat with node 0.10.x
+	EventEmitter.EventEmitter = EventEmitter;
+	
+	EventEmitter.prototype._events = undefined;
+	EventEmitter.prototype._maxListeners = undefined;
+	
+	// By default EventEmitters will print a warning if more than 10 listeners are
+	// added to it. This is a useful default which helps finding memory leaks.
+	EventEmitter.defaultMaxListeners = 10;
+	
+	// Obviously not all Emitters should be limited to 10. This function allows
+	// that to be increased. Set to zero for unlimited.
+	EventEmitter.prototype.setMaxListeners = function(n) {
+	  if (!isNumber(n) || n < 0 || isNaN(n))
+	    throw TypeError('n must be a positive number');
+	  this._maxListeners = n;
+	  return this;
+	};
+	
+	EventEmitter.prototype.emit = function(type) {
+	  var er, handler, len, args, i, listeners;
+	
+	  if (!this._events)
+	    this._events = {};
+	
+	  // If there is no 'error' event listener then throw.
+	  if (type === 'error') {
+	    if (!this._events.error ||
+	        (isObject(this._events.error) && !this._events.error.length)) {
+	      er = arguments[1];
+	      if (er instanceof Error) {
+	        throw er; // Unhandled 'error' event
+	      }
+	      throw TypeError('Uncaught, unspecified "error" event.');
+	    }
+	  }
+	
+	  handler = this._events[type];
+	
+	  if (isUndefined(handler))
+	    return false;
+	
+	  if (isFunction(handler)) {
+	    switch (arguments.length) {
+	      // fast cases
+	      case 1:
+	        handler.call(this);
+	        break;
+	      case 2:
+	        handler.call(this, arguments[1]);
+	        break;
+	      case 3:
+	        handler.call(this, arguments[1], arguments[2]);
+	        break;
+	      // slower
+	      default:
+	        args = Array.prototype.slice.call(arguments, 1);
+	        handler.apply(this, args);
+	    }
+	  } else if (isObject(handler)) {
+	    args = Array.prototype.slice.call(arguments, 1);
+	    listeners = handler.slice();
+	    len = listeners.length;
+	    for (i = 0; i < len; i++)
+	      listeners[i].apply(this, args);
+	  }
+	
+	  return true;
+	};
+	
+	EventEmitter.prototype.addListener = function(type, listener) {
+	  var m;
+	
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  if (!this._events)
+	    this._events = {};
+	
+	  // To avoid recursion in the case that type === "newListener"! Before
+	  // adding it to the listeners, first emit "newListener".
+	  if (this._events.newListener)
+	    this.emit('newListener', type,
+	              isFunction(listener.listener) ?
+	              listener.listener : listener);
+	
+	  if (!this._events[type])
+	    // Optimize the case of one listener. Don't need the extra array object.
+	    this._events[type] = listener;
+	  else if (isObject(this._events[type]))
+	    // If we've already got an array, just append.
+	    this._events[type].push(listener);
+	  else
+	    // Adding the second element, need to change to array.
+	    this._events[type] = [this._events[type], listener];
+	
+	  // Check for listener leak
+	  if (isObject(this._events[type]) && !this._events[type].warned) {
+	    if (!isUndefined(this._maxListeners)) {
+	      m = this._maxListeners;
+	    } else {
+	      m = EventEmitter.defaultMaxListeners;
+	    }
+	
+	    if (m && m > 0 && this._events[type].length > m) {
+	      this._events[type].warned = true;
+	      console.error('(node) warning: possible EventEmitter memory ' +
+	                    'leak detected. %d listeners added. ' +
+	                    'Use emitter.setMaxListeners() to increase limit.',
+	                    this._events[type].length);
+	      if (typeof console.trace === 'function') {
+	        // not supported in IE 10
+	        console.trace();
+	      }
+	    }
+	  }
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.on = EventEmitter.prototype.addListener;
+	
+	EventEmitter.prototype.once = function(type, listener) {
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  var fired = false;
+	
+	  function g() {
+	    this.removeListener(type, g);
+	
+	    if (!fired) {
+	      fired = true;
+	      listener.apply(this, arguments);
+	    }
+	  }
+	
+	  g.listener = listener;
+	  this.on(type, g);
+	
+	  return this;
+	};
+	
+	// emits a 'removeListener' event iff the listener was removed
+	EventEmitter.prototype.removeListener = function(type, listener) {
+	  var list, position, length, i;
+	
+	  if (!isFunction(listener))
+	    throw TypeError('listener must be a function');
+	
+	  if (!this._events || !this._events[type])
+	    return this;
+	
+	  list = this._events[type];
+	  length = list.length;
+	  position = -1;
+	
+	  if (list === listener ||
+	      (isFunction(list.listener) && list.listener === listener)) {
+	    delete this._events[type];
+	    if (this._events.removeListener)
+	      this.emit('removeListener', type, listener);
+	
+	  } else if (isObject(list)) {
+	    for (i = length; i-- > 0;) {
+	      if (list[i] === listener ||
+	          (list[i].listener && list[i].listener === listener)) {
+	        position = i;
+	        break;
+	      }
+	    }
+	
+	    if (position < 0)
+	      return this;
+	
+	    if (list.length === 1) {
+	      list.length = 0;
+	      delete this._events[type];
+	    } else {
+	      list.splice(position, 1);
+	    }
+	
+	    if (this._events.removeListener)
+	      this.emit('removeListener', type, listener);
+	  }
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.removeAllListeners = function(type) {
+	  var key, listeners;
+	
+	  if (!this._events)
+	    return this;
+	
+	  // not listening for removeListener, no need to emit
+	  if (!this._events.removeListener) {
+	    if (arguments.length === 0)
+	      this._events = {};
+	    else if (this._events[type])
+	      delete this._events[type];
+	    return this;
+	  }
+	
+	  // emit removeListener for all listeners on all events
+	  if (arguments.length === 0) {
+	    for (key in this._events) {
+	      if (key === 'removeListener') continue;
+	      this.removeAllListeners(key);
+	    }
+	    this.removeAllListeners('removeListener');
+	    this._events = {};
+	    return this;
+	  }
+	
+	  listeners = this._events[type];
+	
+	  if (isFunction(listeners)) {
+	    this.removeListener(type, listeners);
+	  } else if (listeners) {
+	    // LIFO order
+	    while (listeners.length)
+	      this.removeListener(type, listeners[listeners.length - 1]);
+	  }
+	  delete this._events[type];
+	
+	  return this;
+	};
+	
+	EventEmitter.prototype.listeners = function(type) {
+	  var ret;
+	  if (!this._events || !this._events[type])
+	    ret = [];
+	  else if (isFunction(this._events[type]))
+	    ret = [this._events[type]];
+	  else
+	    ret = this._events[type].slice();
+	  return ret;
+	};
+	
+	EventEmitter.prototype.listenerCount = function(type) {
+	  if (this._events) {
+	    var evlistener = this._events[type];
+	
+	    if (isFunction(evlistener))
+	      return 1;
+	    else if (evlistener)
+	      return evlistener.length;
+	  }
+	  return 0;
+	};
+	
+	EventEmitter.listenerCount = function(emitter, type) {
+	  return emitter.listenerCount(type);
+	};
+	
+	function isFunction(arg) {
+	  return typeof arg === 'function';
+	}
+	
+	function isNumber(arg) {
+	  return typeof arg === 'number';
+	}
+	
+	function isObject(arg) {
+	  return typeof arg === 'object' && arg !== null;
+	}
+	
+	function isUndefined(arg) {
+	  return arg === void 0;
+	}
+
+
+/***/ },
+/* 151 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(152)
+	__vue_script__ = __webpack_require__(154)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/components/header.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(161)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/components/header.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 152 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(153);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./header.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./header.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 153 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".dropmenu:before {\n  content: \"\";\n  height: 0;\n  width: 0;\n  overflow: hidden; }\n\n.header {\n  height: 44px;\n  line-height: 44px;\n  background-color: #39393d;\n  color: #fff;\n  text-align: center;\n  font-size: 18px;\n  padding: 0 20px;\n  position: relative;\n  z-index: 99; }\n  .header .opt {\n    padding: 0 10px;\n    font-size: 16px; }\n  .header .icon-plus {\n    height: 18px;\n    width: 18px; }\n  .header .icon-back {\n    height: 12px;\n    width: 12px; }\n  .header .left,\n  .header .right {\n    position: absolute;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n    transform: translateY(-50%); }\n  .header .left {\n    left: 15px; }\n    .header .left.opt {\n      left: 5px; }\n  .header .right {\n    right: 15px; }\n    .header .right.opt {\n      right: 5px; }\n\n.dropmenu {\n  position: fixed;\n  right: 7px;\n  top: 57px;\n  border-radius: 4px;\n  background-color: #4F4F54;\n  z-index: 100;\n  text-align: center; }\n  .dropmenu:before {\n    content: '';\n    display: inline-block;\n    border-bottom: 8px solid #4F4F54;\n    border-left: 8px dashed transparent;\n    border-right: 8px dashed transparent;\n    position: absolute;\n    top: -8px;\n    right: 8px; }\n  .dropmenu .menu-item {\n    padding: 8px 15px;\n    border-top: 1px solid #646467;\n    color: #fff;\n    font-size: 14px;\n    line-height: 1;\n    margin: 0 10px; }\n    .dropmenu .menu-item:first-child {\n      border-top: none; }\n\n.mask {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: transparent; }\n", "", {"version":3,"sources":["/./src/components/header.vue"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,UAAU;EACV,SAAS;EACT,iBAAiB,EAAE;;AAErB;EACE,aAAa;EACb,kBAAkB;EAClB,0BAA0B;EAC1B,YAAY;EACZ,mBAAmB;EACnB,gBAAgB;EAChB,gBAAgB;EAChB,mBAAmB;EACnB,YAAY,EAAE;EACd;IACE,gBAAgB;IAChB,gBAAgB,EAAE;EACpB;IACE,aAAa;IACb,YAAY,EAAE;EAChB;IACE,aAAa;IACb,YAAY,EAAE;EAChB;;IAEE,mBAAmB;IACnB,SAAS;IACT,oCAAoC;IAIpC,4BAA4B,EAAE;EAChC;IACE,WAAW,EAAE;IACb;MACE,UAAU,EAAE;EAChB;IACE,YAAY,EAAE;IACd;MACE,WAAW,EAAE;;AAEnB;EACE,gBAAgB;EAChB,WAAW;EACX,UAAU;EACV,mBAAmB;EACnB,0BAA0B;EAC1B,aAAa;EACb,mBAAmB,EAAE;EACrB;IACE,YAAY;IACZ,sBAAsB;IACtB,iCAAiC;IACjC,oCAAoC;IACpC,qCAAqC;IACrC,mBAAmB;IACnB,UAAU;IACV,WAAW,EAAE;EACf;IACE,kBAAkB;IAClB,8BAA8B;IAC9B,YAAY;IACZ,gBAAgB;IAChB,eAAe;IACf,eAAe,EAAE;IACjB;MACE,iBAAiB,EAAE;;AAEzB;EACE,gBAAgB;EAChB,OAAO;EACP,QAAQ;EACR,UAAU;EACV,SAAS;EACT,YAAY;EACZ,8BAA8B,EAAE","file":"header.vue","sourcesContent":[".dropmenu:before {\n  content: \"\";\n  height: 0;\n  width: 0;\n  overflow: hidden; }\n\n.header {\n  height: 44px;\n  line-height: 44px;\n  background-color: #39393d;\n  color: #fff;\n  text-align: center;\n  font-size: 18px;\n  padding: 0 20px;\n  position: relative;\n  z-index: 99; }\n  .header .opt {\n    padding: 0 10px;\n    font-size: 16px; }\n  .header .icon-plus {\n    height: 18px;\n    width: 18px; }\n  .header .icon-back {\n    height: 12px;\n    width: 12px; }\n  .header .left,\n  .header .right {\n    position: absolute;\n    top: 50%;\n    -webkit-transform: translateY(-50%);\n    -moz-transform: translateY(-50%);\n    -ms-transform: translateY(-50%);\n    -o-transform: translateY(-50%);\n    transform: translateY(-50%); }\n  .header .left {\n    left: 15px; }\n    .header .left.opt {\n      left: 5px; }\n  .header .right {\n    right: 15px; }\n    .header .right.opt {\n      right: 5px; }\n\n.dropmenu {\n  position: fixed;\n  right: 7px;\n  top: 57px;\n  border-radius: 4px;\n  background-color: #4F4F54;\n  z-index: 100;\n  text-align: center; }\n  .dropmenu:before {\n    content: '';\n    display: inline-block;\n    border-bottom: 8px solid #4F4F54;\n    border-left: 8px dashed transparent;\n    border-right: 8px dashed transparent;\n    position: absolute;\n    top: -8px;\n    right: 8px; }\n  .dropmenu .menu-item {\n    padding: 8px 15px;\n    border-top: 1px solid #646467;\n    color: #fff;\n    font-size: 14px;\n    line-height: 1;\n    margin: 0 10px; }\n    .dropmenu .menu-item:first-child {\n      border-top: none; }\n\n.mask {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: transparent; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 154 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var Vue = __webpack_require__(1);
+	var auth = __webpack_require__(12);
+	var friendStore = __webpack_require__(155);
+	
+	module.exports = {
+	    name: 'Header',
+	    props: {
+	        title: String,
+	        pageType: String,
+	        refer: String
+	    },
+	    components: {
+	        'm-modal': __webpack_require__(156)
+	    },
+	    data: function data() {
+	        return {
+	            open: false,
+	
+	            modal: {
+	                show: false,
+	                friendName: '',
+	                popupTip: ''
+	            }
+	        };
+	    },
+	    methods: {
+	        onClickPlus: function onClickPlus() {
+	            this.open = !this.open;
+	        },
+	        onClickLogout: function onClickLogout() {
+	            auth.logout();
+	            this.$route.router.go('./login');
+	        },
+	        onClickMask: function onClickMask() {
+	            this.open = false;
+	        },
+	        onClickCancel: function onClickCancel() {
+	            this.$route.router.go(this.refer);
+	        },
+	        onClickAddFri: function onClickAddFri() {
+	            this.open = false;
+	            this.modal.show = true;
+	        },
+	        onModalSure: function onModalSure() {
+	            var _this = this;
+	
+	            if (!this.modal.friendName) return;
+	            var p = friendStore.createFriend(auth.user.userId, this.modal.friendName);
+	            p.then(function (resp) {
+	                return _this.$route.router.go('./friend');
+	            }).catch(function (resp) {
+	                _this.modal.popupTip = resp.message;
+	            });
+	        }
+	    },
+	    detached: function detached() {
+	        this.open = false;
+	        this.modal.show = false;
+	    },
+	
+	    directives: {
+	        focus: function focus(value) {
+	            var _this2 = this;
+	
+	            if (value) {
+	                Vue.nextTick(function () {
+	                    _this2.el.focus();
+	                });
+	            }
+	        }
+	    }
+	};
+
+/***/ },
+/* 155 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _promise = __webpack_require__(13);
+	
+	var _promise2 = _interopRequireDefault(_promise);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var $ = __webpack_require__(68);
+	
+	var friendStore = {};
+	
+	friendStore.fetch = function (author) {
+	    var url = '/friends';
+	
+	    var promise = new _promise2.default(function (resolve, reject) {
+	        $.get(url, {
+	            userId: author
+	        }, function (resp) {
+	            if (resp.code == 0) {
+	                resolve(resp.data.friends);
+	            } else {
+	                resolve([]);
+	            }
+	        });
+	    });
+	
+	    return promise;
+	};
+	
+	// friendStore.findFriend = function(username) {
+	//     var promise = new Promise(function(resolve, reject) {
+	//         $.getJSON('/friend', {
+	//             username: username
+	//         }, function(resp) {
+	//             if (resp.code == 0) {
+	//                 resolve(resp.data.friend);
+	//             } else {
+	//                 reject();
+	//             }
+	//         });
+	//     });
+	
+	//     return promise;
+	// };
+	
+	friendStore.createFriend = function (author, friendName) {
+	    var promise = new _promise2.default(function (resolve, reject) {
+	        $.post('/friend', {
+	            author: author,
+	            friendName: friendName
+	        }, function (resp) {
+	            if (resp.code == 0) {
+	                resolve(resp.data.friend);
+	            } else {
+	                reject(resp);
+	            }
+	        });
+	    });
+	
+	    return promise;
+	};
+	
+	module.exports = friendStore;
+
+/***/ },
+/* 156 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(157)
+	__vue_script__ = __webpack_require__(159)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/components/modal.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(160)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/components/modal.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 157 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(158);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./modal.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 158 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".collapse-transition {\n  -webkit-transition: all .4s ease;\n  transition: all .4s ease;\n  overflow: hidden;\n  height: 14px;\n  margin: 10px 0 5px; }\n\n.collapse-enter,\n.collapse-leave {\n  height: 0;\n  margin: 0;\n  opacity: 0; }\n\n.modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: rgba(0, 0, 0, 0.5);\n  text-align: center; }\n  .modal .inner {\n    width: 65%;\n    text-align: center;\n    background-color: white;\n    color: #666;\n    border-radius: 4px;\n    font-size: 14px;\n    padding: 15px;\n    position: absolute;\n    left: 50%;\n    top: 35%;\n    -webkit-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%); }\n  .modal .form {\n    padding: 0; }\n    .modal .form .hd {\n      font-size: 16px; }\n    .modal .form .bd {\n      margin: 15px 0; }\n    .modal .form .field-row {\n      margin: 10px 0; }\n    .modal .form .form-control {\n      padding: 6px;\n      border: 1px solid #eee;\n      border-radius: 3px;\n      outline: none;\n      width: 100%;\n      box-sizing: border-box; }\n    .modal .form .popup-tip {\n      font-size: 12px;\n      color: #E6A00F; }\n", "", {"version":3,"sources":["/./src/components/modal.vue"],"names":[],"mappings":"AAAA;EACE,iCAAyB;EAAzB,yBAAyB;EACzB,iBAAiB;EACjB,aAAa;EACb,mBAAmB,EAAE;;AAEvB;;EAEE,UAAU;EACV,UAAU;EACV,WAAW,EAAE;;AAEf;EACE,gBAAgB;EAChB,OAAO;EACP,QAAQ;EACR,UAAU;EACV,SAAS;EACT,YAAY;EACZ,qCAAqC;EACrC,mBAAmB,EAAE;EACrB;IACE,WAAW;IACX,mBAAmB;IACnB,wBAAwB;IACxB,YAAY;IACZ,mBAAmB;IACnB,gBAAgB;IAChB,cAAc;IACd,mBAAmB;IACnB,UAAU;IACV,SAAS;IACT,yCAAyC;IAIzC,iCAAiC,EAAE;EACrC;IACE,WAAW,EAAE;IACb;MACE,gBAAgB,EAAE;IACpB;MACE,eAAe,EAAE;IACnB;MACE,eAAe,EAAE;IACnB;MACE,aAAa;MACb,uBAAuB;MACvB,mBAAmB;MACnB,cAAc;MACd,YAAY;MACZ,uBAAuB,EAAE;IAC3B;MACE,gBAAgB;MAChB,eAAe,EAAE","file":"modal.vue","sourcesContent":[".collapse-transition {\n  transition: all .4s ease;\n  overflow: hidden;\n  height: 14px;\n  margin: 10px 0 5px; }\n\n.collapse-enter,\n.collapse-leave {\n  height: 0;\n  margin: 0;\n  opacity: 0; }\n\n.modal {\n  position: fixed;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  z-index: 99;\n  background-color: rgba(0, 0, 0, 0.5);\n  text-align: center; }\n  .modal .inner {\n    width: 65%;\n    text-align: center;\n    background-color: white;\n    color: #666;\n    border-radius: 4px;\n    font-size: 14px;\n    padding: 15px;\n    position: absolute;\n    left: 50%;\n    top: 35%;\n    -webkit-transform: translate(-50%, -50%);\n    -moz-transform: translate(-50%, -50%);\n    -ms-transform: translate(-50%, -50%);\n    -o-transform: translate(-50%, -50%);\n    transform: translate(-50%, -50%); }\n  .modal .form {\n    padding: 0; }\n    .modal .form .hd {\n      font-size: 16px; }\n    .modal .form .bd {\n      margin: 15px 0; }\n    .modal .form .field-row {\n      margin: 10px 0; }\n    .modal .form .form-control {\n      padding: 6px;\n      border: 1px solid #eee;\n      border-radius: 3px;\n      outline: none;\n      width: 100%;\n      box-sizing: border-box; }\n    .modal .form .popup-tip {\n      font-size: 12px;\n      color: #E6A00F; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 159 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	    props: ['show', 'title', 'popupTip'],
+	    methods: {
+	        onClickBg: function onClickBg() {
+	            this.show = false;
+	        },
+	        onClickSure: function onClickSure() {
+	            this.$dispatch('modal-sure');
+	        }
+	    },
+	    watch: {
+	        popupTip: function popupTip(value) {
+	            var _this = this;
+	
+	            if (this.popupTipTimer) {
+	                clearTimeout(this.popupTipTimer);
+	            }
+	            this.popupTipTimer = setTimeout(function () {
+	                _this.popupTip = '';
+	            }, 3500);
+	        }
+	    }
+	};
+
+/***/ },
+/* 160 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"modal\" transition=\"fade\" v-show=\"show\" @click.self=\"onClickBg\">\n    <div class=\"inner\">\n        <div class=\"form\">\n            <div class=\"hd\">\n                {{ title }}\n            </div>\n            <div class=\"popup-tip\" transition=\"collapse\" v-show=\"!!popupTip\">{{popupTip}}</div>\n            <div class=\"bd\">\n                <slot></slot>\n            </div>\n            <div class=\"fot\">\n                <button class=\"btn btn-primary sure\" @click=\"onClickSure\">确定</button>\n            </div>\n        </div>\n    </div>\n</div>\n";
+
+/***/ },
+/* 161 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<template v-if=\"pageType === 'record'\">\n    <header class=\"header\">\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n        <a class=\"opt right plus\" href=\"./chat\" @click.prevent=\"onClickPlus\">\n            <i class=\"icon icon-plus\"></i>\n        </a>\n    </header>\n    <div class=\"dropmenu\" v-show=\"open\">\n        <ul class=\"menus\">\n            <li class=\"menu-item\" v-link=\"'friend'\">\n                <a>新建聊天</a>\n            </li>\n            <li class=\"menu-item\" @click='onClickAddFri'>\n                <a>添加朋友</a>\n            </li>\n            <li class=\"menu-item\" @click='onClickLogout'>\n                <a>退出</a>\n            </li>\n        </ul>\n    </div>\n    <div class=\"mask\" @click=\"onClickMask\" v-show=\"open\"></div>\n    <m-modal :show.sync=\"modal.show\" title=\"添加朋友\" @modal-sure=\"onModalSure\" :popup-tip.sync=\"modal.popupTip\">\n        <div class=\"field-row\">\n            <input class=\"form-control\" v-model=\"modal.friendName\" v-focus=\"modal.show\" type=\"text\" placeholder=\"输入用户名称\">\n        </div>\n    </m-modal>\n</template>\n\n<template v-if=\"pageType === 'friend'\">\n    <header class=\"header\">\n        <a class=\"opt left cancel\" @click='onClickCancel'>\n            取消\n        </a>\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n    </header>\n</template>\n\n<template v-if=\"pageType === 'chat'\">\n    <header class=\"header\">\n        <a class=\"opt left back\" v-link=\"refer\">\n            <i class=\"icon icon-back\"></i>返回\n        </a>\n        <span class=\"title\">{{ title || 'WEB-IM' }}</span>\n    </header>\n</template>\n";
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(163)
+	__vue_script__ = __webpack_require__(165)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/components/record-item.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(166)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/components/record-item.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(164);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./record-item.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./record-item.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 164 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".contacter-list .item .profile {\n  *zoom: 1; }\n  .contacter-list .item .profile:before, .contacter-list .item .profile:after {\n    content: \"\";\n    display: table; }\n  .contacter-list .item .profile:after {\n    clear: both; }\n\n.contacter-list .item .ellipsis {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n.contacter-list .item {\n  border-bottom: 1px solid #d9d9d9;\n  height: 65px;\n  box-sizing: border-box;\n  color: #999;\n  overflow: hidden;\n  position: relative; }\n  .contacter-list .item .operate {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 65px;\n    line-height: 65px;\n    width: 48px;\n    color: #fff; }\n    .contacter-list .item .operate .delete {\n      background: red;\n      display: block;\n      text-align: center; }\n  .contacter-list .item .profile {\n    display: block;\n    padding: 10px;\n    background-color: #fff;\n    position: relative;\n    z-index: 9;\n    left: 0;\n    -webkit-transition: left 0.4s ease;\n    transition: left 0.4s ease; }\n    .contacter-list .item .profile.swipe-left {\n      left: -48px; }\n  .contacter-list .item .ellipsis {\n    width: 50%;\n    display: inline-block; }\n  .contacter-list .item .name {\n    color: #555;\n    font-size: 18px; }\n  .contacter-list .item .time {\n    float: right; }\n  .contacter-list .item .avatar {\n    height: 45px;\n    width: 45px;\n    border-radius: 4px;\n    float: left;\n    margin-right: 10px; }\n\n.contacter-list .item.unread .profile:before {\n  content: '';\n  position: absolute;\n  top: 4px;\n  left: 47px;\n  border-radius: 50%;\n  background-color: red;\n  color: #fff;\n  height: 14px;\n  width: 14px;\n  text-align: center; }\n", "", {"version":3,"sources":["/./src/components/record-item.vue"],"names":[],"mappings":"AAAA;GACE,QAAS,EAAE;EACX;IACE,YAAY;IACZ,eAAe,EAAE;EACnB;IACE,YAAY,EAAE;;AAElB;EACE,iBAAiB;EACjB,wBAAwB;EACxB,oBAAoB,EAAE;;AAExB;EACE,iCAAiC;EACjC,aAAa;EACb,uBAAuB;EACvB,YAAY;EACZ,iBAAiB;EACjB,mBAAmB,EAAE;EACrB;IACE,mBAAmB;IACnB,SAAS;IACT,OAAO;IACP,aAAa;IACb,kBAAkB;IAClB,YAAY;IACZ,YAAY,EAAE;IACd;MACE,gBAAgB;MAChB,eAAe;MACf,mBAAmB,EAAE;EACzB;IACE,eAAe;IACf,cAAc;IACd,uBAAuB;IACvB,mBAAmB;IACnB,WAAW;IACX,QAAQ;IACR,mCAAmC;IAInC,2BAA2B,EAAE;IAC7B;MACE,YAAY,EAAE;EAClB;IACE,WAAW;IACX,sBAAsB,EAAE;EAC1B;IACE,YAAY;IACZ,gBAAgB,EAAE;EACpB;IACE,aAAa,EAAE;EACjB;IACE,aAAa;IACb,YAAY;IACZ,mBAAmB;IACnB,YAAY;IACZ,mBAAmB,EAAE;;AAEzB;EACE,YAAY;EACZ,mBAAmB;EACnB,SAAS;EACT,WAAW;EACX,mBAAmB;EACnB,sBAAsB;EACtB,YAAY;EACZ,aAAa;EACb,YAAY;EACZ,mBAAmB,EAAE","file":"record-item.vue","sourcesContent":[".contacter-list .item .profile {\n  *zoom: 1; }\n  .contacter-list .item .profile:before, .contacter-list .item .profile:after {\n    content: \"\";\n    display: table; }\n  .contacter-list .item .profile:after {\n    clear: both; }\n\n.contacter-list .item .ellipsis {\n  overflow: hidden;\n  text-overflow: ellipsis;\n  white-space: nowrap; }\n\n.contacter-list .item {\n  border-bottom: 1px solid #d9d9d9;\n  height: 65px;\n  box-sizing: border-box;\n  color: #999;\n  overflow: hidden;\n  position: relative; }\n  .contacter-list .item .operate {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 65px;\n    line-height: 65px;\n    width: 48px;\n    color: #fff; }\n    .contacter-list .item .operate .delete {\n      background: red;\n      display: block;\n      text-align: center; }\n  .contacter-list .item .profile {\n    display: block;\n    padding: 10px;\n    background-color: #fff;\n    position: relative;\n    z-index: 9;\n    left: 0;\n    -webkit-transition: left 0.4s ease;\n    -moz-transition: left 0.4s ease;\n    -ms-transition: left 0.4s ease;\n    -o-transition: left 0.4s ease;\n    transition: left 0.4s ease; }\n    .contacter-list .item .profile.swipe-left {\n      left: -48px; }\n  .contacter-list .item .ellipsis {\n    width: 50%;\n    display: inline-block; }\n  .contacter-list .item .name {\n    color: #555;\n    font-size: 18px; }\n  .contacter-list .item .time {\n    float: right; }\n  .contacter-list .item .avatar {\n    height: 45px;\n    width: 45px;\n    border-radius: 4px;\n    float: left;\n    margin-right: 10px; }\n\n.contacter-list .item.unread .profile:before {\n  content: '';\n  position: absolute;\n  top: 4px;\n  left: 47px;\n  border-radius: 50%;\n  background-color: red;\n  color: #fff;\n  height: 14px;\n  width: 14px;\n  text-align: center; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 165 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	    name: 'RecorditemView',
+	    props: {
+	        one: Object,
+	        index: Number
+	    },
+	    methods: {
+	        onSwipeProfile: function onSwipeProfile(e) {
+	            if (e.direction == 2) {
+	                this.$els.profile.classList.add('swipe-left');
+	            } else if (e.direction == 4) {
+	                this.$els.profile.classList.remove('swipe-left');
+	            }
+	        },
+	        onClickDelRecord: function onClickDelRecord(e) {
+	            this.$dispatch('deleterecord', this.one.author, this.one.contacter, this.index);
+	        }
+	    }
+	};
+
+/***/ },
+/* 166 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<li class=\"item\" :class=\"{'unread': one.unread}\" v-if=\"one.status != 0\">\n    <a class=\"profile\"\n        v-el:profile\n        v-link=\"{name: 'chat', params: {relate: one.contacter}}\"\n        v-touch:swipe=\"onSwipeProfile\">\n        <img class=\"avatar\" :src=\"one.contacterInfo.avatar\">\n        <div class=\"top\">\n            <span class=\"name ellipsis\">{{ one.contacterInfo.username }}</span>\n            <span class=\"time\">{{ new Date(one.recent.date).toLocaleDateString() }}</span>\n        </div>\n        <div class=\"btm\">\n            <span class=\"recent ellipsis\">{{ one.recent.content }}</span>\n        </div>\n    </a>\n    <div class=\"operate\">\n        <a class=\"delete\" @click=\"onClickDelRecord\">删除</a>\n    </div>\n</li>\n";
+
+/***/ },
+/* 167 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div id=\"record\">\n    <m-header :page-type=\"'record'\" title=\"最近联系人\"></m-header>\n    <main class=\"main\">\n        <div class=\"contacter-list\">\n            <ul class=\"records\">\n                <m-item v-for=\"one in records\" :one=\"one\" :index=\"$index\" @deleterecord=\"onDeleteRecord\"></m-item>\n            </ul>\n        </div>\n    </main>        \n</div>\n";
+
+/***/ },
+/* 168 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(169)
+	__vue_script__ = __webpack_require__(171)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/views/chat.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(186)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/views/chat.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(170);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 170 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "#chat .main {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  padding-top: 44px;\n  background-color: #ebebeb; }\n\n#chat .gallery {\n  overflow-y: auto;\n  -webkit-overflow-scrolling: touch;\n  height: 100%; }\n  #chat .gallery .chat-record-list {\n    padding: 15px 10px 65px; }\n    #chat .gallery .chat-record-list.extra-panel-opened {\n      padding-bottom: 165px; }\n", "", {"version":3,"sources":["/./src/views/chat.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,OAAO;EACP,QAAQ;EACR,UAAU;EACV,SAAS;EACT,kBAAkB;EAClB,0BAA0B,EAAE;;AAE9B;EACE,iBAAiB;EACjB,kCAAkC;EAClC,aAAa,EAAE;EACf;IACE,wBAAwB,EAAE;IAC1B;MACE,sBAAsB,EAAE","file":"chat.vue","sourcesContent":["#chat .main {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  padding-top: 44px;\n  background-color: #ebebeb; }\n\n#chat .gallery {\n  overflow-y: auto;\n  -webkit-overflow-scrolling: touch;\n  height: 100%; }\n  #chat .gallery .chat-record-list {\n    padding: 15px 10px 65px; }\n    #chat .gallery .chat-record-list.extra-panel-opened {\n      padding-bottom: 165px; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 171 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var Vue = __webpack_require__(1);
+	var auth = __webpack_require__(12);
+	var socketHepler = __webpack_require__(74);
+	var userStore = __webpack_require__(145);
+	var recordStore = __webpack_require__(143);
+	
+	module.exports = {
+	    name: 'ChatView',
+	    components: {
+	        'm-header': __webpack_require__(151),
+	        'm-item': __webpack_require__(172),
+	        'm-sendbox': __webpack_require__(177)
+	    },
+	    data: function data() {
+	        return {
+	            author: {},
+	            relate: {},
+	            messages: {
+	                messageId: '',
+	                list: []
+	            },
+	
+	            refer: '',
+	            openExtraPanel: false
+	        };
+	    },
+	    route: {
+	        canActivate: function canActivate(transition) {
+	            if (auth.user.authenticated) {
+	                return true;
+	            } else {
+	                transition.redirect('/login');
+	                return false;
+	            }
+	        },
+	        data: function data(transition) {
+	            var author = auth.user.userId,
+	                relate = this.$route.params.relate;
+	
+	            return {
+	                refer: transition.from.path || '/index',
+	
+	                author: userStore.fetch(author),
+	                relate: userStore.fetch(relate),
+	                messages: recordStore.getMessageList(author, relate)
+	            };
+	        }
+	    },
+	    watch: {
+	        '$loadingRouteData': function $loadingRouteData(val, oldval) {
+	            if (!val) {
+	                setTimeout(function () {
+	                    this.toChatBtm();
+	                }.bind(this), 420);
+	            }
+	        }
+	    },
+	    methods: {
+	        onClickGallery: function onClickGallery(e) {
+	            this.openExtraPanel = false;
+	        },
+	        onSendMessage: function onSendMessage(msg) {
+	            var author = this.author._id,
+	                relate = this.relate._id;
+	
+	            var attr = {
+	                sender: author,
+	                receiver: relate,
+	                content: msg,
+	                date: Date.now()
+	            };
+	
+	            if (this.messages.messageId) {
+	                socketHepler.socket.emit('message', attr, this.messages.messageId);
+	            } else {
+	                socketHepler.socket.emit('record', attr);
+	            }
+	        },
+	        onCreateRecord: function onCreateRecord(resp) {
+	            this.messages.messageId = resp.data.messageId;
+	            this.messages.list.push(resp.data.attr);
+	
+	            this.toChatBtm();
+	        },
+	        onReceiveMessage: function onReceiveMessage(resp) {
+	            if (this.messages.messageId !== resp.data.messageId) {
+	                return;
+	            }
+	            this.messages.list.push(resp.data.attr);
+	
+	            this.toChatBtm();
+	        },
+	        toChatBtm: function toChatBtm() {
+	            var _this = this;
+	
+	            Vue.nextTick(function () {
+	                var el = _this.$els.gallery;
+	                el.scrollTop = el.scrollHeight - el.clientHeight;
+	            });
+	        }
+	    },
+	    attached: function attached() {
+	        socketHepler.socket.on('message', this.onReceiveMessage.bind(this));
+	        socketHepler.socket.on('record', this.onCreateRecord.bind(this));
+	
+	        var author = auth.user.userId,
+	            relate = this.$route.params.relate;
+	
+	        socketHepler.enter(author, relate);
+	    },
+	    detached: function detached() {
+	        socketHepler.socket.removeListener('message');
+	        socketHepler.socket.removeListener('record');
+	
+	        socketHepler.leave(this.author._id, this.relate._id);
+	    }
+	};
+
+/***/ },
+/* 172 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(173)
+	__vue_script__ = __webpack_require__(175)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/components/chat-item.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(176)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/components/chat-item.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 173 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(174);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat-item.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./chat-item.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 174 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".gallery .item {\n  *zoom: 1; }\n  .gallery .item:before, .gallery .item:after {\n    content: \"\";\n    display: table; }\n  .gallery .item:after {\n    clear: both; }\n\n.gallery .item {\n  padding: 10px 0; }\n  .gallery .item .avatar {\n    height: 40px;\n    width: 40px;\n    float: left;\n    margin-right: 10px; }\n  .gallery .item .content {\n    overflow: hidden;\n    padding-right: 40px; }\n    .gallery .item .content .inner {\n      float: left;\n      background-color: #fff;\n      border: 1px solid #d1d1d1;\n      padding: 12px;\n      border-radius: 4px; }\n    .gallery .item .content img {\n      max-width: 180px; }\n\n.gallery .item.mine .avatar {\n  float: right;\n  margin-left: 10px;\n  margin-right: 0; }\n\n.gallery .item.mine .content {\n  padding-left: 40px;\n  padding-right: 0; }\n  .gallery .item.mine .content .inner {\n    float: right;\n    background-color: #a0e75a; }\n", "", {"version":3,"sources":["/./src/components/chat-item.vue"],"names":[],"mappings":"AAAA;GACE,QAAS,EAAE;EACX;IACE,YAAY;IACZ,eAAe,EAAE;EACnB;IACE,YAAY,EAAE;;AAElB;EACE,gBAAgB,EAAE;EAClB;IACE,aAAa;IACb,YAAY;IACZ,YAAY;IACZ,mBAAmB,EAAE;EACvB;IACE,iBAAiB;IACjB,oBAAoB,EAAE;IACtB;MACE,YAAY;MACZ,uBAAuB;MACvB,0BAA0B;MAC1B,cAAc;MACd,mBAAmB,EAAE;IACvB;MACE,iBAAiB,EAAE;;AAEzB;EACE,aAAa;EACb,kBAAkB;EAClB,gBAAgB,EAAE;;AAEpB;EACE,mBAAmB;EACnB,iBAAiB,EAAE;EACnB;IACE,aAAa;IACb,0BAA0B,EAAE","file":"chat-item.vue","sourcesContent":[".gallery .item {\n  *zoom: 1; }\n  .gallery .item:before, .gallery .item:after {\n    content: \"\";\n    display: table; }\n  .gallery .item:after {\n    clear: both; }\n\n.gallery .item {\n  padding: 10px 0; }\n  .gallery .item .avatar {\n    height: 40px;\n    width: 40px;\n    float: left;\n    margin-right: 10px; }\n  .gallery .item .content {\n    overflow: hidden;\n    padding-right: 40px; }\n    .gallery .item .content .inner {\n      float: left;\n      background-color: #fff;\n      border: 1px solid #d1d1d1;\n      padding: 12px;\n      border-radius: 4px; }\n    .gallery .item .content img {\n      max-width: 180px; }\n\n.gallery .item.mine .avatar {\n  float: right;\n  margin-left: 10px;\n  margin-right: 0; }\n\n.gallery .item.mine .content {\n  padding-left: 40px;\n  padding-right: 0; }\n  .gallery .item.mine .content .inner {\n    float: right;\n    background-color: #a0e75a; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 175 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	var qqface = {
+	    '微笑': 'qqface0',
+	    '撇嘴': 'qqface1',
+	    '色': 'qqface2',
+	    '发呆': 'qqface3',
+	    '得意': 'qqface4',
+	    '流泪': 'qqface5',
+	    '害羞': 'qqface6',
+	    '闭嘴': 'qqface7',
+	    '睡': 'qqface8',
+	    '大哭': 'qqface9',
+	    '尴尬': 'qqface10',
+	    '发怒': 'qqface11',
+	    '调皮': 'qqface12',
+	    '呲牙': 'qqface13',
+	    '惊讶': 'qqface14',
+	    '难过': 'qqface15',
+	    '酷': 'qqface16',
+	    '冷汗': 'qqface17',
+	    '抓狂': 'qqface18',
+	    '吐': 'qqface19',
+	    '偷笑': 'qqface20',
+	    '愉快': 'qqface21',
+	    '白眼': 'qqface22',
+	    '傲慢': 'qqface23',
+	    '饥饿': 'qqface24',
+	    '困': 'qqface25'
+	};
+	
+	module.exports = {
+	    props: ['one', 'author', 'relate'],
+	    computed: {
+	        finalContent: function finalContent() {
+	            var res = this.one.content.replace(/\[(.+?)\]/g, function (all, g1) {
+	                var css = qqface[g1];
+	                if (css) {
+	                    return '<span title="' + g1 + '" class="qqface ' + css + '"></span>';
+	                } else {
+	                    return g1;
+	                }
+	            });
+	            return res;
+	        }
+	    }
+	};
+
+/***/ },
+/* 176 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"item\" :class=\"{'mine': one.sender === author._id}\" :messageid=\"one._id\">\n    <a>\n        <img :src=\"one.sender === author._id ? author.avatar : relate.avatar\" class=\"avatar\">\n    </a>\n    <div class=\"content\">\n        <div class=\"inner\">\n            <p>\n                {{{ finalContent }}}\n            </p>\n        </div>\n    </div>\n</div>\n";
+
+/***/ },
+/* 177 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(178)
+	__vue_script__ = __webpack_require__(180)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/components/sendbox.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(185)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/components/sendbox.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 178 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(179);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sendbox.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./sendbox.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "#chat .input {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  border-top: 1px solid #d9d9d9;\n  border-bottom: 1px solid #d9d9d9;\n  background-color: #f5f5f7; }\n  #chat .input table {\n    width: 100%; }\n    #chat .input table td {\n      padding: 8px 5px; }\n    #chat .input table .btn {\n      display: inline-block;\n      border: 1px solid #d9d9d9;\n      border-radius: 50%;\n      padding: 4px;\n      min-width: 0; }\n    #chat .input table .btn.upload-img {\n      position: relative; }\n      #chat .input table .btn.upload-img input[type=file] {\n        position: absolute;\n        height: 100%;\n        width: 100%;\n        left: 0;\n        top: 0;\n        z-index: 2;\n        opacity: 0; }\n    #chat .input table .icon {\n      background-size: contain; }\n    #chat .input table .icon-plus:before, #chat .input table .icon-plus:after {\n      background-color: #7f8389; }\n    #chat .input table .icon-sound {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position-x: 1px; }\n    #chat .input table .icon-send {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position: 2px 0;\n      -webkit-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n    #chat .input table .icon-face {\n      background-image: url(\"/src/statics/img/face.png\"); }\n    #chat .input table .operate-item {\n      width: 1px; }\n    #chat .input table .content {\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      width: 100%;\n      height: 32px;\n      outline: none;\n      padding: 5px;\n      box-sizing: border-box;\n      -webkit-appearance: none;\n      line-height: 20px; }\n\n#chat .extra {\n  height: 0;\n  overflow: hidden;\n  -webkit-transition: all .25s;\n  transition: all .25s; }\n  #chat .extra.faceOpen {\n    height: 100px; }\n  #chat .extra .face-panel a {\n    text-indent: -9999px;\n    float: left;\n    font-size: 0; }\n", "", {"version":3,"sources":["/./src/components/sendbox.vue"],"names":[],"mappings":"AAAA;EACE,mBAAmB;EACnB,UAAU;EACV,QAAQ;EACR,YAAY;EACZ,8BAA8B;EAC9B,iCAAiC;EACjC,0BAA0B,EAAE;EAC5B;IACE,YAAY,EAAE;IACd;MACE,iBAAiB,EAAE;IACrB;MACE,sBAAsB;MACtB,0BAA0B;MAC1B,mBAAmB;MACnB,aAAa;MACb,aAAa,EAAE;IACjB;MACE,mBAAmB,EAAE;MACrB;QACE,mBAAmB;QACnB,aAAa;QACb,YAAY;QACZ,QAAQ;QACR,OAAO;QACP,WAAW;QACX,WAAW,EAAE;IACjB;MACE,yBAAyB,EAAE;IAC7B;MACE,0BAA0B,EAAE;IAC9B;MACE,oDAAoD;MACpD,2BAA2B,EAAE;IAC/B;MACE,oDAAoD;MACpD,2BAA2B;MAC3B,kCAAkC;MAIlC,0BAA0B,EAAE;IAC9B;MACE,mDAAmD,EAAE;IACvD;MACE,WAAW,EAAE;IACf;MACE,0BAA0B;MAC1B,mBAAmB;MACnB,YAAY;MACZ,aAAa;MACb,cAAc;MACd,aAAa;MACb,uBAAuB;MACvB,yBAAyB;MACzB,kBAAkB,EAAE;;AAE1B;EACE,UAAU;EACV,iBAAiB;EACjB,6BAAqB;EAArB,qBAAqB,EAAE;EACvB;IACE,cAAc,EAAE;EAClB;IACE,qBAAqB;IACrB,YAAY;IACZ,aAAa,EAAE","file":"sendbox.vue","sourcesContent":["#chat .input {\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  width: 100%;\n  border-top: 1px solid #d9d9d9;\n  border-bottom: 1px solid #d9d9d9;\n  background-color: #f5f5f7; }\n  #chat .input table {\n    width: 100%; }\n    #chat .input table td {\n      padding: 8px 5px; }\n    #chat .input table .btn {\n      display: inline-block;\n      border: 1px solid #d9d9d9;\n      border-radius: 50%;\n      padding: 4px;\n      min-width: 0; }\n    #chat .input table .btn.upload-img {\n      position: relative; }\n      #chat .input table .btn.upload-img input[type=file] {\n        position: absolute;\n        height: 100%;\n        width: 100%;\n        left: 0;\n        top: 0;\n        z-index: 2;\n        opacity: 0; }\n    #chat .input table .icon {\n      background-size: contain; }\n    #chat .input table .icon-plus:before, #chat .input table .icon-plus:after {\n      background-color: #7f8389; }\n    #chat .input table .icon-sound {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position-x: 1px; }\n    #chat .input table .icon-send {\n      background-image: url(\"/src/statics/img/sound.png\");\n      background-position: 2px 0;\n      -webkit-transform: rotate(-90deg);\n      -moz-transform: rotate(-90deg);\n      -ms-transform: rotate(-90deg);\n      -o-transform: rotate(-90deg);\n      transform: rotate(-90deg); }\n    #chat .input table .icon-face {\n      background-image: url(\"/src/statics/img/face.png\"); }\n    #chat .input table .operate-item {\n      width: 1px; }\n    #chat .input table .content {\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      width: 100%;\n      height: 32px;\n      outline: none;\n      padding: 5px;\n      box-sizing: border-box;\n      -webkit-appearance: none;\n      line-height: 20px; }\n\n#chat .extra {\n  height: 0;\n  overflow: hidden;\n  transition: all .25s; }\n  #chat .extra.faceOpen {\n    height: 100px; }\n  #chat .extra .face-panel a {\n    text-indent: -9999px;\n    float: left;\n    font-size: 0; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _keys = __webpack_require__(181);
+	
+	var _keys2 = _interopRequireDefault(_keys);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var globalStore = __webpack_require__(184);
+	
+	var escapeMap = {
+	    '&': '&amp;',
+	    '<': '&lt;',
+	    '>': '&gt;',
+	    '"': '&quot;',
+	    "'": '&#x27;',
+	    '`': '&#x60;'
+	};
+	
+	var createEscaper = function createEscaper(map) {
+	    var escaper = function escaper(match) {
+	        return map[match];
+	    };
+	
+	    var source = '(?:' + (0, _keys2.default)(map).join('|') + ')';
+	    var testRegexp = RegExp(source);
+	    var replaceRegexp = RegExp(source, 'g');
+	    return function (string) {
+	        string = string == null ? '' : '' + string;
+	        return testRegexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
+	    };
+	};
+	
+	var _escape = createEscaper(escapeMap);
+	
+	module.exports = {
+	    data: function data() {
+	        return {
+	            input: ''
+	        };
+	    },
+	    props: ['openExtraPanel'],
+	    methods: {
+	        onClickSend: function onClickSend() {
+	            this.sendMsg();
+	        },
+	        onEnterInput: function onEnterInput() {
+	            this.sendMsg();
+	        },
+	        sendMsg: function sendMsg() {
+	            if (!this.input.trim()) return;
+	
+	            this.$dispatch('sendmsg', _escape(this.input));
+	            this.input = '';
+	        },
+	        onClickShowFacePanel: function onClickShowFacePanel(e) {
+	            this.openExtraPanel = !this.openExtraPanel;
+	        },
+	        onClickQQFace: function onClickQQFace(e) {
+	            var tar = e.target;
+	            var txt = '[' + tar.getAttribute('title') + ']';
+	            this.input += txt;
+	        },
+	        onChangeFileInput: function onChangeFileInput(e) {
+	            var _this = this;
+	
+	            var files = e.target.files;
+	            if (!files || files.length < 1) return;
+	
+	            var self = this;
+	            var file = files[0];
+	            var filefilers = /^(image\/gif|image\/jpeg|image\/png)$/i;
+	
+	            if (!filefilers.test(file.type)) {
+	                alert('只支持.gif, .jpeg, .png');
+	                return;
+	            }
+	
+	            var p = globalStore.upload(file);
+	
+	            p.then(function (resp) {
+	                if (resp.code == 0) {
+	                    var msg = '<img src="' + resp.data.imgPath + '">';
+	                    _this.$dispatch('sendmsg', msg);
+	                }
+	            });
+	        }
+	    }
+	};
+
+/***/ },
+/* 181 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = { "default": __webpack_require__(182), __esModule: true };
+
+/***/ },
+/* 182 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(183);
+	module.exports = __webpack_require__(24).Object.keys;
+
+/***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// 19.1.2.14 Object.keys(O)
+	var toObject = __webpack_require__(72);
+	
+	__webpack_require__(73)('keys', function($keys){
+	  return function keys(it){
+	    return $keys(toObject(it));
+	  };
+	});
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _promise = __webpack_require__(13);
+	
+	var _promise2 = _interopRequireDefault(_promise);
+	
+	var _assign = __webpack_require__(146);
+	
+	var _assign2 = _interopRequireDefault(_assign);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var EventEmitter = __webpack_require__(150);
+	var $ = __webpack_require__(68);
 	
 	var globalStore = (0, _assign2.default)(EventEmitter);
 	
@@ -28744,6 +28639,221 @@
 	};
 	
 	module.exports = globalStore;
+
+/***/ },
+/* 185 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"input\">\n    <div class=\"basic\">\n        <table>\n            <tbody>\n                <tr>\n                    <td class=\"operate-item\">\n                        <a class=\"btn upload-img\">\n                            <i class=\"icon icon-plus\"></i>\n                            <input type=\"file\" name=\"\" id=\"\" @change=\"onChangeFileInput\">\n                        </a>\n                    </td>\n                    <td class=\"\">\n                        <input v-model=\"input\" class=\"content\" type=\"text\" @keyup.enter=\"onEnterInput\">\n                    </td>\n                    <td class=\"operate-item\">\n                        <a class=\"btn face\" @click=\"onClickShowFacePanel\">\n                            <i class=\"icon icon-face\"></i>\n                        </a>\n                    </td>\n                    <td class=\"operate-item\">\n                        <a class=\"btn\" @click=\"onClickSend\">\n                            <i class=\"icon icon-send\"></i>\n                        </a>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n    <div class=\"extra\" :class=\"{faceOpen: openExtraPanel}\">\n        <div class=\"face-panel\" @click=\"onClickQQFace\">\n            <a title=\"微笑\" type=\"qq\" class=\"qqface qqface0\">微笑</a>\n            <a title=\"撇嘴\" type=\"qq\" class=\"qqface qqface1\">撇嘴</a>\n            <a title=\"色\" type=\"qq\" class=\"qqface qqface2\">色</a>\n            <a title=\"发呆\" type=\"qq\" class=\"qqface qqface3\">发呆</a>\n            <a title=\"得意\" type=\"qq\" class=\"qqface qqface4\">得意</a>\n            <a title=\"流泪\" type=\"qq\" class=\"qqface qqface5\">流泪</a>\n            <a title=\"害羞\" type=\"qq\" class=\"qqface qqface6\">害羞</a>\n            <a title=\"闭嘴\" type=\"qq\" class=\"qqface qqface7\">闭嘴</a>\n            <a title=\"睡\" type=\"qq\" class=\"qqface qqface8\">睡</a>\n            <a title=\"大哭\" type=\"qq\" class=\"qqface qqface9\">大哭</a>\n            <a title=\"尴尬\" type=\"qq\" class=\"qqface qqface10\">尴尬</a>\n            <a title=\"发怒\" type=\"qq\" class=\"qqface qqface11\">发怒</a>\n            <a title=\"调皮\" type=\"qq\" class=\"qqface qqface12\">调皮</a>\n            <a title=\"呲牙\" type=\"qq\" class=\"qqface qqface13\">呲牙</a>\n            <a title=\"惊讶\" type=\"qq\" class=\"qqface qqface14\">惊讶</a>\n            <a title=\"难过\" type=\"qq\" class=\"qqface qqface15\">难过</a>\n            <a title=\"酷\" type=\"qq\" class=\"qqface qqface16\">酷</a>\n            <a title=\"冷汗\" type=\"qq\" class=\"qqface qqface17\">冷汗</a>\n            <a title=\"抓狂\" type=\"qq\" class=\"qqface qqface18\">抓狂</a>\n            <a title=\"吐\" type=\"qq\" class=\"qqface qqface19\">吐</a>\n            <a title=\"偷笑\" type=\"qq\" class=\"qqface qqface20\">偷笑</a>\n            <a title=\"愉快\" type=\"qq\" class=\"qqface qqface21\">愉快</a>\n            <a title=\"白眼\" type=\"qq\" class=\"qqface qqface22\">白眼</a>\n            <a title=\"傲慢\" type=\"qq\" class=\"qqface qqface23\">傲慢</a>\n            <a title=\"饥饿\" type=\"qq\" class=\"qqface qqface24\">饥饿</a>\n            <a title=\"困\" type=\"qq\" class=\"qqface qqface25\">困</a>\n        </div>\n    </div>\n</div>\n";
+
+/***/ },
+/* 186 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div id=\"chat\">\n    <m-header title=\"Someone\" page-type=\"chat\" :refer=\"refer\" :title=\"relate.username\"></m-header>\n    <div class=\"main\">\n        <div class=\"gallery\" v-el:gallery @click=\"onClickGallery\">\n            <div class=\"chat-record-list\" :class=\"{'extra-panel-opened': openExtraPanel}\">\n                <m-item v-for=\"one in messages.list\" :one=\"one\" :author=\"author\" :relate=\"relate\"></m-item>\n            </div>\n        </div>\n        <m-sendbox @sendmsg=\"onSendMessage\" :open-extra-panel.sync=\"openExtraPanel\"></m-sendbox>\n    </div>\n</div>\n";
+
+/***/ },
+/* 187 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(188)
+	__vue_script__ = __webpack_require__(190)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/views/friend.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(196)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/views/friend.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(189);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./friend.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./friend.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "\n\n", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"friend.vue","sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 190 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var auth = __webpack_require__(12);
+	var friendStore = __webpack_require__(155);
+	var HeaderView = __webpack_require__(151);
+	var FriendItemView = __webpack_require__(191);
+	
+	module.exports = {
+	    name: 'FriendView',
+	    components: {
+	        'm-item': FriendItemView,
+	        'm-header': HeaderView
+	    },
+	    data: function data() {
+	        return {
+	            friends: []
+	        };
+	    },
+	    route: {
+	        canActivate: function canActivate(transition) {
+	            if (auth.user.authenticated) {
+	                return true;
+	            } else {
+	                transition.redirect('./login');
+	                return false;
+	            }
+	        },
+	        data: function data(transition) {
+	            return {
+	                friends: friendStore.fetch(auth.user.userId)
+	            };
+	        }
+	    }
+	};
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_script__, __vue_template__
+	__webpack_require__(192)
+	__vue_script__ = __webpack_require__(194)
+	if (__vue_script__ &&
+	    __vue_script__.__esModule &&
+	    Object.keys(__vue_script__).length > 1) {
+	  console.warn("[vue-loader] src/components/friend-item.vue: named exports in *.vue files are ignored.")}
+	__vue_template__ = __webpack_require__(195)
+	module.exports = __vue_script__ || {}
+	if (module.exports.__esModule) module.exports = module.exports.default
+	if (__vue_template__) {
+	(typeof module.exports === "function" ? (module.exports.options || (module.exports.options = {})) : module.exports).template = __vue_template__
+	}
+	if (false) {(function () {  module.hot.accept()
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), true)
+	  if (!hotAPI.compatible) return
+	  var id = "/Users/yll/Desktop/webim/public/src/components/friend-item.vue"
+	  if (!module.hot.data) {
+	    hotAPI.createRecord(id, module.exports)
+	  } else {
+	    hotAPI.update(id, module.exports, __vue_template__)
+	  }
+	})()}
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(193);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(10)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./friend-item.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js!./../../node_modules/sass-loader/index.js!./../../node_modules/vue-loader/lib/selector.js?type=style&index=0!./friend-item.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 193 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(9)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".friend-list .item .profile {\n  *zoom: 1; }\n  .friend-list .item .profile:before, .friend-list .item .profile:after {\n    content: \"\";\n    display: table; }\n  .friend-list .item .profile:after {\n    clear: both; }\n\n.friend-list .item {\n  border-bottom: 1px solid #d9d9d9;\n  line-height: 44px;\n  box-sizing: border-box;\n  color: #999;\n  overflow: hidden;\n  position: relative; }\n  .friend-list .item .avatar {\n    height: 30px;\n    width: 30px;\n    margin-right: 10px; }\n  .friend-list .item .profile {\n    padding: 0 10px;\n    background-color: #fff;\n    position: relative;\n    z-index: 9; }\n  .friend-list .item .operate {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 44px;\n    line-height: 44px;\n    width: 48px;\n    color: #fff; }\n    .friend-list .item .operate .remark {\n      background: #B9B9B9;\n      display: block;\n      text-align: center; }\n", "", {"version":3,"sources":["/./src/components/friend-item.vue"],"names":[],"mappings":"AAAA;GACE,QAAS,EAAE;EACX;IACE,YAAY;IACZ,eAAe,EAAE;EACnB;IACE,YAAY,EAAE;;AAElB;EACE,iCAAiC;EACjC,kBAAkB;EAClB,uBAAuB;EACvB,YAAY;EACZ,iBAAiB;EACjB,mBAAmB,EAAE;EACrB;IACE,aAAa;IACb,YAAY;IACZ,mBAAmB,EAAE;EACvB;IACE,gBAAgB;IAChB,uBAAuB;IACvB,mBAAmB;IACnB,WAAW,EAAE;EACf;IACE,mBAAmB;IACnB,SAAS;IACT,OAAO;IACP,aAAa;IACb,kBAAkB;IAClB,YAAY;IACZ,YAAY,EAAE;IACd;MACE,oBAAoB;MACpB,eAAe;MACf,mBAAmB,EAAE","file":"friend-item.vue","sourcesContent":[".friend-list .item .profile {\n  *zoom: 1; }\n  .friend-list .item .profile:before, .friend-list .item .profile:after {\n    content: \"\";\n    display: table; }\n  .friend-list .item .profile:after {\n    clear: both; }\n\n.friend-list .item {\n  border-bottom: 1px solid #d9d9d9;\n  line-height: 44px;\n  box-sizing: border-box;\n  color: #999;\n  overflow: hidden;\n  position: relative; }\n  .friend-list .item .avatar {\n    height: 30px;\n    width: 30px;\n    margin-right: 10px; }\n  .friend-list .item .profile {\n    padding: 0 10px;\n    background-color: #fff;\n    position: relative;\n    z-index: 9; }\n  .friend-list .item .operate {\n    position: absolute;\n    right: 0;\n    top: 0;\n    height: 44px;\n    line-height: 44px;\n    width: 48px;\n    color: #fff; }\n    .friend-list .item .operate .remark {\n      background: #B9B9B9;\n      display: block;\n      text-align: center; }\n"],"sourceRoot":"webpack://"}]);
+	
+	// exports
+
+
+/***/ },
+/* 194 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	module.exports = {
+	    name: 'FriendItemView',
+	    props: {
+	        one: Object,
+	        index: Number
+	    }
+	};
+
+/***/ },
+/* 195 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<li class=\"item\" \n    data-href=\"{{ one.relate }}\">\n    <div class=\"profile\" v-link=\"{name: 'chat', params: {relate: one.relate}}\">\n        <img class=\"avatar\" :src=\"one.friendInfo.avatar\">\n        <span class=\"remark\">{{ one.remark || one.friendInfo.username }}</span>\n    </div>\n    <div class=\"operate\">\n        <a class=\"remark\" href=\"\">备注</a>\n    </div>\n</li>\n";
+
+/***/ },
+/* 196 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div id=\"phonebook\">\n    <m-header :title=\"'选择联系人'\" :page-type=\"'friend'\" refer=\"index\"></m-header>\n    <main class=\"main\">\n        <div class=\"friend-list\">\n            <ul class=\"friends\">\n                <m-item v-for=\"one in friends\" :one=\"one\" :index=\"$index\"></m-item>\n            </ul>\n        </div>\n    </main>\n</div>\n";
 
 /***/ }
 /******/ ]);

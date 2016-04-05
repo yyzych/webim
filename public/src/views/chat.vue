@@ -17,6 +17,10 @@
 
             .chat-record-list {
                 padding: 15px 10px 65px;
+
+                &.extra-panel-opened {
+                    padding-bottom: 165px;
+                }
             }
             
         }
@@ -28,12 +32,12 @@
     <div id="chat">
         <m-header title="Someone" page-type="chat" :refer="refer" :title="relate.username"></m-header>
         <div class="main">
-            <div class="gallery" v-el:gallery>
-                <div class="chat-record-list">
+            <div class="gallery" v-el:gallery @click="onClickGallery">
+                <div class="chat-record-list" :class="{'extra-panel-opened': openExtraPanel}">
                     <m-item v-for="one in messages.list" :one="one" :author="author" :relate="relate"></m-item>
                 </div>
             </div>
-            <m-sendbox @sendmsg="onSendMessage"></m-sendbox>
+            <m-sendbox @sendmsg="onSendMessage" :open-extra-panel.sync="openExtraPanel"></m-sendbox>
         </div>
     </div>
 </template>
@@ -61,7 +65,8 @@
                     list: []
                 },
                 
-                refer: ''
+                refer: '',
+                openExtraPanel: false
             };
         },
         route: {
@@ -98,6 +103,9 @@
             }
         },
         methods: {
+            onClickGallery: function(e) {
+                this.openExtraPanel = false;
+            },
             onSendMessage: function(msg) {
                 var author = this.author._id,
                     relate = this.relate._id;

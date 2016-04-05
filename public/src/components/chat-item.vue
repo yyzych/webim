@@ -26,6 +26,10 @@
                     padding: 12px;
                     border-radius: 4px;
                 }
+
+                img {
+                    max-width: 180px;
+                }
             }
         }
 
@@ -44,10 +48,6 @@
                     float: right;
                     background-color: #a0e75a;
                 }
-
-                img {
-                    max-width: 180px;
-                }
             }
         }
     }
@@ -61,15 +61,59 @@
         </a>
         <div class="content">
             <div class="inner">
-                <p>{{{ one.content }}}</p>
+                <p>
+                    {{{ finalContent }}}
+                </p>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    var qqface = {
+        '微笑': 'qqface0',
+        '撇嘴': 'qqface1',
+        '色': 'qqface2',
+        '发呆': 'qqface3',
+        '得意': 'qqface4',
+        '流泪': 'qqface5',
+        '害羞': 'qqface6',
+        '闭嘴': 'qqface7',
+        '睡': 'qqface8',
+        '大哭': 'qqface9',
+        '尴尬': 'qqface10',
+        '发怒': 'qqface11',
+        '调皮': 'qqface12',
+        '呲牙': 'qqface13',
+        '惊讶': 'qqface14',
+        '难过': 'qqface15',
+        '酷': 'qqface16',
+        '冷汗': 'qqface17',
+        '抓狂': 'qqface18',
+        '吐': 'qqface19',
+        '偷笑': 'qqface20',
+        '愉快': 'qqface21',
+        '白眼': 'qqface22',
+        '傲慢': 'qqface23',
+        '饥饿': 'qqface24',
+        '困': 'qqface25'
+    };
+
     module.exports = {
-        props: ['one', 'author', 'relate']
+        props: ['one', 'author', 'relate'],
+        computed: {
+            finalContent: function() {
+                var res = this.one.content.replace(/\[(.+?)\]/g, function(all, g1) {
+                    var css = qqface[g1];
+                    if(css) {
+                        return '<span title="'+g1+'" class="qqface '+css+'"></span>';
+                    }else {
+                        return g1;
+                    }
+                });
+                return res;
+            }
+        }
     };
 </script>
 
