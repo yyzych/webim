@@ -1,5 +1,4 @@
 var $ = require('../statics/js/zepto.ajax');
-var _ = require('underscore');
 
 // var LS = localStorage;
 
