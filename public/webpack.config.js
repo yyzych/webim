@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: './src/main.js',
@@ -25,11 +26,21 @@ module.exports = {
                 plugins: ['transform-runtime']
             }
         }]
-    }
+    },
+    vue: {
+        loaders: {
+          sass: ExtractTextPlugin.extract('css!sass'),
+        }
+    },
+    plugins: [
+        new ExtractTextPlugin('app.css', {
+            allChunks: true // 默认只对入口分支处理，设置true，对异步生成的所有chunk也处理
+        })
+    ]
 };
 
 if(process.env.NODE_ENV === 'production') {
-    module.exports.plugins = [
+    module.exports.plugins = module.exports.plugins.concat([
         new webpack.DefinePlugin({
           'process.env': {
             NODE_ENV: '"production"' // 注意：'"...
@@ -41,7 +52,7 @@ if(process.env.NODE_ENV === 'production') {
           }
         }),
         new webpack.optimize.OccurenceOrderPlugin()
-    ];
+    ]);
 }else {
     module.exports.devtool = '#source-map';
     // module.exports.proxy = {
